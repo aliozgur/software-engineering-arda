@@ -1,0 +1,49 @@
+{
+  "schemaVersion": 1,
+  "id": "y3t2-001",
+  "title": "Threat Modelling and Secure Design",
+  "term": "year-3/term-2",
+  "module": "security",
+  "estimatedHours": 14,
+  "competencies": [
+    "security",
+    "software-design"
+  ],
+  "resources": [
+    "owasp-top10"
+  ],
+  "instructionsFile": "instructions.md",
+  "aiPolicy": {
+    "mode": "guided",
+    "allowedCapabilities": [
+      "explain",
+      "hint",
+      "quiz",
+      "review",
+      "debugging_questions"
+    ],
+    "solutionGenerationAllowed": false,
+    "disclosureRequired": true
+  },
+  "evidence": [
+    "Git history showing incremental work",
+    "README or technical note explaining the result",
+    "Executable code/configuration when the task includes implementation",
+    "Reflection notes answering the task questions",
+    "AI disclosure entry when AI materially influenced the work"
+  ],
+  "acceptanceCriteria": [
+    "Threat model is specific to the system.",
+    "Trust boundaries are visible.",
+    "Mitigations map to threats.",
+    "Secrets are not stored in Git."
+  ],
+  "statusModel": [
+    "not_started",
+    "in_progress",
+    "submitted",
+    "revision_requested",
+    "resubmitted",
+    "approved"
+  ]
+}

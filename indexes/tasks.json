@@ -1,0 +1,773 @@
+{
+  "schemaVersion": 1,
+  "tasks": [
+    {
+      "id": "y1t1-001",
+      "term": "year-1/term-1",
+      "module": "developer-foundations",
+      "title": "Build Your Engineering Workstation",
+      "estimatedHours": 6,
+      "competencies": [
+        "engineering-tooling"
+      ],
+      "resources": [
+        "mit-missing-semester"
+      ]
+    },
+    {
+      "id": "y1t1-002",
+      "term": "year-1/term-1",
+      "module": "git",
+      "title": "Understand Git, Don't Memorize It",
+      "estimatedHours": 8,
+      "competencies": [
+        "git"
+      ],
+      "resources": [
+        "mit-missing-semester",
+        "pro-git"
+      ]
+    },
+    {
+      "id": "y1t1-003",
+      "term": "year-1/term-1",
+      "module": "python",
+      "title": "Python Fundamentals I",
+      "estimatedHours": 10,
+      "competencies": [
+        "python"
+      ],
+      "resources": [
+        "harvard-cs50p",
+        "python-docs"
+      ]
+    },
+    {
+      "id": "y1t1-004",
+      "term": "year-1/term-1",
+      "module": "python",
+      "title": "Python Fundamentals II: Errors, Files and Tests",
+      "estimatedHours": 12,
+      "competencies": [
+        "python",
+        "testing-quality"
+      ],
+      "resources": [
+        "harvard-cs50p"
+      ]
+    },
+    {
+      "id": "y1t1-005",
+      "term": "year-1/term-1",
+      "module": "computer-science",
+      "title": "CS50x: C, Memory and Data Structures",
+      "estimatedHours": 24,
+      "competencies": [
+        "c-memory",
+        "algorithms"
+      ],
+      "resources": [
+        "harvard-cs50x"
+      ]
+    },
+    {
+      "id": "y1t1-006",
+      "term": "year-1/term-1",
+      "module": "professional-practice",
+      "title": "Engineering Journal and AI Disclosure",
+      "estimatedHours": 4,
+      "competencies": [
+        "professional-practice",
+        "ai-assisted-engineering"
+      ],
+      "resources": []
+    },
+    {
+      "id": "y1t2-001",
+      "term": "year-1/term-2",
+      "module": "algorithms",
+      "title": "Algorithms and Complexity Foundations",
+      "estimatedHours": 18,
+      "competencies": [
+        "algorithms"
+      ],
+      "resources": [
+        "mit-6006"
+      ]
+    },
+    {
+      "id": "y1t2-002",
+      "term": "year-1/term-2",
+      "module": "relational-databases",
+      "title": "Relational Modelling and SQL",
+      "estimatedHours": 16,
+      "competencies": [
+        "relational-data"
+      ],
+      "resources": [
+        "harvard-cs50sql"
+      ]
+    },
+    {
+      "id": "y1t2-003",
+      "term": "year-1/term-2",
+      "module": "postgresql",
+      "title": "PostgreSQL: Transactions, Indexes and EXPLAIN",
+      "estimatedHours": 14,
+      "competencies": [
+        "relational-data",
+        "performance"
+      ],
+      "resources": [
+        "harvard-cs50sql",
+        "postgres-docs"
+      ]
+    },
+    {
+      "id": "y1t2-004",
+      "term": "year-1/term-2",
+      "module": "web",
+      "title": "Web Foundations: HTML, CSS and Browser JavaScript",
+      "estimatedHours": 16,
+      "competencies": [
+        "web-foundations"
+      ],
+      "resources": [
+        "mdn",
+        "harvard-cs50x"
+      ]
+    },
+    {
+      "id": "y1t2-005",
+      "term": "year-1/term-2",
+      "module": "http-api",
+      "title": "HTTP and API Fundamentals",
+      "estimatedHours": 12,
+      "competencies": [
+        "http-api",
+        "networking"
+      ],
+      "resources": [
+        "mdn",
+        "rfc-http",
+        "openapi"
+      ]
+    },
+    {
+      "id": "y1t2-006",
+      "term": "year-1/term-2",
+      "module": "milestone",
+      "title": "Milestone 1: Personal Knowledge API",
+      "estimatedHours": 28,
+      "competencies": [
+        "python",
+        "git",
+        "relational-data",
+        "web-foundations",
+        "http-api",
+        "testing-quality"
+      ],
+      "resources": [
+        "python-docs",
+        "postgres-docs",
+        "mdn"
+      ]
+    },
+    {
+      "id": "y1s-001",
+      "term": "year-1/summer",
+      "module": "open-source",
+      "title": "Read and Contribute to an Open-Source Project",
+      "estimatedHours": 18,
+      "competencies": [
+        "open-source",
+        "git",
+        "professional-practice"
+      ],
+      "resources": [
+        "pro-git"
+      ]
+    },
+    {
+      "id": "y1s-002",
+      "term": "year-1/summer",
+      "module": "mentor-challenge",
+      "title": "Mentor Challenge: Diagnose a Slow Query",
+      "estimatedHours": 8,
+      "competencies": [
+        "relational-data",
+        "performance",
+        "professional-practice"
+      ],
+      "resources": [
+        "postgres-docs"
+      ]
+    },
+    {
+      "id": "y2t1-001",
+      "term": "year-2/term-1",
+      "module": "architecture",
+      "title": "From Logic Gates to a Computer",
+      "estimatedHours": 24,
+      "competencies": [
+        "computer-architecture"
+      ],
+      "resources": [
+        "nand2tetris"
+      ]
+    },
+    {
+      "id": "y2t1-002",
+      "term": "year-2/term-1",
+      "module": "operating-systems",
+      "title": "Processes, System Calls and Isolation",
+      "estimatedHours": 18,
+      "competencies": [
+        "operating-systems",
+        "c-memory"
+      ],
+      "resources": [
+        "mit-61810"
+      ]
+    },
+    {
+      "id": "y2t1-003",
+      "term": "year-2/term-1",
+      "module": "operating-systems",
+      "title": "Threads, Synchronization and Concurrency Bugs",
+      "estimatedHours": 20,
+      "competencies": [
+        "operating-systems",
+        "testing-quality"
+      ],
+      "resources": [
+        "mit-61810"
+      ]
+    },
+    {
+      "id": "y2t1-004",
+      "term": "year-2/term-1",
+      "module": "operating-systems",
+      "title": "Virtual Memory and Filesystems",
+      "estimatedHours": 20,
+      "competencies": [
+        "operating-systems",
+        "computer-architecture"
+      ],
+      "resources": [
+        "mit-61810"
+      ]
+    },
+    {
+      "id": "y2t1-005",
+      "term": "year-2/term-1",
+      "module": "networking",
+      "title": "Networking I: Packets, IP, DNS and Routing",
+      "estimatedHours": 18,
+      "competencies": [
+        "networking"
+      ],
+      "resources": [
+        "stanford-cs144"
+      ]
+    },
+    {
+      "id": "y2t1-006",
+      "term": "year-2/term-1",
+      "module": "networking",
+      "title": "Networking II: TCP, UDP, Sockets and TLS",
+      "estimatedHours": 22,
+      "competencies": [
+        "networking",
+        "security"
+      ],
+      "resources": [
+        "stanford-cs144",
+        "rfc-http"
+      ]
+    },
+    {
+      "id": "y2t2-001",
+      "term": "year-2/term-2",
+      "module": "typescript",
+      "title": "JavaScript to TypeScript",
+      "estimatedHours": 16,
+      "competencies": [
+        "web-foundations"
+      ],
+      "resources": [
+        "typescript-handbook",
+        "mdn"
+      ]
+    },
+    {
+      "id": "y2t2-002",
+      "term": "year-2/term-2",
+      "module": "software-engineering",
+      "title": "Requirements and Domain Modelling",
+      "estimatedHours": 12,
+      "competencies": [
+        "software-design",
+        "professional-practice"
+      ],
+      "resources": []
+    },
+    {
+      "id": "y2t2-003",
+      "term": "year-2/term-2",
+      "module": "software-engineering",
+      "title": "Modularity, Refactoring and Architecture",
+      "estimatedHours": 18,
+      "competencies": [
+        "software-design",
+        "testing-quality"
+      ],
+      "resources": []
+    },
+    {
+      "id": "y2t2-004",
+      "term": "year-2/term-2",
+      "module": "testing",
+      "title": "Testing Strategy: Unit to System",
+      "estimatedHours": 16,
+      "competencies": [
+        "testing-quality"
+      ],
+      "resources": []
+    },
+    {
+      "id": "y2t2-005",
+      "term": "year-2/term-2",
+      "module": "containers",
+      "title": "Docker and Reproducible Development",
+      "estimatedHours": 14,
+      "competencies": [
+        "containers",
+        "release-engineering"
+      ],
+      "resources": [
+        "docker-docs",
+        "twelve-factor"
+      ]
+    },
+    {
+      "id": "y2t2-006",
+      "term": "year-2/term-2",
+      "module": "ci-cd",
+      "title": "Continuous Integration and Release Discipline",
+      "estimatedHours": 14,
+      "competencies": [
+        "ci-cd",
+        "release-engineering"
+      ],
+      "resources": [
+        "github-actions",
+        "gitlab-ci",
+        "semver"
+      ]
+    },
+    {
+      "id": "y2t2-007",
+      "term": "year-2/term-2",
+      "module": "milestone",
+      "title": "Milestone 2: Networked Service Under Failure",
+      "estimatedHours": 32,
+      "competencies": [
+        "networking",
+        "operating-systems",
+        "testing-quality",
+        "containers",
+        "ci-cd",
+        "software-design"
+      ],
+      "resources": []
+    },
+    {
+      "id": "y2s-001",
+      "term": "year-2/summer",
+      "module": "internship",
+      "title": "Engineering Internship or Simulated Team Sprint",
+      "estimatedHours": 40,
+      "competencies": [
+        "professional-practice",
+        "git",
+        "testing-quality",
+        "software-design"
+      ],
+      "resources": []
+    },
+    {
+      "id": "y3t1-001",
+      "term": "year-3/term-1",
+      "module": "csharp",
+      "title": "C# and .NET Engineering Foundations",
+      "estimatedHours": 20,
+      "competencies": [
+        "csharp-dotnet",
+        "testing-quality"
+      ],
+      "resources": [
+        "dotnet-docs"
+      ]
+    },
+    {
+      "id": "y3t1-002",
+      "term": "year-3/term-1",
+      "module": "backend",
+      "title": "Production API with ASP.NET Core",
+      "estimatedHours": 22,
+      "competencies": [
+        "csharp-dotnet",
+        "http-api",
+        "relational-data",
+        "security"
+      ],
+      "resources": [
+        "dotnet-docs",
+        "openapi"
+      ]
+    },
+    {
+      "id": "y3t1-003",
+      "term": "year-3/term-1",
+      "module": "database-internals",
+      "title": "Database Systems: Storage and Indexes",
+      "estimatedHours": 24,
+      "competencies": [
+        "database-systems",
+        "performance"
+      ],
+      "resources": [
+        "cmu-15445"
+      ]
+    },
+    {
+      "id": "y3t1-004",
+      "term": "year-3/term-1",
+      "module": "database-internals",
+      "title": "Transactions, Concurrency and Recovery",
+      "estimatedHours": 24,
+      "competencies": [
+        "database-systems",
+        "operating-systems"
+      ],
+      "resources": [
+        "cmu-15445",
+        "postgres-docs"
+      ]
+    },
+    {
+      "id": "y3t1-005",
+      "term": "year-3/term-1",
+      "module": "nosql",
+      "title": "MongoDB and Document Data Modelling",
+      "estimatedHours": 12,
+      "competencies": [
+        "nosql",
+        "relational-data"
+      ],
+      "resources": [
+        "mongodb-docs"
+      ]
+    },
+    {
+      "id": "y3t1-006",
+      "term": "year-3/term-1",
+      "module": "messaging",
+      "title": "RabbitMQ: Reliable Messaging",
+      "estimatedHours": 18,
+      "competencies": [
+        "messaging",
+        "distributed-systems"
+      ],
+      "resources": [
+        "rabbitmq-tutorials"
+      ]
+    },
+    {
+      "id": "y3t1-007",
+      "term": "year-3/term-1",
+      "module": "event-streaming",
+      "title": "Kafka Concepts and Event Logs",
+      "estimatedHours": 12,
+      "competencies": [
+        "messaging",
+        "distributed-systems"
+      ],
+      "resources": [
+        "kafka-docs"
+      ]
+    },
+    {
+      "id": "y3t2-001",
+      "term": "year-3/term-2",
+      "module": "security",
+      "title": "Threat Modelling and Secure Design",
+      "estimatedHours": 14,
+      "competencies": [
+        "security",
+        "software-design"
+      ],
+      "resources": [
+        "owasp-top10"
+      ]
+    },
+    {
+      "id": "y3t2-002",
+      "term": "year-3/term-2",
+      "module": "security",
+      "title": "Web Security Laboratory",
+      "estimatedHours": 20,
+      "competencies": [
+        "security",
+        "http-api"
+      ],
+      "resources": [
+        "portswigger-academy",
+        "owasp-top10"
+      ]
+    },
+    {
+      "id": "y3t2-003",
+      "term": "year-3/term-2",
+      "module": "observability",
+      "title": "Logs, Metrics and Traces",
+      "estimatedHours": 16,
+      "competencies": [
+        "observability",
+        "professional-practice"
+      ],
+      "resources": [
+        "opentelemetry",
+        "prometheus"
+      ]
+    },
+    {
+      "id": "y3t2-004",
+      "term": "year-3/term-2",
+      "module": "performance",
+      "title": "Performance Engineering and Load Testing",
+      "estimatedHours": 18,
+      "competencies": [
+        "performance",
+        "observability",
+        "database-systems"
+      ],
+      "resources": []
+    },
+    {
+      "id": "y3t2-005",
+      "term": "year-3/term-2",
+      "module": "api-design",
+      "title": "API Evolution, Compatibility and Contracts",
+      "estimatedHours": 12,
+      "competencies": [
+        "http-api",
+        "release-engineering"
+      ],
+      "resources": [
+        "openapi",
+        "semver"
+      ]
+    },
+    {
+      "id": "y3t2-006",
+      "term": "year-3/term-2",
+      "module": "milestone",
+      "title": "Milestone 3: Distributed Telemetry Platform",
+      "estimatedHours": 42,
+      "competencies": [
+        "csharp-dotnet",
+        "relational-data",
+        "messaging",
+        "containers",
+        "ci-cd",
+        "observability",
+        "security",
+        "performance"
+      ],
+      "resources": []
+    },
+    {
+      "id": "y3s-001",
+      "term": "year-3/summer",
+      "module": "professional",
+      "title": "External-Facing Engineering Experience",
+      "estimatedHours": 50,
+      "competencies": [
+        "professional-practice",
+        "open-source",
+        "testing-quality",
+        "software-design"
+      ],
+      "resources": []
+    },
+    {
+      "id": "y4t1-001",
+      "term": "year-4/term-1",
+      "module": "go",
+      "title": "Go for Networked and Concurrent Services",
+      "estimatedHours": 20,
+      "competencies": [
+        "go",
+        "networking",
+        "testing-quality"
+      ],
+      "resources": [
+        "go-tutorials"
+      ]
+    },
+    {
+      "id": "y4t1-002",
+      "term": "year-4/term-1",
+      "module": "distributed-systems",
+      "title": "Distributed Systems Foundations",
+      "estimatedHours": 24,
+      "competencies": [
+        "distributed-systems"
+      ],
+      "resources": [
+        "mit-65840"
+      ]
+    },
+    {
+      "id": "y4t1-003",
+      "term": "year-4/term-1",
+      "module": "distributed-systems",
+      "title": "Replication and Consensus Laboratory",
+      "estimatedHours": 30,
+      "competencies": [
+        "distributed-systems",
+        "go"
+      ],
+      "resources": [
+        "mit-65840"
+      ]
+    },
+    {
+      "id": "y4t1-004",
+      "term": "year-4/term-1",
+      "module": "distributed-systems",
+      "title": "Idempotency, Sagas and Distributed Workflows",
+      "estimatedHours": 18,
+      "competencies": [
+        "distributed-systems",
+        "messaging",
+        "database-systems"
+      ],
+      "resources": []
+    },
+    {
+      "id": "y4t1-005",
+      "term": "year-4/term-1",
+      "module": "mobile",
+      "title": "Flutter Engineering Project",
+      "estimatedHours": 24,
+      "competencies": [
+        "mobile",
+        "software-design",
+        "testing-quality"
+      ],
+      "resources": [
+        "flutter-docs"
+      ]
+    },
+    {
+      "id": "y4t1-006",
+      "term": "year-4/term-1",
+      "module": "release",
+      "title": "Dependency and Supply-Chain Hygiene",
+      "estimatedHours": 12,
+      "competencies": [
+        "release-engineering",
+        "security"
+      ],
+      "resources": []
+    },
+    {
+      "id": "y4t2-001",
+      "term": "year-4/term-2",
+      "module": "design",
+      "title": "Architecture Under Constraints",
+      "estimatedHours": 18,
+      "competencies": [
+        "software-design",
+        "professional-practice",
+        "performance",
+        "security"
+      ],
+      "resources": []
+    },
+    {
+      "id": "y4t2-002",
+      "term": "year-4/term-2",
+      "module": "incident",
+      "title": "Production Incident Simulation",
+      "estimatedHours": 14,
+      "competencies": [
+        "observability",
+        "professional-practice",
+        "performance",
+        "database-systems"
+      ],
+      "resources": []
+    },
+    {
+      "id": "y4t2-003",
+      "term": "year-4/term-2",
+      "module": "open-source",
+      "title": "Maintain a Small Open-Source Project",
+      "estimatedHours": 18,
+      "competencies": [
+        "open-source",
+        "release-engineering",
+        "professional-practice"
+      ],
+      "resources": [
+        "semver"
+      ]
+    },
+    {
+      "id": "y4t2-004",
+      "term": "year-4/term-2",
+      "module": "capstone",
+      "title": "Capstone Proposal and Research",
+      "estimatedHours": 16,
+      "competencies": [
+        "professional-practice",
+        "software-design"
+      ],
+      "resources": []
+    },
+    {
+      "id": "y4t2-005",
+      "term": "year-4/term-2",
+      "module": "capstone",
+      "title": "Capstone Build: Independent Engineering",
+      "estimatedHours": 60,
+      "competencies": [
+        "software-design",
+        "testing-quality",
+        "security",
+        "observability",
+        "performance",
+        "release-engineering",
+        "professional-practice"
+      ],
+      "resources": []
+    },
+    {
+      "id": "y4t2-006",
+      "term": "year-4/term-2",
+      "module": "capstone",
+      "title": "Capstone Defense and Portfolio",
+      "estimatedHours": 16,
+      "competencies": [
+        "professional-practice",
+        "ai-assisted-engineering",
+        "open-source"
+      ],
+      "resources": []
+    }
+  ]
+}

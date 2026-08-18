@@ -1,0 +1,13 @@
+{
+  "schemaVersion": 1,
+  "id": "owasp-top10",
+  "title": "OWASP Top 10",
+  "url": "https://owasp.org/www-project-top-ten/",
+  "type": "security_reference",
+  "provider": "OWASP",
+  "tier": "primary",
+  "topics": [
+    "security",
+    "web-security"
+  ]
+}

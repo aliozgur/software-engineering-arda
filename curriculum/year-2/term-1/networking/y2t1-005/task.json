@@ -1,0 +1,48 @@
+{
+  "schemaVersion": 1,
+  "id": "y2t1-005",
+  "title": "Networking I: Packets, IP, DNS and Routing",
+  "term": "year-2/term-1",
+  "module": "networking",
+  "estimatedHours": 18,
+  "competencies": [
+    "networking"
+  ],
+  "resources": [
+    "stanford-cs144"
+  ],
+  "instructionsFile": "instructions.md",
+  "aiPolicy": {
+    "mode": "guided",
+    "allowedCapabilities": [
+      "explain",
+      "hint",
+      "quiz",
+      "review",
+      "debugging_questions"
+    ],
+    "solutionGenerationAllowed": false,
+    "disclosureRequired": true
+  },
+  "evidence": [
+    "Git history showing incremental work",
+    "README or technical note explaining the result",
+    "Executable code/configuration when the task includes implementation",
+    "Reflection notes answering the task questions",
+    "AI disclosure entry when AI materially influenced the work"
+  ],
+  "acceptanceCriteria": [
+    "Packet captures are annotated.",
+    "Subnet calculations are correct.",
+    "Apprentice distinguishes MAC, IP, port and hostname.",
+    "Routing explanation includes default gateway and longest-prefix intuition."
+  ],
+  "statusModel": [
+    "not_started",
+    "in_progress",
+    "submitted",
+    "revision_requested",
+    "resubmitted",
+    "approved"
+  ]
+}

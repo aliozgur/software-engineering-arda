@@ -1,0 +1,16 @@
+{
+  "schemaVersion": 1,
+  "id": "harvard-cs50p",
+  "title": "Harvard CS50P - Introduction to Programming with Python",
+  "url": "https://cs50.harvard.edu/python/",
+  "type": "university_course",
+  "provider": "Harvard",
+  "tier": "primary",
+  "topics": [
+    "python",
+    "testing",
+    "file-io",
+    "regex",
+    "oop"
+  ]
+}

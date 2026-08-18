@@ -1,0 +1,15 @@
+{
+  "schemaVersion": 1,
+  "id": "nand2tetris",
+  "title": "Nand2Tetris - Building a Modern Computer From First Principles",
+  "url": "https://www.nand2tetris.org/",
+  "type": "university_course",
+  "provider": "Nand2Tetris",
+  "tier": "primary",
+  "topics": [
+    "computer-architecture",
+    "assembly",
+    "vm",
+    "compiler"
+  ]
+}

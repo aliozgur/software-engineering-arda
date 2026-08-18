@@ -1,0 +1,52 @@
+{
+  "schemaVersion": 1,
+  "id": "y2t2-007",
+  "title": "Milestone 2: Networked Service Under Failure",
+  "term": "year-2/term-2",
+  "module": "milestone",
+  "estimatedHours": 32,
+  "competencies": [
+    "networking",
+    "operating-systems",
+    "testing-quality",
+    "containers",
+    "ci-cd",
+    "software-design"
+  ],
+  "resources": [],
+  "instructionsFile": "instructions.md",
+  "aiPolicy": {
+    "mode": "guided",
+    "allowedCapabilities": [
+      "explain",
+      "hint",
+      "quiz",
+      "review",
+      "debugging_questions"
+    ],
+    "solutionGenerationAllowed": false,
+    "disclosureRequired": true
+  },
+  "evidence": [
+    "Git history showing incremental work",
+    "README or technical note explaining the result",
+    "Executable code/configuration when the task includes implementation",
+    "Reflection notes answering the task questions",
+    "AI disclosure entry when AI materially influenced the work"
+  ],
+  "acceptanceCriteria": [
+    "Failure cases have defined behavior.",
+    "No unbounded waits in tested paths.",
+    "Logs make failures diagnosable.",
+    "Release can be reproduced from tag.",
+    "Demo includes at least two injected failures."
+  ],
+  "statusModel": [
+    "not_started",
+    "in_progress",
+    "submitted",
+    "revision_requested",
+    "resubmitted",
+    "approved"
+  ]
+}

@@ -1,0 +1,50 @@
+{
+  "schemaVersion": 1,
+  "id": "y2t1-006",
+  "title": "Networking II: TCP, UDP, Sockets and TLS",
+  "term": "year-2/term-1",
+  "module": "networking",
+  "estimatedHours": 22,
+  "competencies": [
+    "networking",
+    "security"
+  ],
+  "resources": [
+    "stanford-cs144",
+    "rfc-http"
+  ],
+  "instructionsFile": "instructions.md",
+  "aiPolicy": {
+    "mode": "guided",
+    "allowedCapabilities": [
+      "explain",
+      "hint",
+      "quiz",
+      "review",
+      "debugging_questions"
+    ],
+    "solutionGenerationAllowed": false,
+    "disclosureRequired": true
+  },
+  "evidence": [
+    "Git history showing incremental work",
+    "README or technical note explaining the result",
+    "Executable code/configuration when the task includes implementation",
+    "Reflection notes answering the task questions",
+    "AI disclosure entry when AI materially influenced the work"
+  ],
+  "acceptanceCriteria": [
+    "Socket programs handle disconnects.",
+    "Capture identifies handshake and sequence/ack behavior.",
+    "TCP versus UDP choice is reasoned.",
+    "TLS notes distinguish encryption, authentication and certificates."
+  ],
+  "statusModel": [
+    "not_started",
+    "in_progress",
+    "submitted",
+    "revision_requested",
+    "resubmitted",
+    "approved"
+  ]
+}

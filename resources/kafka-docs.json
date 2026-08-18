@@ -1,0 +1,13 @@
+{
+  "schemaVersion": 1,
+  "id": "kafka-docs",
+  "title": "Apache Kafka Documentation",
+  "url": "https://kafka.apache.org/documentation/",
+  "type": "official_docs",
+  "provider": "Apache Kafka",
+  "tier": "deep_dive",
+  "topics": [
+    "event-streaming",
+    "distributed-log"
+  ]
+}

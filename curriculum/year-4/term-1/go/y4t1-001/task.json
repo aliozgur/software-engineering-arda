@@ -1,0 +1,50 @@
+{
+  "schemaVersion": 1,
+  "id": "y4t1-001",
+  "title": "Go for Networked and Concurrent Services",
+  "term": "year-4/term-1",
+  "module": "go",
+  "estimatedHours": 20,
+  "competencies": [
+    "go",
+    "networking",
+    "testing-quality"
+  ],
+  "resources": [
+    "go-tutorials"
+  ],
+  "instructionsFile": "instructions.md",
+  "aiPolicy": {
+    "mode": "guided",
+    "allowedCapabilities": [
+      "explain",
+      "hint",
+      "quiz",
+      "review",
+      "debugging_questions"
+    ],
+    "solutionGenerationAllowed": false,
+    "disclosureRequired": true
+  },
+  "evidence": [
+    "Git history showing incremental work",
+    "README or technical note explaining the result",
+    "Executable code/configuration when the task includes implementation",
+    "Reflection notes answering the task questions",
+    "AI disclosure entry when AI materially influenced the work"
+  ],
+  "acceptanceCriteria": [
+    "go test passes; race detector is clean for tested paths.",
+    "Cancellation is propagated.",
+    "Errors are handled idiomatically.",
+    "Apprentice can compare Go concurrency with C# async/tasks and OS threads."
+  ],
+  "statusModel": [
+    "not_started",
+    "in_progress",
+    "submitted",
+    "revision_requested",
+    "resubmitted",
+    "approved"
+  ]
+}

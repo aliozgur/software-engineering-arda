@@ -1,0 +1,49 @@
+{
+  "schemaVersion": 1,
+  "id": "y3t1-007",
+  "title": "Kafka Concepts and Event Logs",
+  "term": "year-3/term-1",
+  "module": "event-streaming",
+  "estimatedHours": 12,
+  "competencies": [
+    "messaging",
+    "distributed-systems"
+  ],
+  "resources": [
+    "kafka-docs"
+  ],
+  "instructionsFile": "instructions.md",
+  "aiPolicy": {
+    "mode": "guided",
+    "allowedCapabilities": [
+      "explain",
+      "hint",
+      "quiz",
+      "review",
+      "debugging_questions"
+    ],
+    "solutionGenerationAllowed": false,
+    "disclosureRequired": true
+  },
+  "evidence": [
+    "Git history showing incremental work",
+    "README or technical note explaining the result",
+    "Executable code/configuration when the task includes implementation",
+    "Reflection notes answering the task questions",
+    "AI disclosure entry when AI materially influenced the work"
+  ],
+  "acceptanceCriteria": [
+    "Comparison is scenario-based, not brand-based.",
+    "Apprentice can explain offset and consumer group.",
+    "Ordering claims are scoped to partitions.",
+    "Replay implications for consumers are understood."
+  ],
+  "statusModel": [
+    "not_started",
+    "in_progress",
+    "submitted",
+    "revision_requested",
+    "resubmitted",
+    "approved"
+  ]
+}

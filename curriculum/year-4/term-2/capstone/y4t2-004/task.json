@@ -1,0 +1,47 @@
+{
+  "schemaVersion": 1,
+  "id": "y4t2-004",
+  "title": "Capstone Proposal and Research",
+  "term": "year-4/term-2",
+  "module": "capstone",
+  "estimatedHours": 16,
+  "competencies": [
+    "professional-practice",
+    "software-design"
+  ],
+  "resources": [],
+  "instructionsFile": "instructions.md",
+  "aiPolicy": {
+    "mode": "ai_brainstorm_only",
+    "allowedCapabilities": [
+      "explain",
+      "hint",
+      "quiz",
+      "review",
+      "debugging_questions"
+    ],
+    "solutionGenerationAllowed": false,
+    "disclosureRequired": true
+  },
+  "evidence": [
+    "Git history showing incremental work",
+    "README or technical note explaining the result",
+    "Executable code/configuration when the task includes implementation",
+    "Reflection notes answering the task questions",
+    "AI disclosure entry when AI materially influenced the work"
+  ],
+  "acceptanceCriteria": [
+    "Proposal has a real problem, not a technology shopping list.",
+    "Scope fits available weeks.",
+    "Risks have mitigation/experiments.",
+    "Mentor approves before major implementation."
+  ],
+  "statusModel": [
+    "not_started",
+    "in_progress",
+    "submitted",
+    "revision_requested",
+    "resubmitted",
+    "approved"
+  ]
+}

@@ -1,0 +1,50 @@
+{
+  "schemaVersion": 1,
+  "id": "y4t2-003",
+  "title": "Maintain a Small Open-Source Project",
+  "term": "year-4/term-2",
+  "module": "open-source",
+  "estimatedHours": 18,
+  "competencies": [
+    "open-source",
+    "release-engineering",
+    "professional-practice"
+  ],
+  "resources": [
+    "semver"
+  ],
+  "instructionsFile": "instructions.md",
+  "aiPolicy": {
+    "mode": "guided",
+    "allowedCapabilities": [
+      "explain",
+      "hint",
+      "quiz",
+      "review",
+      "debugging_questions"
+    ],
+    "solutionGenerationAllowed": false,
+    "disclosureRequired": true
+  },
+  "evidence": [
+    "Git history showing incremental work",
+    "README or technical note explaining the result",
+    "Executable code/configuration when the task includes implementation",
+    "Reflection notes answering the task questions",
+    "AI disclosure entry when AI materially influenced the work"
+  ],
+  "acceptanceCriteria": [
+    "Repository is understandable to a newcomer.",
+    "Releases are tagged and have notes.",
+    "Review feedback is respectful and technically grounded.",
+    "Maintenance policy is realistic."
+  ],
+  "statusModel": [
+    "not_started",
+    "in_progress",
+    "submitted",
+    "revision_requested",
+    "resubmitted",
+    "approved"
+  ]
+}

@@ -1,0 +1,8 @@
+# apprenti.dev local projection/runtime
+.apprenti/
+*.sqlite
+*.sqlite3
+*.db
+models/
+downloads/
+.DS_Store

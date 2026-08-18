@@ -1,0 +1,16 @@
+{
+  "schemaVersion": 1,
+  "id": "harvard-cs50sql",
+  "title": "Harvard CS50 SQL - Introduction to Databases with SQL",
+  "url": "https://cs50.harvard.edu/sql/",
+  "type": "university_course",
+  "provider": "Harvard",
+  "tier": "primary",
+  "topics": [
+    "sql",
+    "relational-model",
+    "normalization",
+    "indexes",
+    "scaling"
+  ]
+}

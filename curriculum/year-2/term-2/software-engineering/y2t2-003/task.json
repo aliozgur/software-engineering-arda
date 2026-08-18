@@ -1,0 +1,47 @@
+{
+  "schemaVersion": 1,
+  "id": "y2t2-003",
+  "title": "Modularity, Refactoring and Architecture",
+  "term": "year-2/term-2",
+  "module": "software-engineering",
+  "estimatedHours": 18,
+  "competencies": [
+    "software-design",
+    "testing-quality"
+  ],
+  "resources": [],
+  "instructionsFile": "instructions.md",
+  "aiPolicy": {
+    "mode": "guided",
+    "allowedCapabilities": [
+      "explain",
+      "hint",
+      "quiz",
+      "review",
+      "debugging_questions"
+    ],
+    "solutionGenerationAllowed": false,
+    "disclosureRequired": true
+  },
+  "evidence": [
+    "Git history showing incremental work",
+    "README or technical note explaining the result",
+    "Executable code/configuration when the task includes implementation",
+    "Reflection notes answering the task questions",
+    "AI disclosure entry when AI materially influenced the work"
+  ],
+  "acceptanceCriteria": [
+    "Behavior remains covered by tests.",
+    "Refactoring commits are separate from feature changes.",
+    "ADR contains context, decision, consequences and alternatives.",
+    "Apprentice can explain why the new structure makes a named change easier."
+  ],
+  "statusModel": [
+    "not_started",
+    "in_progress",
+    "submitted",
+    "revision_requested",
+    "resubmitted",
+    "approved"
+  ]
+}

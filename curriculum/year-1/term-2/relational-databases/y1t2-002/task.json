@@ -1,0 +1,48 @@
+{
+  "schemaVersion": 1,
+  "id": "y1t2-002",
+  "title": "Relational Modelling and SQL",
+  "term": "year-1/term-2",
+  "module": "relational-databases",
+  "estimatedHours": 16,
+  "competencies": [
+    "relational-data"
+  ],
+  "resources": [
+    "harvard-cs50sql"
+  ],
+  "instructionsFile": "instructions.md",
+  "aiPolicy": {
+    "mode": "guided",
+    "allowedCapabilities": [
+      "explain",
+      "hint",
+      "quiz",
+      "review",
+      "debugging_questions"
+    ],
+    "solutionGenerationAllowed": false,
+    "disclosureRequired": true
+  },
+  "evidence": [
+    "Git history showing incremental work",
+    "README or technical note explaining the result",
+    "Executable code/configuration when the task includes implementation",
+    "Reflection notes answering the task questions",
+    "AI disclosure entry when AI materially influenced the work"
+  ],
+  "acceptanceCriteria": [
+    "ER diagram and schema agree.",
+    "Primary/foreign keys and constraints enforce important invariants.",
+    "Queries include joins, aggregation and subqueries/CTEs.",
+    "Normalization decisions are explained."
+  ],
+  "statusModel": [
+    "not_started",
+    "in_progress",
+    "submitted",
+    "revision_requested",
+    "resubmitted",
+    "approved"
+  ]
+}

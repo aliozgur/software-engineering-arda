@@ -1,0 +1,51 @@
+{
+  "schemaVersion": 1,
+  "id": "y1t2-005",
+  "title": "HTTP and API Fundamentals",
+  "term": "year-1/term-2",
+  "module": "http-api",
+  "estimatedHours": 12,
+  "competencies": [
+    "http-api",
+    "networking"
+  ],
+  "resources": [
+    "mdn",
+    "rfc-http",
+    "openapi"
+  ],
+  "instructionsFile": "instructions.md",
+  "aiPolicy": {
+    "mode": "guided",
+    "allowedCapabilities": [
+      "explain",
+      "hint",
+      "quiz",
+      "review",
+      "debugging_questions"
+    ],
+    "solutionGenerationAllowed": false,
+    "disclosureRequired": true
+  },
+  "evidence": [
+    "Git history showing incremental work",
+    "README or technical note explaining the result",
+    "Executable code/configuration when the task includes implementation",
+    "Reflection notes answering the task questions",
+    "AI disclosure entry when AI materially influenced the work"
+  ],
+  "acceptanceCriteria": [
+    "API contract and implementation agree.",
+    "Status codes are defensible.",
+    "Errors do not expose stack traces or secrets.",
+    "A curl-based smoke test is included."
+  ],
+  "statusModel": [
+    "not_started",
+    "in_progress",
+    "submitted",
+    "revision_requested",
+    "resubmitted",
+    "approved"
+  ]
+}

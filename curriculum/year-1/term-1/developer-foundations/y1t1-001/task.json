@@ -1,0 +1,48 @@
+{
+  "schemaVersion": 1,
+  "id": "y1t1-001",
+  "title": "Build Your Engineering Workstation",
+  "term": "year-1/term-1",
+  "module": "developer-foundations",
+  "estimatedHours": 6,
+  "competencies": [
+    "engineering-tooling"
+  ],
+  "resources": [
+    "mit-missing-semester"
+  ],
+  "instructionsFile": "instructions.md",
+  "aiPolicy": {
+    "mode": "guided",
+    "allowedCapabilities": [
+      "explain",
+      "hint",
+      "quiz",
+      "review",
+      "debugging_questions"
+    ],
+    "solutionGenerationAllowed": false,
+    "disclosureRequired": true
+  },
+  "evidence": [
+    "Git history showing incremental work",
+    "README or technical note explaining the result",
+    "Executable code/configuration when the task includes implementation",
+    "Reflection notes answering the task questions",
+    "AI disclosure entry when AI materially influenced the work"
+  ],
+  "acceptanceCriteria": [
+    "A setup README can reproduce the environment.",
+    "At least 15 shell commands are demonstrated with explanations.",
+    "No secrets or tokens are committed.",
+    "Mentor can ask the apprentice to locate a process, inspect PATH and redirect output without a GUI."
+  ],
+  "statusModel": [
+    "not_started",
+    "in_progress",
+    "submitted",
+    "revision_requested",
+    "resubmitted",
+    "approved"
+  ]
+}

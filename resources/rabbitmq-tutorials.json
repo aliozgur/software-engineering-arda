@@ -1,0 +1,14 @@
+{
+  "schemaVersion": 1,
+  "id": "rabbitmq-tutorials",
+  "title": "RabbitMQ Tutorials",
+  "url": "https://www.rabbitmq.com/tutorials",
+  "type": "official_docs",
+  "provider": "RabbitMQ",
+  "tier": "reference",
+  "topics": [
+    "message-brokers",
+    "queues",
+    "pub-sub"
+  ]
+}

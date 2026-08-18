@@ -1,0 +1,50 @@
+{
+  "schemaVersion": 1,
+  "id": "y1s-002",
+  "title": "Mentor Challenge: Diagnose a Slow Query",
+  "term": "year-1/summer",
+  "module": "mentor-challenge",
+  "estimatedHours": 8,
+  "competencies": [
+    "relational-data",
+    "performance",
+    "professional-practice"
+  ],
+  "resources": [
+    "postgres-docs"
+  ],
+  "instructionsFile": "instructions.md",
+  "aiPolicy": {
+    "mode": "hint_only",
+    "allowedCapabilities": [
+      "explain",
+      "hint",
+      "quiz",
+      "review",
+      "debugging_questions"
+    ],
+    "solutionGenerationAllowed": false,
+    "disclosureRequired": true
+  },
+  "evidence": [
+    "Git history showing incremental work",
+    "README or technical note explaining the result",
+    "Executable code/configuration when the task includes implementation",
+    "Reflection notes answering the task questions",
+    "AI disclosure entry when AI materially influenced the work"
+  ],
+  "acceptanceCriteria": [
+    "Before/after measurements are present.",
+    "Changes are justified.",
+    "No 'add indexes everywhere' solution.",
+    "Report separates observations, hypotheses, experiments and conclusion."
+  ],
+  "statusModel": [
+    "not_started",
+    "in_progress",
+    "submitted",
+    "revision_requested",
+    "resubmitted",
+    "approved"
+  ]
+}

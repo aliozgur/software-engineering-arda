@@ -1,0 +1,16 @@
+{
+  "schemaVersion": 1,
+  "id": "mit-61810",
+  "title": "MIT 6.1810 - Operating System Engineering",
+  "url": "https://pdos.csail.mit.edu/6.1810/",
+  "type": "university_course",
+  "provider": "MIT",
+  "tier": "primary",
+  "topics": [
+    "operating-systems",
+    "xv6",
+    "virtual-memory",
+    "filesystems",
+    "concurrency"
+  ]
+}

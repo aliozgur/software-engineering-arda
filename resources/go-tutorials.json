@@ -1,0 +1,14 @@
+{
+  "schemaVersion": 1,
+  "id": "go-tutorials",
+  "title": "Go Tutorials",
+  "url": "https://go.dev/doc/tutorial/",
+  "type": "official_docs",
+  "provider": "Go",
+  "tier": "reference",
+  "topics": [
+    "go",
+    "concurrency",
+    "web-api"
+  ]
+}

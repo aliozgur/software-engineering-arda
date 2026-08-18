@@ -1,0 +1,18 @@
+{
+  "schemaVersion": 1,
+  "id": "harvard-cs50x",
+  "title": "Harvard CS50x 2026 - Introduction to Computer Science",
+  "url": "https://cs50.harvard.edu/x/2026/",
+  "type": "university_course",
+  "provider": "Harvard",
+  "tier": "primary",
+  "topics": [
+    "c",
+    "algorithms",
+    "memory",
+    "data-structures",
+    "python",
+    "sql",
+    "web"
+  ]
+}

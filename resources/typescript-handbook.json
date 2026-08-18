@@ -1,0 +1,12 @@
+{
+  "schemaVersion": 1,
+  "id": "typescript-handbook",
+  "title": "TypeScript Handbook",
+  "url": "https://www.typescriptlang.org/docs/handbook/intro.html",
+  "type": "official_docs",
+  "provider": "Microsoft",
+  "tier": "reference",
+  "topics": [
+    "typescript"
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "schemaVersion": 1,
+  "id": "apprenti-dev-software-engineering-2026",
+  "name": "apprenti.dev Software Engineering Apprenticeship",
+  "version": "0.1.0",
+  "durationYears": 4,
+  "audience": "University student complementing a Mathematics/Computer Science degree",
+  "philosophy": "Evidence-driven apprenticeship: learn, build, prove, reflect, review.",
+  "defaultWeeklyHours": {
+    "duringTerm": "5-7",
+    "summer": "8-12"
+  },
+  "roles": [
+    "apprentice",
+    "mentor"
+  ],
+  "languages": [
+    "Python",
+    "C",
+    "JavaScript/TypeScript",
+    "C#",
+    "Go",
+    "SQL",
+    "Dart"
+  ],
+  "corePlatforms": [
+    "PostgreSQL",
+    "MongoDB",
+    "RabbitMQ",
+    "Docker",
+    "Git"
+  ],
+  "aiPrinciples": [
+    "AI assistance must be disclosed when materially used.",
+    "Tasks may restrict solution generation while allowing explanations, hints, quizzes and review.",
+    "The apprentice remains accountable for every submitted artifact.",
+    "Mentor approval is based on demonstrated understanding, not AI output quality."
+  ]
+}

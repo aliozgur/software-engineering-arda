@@ -1,0 +1,50 @@
+{
+  "schemaVersion": 1,
+  "id": "y1t2-003",
+  "title": "PostgreSQL: Transactions, Indexes and EXPLAIN",
+  "term": "year-1/term-2",
+  "module": "postgresql",
+  "estimatedHours": 14,
+  "competencies": [
+    "relational-data",
+    "performance"
+  ],
+  "resources": [
+    "harvard-cs50sql",
+    "postgres-docs"
+  ],
+  "instructionsFile": "instructions.md",
+  "aiPolicy": {
+    "mode": "guided",
+    "allowedCapabilities": [
+      "explain",
+      "hint",
+      "quiz",
+      "review",
+      "debugging_questions"
+    ],
+    "solutionGenerationAllowed": false,
+    "disclosureRequired": true
+  },
+  "evidence": [
+    "Git history showing incremental work",
+    "README or technical note explaining the result",
+    "Executable code/configuration when the task includes implementation",
+    "Reflection notes answering the task questions",
+    "AI disclosure entry when AI materially influenced the work"
+  ],
+  "acceptanceCriteria": [
+    "Measurements are recorded.",
+    "EXPLAIN output is interpreted in apprentice's own words.",
+    "Transaction demo is reproducible.",
+    "Index choices reference workload, not blanket rules."
+  ],
+  "statusModel": [
+    "not_started",
+    "in_progress",
+    "submitted",
+    "revision_requested",
+    "resubmitted",
+    "approved"
+  ]
+}

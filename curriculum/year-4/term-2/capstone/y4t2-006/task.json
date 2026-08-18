@@ -1,0 +1,48 @@
+{
+  "schemaVersion": 1,
+  "id": "y4t2-006",
+  "title": "Capstone Defense and Portfolio",
+  "term": "year-4/term-2",
+  "module": "capstone",
+  "estimatedHours": 16,
+  "competencies": [
+    "professional-practice",
+    "ai-assisted-engineering",
+    "open-source"
+  ],
+  "resources": [],
+  "instructionsFile": "instructions.md",
+  "aiPolicy": {
+    "mode": "allowed",
+    "allowedCapabilities": [
+      "explain",
+      "hint",
+      "quiz",
+      "review",
+      "debugging_questions"
+    ],
+    "solutionGenerationAllowed": true,
+    "disclosureRequired": true
+  },
+  "evidence": [
+    "Git history showing incremental work",
+    "README or technical note explaining the result",
+    "Executable code/configuration when the task includes implementation",
+    "Reflection notes answering the task questions",
+    "AI disclosure entry when AI materially influenced the work"
+  ],
+  "acceptanceCriteria": [
+    "Every major competency claim links to concrete evidence.",
+    "Defense includes a live technical question segment.",
+    "Portfolio emphasizes depth and growth, not certificate count.",
+    "AI disclosure is complete."
+  ],
+  "statusModel": [
+    "not_started",
+    "in_progress",
+    "submitted",
+    "revision_requested",
+    "resubmitted",
+    "approved"
+  ]
+}

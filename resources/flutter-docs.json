@@ -1,0 +1,14 @@
+{
+  "schemaVersion": 1,
+  "id": "flutter-docs",
+  "title": "Flutter Documentation",
+  "url": "https://docs.flutter.dev/",
+  "type": "official_docs",
+  "provider": "Flutter",
+  "tier": "reference",
+  "topics": [
+    "mobile",
+    "flutter",
+    "dart"
+  ]
+}

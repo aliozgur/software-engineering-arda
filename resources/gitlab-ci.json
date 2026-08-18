@@ -1,0 +1,13 @@
+{
+  "schemaVersion": 1,
+  "id": "gitlab-ci",
+  "title": "GitLab CI/CD Documentation",
+  "url": "https://docs.gitlab.com/ci/",
+  "type": "official_docs",
+  "provider": "GitLab",
+  "tier": "reference",
+  "topics": [
+    "ci-cd",
+    "automation"
+  ]
+}

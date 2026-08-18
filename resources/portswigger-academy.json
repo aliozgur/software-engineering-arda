@@ -1,0 +1,13 @@
+{
+  "schemaVersion": 1,
+  "id": "portswigger-academy",
+  "title": "PortSwigger Web Security Academy",
+  "url": "https://portswigger.net/web-security",
+  "type": "interactive_course",
+  "provider": "PortSwigger",
+  "tier": "primary",
+  "topics": [
+    "web-security",
+    "vulnerabilities"
+  ]
+}

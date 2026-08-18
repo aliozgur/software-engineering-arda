@@ -1,0 +1,49 @@
+{
+  "schemaVersion": 1,
+  "id": "y1t1-005",
+  "title": "CS50x: C, Memory and Data Structures",
+  "term": "year-1/term-1",
+  "module": "computer-science",
+  "estimatedHours": 24,
+  "competencies": [
+    "c-memory",
+    "algorithms"
+  ],
+  "resources": [
+    "harvard-cs50x"
+  ],
+  "instructionsFile": "instructions.md",
+  "aiPolicy": {
+    "mode": "restricted",
+    "allowedCapabilities": [
+      "explain",
+      "hint",
+      "quiz",
+      "review",
+      "debugging_questions"
+    ],
+    "solutionGenerationAllowed": false,
+    "disclosureRequired": true
+  },
+  "evidence": [
+    "Git history showing incremental work",
+    "README or technical note explaining the result",
+    "Executable code/configuration when the task includes implementation",
+    "Reflection notes answering the task questions",
+    "AI disclosure entry when AI materially influenced the work"
+  ],
+  "acceptanceCriteria": [
+    "Selected CS50 problem sets are completed honestly.",
+    "C code frees allocated memory.",
+    "Apprentice can explain pointer versus value semantics.",
+    "Complexity of implemented operations is documented."
+  ],
+  "statusModel": [
+    "not_started",
+    "in_progress",
+    "submitted",
+    "revision_requested",
+    "resubmitted",
+    "approved"
+  ]
+}

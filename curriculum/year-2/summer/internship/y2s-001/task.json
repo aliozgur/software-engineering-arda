@@ -1,0 +1,49 @@
+{
+  "schemaVersion": 1,
+  "id": "y2s-001",
+  "title": "Engineering Internship or Simulated Team Sprint",
+  "term": "year-2/summer",
+  "module": "internship",
+  "estimatedHours": 40,
+  "competencies": [
+    "professional-practice",
+    "git",
+    "testing-quality",
+    "software-design"
+  ],
+  "resources": [],
+  "instructionsFile": "instructions.md",
+  "aiPolicy": {
+    "mode": "guided",
+    "allowedCapabilities": [
+      "explain",
+      "hint",
+      "quiz",
+      "review",
+      "debugging_questions"
+    ],
+    "solutionGenerationAllowed": false,
+    "disclosureRequired": true
+  },
+  "evidence": [
+    "Git history showing incremental work",
+    "README or technical note explaining the result",
+    "Executable code/configuration when the task includes implementation",
+    "Reflection notes answering the task questions",
+    "AI disclosure entry when AI materially influenced the work"
+  ],
+  "acceptanceCriteria": [
+    "At least one feature moves from requirement to reviewed release.",
+    "Review comments are addressed transparently.",
+    "Estimation error is analyzed without gaming the numbers.",
+    "Retrospective identifies one concrete behavior change."
+  ],
+  "statusModel": [
+    "not_started",
+    "in_progress",
+    "submitted",
+    "revision_requested",
+    "resubmitted",
+    "approved"
+  ]
+}

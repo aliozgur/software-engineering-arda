@@ -1,0 +1,16 @@
+{
+  "schemaVersion": 1,
+  "id": "mdn",
+  "title": "MDN Web Docs",
+  "url": "https://developer.mozilla.org/",
+  "type": "official_docs",
+  "provider": "Mozilla",
+  "tier": "reference",
+  "topics": [
+    "html",
+    "css",
+    "javascript",
+    "http",
+    "web"
+  ]
+}

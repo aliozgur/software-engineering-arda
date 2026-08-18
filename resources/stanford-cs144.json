@@ -1,0 +1,15 @@
+{
+  "schemaVersion": 1,
+  "id": "stanford-cs144",
+  "title": "Stanford CS144 - Introduction to Computer Networking",
+  "url": "https://cs144.github.io/",
+  "type": "university_course",
+  "provider": "Stanford",
+  "tier": "primary",
+  "topics": [
+    "networking",
+    "tcp",
+    "ip",
+    "routing"
+  ]
+}

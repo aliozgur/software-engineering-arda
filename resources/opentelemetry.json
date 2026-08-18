@@ -1,0 +1,15 @@
+{
+  "schemaVersion": 1,
+  "id": "opentelemetry",
+  "title": "OpenTelemetry Documentation",
+  "url": "https://opentelemetry.io/docs/",
+  "type": "official_docs",
+  "provider": "OpenTelemetry",
+  "tier": "reference",
+  "topics": [
+    "observability",
+    "traces",
+    "metrics",
+    "logs"
+  ]
+}

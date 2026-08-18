@@ -1,0 +1,16 @@
+{
+  "schemaVersion": 1,
+  "id": "cmu-15445",
+  "title": "CMU 15-445/645 - Database Systems",
+  "url": "https://15445.courses.cs.cmu.edu/",
+  "type": "university_course",
+  "provider": "Carnegie Mellon",
+  "tier": "primary",
+  "topics": [
+    "database-internals",
+    "storage",
+    "indexes",
+    "transactions",
+    "query-processing"
+  ]
+}

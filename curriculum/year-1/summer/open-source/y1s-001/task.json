@@ -1,0 +1,50 @@
+{
+  "schemaVersion": 1,
+  "id": "y1s-001",
+  "title": "Read and Contribute to an Open-Source Project",
+  "term": "year-1/summer",
+  "module": "open-source",
+  "estimatedHours": 18,
+  "competencies": [
+    "open-source",
+    "git",
+    "professional-practice"
+  ],
+  "resources": [
+    "pro-git"
+  ],
+  "instructionsFile": "instructions.md",
+  "aiPolicy": {
+    "mode": "guided",
+    "allowedCapabilities": [
+      "explain",
+      "hint",
+      "quiz",
+      "review",
+      "debugging_questions"
+    ],
+    "solutionGenerationAllowed": false,
+    "disclosureRequired": true
+  },
+  "evidence": [
+    "Git history showing incremental work",
+    "README or technical note explaining the result",
+    "Executable code/configuration when the task includes implementation",
+    "Reflection notes answering the task questions",
+    "AI disclosure entry when AI materially influenced the work"
+  ],
+  "acceptanceCriteria": [
+    "Contribution follows project conventions.",
+    "Patch/PR is small and justified.",
+    "Journal records review feedback and response.",
+    "Apprentice can explain the project's license at a practical level."
+  ],
+  "statusModel": [
+    "not_started",
+    "in_progress",
+    "submitted",
+    "revision_requested",
+    "resubmitted",
+    "approved"
+  ]
+}

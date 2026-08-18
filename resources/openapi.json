@@ -1,0 +1,13 @@
+{
+  "schemaVersion": 1,
+  "id": "openapi",
+  "title": "OpenAPI Specification",
+  "url": "https://spec.openapis.org/oas/latest.html",
+  "type": "specification",
+  "provider": "OpenAPI Initiative",
+  "tier": "reference",
+  "topics": [
+    "api-design",
+    "http"
+  ]
+}

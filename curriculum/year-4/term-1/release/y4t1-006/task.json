@@ -1,0 +1,47 @@
+{
+  "schemaVersion": 1,
+  "id": "y4t1-006",
+  "title": "Dependency and Supply-Chain Hygiene",
+  "term": "year-4/term-1",
+  "module": "release",
+  "estimatedHours": 12,
+  "competencies": [
+    "release-engineering",
+    "security"
+  ],
+  "resources": [],
+  "instructionsFile": "instructions.md",
+  "aiPolicy": {
+    "mode": "guided",
+    "allowedCapabilities": [
+      "explain",
+      "hint",
+      "quiz",
+      "review",
+      "debugging_questions"
+    ],
+    "solutionGenerationAllowed": false,
+    "disclosureRequired": true
+  },
+  "evidence": [
+    "Git history showing incremental work",
+    "README or technical note explaining the result",
+    "Executable code/configuration when the task includes implementation",
+    "Reflection notes answering the task questions",
+    "AI disclosure entry when AI materially influenced the work"
+  ],
+  "acceptanceCriteria": [
+    "Dependency inventory is reproducible.",
+    "No secrets in build configuration.",
+    "Lockfiles are committed where ecosystem expects them.",
+    "Policy distinguishes routine update from urgent security response."
+  ],
+  "statusModel": [
+    "not_started",
+    "in_progress",
+    "submitted",
+    "revision_requested",
+    "resubmitted",
+    "approved"
+  ]
+}

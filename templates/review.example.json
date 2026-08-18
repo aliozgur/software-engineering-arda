@@ -1,0 +1,12 @@
+{
+  "schemaVersion": 1,
+  "id": "review-example",
+  "submissionId": "submission-example",
+  "mentorId": "mentor-example",
+  "decision": "revision_requested",
+  "reviewedAt": "2026-09-03T18:00:00+03:00",
+  "strengths": [],
+  "gaps": [],
+  "questions": [],
+  "followUpTaskIds": []
+}

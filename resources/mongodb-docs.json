@@ -1,0 +1,13 @@
+{
+  "schemaVersion": 1,
+  "id": "mongodb-docs",
+  "title": "MongoDB Manual",
+  "url": "https://www.mongodb.com/docs/manual/",
+  "type": "official_docs",
+  "provider": "MongoDB",
+  "tier": "reference",
+  "topics": [
+    "mongodb",
+    "document-database"
+  ]
+}

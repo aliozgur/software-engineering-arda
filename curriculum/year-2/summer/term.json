@@ -1,0 +1,9 @@
+{
+  "schemaVersion": 1,
+  "id": "year-2-summer",
+  "title": "Year 2 / Summer",
+  "estimatedHours": 40,
+  "tasks": [
+    "y2s-001"
+  ]
+}

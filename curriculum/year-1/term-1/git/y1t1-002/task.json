@@ -1,0 +1,49 @@
+{
+  "schemaVersion": 1,
+  "id": "y1t1-002",
+  "title": "Understand Git, Don't Memorize It",
+  "term": "year-1/term-1",
+  "module": "git",
+  "estimatedHours": 8,
+  "competencies": [
+    "git"
+  ],
+  "resources": [
+    "mit-missing-semester",
+    "pro-git"
+  ],
+  "instructionsFile": "instructions.md",
+  "aiPolicy": {
+    "mode": "guided",
+    "allowedCapabilities": [
+      "explain",
+      "hint",
+      "quiz",
+      "review",
+      "debugging_questions"
+    ],
+    "solutionGenerationAllowed": false,
+    "disclosureRequired": true
+  },
+  "evidence": [
+    "Git history showing incremental work",
+    "README or technical note explaining the result",
+    "Executable code/configuration when the task includes implementation",
+    "Reflection notes answering the task questions",
+    "AI disclosure entry when AI materially influenced the work"
+  ],
+  "acceptanceCriteria": [
+    "Repository contains meaningful history, not one final commit.",
+    "A Markdown note explains working tree, index, HEAD, branch and commit.",
+    "Conflict resolution is documented.",
+    "Apprentice can explain why rebase changes commit IDs."
+  ],
+  "statusModel": [
+    "not_started",
+    "in_progress",
+    "submitted",
+    "revision_requested",
+    "resubmitted",
+    "approved"
+  ]
+}

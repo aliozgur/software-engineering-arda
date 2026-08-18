@@ -1,0 +1,13 @@
+{
+  "schemaVersion": 1,
+  "id": "github-actions",
+  "title": "GitHub Actions Documentation",
+  "url": "https://docs.github.com/actions",
+  "type": "official_docs",
+  "provider": "GitHub",
+  "tier": "reference",
+  "topics": [
+    "ci-cd",
+    "automation"
+  ]
+}

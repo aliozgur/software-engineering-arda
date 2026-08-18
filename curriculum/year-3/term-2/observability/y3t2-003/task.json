@@ -1,0 +1,50 @@
+{
+  "schemaVersion": 1,
+  "id": "y3t2-003",
+  "title": "Logs, Metrics and Traces",
+  "term": "year-3/term-2",
+  "module": "observability",
+  "estimatedHours": 16,
+  "competencies": [
+    "observability",
+    "professional-practice"
+  ],
+  "resources": [
+    "opentelemetry",
+    "prometheus"
+  ],
+  "instructionsFile": "instructions.md",
+  "aiPolicy": {
+    "mode": "guided",
+    "allowedCapabilities": [
+      "explain",
+      "hint",
+      "quiz",
+      "review",
+      "debugging_questions"
+    ],
+    "solutionGenerationAllowed": false,
+    "disclosureRequired": true
+  },
+  "evidence": [
+    "Git history showing incremental work",
+    "README or technical note explaining the result",
+    "Executable code/configuration when the task includes implementation",
+    "Reflection notes answering the task questions",
+    "AI disclosure entry when AI materially influenced the work"
+  ],
+  "acceptanceCriteria": [
+    "Signals answer specific operational questions.",
+    "No passwords/tokens/personal secrets are logged.",
+    "Trace connects relevant components.",
+    "Runbook contains detection, diagnosis and recovery steps."
+  ],
+  "statusModel": [
+    "not_started",
+    "in_progress",
+    "submitted",
+    "revision_requested",
+    "resubmitted",
+    "approved"
+  ]
+}

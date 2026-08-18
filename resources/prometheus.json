@@ -1,0 +1,13 @@
+{
+  "schemaVersion": 1,
+  "id": "prometheus",
+  "title": "Prometheus Documentation",
+  "url": "https://prometheus.io/docs/introduction/overview/",
+  "type": "official_docs",
+  "provider": "Prometheus",
+  "tier": "reference",
+  "topics": [
+    "monitoring",
+    "metrics"
+  ]
+}

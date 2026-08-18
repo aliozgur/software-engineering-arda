@@ -1,0 +1,14 @@
+{
+  "schemaVersion": 1,
+  "id": "dotnet-docs",
+  "title": ".NET and C# Documentation",
+  "url": "https://learn.microsoft.com/dotnet/",
+  "type": "official_docs",
+  "provider": "Microsoft",
+  "tier": "reference",
+  "topics": [
+    "csharp",
+    "dotnet",
+    "aspnet-core"
+  ]
+}

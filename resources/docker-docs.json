@@ -1,0 +1,13 @@
+{
+  "schemaVersion": 1,
+  "id": "docker-docs",
+  "title": "Docker Get Started",
+  "url": "https://docs.docker.com/get-started/",
+  "type": "official_docs",
+  "provider": "Docker",
+  "tier": "reference",
+  "topics": [
+    "containers",
+    "docker"
+  ]
+}

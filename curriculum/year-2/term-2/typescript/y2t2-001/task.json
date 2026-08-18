@@ -1,0 +1,49 @@
+{
+  "schemaVersion": 1,
+  "id": "y2t2-001",
+  "title": "JavaScript to TypeScript",
+  "term": "year-2/term-2",
+  "module": "typescript",
+  "estimatedHours": 16,
+  "competencies": [
+    "web-foundations"
+  ],
+  "resources": [
+    "typescript-handbook",
+    "mdn"
+  ],
+  "instructionsFile": "instructions.md",
+  "aiPolicy": {
+    "mode": "guided",
+    "allowedCapabilities": [
+      "explain",
+      "hint",
+      "quiz",
+      "review",
+      "debugging_questions"
+    ],
+    "solutionGenerationAllowed": false,
+    "disclosureRequired": true
+  },
+  "evidence": [
+    "Git history showing incremental work",
+    "README or technical note explaining the result",
+    "Executable code/configuration when the task includes implementation",
+    "Reflection notes answering the task questions",
+    "AI disclosure entry when AI materially influenced the work"
+  ],
+  "acceptanceCriteria": [
+    "No unjustified any in domain code.",
+    "Build/type-check/test commands are documented.",
+    "Async error paths are tested.",
+    "Apprentice explains compile-time types versus runtime validation."
+  ],
+  "statusModel": [
+    "not_started",
+    "in_progress",
+    "submitted",
+    "revision_requested",
+    "resubmitted",
+    "approved"
+  ]
+}

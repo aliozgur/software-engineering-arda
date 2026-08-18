@@ -1,0 +1,49 @@
+{
+  "schemaVersion": 1,
+  "id": "y3s-001",
+  "title": "External-Facing Engineering Experience",
+  "term": "year-3/summer",
+  "module": "professional",
+  "estimatedHours": 50,
+  "competencies": [
+    "professional-practice",
+    "open-source",
+    "testing-quality",
+    "software-design"
+  ],
+  "resources": [],
+  "instructionsFile": "instructions.md",
+  "aiPolicy": {
+    "mode": "guided",
+    "allowedCapabilities": [
+      "explain",
+      "hint",
+      "quiz",
+      "review",
+      "debugging_questions"
+    ],
+    "solutionGenerationAllowed": false,
+    "disclosureRequired": true
+  },
+  "evidence": [
+    "Git history showing incremental work",
+    "README or technical note explaining the result",
+    "Executable code/configuration when the task includes implementation",
+    "Reflection notes answering the task questions",
+    "AI disclosure entry when AI materially influenced the work"
+  ],
+  "acceptanceCriteria": [
+    "Evidence demonstrates real external feedback.",
+    "Confidential information is not exposed.",
+    "Retrospective includes mistakes and changed practices.",
+    "Mentor can verify scope through artifacts or reviewer statement."
+  ],
+  "statusModel": [
+    "not_started",
+    "in_progress",
+    "submitted",
+    "revision_requested",
+    "resubmitted",
+    "approved"
+  ]
+}

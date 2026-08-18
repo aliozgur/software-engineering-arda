@@ -1,0 +1,13 @@
+{
+  "schemaVersion": 1,
+  "id": "rfc-http",
+  "title": "HTTP Semantics - RFC 9110",
+  "url": "https://www.rfc-editor.org/rfc/rfc9110",
+  "type": "specification",
+  "provider": "IETF",
+  "tier": "deep_dive",
+  "topics": [
+    "http",
+    "protocols"
+  ]
+}

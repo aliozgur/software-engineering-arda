@@ -1,0 +1,13 @@
+{
+  "schemaVersion": 1,
+  "id": "semver",
+  "title": "Semantic Versioning 2.0.0",
+  "url": "https://semver.org/",
+  "type": "specification",
+  "provider": "SemVer",
+  "tier": "reference",
+  "topics": [
+    "versioning",
+    "release-engineering"
+  ]
+}

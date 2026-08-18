@@ -1,0 +1,14 @@
+{
+  "schemaVersion": 1,
+  "id": "year-1-term-1",
+  "title": "Year 1 / Term 1",
+  "estimatedHours": 64,
+  "tasks": [
+    "y1t1-001",
+    "y1t1-002",
+    "y1t1-003",
+    "y1t1-004",
+    "y1t1-005",
+    "y1t1-006"
+  ]
+}

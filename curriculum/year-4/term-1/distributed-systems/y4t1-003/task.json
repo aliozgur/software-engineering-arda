@@ -1,0 +1,49 @@
+{
+  "schemaVersion": 1,
+  "id": "y4t1-003",
+  "title": "Replication and Consensus Laboratory",
+  "term": "year-4/term-1",
+  "module": "distributed-systems",
+  "estimatedHours": 30,
+  "competencies": [
+    "distributed-systems",
+    "go"
+  ],
+  "resources": [
+    "mit-65840"
+  ],
+  "instructionsFile": "instructions.md",
+  "aiPolicy": {
+    "mode": "restricted",
+    "allowedCapabilities": [
+      "explain",
+      "hint",
+      "quiz",
+      "review",
+      "debugging_questions"
+    ],
+    "solutionGenerationAllowed": false,
+    "disclosureRequired": true
+  },
+  "evidence": [
+    "Git history showing incremental work",
+    "README or technical note explaining the result",
+    "Executable code/configuration when the task includes implementation",
+    "Reflection notes answering the task questions",
+    "AI disclosure entry when AI materially influenced the work"
+  ],
+  "acceptanceCriteria": [
+    "Automated failure tests exist.",
+    "No claims of production-ready consensus.",
+    "Safety reasoning is understandable.",
+    "Apprentice can explain why 'two leaders' observations may or may not violate safety depending on term/time."
+  ],
+  "statusModel": [
+    "not_started",
+    "in_progress",
+    "submitted",
+    "revision_requested",
+    "resubmitted",
+    "approved"
+  ]
+}

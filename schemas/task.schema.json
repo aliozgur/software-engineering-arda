@@ -1,0 +1,65 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Apprenti Task",
+  "type": "object",
+  "required": [
+    "schemaVersion",
+    "id",
+    "title",
+    "term",
+    "module",
+    "estimatedHours",
+    "competencies",
+    "resources",
+    "aiPolicy",
+    "evidence",
+    "acceptanceCriteria"
+  ],
+  "properties": {
+    "schemaVersion": {
+      "type": "integer"
+    },
+    "id": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string"
+    },
+    "term": {
+      "type": "string"
+    },
+    "module": {
+      "type": "string"
+    },
+    "estimatedHours": {
+      "type": "number"
+    },
+    "competencies": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "resources": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "aiPolicy": {
+      "type": "object"
+    },
+    "evidence": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "acceptanceCriteria": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  }
+}
