@@ -6,7 +6,7 @@ The repository is intentionally shaped for the mobile app.
 - Task detail -> `task.json` + `instructions.md`
 - Resource library -> `resources/*.json`
 - Competency map -> `competencies/*.json`
-- Learner notes/reflections -> fork-specific Markdown
+- Learner notes/reflections -> fork-specific Markdown (`reflection.md`, `evidence.md`, `notes/*.md`) plus note metadata JSON
 - Submission -> fork-specific JSON
 - Mentor review -> fork-specific JSON
 - SQLite -> local projection/cache/search/embeddings/drafts/sync metadata

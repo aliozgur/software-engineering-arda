@@ -30,9 +30,14 @@ Suggested fork additions:
 learners/<learner-id>/profile.json
 learners/<learner-id>/tasks/<task-id>/state.json
 learners/<learner-id>/tasks/<task-id>/reflection.md
+learners/<learner-id>/tasks/<task-id>/evidence.md
+learners/<learner-id>/tasks/<task-id>/notes/<note-id>.json
+learners/<learner-id>/tasks/<task-id>/notes/<note-id>.md
 learners/<learner-id>/submissions/<submission-id>.json
 mentors/<mentor-id>/reviews/<review-id>.json
 ```
+
+Notes, reflections and evidence notes are **fork-owned**. See [docs/LEARNER_NOTES.md](docs/LEARNER_NOTES.md).
 
 ## Persistence philosophy for apprenti.dev
 
@@ -58,3 +63,4 @@ apprentice to explain and modify the submitted work.
 2. Read `docs/LEARNING_MODEL.md`.
 3. Begin with `curriculum/year-1/term-1/...`.
 4. Fork the repository before recording learner-specific progress.
+5. Read `docs/LEARNER_NOTES.md` before writing notes in the fork.

@@ -5,7 +5,7 @@ The canonical repository should remain usable as upstream curriculum. Learner/me
 ## Ownership boundaries
 
 - `curriculum/**`, `resources/**`, `competencies/**`, `schemas/**`: upstream/curator-owned.
-- `learners/<id>/**`: apprentice-owned durable learning records.
+- `learners/<id>/**`: apprentice-owned durable learning records (state, reflection, evidence note, notes).
 - `mentors/<id>/reviews/**`: mentor-owned review records.
 
 Separating ownership minimizes same-file conflicts.

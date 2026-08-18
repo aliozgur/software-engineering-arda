@@ -1,0 +1,28 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Apprenti learner note metadata",
+  "type": "object",
+  "required": ["schemaVersion", "id", "taskId", "title", "createdAt", "updatedAt"],
+  "properties": {
+    "schemaVersion": { "type": "integer" },
+    "id": { "type": "string" },
+    "taskId": { "type": "string" },
+    "title": { "type": "string" },
+    "createdAt": { "type": "string", "format": "date-time" },
+    "updatedAt": { "type": "string", "format": "date-time" },
+    "anchor": {
+      "type": "object",
+      "required": ["source", "quote"],
+      "properties": {
+        "source": {
+          "type": "string",
+          "description": "Stable source id. Use instructions for task instructions.md."
+        },
+        "quote": {
+          "type": "string",
+          "description": "Exact selected fragment from the source Markdown."
+        }
+      }
+    }
+  }
+}
