@@ -1,0 +1,12 @@
+{
+  "schemaVersion": 1,
+  "id": "hf-nlp-course",
+  "title": "Hugging Face NLP Course",
+  "url": "https://huggingface.co/learn/nlp-course/",
+  "type": "course",
+  "provider": "Hugging Face",
+  "tier": "primary",
+  "topics": [
+    "nlp"
+  ]
+}

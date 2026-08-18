@@ -1,0 +1,52 @@
+{
+  "schemaVersion": 1,
+  "id": "da1t2-004",
+  "title": "Exploratory Analysis With a Written Question",
+  "term": "year-1/term-2",
+  "module": "eda",
+  "estimatedHours": 10,
+  "competencies": [
+    "da-tabular-python",
+    "da-visualization",
+    "da-data-literacy"
+  ],
+  "resources": [
+    "pandas-docs",
+    "matplotlib-docs",
+    "python-data-science-handbook"
+  ],
+  "instructionsFile": "instructions.md",
+  "aiPolicy": {
+    "mode": "guided",
+    "allowedCapabilities": [
+      "explain",
+      "hint",
+      "quiz",
+      "review",
+      "debugging_questions"
+    ],
+    "solutionGenerationAllowed": false,
+    "disclosureRequired": true
+  },
+  "evidence": [
+    "Git history showing incremental work",
+    "README or technical note explaining the result",
+    "Executable code/notebooks when the task includes analysis or implementation",
+    "Reflection notes answering the task questions",
+    "AI disclosure entry when AI materially influenced the work"
+  ],
+  "acceptanceCriteria": [
+    "The question is written before the first 'insight' heading.",
+    "Quality checks appear before pretty charts.",
+    "Findings cite the figure or table that supports them.",
+    "The dead-end is kept in the repo."
+  ],
+  "statusModel": [
+    "not_started",
+    "in_progress",
+    "submitted",
+    "revision_requested",
+    "resubmitted",
+    "approved"
+  ]
+}

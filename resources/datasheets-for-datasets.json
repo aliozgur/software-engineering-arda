@@ -1,0 +1,12 @@
+{
+  "schemaVersion": 1,
+  "id": "datasheets-for-datasets",
+  "title": "Datasheets for Datasets",
+  "url": "https://arxiv.org/abs/1803.09010",
+  "type": "paper",
+  "provider": "Gebru et al.",
+  "tier": "primary",
+  "topics": [
+    "ethics"
+  ]
+}

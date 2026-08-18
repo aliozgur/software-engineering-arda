@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "da-descriptive-stats",
+  "title": "Descriptive Statistics",
+  "description": "Summaries, distributions, and claims that match the ink.",
+  "levels": [
+    {
+      "level": 1,
+      "name": "Foundation",
+      "description": "Can explain core concepts and complete guided work."
+    },
+    {
+      "level": 2,
+      "name": "Apprentice",
+      "description": "Can complete scoped tasks with limited guidance and produce evidence."
+    },
+    {
+      "level": 3,
+      "name": "Practitioner",
+      "description": "Can independently design, implement, test and explain non-trivial work."
+    },
+    {
+      "level": 4,
+      "name": "Journeyman",
+      "description": "Can handle ambiguity, diagnose failures and defend trade-offs."
+    },
+    {
+      "level": 5,
+      "name": "Mastery Evidence",
+      "description": "Can teach, review and make sound decisions across unfamiliar situations."
+    }
+  ]
+}

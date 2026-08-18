@@ -1,0 +1,52 @@
+{
+  "schemaVersion": 1,
+  "id": "da1t1-001",
+  "title": "Analyst Workstation and Reproducible Work",
+  "term": "year-1/term-1",
+  "module": "foundations",
+  "estimatedHours": 8,
+  "competencies": [
+    "git",
+    "python",
+    "da-data-literacy"
+  ],
+  "resources": [
+    "mit-missing-semester",
+    "python-docs",
+    "pro-git"
+  ],
+  "instructionsFile": "instructions.md",
+  "aiPolicy": {
+    "mode": "guided",
+    "allowedCapabilities": [
+      "explain",
+      "hint",
+      "quiz",
+      "review",
+      "debugging_questions"
+    ],
+    "solutionGenerationAllowed": false,
+    "disclosureRequired": true
+  },
+  "evidence": [
+    "Git history showing incremental work",
+    "README or technical note explaining the result",
+    "Executable code/notebooks when the task includes analysis or implementation",
+    "Reflection notes answering the task questions",
+    "AI disclosure entry when AI materially influenced the work"
+  ],
+  "acceptanceCriteria": [
+    "A clean clone plus documented commands reproduces the summary.",
+    "Git history has meaningful commits, not a single dump.",
+    "The README names Python version and dependencies.",
+    "The apprentice can explain the difference between the working tree and a notebook output cell."
+  ],
+  "statusModel": [
+    "not_started",
+    "in_progress",
+    "submitted",
+    "revision_requested",
+    "resubmitted",
+    "approved"
+  ]
+}

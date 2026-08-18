@@ -1,0 +1,12 @@
+{
+  "schemaVersion": 1,
+  "id": "hadley-tidy-data",
+  "title": "Tidy Data (Wickham)",
+  "url": "https://www.jstatsoft.org/article/view/v059i10",
+  "type": "paper",
+  "provider": "Journal of Statistical Software",
+  "tier": "primary",
+  "topics": [
+    "data-literacy"
+  ]
+}

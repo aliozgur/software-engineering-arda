@@ -1,0 +1,35 @@
+{
+  "schemaVersion": 1,
+  "id": "apprenti-dev-data-analytics-ai-2026",
+  "name": "apprenti.dev Data Analytics and AI Apprenticeship",
+  "version": "0.1.0",
+  "durationYears": 4,
+  "audience": "University student complementing a Mathematics, Statistics, or Computer Science degree",
+  "philosophy": "Evidence-driven apprenticeship: question, measure, model, disclose, review.",
+  "defaultWeeklyHours": {
+    "duringTerm": "5-7",
+    "summer": "8-12"
+  },
+  "roles": [
+    "apprentice",
+    "mentor"
+  ],
+  "languages": [
+    "Python",
+    "SQL"
+  ],
+  "corePlatforms": [
+    "pandas",
+    "PostgreSQL",
+    "SQLite",
+    "scikit-learn",
+    "Git"
+  ],
+  "aiPrinciples": [
+    "AI assistance must be disclosed when materially used.",
+    "Models and prompts are evaluated on held-out cases, not vibes.",
+    "The apprentice remains accountable for every number and generated sentence.",
+    "Mentor approval is based on demonstrated understanding, not leaderboard score."
+  ],
+  "progression": "sequential"
+}

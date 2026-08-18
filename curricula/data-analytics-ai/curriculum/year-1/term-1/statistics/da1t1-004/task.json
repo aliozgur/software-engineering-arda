@@ -1,0 +1,50 @@
+{
+  "schemaVersion": 1,
+  "id": "da1t1-004",
+  "title": "Descriptive Statistics You Can Defend",
+  "term": "year-1/term-1",
+  "module": "statistics",
+  "estimatedHours": 8,
+  "competencies": [
+    "da-descriptive-stats",
+    "da-data-literacy"
+  ],
+  "resources": [
+    "openintro-stats",
+    "islp-book"
+  ],
+  "instructionsFile": "instructions.md",
+  "aiPolicy": {
+    "mode": "guided",
+    "allowedCapabilities": [
+      "explain",
+      "hint",
+      "quiz",
+      "review",
+      "debugging_questions"
+    ],
+    "solutionGenerationAllowed": false,
+    "disclosureRequired": true
+  },
+  "evidence": [
+    "Git history showing incremental work",
+    "README or technical note explaining the result",
+    "Executable code/notebooks when the task includes analysis or implementation",
+    "Reflection notes answering the task questions",
+    "AI disclosure entry when AI materially influenced the work"
+  ],
+  "acceptanceCriteria": [
+    "The write-up names the unit and the population the table actually covers.",
+    "Outliers are discussed, not deleted by default.",
+    "No p-values or 'significant' language in this task.",
+    "A chart has a title that is a sentence, not a variable name."
+  ],
+  "statusModel": [
+    "not_started",
+    "in_progress",
+    "submitted",
+    "revision_requested",
+    "resubmitted",
+    "approved"
+  ]
+}

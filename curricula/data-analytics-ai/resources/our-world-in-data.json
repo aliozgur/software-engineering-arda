@@ -1,0 +1,12 @@
+{
+  "schemaVersion": 1,
+  "id": "our-world-in-data",
+  "title": "Our World in Data",
+  "url": "https://ourworldindata.org/",
+  "type": "data",
+  "provider": "Global Change Data Lab",
+  "tier": "reference",
+  "topics": [
+    "public-data"
+  ]
+}

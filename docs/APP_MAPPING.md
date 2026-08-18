@@ -2,7 +2,8 @@
 
 The repository is intentionally shaped for the mobile app.
 
-- Curriculum -> `curriculum.json`, term manifests and task definitions
+- Curricula in this repo -> [curricula.json](../curricula.json): root `curriculum.json` plus `curricula/*/curriculum.json`
+- Curriculum -> each manifest’s `curriculum.json`, term files and task definitions
 - Progression -> `curriculum.json` `progression` (`sequential` or `random`)
 - Task detail -> `task.json` + `instructions.md`
 - Resource library -> `resources/*.json`

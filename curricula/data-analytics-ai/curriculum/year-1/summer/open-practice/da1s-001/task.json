@@ -1,0 +1,51 @@
+{
+  "schemaVersion": 1,
+  "id": "da1s-001",
+  "title": "Summer: Public Dataset Investigation",
+  "term": "year-1/summer",
+  "module": "open-practice",
+  "estimatedHours": 16,
+  "competencies": [
+    "da-data-literacy",
+    "da-tabular-python",
+    "open-source"
+  ],
+  "resources": [
+    "our-world-in-data",
+    "pandas-docs"
+  ],
+  "instructionsFile": "instructions.md",
+  "aiPolicy": {
+    "mode": "guided",
+    "allowedCapabilities": [
+      "explain",
+      "hint",
+      "quiz",
+      "review",
+      "debugging_questions"
+    ],
+    "solutionGenerationAllowed": false,
+    "disclosureRequired": true
+  },
+  "evidence": [
+    "Git history showing incremental work",
+    "README or technical note explaining the result",
+    "Executable code/notebooks when the task includes analysis or implementation",
+    "Reflection notes answering the task questions",
+    "AI disclosure entry when AI materially influenced the work"
+  ],
+  "acceptanceCriteria": [
+    "License and citation are complete.",
+    "The finished question has a chart and a hedged claim.",
+    "README is enough to rerun.",
+    "Scope not finished is listed honestly."
+  ],
+  "statusModel": [
+    "not_started",
+    "in_progress",
+    "submitted",
+    "revision_requested",
+    "resubmitted",
+    "approved"
+  ]
+}

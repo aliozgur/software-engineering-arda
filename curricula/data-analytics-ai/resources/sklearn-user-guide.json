@@ -1,0 +1,12 @@
+{
+  "schemaVersion": 1,
+  "id": "sklearn-user-guide",
+  "title": "scikit-learn User Guide",
+  "url": "https://scikit-learn.org/stable/user_guide.html",
+  "type": "official_docs",
+  "provider": "scikit-learn",
+  "tier": "primary",
+  "topics": [
+    "ml"
+  ]
+}

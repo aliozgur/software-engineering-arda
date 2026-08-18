@@ -1,0 +1,50 @@
+{
+  "schemaVersion": 1,
+  "id": "da1t1-003",
+  "title": "Tabular Python You Can Trace",
+  "term": "year-1/term-1",
+  "module": "python",
+  "estimatedHours": 10,
+  "competencies": [
+    "python",
+    "da-tabular-python"
+  ],
+  "resources": [
+    "pandas-docs",
+    "python-docs"
+  ],
+  "instructionsFile": "instructions.md",
+  "aiPolicy": {
+    "mode": "restricted",
+    "allowedCapabilities": [
+      "explain",
+      "hint",
+      "quiz",
+      "review",
+      "debugging_questions"
+    ],
+    "solutionGenerationAllowed": false,
+    "disclosureRequired": true
+  },
+  "evidence": [
+    "Git history showing incremental work",
+    "README or technical note explaining the result",
+    "Executable code/notebooks when the task includes analysis or implementation",
+    "Reflection notes answering the task questions",
+    "AI disclosure entry when AI materially influenced the work"
+  ],
+  "acceptanceCriteria": [
+    "Join keys and expected cardinality are written down.",
+    "A test or assertion fails if the join explodes.",
+    "The apprentice can trace three rows through the pipeline by hand.",
+    "No unexplained chained one-liners that the apprentice cannot unpack."
+  ],
+  "statusModel": [
+    "not_started",
+    "in_progress",
+    "submitted",
+    "revision_requested",
+    "resubmitted",
+    "approved"
+  ]
+}

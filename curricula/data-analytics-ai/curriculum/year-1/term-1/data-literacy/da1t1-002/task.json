@@ -1,0 +1,50 @@
+{
+  "schemaVersion": 1,
+  "id": "da1t1-002",
+  "title": "Tidy Data and Honest Schemas",
+  "term": "year-1/term-1",
+  "module": "data-literacy",
+  "estimatedHours": 8,
+  "competencies": [
+    "da-data-literacy",
+    "da-data-quality"
+  ],
+  "resources": [
+    "hadley-tidy-data",
+    "pandas-docs"
+  ],
+  "instructionsFile": "instructions.md",
+  "aiPolicy": {
+    "mode": "guided",
+    "allowedCapabilities": [
+      "explain",
+      "hint",
+      "quiz",
+      "review",
+      "debugging_questions"
+    ],
+    "solutionGenerationAllowed": false,
+    "disclosureRequired": true
+  },
+  "evidence": [
+    "Git history showing incremental work",
+    "README or technical note explaining the result",
+    "Executable code/notebooks when the task includes analysis or implementation",
+    "Reflection notes answering the task questions",
+    "AI disclosure entry when AI materially influenced the work"
+  ],
+  "acceptanceCriteria": [
+    "The schema states the grain of a row in one sentence.",
+    "Transformations are in versioned code.",
+    "Missing values are defined, not silently filled.",
+    "The apprentice can defend why a column is a variable versus a value."
+  ],
+  "statusModel": [
+    "not_started",
+    "in_progress",
+    "submitted",
+    "revision_requested",
+    "resubmitted",
+    "approved"
+  ]
+}

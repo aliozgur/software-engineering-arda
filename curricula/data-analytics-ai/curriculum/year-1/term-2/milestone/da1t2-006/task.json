@@ -1,0 +1,52 @@
+{
+  "schemaVersion": 1,
+  "id": "da1t2-006",
+  "title": "Milestone: End-to-End Analysis You Can Defend",
+  "term": "year-1/term-2",
+  "module": "milestone",
+  "estimatedHours": 16,
+  "competencies": [
+    "da-data-literacy",
+    "da-visualization",
+    "da-ml-foundations",
+    "da-data-ethics"
+  ],
+  "resources": [
+    "islp-book",
+    "datasheets-for-datasets"
+  ],
+  "instructionsFile": "instructions.md",
+  "aiPolicy": {
+    "mode": "guided",
+    "allowedCapabilities": [
+      "explain",
+      "hint",
+      "quiz",
+      "review",
+      "debugging_questions"
+    ],
+    "solutionGenerationAllowed": false,
+    "disclosureRequired": true
+  },
+  "evidence": [
+    "Git history showing incremental work",
+    "README or technical note explaining the result",
+    "Executable code/notebooks when the task includes analysis or implementation",
+    "Reflection notes answering the task questions",
+    "AI disclosure entry when AI materially influenced the work"
+  ],
+  "acceptanceCriteria": [
+    "A stranger can rerun the main number from the README.",
+    "The recommendation is weaker than or equal to the evidence.",
+    "Ethics/license notes from da1t1-006 are reused and updated.",
+    "The apprentice can change one assumption live and update the claim."
+  ],
+  "statusModel": [
+    "not_started",
+    "in_progress",
+    "submitted",
+    "revision_requested",
+    "resubmitted",
+    "approved"
+  ]
+}

@@ -1,0 +1,50 @@
+{
+  "schemaVersion": 1,
+  "id": "da2t1-001",
+  "title": "Generalization, Leakage, and Validation Design",
+  "term": "year-2/term-1",
+  "module": "ml-foundations",
+  "estimatedHours": 10,
+  "competencies": [
+    "da-ml-foundations",
+    "da-inference"
+  ],
+  "resources": [
+    "sklearn-user-guide",
+    "islp-book"
+  ],
+  "instructionsFile": "instructions.md",
+  "aiPolicy": {
+    "mode": "restricted",
+    "allowedCapabilities": [
+      "explain",
+      "hint",
+      "quiz",
+      "review",
+      "debugging_questions"
+    ],
+    "solutionGenerationAllowed": false,
+    "disclosureRequired": true
+  },
+  "evidence": [
+    "Git history showing incremental work",
+    "README or technical note explaining the result",
+    "Executable code/notebooks when the task includes analysis or implementation",
+    "Reflection notes answering the task questions",
+    "AI disclosure entry when AI materially influenced the work"
+  ],
+  "acceptanceCriteria": [
+    "Both schemes are implemented in code.",
+    "The deployment unit (user, day, store, document) is named.",
+    "The intentional leak is visible in a commit and then gone.",
+    "The spec would let a teammate reproduce the split."
+  ],
+  "statusModel": [
+    "not_started",
+    "in_progress",
+    "submitted",
+    "revision_requested",
+    "resubmitted",
+    "approved"
+  ]
+}

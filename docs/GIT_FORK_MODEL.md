@@ -6,8 +6,10 @@ The canonical repository should remain usable as upstream curriculum. A mentor o
 
 These paths are curator-owned. They are what you keep if you republish a fork as a new base:
 
-- `curriculum.json`
+- `curriculum.json` (root Software Engineering manifest)
 - `curriculum/**`
+- `curricula.json` (list of manifests in this working copy)
+- `curricula/**` (additional curricula, e.g. Data Analytics and AI)
 - `resources/**`
 - `competencies/**`
 - `schemas/**`
@@ -19,8 +21,8 @@ The app writes apprentice and mentor records **only** here:
 
 | Folder | Owner | Contents |
 |---|---|---|
-| `learners/<id>/**` | apprentice | `profile.json`, `tasks/<task-id>/` (state, reflection, evidence, notes, work log), `submissions/` |
-| `mentors/<id>/**` | mentor | `reviews/` (and later mentor notes about that apprentice) |
+| `learners/<id>/**` | apprentice | `profile.json`, `tasks/<task-id>/` for the **root** curriculum; `c/<curriculum-id>/tasks/…` for nested curricula |
+| `mentors/<id>/**` | mentor | `reviews/` for the root curriculum; `c/<curriculum-id>/reviews/` for nested curricula |
 
 If you want to share the fork as curriculum, **delete `learners/` and `mentors/`** from the copy you publish. Removing them from the current tree is the minimum. Older Git commits can still contain those files; start a new repository from the remaining folders, or rewrite history yourself.
 

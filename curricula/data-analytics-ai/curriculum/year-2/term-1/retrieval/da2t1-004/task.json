@@ -1,0 +1,50 @@
+{
+  "schemaVersion": 1,
+  "id": "da2t1-004",
+  "title": "Retrieval-Grounded Answers",
+  "term": "year-2/term-1",
+  "module": "retrieval",
+  "estimatedHours": 12,
+  "competencies": [
+    "da-retrieval",
+    "da-llm-applications"
+  ],
+  "resources": [
+    "hf-nlp-course",
+    "openai-prompt-guide"
+  ],
+  "instructionsFile": "instructions.md",
+  "aiPolicy": {
+    "mode": "guided",
+    "allowedCapabilities": [
+      "explain",
+      "hint",
+      "quiz",
+      "review",
+      "debugging_questions"
+    ],
+    "solutionGenerationAllowed": false,
+    "disclosureRequired": true
+  },
+  "evidence": [
+    "Git history showing incremental work",
+    "README or technical note explaining the result",
+    "Executable code/notebooks when the task includes analysis or implementation",
+    "Reflection notes answering the task questions",
+    "AI disclosure entry when AI materially influenced the work"
+  ],
+  "acceptanceCriteria": [
+    "Answers that are not in the store must refuse.",
+    "Citations point at retrieved text, not the model's memory.",
+    "The eval set was written before tuning.",
+    "Chunk size is justified in a short note."
+  ],
+  "statusModel": [
+    "not_started",
+    "in_progress",
+    "submitted",
+    "revision_requested",
+    "resubmitted",
+    "approved"
+  ]
+}

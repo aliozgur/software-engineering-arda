@@ -1,0 +1,51 @@
+{
+  "schemaVersion": 1,
+  "id": "da1t1-006",
+  "title": "Data Ethics, Consent, and AI Disclosure",
+  "term": "year-1/term-1",
+  "module": "professional-practice",
+  "estimatedHours": 6,
+  "competencies": [
+    "da-data-ethics",
+    "professional-practice",
+    "ai-assisted-engineering"
+  ],
+  "resources": [
+    "acm-code",
+    "datasheets-for-datasets"
+  ],
+  "instructionsFile": "instructions.md",
+  "aiPolicy": {
+    "mode": "guided",
+    "allowedCapabilities": [
+      "explain",
+      "hint",
+      "quiz",
+      "review",
+      "debugging_questions"
+    ],
+    "solutionGenerationAllowed": false,
+    "disclosureRequired": true
+  },
+  "evidence": [
+    "Git history showing incremental work",
+    "README or technical note explaining the result",
+    "Executable code/notebooks when the task includes analysis or implementation",
+    "Reflection notes answering the task questions",
+    "AI disclosure entry when AI materially influenced the work"
+  ],
+  "acceptanceCriteria": [
+    "The note names a use you refuse, not only uses you allow.",
+    "License or terms of use are cited.",
+    "The disclosure format includes tool, purpose, and what was independently checked.",
+    "The unfair-but-legal example is concrete."
+  ],
+  "statusModel": [
+    "not_started",
+    "in_progress",
+    "submitted",
+    "revision_requested",
+    "resubmitted",
+    "approved"
+  ]
+}

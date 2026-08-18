@@ -1,0 +1,13 @@
+{
+  "schemaVersion": 1,
+  "curricula": [
+    {
+      "path": ".",
+      "id": "apprenti-dev-software-engineering-2026"
+    },
+    {
+      "path": "curricula/data-analytics-ai",
+      "id": "apprenti-dev-data-analytics-ai-2026"
+    }
+  ]
+}

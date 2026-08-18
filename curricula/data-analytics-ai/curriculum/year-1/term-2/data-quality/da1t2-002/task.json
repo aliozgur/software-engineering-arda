@@ -1,0 +1,50 @@
+{
+  "schemaVersion": 1,
+  "id": "da1t2-002",
+  "title": "Data Quality, Missingness, and Leakage Preliminaries",
+  "term": "year-1/term-2",
+  "module": "data-quality",
+  "estimatedHours": 8,
+  "competencies": [
+    "da-data-quality",
+    "da-tabular-python"
+  ],
+  "resources": [
+    "pandas-docs",
+    "datasheets-for-datasets"
+  ],
+  "instructionsFile": "instructions.md",
+  "aiPolicy": {
+    "mode": "guided",
+    "allowedCapabilities": [
+      "explain",
+      "hint",
+      "quiz",
+      "review",
+      "debugging_questions"
+    ],
+    "solutionGenerationAllowed": false,
+    "disclosureRequired": true
+  },
+  "evidence": [
+    "Git history showing incremental work",
+    "README or technical note explaining the result",
+    "Executable code/notebooks when the task includes analysis or implementation",
+    "Reflection notes answering the task questions",
+    "AI disclosure entry when AI materially influenced the work"
+  ],
+  "acceptanceCriteria": [
+    "Missingness is shown as counts and as a story about the process.",
+    "No silent fillna without a written rule.",
+    "The leakage example includes when the field becomes known.",
+    "The checklist is specific enough to apply to a new file."
+  ],
+  "statusModel": [
+    "not_started",
+    "in_progress",
+    "submitted",
+    "revision_requested",
+    "resubmitted",
+    "approved"
+  ]
+}

@@ -1,0 +1,50 @@
+{
+  "schemaVersion": 1,
+  "id": "da1t2-001",
+  "title": "Visualization That Argues",
+  "term": "year-1/term-2",
+  "module": "visualization",
+  "estimatedHours": 8,
+  "competencies": [
+    "da-visualization",
+    "da-descriptive-stats"
+  ],
+  "resources": [
+    "matplotlib-docs",
+    "tufte-principles"
+  ],
+  "instructionsFile": "instructions.md",
+  "aiPolicy": {
+    "mode": "guided",
+    "allowedCapabilities": [
+      "explain",
+      "hint",
+      "quiz",
+      "review",
+      "debugging_questions"
+    ],
+    "solutionGenerationAllowed": false,
+    "disclosureRequired": true
+  },
+  "evidence": [
+    "Git history showing incremental work",
+    "README or technical note explaining the result",
+    "Executable code/notebooks when the task includes analysis or implementation",
+    "Reflection notes answering the task questions",
+    "AI disclosure entry when AI materially influenced the work"
+  ],
+  "acceptanceCriteria": [
+    "Axes, units, and filters are labeled.",
+    "The misleading example is explained, not only replaced.",
+    "Color is used for a meaning, not decoration.",
+    "The apprentice can justify the geometry (bar vs line vs scatter)."
+  ],
+  "statusModel": [
+    "not_started",
+    "in_progress",
+    "submitted",
+    "revision_requested",
+    "resubmitted",
+    "approved"
+  ]
+}

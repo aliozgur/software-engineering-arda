@@ -1,0 +1,50 @@
+{
+  "schemaVersion": 1,
+  "id": "da1t1-005",
+  "title": "SQL for Analysis, Not Just CRUD",
+  "term": "year-1/term-1",
+  "module": "sql",
+  "estimatedHours": 10,
+  "competencies": [
+    "da-sql-analytics",
+    "relational-data"
+  ],
+  "resources": [
+    "harvard-cs50sql",
+    "postgres-docs"
+  ],
+  "instructionsFile": "instructions.md",
+  "aiPolicy": {
+    "mode": "restricted",
+    "allowedCapabilities": [
+      "explain",
+      "hint",
+      "quiz",
+      "review",
+      "debugging_questions"
+    ],
+    "solutionGenerationAllowed": false,
+    "disclosureRequired": true
+  },
+  "evidence": [
+    "Git history showing incremental work",
+    "README or technical note explaining the result",
+    "Executable code/notebooks when the task includes analysis or implementation",
+    "Reflection notes answering the task questions",
+    "AI disclosure entry when AI materially influenced the work"
+  ],
+  "acceptanceCriteria": [
+    "Queries are saved as files, not only run in a GUI.",
+    "The join condition and grain are commented.",
+    "SQL and pandas results match on the agreed metric.",
+    "The apprentice can explain why a GROUP BY column is or is not in the SELECT list."
+  ],
+  "statusModel": [
+    "not_started",
+    "in_progress",
+    "submitted",
+    "revision_requested",
+    "resubmitted",
+    "approved"
+  ]
+}

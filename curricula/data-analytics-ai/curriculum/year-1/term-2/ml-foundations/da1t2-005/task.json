@@ -1,0 +1,50 @@
+{
+  "schemaVersion": 1,
+  "id": "da1t2-005",
+  "title": "A First Supervised Model Without Magic",
+  "term": "year-1/term-2",
+  "module": "ml-foundations",
+  "estimatedHours": 12,
+  "competencies": [
+    "da-ml-foundations",
+    "da-inference"
+  ],
+  "resources": [
+    "sklearn-user-guide",
+    "islp-book"
+  ],
+  "instructionsFile": "instructions.md",
+  "aiPolicy": {
+    "mode": "restricted",
+    "allowedCapabilities": [
+      "explain",
+      "hint",
+      "quiz",
+      "review",
+      "debugging_questions"
+    ],
+    "solutionGenerationAllowed": false,
+    "disclosureRequired": true
+  },
+  "evidence": [
+    "Git history showing incremental work",
+    "README or technical note explaining the result",
+    "Executable code/notebooks when the task includes analysis or implementation",
+    "Reflection notes answering the task questions",
+    "AI disclosure entry when AI materially influenced the work"
+  ],
+  "acceptanceCriteria": [
+    "Baseline is implemented, not only described.",
+    "The split rule is written and justified.",
+    "No test-set peeking in feature choice (document the rule).",
+    "The error slice is discussed in words."
+  ],
+  "statusModel": [
+    "not_started",
+    "in_progress",
+    "submitted",
+    "revision_requested",
+    "resubmitted",
+    "approved"
+  ]
+}

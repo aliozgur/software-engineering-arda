@@ -18,7 +18,7 @@ A curriculum manifest may set `progression` to `sequential` or `random`.
 - **Sequential:** the apprentice may not submit task N while any earlier path task is still unsubmitted (`not_started`, `in_progress`, or `revision_requested`). Waiting on a mentor (`submitted` / `resubmitted`) does not block the next submit.
 - **Random:** tasks may be submitted in any order.
 
-This repository is sequential. Path order comes from `term.json` task lists in academic order (year, then term-1 / term-2, then summer) — not from sorting task ids.
+Each curriculum manifest may set its own `progression`. Both curricula in this repository are sequential. Path order comes from that curriculum’s `term.json` task lists in academic order (year, then term-1 / term-2, then summer) — not from sorting task ids. Switching curriculum does not mix those paths.
 
 ## Where records live
 

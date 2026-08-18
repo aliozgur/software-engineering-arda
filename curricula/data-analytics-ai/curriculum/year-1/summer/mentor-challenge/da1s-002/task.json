@@ -1,0 +1,51 @@
+{
+  "schemaVersion": 1,
+  "id": "da1s-002",
+  "title": "Summer Mentor Challenge: Audit a Public Claim",
+  "term": "year-1/summer",
+  "module": "mentor-challenge",
+  "estimatedHours": 10,
+  "competencies": [
+    "da-inference",
+    "da-data-ethics",
+    "da-visualization"
+  ],
+  "resources": [
+    "openintro-stats",
+    "acm-code"
+  ],
+  "instructionsFile": "instructions.md",
+  "aiPolicy": {
+    "mode": "guided",
+    "allowedCapabilities": [
+      "explain",
+      "hint",
+      "quiz",
+      "review",
+      "debugging_questions"
+    ],
+    "solutionGenerationAllowed": false,
+    "disclosureRequired": true
+  },
+  "evidence": [
+    "Git history showing incremental work",
+    "README or technical note explaining the result",
+    "Executable code/notebooks when the task includes analysis or implementation",
+    "Reflection notes answering the task questions",
+    "AI disclosure entry when AI materially influenced the work"
+  ],
+  "acceptanceCriteria": [
+    "The missing pieces are specific (denominator, window, base rate).",
+    "No mind-reading of the author's intent \u2014 stick to the artifact.",
+    "The recommendation is justified.",
+    "Tone stays professional."
+  ],
+  "statusModel": [
+    "not_started",
+    "in_progress",
+    "submitted",
+    "revision_requested",
+    "resubmitted",
+    "approved"
+  ]
+}

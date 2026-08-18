@@ -1,9 +1,15 @@
-# apprenti.dev Software Engineering Apprenticeship
+# apprenti.dev apprenticeship curricula
 
-A forkable, evidence-driven four-year software-engineering apprenticeship designed to complement a strong
-Mathematics/Computer Science university education.
+This repository is a **forkable curriculum working copy**. It currently ships two curricula:
 
-> **Git fork model.** This repository is **curriculum**. After you fork it, apprenti.dev writes apprentice and mentor records only under `learners/` and `mentors/`. The app does not publish or clean a fork. If you copy or share your fork as a new base, **remove those two folders first** — Git history can still contain them. Details: [docs/GIT_FORK_MODEL.md](docs/GIT_FORK_MODEL.md).
+| Curriculum | Manifest | Path |
+|---|---|---|
+| Software Engineering Apprenticeship (4 years, 54 tasks) | [curriculum.json](curriculum.json) | `curriculum/` |
+| Data Analytics and AI Apprenticeship (Year 1 + Year 2 Term 1, 19 tasks) | [curricula/data-analytics-ai/curriculum.json](curricula/data-analytics-ai/curriculum.json) | `curricula/data-analytics-ai/` |
+
+The ordered list is [curricula.json](curricula.json). apprenti.dev (phase 21) treats each manifest as a selectable curriculum in the same Git repo. Until then, the Software Engineering path at the root behaves as it always has.
+
+> **Git fork model.** After you fork, apprenti.dev writes apprentice and mentor records only under `learners/` and `mentors/`. Nested-curriculum overlays use `learners/<id>/c/<curriculum-id>/`. The app does not publish or clean a fork. If you copy or share your fork as a new base, **remove those two folders first** — Git history can still contain them. Details: [docs/GIT_FORK_MODEL.md](docs/GIT_FORK_MODEL.md).
 
 ## Core idea
 
@@ -14,11 +20,18 @@ required evidence, acceptance criteria, reflection questions, mentor review guid
 
 ## Curriculum scale
 
+**Software Engineering**
+
 - 54 detailed apprenticeship tasks
-- 29 competency areas
-- 32 curated primary/reference resources
+- Shared plus engineering competency areas
 - 4 academic years plus summer practice
 - milestone projects, mentor challenges, open-source work and a final capstone
+
+**Data Analytics and AI** (v0.1)
+
+- 19 tasks: Year 1 (two terms + summer) and Year 2 Term 1
+- Analytics, inference, first models, then LLM/retrieval with eval
+- Later years not authored yet — see [curricula/data-analytics-ai/README.md](curricula/data-analytics-ai/README.md)
 
 ## Repository roles
 
@@ -72,6 +85,6 @@ apprentice to explain and modify the submitted work.
 1. Read `CURRICULUM_AUDIT.md`.
 2. Read `docs/LEARNING_MODEL.md`.
 3. Read `docs/GIT_FORK_MODEL.md` before putting personal files in a fork.
-4. Begin with `curriculum/year-1/term-1/...`.
-5. Fork the repository before recording learner-specific progress.
+4. Software Engineering: begin with `curriculum/year-1/term-1/...`. Data Analytics and AI: begin with `curricula/data-analytics-ai/curriculum/year-1/term-1/...`.
+5. Fork the repository before recording learner-specific progress. Both curricula share that fork.
 6. Read `docs/LEARNER_NOTES.md` before writing notes in the fork.

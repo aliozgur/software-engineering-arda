@@ -1,0 +1,52 @@
+{
+  "schemaVersion": 1,
+  "id": "da2t1-005",
+  "title": "AI System Card and Evaluation Harness",
+  "term": "year-2/term-1",
+  "module": "ai-systems",
+  "estimatedHours": 12,
+  "competencies": [
+    "da-data-ethics",
+    "da-llm-applications",
+    "da-retrieval"
+  ],
+  "resources": [
+    "datasheets-for-datasets",
+    "acm-code",
+    "openai-prompt-guide"
+  ],
+  "instructionsFile": "instructions.md",
+  "aiPolicy": {
+    "mode": "guided",
+    "allowedCapabilities": [
+      "explain",
+      "hint",
+      "quiz",
+      "review",
+      "debugging_questions"
+    ],
+    "solutionGenerationAllowed": false,
+    "disclosureRequired": true
+  },
+  "evidence": [
+    "Git history showing incremental work",
+    "README or technical note explaining the result",
+    "Executable code/notebooks when the task includes analysis or implementation",
+    "Reflection notes answering the task questions",
+    "AI disclosure entry when AI materially influenced the work"
+  ],
+  "acceptanceCriteria": [
+    "The card states who should not use the system.",
+    "Eval numbers come from the harness, not from memory.",
+    "Oversight is operational (who looks, how often), not a slogan.",
+    "The apprentice can name the worst failure they actually saw."
+  ],
+  "statusModel": [
+    "not_started",
+    "in_progress",
+    "submitted",
+    "revision_requested",
+    "resubmitted",
+    "approved"
+  ]
+}

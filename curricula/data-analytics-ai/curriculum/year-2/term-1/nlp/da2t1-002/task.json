@@ -1,0 +1,50 @@
+{
+  "schemaVersion": 1,
+  "id": "da2t1-002",
+  "title": "Text as Data and Embeddings Intuition",
+  "term": "year-2/term-1",
+  "module": "nlp",
+  "estimatedHours": 10,
+  "competencies": [
+    "da-llm-applications",
+    "da-ml-foundations"
+  ],
+  "resources": [
+    "hf-nlp-course",
+    "sklearn-user-guide"
+  ],
+  "instructionsFile": "instructions.md",
+  "aiPolicy": {
+    "mode": "guided",
+    "allowedCapabilities": [
+      "explain",
+      "hint",
+      "quiz",
+      "review",
+      "debugging_questions"
+    ],
+    "solutionGenerationAllowed": false,
+    "disclosureRequired": true
+  },
+  "evidence": [
+    "Git history showing incremental work",
+    "README or technical note explaining the result",
+    "Executable code/notebooks when the task includes analysis or implementation",
+    "Reflection notes answering the task questions",
+    "AI disclosure entry when AI materially influenced the work"
+  ],
+  "acceptanceCriteria": [
+    "A baseline without a neural net exists.",
+    "Similarity examples are concrete documents.",
+    "Preprocessing is documented.",
+    "The apprentice can explain a dimension as a statistical object, not a mystery."
+  ],
+  "statusModel": [
+    "not_started",
+    "in_progress",
+    "submitted",
+    "revision_requested",
+    "resubmitted",
+    "approved"
+  ]
+}

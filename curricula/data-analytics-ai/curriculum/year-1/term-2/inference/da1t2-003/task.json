@@ -1,0 +1,50 @@
+{
+  "schemaVersion": 1,
+  "id": "da1t2-003",
+  "title": "Sampling, Bias, and Uncertainty",
+  "term": "year-1/term-2",
+  "module": "inference",
+  "estimatedHours": 10,
+  "competencies": [
+    "da-inference",
+    "da-descriptive-stats"
+  ],
+  "resources": [
+    "openintro-stats",
+    "islp-book"
+  ],
+  "instructionsFile": "instructions.md",
+  "aiPolicy": {
+    "mode": "restricted",
+    "allowedCapabilities": [
+      "explain",
+      "hint",
+      "quiz",
+      "review",
+      "debugging_questions"
+    ],
+    "solutionGenerationAllowed": false,
+    "disclosureRequired": true
+  },
+  "evidence": [
+    "Git history showing incremental work",
+    "README or technical note explaining the result",
+    "Executable code/notebooks when the task includes analysis or implementation",
+    "Reflection notes answering the task questions",
+    "AI disclosure entry when AI materially influenced the work"
+  ],
+  "acceptanceCriteria": [
+    "Population versus sample is explicit.",
+    "The interval method is named and implemented in code.",
+    "No causal language unless the design supports it (it almost certainly does not).",
+    "Bias discussion is about this dataset, not a generic list."
+  ],
+  "statusModel": [
+    "not_started",
+    "in_progress",
+    "submitted",
+    "revision_requested",
+    "resubmitted",
+    "approved"
+  ]
+}
