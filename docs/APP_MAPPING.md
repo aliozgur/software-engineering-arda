@@ -7,10 +7,11 @@ The repository is intentionally shaped for the mobile app.
 - Task detail -> `task.json` + `instructions.md`
 - Resource library -> `resources/*.json`
 - Competency map -> `competencies/*.json`
-- Learner notes/reflections -> fork-specific Markdown (`reflection.md`, `evidence.md`, `notes/*.md`) plus note metadata JSON
+- Learner notes/reflections -> `learners/<id>/` (`reflection.md`, `evidence.md`, `notes/*`, `worklog.json`)
 - Learner time -> `learners/<id>/tasks/<task-id>/worklog.json` (`1h` / `30m` / `1h 30m`)
-- Submission -> fork-specific JSON
-- Mentor review -> fork-specific JSON
+- Submission -> `learners/<id>/submissions/`
+- Mentor review -> `mentors/<id>/reviews/`
+- Personal overlay (do not share as a new base) -> `learners/`, `mentors/` — see [GIT_FORK_MODEL.md](GIT_FORK_MODEL.md)
 - SQLite -> local projection/cache/search/embeddings/drafts/sync metadata
 
 Local LLMs and cloud providers are runtime concerns and are not embedded in the curriculum. The application can route

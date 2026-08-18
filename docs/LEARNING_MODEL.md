@@ -20,6 +20,15 @@ A curriculum manifest may set `progression` to `sequential` or `random`.
 
 This repository is sequential. Path order comes from `term.json` task lists in academic order (year, then term-1 / term-2, then summer) — not from sorting task ids.
 
+## Where records live
+
+Curriculum files are the shareable base. Apprentice and mentor records are a **pair overlay**:
+
+- `learners/<id>/**` — apprentice
+- `mentors/<id>/**` — mentor
+
+apprenti.dev does not publish or sanitize a fork. If you copy this repository as a new curriculum, **remove `learners/` and `mentors/`** first. Git history can still contain those files. Details: [GIT_FORK_MODEL.md](GIT_FORK_MODEL.md).
+
 ## Evidence over completion
 
 Task completion is not based on watching videos or checking boxes. Evidence may include source repositories,

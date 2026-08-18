@@ -26,6 +26,8 @@ learners/<learner-id>/tasks/<task-id>/
 
 Do not put notes under `curriculum/`. That tree is curator-owned.
 
+If you share the fork as a new curriculum, remove `learners/` and `mentors/` from the copy you publish. See [GIT_FORK_MODEL.md](GIT_FORK_MODEL.md).
+
 ## Time log
 
 `worklog.json` is a list of explicit time entries. The apprentice types `1h`, `30m`, or `1h 30m` (hours and minutes only, optional space, optional decimal hours like `1.5h`). The app stores both the original `input` and integer `minutes` (max 24h per entry). Time logs are not required to submit.

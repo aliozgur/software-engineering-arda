@@ -3,6 +3,8 @@
 A forkable, evidence-driven four-year software-engineering apprenticeship designed to complement a strong
 Mathematics/Computer Science university education.
 
+> **Git fork model.** This repository is **curriculum**. After you fork it, apprenti.dev writes apprentice and mentor records only under `learners/` and `mentors/`. The app does not publish or clean a fork. If you copy or share your fork as a new base, **remove those two folders first** — Git history can still contain them. Details: [docs/GIT_FORK_MODEL.md](docs/GIT_FORK_MODEL.md).
+
 ## Core idea
 
 **Learn -> Build -> Prove -> Reflect -> Review**
@@ -38,7 +40,9 @@ learners/<learner-id>/submissions/<submission-id>.json
 mentors/<mentor-id>/reviews/<review-id>.json
 ```
 
-Notes, reflections, evidence notes and work logs are **fork-owned**. See [docs/LEARNER_NOTES.md](docs/LEARNER_NOTES.md).
+Notes, reflections, evidence notes and work logs are **fork-owned**. See [docs/LEARNER_NOTES.md](docs/LEARNER_NOTES.md) and [docs/GIT_FORK_MODEL.md](docs/GIT_FORK_MODEL.md).
+
+If you copy or publish this fork yourself, **remove `learners/` and `mentors/`** first. The app will not do that. Git history can still contain those files until you start a new repository or rewrite history.
 
 ## Persistence philosophy for apprenti.dev
 
@@ -67,6 +71,7 @@ apprentice to explain and modify the submitted work.
 
 1. Read `CURRICULUM_AUDIT.md`.
 2. Read `docs/LEARNING_MODEL.md`.
-3. Begin with `curriculum/year-1/term-1/...`.
-4. Fork the repository before recording learner-specific progress.
-5. Read `docs/LEARNER_NOTES.md` before writing notes in the fork.
+3. Read `docs/GIT_FORK_MODEL.md` before putting personal files in a fork.
+4. Begin with `curriculum/year-1/term-1/...`.
+5. Fork the repository before recording learner-specific progress.
+6. Read `docs/LEARNER_NOTES.md` before writing notes in the fork.
