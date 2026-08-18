@@ -1,0 +1,23 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Apprenti Curriculum Manifest",
+  "type": "object",
+  "required": ["schemaVersion", "id", "name"],
+  "properties": {
+    "schemaVersion": {
+      "type": "integer"
+    },
+    "id": {
+      "type": "string"
+    },
+    "name": {
+      "type": "string"
+    },
+    "progression": {
+      "type": "string",
+      "enum": ["sequential", "random"],
+      "default": "random",
+      "description": "sequential: an apprentice may not submit a later task while any earlier path task is still unsubmitted. random: tasks may be submitted in any order. Omitted field means random."
+    }
+  }
+}

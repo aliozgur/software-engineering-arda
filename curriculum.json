@@ -35,5 +35,6 @@
     "Tasks may restrict solution generation while allowing explanations, hints, quizzes and review.",
     "The apprentice remains accountable for every submitted artifact.",
     "Mentor approval is based on demonstrated understanding, not AI output quality."
-  ]
+  ],
+  "progression": "sequential"
 }

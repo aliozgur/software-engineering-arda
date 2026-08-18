@@ -9,6 +9,7 @@ learners/<learner-id>/tasks/<task-id>/
   state.json
   reflection.md
   evidence.md
+  worklog.json
   notes/
     <note-id>.json
     <note-id>.md
@@ -19,10 +20,15 @@ learners/<learner-id>/tasks/<task-id>/
 | `reflection.md` | Durable reflection (explicit save, not keystroke autosave) |
 | `evidence.md` | Evidence note used at submit |
 | `state.json` | Task status + `aiDisclosure` (`none` / `assisted` / `generated`) |
+| `worklog.json` | Time entries (`1h`, `30m`, `1h 30m`); `minutes` is the durable value |
 | `notes/<id>.json` | Note metadata and optional instruction quote |
 | `notes/<id>.md` | Note body (Markdown) |
 
 Do not put notes under `curriculum/`. That tree is curator-owned.
+
+## Time log
+
+`worklog.json` is a list of explicit time entries. The apprentice types `1h`, `30m`, or `1h 30m` (hours and minutes only, optional space, optional decimal hours like `1.5h`). The app stores both the original `input` and integer `minutes` (max 24h per entry). Time logs are not required to submit.
 
 ## Fragment anchors
 

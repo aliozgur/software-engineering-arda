@@ -1,0 +1,33 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Apprenti learner work log",
+  "type": "object",
+  "required": ["schemaVersion", "entries"],
+  "properties": {
+    "schemaVersion": { "type": "integer" },
+    "entries": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["schemaVersion", "id", "taskId", "loggedAt", "minutes", "input"],
+        "properties": {
+          "schemaVersion": { "type": "integer" },
+          "id": { "type": "string" },
+          "taskId": { "type": "string" },
+          "loggedAt": { "type": "string", "format": "date-time" },
+          "minutes": {
+            "type": "integer",
+            "minimum": 1,
+            "maximum": 1440,
+            "description": "Normalized duration. Input may be 1h, 30m, or 1h 30m."
+          },
+          "input": {
+            "type": "string",
+            "description": "Original human-readable duration as typed."
+          },
+          "comment": { "type": "string" }
+        }
+      }
+    }
+  }
+}

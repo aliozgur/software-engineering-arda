@@ -33,11 +33,12 @@ learners/<learner-id>/tasks/<task-id>/reflection.md
 learners/<learner-id>/tasks/<task-id>/evidence.md
 learners/<learner-id>/tasks/<task-id>/notes/<note-id>.json
 learners/<learner-id>/tasks/<task-id>/notes/<note-id>.md
+learners/<learner-id>/tasks/<task-id>/worklog.json
 learners/<learner-id>/submissions/<submission-id>.json
 mentors/<mentor-id>/reviews/<review-id>.json
 ```
 
-Notes, reflections and evidence notes are **fork-owned**. See [docs/LEARNER_NOTES.md](docs/LEARNER_NOTES.md).
+Notes, reflections, evidence notes and work logs are **fork-owned**. See [docs/LEARNER_NOTES.md](docs/LEARNER_NOTES.md).
 
 ## Persistence philosophy for apprenti.dev
 
@@ -50,6 +51,11 @@ state and model runtime data should not be committed to Git.
 - JSON: structured domain objects
 - Markdown: narrative/instructional/reflection content
 - JSON Schema: validation contracts
+
+`curriculum.json` may declare `progression`:
+
+- `sequential` — submit earlier path tasks before later ones. This repository uses sequential order (year / term / summer from each `term.json`).
+- `random` — tasks may be submitted in any order. This is the default when the field is omitted.
 
 ## AI policy
 
