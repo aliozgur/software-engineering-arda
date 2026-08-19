@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "curricula": [
     {
-      "path": ".",
+      "path": "curricula/software-engineering",
       "id": "apprenti-dev-software-engineering-2026"
     },
     {

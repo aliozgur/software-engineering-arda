@@ -6,10 +6,10 @@ The canonical repository should remain usable as upstream curriculum. A mentor o
 
 These paths are curator-owned. They are what you keep if you republish a fork as a new base:
 
-- `curriculum.json` (root Software Engineering manifest)
-- `curriculum/**`
 - `curricula.json` (list of manifests in this working copy)
-- `curricula/**` (additional curricula, e.g. Data Analytics and AI)
+- `curricula/software-engineering/**` (Software Engineering manifest and task tree)
+- `curricula/data-analytics-ai/**` (Data Analytics and AI)
+- `curricula/**` (other curricula)
 - `resources/**`
 - `competencies/**`
 - `schemas/**`
@@ -21,18 +21,18 @@ The app writes apprentice and mentor records **only** here:
 
 | Folder | Owner | Contents |
 |---|---|---|
-| `learners/<id>/**` | apprentice | `profile.json`, `tasks/<task-id>/` for the **root** curriculum; `c/<curriculum-id>/tasks/…` for nested curricula |
-| `mentors/<id>/**` | mentor | `reviews/` for the root curriculum; `c/<curriculum-id>/reviews/` for nested curricula |
+| `learners/<id>/**` | apprentice | `profile.json` at the learner root; `c/<curriculum-id>/tasks/…` for each curriculum |
+| `mentors/<id>/**` | mentor | `c/<curriculum-id>/reviews/` for each curriculum |
 
 If you want to share the fork as curriculum, **delete `learners/` and `mentors/`** from the copy you publish. Removing them from the current tree is the minimum. Older Git commits can still contain those files; start a new repository from the remaining folders, or rewrite history yourself.
 
-Do not put pair records under `curriculum/`.
+Do not put pair records under `curricula/`.
 
 ## Ownership and conflicts
 
 Separating overlay folders from curriculum minimizes same-file conflicts:
 
-- `curriculum/**`, `resources/**`, `competencies/**`, `schemas/**`: curator
+- `curricula/**`, `resources/**`, `competencies/**`, `schemas/**`: curator
 - `learners/<id>/**`: that apprentice
 - `mentors/<id>/**`: that mentor
 

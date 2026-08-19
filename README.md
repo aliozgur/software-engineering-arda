@@ -4,10 +4,10 @@ This repository is a **forkable curriculum working copy**. It currently ships tw
 
 | Curriculum | Manifest | Path |
 |---|---|---|
-| Software Engineering Apprenticeship (4 years, 54 tasks) | [curriculum.json](curriculum.json) | `curriculum/` |
+| Software Engineering Apprenticeship (4 years, 54 tasks) | [curricula/software-engineering/curriculum.json](curricula/software-engineering/curriculum.json) | `curricula/software-engineering/` |
 | Data Analytics and AI Apprenticeship (Year 1 + Year 2 Term 1, 19 tasks) | [curricula/data-analytics-ai/curriculum.json](curricula/data-analytics-ai/curriculum.json) | `curricula/data-analytics-ai/` |
 
-The ordered list is [curricula.json](curricula.json). apprenti.dev (phase 21) treats each manifest as a selectable curriculum in the same Git repo. Until then, the Software Engineering path at the root behaves as it always has.
+The ordered list is [curricula.json](curricula.json). apprenti.dev treats each manifest as a selectable curriculum in the same Git repo. Shared overlays, resources, competencies, and schemas stay at the repository root.
 
 > **Git fork model.** After you fork, apprenti.dev writes apprentice and mentor records only under `learners/` and `mentors/`. Nested-curriculum overlays use `learners/<id>/c/<curriculum-id>/`. The app does not publish or clean a fork. If you copy or share your fork as a new base, **remove those two folders first** — Git history can still contain them. Details: [docs/GIT_FORK_MODEL.md](docs/GIT_FORK_MODEL.md).
 
@@ -43,14 +43,14 @@ Suggested fork additions:
 
 ```text
 learners/<learner-id>/profile.json
-learners/<learner-id>/tasks/<task-id>/state.json
-learners/<learner-id>/tasks/<task-id>/reflection.md
-learners/<learner-id>/tasks/<task-id>/evidence.md
-learners/<learner-id>/tasks/<task-id>/notes/<note-id>.json
-learners/<learner-id>/tasks/<task-id>/notes/<note-id>.md
-learners/<learner-id>/tasks/<task-id>/worklog.json
-learners/<learner-id>/submissions/<submission-id>.json
-mentors/<mentor-id>/reviews/<review-id>.json
+learners/<learner-id>/c/<curriculum-id>/tasks/<task-id>/state.json
+learners/<learner-id>/c/<curriculum-id>/tasks/<task-id>/reflection.md
+learners/<learner-id>/c/<curriculum-id>/tasks/<task-id>/evidence.md
+learners/<learner-id>/c/<curriculum-id>/tasks/<task-id>/notes/<note-id>.json
+learners/<learner-id>/c/<curriculum-id>/tasks/<task-id>/notes/<note-id>.md
+learners/<learner-id>/c/<curriculum-id>/tasks/<task-id>/worklog.json
+learners/<learner-id>/c/<curriculum-id>/submissions/<submission-id>.json
+mentors/<mentor-id>/c/<curriculum-id>/reviews/<review-id>.json
 ```
 
 Notes, reflections, evidence notes and work logs are **fork-owned**. See [docs/LEARNER_NOTES.md](docs/LEARNER_NOTES.md) and [docs/GIT_FORK_MODEL.md](docs/GIT_FORK_MODEL.md).
@@ -85,6 +85,6 @@ apprentice to explain and modify the submitted work.
 1. Read `CURRICULUM_AUDIT.md`.
 2. Read `docs/LEARNING_MODEL.md`.
 3. Read `docs/GIT_FORK_MODEL.md` before putting personal files in a fork.
-4. Software Engineering: begin with `curriculum/year-1/term-1/...`. Data Analytics and AI: begin with `curricula/data-analytics-ai/curriculum/year-1/term-1/...`.
+4. Software Engineering: begin with `curricula/software-engineering/curriculum/year-1/term-1/...`. Data Analytics and AI: begin with `curricula/data-analytics-ai/curriculum/year-1/term-1/...`.
 5. Fork the repository before recording learner-specific progress. Both curricula share that fork.
 6. Read `docs/LEARNER_NOTES.md` before writing notes in the fork.

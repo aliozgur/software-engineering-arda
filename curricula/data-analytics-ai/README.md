@@ -1,6 +1,6 @@
 # Data Analytics and AI Apprenticeship
 
-Second curriculum in this repository. The Software Engineering path stays at the repo root (`curriculum.json`, `curriculum/`). This path lives under `curricula/data-analytics-ai/`.
+Second curriculum in this repository. Software Engineering lives beside it under `curricula/software-engineering/`. This path lives under `curricula/data-analytics-ai/`.
 
 > Evidence-driven: **question → measure → model → disclose → review**.
 
