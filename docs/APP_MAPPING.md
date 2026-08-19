@@ -6,8 +6,8 @@ The repository is intentionally shaped for the mobile app.
 - Curriculum -> each manifest’s `curriculum.json`, term files and task definitions
 - Progression -> `curriculum.json` `progression` (`sequential` or `random`)
 - Task detail -> `task.json` + `instructions.md`
-- Resource library -> `resources/*.json`
-- Competency map -> `competencies/*.json`
+- Resource library -> `resources/*.json` at the **repository root** (shared). Nested `curricula/<slug>/resources/{id}.json` is an optional override of that id.
+- Competency map -> `competencies/*.json` at the **repository root** (shared). Nested `curricula/<slug>/competencies/{id}.json` is an optional override of that id.
 - Learner notes/reflections -> `learners/<id>/c/<curriculum-id>/` (`reflection.md`, `evidence.md`, `notes/*`, `worklog.json`)
 - Learner time -> `learners/<id>/c/<curriculum-id>/tasks/<task-id>/worklog.json` (`1h` / `30m` / `1h 30m`)
 - Submission -> `learners/<id>/c/<curriculum-id>/submissions/`

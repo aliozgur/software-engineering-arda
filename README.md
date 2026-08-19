@@ -7,7 +7,7 @@ This repository is a **forkable curriculum working copy**. It currently ships tw
 | Software Engineering Apprenticeship (4 years, 54 tasks) | [curricula/software-engineering/curriculum.json](curricula/software-engineering/curriculum.json) | `curricula/software-engineering/` |
 | Data Analytics and AI Apprenticeship (Year 1 + Year 2 Term 1, 19 tasks) | [curricula/data-analytics-ai/curriculum.json](curricula/data-analytics-ai/curriculum.json) | `curricula/data-analytics-ai/` |
 
-The ordered list is [curricula.json](curricula.json). apprenti.dev treats each manifest as a selectable curriculum in the same Git repo. Shared overlays, resources, competencies, and schemas stay at the repository root.
+The ordered list is [curricula.json](curricula.json). apprenti.dev treats each manifest as a selectable curriculum in the same Git repo. Shared `resources/`, `competencies/`, and `schemas/` live **once at the repository root**. A nested `curricula/<slug>/competencies/` or `resources/` folder is an optional **override** of the same id, not a second library. Software Engineering and Data Analytics both inherit the root libraries.
 
 > **Git fork model.** After you fork, apprenti.dev writes apprentice and mentor records only under `learners/` and `mentors/`. Nested-curriculum overlays use `learners/<id>/c/<curriculum-id>/`. The app does not publish or clean a fork. If you copy or share your fork as a new base, **remove those two folders first** — Git history can still contain them. Details: [docs/GIT_FORK_MODEL.md](docs/GIT_FORK_MODEL.md).
 

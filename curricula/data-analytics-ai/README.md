@@ -6,6 +6,8 @@ Second curriculum in this repository. Software Engineering lives beside it under
 
 apprenti.dev treats this as its own selectable curriculum (phase 21). Until the app discovers nested manifests, you can still read and review the files here as Git-native curriculum. Learner/mentor overlays for a nested curriculum belong under `learners/<id>/c/apprenti-dev-data-analytics-ai-2026/` once the app writes them.
 
+Competencies and resources for this path live in the **repository root** `competencies/` and `resources/` libraries. This folder does not keep a second copy.
+
 ## Shape (v0.1)
 
 - **19 tasks** across Year 1 (two terms + summer) and Year 2 Term 1
