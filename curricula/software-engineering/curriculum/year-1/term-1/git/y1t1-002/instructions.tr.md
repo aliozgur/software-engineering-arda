@@ -43,7 +43,7 @@ Yalnızca kod ekran görüntüleri göndermeyin.
 ## Kabul ölçütleri
 
 - [ ] Depo, tek bir nihai taahhüt değil, anlamlı bir geçmiş içerir.
-- [ ] Bir Markdown notu, çalışma ağacını, dizini, HEAD, branch'yi ve işlemeyi açıklar.
+- [ ] Bir Markdown notu, çalışma ağacını, dizini, HEAD, branch'i ve işlemeyi açıklar.
 - [ ] Çatışma çözümü belgelenmiştir.
 - [ ] Çırak, rebase'nin commit kimliklerini neden değiştirdiğini açıklayabilir.
 
