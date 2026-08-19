@@ -13,6 +13,20 @@
     "name": {
       "type": "string"
     },
+    "sourceLocale": {
+      "type": "string",
+      "description": "BCP 47 language code of the canonical files. Default en. Do not reuse languages (programming languages).",
+      "pattern": "^[a-z]{2,8}$"
+    },
+    "contentLocales": {
+      "type": "array",
+      "description": "Human locales this curriculum ships, including the source. Overlay files use sibling {stem}.{locale}.{ext}.",
+      "items": {
+        "type": "string",
+        "pattern": "^[a-z]{2,8}$"
+      },
+      "uniqueItems": true
+    },
     "progression": {
       "type": "string",
       "enum": ["sequential", "random"],

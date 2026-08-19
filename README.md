@@ -68,6 +68,7 @@ state and model runtime data should not be committed to Git.
 - JSON: structured domain objects
 - Markdown: narrative/instructional/reflection content
 - JSON Schema: validation contracts
+- Locale overlays: sibling `{stem}.{locale}.{ext}` next to the canonical file (e.g. `instructions.tr.md`). See [docs/CONTENT_LOCALES.md](docs/CONTENT_LOCALES.md). Canonical files stay English (`sourceLocale`). Do not reuse `curriculum.json` `languages` for human locales.
 
 `curriculum.json` may declare `progression`:
 

@@ -31,5 +31,7 @@
     "The apprentice remains accountable for every number and generated sentence.",
     "Mentor approval is based on demonstrated understanding, not leaderboard score."
   ],
-  "progression": "sequential"
+  "progression": "sequential",
+  "sourceLocale": "en",
+  "contentLocales": ["en", "tr"]
 }
