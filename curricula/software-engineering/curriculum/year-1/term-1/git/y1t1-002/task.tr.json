@@ -8,8 +8,8 @@
     "Yapay zekâ çalışmayı önemli ölçüde etkilediyse yapay zekâ kullanım beyanı"
   ],
   "acceptanceCriteria": [
-    "Depo, tek bir nihai taahhüt değil, anlamlı bir geçmiş içerir.",
-    "Bir Markdown notu, çalışma ağacını, dizini, HEAD, branch'i ve işlemeyi açıklar.",
+    "Depo, tek bir nihai commit değil, anlamlı bir geçmiş içerir.",
+    "Bir Markdown notu, working tree, index, HEAD, branch ve commit'i açıklar.",
     "Çatışma çözümü belgelenmiştir.",
     "Çırak, rebase'nin commit kimliklerini neden değiştirdiğini açıklayabilir."
   ]

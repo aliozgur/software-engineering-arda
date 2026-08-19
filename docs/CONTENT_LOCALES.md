@@ -30,6 +30,8 @@ Overlay JSON is **sparse**: only translatable keys. It must not change `id`, pat
 
 The app merges field-by-field: overlay value present and non-empty wins; otherwise the canonical file. Missing overlay files are not an error.
 
+Keep Git terminology in English in overlays (`commit`, not *taahhüt*; `branch`, not *dal*).
+
 ## Shared libraries
 
 `competencies/` and `resources/` live **once at the repository root**. Nested `curricula/<slug>/competencies/` or `resources/` is an optional override of the same id, not a second library.

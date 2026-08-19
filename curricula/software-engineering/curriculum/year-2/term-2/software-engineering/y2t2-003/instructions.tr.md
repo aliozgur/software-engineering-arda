@@ -41,7 +41,7 @@ Yalnızca kod ekran görüntüleri göndermeyin.
 ## Kabul ölçütleri
 
 - [ ] Davranış testlerin kapsamında kalır.
-- [ ] Yeniden düzenleme taahhütleri özellik değişikliklerinden ayrıdır.
+- [ ] Yeniden düzenleme commit'leri özellik değişikliklerinden ayrıdır.
 - [ ] ADR bağlamı, kararı, sonuçları ve alternatifleri içerir.
 - [ ] Çırak, yeni yapının adlandırılmış bir değişikliği neden kolaylaştırdığını açıklayabilir.
 

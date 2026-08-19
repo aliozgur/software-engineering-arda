@@ -25,7 +25,7 @@ bunları öğrenme notlarınıza kaydedin ve öğretici derleme siteleri yerine 
 
 1. Python arka ucu, PostgreSQL ve tarayıcı kullanıcı arayüzü ile küçük bir bilgi/görev uygulaması tasarlayın.
 2. Uygulamadan önce gereksinimleri ve hafif mimari notunu yazın.
-3. Git özellik dallarını ve anlamlı taahhütleri kullanın.
+3. Git feature branch'lerini ve anlamlı commit'leri kullanın.
 4. Kimlik doğrulamayı yalnızca mentorun kapsamın yönetilebilir olduğunu kabul etmesi durumunda uygulayın; aksi takdirde tek kullanıcılı bir model kullanın.
 5. Otomatik testler, veritabanı geçişleri ve kurulum belgelerini ekleyin.
 6. Kodu görmeyen bir kişiye ürünü tanıtın.

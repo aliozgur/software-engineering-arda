@@ -6,8 +6,8 @@
 
 ## Bu görev neden var?
 
-Git komutlarının zihinsel bir modele sahip olması için taahhütleri, ağaçları, blobları, referansları ve
-çalışma ağacını anlayın.
+Git komutlarının zihinsel bir modele sahip olması için commit'leri, tree'leri, blob'ları, referansları ve
+working tree'yi anlayın.
 
 Bu bir çıraklık görevidir; içerik tüketildiğini işaretlemek için bir kutucuk değildir. Okumak veya izlemek
 yalnızca hazırlık aşamasıdır. Tamamlama için fikirleri uygulayabildiğinizi ve açıklayabildiğinizi gösteren
@@ -23,8 +23,8 @@ bunları öğrenme notlarınıza kaydedin ve öğretici derleme siteleri yerine 
 
 ## Tamamlanacak çalışmalar
 
-1. Anlamlı taahhütlere sahip bir depo oluşturun.
-2. Dallanma/birleşme öncesi ve sonrası commit grafiğini çizin.
+1. Anlamlı commit'lere sahip bir depo oluşturun.
+2. Branching/merging öncesi ve sonrası commit grafiğini çizin.
 3. Nesneleri `git cat-file` ve referansları `git show-ref` ile inceleyin.
 4. Kasıtlı olarak bir merge çakışması oluşturun, çözün ve sonucu açıklayın.
 5. Tek kullanımlık bir branch üzerinde bir rebase gerçekleştirin ve commit karmalarını karşılaştırın.
@@ -42,8 +42,8 @@ Yalnızca kod ekran görüntüleri göndermeyin.
 
 ## Kabul ölçütleri
 
-- [ ] Depo, tek bir nihai taahhüt değil, anlamlı bir geçmiş içerir.
-- [ ] Bir Markdown notu, çalışma ağacını, dizini, HEAD, branch'i ve işlemeyi açıklar.
+- [ ] Depo, tek bir nihai commit değil, anlamlı bir geçmiş içerir.
+- [ ] Bir Markdown notu, working tree, index, HEAD, branch ve commit'i açıklar.
 - [ ] Çatışma çözümü belgelenmiştir.
 - [ ] Çırak, rebase'nin commit kimliklerini neden değiştirdiğini açıklayabilir.
 

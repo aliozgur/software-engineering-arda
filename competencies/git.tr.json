@@ -1,6 +1,6 @@
 {
   "title": "Git",
-  "description": "Git veri modeli, taahhütler, dallanma, birleştirme, yeniden temellendirme, işbirliği ve depo hijyeni.",
+  "description": "Git veri modeli, commit'ler, branching, merging, rebasing, işbirliği ve depo hijyeni.",
   "levels": [
     {
       "name": "Temel",
