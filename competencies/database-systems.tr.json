@@ -1,0 +1,31 @@
+{
+  "title": "Veritabanı Sistemleri",
+  "description": "Depolama, dizinler, sorgu yürütme, işlemler, eşzamanlılık ve kurtarma.",
+  "levels": [
+    {
+      "name": "Temel",
+      "description": "Temel kavramları açıklayabilir ve rehberli çalışmaları tamamlayabilir.",
+      "level": 1
+    },
+    {
+      "name": "Çırak",
+      "description": "Kapsamı belirlenmiş görevleri sınırlı yönlendirmeyle tamamlayabilir ve kanıt üretebilir.",
+      "level": 2
+    },
+    {
+      "name": "Uygulayıcı",
+      "description": "Kayda değer bir çalışmayı bağımsız olarak tasarlayabilir, uygulayabilir, test edebilir ve açıklayabilir.",
+      "level": 3
+    },
+    {
+      "name": "Kalfa",
+      "description": "Belirsizlikle başa çıkabilir, hataları teşhis edebilir ve ödünleşimleri gerekçelendirebilir.",
+      "level": 4
+    },
+    {
+      "name": "Ustalık Kanıtı",
+      "description": "Alışılmadık durumlarda öğretebilir, değerlendirme yapabilir ve sağlam kararlar verebilir.",
+      "level": 5
+    }
+  ]
+}

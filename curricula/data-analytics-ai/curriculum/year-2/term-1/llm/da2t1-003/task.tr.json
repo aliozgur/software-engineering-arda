@@ -1,0 +1,16 @@
+{
+  "title": "Öznel İzlenimlerle Değil Değerlendirmeyle LLM İş Akışları",
+  "evidence": [
+    "Çalışmanın adım adım ilerlediğini gösteren Git geçmişi",
+    "Sonucu açıklayan README veya teknik not",
+    "Görev analiz ya da uygulama içeriyorsa çalıştırılabilir kod/notebook'lar",
+    "Görev sorularını yanıtlayan değerlendirme notları",
+    "Yapay zekâ çalışmayı önemli ölçüde etkilediyse AI kullanım açıklaması"
+  ],
+  "acceptanceCriteria": [
+    "Metrik, ikinci prompt'un skoruna bakılmadan önce tanımlanır.",
+    "Yalnızca başarılar değil, başarısızlıklar da gösterilir.",
+    "LLM kullanmayan bir baseline vardır (anahtar sözcük kuralı veya daha küçük sınıflandırıcı).",
+    "Yalnızca büyüklük mertebesi olarak bile olsa maliyet/gecikme belirtilir."
+  ]
+}

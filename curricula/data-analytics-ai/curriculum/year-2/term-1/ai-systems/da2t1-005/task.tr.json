@@ -1,0 +1,16 @@
+{
+  "title": "AI Sistem Kartı ve Değerlendirme Düzeneği",
+  "evidence": [
+    "Çalışmanın adım adım ilerlediğini gösteren Git geçmişi",
+    "Sonucu açıklayan README veya teknik not",
+    "Görev analiz ya da uygulama içeriyorsa çalıştırılabilir kod/notebook'lar",
+    "Görev sorularını yanıtlayan değerlendirme notları",
+    "Yapay zekâ çalışmayı önemli ölçüde etkilediyse AI kullanım açıklaması"
+  ],
+  "acceptanceCriteria": [
+    "Kart, sistemi kimlerin kullanmaması gerektiğini belirtir.",
+    "Değerlendirme sayıları bellekten değil, düzenekten gelir.",
+    "Gözetim bir slogan değil, operasyonel bir süreçtir (kim, ne sıklıkta inceler).",
+    "Çırak, gerçekten gözlemlediği en kötü başarısızlığı adlandırabilir."
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "title": "Web Güvenliği Laboratuvarı",
+  "evidence": [
+    "Aşamalı çalışmayı gösteren Git geçmişi",
+    "Sonucu açıklayan README veya teknik not",
+    "Görev uygulama içeriyorsa çalıştırılabilir kod/yapılandırma",
+    "Görev sorularını yanıtlayan değerlendirme notları",
+    "Yapay zekâ çalışmayı önemli ölçüde etkilediyse yapay zekâ kullanım beyanı"
+  ],
+  "acceptanceCriteria": [
+    "Laboratuvarlar yalnızca yetkili eğitim ortamlarında gerçekleştirilir.",
+    "Notlar temel nedenleri açıklar.",
+    "Düzeltmeler doğrulandı.",
+    "Çırak, kimlik doğrulama hatalarını yetkilendirme hatalarından ayırır."
+  ]
+}

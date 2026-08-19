@@ -1,0 +1,16 @@
+{
+  "title": "Sihre Başvurmadan İlk Gözetimli Model",
+  "evidence": [
+    "Çalışmanın adım adım ilerlediğini gösteren Git geçmişi",
+    "Sonucu açıklayan README veya teknik not",
+    "Görev analiz ya da uygulama içeriyorsa çalıştırılabilir kod/notebook'lar",
+    "Görev sorularını yanıtlayan değerlendirme notları",
+    "Yapay zekâ çalışmayı önemli ölçüde etkilediyse AI kullanım açıklaması"
+  ],
+  "acceptanceCriteria": [
+    "Baseline yalnızca açıklanmaz, uygulanır.",
+    "Veri bölme kuralı yazılır ve gerekçelendirilir.",
+    "Özellik seçiminde test setine bakılmaz; kural belgelenir.",
+    "Hata kesiti yazıyla tartışılır."
+  ]
+}

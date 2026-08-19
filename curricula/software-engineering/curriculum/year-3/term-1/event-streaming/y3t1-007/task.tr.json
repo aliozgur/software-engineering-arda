@@ -1,0 +1,16 @@
+{
+  "title": "Kafka Kavramları ve Olay Günlükleri",
+  "evidence": [
+    "Aşamalı çalışmayı gösteren Git geçmişi",
+    "Sonucu açıklayan README veya teknik not",
+    "Görev uygulama içeriyorsa çalıştırılabilir kod/yapılandırma",
+    "Görev sorularını yanıtlayan değerlendirme notları",
+    "Yapay zekâ çalışmayı önemli ölçüde etkilediyse yapay zekâ kullanım beyanı"
+  ],
+  "acceptanceCriteria": [
+    "Karşılaştırma marka bazlı değil senaryo bazlıdır.",
+    "Çırak ofset ve tüketici grubunu açıklayabilir.",
+    "Sipariş taleplerinin kapsamı bölümlere ayrılmıştır.",
+    "Tekrar oynatmanın tüketiciler açısından etkileri anlaşılmıştır."
+  ]
+}

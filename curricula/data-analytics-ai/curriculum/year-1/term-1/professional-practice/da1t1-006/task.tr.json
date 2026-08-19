@@ -1,0 +1,16 @@
+{
+  "title": "Veri Etiği, Rıza ve AI Kullanım Açıklaması",
+  "evidence": [
+    "Çalışmanın adım adım ilerlediğini gösteren Git geçmişi",
+    "Sonucu açıklayan README veya teknik not",
+    "Görev analiz ya da uygulama içeriyorsa çalıştırılabilir kod/notebook'lar",
+    "Görev sorularını yanıtlayan değerlendirme notları",
+    "Yapay zekâ çalışmayı önemli ölçüde etkilediyse AI kullanım açıklaması"
+  ],
+  "acceptanceCriteria": [
+    "Not, yalnızca izin verilenleri değil, reddedilen bir kullanımı da belirtir.",
+    "Lisans veya kullanım koşulları kaynak gösterilerek belirtilir.",
+    "Açıklama biçimi kullanılan aracı, amacı ve bağımsız olarak denetlenenleri içerir.",
+    "Yasal fakat adaletsiz örnek somuttur."
+  ]
+}

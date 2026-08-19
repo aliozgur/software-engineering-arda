@@ -1,0 +1,16 @@
+{
+  "title": "Üretim Olayı Simülasyonu",
+  "evidence": [
+    "Aşamalı çalışmayı gösteren Git geçmişi",
+    "Sonucu açıklayan README veya teknik not",
+    "Görev uygulama içeriyorsa çalıştırılabilir kod/yapılandırma",
+    "Görev sorularını yanıtlayan değerlendirme notları",
+    "Yapay zekâ çalışmayı önemli ölçüde etkilediyse yapay zekâ kullanım beyanı"
+  ],
+  "acceptanceCriteria": [
+    "Zaman çizelgesi gerçeği hipotezden ayırır.",
+    "Azaltma, kanıtları gizlemeden hizmeti geri yükler.",
+    "Otopsi tek kişinin suçlanmasını önler.",
+    "Takip eylemleri tespit/önleme/müdahaleyi ele alır."
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "title": "Sürekli Entegrasyon ve Sürüm Disiplini",
+  "evidence": [
+    "Aşamalı çalışmayı gösteren Git geçmişi",
+    "Sonucu açıklayan README veya teknik not",
+    "Görev uygulama içeriyorsa çalıştırılabilir kod/yapılandırma",
+    "Görev sorularını yanıtlayan değerlendirme notları",
+    "Yapay zekâ çalışmayı önemli ölçüde etkilediyse yapay zekâ kullanım beyanı"
+  ],
+  "acceptanceCriteria": [
+    "CI temiz bir ödemeden dolayı yeşildir.",
+    "Başarısız bir test bloğu sürümü.",
+    "Sürüm oluşturma politikasında yama/minör/majör için örnekler bulunur.",
+    "Sürüm notları, kullanıcının görebileceği değişiklikleri ve bilinen sınırlamaları açıklar."
+  ]
+}

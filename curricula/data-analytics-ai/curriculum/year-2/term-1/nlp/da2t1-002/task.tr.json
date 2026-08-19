@@ -1,0 +1,16 @@
+{
+  "title": "Veri Olarak Metin ve Embedding Sezgisi",
+  "evidence": [
+    "Çalışmanın adım adım ilerlediğini gösteren Git geçmişi",
+    "Sonucu açıklayan README veya teknik not",
+    "Görev analiz ya da uygulama içeriyorsa çalıştırılabilir kod/notebook'lar",
+    "Görev sorularını yanıtlayan değerlendirme notları",
+    "Yapay zekâ çalışmayı önemli ölçüde etkilediyse AI kullanım açıklaması"
+  ],
+  "acceptanceCriteria": [
+    "Sinir ağı kullanmayan bir baseline vardır.",
+    "Benzerlik örnekleri somut belgelerdir.",
+    "Ön işleme belgelenir.",
+    "Çırak, bir boyutu gizemli bir unsur olarak değil, istatistiksel bir nesne olarak açıklayabilir."
+  ]
+}

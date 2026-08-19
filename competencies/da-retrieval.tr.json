@@ -1,0 +1,31 @@
+{
+  "title": "Bilgi Getirme ve Temellendirme",
+  "description": "Arama, atıflar, reddetme ve temellendirilmiş yanıtların değerlendirilmesi.",
+  "levels": [
+    {
+      "level": 1,
+      "name": "Temel",
+      "description": "Temel kavramları açıklayabilir ve rehberli çalışmayı tamamlayabilir."
+    },
+    {
+      "level": 2,
+      "name": "Çırak",
+      "description": "Sınırlı rehberlikle kapsamı belirlenmiş görevleri tamamlayabilir ve kanıt üretebilir."
+    },
+    {
+      "level": 3,
+      "name": "Uygulayıcı",
+      "description": "Basit olmayan çalışmaları bağımsız biçimde tasarlayabilir, uygulayabilir, test edebilir ve açıklayabilir."
+    },
+    {
+      "level": 4,
+      "name": "Kalfa",
+      "description": "Belirsizliği yönetebilir, hataları teşhis edebilir ve ödünleşimleri savunabilir."
+    },
+    {
+      "level": 5,
+      "name": "Ustalık Kanıtı",
+      "description": "Öğretebilir, inceleyebilir ve alışılmadık durumlarda sağlam kararlar verebilir."
+    }
+  ]
+}

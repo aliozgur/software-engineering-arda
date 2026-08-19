@@ -1,0 +1,16 @@
+{
+  "title": "Genelleme, Sızıntı ve Doğrulama Tasarımı",
+  "evidence": [
+    "Çalışmanın adım adım ilerlediğini gösteren Git geçmişi",
+    "Sonucu açıklayan README veya teknik not",
+    "Görev analiz ya da uygulama içeriyorsa çalıştırılabilir kod/notebook'lar",
+    "Görev sorularını yanıtlayan değerlendirme notları",
+    "Yapay zekâ çalışmayı önemli ölçüde etkilediyse AI kullanım açıklaması"
+  ],
+  "acceptanceCriteria": [
+    "Her iki şema da kodda uygulanır.",
+    "Üretim kullanım birimi (kullanıcı, gün, mağaza, belge) belirtilir.",
+    "Kasıtlı sızıntı bir commit'te görünür, sonraki durumda kaldırılmıştır.",
+    "Belirtim, bir ekip arkadaşının veri bölme işlemini yeniden üretmesini sağlar."
+  ]
+}

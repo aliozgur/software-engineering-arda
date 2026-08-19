@@ -1,0 +1,16 @@
+{
+  "title": "Küçük Bir Açık Kaynak Projesini Sürdürün",
+  "evidence": [
+    "Aşamalı çalışmayı gösteren Git geçmişi",
+    "Sonucu açıklayan README veya teknik not",
+    "Görev uygulama içeriyorsa çalıştırılabilir kod/yapılandırma",
+    "Görev sorularını yanıtlayan değerlendirme notları",
+    "Yapay zekâ çalışmayı önemli ölçüde etkilediyse yapay zekâ kullanım beyanı"
+  ],
+  "acceptanceCriteria": [
+    "Depo yeni gelen biri için anlaşılabilir bir durumdur.",
+    "Sürümler etiketlenir ve notları bulunur.",
+    "İnceleme geribildirimi saygılıdır ve teknik açıdan temellendirilmiştir.",
+    "Bakım politikası gerçekçidir."
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "title": "1. Dönüm Noktası: Kişisel Bilgi API",
+  "evidence": [
+    "Aşamalı çalışmayı gösteren Git geçmişi",
+    "Sonucu açıklayan README veya teknik not",
+    "Görev uygulama içeriyorsa çalıştırılabilir kod/yapılandırma",
+    "Görev sorularını yanıtlayan değerlendirme notları",
+    "Yapay zekâ çalışmayı önemli ölçüde etkilediyse yapay zekâ kullanım beyanı"
+  ],
+  "acceptanceCriteria": [
+    "README'den yeni klon başlatılabilir.",
+    "Temel kullanım senaryoları uçtan uca çalışır.",
+    "Veritabanı kısıtlamaları ve testleri önemli değişmezleri korur.",
+    "En az bir performans ölçümü ve bir erişilebilirlik kontrolü belgelenmiştir.",
+    "Sürüm v0.1.0 olarak etiketlendi."
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "title": "Yalnızca CRUD Değil, Analiz için SQL",
+  "evidence": [
+    "Çalışmanın adım adım ilerlediğini gösteren Git geçmişi",
+    "Sonucu açıklayan README veya teknik not",
+    "Görev analiz ya da uygulama içeriyorsa çalıştırılabilir kod/notebook'lar",
+    "Görev sorularını yanıtlayan değerlendirme notları",
+    "Yapay zekâ çalışmayı önemli ölçüde etkilediyse AI kullanım açıklaması"
+  ],
+  "acceptanceCriteria": [
+    "Sorgular yalnızca GUI'de çalıştırılmak yerine dosya olarak kaydedilir.",
+    "Join koşulu ve tane düzeyi yorumlarda açıklanır.",
+    "SQL ve pandas sonuçları üzerinde uzlaşılan metrikte eşleşir.",
+    "Çırak, bir GROUP BY sütununun SELECT listesinde neden yer aldığını veya almadığını açıklayabilir."
+  ]
+}

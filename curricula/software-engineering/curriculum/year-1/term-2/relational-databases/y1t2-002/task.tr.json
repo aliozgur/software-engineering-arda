@@ -1,0 +1,16 @@
+{
+  "title": "İlişkisel Modelleme ve SQL",
+  "evidence": [
+    "Aşamalı çalışmayı gösteren Git geçmişi",
+    "Sonucu açıklayan README veya teknik not",
+    "Görev uygulama içeriyorsa çalıştırılabilir kod/yapılandırma",
+    "Görev sorularını yanıtlayan değerlendirme notları",
+    "Yapay zekâ çalışmayı önemli ölçüde etkilediyse yapay zekâ kullanım beyanı"
+  ],
+  "acceptanceCriteria": [
+    "ER diyagramı ve şeması uyumlu.",
+    "Birincil/yabancı anahtarlar ve kısıtlamalar önemli değişmezleri zorlar.",
+    "Sorgular birleştirmeleri, toplamayı ve alt sorguları/CTE'leri içerir.",
+    "Normalleşme kararları açıklandı."
+  ]
+}

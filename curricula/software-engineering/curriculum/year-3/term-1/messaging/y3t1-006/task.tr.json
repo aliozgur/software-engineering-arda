@@ -1,0 +1,16 @@
+{
+  "title": "RabbitMQ: Güvenilir Mesajlaşma",
+  "evidence": [
+    "Aşamalı çalışmayı gösteren Git geçmişi",
+    "Sonucu açıklayan README veya teknik not",
+    "Görev uygulama içeriyorsa çalıştırılabilir kod/yapılandırma",
+    "Görev sorularını yanıtlayan değerlendirme notları",
+    "Yapay zekâ çalışmayı önemli ölçüde etkilediyse yapay zekâ kullanım beyanı"
+  ],
+  "acceptanceCriteria": [
+    "Yinelenen dağıtım etki alanı durumunu bozmaz.",
+    "Yeniden deneme sınırlıdır.",
+    "Geçersiz mektup mesajları incelenebilir.",
+    "README, gelişigüzel 'tam olarak bir kez' iddiasında bulunmak yerine gerçek teslimat garantisini belirtir."
+  ]
+}

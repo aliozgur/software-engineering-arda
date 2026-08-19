@@ -1,0 +1,16 @@
+{
+  "title": "Gereksinimler ve Etki Alanı Modellemesi",
+  "evidence": [
+    "Aşamalı çalışmayı gösteren Git geçmişi",
+    "Sonucu açıklayan README veya teknik not",
+    "Görev uygulama içeriyorsa çalıştırılabilir kod/yapılandırma",
+    "Görev sorularını yanıtlayan değerlendirme notları",
+    "Yapay zekâ çalışmayı önemli ölçüde etkilediyse yapay zekâ kullanım beyanı"
+  ],
+  "acceptanceCriteria": [
+    "Gereksinimler test edilebilir ve mümkün olduğunca uygulama ayrıntılarından kaçının.",
+    "Hedef olmayanlar kapsamı kısıtlar.",
+    "Etki alanı modeli yalnızca veritabanı tablolarını değil, kuralları da yakalar.",
+    "Kalite niteliklerinin ölçülebilir yorumları vardır."
+  ]
+}

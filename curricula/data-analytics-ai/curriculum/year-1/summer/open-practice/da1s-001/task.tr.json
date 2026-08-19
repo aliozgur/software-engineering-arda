@@ -1,0 +1,16 @@
+{
+  "title": "Yaz: Kamuya Açık Veri Kümesi İncelemesi",
+  "evidence": [
+    "Çalışmanın adım adım ilerlediğini gösteren Git geçmişi",
+    "Sonucu açıklayan README veya teknik not",
+    "Görev analiz ya da uygulama içeriyorsa çalıştırılabilir kod/notebook'lar",
+    "Görev sorularını yanıtlayan değerlendirme notları",
+    "Yapay zekâ çalışmayı önemli ölçüde etkilediyse AI kullanım açıklaması"
+  ],
+  "acceptanceCriteria": [
+    "Lisans ve kaynak gösterimi eksiksizdir.",
+    "Tamamlanan sorunun bir grafiği ve ihtiyatlı bir iddiası vardır.",
+    "README yeniden çalıştırmak için yeterlidir.",
+    "Tamamlanmayan kapsam dürüstçe listelenir."
+  ]
+}

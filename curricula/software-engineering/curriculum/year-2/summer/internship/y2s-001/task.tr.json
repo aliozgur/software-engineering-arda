@@ -1,0 +1,16 @@
+{
+  "title": "Mühendislik Stajı veya Simüle Takım Sprint'i",
+  "evidence": [
+    "Aşamalı çalışmayı gösteren Git geçmişi",
+    "Sonucu açıklayan README veya teknik not",
+    "Görev uygulama içeriyorsa çalıştırılabilir kod/yapılandırma",
+    "Görev sorularını yanıtlayan değerlendirme notları",
+    "Yapay zekâ çalışmayı önemli ölçüde etkilediyse yapay zekâ kullanım beyanı"
+  ],
+  "acceptanceCriteria": [
+    "En az bir özellik gereksinimden gözden geçirilmiş sürüme geçiyor.",
+    "İnceleme yorumları şeffaf bir şekilde ele alınmaktadır.",
+    "Tahmin hatası, sayılar üzerinde oynama yapılmadan analiz edilir.",
+    "Retrospektif, somut bir davranış değişikliğini tanımlar."
+  ]
+}

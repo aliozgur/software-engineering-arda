@@ -1,0 +1,17 @@
+{
+  "title": "Bitirme Projesi Geliştirme: Bağımsız Mühendislik",
+  "evidence": [
+    "Aşamalı çalışmayı gösteren Git geçmişi",
+    "Sonucu açıklayan README veya teknik not",
+    "Görev uygulama içeriyorsa çalıştırılabilir kod/yapılandırma",
+    "Görev sorularını yanıtlayan değerlendirme notları",
+    "Yapay zekâ çalışmayı önemli ölçüde etkilediyse yapay zekâ kullanım beyanı"
+  ],
+  "acceptanceCriteria": [
+    "Üzerinde anlaşmaya varılan tüm kabul kriterleri kanıtlara kadar takip edilir.",
+    "Testler ve operasyonel kanıtlar riskle orantılıdır.",
+    "Mimari dokümantasyon teslim edilen sistemle eşleşiyor.",
+    "Bilinen sınırlamalar açıktır.",
+    "Yayın tekrarlanabilir ve etiketlenir."
+  ]
+}

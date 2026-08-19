@@ -1,0 +1,16 @@
+{
+  "title": "Veri Kalitesi, Eksiklik ve Veri Sızıntısına Giriş",
+  "evidence": [
+    "Çalışmanın adım adım ilerlediğini gösteren Git geçmişi",
+    "Sonucu açıklayan README veya teknik not",
+    "Görev analiz ya da uygulama içeriyorsa çalıştırılabilir kod/notebook'lar",
+    "Görev sorularını yanıtlayan değerlendirme notları",
+    "Yapay zekâ çalışmayı önemli ölçüde etkilediyse AI kullanım açıklaması"
+  ],
+  "acceptanceCriteria": [
+    "Eksiklik hem sayılarla hem de sürece ilişkin bir anlatıyla gösterilir.",
+    "Yazılı bir kural olmadan sessiz fillna kullanılmaz.",
+    "Sızıntı örneği, alanın ne zaman bilinir hâle geldiğini içerir.",
+    "Kontrol listesi yeni bir dosyaya uygulanabilecek kadar özeldir."
+  ]
+}

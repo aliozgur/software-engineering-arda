@@ -1,0 +1,16 @@
+{
+  "title": "Test Stratejisi: Birimden Sisteme",
+  "evidence": [
+    "Aşamalı çalışmayı gösteren Git geçmişi",
+    "Sonucu açıklayan README veya teknik not",
+    "Görev uygulama içeriyorsa çalıştırılabilir kod/yapılandırma",
+    "Görev sorularını yanıtlayan değerlendirme notları",
+    "Yapay zekâ çalışmayı önemli ölçüde etkilediyse yapay zekâ kullanım beyanı"
+  ],
+  "acceptanceCriteria": [
+    "Testler tek komutla yerel olarak çalıştırılabilir.",
+    "Entegrasyon testleri izole edilmiş tekrarlanabilir verileri kullanır.",
+    "En az bir başarısızlık, her test katmanının amacını gösterir.",
+    "Test stratejisi belgesi, riskleri testlerle eşleştirir."
+  ]
+}

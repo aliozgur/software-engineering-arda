@@ -1,0 +1,16 @@
+{
+  "title": "HTTP ve API Temelleri",
+  "evidence": [
+    "Aşamalı çalışmayı gösteren Git geçmişi",
+    "Sonucu açıklayan README veya teknik not",
+    "Görev uygulama içeriyorsa çalıştırılabilir kod/yapılandırma",
+    "Görev sorularını yanıtlayan değerlendirme notları",
+    "Yapay zekâ çalışmayı önemli ölçüde etkilediyse yapay zekâ kullanım beyanı"
+  ],
+  "acceptanceCriteria": [
+    "API sözleşme ve uygulama kabul edilir.",
+    "Durum kodları savunulabilir.",
+    "Hatalar yığın izlerini veya gizli dizileri açığa çıkarmaz.",
+    "curl tabanlı bir duman testi dahildir."
+  ]
+}

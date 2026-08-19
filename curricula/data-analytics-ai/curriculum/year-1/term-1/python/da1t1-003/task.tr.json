@@ -1,0 +1,16 @@
+{
+  "title": "İzini Sürebileceğiniz Tablosal Python",
+  "evidence": [
+    "Çalışmanın adım adım ilerlediğini gösteren Git geçmişi",
+    "Sonucu açıklayan README veya teknik not",
+    "Görev analiz ya da uygulama içeriyorsa çalıştırılabilir kod/notebook'lar",
+    "Görev sorularını yanıtlayan değerlendirme notları",
+    "Yapay zekâ çalışmayı önemli ölçüde etkilediyse AI kullanım açıklaması"
+  ],
+  "acceptanceCriteria": [
+    "Join anahtarları ve beklenen kardinalite yazılıdır.",
+    "Join beklenmedik satır çoğalmasına yol açarsa bir test veya assertion başarısız olur.",
+    "Çırak, üç satırın pipeline boyunca izini elle sürebilir.",
+    "Çırağın açımlayamadığı, açıklanmamış zincirleme tek satırlık ifadeler yoktur."
+  ]
+}

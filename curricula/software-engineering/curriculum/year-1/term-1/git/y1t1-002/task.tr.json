@@ -1,0 +1,16 @@
+{
+  "title": "Git'i Anlayın, Ezberlemeyin",
+  "evidence": [
+    "Aşamalı çalışmayı gösteren Git geçmişi",
+    "Sonucu açıklayan README veya teknik not",
+    "Görev uygulama içeriyorsa çalıştırılabilir kod/yapılandırma",
+    "Görev sorularını yanıtlayan değerlendirme notları",
+    "Yapay zekâ çalışmayı önemli ölçüde etkilediyse yapay zekâ kullanım beyanı"
+  ],
+  "acceptanceCriteria": [
+    "Depo, tek bir nihai taahhüt değil, anlamlı bir geçmiş içerir.",
+    "Bir Markdown notu, çalışma ağacını, dizini, HEAD, branch'yi ve işlemeyi açıklar.",
+    "Çatışma çözümü belgelenmiştir.",
+    "Çırak, rebase'nin commit kimliklerini neden değiştirdiğini açıklayabilir."
+  ]
+}

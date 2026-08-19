@@ -1,0 +1,11 @@
+{
+  "name": "apprenti.dev Veri Analitiği ve Yapay Zekâ Çıraklık Programı",
+  "audience": "Matematik, İstatistik veya Bilgisayar Bilimleri lisans eğitimini tamamlayıcı bir program arayan üniversite öğrencileri",
+  "philosophy": "Kanıta dayalı çıraklık: sor, ölç, modelle, açıkla, gözden geçir.",
+  "aiPrinciples": [
+    "Yapay zekâ desteği, çalışmayı önemli ölçüde etkilediğinde açıklanmalıdır.",
+    "Modeller ve prompt'lar öznel izlenimlerle değil, değerlendirme için ayrılmış örneklerle ölçülür.",
+    "Çırak, her sayıdan ve üretilen her cümleden sorumlu olmaya devam eder.",
+    "Mentor onayı sıralama puanına değil, sergilenen anlayışa dayanır."
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "title": "Algoritmalar ve Karmaşıklık Temelleri",
+  "evidence": [
+    "Aşamalı çalışmayı gösteren Git geçmişi",
+    "Sonucu açıklayan README veya teknik not",
+    "Görev uygulama içeriyorsa çalıştırılabilir kod/yapılandırma",
+    "Görev sorularını yanıtlayan değerlendirme notları",
+    "Yapay zekâ çalışmayı önemli ölçüde etkilediyse yapay zekâ kullanım beyanı"
+  ],
+  "acceptanceCriteria": [
+    "Uygulamalar testleri içerir.",
+    "Karmaşıklıklar tahmin edilmek yerine gerekçelendirilir.",
+    "Karşılaştırma sonuçları grafik haline getirilir veya tablo haline getirilir ve yorumlanır.",
+    "Çırak, Big-O'nin pratik olarak önemli sabitleri ne zaman gizlediğini açıklayabilir."
+  ]
+}

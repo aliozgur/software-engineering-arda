@@ -1,0 +1,16 @@
+{
+  "title": "Kilometre Taşı: Savunabileceğiniz Uçtan Uca Analiz",
+  "evidence": [
+    "Çalışmanın adım adım ilerlediğini gösteren Git geçmişi",
+    "Sonucu açıklayan README veya teknik not",
+    "Görev analiz ya da uygulama içeriyorsa çalıştırılabilir kod/notebook'lar",
+    "Görev sorularını yanıtlayan değerlendirme notları",
+    "Yapay zekâ çalışmayı önemli ölçüde etkilediyse AI kullanım açıklaması"
+  ],
+  "acceptanceCriteria": [
+    "Başka biri ana sayıyı README üzerinden yeniden üretebilir.",
+    "Öneri, kanıttan daha güçlü değildir.",
+    "da1t1-006 görevindeki etik/lisans notları yeniden kullanılır ve güncellenir.",
+    "Çırak, bir varsayımı canlı olarak değiştirip iddiayı güncelleyebilir."
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "title": "Ağ İletişimi II: TCP, UDP, Soketler ve TLS",
+  "evidence": [
+    "Aşamalı çalışmayı gösteren Git geçmişi",
+    "Sonucu açıklayan README veya teknik not",
+    "Görev uygulama içeriyorsa çalıştırılabilir kod/yapılandırma",
+    "Görev sorularını yanıtlayan değerlendirme notları",
+    "Yapay zekâ çalışmayı önemli ölçüde etkilediyse yapay zekâ kullanım beyanı"
+  ],
+  "acceptanceCriteria": [
+    "Soket programları bağlantı kesintilerini yönetir.",
+    "Yakalama, el sıkışmayı ve sıra/onay davranışını tanımlar.",
+    "TCP ile UDP arasındaki seçim mantıklıdır.",
+    "TLS notları şifreleme, kimlik doğrulama ve sertifikaları birbirinden ayırır."
+  ]
+}

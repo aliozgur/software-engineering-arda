@@ -1,0 +1,17 @@
+{
+  "title": "Dönüm Noktası 2: Hata Koşullarında Ağa Bağlı Hizmet",
+  "evidence": [
+    "Aşamalı çalışmayı gösteren Git geçmişi",
+    "Sonucu açıklayan README veya teknik not",
+    "Görev uygulama içeriyorsa çalıştırılabilir kod/yapılandırma",
+    "Görev sorularını yanıtlayan değerlendirme notları",
+    "Yapay zekâ çalışmayı önemli ölçüde etkilediyse yapay zekâ kullanım beyanı"
+  ],
+  "acceptanceCriteria": [
+    "Başarısızlık durumlarının tanımlanmış davranışları vardır.",
+    "Test edilen yollarda sınırsız bekleme yok.",
+    "Günlükler arızaları teşhis edilebilir hale getirir.",
+    "Sürüm etiketten çoğaltılabilir.",
+    "Demo en az iki enjekte edilmiş hata içerir."
+  ]
+}

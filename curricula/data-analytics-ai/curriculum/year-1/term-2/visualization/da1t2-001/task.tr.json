@@ -1,0 +1,16 @@
+{
+  "title": "Savını Ortaya Koyan Görselleştirme",
+  "evidence": [
+    "Çalışmanın adım adım ilerlediğini gösteren Git geçmişi",
+    "Sonucu açıklayan README veya teknik not",
+    "Görev analiz ya da uygulama içeriyorsa çalıştırılabilir kod/notebook'lar",
+    "Görev sorularını yanıtlayan değerlendirme notları",
+    "Yapay zekâ çalışmayı önemli ölçüde etkilediyse AI kullanım açıklaması"
+  ],
+  "acceptanceCriteria": [
+    "Eksenler, birimler ve filtreler etiketlenir.",
+    "Yanıltıcı örnek yalnızca değiştirilmez, açıklanır.",
+    "Renk dekorasyon için değil, anlam taşımak için kullanılır.",
+    "Çırak geometri seçimini (bar, line veya scatter) gerekçelendirebilir."
+  ]
+}

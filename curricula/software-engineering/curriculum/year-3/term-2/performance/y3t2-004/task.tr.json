@@ -1,0 +1,16 @@
+{
+  "title": "Performans Mühendisliği ve Yük Testi",
+  "evidence": [
+    "Aşamalı çalışmayı gösteren Git geçmişi",
+    "Sonucu açıklayan README veya teknik not",
+    "Görev uygulama içeriyorsa çalıştırılabilir kod/yapılandırma",
+    "Görev sorularını yanıtlayan değerlendirme notları",
+    "Yapay zekâ çalışmayı önemli ölçüde etkilediyse yapay zekâ kullanım beyanı"
+  ],
+  "acceptanceCriteria": [
+    "Test tekrarlanabilir.",
+    "Ölçümler yalnızca ortalamaları değil, gecikme dağılımını da içerir.",
+    "İyileşme kanıtlanmıştır.",
+    "Optimizasyondan sonra doğruluk yeniden doğrulanır."
+  ]
+}

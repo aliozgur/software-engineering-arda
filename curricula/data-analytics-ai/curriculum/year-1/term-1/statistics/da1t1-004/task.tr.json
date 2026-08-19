@@ -1,0 +1,16 @@
+{
+  "title": "Savunabileceğiniz Betimsel İstatistikler",
+  "evidence": [
+    "Çalışmanın adım adım ilerlediğini gösteren Git geçmişi",
+    "Sonucu açıklayan README veya teknik not",
+    "Görev analiz ya da uygulama içeriyorsa çalıştırılabilir kod/notebook'lar",
+    "Görev sorularını yanıtlayan değerlendirme notları",
+    "Yapay zekâ çalışmayı önemli ölçüde etkilediyse AI kullanım açıklaması"
+  ],
+  "acceptanceCriteria": [
+    "Yazı, birimi ve tablonun gerçekten kapsadığı popülasyonu belirtir.",
+    "Aykırı değerler varsayılan olarak silinmez, tartışılır.",
+    "Bu görevde p-değeri veya 'anlamlı' ifadesi kullanılmaz.",
+    "Grafiğin başlığı değişken adı değil, bir cümledir."
+  ]
+}

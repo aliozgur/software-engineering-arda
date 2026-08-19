@@ -1,0 +1,16 @@
+{
+  "title": "Günlükler, Metrikler ve İzler",
+  "evidence": [
+    "Aşamalı çalışmayı gösteren Git geçmişi",
+    "Sonucu açıklayan README veya teknik not",
+    "Görev uygulama içeriyorsa çalıştırılabilir kod/yapılandırma",
+    "Görev sorularını yanıtlayan değerlendirme notları",
+    "Yapay zekâ çalışmayı önemli ölçüde etkilediyse yapay zekâ kullanım beyanı"
+  ],
+  "acceptanceCriteria": [
+    "Sinyaller belirli operasyonel sorulara yanıt verir.",
+    "Hiçbir şifre/belirteç/kişisel sır günlüğe kaydedilmez.",
+    "Trace ilgili bileşenleri birbirine bağlar.",
+    "Runbook algılama, tanılama ve kurtarma adımlarını içerir."
+  ]
+}

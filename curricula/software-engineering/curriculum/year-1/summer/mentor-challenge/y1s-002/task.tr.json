@@ -1,0 +1,16 @@
+{
+  "title": "Mentor Görevi: Yavaş Bir Sorguyu Teşhis Edin",
+  "evidence": [
+    "Aşamalı çalışmayı gösteren Git geçmişi",
+    "Sonucu açıklayan README veya teknik not",
+    "Görev uygulama içeriyorsa çalıştırılabilir kod/yapılandırma",
+    "Görev sorularını yanıtlayan değerlendirme notları",
+    "Yapay zekâ çalışmayı önemli ölçüde etkilediyse yapay zekâ kullanım beyanı"
+  ],
+  "acceptanceCriteria": [
+    "Öncesi/sonrası ölçümleri mevcut.",
+    "Değişiklikler haklı.",
+    "'Her yere dizin ekle' çözümü yok.",
+    "Rapor gözlemleri, hipotezleri, deneyleri ve sonuçları ayırır."
+  ]
+}

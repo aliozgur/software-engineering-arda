@@ -1,0 +1,16 @@
+{
+  "title": "Docker ve Tekrarlanabilir Geliştirme",
+  "evidence": [
+    "Aşamalı çalışmayı gösteren Git geçmişi",
+    "Sonucu açıklayan README veya teknik not",
+    "Görev uygulama içeriyorsa çalıştırılabilir kod/yapılandırma",
+    "Görev sorularını yanıtlayan değerlendirme notları",
+    "Yapay zekâ çalışmayı önemli ölçüde etkilediyse yapay zekâ kullanım beyanı"
+  ],
+  "acceptanceCriteria": [
+    "Yeni makinenin yalnızca belgelenmiş önkoşullara ihtiyacı vardır.",
+    "Görüntüler tekrarlanabilir şekilde oluşturulur.",
+    "Kalıcı veritabanı verileri, istendiğinde kapsayıcının değiştirilmesinden sonra bile hayatta kalır.",
+    "Çırak konteynerin VM'ye karşı olduğunu açıklıyor."
+  ]
+}

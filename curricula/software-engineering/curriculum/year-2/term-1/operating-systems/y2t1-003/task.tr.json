@@ -1,0 +1,16 @@
+{
+  "title": "İş Parçacıkları, Senkronizasyon ve Eşzamanlılık Hataları",
+  "evidence": [
+    "Aşamalı çalışmayı gösteren Git geçmişi",
+    "Sonucu açıklayan README veya teknik not",
+    "Görev uygulama içeriyorsa çalıştırılabilir kod/yapılandırma",
+    "Görev sorularını yanıtlayan değerlendirme notları",
+    "Yapay zekâ çalışmayı önemli ölçüde etkilediyse yapay zekâ kullanım beyanı"
+  ],
+  "acceptanceCriteria": [
+    "Irk stres altında tekrarlanabilir.",
+    "Düzeltme test edildi.",
+    "Kilitlenmenin nedeni bekleme ilişkileriyle açıklanır.",
+    "Çırak her kilit tarafından korunan bir değişmezi belirtebilir."
+  ]
+}

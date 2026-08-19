@@ -1,0 +1,16 @@
+{
+  "title": "Yazılı Bir Soruyla Keşifsel Analiz",
+  "evidence": [
+    "Çalışmanın adım adım ilerlediğini gösteren Git geçmişi",
+    "Sonucu açıklayan README veya teknik not",
+    "Görev analiz ya da uygulama içeriyorsa çalıştırılabilir kod/notebook'lar",
+    "Görev sorularını yanıtlayan değerlendirme notları",
+    "Yapay zekâ çalışmayı önemli ölçüde etkilediyse AI kullanım açıklaması"
+  ],
+  "acceptanceCriteria": [
+    "Soru, ilk 'bulgu' başlığından önce yazılır.",
+    "Kalite kontrolleri gösterişli grafiklerden önce yer alır.",
+    "Bulgular, kendilerini destekleyen şekil veya tabloya atıfta bulunur.",
+    "Sonuç vermeyen deneme repository'de tutulur."
+  ]
+}

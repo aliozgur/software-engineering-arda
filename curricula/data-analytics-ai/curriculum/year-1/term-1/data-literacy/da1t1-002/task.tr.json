@@ -1,0 +1,16 @@
+{
+  "title": "Düzenli Veri ve Dürüst Şemalar",
+  "evidence": [
+    "Çalışmanın adım adım ilerlediğini gösteren Git geçmişi",
+    "Sonucu açıklayan README veya teknik not",
+    "Görev analiz ya da uygulama içeriyorsa çalıştırılabilir kod/notebook'lar",
+    "Görev sorularını yanıtlayan değerlendirme notları",
+    "Yapay zekâ çalışmayı önemli ölçüde etkilediyse AI kullanım açıklaması"
+  ],
+  "acceptanceCriteria": [
+    "Şema, bir satırın tane düzeyini tek cümleyle belirtir.",
+    "Dönüşümler sürümlenmiş kodda yer alır.",
+    "Eksik değerler sessizce doldurulmak yerine tanımlanır.",
+    "Çırak, bir sütunun neden değer değil değişken olduğunu savunabilir."
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "title": "Örnekleme, Yanlılık ve Belirsizlik",
+  "evidence": [
+    "Çalışmanın adım adım ilerlediğini gösteren Git geçmişi",
+    "Sonucu açıklayan README veya teknik not",
+    "Görev analiz ya da uygulama içeriyorsa çalıştırılabilir kod/notebook'lar",
+    "Görev sorularını yanıtlayan değerlendirme notları",
+    "Yapay zekâ çalışmayı önemli ölçüde etkilediyse AI kullanım açıklaması"
+  ],
+  "acceptanceCriteria": [
+    "Popülasyon ile örneklem açıkça ayrılır.",
+    "Aralık yöntemi adlandırılır ve kodda uygulanır.",
+    "Tasarım desteklemiyorsa nedensellik dili kullanılmaz (büyük olasılıkla desteklemiyordur).",
+    "Yanlılık tartışması genel bir listeye değil, bu veri kümesine odaklanır."
+  ]
+}

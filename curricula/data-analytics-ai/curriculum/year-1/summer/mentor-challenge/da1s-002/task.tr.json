@@ -1,0 +1,16 @@
+{
+  "title": "Yaz Mentor Görevi: Kamuya Açık Bir İddiayı Denetleme",
+  "evidence": [
+    "Çalışmanın adım adım ilerlediğini gösteren Git geçmişi",
+    "Sonucu açıklayan README veya teknik not",
+    "Görev analiz ya da uygulama içeriyorsa çalıştırılabilir kod/notebook'lar",
+    "Görev sorularını yanıtlayan değerlendirme notları",
+    "Yapay zekâ çalışmayı önemli ölçüde etkilediyse AI kullanım açıklaması"
+  ],
+  "acceptanceCriteria": [
+    "Eksik unsurlar somuttur (payda, zaman aralığı, temel oran).",
+    "Yazarın niyeti hakkında varsayımda bulunulmaz; yalnızca artefakta bağlı kalınır.",
+    "Öneri gerekçelendirilir.",
+    "Üslup profesyonel kalır."
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "name": "apprenti.dev Yazılım Mühendisliği Çıraklık Programı",
+  "audience": "Matematik/Bilgisayar Bilimleri lisans eğitimini tamamlayıcı bir program arayan üniversite öğrencisi",
+  "philosophy": "Kanıta dayalı çıraklık: öğren, geliştir, kanıtla, değerlendir, gözden geçir.",
+  "aiPrinciples": [
+    "Yapay zekâ yardımı maddi olarak kullanıldığında açıklanmalıdır.",
+    "Görevler açıklamalara, ipuçlarına, sınavlara ve incelemelere izin verirken çözüm üretmeyi kısıtlayabilir.",
+    "Çırak gönderilen her çıktıden sorumlu olmaya devam eder.",
+    "Mentor onayı, yapay zekâ çıktı kalitesine değil, kanıtlanmış anlayışa dayanır."
+  ]
+}

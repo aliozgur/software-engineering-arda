@@ -1,0 +1,17 @@
+{
+  "title": "3. Dönüm Noktası: Dağıtılmış Telemetri Platformu",
+  "evidence": [
+    "Aşamalı çalışmayı gösteren Git geçmişi",
+    "Sonucu açıklayan README veya teknik not",
+    "Görev uygulama içeriyorsa çalıştırılabilir kod/yapılandırma",
+    "Görev sorularını yanıtlayan değerlendirme notları",
+    "Yapay zekâ çalışmayı önemli ölçüde etkilediyse yapay zekâ kullanım beyanı"
+  ],
+  "acceptanceCriteria": [
+    "Sistem, geçersiz durum olmadan yinelenen iletilerden kurtulur.",
+    "Başarısız bir bağımlılık sınırlı/kurtarılabilir davranış üretir.",
+    "Telemetri tanıyı destekler.",
+    "Güvenlik ve yük testi kanıtları dahildir.",
+    "Etiketli sürüm ve demo kaydı veya sunumu mevcut."
+  ]
+}

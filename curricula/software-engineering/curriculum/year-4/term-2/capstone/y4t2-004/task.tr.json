@@ -1,0 +1,16 @@
+{
+  "title": "Bitirme Projesi Önerisi ve Araştırması",
+  "evidence": [
+    "Aşamalı çalışmayı gösteren Git geçmişi",
+    "Sonucu açıklayan README veya teknik not",
+    "Görev uygulama içeriyorsa çalıştırılabilir kod/yapılandırma",
+    "Görev sorularını yanıtlayan değerlendirme notları",
+    "Yapay zekâ çalışmayı önemli ölçüde etkilediyse yapay zekâ kullanım beyanı"
+  ],
+  "acceptanceCriteria": [
+    "Teklifin gerçek bir sorunu var, teknoloji alışveriş listesi değil.",
+    "Kapsam mevcut haftalara uygundur.",
+    "Risklerin azaltılması/deneyleri vardır.",
+    "Mentor büyük uygulamadan önce onay verir."
+  ]
+}

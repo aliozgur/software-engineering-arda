@@ -1,0 +1,16 @@
+{
+  "title": "Bilgi Getirmeyle Temellendirilmiş Yanıtlar",
+  "evidence": [
+    "Çalışmanın adım adım ilerlediğini gösteren Git geçmişi",
+    "Sonucu açıklayan README veya teknik not",
+    "Görev analiz ya da uygulama içeriyorsa çalıştırılabilir kod/notebook'lar",
+    "Görev sorularını yanıtlayan değerlendirme notları",
+    "Yapay zekâ çalışmayı önemli ölçüde etkilediyse AI kullanım açıklaması"
+  ],
+  "acceptanceCriteria": [
+    "Bilgi deposunda bulunmayan yanıtlar reddedilmelidir.",
+    "Atıflar modelin belleğine değil, getirilen metne işaret eder.",
+    "Değerlendirme seti ayarlama yapılmadan önce yazılmıştır.",
+    "Parça boyutu kısa bir notla gerekçelendirilir."
+  ]
+}

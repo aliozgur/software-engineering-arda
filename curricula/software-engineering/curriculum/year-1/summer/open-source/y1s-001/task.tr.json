@@ -1,0 +1,16 @@
+{
+  "title": "Açık Kaynaklı Bir Projeyi Okuyun ve Katkıda Bulunun",
+  "evidence": [
+    "Aşamalı çalışmayı gösteren Git geçmişi",
+    "Sonucu açıklayan README veya teknik not",
+    "Görev uygulama içeriyorsa çalıştırılabilir kod/yapılandırma",
+    "Görev sorularını yanıtlayan değerlendirme notları",
+    "Yapay zekâ çalışmayı önemli ölçüde etkilediyse yapay zekâ kullanım beyanı"
+  ],
+  "acceptanceCriteria": [
+    "Katkı proje sözleşmelerini takip eder.",
+    "Patch/PR küçük ve haklı.",
+    "Günlük kayıtları geri bildirimi ve yanıtı inceler.",
+    "Çırak projenin lisansını pratik düzeyde açıklayabilir."
+  ]
+}

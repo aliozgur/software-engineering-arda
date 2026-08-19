@@ -1,0 +1,16 @@
+{
+  "title": "Analist Çalışma Ortamı ve Yeniden Üretilebilir Çalışma",
+  "evidence": [
+    "Çalışmanın adım adım ilerlediğini gösteren Git geçmişi",
+    "Sonucu açıklayan README veya teknik not",
+    "Görev analiz ya da uygulama içeriyorsa çalıştırılabilir kod/notebook'lar",
+    "Görev sorularını yanıtlayan değerlendirme notları",
+    "Yapay zekâ çalışmayı önemli ölçüde etkilediyse AI kullanım açıklaması"
+  ],
+  "acceptanceCriteria": [
+    "Temiz bir clone ve belgelenmiş komutlar özeti yeniden üretir.",
+    "Git geçmişi tek seferde yığılmış bir commit yerine anlamlı commit'ler içerir.",
+    "README, Python sürümünü ve bağımlılıkları belirtir.",
+    "Çırak, working tree ile bir notebook çıktı hücresi arasındaki farkı açıklayabilir."
+  ]
+}

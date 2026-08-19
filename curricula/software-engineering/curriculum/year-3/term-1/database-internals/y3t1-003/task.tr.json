@@ -1,0 +1,16 @@
+{
+  "title": "Veritabanı Sistemleri: Depolama ve Dizinler",
+  "evidence": [
+    "Aşamalı çalışmayı gösteren Git geçmişi",
+    "Sonucu açıklayan README veya teknik not",
+    "Görev uygulama içeriyorsa çalıştırılabilir kod/yapılandırma",
+    "Görev sorularını yanıtlayan değerlendirme notları",
+    "Yapay zekâ çalışmayı önemli ölçüde etkilediyse yapay zekâ kullanım beyanı"
+  ],
+  "acceptanceCriteria": [
+    "Uygulamanın testleri vardır.",
+    "Veri yapısı değişmezleri belgelenmiştir.",
+    "Denemede birden fazla iş yükü şekli kullanılıyor.",
+    "Çırak, veritabanı sayfalarının ve arabellek havuzlarının neden var olduğunu açıklıyor."
+  ]
+}
