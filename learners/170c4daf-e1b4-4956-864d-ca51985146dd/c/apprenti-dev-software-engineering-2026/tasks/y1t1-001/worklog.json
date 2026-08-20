@@ -1,0 +1,13 @@
+{
+  "schemaVersion": 1,
+  "entries": [
+    {
+      "schemaVersion": 1,
+      "id": "1cee7a28-72cb-4d0c-89fa-bd5520fde0f7",
+      "taskId": "y1t1-001",
+      "loggedAt": "2026-08-20T06:16:02.696853Z",
+      "minutes": 60,
+      "input": "1h"
+    }
+  ]
+}
