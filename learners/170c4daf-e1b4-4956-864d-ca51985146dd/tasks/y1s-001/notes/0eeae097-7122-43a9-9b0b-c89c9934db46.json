@@ -1,0 +1,12 @@
+{
+  "schemaVersion": 1,
+  "id": "0eeae097-7122-43a9-9b0b-c89c9934db46",
+  "taskId": "y1s-001",
+  "title": "Sample note",
+  "createdAt": "2026-08-18T14:40:06.864909Z",
+  "updatedAt": "2026-08-18T14:40:06.864909Z",
+  "anchor": {
+    "source": "instructions",
+    "quote": "Learn to enter an unfamiliar codebase and collaborate through public engineering conventions."
+  }
+}

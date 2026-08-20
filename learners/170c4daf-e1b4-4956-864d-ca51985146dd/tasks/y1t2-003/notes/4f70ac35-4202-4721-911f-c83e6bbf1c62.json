@@ -1,0 +1,12 @@
+{
+  "schemaVersion": 1,
+  "id": "4f70ac35-4202-4721-911f-c83e6bbf1c62",
+  "taskId": "y1t2-003",
+  "title": "test note",
+  "createdAt": "2026-08-18T16:01:05.212841Z",
+  "updatedAt": "2026-08-18T16:01:05.212841Z",
+  "anchor": {
+    "source": "instructions",
+    "quote": "Move from writing SQL to reasoning about database behavior."
+  }
+}
