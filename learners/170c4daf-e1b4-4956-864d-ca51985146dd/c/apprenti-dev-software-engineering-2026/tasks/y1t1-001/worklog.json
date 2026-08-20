@@ -3,11 +3,12 @@
   "entries": [
     {
       "schemaVersion": 1,
-      "id": "1cee7a28-72cb-4d0c-89fa-bd5520fde0f7",
+      "id": "5d7de032-5476-4378-8e4c-d2f95fc769da",
       "taskId": "y1t1-001",
-      "loggedAt": "2026-08-20T06:16:02.696853Z",
-      "minutes": 60,
-      "input": "1h"
+      "loggedAt": "2026-08-20T16:52:46.189341Z",
+      "minutes": 120,
+      "input": "2h",
+      "comment": "Worked on some git stuff"
     }
   ]
 }
