@@ -1,30 +1,30 @@
 {
   "title": "Konteynerler",
-  "description": "Docker görüntüler, kapsayıcılar, ağ iletişimi, birimler ve çoğaltılabilir ortamlar.",
+  "description": "Bir servisi ve bağımlılıklarını, temiz bir makinenin aynı yığını çalıştıracağı şekilde paketleyebilir — image, network, volume ve build'de sır yok.",
   "levels": [
     {
       "name": "Temel",
-      "description": "Temel kavramları açıklayabilir ve rehberli çalışmaları tamamlayabilir.",
+      "description": "Yazılı rehberlik altında commit'lenmiş bir Dockerfile'dan image build edebilir, belgelenmiş bir portta çalıştırabilir ve container ile VM farkını açıklayabilir.",
       "level": 1
     },
     {
       "name": "Çırak",
-      "description": "Kapsamı belirlenmiş görevleri sınırlı yönlendirmeyle tamamlayabilir ve kanıt üretebilir.",
+      "description": "Base image'i bir digest veya değişmez tag'e sabitleyebilir, .dockerignore ile .git ve sırları dışarıda bırakabilir ve yalnızca belgelenmiş env var'larla temiz bir checkout'tan servis artı veritabanını docker compose up ile ayağa kaldırabilir.",
       "level": 2
     },
     {
       "name": "Uygulayıcı",
-      "description": "Kayda değer bir çalışmayı bağımsız olarak tasarlayabilir, uygulayabilir, test edebilir ve açıklayabilir.",
+      "description": "Adı konmuş bir volume'un container yenilemesinden bağımsız olarak kurtulmasını sağlayabilir, her iki servisin healthy bildirdiği healthcheck ekleyebilir, servislerin birbirine Compose adıyla ulaşmasını sağlayabilir ve test paketini containerized veritabanına karşı container içinde çalıştırabilir.",
       "level": 3
     },
     {
       "name": "Kalfa",
-      "description": "Belirsizlikle başa çıkabilir, hataları teşhis edebilir ve ödünleşimleri gerekçelendirebilir.",
+      "description": "Yalnızca yazarın makinesinde çalışan bir yığını teşhis edebilir — bind-mount, pinsiz latest, koda gömülü sır veya yalnızca host IP — ve commit'lenmiş manifest'leri uygulayarak yerel bir cluster'da çırağın image'ini sunan Ready bir pod gösterebilir.",
       "level": 4
     },
     {
       "name": "Ustalık Kanıtı",
-      "description": "Alışılmadık durumlarda öğretebilir, değerlendirme yapabilir ve sağlam kararlar verebilir.",
+      "description": "Başka bir çırağın Dockerfile veya Compose dosyasını değerlendirebilir; zahmet veya sır sızıntısı olan bir katmanı veya volume'u adlandırabilir; tanıdık olmayan bir serviste yerel Kubernetes manifest'inin ne zaman Compose'a yeğ olduğunu öğretebilir.",
       "level": 5
     }
   ]

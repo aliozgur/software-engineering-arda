@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "id": "as1t1-004",
   "title": "Injection: Find, Fix, Prove",
-  "term": "year-1/term-1",
+  "term": "year-1-term-1",
   "module": "injection",
   "estimatedHours": 10,
   "objective": "Find at least two injection sinks in the application you own or operate locally, remove string concatenation from those sinks, and prove one fix with a test that fails when concatenation is restored.",

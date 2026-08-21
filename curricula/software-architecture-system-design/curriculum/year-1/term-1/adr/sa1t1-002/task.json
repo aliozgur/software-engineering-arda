@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "id": "sa1t1-002",
   "title": "Writing Your First Architecture Decision Record",
-  "term": "year-1/term-1",
+  "term": "year-1-term-1",
   "module": "adr",
   "estimatedHours": 5,
   "objective": "Write a complete ADR for a real decision, naming rejected alternatives and at least one accepted negative consequence.",

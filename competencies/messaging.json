@@ -2,32 +2,32 @@
   "schemaVersion": 1,
   "id": "messaging",
   "title": "Messaging",
-  "description": "Queues, pub/sub, acknowledgements, retries, idempotency, ordering and backpressure.",
+  "description": "Can publish and consume so acks, retries and ordering are measured — and can state the actual delivery guarantee instead of claiming exactly-once.",
   "levels": [
     {
       "level": 1,
       "name": "Foundation",
-      "description": "Can explain core concepts and complete guided work."
+      "description": "Can publish a message to a queue, consume it in a separate process, and point at ack versus nack — under written guidance."
     },
     {
       "level": 2,
       "name": "Apprentice",
-      "description": "Can complete scoped tasks with limited guidance and produce evidence."
+      "description": "Can publish a domain event from an API, show the HTTP response returning before the consumer finishes, recover an unacked message after a crash, and route a poison message to an inspectable dead-letter path with a bounded retry."
     },
     {
       "level": 3,
       "name": "Practitioner",
-      "description": "Can independently design, implement, test and explain non-trivial work."
+      "description": "Can independently make duplicate delivery safe for domain state, write down the idempotency key, and compare RabbitMQ to Kafka on a named scenario — scoping ordering to a partition, not a brand."
     },
     {
       "level": 4,
       "name": "Journeyman",
-      "description": "Can handle ambiguity, diagnose failures and defend trade-offs."
+      "description": "Can diagnose a dual-write, ack-window or unclean-leader failure where 'at-least-once' alone would mislead, cite the lost or duplicated effect, and produce a results table another on-call can use without opening application source."
     },
     {
       "level": 5,
       "name": "Mastery Evidence",
-      "description": "Can teach, review and make sound decisions across unfamiliar situations."
+      "description": "Can review another apprentice's topology, name a casual exactly-once claim or an unbounded retry, and teach when to trust a Kafka offset over a RabbitMQ ack (or the reverse) on an unfamiliar pipeline."
     }
   ]
 }

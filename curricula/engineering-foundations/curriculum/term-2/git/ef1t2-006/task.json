@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "id": "ef1t2-006",
   "title": "Find a Regression with git bisect",
-  "term": "term-2",
+  "term": "year-1-term-2",
   "module": "git",
   "estimatedHours": 6,
   "objective": "Use git bisect with an automated check to find the first commit that introduced a Python regression, and leave a log a teammate could repeat.",

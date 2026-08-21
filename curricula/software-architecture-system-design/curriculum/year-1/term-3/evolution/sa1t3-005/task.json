@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "id": "sa1t3-005",
   "title": "Evolving a Running Architecture Without a Big-Bang Rewrite",
-  "term": "year-1/term-3",
+  "term": "year-1-term-3",
   "module": "evolution",
   "estimatedHours": 8,
   "objective": "Plan a three-step evolution of a prior decision that names what is dual-running in each step, the compatibility contract during overlap, and the last reversible step.",

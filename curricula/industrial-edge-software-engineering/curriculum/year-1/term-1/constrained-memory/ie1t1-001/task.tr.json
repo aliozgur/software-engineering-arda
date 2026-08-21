@@ -1,0 +1,18 @@
+{
+  "title": "Her baytı bütçele: firmware tarzı statik ayırma",
+  "objective": "Genel amaçlı ayırıcı çağırmayan, sayısal bir bellek bütçesi yayımlayan ve ikilinin o bütçenin içinde kaldığını kanıtlayan host-tarafı bir C telemetri deposu gönder.",
+  "whyThisMatters": "Edge yazılımı, heap politikası umut olduğunda kırılır. Bu müfredattaki sonraki her görev malloc'u reddedebildiğini, RAM yiyen section'ları adlandırabildiğini ve iddia yerine ölçüm gösterebildiğini varsayar.",
+  "evidence": [
+    ".text, .data, .bss ve yığın için sayısal bayt bütçeleri yazan MEMORY.md",
+    ".data + .bss'nin yazılı veri bütçesinde veya altında olduğunu gösteren yakalanmış bir size veya linker-map alıntısı",
+    "Bütçenin depo uygulanmadan önce, sonra değil, yazıldığını gösteren Git geçmişi",
+    "Kasten eklenen bir malloc/calloc/realloc/free çağrısını reddeden yakalanmış derleme, bağlama veya CI hatası",
+    "Görev sorularını yanıtlayan değerlendirme notları"
+  ],
+  "acceptanceCriteria": [
+    "Gönderilen C kaynaklarının özyinelemeli grep'i (veya eşdeğeri) malloc, calloc, realloc veya free çağrısı bulmaz.",
+    "MEMORY.md .text, .data, .bss ve yığının her biri için bir bayt sayısı yazar; .data + .bss + yığın için toplam RAM tavanı en fazla 64 KiB'dir.",
+    "Yakalanmış bir size(1) raporu veya linker map, .data + .bss'nin MEMORY.md'de yazılan .data + .bss bütçesinden küçük veya ona eşit olduğunu gösterir.",
+    "Belgelenmiş bir kapı (derleme zamanı #error, linker tanımsız-referans veya derlemeyi düşüren CI grep) malloc çağıran bir commit'i reddeder ve o reddin yakalanmış günlüğü eklenir."
+  ]
+}

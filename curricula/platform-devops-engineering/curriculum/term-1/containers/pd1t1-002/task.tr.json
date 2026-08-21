@@ -1,0 +1,17 @@
+{
+  "title": "CI'da Zaten Test Ettiğin Servisi Containerize Et",
+  "evidence": [
+    "Temiz bir checkout'tan commit edilmiş Dockerfile ve .dockerignore",
+    "Digest veya image ID ile başarılı bir image gösteren docker build komut çıktısı",
+    "Kaynak kodu bind-mount etmeden belgelenmiş bir endpoint'e başarılı istek içeren docker run komut çıktısı",
+    "Base-image pin'ini (digest veya değişmez tag) ve .dockerignore'un dışladığı yolları listeleyen kısa not",
+    "Görev sorularını yanıtlayan değerlendirme notları",
+    "Yapay zekâ çalışmayı önemli ölçüde etkilediyse yapay zekâ kullanım beyanı"
+  ],
+  "acceptanceCriteria": [
+    "docker build, yalnızca commit edilmiş dosyaları kullanarak temiz bir checkout'tan başarılı olur.",
+    "docker run, çalışma ağacını bind-mount etmeden servisi belgelenmiş bir portta sunar.",
+    ".dockerignore .git, yerel env dosyaları ve secret'ları dışlar; not bu dışlamaları listeler.",
+    "FROM talimatı digest veya değişmez bir sürüm tag'i ile pin'lenir; tek pin olarak unpinned latest kullanılmaz."
+  ]
+}

@@ -7,27 +7,27 @@
     {
       "level": 1,
       "name": "Foundation",
-      "description": "Can explain core concepts and complete guided work."
+      "description": "Can compute a mean, median and a simple distribution plot, name the unit and the population the table covers, and write a chart title that is a sentence — under written guidance."
     },
     {
       "level": 2,
       "name": "Apprentice",
-      "description": "Can complete scoped tasks with limited guidance and produce evidence."
+      "description": "Can discuss outliers without deleting them by default, keep summaries free of p-values and 'significant' language, and match each claim to a table or figure."
     },
     {
       "level": 3,
       "name": "Practitioner",
-      "description": "Can independently design, implement, test and explain non-trivial work."
+      "description": "Can independently choose a summary that matches the distribution (mean versus median, count versus rate), label axes and filters, and refuse a claim the ink does not support."
     },
     {
       "level": 4,
       "name": "Journeyman",
-      "description": "Can handle ambiguity, diagnose failures and defend trade-offs."
+      "description": "Can diagnose a misleading summary — a mean of a skewed set, a rate without a denominator — cite the figure that contradicts the sentence, and produce a rewrite another reader can check against the same ink."
     },
     {
       "level": 5,
       "name": "Mastery Evidence",
-      "description": "Can teach, review and make sound decisions across unfamiliar situations."
+      "description": "Can review another apprentice's stats write-up, name a claim that outruns the figure, and teach when a median is the honest summary on an unfamiliar dataset."
     }
   ]
 }

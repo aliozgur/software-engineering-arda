@@ -1,0 +1,17 @@
+{
+  "title": "Yapay Zekâya Ne Zaman Uzanmamak Gerektiğini Bilmek",
+  "objective": "Geri alınamaz bir işlem, güvenlik-duyarlı kod veya hâlâ gerçekten belirsiz bir gereksinim olduğu için yapay zekâ üretimi kodu kasıtlı olarak kullanmadığınız gerçek, yaklaşan bir iş parçası belirleyin; o kararın yazılı gerekçesini ve onsuz tamamlanan işi üretin.",
+  "whyThisMatters": "Bu müfredatın etrafında kurulduğu AI-native beceri 'her zaman yapay zekâ kullan' değildir — doğrulanmamış veya erken bir önerinin riskinin hız kazancından ağır bastığı anı yargılamaktır.",
+  "evidence": [
+    "İşe başlamadan önce yazılıp commit edilmiş bir karar notu: somut riski ve bu parça için yapay zekâ üretimi kullanmamayı neden gerekçelendirdiğini adlandırır",
+    "Kısıtlanan işte yapay zekâ üretimi uygulama kodu olmadan aşamalı ilerlemeyi gösteren Git geçmişi veya çalışma kaydı",
+    "Görevde yapay zekânın hâlâ nerede kullanıldığını — kullanıldıysa — kasıtlı olarak kısıtlanandan açıkça ayıran not",
+    "Kararın tersine dönmesi için neyin doğru olması gerektiğine dair değerlendirme"
+  ],
+  "acceptanceCriteria": [
+    "Karar notu, ilgilendiği uygulama işinden önce commit edilmiştir.",
+    "Adlandırılan risk şunlardan biridir: geri alınamaz işlem, güvenlik-duyarlı kod veya açıkça belirsiz bir gereksinim; not hangisi olduğunu ve nedenini açıklar.",
+    "Kullanım beyanına göre, kısıtlanan kısımda gönderilen işte yapay zekâ üretimi uygulama kodu yoktur.",
+    "Değerlendirme, kararın farklı olacağı somut bir koşulu adlandırır; belirsiz bir çekince değildir."
+  ]
+}

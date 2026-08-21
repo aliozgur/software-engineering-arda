@@ -1,0 +1,17 @@
+{
+  "title": "Servisi ve Bir Bağımlılığı Compose ile Çalıştır",
+  "evidence": [
+    "Uygulamayı ve en az bir bağımlılığı, healthcheck bloklarıyla birlikte tanımlayan commit edilmiş Compose dosyası",
+    "Her iki servisin de healthy olduğunu gösteren compose up komut çıktısı",
+    "Yayınlanan port üzerinden çalışan stack'e karşı başarılı yakalanmış smoke isteği",
+    "Bağımlılığın yeniden başlatıldığını ve named volume'da daha önce yazılan verinin durduğunu gösteren komut çıktısı",
+    "Görev sorularını yanıtlayan değerlendirme notları",
+    "Yapay zekâ çalışmayı önemli ölçüde etkilediyse yapay zekâ kullanım beyanı"
+  ],
+  "acceptanceCriteria": [
+    "Temiz bir checkout'tan compose up, uygulamayı ve en az bir bağımlılığı başlatır.",
+    "Hem uygulama hem bağımlılık bir healthcheck tanımlar; compose her ikisini de healthy raporlar.",
+    "Servisler birbirine yalnızca host IP'siyle değil, Compose servis adıyla ulaşır.",
+    "Bağımlılık container'ı silinip yeniden başlatıldıktan sonra demoda yazılan veri named volume'da durur."
+  ]
+}

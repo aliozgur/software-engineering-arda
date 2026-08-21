@@ -1,0 +1,18 @@
+{
+  "title": "git bisect ile bir Regresyon Bulmak",
+  "objective": "Bir Python regresyonunu ilk sokan commit'i otomatik bir kontrol ile git bisect kullanarak bulun ve bir takım arkadaşının tekrarlayabileceği bir kayıt bırakın.",
+  "whyThisMatters": "git log'u kaydırıp hangi commit'in bir davranışı kırdığını tahmin etmek ölçeklenmez. Bisect, geçmişi aramanın profesyonel yoludur: iyi bir commit, kötü bir commit ve hangisinin hangisi olduğunu söyleyebilen bir kontrol.",
+  "evidence": [
+    "En az 3 bisect adımı gösteren tam git bisect log (veya eşdeğer kayıtlı oturum)",
+    "İyi davranışta 0, regresyonda sıfırdan farklı çıkan, commit edilmiş otomatik kontrol script'i",
+    "İlk kötü commit'in tam SHA'sını, konu satırını ve kırılmaya neden olan değişikliğe dair bir cümleyi adlandıran yazılı not",
+    "Bisect edilen aralıkta en az 8 commit gösteren git rev-list --count çıktısı",
+    "Yapay zekâ kontrol script'ini yazmaya veya bisect sonucunu yorumlamaya yardımcı olduysa yapay zekâ kullanım beyanı"
+  ],
+  "acceptanceCriteria": [
+    "Bir git bisect log (veya eşdeğer kayıtlı oturum) vardır ve commit'leri good veya bad olarak işaretleyen en az 3 bisect adımı gösterir.",
+    "Otomatik kontrol script'i depoda commit edilmiştir ve bisect sırasında kullanılan sınıflandırıcıdır (kayıtta veya çalıştırma komutunda adlandırılır).",
+    "Not, ilk kötü commit'in tam SHA'sını ve konusunu, artı o commit'in diff'indeki nedensel değişikliğe dair bir cümleyi adlandırır.",
+    "Bilinen-iyi commit'ten bilinen-kötü uca git rev-list --count en az 8'dir."
+  ]
+}

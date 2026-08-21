@@ -1,30 +1,30 @@
 {
   "title": "C Bellek",
-  "description": "C'nin temelleri, işaretçiler, bellek düzeni ve düşük düzeyli akıl yürütme.",
+  "description": "Ayrılan belleğin serbest bırakılacağı şekilde işaretçi ve heap sahipliği olan C yazabilir — malloc yanlış araç olduğunda statik bir bütçe, pool veya ring buffer seçebilir.",
   "levels": [
     {
       "name": "Temel",
-      "description": "Temel kavramları açıklayabilir ve rehberli çalışmaları tamamlayabilir.",
+      "description": "Yazılı rehberlik altında heap bellek ayırıp serbest bırakan C yazabilir, debugger'da stack ile heap'i ayırt edebilir ve verilen bir argümanın işaretçiyle mi değerle mi geçirildiğini adlandırabilir.",
       "level": 1
     },
     {
       "name": "Çırak",
-      "description": "Kapsamı belirlenmiş görevleri sınırlı yönlendirmeyle tamamlayabilir ve kanıt üretebilir.",
+      "description": "Her allocation'ı serbest bırakan dinamik bir liste veya hash table uygulayabilir; stack, heap ve yaygın işaretçi hatalarını adlandıran bir not yazabilir; bir işaretçiyi ve adreslediği baytları inceleyen yakalanmış bir debugger oturumu gösterebilir.",
       "level": 2
     },
     {
       "name": "Uygulayıcı",
-      "description": "Kayda değer bir çalışmayı bağımsız olarak tasarlayabilir, uygulayabilir, test edebilir ve açıklayabilir.",
+      "description": "Yazılı bir bayt bütçesi veya sabit boyutlu pool, malloc'u reddeden bir kapı ve .data + .bss'in o bütçede kaldığını gösteren yakalanmış bir size veya linker-map özeti ile host tarafı bir C bileşenini bağımsız olarak teslim edebilir.",
       "level": 3
     },
     {
       "name": "Kalfa",
-      "description": "Belirsizlikle başa çıkabilir, hataları teşhis edebilir ve ödünleşimleri gerekçelendirebilir.",
+      "description": "Salt dönüş değerinin gizleyeceği bir sızıntıyı, double-free'yi, taşmayı veya hizalama hatasını teşhis edebilir; açıklayan düzeni veya overflow/OOM politikasını gösterebilir; başka bir mühendisin debugger açmadan hatayı yeniden üretebileceği bir not üretebilir.",
       "level": 4
     },
     {
       "name": "Ustalık Kanıtı",
-      "description": "Alışılmadık durumlarda öğretebilir, değerlendirme yapabilir ve sağlam kararlar verebilir.",
+      "description": "Başka bir çırağın C bellek çalışmasını değerlendirebilir; kontrol edilmemiş bir malloc, eksik bir free veya test edilmemiş bir overflow/OOM yolunu adlandırabilir; tanıdık olmayan kısıtlı bir hedefte statik buffer, pool veya ring buffer'ın ne zaman doğru araç olduğunu öğretebilir.",
       "level": 5
     }
   ]

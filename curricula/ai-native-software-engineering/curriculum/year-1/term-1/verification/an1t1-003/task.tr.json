@@ -1,0 +1,18 @@
+{
+  "title": "Yapay Zekânın Ürettiği Kodu Test Güdümlü Doğrulamak",
+  "objective": "Küçük bir özellik için testleri, yapay zekâdan uygulama istemeden önce yazın; ardından o dokunulmamış testleri, üretilenin kabul kapısı olarak kullanın.",
+  "whyThisMatters": "Sonradan yazılan doğrulama, yapay zekânın zaten ürettiğini yansıtmaya eğilimlidir. Uygulamadan bağımsız, önce yazılmış testler gerçek bir kontroldür; onay ritüeli değildir.",
+  "evidence": [
+    "Herhangi bir uygulama commit'i oluşmadan önce, yalnızca test paketini içeren bir commit",
+    "Testlerin bir stub veya boş uygulamaya karşı başarısız olduğunu gösteren çalıştırma kaydı",
+    "Yapay zekânın ürettiği uygulamanın, dokunulmamış test paketini geçtiğini gösteren çalıştırma kaydı",
+    "Uygulamayı gördükten sonra değiştirmek zorunda kaldığınız herhangi bir testi ve o değişikliğin gerekçeli olup olmadığını anlatan not",
+    "Kullanılan araç/modeli, amacı ve bağımsız olarak doğrulananı adlandıran yapay zekâ kullanım beyanı"
+  ],
+  "acceptanceCriteria": [
+    "Test paketi commit'i, Git geçmişinde uygulama commit'inden önce gelir.",
+    "Stub bir uygulamaya karşı başarısız bir test çalıştırması kanıt olarak eklenmiştir.",
+    "Yapay zekânın ürettiği uygulamaya karşı geçen bir test çalıştırması kanıt olarak eklenmiştir.",
+    "Sonradan yapılan her test değişikliği notta açıkça gerekçelendirilmiştir; sessizce yapılmamıştır."
+  ]
+}

@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "id": "de1t1-002",
   "title": "Load Once, Then Prove You Can Load Again",
-  "term": "year-1/term-1",
+  "term": "year-1-term-1",
   "module": "batch-etl",
   "estimatedHours": 8,
   "objective": "Write a repeatable batch extract-load job into the staging and warehouse schemas from the previous task, and prove a second run against an unchanged snapshot does not grow the warehouse key set.",

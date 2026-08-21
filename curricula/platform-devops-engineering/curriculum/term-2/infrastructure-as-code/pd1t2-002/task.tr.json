@@ -1,0 +1,18 @@
+{
+  "title": "Yerel Runtime'ı OpenTofu ile Beyan Et",
+  "evidence": [
+    "Commit edilmiş OpenTofu yapılandırması artı temiz bir checkout'tan tofu init ve tofu plan çıktısı",
+    "En az üç ayrı resource adresini gösteren tofu apply çıktısı ve tofu state list",
+    "Düzenleme yapılmadan alınan, beklenmeyen değişiklik göstermeyen ikinci tofu plan",
+    "tofu destroy ardından aynı resource adreslerini yeniden oluşturan re-apply komut çıktısı",
+    "Backend'in local (veya ücretsiz) olduğunu ve terraform.tfstate'in gitignore edildiğini belirten not",
+    "Görev sorularını yanıtlayan değerlendirme notları",
+    "Yapay zekâ çalışmayı önemli ölçüde etkilediyse yapay zekâ kullanım beyanı"
+  ],
+  "acceptanceCriteria": [
+    "tofu init ve tofu plan, yalnızca commit edilmiş dosyaları kullanarak temiz bir checkout'tan başarılı olur.",
+    "tofu apply, mentorun tofu state list ve gerçek Docker veya Kubernetes nesneleri üzerinden inceleyebileceği en az üç ayrı resource oluşturur.",
+    "Yapılandırma düzenlemesi olmadan ikinci apply, beklenmeyen değişiklik içermeyen bir plan üretir.",
+    "tofu destroy beyan edilen resource'ları kaldırır; follow-up apply onları yeniden oluşturur. State dosyaları gitignore edilir. Ücretli cloud hesabı gerekmez."
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "title": "İlk Architecture Decision Record'unu Yazmak",
+  "objective": "Gerçek bir karar için, reddedilen alternatifleri ve en az bir kabul edilmiş olumsuz sonucu adlandıran tam bir ADR yazmak.",
+  "whyThisMatters": "Yazılmamış bir mimari karar, kimsenin inceleyemeyeceği, sorgulayamayacağı veya sonra güvenle yeniden ziyaret edemeyeceği bir karardır. ADR, bu müfredatta hesap verebilir mimari yargının en küçük birimidir; sonraki her görev, bir tanesini düzgün yazabilmeye dayanır.",
+  "evidence": [
+    "Depoya commit edilmiş ADR dosyasının kendisi; context/decision/consequences biçiminde",
+    "ADR'de adlandırılmış en az iki reddedilmiş alternatif; her birinin gerekçesi diğerlerinden ayrı",
+    "Belirtilmiş bir inceleme yorumu veya kendi tespit ettiğin bir boşluktan sonra ADR'nin en az bir kez gözden geçirildiğini gösteren Git geçmişi"
+  ],
+  "acceptanceCriteria": [
+    "ADR, en az iki reddedilmiş alternatif adlandırır; her birinin gerekçesi \"daha kötüydü\"den farklıdır.",
+    "Seçilen seçeneğin en az bir olumsuz sonucu veya kabul edilmiş ödünleşimi açıkça belirtilmiştir.",
+    "ADR, yanıt verdiği en az bir NFR bütçesine veya açık kısıta izlenebilir."
+  ]
+}

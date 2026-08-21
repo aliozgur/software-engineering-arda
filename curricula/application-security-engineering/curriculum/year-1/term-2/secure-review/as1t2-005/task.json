@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "id": "as1t2-005",
   "title": "Secure Code Review with a Written Verdict",
-  "term": "year-1/term-2",
+  "term": "year-1-term-2",
   "module": "secure-review",
   "estimatedHours": 8,
   "objective": "Review a real application diff you own, write at least four findings with severity, OWASP or CWE mapping, and a recommended fix, and either apply must-fix items or record residual risk.",

@@ -1,0 +1,11 @@
+{
+  "name": "apprenti.dev Açık Kaynak Mühendisliği",
+  "audience": "Gerçek açık kaynak katkı ve maintainership becerisi geliştiren junior'dan senior'a mühendisler",
+  "philosophy": "Gerçek projelere katkı verin, gerçek geri bildirim alın ve ilk pull request'ten maintainer yargısına kadar büyüyün — her artefakt gerçek ve dışarıdan doğrulanabilir bir katkıdır, asla bir simülasyon değildir.",
+  "aiPrinciples": [
+    "Yapay zekâ yardımı, özellikle gerçek bir dış projeye gönderilen herhangi bir şeyde, maddi olarak kullanıldığında açıklanmalıdır.",
+    "Yapay zekâ açıklayabilir, ipucu verebilir ve quiz sorabilir; ancak çırağın kendi adı altında gerçek bir maintainer'a veya katkıda bulunana gönderdiği kodu, metni veya inceleme yorumlarını asla yazmamalıdır.",
+    "Çırak kendi hesabı altında gönderilen her gerçek pull request, issue yorumu ve incelemeden sorumlu olmaya devam eder.",
+    "Mentor onayı gönderimin ne kadar cilalı göründüğüne değil, gerçek ve dışarıdan doğrulanabilir artefakta — bir PR, issue veya inceleme URL'sine — ve çırağın bunu açıklayıp savunabilmesine dayanır."
+  ]
+}

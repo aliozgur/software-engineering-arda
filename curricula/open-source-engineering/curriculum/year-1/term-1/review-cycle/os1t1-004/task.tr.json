@@ -1,0 +1,20 @@
+{
+  "title": "Review Döngüsünü Kapatın",
+  "objective": "Gerçek katkıdaki review'a yanıt verin: her yorumu bir follow-up commit veya yazılı no-change gerekçesiyle ele alın; varsa maintainer review'ını, yoksa belgelenmiş bir self-review artı ikinci kişi review'ını kullanın.",
+  "whyThisMatters": "Bir pull request açmak işbirliğinin başlangıcıdır. Maintainer'ların gerçekten ihtiyaç duyduğu beceri, takip edemeyecekleri history'yi yeniden yazmadan her yoruma görünür bir yanıttır.",
+  "evidence": [
+    "os1t1-003'teki pull-request URL'si (upstream veya public fork)",
+    "Review thread URL'(leri), veya notta tarihli commit edilmiş bir self-review artı ikinci kişi inceleyenin adı veya handle'ı ve tarihi",
+    "Her review öğesi için bir satırlı tablo: yorum özeti, yanıt ve ya bir follow-up commit SHA ya da no change ifadesi artı tek cümlelik gerekçe",
+    "İlk review yorumundan veya self-review tarihinden sonra bir commit zaman damgası gösteren Git log, her satır no change değilse",
+    "Görev sorularını yanıtlayan değerlendirme notları",
+    "Yapay zekâ çalışmayı önemli ölçüde etkilediyse AI kullanım açıklaması"
+  ],
+  "acceptanceCriteria": [
+    "Tabloda pull request'teki her review yorumu için bir satır vardır, veya — maintainer review'ı yoksa — en az dört self-review öğesi artı ikinci kişi inceleyenin yükselttiği her öğe.",
+    "Her satır bir yorum özeti, tartışılan dosya veya satırı adlandıran bir yanıt ve ya bir commit SHA ya da tam olarak \"no change\" ifadesi artı tek cümlelik bir gerekçe içerir.",
+    "Branch'teki en az bir commit'in author date'i ilk review yorumundan (veya kaydedilen self-review tarihinden) sonradır, her satır no change işaretli değilse.",
+    "Pull-request açıklaması hâlâ os1t1-003'teki upstream issue URL'sini içerir.",
+    "Her yanıt bir veya daha fazla tam cümle olarak yazılır; hiçbir yanıt yalnızca emoji, yalnızca \"fixed\" veya açıklamasız yapıştırılmış bir patch değildir."
+  ]
+}

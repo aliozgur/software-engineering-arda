@@ -1,0 +1,17 @@
+{
+  "title": "Gürültülü Eşik Değil, Yanmış SLO Üzerine Alert Aç",
+  "evidence": [
+    "Yalnızca ham CPU eşiği değil, en az bir SLO tarzı alert (error-budget veya burn) tanımlayan commit edilmiş Prometheus rule dosyası",
+    "Belgelenmiş arıza altında alert'in ateşlediğini gösteren yakalanmış Alertmanager veya Prometheus alerts API/UI çıktısı",
+    "Arıza kaldırıldıktan sonra aynı alert'in resolved olduğunu gösteren yakalanmış çıktı",
+    "Tek paragraf gerekçeli yazılı SLO, pencere ve burn veya budget eşiği, artı alert annotation'ının işaret ettiği aynı repository'deki runbook bölümü",
+    "Görev sorularını yanıtlayan değerlendirme notları",
+    "Yapay zekâ çalışmayı önemli ölçüde etkilediyse yapay zekâ kullanım beyanı"
+  ],
+  "acceptanceCriteria": [
+    "Commit edilmiş bir Prometheus rule dosyası, yalnızca ham host CPU veya bellek eşiği değil, en az bir SLO tarzı alert (burn veya error-budget) tanımlar.",
+    "Belgelenmiş arızayı enjekte etmek alert'i ateşletir; arızayı kaldırmak onu resolve eder. Her iki durum da yakalanır.",
+    "SLO, pencere ve eşik, yorumlanmamış bir kopyala-yapıştır olarak bırakılmaz; tek paragraf gerekçeyle yazılır.",
+    "Alert annotation'ı aynı repository'deki bir runbook bölümüne işaret eder. Çırağın hem ateşleyemeyeceği hem resolve edemeyeceği hiçbir alert tanımlanmaz."
+  ]
+}

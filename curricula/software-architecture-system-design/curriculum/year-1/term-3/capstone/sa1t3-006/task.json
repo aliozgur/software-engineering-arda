@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "id": "sa1t3-006",
   "title": "End-to-End Architecture: Present, Defend, Revise",
-  "term": "year-1/term-3",
+  "term": "year-1-term-3",
   "module": "capstone",
   "estimatedHours": 10,
   "objective": "Produce a self-scoped architecture packet with at least three ADRs tied to stated NFRs, defend it live against one changed constraint, and supersede the ADR that constraint invalidated.",

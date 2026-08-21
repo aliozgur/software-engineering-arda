@@ -1,0 +1,17 @@
+{
+  "title": "Bir Servis Alanı için İlişkisel Şema Tasarımı",
+  "objective": "Gerçek bir servis alanı için, yalnızca doğru görünmekle kalmayıp alanın gerçek değişmezlerini uygulayan kısıtlara sahip, normalize edilmiş bir PostgreSQL şeması tasarlamak.",
+  "whyThisMatters": "Gerçek kısıtı olmayan bir şema, gerçek bir iş için kullanıldığı ilk hafta bozuk veri kabul eder; sonraki görev bu şemanın üzerine doğrudan bir API kurar, yani buradaki hatalar katlanır.",
+  "evidence": [
+    "Çalışma sırasına göre commit edilmiş migration dosyaları; Git geçmişi bunların aşamalı eklendiğini gösterir",
+    "Kasıtlı bir kısıt ihlalinin veritabanı tarafından reddedildiğini gösteren terminal dökümü veya log",
+    "Örnek veri yükleme script'i ve üç zorunlu sorgunun çıktılarıyla birlikte hali",
+    "Her tablonun amacını ve kısıtlarını belgeleyen README"
+  ],
+  "acceptanceCriteria": [
+    "Şemada, geçersiz örnek veriyi etkin biçimde reddeden en az bir kısıt vardır; başarısız bir insert ile gösterilir.",
+    "Migration'lar boş bir veritabanından son şemaya, elle müdahale olmadan sırayla çalışır.",
+    "En az bir sorgu iki tablo arasında join kullanır ve örnek veriye karşı doğru sonuç döner.",
+    "README her tablonun amacını ve kısıtlarını belgeler."
+  ]
+}

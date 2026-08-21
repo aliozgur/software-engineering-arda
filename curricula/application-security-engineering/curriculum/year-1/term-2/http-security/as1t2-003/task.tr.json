@@ -1,0 +1,18 @@
+{
+  "title": "HTTP Security Header'ları ve Bir Sözleşme Olarak CORS",
+  "objective": "Sahip olduğunuz veya yerelde işlettiğiniz uygulamada tarayıcı security header'larını ve açık bir CORS allow-list koyun; her header'ı yakalanmış bir yanıtla gösterin.",
+  "whyThisMatters": "Header'lar tarayıcıyla bir sözleşmedir, süs değildir. Credential'lı bir route'ta wildcard CORS origin veya eksik nosniff, kontrol edilebilir bir kusurdur. Bu görev o seçimleri savunabileceğiniz HTTP API tasarımı olarak ele alır.",
+  "evidence": [
+    "Her header veya CORS alanını, azalttığı tehdidi ve yakalamak için kullanılan isteği listeleyen bir header-and-CORS tablosu",
+    "Bir HTML route'unda X-Content-Type-Options, Referrer-Policy ve frame-busting kontrolünü gösteren yakalanmış HTTP yanıtları",
+    "Credential'lı bir route'ta açık bir origin listesi ve Access-Control-Allow-Origin: * olmadığını gösteren yakalanmış CORS preflight veya yanıt",
+    "Header varsayılanları ile CORS yapılandırmasının ayrı commit'lerde olduğunu gösteren Git geçmişi",
+    "Görev sorularını yanıtlayan değerlendirme notu"
+  ],
+  "acceptanceCriteria": [
+    "Her HTML yanıtı, yakalanmış bir yanıtta gösterilen X-Content-Type-Options: nosniff ve bir Referrer-Policy içerir.",
+    "Hiçbir credential'lı route Access-Control-Allow-Origin: * dönmez; izin verilen origin'ler yapılandırmada veya kodda açık bir listedir.",
+    "Bir frame-busting kontrolü vardır (X-Frame-Options veya CSP frame-ancestors), yakalanmış bir yanıtta gösterilir.",
+    "Bir not tablosu her header'ı, azalttığı tehdidi ve bunu gösteren bir isteği listeler."
+  ]
+}

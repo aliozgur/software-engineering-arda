@@ -1,0 +1,15 @@
+{
+  "title": "Capacity ve Gecikme Bütçesi Modellemesi",
+  "objective": "Formülleri ve varsayımları yazılmış bir kâğıt-üstü capacity modeli kurmak, gecikme bütçesini bileşenlere dağıtmak ve en olası darboğazı kanıtla adlandırmak.",
+  "whyThisMatters": "Yalnızca sezgiyle alınan ölçekleme kararları, çoğu zaman en pahalı yönde yanılır. Formüllerini gösteren bir capacity modeli kontrol edilip düzeltilebilir; darboğazın nerede olacağına dair bir içgüdü edilemez.",
+  "evidence": [
+    "Kullanılan formülleri ve girdi varsayımlarını gösteren bir capacity modeli belgesi; yalnızca nihai sayılar değil",
+    "Uçtan uca hedefi en az üç bileşene dağıtan bir gecikme bütçesi tablosu",
+    "Tek en olası darboğazı ve modele işaret eden somut sayıyı adlandıran bir not"
+  ],
+  "acceptanceCriteria": [
+    "Her capacity sayısı, yalın bir nihai rakam değil, formülünü ve girdi varsayımlarını belirtir.",
+    "Bileşenler arası gecikme bütçesi, belirtilen uçtan uca hedefin üzerine çıkmaz.",
+    "Adlandırılan darboğaz, genel bir sezgi değil, modeldeki somut bir sayı ile desteklenir."
+  ]
+}

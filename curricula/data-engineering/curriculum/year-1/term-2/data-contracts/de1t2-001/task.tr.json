@@ -1,0 +1,18 @@
+{
+  "title": "Üreticinin Görmezden Gelemeyeceği Bir Veri Sözleşmesi Yaz",
+  "objective": "Sürümlenmiş bir üretici-tüketici sözleşmesi ve kırıcı batch'leri reddedip belgelenmiş additive değişikliği kabul eden bir doğrulayıcı yaz.",
+  "whyThisMatters": "Birinin kafasındaki şema sözleşme değildir. Tane düzeyi, nullability, tazelik ve sürüm, yükleme yolunun gerçekten okuduğu bir dosyada yaşamalıdır. Yoksa her kaynak değişikliği warehouse sürprizi olur.",
+  "evidence": [
+    "Tane düzeyi, birincil anahtar, alan tipleri ve nullability, tazelik SLA, sahip ve sürümü adlandıran sözleşme dosyası",
+    "Zorunlu alanı eksik bir batch'i reddeden, alan adını içeren doğrulayıcı çıktısı",
+    "Yalnızca isteğe bağlı bir alan ekleyen batch'i kabul eden doğrulayıcı çıktısı ve bunu izin veren sözleşme kuralı",
+    "Kaldırılmış veya yeniden adlandırılmış zorunlu alanı reddeden doğrulayıcı çıktısı ve bunu breaking olarak işaretleyen changelog satırı",
+    "Görev sorularını yanıtlayan değerlendirme notları"
+  ],
+  "acceptanceCriteria": [
+    "Sözleşme dosyası tane düzeyini, birincil anahtarı, her alanın tipini ve nullability'sini, bir tazelik SLA'sını, bir sahibi ve bir sürümü adlandırır.",
+    "Zorunlu alanı eksik bir batch, sıfır olmayan çıkış veya eşdeğeriyle doğrulayıcı tarafından reddedilir, yayınlanmaz ve yakalanmış çıktı alan adını içerir.",
+    "Yalnızca isteğe bağlı bir alan ekleyen batch major sürüm artışı olmadan kabul edilir ya da sözleşme minor artış ister ve doğrulayıcı bu kuralı uygular — seçilen kural sözleşmede yazılıdır.",
+    "Zorunlu bir alanın kaldırılması veya yeniden adlandırılması sözleşme changelog'unda breaking olarak sınıflandırılır ve doğrulayıcı tarafından reddedilir."
+  ]
+}

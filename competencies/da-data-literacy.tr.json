@@ -5,27 +5,27 @@
     {
       "level": 1,
       "name": "Temel",
-      "description": "Temel kavramları açıklayabilir ve rehberli çalışmayı tamamlayabilir."
+      "description": "Yazılı rehberlik altında bir satırın tane düzeyini tek cümlede belirtebilir, bir sütunu değişken veya değer olarak işaretleyebilir ve tablonun yanıtlayamayacağı bir soruyu adlandırabilir."
     },
     {
       "level": 2,
       "name": "Çırak",
-      "description": "Sınırlı rehberlikle kapsamı belirlenmiş görevleri tamamlayabilir ve kanıt üretebilir."
+      "description": "Dağınık bir tabloyu sürümlenmiş kodda tidy forma sokabilir, eksik değerleri sessizce doldurmak yerine tanımlayabilir ve ilk insight başlığından önce analiz sorusunu yazabilir."
     },
     {
       "level": 3,
       "name": "Uygulayıcı",
-      "description": "Basit olmayan çalışmaları bağımsız biçimde tasarlayabilir, uygulayabilir, test edebilir ve açıklayabilir."
+      "description": "Tane düzeyi ve türlerden bir veri kümesinin hangi soruları yanıtlayıp yanıtlayamayacağına bağımsız karar verebilir, bir çıkmaz yolu repo'da tutabilir ve bir varsayımı canlı değiştirip iddiayı güncelleyebilir."
     },
     {
       "level": 4,
       "name": "Kalfa",
-      "description": "Belirsizliği yönetebilir, hataları teşhis edebilir ve ödünleşimleri savunabilir."
+      "description": "Yanlış bir sonucu tane düzeyi, tür veya tidy-form hatası olarak teşhis edebilir; ihlal edilen satır tanımını gösterebilir; başka bir analistin yeni bir dosyaya uygulayabileceği bir şema notu üretebilir."
     },
     {
       "level": 5,
       "name": "Ustalık Kanıtı",
-      "description": "Öğretebilir, inceleyebilir ve alışılmadık durumlarda sağlam kararlar verebilir."
+      "description": "Başka bir çırağın şemasını veya EDA'sını değerlendirebilir; tane düzeyinin destekleyemeyeceği bir soruyu (veya hem değişken hem değer sayılan bir sütunu) adlandırabilir; tanıdık olmayan bir tabloda tane düzeyinin nasıl okunacağını öğretebilir."
     }
   ]
 }

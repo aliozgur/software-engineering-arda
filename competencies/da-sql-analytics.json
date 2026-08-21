@@ -7,27 +7,27 @@
     {
       "level": 1,
       "name": "Foundation",
-      "description": "Can explain core concepts and complete guided work."
+      "description": "Can write a SELECT with a commented join condition and grain, save it as a file, and run it against a local database — under written guidance."
     },
     {
       "level": 2,
       "name": "Apprentice",
-      "description": "Can complete scoped tasks with limited guidance and produce evidence."
+      "description": "Can add a GROUP BY whose non-aggregated SELECT columns are justified, match the metric to a pandas result, and state why a column is or is not in the SELECT list."
     },
     {
       "level": 3,
       "name": "Practitioner",
-      "description": "Can independently design, implement, test and explain non-trivial work."
+      "description": "Can independently write analysis queries whose grain matches the question, keep SQL and pandas parity on an agreed metric, and document the join that would explode."
     },
     {
       "level": 4,
       "name": "Journeyman",
-      "description": "Can handle ambiguity, diagnose failures and defend trade-offs."
+      "description": "Can diagnose a wrong total as a join or GROUP BY grain error, cite the duplicated key, and produce a query pair — broken and fixed — another analyst can run."
     },
     {
       "level": 5,
       "name": "Mastery Evidence",
-      "description": "Can teach, review and make sound decisions across unfamiliar situations."
+      "description": "Can review another apprentice's SQL, name a GROUP BY that changes the grain or a metric that does not match pandas, and teach how to read grain from a SELECT on an unfamiliar schema."
     }
   ]
 }

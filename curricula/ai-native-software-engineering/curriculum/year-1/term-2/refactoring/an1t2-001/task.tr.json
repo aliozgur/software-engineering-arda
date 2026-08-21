@@ -1,0 +1,17 @@
+{
+  "title": "Yapay Zekânın Ürettiği Kodu Sürdürülebilirlik için Refactor Etmek",
+  "objective": "Çalışan ama kötü yapılandırılmış, yapay zekâ üretimi bir uygulamayı alın; gözlemlenebilir davranışını değiştirmeden, test paketini güvenlik ağı olarak kullanarak sürdürülebilirlik için refactor edin.",
+  "whyThisMatters": "Testlerini geçen yapay zekâ kodu yine de bir bakım yükü olabilir. Onu test altında, bilinçli olarak refactor etmek, tasarım yargısının göründüğü yerdir.",
+  "evidence": [
+    "Refactor öncesi ve sonrası sürümler, ikisi de commit edilmiş; refactor, orijinal üretimden ayrı bir veya daha fazla commit'te",
+    "Refactor'dan hemen önce geçen ve hemen sonra aynı şekilde geçen test çalıştırması; davranışın değişmediğini kanıtlar",
+    "Her refactor commit'inin hedeflediği somut tasarım kokusunu adlandıran not (ör. uzun fonksiyon, yinelenen mantık, karışık sorumluluklar)",
+    "Kullanılan araç/modeli, amacı ve bağımsız olarak doğrulananı adlandıran yapay zekâ kullanım beyanı"
+  ],
+  "acceptanceCriteria": [
+    "Orijinal yapay zekâ üretimi commit'ten ayrı en az bir refactor commit'i vardır.",
+    "Test paketi hem refactor'dan hemen önce hem hemen sonra geçer; bu, iki ayrı çalıştırma kaydıyla gösterilir.",
+    "Refactor sonrası diff'te hiçbir fonksiyon 40 satırı aşmaz; her istisna notta açıkça gerekçelendirilmiştir.",
+    "Her refactor commit'inin mesajı veya eşlik eden not, ele aldığı somut tasarım kokusunu adlandırır."
+  ]
+}

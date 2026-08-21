@@ -1,0 +1,17 @@
+{
+  "title": "Servis için Otomatik Test",
+  "objective": "Yalnızca mutlu yolu değil, servisin gerçek başarısızlık kiplerini de kapsayan, gerçek bir PostgreSQL test veritabanına karşı çalışan bir test takımı kurmak.",
+  "whyThisMatters": "Yalnızca başarı durumlarını çalıştıran bir test takımı, ilk gerçek kullanıcı beklenmedik bir şey gönderene kadar yeşil kalır. Mentorlar özellikle başarısızlık kipi kapsamına bakar; yalnızca yeşil bir koşuya değil.",
+  "evidence": [
+    "Testlerin her özellikle birlikte veya hemen ardından aşamalı eklendiğini gösteren Git geçmişi",
+    "Tam test koşusu çıktısı (örneğin pytest -v) kanıt notuna yapıştırılmış",
+    "Coverage raporu çıktısı veya dosyası",
+    "Kasıtlı olarak test edilmeyen her alanı açıklayan README bölümü"
+  ],
+  "acceptanceCriteria": [
+    "Entegrasyon testleri gerçek bir PostgreSQL örneğine karşı çalışır ve koşular arasında durumunu sıfırlar.",
+    "En az iki test kasıtlı olarak bir başarısızlık kipi tetikler ve ortaya çıkan hatayı doğrular; yalnızca mutlu yolu değil.",
+    "Önceki görevin transaction rollback davranışının, rollback kaldırılırsa başarısız olan ayrı bir testi vardır.",
+    "Bir coverage raporu üretilir ve çekirdek bir modüldeki %10'un üzerindeki her boşluk README'de açıklanır."
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "title": "Gerçek Bir Projenin Katkı Yüzeyini Haritalayın",
+  "objective": "Aktif bir public repository seçin ve mentorun açabileceği yazılı bir katkı-yüzeyi haritası üretin: lisans, katkı yolu, build kanıtı ve açıklanmış son issue veya pull request'ler.",
+  "whyThisMatters": "İlk yararlı katkı, drive-by bir patch tahminiyle değil, projeyi bir maintainer gibi okumakla başlar — lisans, süreç ve gerçekten neyin açık olduğu.",
+  "evidence": [
+    "Public repository URL'sini, default branch'i ve checkout edilen commit SHA'sını adlandıran commit edilmiş bir Markdown notu (örneğin docs/contribution-surface.md)",
+    "Çalıştırılan tam clone, build ve/veya test komutları, artı son komutun kaydedilmiş exit code'u",
+    "O repository'den kopyalanmış bir SPDX lisans tanımlayıcısı ve eşleşen OSI lisans sayfasını alıntılayan bir paragraflık yükümlülük notu",
+    "Her biri status ve tek cümlelik katkı-uygunluğu yargısı olan en az beş ayrı public issue veya pull-request URL'si tablosu",
+    "CONTRIBUTING ve CODE_OF_CONDUCT (veya projenin eşdeğer dosyaları) için path-or-absent alıntılı notlar",
+    "Görev sorularını yanıtlayan değerlendirme notları",
+    "Yapay zekâ çalışmayı önemli ölçüde etkilediyse AI kullanım açıklaması"
+  ],
+  "acceptanceCriteria": [
+    "Not, bir public repository URL'si, default branch adını ve o branch'te var olan 40 karakterlik bir commit SHA kaydeder.",
+    "Not, clone komutunu, gerçekten çalıştırılan build veya test komutunu ve o komutun exit code'unu kaydeder.",
+    "Nottaki SPDX tanımlayıcısı, repository LICENSE dosyası veya host'un o repository için lisans metadata'sıyla eşleşir.",
+    "Tablo en az beş ayrı public issue veya pull-request URL'si listeler; her birinde open, closed veya merged status'u ve tek cümlelik katkı-uygunluğu yargısı vardır.",
+    "Not, CONTRIBUTING ve CODE_OF_CONDUCT'un (veya adlandırılmış eşdeğerlerin) var olup olmadığını belirtir; varsa bir repository dosya yolu, yoksa tam olarak \"not present\" ifadesiyle."
+  ]
+}

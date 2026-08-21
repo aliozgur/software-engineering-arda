@@ -1,0 +1,19 @@
+{
+  "title": "Deadline kaçırma günlüklü cooperative scheduler",
+  "objective": "Dönemleri ve kaydedilmiş hesap maliyetleri olan üç görev için tick tabanlı bir cooperative scheduler kur; sıfır kaçırmalı bir yakalanmış koşu ve en az bir kaçırmayı adlı bir göreve atayan bir yakalanmış koşu üret.",
+  "whyThisMatters": "Edge düğümünde determinizm 'döngü yeterince hızlı' değildir. Kasten bozabileceğin bir çizelge ve kimin kaçırdığını adlandıran bir günlükdür. Sonraki öncelik-tersinmesi işi bu scheduler'ın var olduğunu varsayar.",
+  "evidence": [
+    "Politikayı (cooperative; sabit sıra veya rate-monotonic) ve tick kaynağını adlandıran SCHED.md",
+    "period_ticks ve kaydedilmiş hesap maliyetiyle üç görev kaydeden scheduler C kaynakları ve bir sürücü",
+    "Uygulanabilir bir kümenin en az 1000 tick üzerinde sıfır deadline kaçırması gösteren yakalanmış koşusu",
+    "Bir görevin maliyeti döneminin üzerine çıkarıldığında o görev id'sine atfedilen en az bir kaçırma gösteren yakalanmış koşu",
+    "Uygulanabilir koşunun aşırı yük deneyinden önce commit edildiğini gösteren Git geçmişi",
+    "Görev sorularını yanıtlayan değerlendirme notları"
+  ],
+  "acceptanceCriteria": [
+    "Üç görev tick cinsinden bir dönem ve kaydedilmiş bir hesap maliyetiyle (busy-loop yinelemesi veya sürücünün kontrol ettiği bir hook) kaydedilir.",
+    "Uygulanabilir bir kümeyle yakalanmış bir koşu en az 1000 tick üzerinde 0 kaçırma sayısı yazdırır.",
+    "Bir görevin maliyeti cost_ticks >= period_ticks olacak şekilde yükseltildiğinde yakalanmış bir koşu, log satırı o görevin id'sini adlandıran en az bir deadline kaçırması yazdırır.",
+    "SCHED.md bir paragrafta scheduler'ın cooperative olduğunu (bir görev diliminin / fonksiyonunun tamamına kadar çalışır) yazar ve tick kaynağını adlandırır (host saati, artan tamsayı veya bir timer fd)."
+  ]
+}

@@ -7,27 +7,27 @@
     {
       "level": 1,
       "name": "Foundation",
-      "description": "Can explain core concepts and complete guided work."
+      "description": "Can count missing values by column, write a rule instead of a silent fillna, and name when a field becomes known — under written guidance."
     },
     {
       "level": 2,
       "name": "Apprentice",
-      "description": "Can complete scoped tasks with limited guidance and produce evidence."
+      "description": "Can tell a process story for missingness — not only a count — refuse a silent fill, and flag a field that would leak future information into a present-tense table."
     },
     {
       "level": 3,
       "name": "Practitioner",
-      "description": "Can independently design, implement, test and explain non-trivial work."
+      "description": "Can independently write a cleaning checklist specific enough for a new file, apply rules in versioned code, and record a leakage example with the moment the field is known."
     },
     {
       "level": 4,
       "name": "Journeyman",
-      "description": "Can handle ambiguity, diagnose failures and defend trade-offs."
+      "description": "Can diagnose a 'clean' table that dropped rows or filled without a rule, cite the missingness pattern that was a process signal, and produce a checklist another analyst can apply without asking you."
     },
     {
       "level": 5,
       "name": "Mastery Evidence",
-      "description": "Can teach, review and make sound decisions across unfamiliar situations."
+      "description": "Can review another apprentice's cleaning notes, name a silent fill or a leakage field they treated as a feature, and teach how to read missingness as process on an unfamiliar file."
     }
   ]
 }

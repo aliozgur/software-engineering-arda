@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "id": "de1t1-006",
   "title": "Fail Closed When a Batch Violates Quality",
-  "term": "year-1/term-1",
+  "term": "year-1-term-1",
   "module": "quality-gates",
   "estimatedHours": 8,
   "objective": "Put quality checks between staging and consumer-facing publish so a bad batch leaves the warehouse at last-good, quarantines the reject, and logs the failed check under a run id.",

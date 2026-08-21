@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "id": "sa1t2-001",
   "title": "Choosing a Data Architecture for Stated Access Patterns",
-  "term": "year-1/term-2",
+  "term": "year-1-term-2",
   "module": "data-architecture",
   "estimatedHours": 8,
   "objective": "Choose and justify a storage and consistency model against concrete access patterns, and classify at least one sensitive data element.",

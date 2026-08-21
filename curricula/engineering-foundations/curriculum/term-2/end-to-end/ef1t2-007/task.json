@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "id": "ef1t2-007",
   "title": "Ship a Scoped Change End to End",
-  "term": "term-2",
+  "term": "year-1-term-2",
   "module": "end-to-end",
   "estimatedHours": 9,
   "objective": "Take a written request, plan it, implement it in existing Python behind tests, and open a pull request a reviewer can act on without extra context.",

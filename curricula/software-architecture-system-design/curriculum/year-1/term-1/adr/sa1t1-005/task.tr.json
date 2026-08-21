@@ -1,0 +1,15 @@
+{
+  "title": "Değişen Bir Kısıt Altında Mimari Kararı Savunmak",
+  "objective": "Daha önce yazılmış bir ADR'ı şüpheci bir reviewer karşısında canlı savunmak, ardından kasten değiştirilmiş bir kısıta yanıt olarak onu gözden geçirmek.",
+  "whyThisMatters": "Kimse itiraz etmediği sürece ayakta kalan bir karar, karar değil; henüz sınanmamış bir tahmindir. Belirli bir kısıt değişince belirli bir kararı her şeyi baştan yazmadan gözden geçirebilmek, bir kez doğru çıkmış biri ile mimar arasındaki farktır.",
+  "evidence": [
+    "Orijinal ADR artı mentorun değiştirdiği kısıta yanıt veren, onu superseded veya amended olarak işaretleyen bir ADR",
+    "Savunma oturumundan, orijinal kararı en çok zorlayan somut soruyu adlandıran notlar",
+    "İki ADR arasında tam olarak neyin değiştiğini ve nedenini gösteren bir diff veya yan yana not"
+  ],
+  "acceptanceCriteria": [
+    "İkinci ADR, birincisini sessizce silmek yerine superseded veya amended olarak işaretler.",
+    "Gözden geçirme, savunmada ortaya çıkan somut değişen kısıta yanıt verir; genel bir yeniden yazım değildir.",
+    "Notlar, çırağın savunma sırasında tam yanıtlayamadığı en az bir soruyu adlandırır."
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "title": "Gecikmeyi ortalamayla değil izle ata",
+  "objective": "Bir istek yolunu bir ebeveyn span ve en az üç çocuk span ile enstrümante et; hızlı ve yavaş bir iz yakala; duvar saati zamanının nereye gittiğini açıkla — pe1t1-002 CPU profiliyle uyuşmazlık varsa onu da.",
+  "whyThisMatters": "CPU profili yakıtı açıklar. Beklemeyi açıklamaz. I/O, kilit veya aşağı akış çağrı yüzünden 'yavaş' olan bir p95, en sıcak CPU frame'i olarak görünmez. Duvar saati gecikmesini adlandırabileceğin bir span'e atamanın yolu izdir.",
+  "evidence": [
+    "Tek bir istek yolunda bir ebeveyn span ve en az üç adlı çocuk span üreten enstrümantasyon",
+    "Her span süresinin milisaniye olduğu hızlı-istek iz dışa aktarımı (JSON, OTLP dökümü veya eşdeğeri)",
+    "Aynı işlem için benzer şekilde zamanlanmış yavaş-istek iz dışa aktarımı",
+    "Yavaş istekte en büyük çocuk span'in payını hesaplanmış yüzde olarak yazan ve bu span'in pe1t1-002 en sıcak CPU frame'iyle örtüşüp örtüşmediğini belirten karşılaştırma notu",
+    "Görev sorularını yanıtlayan değerlendirme notları"
+  ],
+  "acceptanceCriteria": [
+    "Bir istek için yakalanan iz, bir ebeveyn span ve en az üç ayrı adlı çocuk span içerir.",
+    "Aynı işlem için hızlı ve yavaş izlerin ikisi de commit edilmiştir; her biri span sürelerini milisaniye olarak listeler.",
+    "Karşılaştırma notu, en büyük çocuk span'in yavaş ebeveyn süresindeki payını o milisaniyelerden yüzde olarak hesaplar.",
+    "Not, pe1t1-002 (veya bu görevde yeniden alınan bir profil) en sıcak CPU frame'iyle örtüşme veya örtüşmeme yazar; uyuşmazlarsa farkı adlandırır."
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "title": "İşi Yükleme Ortasında Düşür, Tekrarsız Kurtar",
+  "objective": "Warehouse yazımını retry altında idempotent yap: doğal anahtarla upsert veya delete-insert, yinelenen anahtarda düşen bir test ve temiz yeniden başlayan bir mid-load çöküşü.",
+  "whyThisMatters": "Bir şey bozulabildiği anda varsayılan teslimat at-least-once'tır. Retry idempotent değilse her üretim olayı yinelenen anahtar veya çift sayım olayı olur. Retry'de aynı iş yolunu istersin; yalnızca demo için duran bir temizlik script'ini değil.",
+  "evidence": [
+    "Upsert veya delete-insert yükleme yolu ve kullandığı doğal anahtar",
+    "Yinelenen doğal anahtar eklendiğinde düşen bir test çalıştırması ve yinelenen fixture'ı getiren commit",
+    "Mid-load çöküşü ve yeniden başlatmadan sonra yakalanmış warehouse anahtar sayıları",
+    "Zaten başarılı bir yüklemeyi yeniden denemeden önce ve sonra yakalanmış warehouse satır sayısı",
+    "Görev sorularını yanıtlayan değerlendirme notları"
+  ],
+  "acceptanceCriteria": [
+    "Adlandırılmış otomatik bir test, yinelenen doğal anahtar eklendiğinde düşer; bunu getiren fixture commit'i ve yakalanmış başarısız test çalıştırması gösterir.",
+    "Mid-load çöküşü ve aynı iş komutunun yeniden başlatılmasından sonra warehouse'da yinelenen doğal anahtar yoktur ve kaynak anlık görüntüsünün beklenen anahtar kümesiyle örtüşür.",
+    "Zaten başarılı bir yüklemeyi yeniden denemek warehouse satır sayısını sıfır değiştirir; bu önce/sonra sayılarıyla gösterilir.",
+    "Retry'de kullanılan warehouse yazımı, yalnızca gösterim için duran ayrı bir temizlik script'i değil, mutlu yol ile aynı fonksiyon veya iş giriş noktasıdır."
+  ]
+}

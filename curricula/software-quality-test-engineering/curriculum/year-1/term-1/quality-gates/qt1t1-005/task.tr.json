@@ -1,0 +1,17 @@
+{
+  "title": "Kalite Kapılarını Pipeline'a Bağla",
+  "objective": "Gerçek bir CI pipeline'ına statik analiz, bir coverage eşiği ve en az bir daha derin test-kalitesi kapısı ekle ki regresyon incelemede tesadüfen değil, otomatik olarak durdurulsun.",
+  "whyThisMatters": "Test çalıştırıp eşik uygulamayan pipeline kalitenin sessizce kaymasına izin verir. Merge'i gerçekten durduran kapı, kalite standardını tutan mekanizmadır.",
+  "evidence": [
+    "Üç kapının da göründüğü commit'lenmiş CI yapılandırma dosyası/dosyaları",
+    "Her kapının kasıtlı bir ihlalde tek tek düştüğünü gösteren pipeline log'ları veya bağlantıları",
+    "Her ihlal geri alındığında pipeline'ın geçtiğini gösteren log'lar veya bağlantılar",
+    "Yazılı eşik-gerekçe notu"
+  ],
+  "acceptanceCriteria": [
+    "CI yapılandırması build'i düşüren bir lint/statik-analiz kapısı, bir coverage-eşik kapısı ve ek bir test-kalitesi kapısı içerir.",
+    "Üç kapının her biri, kasıtlı olarak sokulan bir ihlalde tek tek düşer.",
+    "Her kapı, karşılık gelen ihlal geri alındığında yeniden geçer.",
+    "Her eşiğin yazılı gerekçesi vardır; araç varsayılanında yorumsuz bırakılmaz."
+  ]
+}

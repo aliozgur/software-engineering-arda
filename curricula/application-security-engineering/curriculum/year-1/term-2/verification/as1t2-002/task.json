@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "id": "as1t2-002",
   "title": "Verify the Fix: Security Regression Suite",
-  "term": "year-1/term-2",
+  "term": "year-1-term-2",
   "module": "verification",
   "estimatedHours": 12,
   "objective": "Build a single-command security regression suite that guards the controls from term 1 and CSRF, and prove at least two tests fail when their corresponding fix is reverted.",

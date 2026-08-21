@@ -1,0 +1,31 @@
+{
+  "title": "Agentic Geliştirme İş Akışı",
+  "description": "Yapay zekâ asistanının kodu okuduğu, planladığı ve daha az adım-adım denetimle düzenlediği çok adımlı agentic kodlama oturumlarını kapsamlandırabilir, çalıştırabilir, doğrulayabilir ve kurtarabilir.",
+  "levels": [
+    {
+      "level": 1,
+      "name": "Temel",
+      "description": "Oturum başlamadan önce tanımlanmış bir doğrulama kontrolü (test veya komut) ile dar ve açık kapsamlı, tek dosyalık bir agentic kodlama oturumu çalıştırabilir."
+    },
+    {
+      "level": 2,
+      "name": "Çırak",
+      "description": "Çok dosyalı bir agentic görevi, çalıştırmadan önce gözden geçirilmiş bir planla kapsamlandırabilir; ortaya çıkan diff'i plana karşı dosya dosya doğrulayabilir."
+    },
+    {
+      "level": 3,
+      "name": "Uygulayıcı",
+      "description": "Agentic oturumun belirtilen kapsamdan saptığını veya hatalı bir plan ürettiğini teşhis edebilir; sapmayı kabul etmek yerine daha dar bir prompt ile yönlendirebilir veya yeniden kapsamlandırabilir."
+    },
+    {
+      "level": 4,
+      "name": "Kalfa",
+      "description": "Yıkıcı veya hatalı değişiklik yapan çok adımlı bir agentic oturumu kurtarabilir: version control ve oturum geçmişini kullanarak yalnızca etkilenen işi ayırıp geri alır, kullanılabilir kısmı korur."
+    },
+    {
+      "level": 5,
+      "name": "Ustalık Kanıtı",
+      "description": "Başka bir mühendisin gerçek bir kod tabanında agentic oturumları güvenle çalıştırabileceği tekrarlanabilir bir iş akışı tanımlayabilir: doğrulama kontrolleri, oturum kapsamlandırma kuralları ve geri alma disiplini."
+    }
+  ]
+}

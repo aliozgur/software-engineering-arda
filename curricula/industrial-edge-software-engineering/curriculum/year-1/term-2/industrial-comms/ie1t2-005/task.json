@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "id": "ie1t2-005",
   "title": "MQTT QoS 1 telemetry with reconnect and backoff",
-  "term": "year-1/term-2",
+  "term": "year-1-term-2",
   "module": "industrial-comms",
   "estimatedHours": 8,
   "objective": "Publish at least one QoS 1 telemetry payload to a localhost MQTT broker, document ClientId and session choice, and demonstrate a forced disconnect with a listed backoff and a retried or duplicate-explained in-flight message.",

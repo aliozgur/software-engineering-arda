@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "id": "as1t2-004",
   "title": "CI Security Scanning You Can Explain",
-  "term": "year-1/term-2",
+  "term": "year-1-term-2",
   "module": "security-pipeline",
   "estimatedHours": 10,
   "objective": "Add a SAST or dependency-advisory scan to GitHub Actions on the repository you own, triage at least three findings, fix one, accept or dismiss one in writing, and show the workflow fail on a planted issue.",

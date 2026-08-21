@@ -1,0 +1,18 @@
+{
+  "title": "Bitirme Tasarımı: Sözleşme, Veri Akışı ve Tehdit Modeli",
+  "objective": "Uygulamayı genişletmeden önce bitirme sözleşmesini, HTTP, Postgres, MongoDB ve RabbitMQ boyunca yazma yolu veri akışını ve somut kontrollere eşlenmiş bir tehdit modelini yazmak.",
+  "whyThisMatters": "Kalan bitirme görevleri bu tasarımı uygular, işletir ve savunur. Şimdiki belirsiz bir diyagram, sonra incelenemeyen bir servis olur. Mentorlar bir sonraki görev başlamadan tasarımı onaylar.",
+  "evidence": [
+    "Bitirmenin uygulayacağı her route için bir OpenAPI belgesi ve kanıt notuna yapıştırılmış bir doğrulayıcı koşusu",
+    "Başarılı bir yazımın aldığı her sıçramayı — kuyruk ve consumer yan etkisi dahil — adlandıran bir veri akışı notu",
+    "En az dört OWASP Top 10 maddesini, zaten var olan veya adlı sonraki bir görevde kurulacak bir kontrole eşleyen bir tehdit modeli tablosu",
+    "Sayısal bir gecikme hedefi, sayısal bir erişilebilirlik hedefi ve her birini ölçeceğiniz sinyali içeren bir SLO dosyası",
+    "Sözleşme, veri akışı, tehdit modeli ve SLO'yu ayrı commit'ler olarak gösteren, işin ortasında not edilmiş bir tasarım geri dönüşü içeren Git geçmişi"
+  ],
+  "acceptanceCriteria": [
+    "OpenAPI belgesi doğrulanır ve kalan bitirme görevlerinin uygulayacağı her route'u, hata yanıtları dahil listeler.",
+    "Veri akışı notu HTTP handler'ı, Postgres transaction'ını, publish'i, consumer'ı ve document-store yazımını ayrı sıçramalar olarak adlandırır.",
+    "Tehdit modeli en az dört OWASP Top 10 maddesini bir kontrole eşler; her biri existing veya planned etiketi ve bir görev kimliği taşır.",
+    "SLO sayısal bir p95 gecikme, sayısal bir erişilebilirlik hedefi ve her birini ölçen metrik veya log sorgusunu adlandırır."
+  ]
+}

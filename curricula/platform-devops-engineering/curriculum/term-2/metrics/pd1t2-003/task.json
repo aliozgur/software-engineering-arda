@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "id": "pd1t2-003",
   "title": "Scrape Service Metrics with Prometheus",
-  "term": "term-2",
+  "term": "year-1-term-2",
   "module": "metrics",
   "estimatedHours": 12,
   "competencies": [

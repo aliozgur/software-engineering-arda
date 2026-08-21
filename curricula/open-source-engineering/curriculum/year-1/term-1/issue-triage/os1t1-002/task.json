@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "id": "os1t1-002",
   "title": "Triage a Real Public Issue",
-  "term": "year-1/term-1",
+  "term": "year-1-term-1",
   "module": "issue-triage",
   "estimatedHours": 7,
   "objective": "Triage one real public issue on the chosen project: reproduce or document why it cannot be reproduced, and write a maintainer-quality note a mentor can check against the thread.",

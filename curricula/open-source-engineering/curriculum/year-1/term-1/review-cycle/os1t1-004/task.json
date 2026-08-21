@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "id": "os1t1-004",
   "title": "Close the Review Loop",
-  "term": "year-1/term-1",
+  "term": "year-1-term-1",
   "module": "review-cycle",
   "estimatedHours": 8,
   "objective": "Respond to review on the real contribution: address each comment with a follow-up commit or a written no-change reason, using a maintainer review if one exists or a documented self-review plus a second-person review if none has arrived.",

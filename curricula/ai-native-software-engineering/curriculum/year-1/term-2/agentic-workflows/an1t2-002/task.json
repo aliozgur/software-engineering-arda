@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "id": "an1t2-002",
   "title": "Verifying a Multi-File Agentic Change",
-  "term": "year-1/term-2",
+  "term": "year-1-term-2",
   "module": "agentic-workflows",
   "estimatedHours": 8,
   "objective": "Run an agentic session that changes at least three files toward one feature, then verify the whole change holistically, including how the changed pieces interact, not each file in isolation.",

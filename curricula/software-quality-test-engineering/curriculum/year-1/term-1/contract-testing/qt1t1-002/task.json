@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "id": "qt1t1-002",
   "title": "Contract Testing Across a Service Boundary",
-  "term": "year-1/term-1",
+  "term": "year-1-term-1",
   "module": "contract-testing",
   "estimatedHours": 14,
   "objective": "Add consumer-driven contract tests across one real service boundary so a breaking change is caught before deployment, not in a shared staging environment.",

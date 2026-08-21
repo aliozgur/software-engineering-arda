@@ -1,0 +1,18 @@
+{
+  "title": "Bitirme Savunması: Arıza Enjekte Etmek ve Kurtarmak",
+  "objective": "En az iki backing-service arızası enjekte etmek, şemayı yeniden kurmadan kurtarmak ve zaman çizelgesi log'lardan alınan bir olay sonrası notu yazmak.",
+  "whyThisMatters": "Bu bitirme dönüm noktasıdır. Yoldaki her şey — sözleşme, store'lar, kuyruk, sinyaller, sürüm — ancak servisi kasıtlı kırıp geri getirir ve uçuştaki yazımları hesaplarsanız kanıtlanır.",
+  "evidence": [
+    "En az ikisi için log veya dışa aktarım: broker down, MongoDB down, enjekte edilmiş gecikme — her birinde bir kurtarma",
+    "Uçuştaki bir yazım için hesap notu: PostgreSQL'de mevcut veya açıkça kayıp, gerekçesiyle",
+    "Zaman çizelgesi timestamp'leri bellekten değil log'lardan gelen ve SLO etkisini belirten bir olay sonrası notu",
+    "Tatbikat script'i veya adımları, birinci arıza, ikinci arıza ve yazımın ayrı commit'ler olduğunu gösteren Git geçmişi",
+    "Kurtarma sonrası API'nin, elle şema yeniden kurulumu olmadan isteklere hizmet ettiğini gösteren bir döküm"
+  ],
+  "acceptanceCriteria": [
+    "Üç arıza kipinden (broker down, document store down, enjekte edilmiş gecikme) en az ikisi, commit edilmiş log'lar ve her biri için bir kurtarma ile gösterilir.",
+    "Kurtarma sonrası uçuştaki bir yazım ya PostgreSQL'dedir ya da be1s-001 tasarımıyla eşleşen bir gerekçeyle kayıp olarak belgelenir.",
+    "Olay sonrası notu, timestamp'leri commit edilmiş log'larda görünen bir zaman çizelgesi ve SLO'nun kaçırılıp kaçırılmadığını içerir.",
+    "Kurtarma sonrası API, elle şema yeniden kurulumu veya belgelenmemiş bir yedekten restore olmadan belgelenmiş bir smoke isteğine hizmet eder."
+  ]
+}

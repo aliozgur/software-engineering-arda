@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "id": "ie1t3-002",
   "title": "Threat-model an IIoT edge node before you write the updater",
-  "term": "year-1/term-3",
+  "term": "year-1-term-3",
   "module": "ota-and-safety",
   "estimatedHours": 6,
   "objective": "Produce a threat model for a simulated IIoT edge node with at least six assets, four attacker positions, one specific mitigation per asset, a trust-boundary diagram, and an explicit unsigned-or-rollback firmware threat tied to RFC 9019.",

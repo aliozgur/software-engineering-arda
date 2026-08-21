@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "id": "as1t2-006",
   "title": "Harden, Verify and Record Residual Risk",
-  "term": "year-1/term-2",
+  "term": "year-1-term-2",
   "module": "capstone",
   "estimatedHours": 14,
   "objective": "Close the path on the application you own: update the threat-model register, keep the security regression suite and CI scan green, and publish an evidence pack that links every residual risk to a decision.",

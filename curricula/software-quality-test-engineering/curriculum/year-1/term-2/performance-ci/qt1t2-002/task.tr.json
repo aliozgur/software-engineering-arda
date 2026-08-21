@@ -1,0 +1,17 @@
+{
+  "title": "Pipeline'a Performans Regresyon Kapısı Ekle",
+  "objective": "Yük testini, bir değişiklik gecikmeyi veya hata oranını belirtilen payın ötesinde bozduğunda düşen otomatik bir CI kontrolüne çevir.",
+  "whyThisMatters": "Yalnızca büyük yayın öncesi elle çalışan yük testi regresyonları çok geç ve çok seyrek yakalar. Pipeline'daki kapı onları getiren commit'te yakalar.",
+  "evidence": [
+    "Performans kapısı için CI iş yapılandırması",
+    "Kasıtlı regresyonda kapının düştüğünü gösteren pipeline log'u veya çıktısı",
+    "Regresyon geri alındıktan sonra kapının geçtiğini gösteren pipeline log'u veya çıktısı",
+    "CI gürültüsü/varyansının nasıl hesaba katıldığına dair yazılı not"
+  ],
+  "acceptanceCriteria": [
+    "CI yapılandırması yük testini çalıştırır ve sonucu saklı bir baseline ile karşılaştırır; gerekçesiz uydurulmuş sabit bir sayı ile değil.",
+    "Kasıtlı sokulan bir regresyon kapıyı düşürür; pipeline çıktısı yakalanmıştır.",
+    "Regresyon geri alındığında pipeline yeniden geçer.",
+    "Gürültü/varyans yaklaşımı belgelenir; seçilen pay veya yineleme sayısı adlandırılır."
+  ]
+}

@@ -30,5 +30,5 @@
   "progression": "sequential",
   "mentorship": "optional",
   "sourceLocale": "en",
-  "contentLocales": ["en"]
+  "contentLocales": ["en", "tr"]
 }

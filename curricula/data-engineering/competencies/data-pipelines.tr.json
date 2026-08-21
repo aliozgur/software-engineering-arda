@@ -1,0 +1,31 @@
+{
+  "title": "Veri Pipeline'ları",
+  "description": "Toplu ve stream pipeline tasarımı, veri sözleşmeleri, idempotent yeniden işleme ve şema evrimi — veriyi analiz etmek değil, güvenilir taşımak.",
+  "levels": [
+    {
+      "level": 1,
+      "name": "Temel",
+      "description": "Var olan bir extract-load işini adlandırılmış bir kaynak ve hedefe karşı çalıştırabilir; işin full refresh mi yoksa artımlı yükleme mi olduğuna karar veren kodu veya SQL'i gösterebilir."
+    },
+    {
+      "level": 2,
+      "name": "Çırak",
+      "description": "Önce staging'e, sonra bir warehouse tablosuna inen sınırlı bir batch yüklemesi yazabilir; aynı kaynak anlık görüntüsüne karşı yeniden çalıştırabilir; warehouse birincil anahtar kümesinin büyümediğini gösterebilir."
+    },
+    {
+      "level": 3,
+      "name": "Uygulayıcı",
+      "description": "Yazılı bir veri sözleşmesi (şema, tane düzeyi, tazelik, null kuralları), idempotent bir sink ve yeniden denemede satırları ikiye katlarsa düşen bir test içeren bir pipeline'ı bağımsız olarak tasarlayıp uygulayabilir."
+    },
+    {
+      "level": 4,
+      "name": "Kalfa",
+      "description": "Başarısız veya sapmış bir pipeline'ı run log'ları, offset veya watermark'lar ve warehouse sayımlarından teşhis edebilir; mevcut pencereyi bozmadan sınırlı bir backfill veya replay yürütebilir; additive ile breaking arasındaki şema evrimi tercihini yazıyla savunabilir."
+    },
+    {
+      "level": 5,
+      "name": "Ustalık Kanıtı",
+      "description": "Başka bir çırağın pipeline'ında eksik sözleşme maddesini, idempotent olmayan retry yolunu veya güvensiz bir backfill'i yakalayabilir; her birinin yol açacağı somut hatayı adlandırabilir; yola yeni giren birine batch-stream ve sözleşme-umut ayrımını öğretebilir."
+    }
+  ]
+}

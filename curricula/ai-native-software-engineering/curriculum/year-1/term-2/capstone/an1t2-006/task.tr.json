@@ -1,0 +1,19 @@
+{
+  "title": "Kapanış: Açıklanan Yapay Zekâ Destekli Özelliği Uçtan Uca Teslim Etmek",
+  "objective": "Orta derecede belirsiz, gerçek bir özelliği uçtan uca teslim edin — spec, en az bir çok dosyalı agentic adım içeren yapay zekâ destekli uygulama, bağımsız test güdümlü doğrulama, eleştirel inceleme geçişi ve bir refactor — her adımda açıklama ile, canlı mentor incelemesinde savunulmaya hazır.",
+  "whyThisMatters": "Müfredattaki önceki her disiplin — spec yazmak, eleştirel inceleme, doğrulama, agentic kapsamlandırma, refactoring ve yapay zekânın sınırları üzerine yargı — yalıtık değil, gerçek ve belirsiz tek bir iş parçasında birlikte çalışmak zorundadır.",
+  "evidence": [
+    "Uygulamadan önce yazılmış bir spec; başta belirsiz olduğu için sizin açıklığa kavuşturmanız veya yorumlamanız gereken en az bir gereksinim dahil",
+    "Spec, testler, agentic uygulama adımı(ları), inceleme notları ve refactor'ı ayrılabilir, sıralı commit'ler olarak gösteren Git geçmişi",
+    "Yapay zekâ üretimi uygulamadan önce veya ondan bağımsız yazılmış, nihai kodda geçtiği gösterilmiş bir test paketi",
+    "Yapay zekânın ürettiği çıktıda bulunan sorunları ve hangilerinin düzeltildiğini listeleyen eleştirel inceleme notu",
+    "Görevin tamamındaki her maddi yapay zekâ kullanımını kapsayan açıklama kaydı: araç/model, amaç ve bağımsız olarak doğrulanan"
+  ],
+  "acceptanceCriteria": [
+    "Git geçmişi, spec commit'inin uygulama commit'lerinden önce geldiğini gösterir.",
+    "En az bir uygulama adımı, kanıtta tanınabilir, çok dosyalı bir agentic değişikliktir.",
+    "Bağımsız test paketi, gönderilen nihai koda karşı geçer; bu bir test çalıştırma kaydında gösterilir.",
+    "Eleştirel inceleme notu, orijinal spec gereksinimlerinden ayrı, bulunup düzeltilmiş en az bir sorunu listeler.",
+    "Açıklama kaydı, yapay zekâ üretimi içerik barındıran her commit'i hesaplar."
+  ]
+}

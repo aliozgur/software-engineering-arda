@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "id": "an1t2-003",
   "title": "Preparing a Design Review With AI Assistance",
-  "term": "year-1/term-2",
+  "term": "year-1-term-2",
   "module": "review-prep",
   "estimatedHours": 7,
   "objective": "Use AI to draft a design document for a real design decision, then revise it so it defends a specific trade-off in your own words, ready for an actual mentor review.",

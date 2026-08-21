@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "id": "qt1t2-002",
   "title": "Add a Performance Regression Gate to the Pipeline",
-  "term": "year-1/term-2",
+  "term": "year-1-term-2",
   "module": "performance-ci",
   "estimatedHours": 16,
   "objective": "Turn a load test into an automated CI check that fails when a change regresses latency or error rate beyond a stated margin.",

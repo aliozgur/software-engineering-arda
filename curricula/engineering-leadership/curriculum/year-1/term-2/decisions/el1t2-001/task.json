@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "id": "el1t2-001",
   "title": "Write the ADR Other Teams Have to Live With",
-  "term": "year-1/term-2",
+  "term": "year-1-term-2",
   "module": "decisions",
   "estimatedHours": 8,
   "objective": "Write a team-and-org-scope ADR that names rejected alternatives, states impact on at least three teams, and revises date or scope after a named sister-team constraint.",

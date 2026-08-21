@@ -1,0 +1,18 @@
+{
+  "title": "Düzeltmeyi Doğrula: Security Regression Suite",
+  "objective": "1. dönem kontrollerini ve CSRF'i koruyan tek komutluk bir security regression suite kurun ve karşılık gelen düzeltme geri alındığında en az iki testin kırmızıya düştüğünü kanıtlayın.",
+  "whyThisMatters": "Kırmızıya düşebilen bir testi olmayan düzeltme bir hikâyedir. Bu yolun mottosu yaparak öğrenmektir; suite, mentorun — ve gelecekteki sizin — authorization, injection, encoding ve CSRF kontrollerinin hâlâ durduğunu yeniden kontrol etme yoludur.",
+  "evidence": [
+    "Her testi, koruduğu threat-model id veya OWASP kategorisini ve suite'i çalıştıran komutu listeleyen bir test-inventory tablosu",
+    "Suite'in tek bir dump'ta değil, birden fazla commit boyunca büyüdüğünü gösteren Git geçmişi",
+    "Tam suite'in geçtiğini gösteren, zaman damgalı komut çıktısı",
+    "En az 2 adlandırılmış testin düzeltmeleri geri alındıktan sonra başarısız, restore edildikten sonra geçen komut çıktısı",
+    "Görev sorularını yanıtlayan değerlendirme notu"
+  ],
+  "acceptanceCriteria": [
+    "Suite, şunlardan en az 4'ünü kapsayan en az 8 test içerir: authentication, authorization, injection, XSS, CSRF, secrets-not-in-response.",
+    "Her test dosyası veya test adı bir threat-model threat id veya bir OWASP kategorisine referans verir.",
+    "En az 2 test, karşılık gelen düzeltme geri alındığında başarısız, restore edildiğinde geçer olarak gösterilir; komutlar ve çıktılar kaydedilir.",
+    "Tam suite belgelenmiş tek bir komutla sonuna kadar çalışır."
+  ]
+}

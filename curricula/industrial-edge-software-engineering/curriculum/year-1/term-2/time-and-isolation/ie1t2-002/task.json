@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "id": "ie1t2-002",
   "title": "Isolation on a real OS, then the MCU contrast",
-  "term": "year-1/term-2",
+  "term": "year-1-term-2",
   "module": "time-and-isolation",
   "estimatedHours": 8,
   "objective": "Boot xv6 under QEMU from the official MIT 6.1810 materials, show a user process and one syscall or trap, and write a four-row UNIX-versus-MCU contrast a mentor can check.",

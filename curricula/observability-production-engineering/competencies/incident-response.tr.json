@@ -1,0 +1,31 @@
+{
+  "title": "Olay Müdahalesi",
+  "description": "Nöbet pratiği, suçlamasız postmortem, yükseltme yargısı ve SRE tarzı güvenilirlik — gözlemlenebilirliğin enstrümantasyon odağından ayrı.",
+  "levels": [
+    {
+      "name": "Temel",
+      "description": "Betiklenmiş bir olayı tespit etmek ve yatıştırmak için bir runbook izleyebilir; gözlenen gerçeği doğrulanmamış hipotezden ayıran bir zaman çizelgesi tutabilir.",
+      "level": 1
+    },
+    {
+      "name": "Çırak",
+      "description": "Kapsamı belirlenmiş simüle bir olayı yalnızca alarm, pano ve izlerden triyaj edebilir; kök neden analizini bitirmeden servisi geri getirebilir; insan değil katkı faktörü adlandıran suçlamasız bir postmortem taslağı yazabilir.",
+      "level": 2
+    },
+    {
+      "name": "Uygulayıcı",
+      "description": "Bir servis için eşikler, burn-rate pencereleri ve yönlendirme içeren bir alarm politikasını bağımsız tasarlayabilir; hangi koşulların insanı sayfalaması, hangilerinin sessiz kalması gerektiğini yazıyla savunabilir; belirsiz simüle bir sayfada doğru yükselt-veya-bekle kararı verebilir.",
+      "level": 3
+    },
+    {
+      "name": "Kalfa",
+      "description": "Eksik bilgili çok sinyalli bir olayda point yürütebilir; yatıştırma ve durum iletişimini eşzamanlı koordine edebilir; takip eylemleri tespit, önleme ve müdahale arasında bölünmüş bir postmortem üretebilir.",
+      "level": 4
+    },
+    {
+      "name": "Ustalık Kanıtı",
+      "description": "Başka bir çırağın postmortemini veya alarm tasarımını değerlendirebilir; içindeki suç kaydıran dili veya doğrulanamaz iddiayı adlandırabilir; detect/mitigate/diagnose sırasını nöbete yeni birine öğretebilir.",
+      "level": 5
+    }
+  ]
+}

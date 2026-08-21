@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "id": "pe1t1-001",
   "title": "Measure First: A Repeatable Baseline Harness",
-  "term": "year-1/term-1",
+  "term": "year-1-term-1",
   "module": "benchmarking",
   "estimatedHours": 8,
   "objective": "Define latency and error SLIs before looking at results, then produce a three-run baseline with p50/p95/p99 and documented variance from a single-command harness.",

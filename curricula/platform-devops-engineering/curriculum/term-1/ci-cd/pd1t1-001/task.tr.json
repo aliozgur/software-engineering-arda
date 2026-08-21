@@ -1,0 +1,16 @@
+{
+  "title": "Küçük Bir Servis için Continuous Integration Pipeline",
+  "evidence": [
+    "Aşamalı çalışmayı gösteren Git geçmişi",
+    "Sonucu açıklayan README veya teknik not",
+    "Görev uygulama içeriyorsa çalıştırılabilir kod/yapılandırma",
+    "Görev sorularını yanıtlayan değerlendirme notları",
+    "Yapay zekâ çalışmayı önemli ölçüde etkilediyse yapay zekâ kullanım beyanı"
+  ],
+  "acceptanceCriteria": [
+    "CI, her push edilen commit'te ve her pull/merge request'te otomatik çalışır.",
+    "Bir unit test başarısız olduğunda CI build'i kırar; bu, bilerek testi bozan bir commit ile gösterilir.",
+    "Lint/statik analiz adımı hata bildirdiğinde CI build'i kırar; bu, bilerek lint ihlali ekleyen bir commit ile gösterilir.",
+    "Pipeline yapılandırma dosyası repository'ye commit edilmiştir ve taze bir clone'dan başarıyla çalışır."
+  ]
+}

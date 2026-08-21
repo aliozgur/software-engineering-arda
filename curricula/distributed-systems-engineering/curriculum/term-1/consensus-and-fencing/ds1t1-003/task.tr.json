@@ -1,0 +1,17 @@
+{
+  "title": "Split-Brain'e Karşı Quorum Yazmaları ve Epoch Fencing",
+  "objective": "Replicated store'u bir yazmanın ancak çoğunluk uyguladıktan sonra ack edileceği şekilde genişlet; izole olmuş eski bir leader'ın üzerine yazamayacağı bir epoch (veya fencing token) ekle; önce split-brain overwrite'ı yeniden üreten, sonra fencing açıkken aynı dizinin reddedildiğini gösteren bir script çıkar.",
+  "whyThisMatters": "Fencing'siz leader election, iki node'un da yazma kabul etmeye yetkili olduğuna inanmasının yoludur. SWE Raft lab'ı senden iki leader'ı soyut olarak akıl yürütmeni ister. Bu görev, kayıp-güncellemeyi zaten çalıştırdığın store'da önce görünür sonra görünmez kılar; böylece 'consensus' talep üzerine ihlal edebileceğin bir safety özelliğidir — bir protokol adı değil.",
+  "evidence": [
+    "Fencing değişikliğinden önce unfenced quorum store'un commit'i artı sonra epoch kontrollerini ekleyen commit'i içeren Git geçmişi",
+    "Unfenced yolda split-brain overwrite'ı, fenced yolda reddedilen veya fenced yazmayı gösteren yeniden üretim script'i ve yakalanmış koşu",
+    "Quorum kuralını (N, W, R), epoch/token'ın ne olduğunu, kimin verdiğini ve hangi yazmanın atıldığını veya reddedildiğini belirten README",
+    "Görev sorularını yanıtlayan değerlendirme notları"
+  ],
+  "acceptanceCriteria": [
+    "Bir yazma, yapılandırılmış replica kümesinin çoğunluğu uyguladıktan sonra ack edilir; yalnızca azınlığın uygulaması committed sayılmaz.",
+    "Unfenced yeniden üretim, partition olmuş eski bir leader'dan gelen stale yazmayla daha yeni bir majority yazmanın üzerine deterministik olarak yazar ve yakalanmış koşu her iki değeri de gösterir.",
+    "Fencing açıkken özdeş dizi, stale leader'ın yazmasını reddeder veya yok sayar; sonraki quorum okuması majority değerini döner.",
+    "README N, W ve R'yi tamsayı olarak adlandırır, W + R > N der ve her yazmada kontrol edilen epoch/token alanını adlandırır — 'consensus kullanıyoruz' genel iddiası değil."
+  ]
+}

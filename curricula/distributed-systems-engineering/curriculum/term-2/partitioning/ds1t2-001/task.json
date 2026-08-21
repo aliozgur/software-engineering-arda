@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "id": "ds1t2-001",
   "title": "Hash Partitions, a Hotspot, and a Reshard Window",
-  "term": "ds1t2",
+  "term": "year-1-term-2",
   "module": "partitioning",
   "estimatedHours": 16,
   "objective": "Partition the key-value store across at least three shard processes, demonstrate a single-partition hotspot with measured request counts, then reshard and capture a bounded window in which a key is unreadable, double-owned, or both.",

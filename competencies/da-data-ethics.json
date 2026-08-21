@@ -7,27 +7,27 @@
     {
       "level": 1,
       "name": "Foundation",
-      "description": "Can explain core concepts and complete guided work."
+      "description": "Can cite the license or terms of use, name a use they refuse, and write an AI disclosure with tool, purpose and what was independently checked — under written guidance."
     },
     {
       "level": 2,
       "name": "Apprentice",
-      "description": "Can complete scoped tasks with limited guidance and produce evidence."
+      "description": "Can give a concrete unfair-but-legal example on this dataset or system, name who is missing from the table, and update the ethics note when the analysis changes."
     },
     {
       "level": 3,
       "name": "Practitioner",
-      "description": "Can independently design, implement, test and explain non-trivial work."
+      "description": "Can independently write a system card that states who should not use the system, make oversight operational — who looks, how often — and keep the recommendation weaker than or equal to the evidence."
     },
     {
       "level": 4,
       "name": "Journeyman",
-      "description": "Can handle ambiguity, diagnose failures and defend trade-offs."
+      "description": "Can diagnose a disclosure that hides the tool, a license that forbids the use, or a fairness claim with no named missing group, and produce a card another reviewer can hold the team to."
     },
     {
       "level": 5,
       "name": "Mastery Evidence",
-      "description": "Can teach, review and make sound decisions across unfamiliar situations."
+      "description": "Can review another apprentice's ethics note or system card, name a slogan oversight or a use the license forbids, and teach how to name who is missing on an unfamiliar dataset."
     }
   ]
 }

@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "id": "ef1t2-001",
   "title": "Review a Peer's Pull Request",
-  "term": "term-2",
+  "term": "year-1-term-2",
   "module": "code-review",
   "estimatedHours": 4,
   "objective": "Give written code review feedback on someone else's real pull request that is specific, actionable, and professionally kind.",

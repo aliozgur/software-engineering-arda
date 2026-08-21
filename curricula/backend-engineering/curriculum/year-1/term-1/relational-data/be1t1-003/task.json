@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "id": "be1t1-003",
   "title": "Relational Schema Design for a Service Domain",
-  "term": "year-1/term-1",
+  "term": "year-1-term-1",
   "module": "relational-data",
   "estimatedHours": 14,
   "objective": "Design a normalized PostgreSQL schema for a real service domain, with constraints that enforce the domain's actual invariants rather than just looking correct.",

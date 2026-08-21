@@ -1,0 +1,18 @@
+{
+  "title": "Servise Yük Testi Yapıp Darboğazı Adlandırmak",
+  "objective": "Container'a alınmış servise karşı tekrarlanabilir bir yük script'i çalıştırmak, yüzdelik gecikmeleri kaydetmek, ekli kanıtla darboğazı adlandırmak ve bir değişiklikten sonra aynı script'i yeniden çalıştırmak.",
+  "whyThisMatters": "'Benim makinemde hızlı' olan bir servisin kapasite hikâyesi yoktur. Bitirme SLO'su ve arıza tatbikatı, işaret edebileceğiniz ölçülmüş bir taban çizgisine ihtiyaç duyar.",
+  "evidence": [
+    "Commit edilmiş yük script'i ve her iki koşuda kullanılan tam komut satırı",
+    "Her biri p50, p95, p99, hata oranı, süre ve sunulan yükü listeleyen iki koşu raporu (taban çizgisi ve değişiklik sonrası)",
+    "Belirli bir dosya, sorgu planı veya metrik örneğine işaret eden — tahmin olmayan — bir darboğaz notu",
+    "Taban çizgisinden sonra yapılan tek değişiklik, kendi commit'i olarak",
+    "Script, taban çizgisi raporu, değişiklik, sonra ikinci rapor sırasını gösteren Git geçmişi"
+  ],
+  "acceptanceCriteria": [
+    "Yük script'i commit edilmiştir ve README, container'a alınmış servise karşı onu yeniden çalıştıracak tam komutu adlandırır.",
+    "Commit edilmiş her iki rapor p50, p95, p99, hata oranı, süre ve sunulan yükü (saniyedeki istek veya eşzamanlı çağıran) listeler.",
+    "Darboğaz notu, taban çizgisi koşusunda toplanmış belirli bir dosya, EXPLAIN planı veya metrik örneğine atıf yapar.",
+    "İkinci koşu, ilkiyle aynı script'i ve aynı yük parametrelerini kullanır."
+  ]
+}

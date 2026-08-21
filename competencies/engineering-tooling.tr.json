@@ -1,30 +1,30 @@
 {
-  "title": "Mühendislik Aletleri",
-  "description": "Komut satırı, geliştirme ortamı, hata ayıklama, profil oluşturma ve geliştirici iş akışı.",
+  "title": "Mühendislik Araçları",
+  "description": "Yeniden üretilebilir bir iş istasyonu kurabilir ve kilitlenmiş bir süreci veya başarısız bir çalışmayı terminalden teşhis edebilir — belirtilen bir iş akışı sorusunu hangi aracın yanıtlayacağını seçebilir.",
   "levels": [
     {
       "name": "Temel",
-      "description": "Temel kavramları açıklayabilir ve rehberli çalışmaları tamamlayabilir.",
+      "description": "Yazılı rehberlik altında belgelenmiş bir araç zincirini kurabilir, yeni bir terminalde kendi notlarından git, dil çalışma zamanı ve düzenleyiciyi yeniden oluşturabilir ve grafik arayüz olmadan on ayrı kabuk komutu çalıştırabilir.",
       "level": 1
     },
     {
       "name": "Çırak",
-      "description": "Kapsamı belirlenmiş görevleri sınırlı yönlendirmeyle tamamlayabilir ve kanıt üretebilir.",
+      "description": "Terminalden tanıdık olmayan bir dizin ağacını arayabilir, kullanılan komutları gösteren bir harita üretebilir ve yanlış çıkanlar dahil sırayla denenmiş en az üç hipotezin hata ayıklama kaydını bırakabilir.",
       "level": 2
     },
     {
       "name": "Uygulayıcı",
-      "description": "Kayda değer bir çalışmayı bağımsız olarak tasarlayabilir, uygulayabilir, test edebilir ve açıklayabilir.",
+      "description": "Bildirilen bir hatayı bağımsız olarak başarısız bir yeniden üretim, bir düzeltme ve ayrı commit'ler olarak bir gerileme testine dönüştürebilir; tahmin etmek yerine hata ayıklayıcıyı veya kaydedilmiş bir komut günlüğünü kullanabilir.",
       "level": 3
     },
     {
       "name": "Kalfa",
-      "description": "Belirsizlikle başa çıkabilir, hataları teşhis edebilir ve ödünleşimleri gerekçelendirebilir.",
+      "description": "Nedeni ortam veya araç zinciri olan bir arızayı — bir PATH, izin, kilitlenmiş süreç veya profillenmiş bir sıcak nokta — teşhis edebilir ve uygulama kodunu eleyen veya doğrulayan incelenebilir kanıtı adlandırabilir.",
       "level": 4
     },
     {
       "name": "Ustalık Kanıtı",
-      "description": "Alışılmadık durumlarda öğretebilir, değerlendirme yapabilir ve sağlam kararlar verebilir.",
+      "description": "Başka bir çırağın kurulum notlarını veya hata ayıklama kaydını değerlendirebilir; eksik bir yeniden üretim adımını veya commit'lenmiş bir sırrı adlandırabilir; kurmadığı bir makinede önce hangi araca uzanılacağını öğretebilir.",
       "level": 5
     }
   ]

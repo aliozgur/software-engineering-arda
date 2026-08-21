@@ -1,30 +1,30 @@
 {
   "title": "Yazılım Tasarımı",
-  "description": "Gereksinimler, modülerlik, uyum/bağlantı, mimari, yeniden düzenleme ve tasarım ödünleşimleri.",
+  "description": "Gereksinimleri modüler bir tasarıma dönüştürebilir ve davranışı değiştirmeden yapıyı değiştirebilir — o seçimin kabul ettiği bağlantıyı ve ödünleşimleri savunabilir.",
   "levels": [
     {
       "name": "Temel",
-      "description": "Temel kavramları açıklayabilir ve rehberli çalışmaları tamamlayabilir.",
+      "description": "Yazılı rehberlik altında tanıdık olmayan bir kod tabanının giriş noktasını ve en az beş modülünü yalnızca README'den değil koddan haritalayabilir ve bir modüldeki bir uyum veya bağlantı sorununu adlandırabilir.",
       "level": 1
     },
     {
       "name": "Çırak",
-      "description": "Kapsamı belirlenmiş görevleri sınırlı yönlendirmeyle tamamlayabilir ve kanıt üretebilir.",
+      "description": "Kendisinin yazmadığı koda kapsamı sınırlı bir değişiklik bırakabilir, dosya ve satır belirterek iki mevcut kuralı gösterebilir ve herhangi bir uygulamadan önce bir tasarım notunu kaydedebilir.",
       "level": 2
     },
     {
       "name": "Uygulayıcı",
-      "description": "Kayda değer bir çalışmayı bağımsız olarak tasarlayabilir, uygulayabilir, test edebilir ve açıklayabilir.",
+      "description": "Davranışın aynı kalması için geçen bir test ağı ardında bir modülü bağımsız olarak yeniden düzenleyebilir ve her değişikliğin hangi kokuyu giderdiğini her commit'te ayrı ayrı gösterebilir.",
       "level": 3
     },
     {
       "name": "Kalfa",
-      "description": "Belirsizlikle başa çıkabilir, hataları teşhis edebilir ve ödünleşimleri gerekçelendirebilir.",
+      "description": "Reddedilen alternatifleri, en az bir kabul edilmiş olumsuz sonucu ve önerinin tersine dönmesi için neyin değişmesi gerektiğini adlandıran bir tasarım kararını yazabilir veya savunabilir.",
       "level": 4
     },
     {
       "name": "Ustalık Kanıtı",
-      "description": "Alışılmadık durumlarda öğretebilir, değerlendirme yapabilir ve sağlam kararlar verebilir.",
+      "description": "Başka bir çırağın modül bölünmesini veya ADR'ini değerlendirebilir; bir mentorun gösterebileceği bir bağlantı veya eksik ödünleşimi adlandırabilir; kendisinin yazmadığı bir sistemde yürüyen bir tasarımı evrimleştirmekle baştan yazmak arasında ne zaman seçileceğini öğretebilir.",
       "level": 5
     }
   ]

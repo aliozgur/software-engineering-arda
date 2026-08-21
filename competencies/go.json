@@ -2,32 +2,32 @@
   "schemaVersion": 1,
   "id": "go",
   "title": "Go",
-  "description": "Go language, interfaces, error handling, concurrency and network services.",
+  "description": "Can write Go network services that handle errors idiomatically and cancel in-flight work — and can use goroutines and channels only where they simplify coordination.",
   "levels": [
     {
       "level": 1,
       "name": "Foundation",
-      "description": "Can explain core concepts and complete guided work."
+      "description": "Can write a small Go module with functions, interfaces and returned errors, run go test, and name the error path for a failed call — under written guidance."
     },
     {
       "level": 2,
       "name": "Apprentice",
-      "description": "Can complete scoped tasks with limited guidance and produce evidence."
+      "description": "Can build a small HTTP or TCP service that uses goroutines or channels for coordination, propagate context cancellation and a timeout, and submit a go test run that is race-detector clean on the tested paths."
     },
     {
       "level": 3,
       "name": "Practitioner",
-      "description": "Can independently design, implement, test and explain non-trivial work."
+      "description": "Can independently ship a concurrent Go service whose shutdown cancels in-flight work, whose expected failures return errors rather than panic, and whose tests fail if cancellation or a race is ignored."
     },
     {
       "level": 4,
       "name": "Journeyman",
-      "description": "Can handle ambiguity, diagnose failures and defend trade-offs."
+      "description": "Can diagnose a hang, leaked goroutine or data race where a passing test would mislead, cite the race-detector report or a dropped context, and produce a note another engineer can follow to reproduce the fault without reading the whole package first."
     },
     {
       "level": 5,
       "name": "Mastery Evidence",
-      "description": "Can teach, review and make sound decisions across unfamiliar situations."
+      "description": "Can review another apprentice's Go service, name a channel used as decoration or a cancelled context that is ignored, and teach when not to use a channel on an unfamiliar package."
     }
   ]
 }

@@ -1,0 +1,17 @@
+{
+  "title": "Drift Tespit Et ve Bir Düzeltme Seç",
+  "evidence": [
+    "Belgelenmiş bant dışı değişiklik sonrası, drift eden resource adresini ve attribute'u gösteren plan alıntısı",
+    "Deney A notları: beyan edilen durumu geri yükleyen apply artı boş veya geri yükleyen plan alıntısı",
+    "Deney B notları: bant dışı nesneyi kodlaştıran bir import veya yapılandırma değişikliği artı sonraki boş plan",
+    "A için neden revert, B için neden import-veya-kodlaştır seçildiğinin kısa savunması",
+    "Görev sorularını yanıtlayan değerlendirme notları",
+    "Yapay zekâ çalışmayı önemli ölçüde etkilediyse yapay zekâ kullanım beyanı"
+  ],
+  "acceptanceCriteria": [
+    "Belgelenmiş bant dışı değişiklikten sonra tofu plan o spesifik drift'i gösterir (resource adresi ve drift eden attribute).",
+    "Deney A, apply ile beyan edilen durumu geri yükler (revert); follow-up plan artık o drift'i listelemez.",
+    "Deney B ya bant dışı resource'u import eder ya da yapılandırmayı ona uyacak şekilde günceller (kodlaştırır) ve follow-up plan o resource için boştur.",
+    "Destroy, gösterilen tek düzeltme değildir. Her iki deney de notlarda plan alıntıları içerir."
+  ]
+}

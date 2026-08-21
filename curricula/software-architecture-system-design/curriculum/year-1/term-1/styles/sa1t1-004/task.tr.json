@@ -1,0 +1,15 @@
+{
+  "title": "Request/Response ile Event-Driven İletişim Arasında Seçim",
+  "objective": "Aynı iş akışını senkron ve event-driven iletişim altında modellemek ve teslimat-garantisi varsayımını adlandıran bir karar kaydetmek.",
+  "whyThisMatters": "Senkron bağ ile asenkron event arasındaki seçim, arızanın kime ait olduğunu belirler. Teslimat-garantisi varsayımını yazmadan birini seçmek, \"event'i bir ara işleriz\"in altı ay sonra sessiz bir veri kaybı bug'ına dönüşmesinin yoludur.",
+  "evidence": [
+    "Aynı iş akışını uçtan uca modelleyen, her iletişim stili için birer tane olmak üzere iki sequence veya akış diyagramı",
+    "Seçilen stil için sıralama ve teslimat-garantisi varsayımını adlandıran bir ADR",
+    "Reddedilen stil için en az bir somut arıza senaryosunu ve neden reddedildiğini adım adım anlatan bir not"
+  ],
+  "acceptanceCriteria": [
+    "Her iki diyagram da aynı iş akışını uçtan uca modeller; iki farklı kapsam değil.",
+    "ADR, seçilen stil için teslimat-garantisi varsayımını (at-least-once, at-most-once veya exactly-once'ın açıklanmış bir yaklaşımı) açıkça belirtir.",
+    "Reddedilen stil için en az bir somut arıza senaryosu adım adım anlatılır; stil yalnızca \"daha az tercih edildiği\" için değil, neden reddedildiği açıklanır."
+  ]
+}

@@ -2,32 +2,32 @@
   "schemaVersion": 1,
   "id": "python",
   "title": "Python",
-  "description": "Idiomatic Python programming, testing, packaging and automation.",
+  "description": "Can write idiomatic Python that handles invalid input and ships with tests — and can package a project so a clean checkout installs and runs from the README.",
   "levels": [
     {
       "level": 1,
       "name": "Foundation",
-      "description": "Can explain core concepts and complete guided work."
+      "description": "Can write small CLI programs with functions, conditionals and loops, reject invalid input without an unexplained traceback, and add type hints to public functions — under written guidance."
     },
     {
       "level": 2,
       "name": "Apprentice",
-      "description": "Can complete scoped tasks with limited guidance and produce evidence."
+      "description": "Can build a file-reading CLI that validates input and writes a report, run a pytest suite with one command covering happy paths and invalid files, and show a refactoring commit that shrinks a first-version function."
     },
     {
       "level": 3,
       "name": "Practitioner",
-      "description": "Can independently design, implement, test and explain non-trivial work."
+      "description": "Can independently ship a Python service or pipeline with a committed dependency file, lint/format config, and README commands that reproduce a clean checkout — with tests that assert a named failure mode, not only the happy path."
     },
     {
       "level": 4,
       "name": "Journeyman",
-      "description": "Can handle ambiguity, diagnose failures and defend trade-offs."
+      "description": "Can diagnose a failure where a traceback, a missing dependency, or a silent except would mislead, name the packaging or test gap, and produce a README another engineer can follow to install, run tests, and invoke the entry point."
     },
     {
       "level": 5,
       "name": "Mastery Evidence",
-      "description": "Can teach, review and make sound decisions across unfamiliar situations."
+      "description": "Can review another apprentice's Python project, name a brittle test or a function that hides I/O behind an untestable shape, and teach when to catch an exception versus let it propagate on an unfamiliar codebase."
     }
   ]
 }

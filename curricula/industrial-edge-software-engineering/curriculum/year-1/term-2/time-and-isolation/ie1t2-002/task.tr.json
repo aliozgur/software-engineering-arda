@@ -1,0 +1,18 @@
+{
+  "title": "Gerçek bir OS'ta yalıtım, sonra MCU karşılaştırması",
+  "objective": "Resmi MIT 6.1810 malzemelerinden xv6'yı QEMU altında aç; bir kullanıcı süreci ve bir syscall veya trap göster; mentorun kontrol edebileceği dört satırlık bir UNIX-karşısında-MCU karşılaştırması yaz.",
+  "whyThisMatters": "Bir edge düğümünde çoğu zaman süreç sınırı yoktur. xv6'nın sanal bellek ve syscall'larla ne satın aldığını adlandıramıyorsan, her sürücüyle tek adres uzayını paylaşan firmware'e fazla güvenirsin.",
+  "evidence": [
+    "Bir kullanıcı süreci ve bir syscall veya trap gösteren yakalanmış xv6-QEMU oturumu (veya resmi 6.1810 lab çıktısı)",
+    "Egzersiz ettiğin trap veya syscall yolu için kaynak atıfı (dosya ve fonksiyon adı)",
+    "Dört adlı satırlı MCU-CONTRAST.md — isolation unit, memory protection, privileged transition, failure mode — her birinde UNIX/xv6 sütunu ve MCU/RTOS sütunu",
+    "xv6'nın sanal bellekten aldığı, MPU'suz bir Cortex-M0'ın almadığı bir güvenlik özelliğini yazan MCU-CONTRAST.md paragrafı",
+    "Görev sorularını yanıtlayan değerlendirme notları"
+  ],
+  "acceptanceCriteria": [
+    "Yakalanmış oturum günlüğü xv6'nın (veya resmi 6.1810 kullanıcı ortamının) QEMU altında çalıştığını gösterir; bir kullanıcı düzeyi komut veya program artı bir syscall veya trap kanıtı içerir (çekirdek yazısı, strace eşdeğeri veya trap fonksiyon adıyla bir breakpoint notu).",
+    "MCU-CONTRAST.md isolation unit, memory protection, privileged transition ve failure mode başlıklı dört satıra sahiptir; her satırda bir UNIX/xv6 mekanizması ve karşılık gelen bir MCU veya RTOS mekanizması vardır.",
+    "MCU-CONTRAST.md, xv6 sanal belleğinin sağladığı bir güvenlik özelliğini adlandıran ve MPU'suz Cortex-M0 sınıfı bir çekirdeğin o özelliğe sahip olmadığını yazan bir paragraf içerir.",
+    "Kaynak atıfı 6.1810/xv6 ağacından bir dosya ve fonksiyon adlandırır (örneğin trampoline/usertrap veya syscall); blog parafrazı değil."
+  ]
+}

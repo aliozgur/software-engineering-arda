@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "id": "an1t1-004",
   "title": "Scoping a Bounded Agentic Coding Session",
-  "term": "year-1/term-1",
+  "term": "year-1-term-1",
   "module": "agentic-workflows",
   "estimatedHours": 6,
   "objective": "Run one narrowly-scoped agentic session, in which an AI assistant reads files, plans, and edits with reduced turn-by-turn supervision, on a small multi-step task, with a verification check defined before the session starts.",

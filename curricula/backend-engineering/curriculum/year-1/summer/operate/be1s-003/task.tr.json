@@ -1,0 +1,18 @@
+{
+  "title": "Tam Container Yığınıyla SLO Altında İşletmek",
+  "objective": "Tam yığını compose'tan çalıştırmak, SLO sinyallerini ölçmek, bu sinyallerin gösterdiği bir arıza enjekte etmek ve bir takım arkadaşının izleyebileceği bir runbook bırakmak.",
+  "whyThisMatters": "İşletemediğiniz bir servis bir demodur. Sürüm ve savunma görevleri, nöbetteki birinin bir kaçırmayı görüp çalıştıracağı ilk üç komutu bileceğini varsayar.",
+  "evidence": [
+    "Compose dosyası ve tam yığının ayağa kalktığını gösteren temiz-checkout dökümü",
+    "İstek oranı, hata oranı ve p95 için commit edilmiş bir dashboard tanımı veya kayıtlı sorgular, artı sağlıklı bir koşudan kazıma veya dışa aktarım",
+    "Aynı sinyallerin değişimi gösterdiği bir arıza gösterimi (timeout, öldürülmüş consumer veya enjekte edilmiş 500)",
+    "p95-SLO-üstü bir sayfa için ilk üç komutu listeleyen, mümkünse arıza demosundan önce yazılmış bir runbook dosyası",
+    "Image boyutunu ve container kaynak limitlerini bildiren README; sinyal commit'lerinin arıza enjeksiyonundan önce geldiğini gösteren Git geçmişi"
+  ],
+  "acceptanceCriteria": [
+    "docker compose up, temiz bir checkout'tan API, PostgreSQL, MongoDB ve RabbitMQ'yu başlatır.",
+    "Commit edilmiş bir dashboard tanımı veya sorgu dosyası, be1s-001'deki SLO'ya karşı istek oranı, hata oranı ve p95 gösterir.",
+    "Kasıtlı bir arıza bu üç sinyalden en az birinde değişiklik olarak görünür; önce ve sonra dışa aktarımlar commit edilir.",
+    "Runbook dosyası p95 SLO'yu aştığında çalıştırılacak ilk üç komutu listeler ve bu komutlar repository'de vardır."
+  ]
+}

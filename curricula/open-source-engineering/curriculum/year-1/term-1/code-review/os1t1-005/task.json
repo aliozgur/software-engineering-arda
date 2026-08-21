@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "id": "os1t1-005",
   "title": "Review a Pull Request You Did Not Author",
-  "term": "year-1/term-1",
+  "term": "year-1-term-1",
   "module": "code-review",
   "estimatedHours": 7,
   "objective": "Review one real public pull request you did not author: post the review if you can own the follow-up, or submit a complete unposted review that quotes file-and-line locations from that pull request.",

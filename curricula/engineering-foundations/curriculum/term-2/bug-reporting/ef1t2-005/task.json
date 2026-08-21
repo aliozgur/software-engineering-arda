@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "id": "ef1t2-005",
   "title": "Write a Bug Report Someone Else Can Reproduce",
-  "term": "term-2",
+  "term": "year-1-term-2",
   "module": "bug-reporting",
   "estimatedHours": 5,
   "objective": "Write a bug report for a real Python defect such that a teammate who has not seen the code can reproduce it from the report alone, and attach a failing automated case that matches the reported actual result.",

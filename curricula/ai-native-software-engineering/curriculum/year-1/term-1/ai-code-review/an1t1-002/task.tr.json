@@ -1,0 +1,18 @@
+{
+  "title": "Yapay Zekânın Ürettiği Kodu Eleştirel İncelemek",
+  "objective": "Yapay zekâ yardımıyla küçük bir fonksiyon veya modül üretin; ardından merge edilebilir sayılmadan önce en az bir gerçek kusuru bulan ve düzelten yapılandırılmış bir eleştirel inceleme yapın.",
+  "whyThisMatters": "Yapay zekâ çıktısını körlemesine onaylamak, bu müfredatın karşı durduğu başarısızlık halidir. Üretilen taslağı nihai cevap değil ilk geçiş olarak görmek, asıl değerlendirilen beceridir.",
+  "evidence": [
+    "Düzenlenmemiş, yapay zekâ üretimi ilk taslak; düzenlemelerinizden ayrı tutulmuş (ayrı bir commit veya ekli diff)",
+    "Bulunan her sorunu doğruluk, güvenlik, okunabilirlik veya sürdürülebilirlik olarak sınıflandıran yazılı inceleme notu",
+    "İncelemede bulunan en az bir doğruluk veya güvenlik sorununu düzelten, inceleme notuna atıf yapan takip commit'i",
+    "Reddettiğiniz bir yapay zekâ önerisini ve benimsenmeme nedenini somut olarak adlandıran not",
+    "Kullanılan araç/modeli, amacı ve bağımsız olarak doğrulananı adlandıran yapay zekâ kullanım beyanı"
+  ],
+  "acceptanceCriteria": [
+    "Düzenlenmemiş yapay zekâ taslağı, düzeltilmiş sürümden ayrı olarak Git geçmişinde veya ekli bir diff'te durur.",
+    "İnceleme notu en az üç ayrı sorun belirler; en az biri yalnızca stil değil, doğruluk veya güvenlik sorunudur.",
+    "Belirlenen sorunlardan en az biri, inceleme notuna atıf yapan bir commit'te düzeltilmiştir.",
+    "Reddedilen-öneri notu, somut öneriyi ve benimsenmeme nedenini adlandırır."
+  ]
+}

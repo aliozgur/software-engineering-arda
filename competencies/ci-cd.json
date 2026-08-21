@@ -1,33 +1,33 @@
 {
   "schemaVersion": 1,
   "id": "ci-cd",
-  "title": "Ci Cd",
-  "description": "Automated build, test, quality gates, releases and deployment pipelines.",
+  "title": "CI/CD",
+  "description": "Can wire build, test and quality gates so a red pipeline blocks merge — and can deploy from the pipeline, not a laptop.",
   "levels": [
     {
       "level": 1,
       "name": "Foundation",
-      "description": "Can explain core concepts and complete guided work."
+      "description": "Can commit a pipeline file that runs on every push and point at the step that would fail a broken test — under written guidance."
     },
     {
       "level": 2,
       "name": "Apprentice",
-      "description": "Can complete scoped tasks with limited guidance and produce evidence."
+      "description": "Can run lint and tests on every push and pull or merge request, show a deliberately broken commit failing CI and the fix turning it green, and document that merge is blocked while the pipeline is red."
     },
     {
       "level": 3,
       "name": "Practitioner",
-      "description": "Can independently design, implement, test and explain non-trivial work."
+      "description": "Can independently add a container build tagged with the git SHA, run tests against that image rather than only host packages, and add a quality gate whose threshold is justified and shown failing on a deliberate violation."
     },
     {
       "level": 4,
       "name": "Journeyman",
-      "description": "Can handle ambiguity, diagnose failures and defend trade-offs."
+      "description": "Can diagnose a pipeline that is green on the laptop and red in CI — or the reverse — cite the missing service, image or gate, and produce a deploy job that applies a versioned artifact and smoke-checks it so a laptop-only deploy is no longer the path."
     },
     {
       "level": 5,
       "name": "Mastery Evidence",
-      "description": "Can teach, review and make sound decisions across unfamiliar situations."
+      "description": "Can review another apprentice's workflow, name a gate that is toil or vanity, and teach when to fail the build versus warn on an unfamiliar repository."
     }
   ]
 }

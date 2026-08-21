@@ -1,0 +1,15 @@
+{
+  "title": "Kurtarmayacağınız Bir Stretch Assignment Tasarlayın",
+  "objective": "Done-artifact'ı, sahibin verebileceği kararları ve lead'in uygulamayı reddedeceğini adlandıran bir stretch brief ve üç check-in planı yazın.",
+  "whyThisMatters": "Kill-criteria ve bir 'yapmayacağım' listesi olmayan yetki devri, teslimden önceki hafta bir kurtarmaya dönüşür. Stretch assignment bir liderlik artefaktıdır: kapsam, destek ve aşmayacağınız çizgi.",
+  "evidence": [
+    "Tek sahip, incelenebilir bir done-artifact, en az iki kısıt ve 'I will not do this for you' listesinde en az üç madde adlandıran bir stretch brief",
+    "Üç tarihli inceleme içeren bir check-in planı; her biri lead'in açacağı artefaktı adlandırır (ruh hali kontrolü değil)",
+    "Bir ipucu veya kapsam kesimini kaydeden ve lead'in uygulamayı reddettiği şeyi belirten bir midpoint stuck-note"
+  ],
+  "acceptanceCriteria": [
+    "Brief tek bir sahip, incelenebilir bir done-artifact, en az iki kısıt ve lead'in sahip için uygulamayacağı en az üç madde adlandırır.",
+    "Check-in planında üç takvim tarihi vardır; her tarih lead'in inceleyeceği belirli bir dosya, PR veya doküman adlandırır.",
+    "Midpoint notu bir takılma anını anlatır, yazılı bir ipucu veya yazılı bir kapsam kesimi kaydeder ve lead'in yapmayı reddettiği bir uygulamayı adlandırır."
+  ]
+}

@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "id": "sa1t1-004",
   "title": "Choosing Between Request/Response and Event-Driven Communication",
-  "term": "year-1/term-1",
+  "term": "year-1-term-1",
   "module": "styles",
   "estimatedHours": 7,
   "objective": "Model the same workflow under synchronous and event-driven communication, and record a decision that names its delivery-guarantee assumption.",

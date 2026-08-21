@@ -2,32 +2,32 @@
   "schemaVersion": 1,
   "id": "performance",
   "title": "Performance",
-  "description": "Measurement, profiling, benchmarking, caching, load testing and capacity reasoning.",
+  "description": "Can measure, profile, benchmark, cache and load-test so a capacity claim cites a run — and can reject a speedup that is only a story.",
   "levels": [
     {
       "level": 1,
       "name": "Foundation",
-      "description": "Can explain core concepts and complete guided work."
+      "description": "Can run a documented harness that prints p50/p95/p99, write an SLI and an SLO before looking at results, and record hardware plus warmup — under written guidance."
     },
     {
       "level": 2,
       "name": "Apprentice",
-      "description": "Can complete scoped tasks with limited guidance and produce evidence."
+      "description": "Can commit a pre-profile hypothesis, name the hottest CPU and allocation frames from profile files, and report a cache hit rate as counted hits/(hits+misses) with a p95 delta."
     },
     {
       "level": 3,
       "name": "Practitioner",
-      "description": "Can independently design, implement, test and explain non-trivial work."
+      "description": "Can independently step load to the knee where the SLO fails, quote a measured saturation signal at that point, and compute replica count from those numbers with the arithmetic written out."
     },
     {
       "level": 4,
       "name": "Journeyman",
-      "description": "Can handle ambiguity, diagnose failures and defend trade-offs."
+      "description": "Can diagnose a speedup that is variance, a cache that moves p95 but serves stale data, or a capacity note that invents RPS, and produce a note another engineer can re-run from one command."
     },
     {
       "level": 5,
       "name": "Mastery Evidence",
-      "description": "Can teach, review and make sound decisions across unfamiliar situations."
+      "description": "Can review another apprentice's harness or capacity note, name a mean-only benchmark or an uncited input, and teach when to trust a profile over a guess on an unfamiliar service."
     }
   ]
 }

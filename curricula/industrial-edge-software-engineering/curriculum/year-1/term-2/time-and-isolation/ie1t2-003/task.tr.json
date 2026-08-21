@@ -1,0 +1,18 @@
+{
+  "title": "Yeniden üretebileceğin, sonra sınırlayabileceğin öncelik tersinmesi",
+  "objective": "Üç görev ve bir mutex ile klasik öncelik tersinmesini yeniden üret; High'ın Medium çalışırken bloke olduğu bir zaman çizelgesi yakala; sonra adlı bir inheritance veya ceiling protokolü uygula ve High'ın bloke süresinin yazılı bir sınıra düştüğünü göster.",
+  "whyThisMatters": "Yalnızca düşük öncelikli bir logger kilit tutunca olan kaçırılmış deadline, tesislerin gönderdiği türden bir hatadır. Tersinmeyi bir günlükte açıp kapatamıyorsan düğümün deterministik olduğunu iddia edemezsin.",
+  "evidence": [
+    "Öncelik devralma veya öncelik tavanını ve diğer protokolün farklı ele alacağı bir durumu adlandıran INVERSION.md",
+    "High'ın Medium çalışırken ve Low hâlâ kilidi tutarken en az N tick bloke olduğunu gösteren yakalanmış zaman çizelgesi (tick günlüğü); N INVERSION.md'de yazılı",
+    "Düzeltmeden sonra High'ın bloke süresinin yazılı sınıra küçük veya eşit olduğunu gösteren yakalanmış zaman çizelgesi",
+    "Tersinme yeniden üretiminin düzeltmeden önce commit edildiğini gösteren Git geçmişi",
+    "Görev sorularını yanıtlayan değerlendirme notları"
+  ],
+  "acceptanceCriteria": [
+    "Yeniden üretim günlüğü üç adlı görev (Low, Medium, High) ve bir mutex gösterir; High, Medium çalışırken ve Low hâlâ mutex'e sahipken INVERSION.md'de belirtilen N tick boyunca blokedir.",
+    "INVERSION.md düzeltmede kullanılan tam bir protokolü adlandırır: öncelik devralma veya öncelik tavanı.",
+    "Düzeltme sonrası günlük, aynı varış sırasını kullanarak, High'ın bitişik bloke süresinin INVERSION.md'de yazılan sınıra küçük veya eşit olduğunu gösterir.",
+    "INVERSION.md, uygulanmayan diğer protokolün farklı ele alacağı bir durumu adlandıran bir cümle içerir."
+  ]
+}

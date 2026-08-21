@@ -1,0 +1,15 @@
+{
+  "title": "Bir Sistem Sınırını Threat Model ile İncelemek",
+  "objective": "Önceki bir tasarıma trust boundary çizmek, en az dört tehdide mimari bir kontrol bağlamak ve artık riski (residual risk) adlandıran bir kontrol kararı kaydetmek.",
+  "whyThisMatters": "Yalnızca kodlama kontrol listesi olarak yaşayan güvenlik, pahalı kararlar zaten verildikten sonra gelir. Trust boundary'ler, onları kimin geçebileceği ve hangi artık riski kabul ettiğiniz mimaridir. Reddettiği daha zayıf bir kontrolü adlandıramayan mimar, bir güvenlik kararı vermemiştir — dilek listelemiştir.",
+  "evidence": [
+    "Önceki bir sistem tasarımında en az iki trust boundary işaretleyen ve her birini kimin geçebileceğini adlandıran bir diyagram",
+    "En az dört tehdidin listesi; her biri kodlama kontrol listesi maddesi değil, bir mimari kontrol (bir sınır, bir credential store, bir ağ kısıtı, bir veri-sınıfı kuralı) ile eşleşmiş",
+    "Bu kontrollerden biri için, reddedilen daha zayıf bir kontrolü ve seçilen seçeneğin kabul ettiği artık riski adlandıran bir ADR"
+  ],
+  "acceptanceCriteria": [
+    "Diyagram en az iki trust boundary işaretler ve her birini geçmesine izin verilen principal veya ağı adlandırır.",
+    "En az dört tehdidin her birinin karşılık gelen bir mimari kontrolü vardır; bu dört kontrolden hiçbiri, belirtilmiş bir sınır veya store olmadan yalnızca \"girdiyi doğrula\" veya \"HTTPS kullan\" değildir.",
+    "ADR, reddedilen daha zayıf bir kontrolü adlandırır ve seçilen kontrolün kaldırmadığı bir artık riski belirtir."
+  ]
+}

@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "id": "y1t2-003",
   "title": "PostgreSQL: Transactions, Indexes and EXPLAIN",
-  "term": "year-1/term-2",
+  "term": "year-1-term-2",
   "module": "postgresql",
   "estimatedHours": 14,
   "competencies": [

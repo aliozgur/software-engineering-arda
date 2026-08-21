@@ -1,0 +1,18 @@
+{
+  "title": "Davranışı Değiştirmeden Var Olan Kodu Refactor Etmek",
+  "objective": "Var olan bir Python modülünü, geçen bir test ağının arkasında refactor edin ki davranış aynı kalsın ve inceleyici commit commit hangi tasarım kokusunun ele alındığını görebilsin.",
+  "whyThisMatters": "Bir temizliği bir davranış değişikliğiyle karıştırmak, 'yalnızca refactor' bir pull request'te regresyonların gizlenme yoludur. Profesyoneller ikisini ayırır: testler bugünün davranışını sabitler, sonra her commit yalnızca yapıyı değiştirir.",
+  "evidence": [
+    "İlk refactor commit'inden önce ve sonuncusundan sonra yakalanmış, ikisi de sıfır başarısızlık gösteren test komutu çıktısı",
+    "Her biri yalnızca adlandırılmış bir refactor içeren en az 3 commit'li refactor branch'inin git log'u",
+    "O commit SHA'larının her birini ele aldığı kokuya ve dokunduğu dosyalara eşleyen bir refactoring notu",
+    "Branch'in üretim kodu diff'i",
+    "Yapay zekâ bir refactoring önerdiyse veya bir fonksiyonu yeniden yazdıysa yapay zekâ kullanım beyanı"
+  ],
+  "acceptanceCriteria": [
+    "Belgelenen test komutu, ilk refactor'dan önce ve sonuncusundan sonra sıfır başarısızlık gösterir ve sonraki geçen-test sayısı öncekine eşit veya daha fazladır.",
+    "Mesajları bir refactoring adlandıran (örneğin extract function, rename, reduce nesting, remove duplication) ve diff'lerinde yeni özellik veya hata düzeltmesi olmayan en az 3 commit vardır.",
+    "Refactoring notu, o commit SHA'larının her birini, ele alınan kokuyu ve dokunulan dosya yollarını listeler.",
+    "Refactor edilen modülde hiçbir genel fonksiyon imzası değişmez; not o kesin imzayı listeler ve yalnızca rename olan çağıran güncellemelerinin aynı commit'te indiğini göstermedikçe."
+  ]
+}

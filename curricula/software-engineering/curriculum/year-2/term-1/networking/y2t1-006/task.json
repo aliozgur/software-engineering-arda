@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "id": "y2t1-006",
   "title": "Networking II: TCP, UDP, Sockets and TLS",
-  "term": "year-2/term-1",
+  "term": "year-2-term-1",
   "module": "networking",
   "estimatedHours": 22,
   "competencies": [

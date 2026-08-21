@@ -1,0 +1,31 @@
+{
+  "title": "Gömülü ve Edge Sistemler",
+  "description": "Kaynak kısıtlı tasarım, deterministik zamanlama, endüstriyel protokol işi ve fail-safe firmware güncelleme — belirtilen bellek ve gecikme bütçesinin içinde kalan, düğümü brick etmeden güncellenebilen yazılım gönderme yetisi.",
+  "levels": [
+    {
+      "name": "Temel",
+      "description": "Yazılı bir bellek veya gecikme bütçesinin içinde kalan rehberli bir host-tarafı alıştırmayı tamamlayabilir ve bağlayıcı kısıtı gösteren ölçüme (size raporu, tick günlüğü veya yakalama) işaret edebilir.",
+      "level": 1
+    },
+    {
+      "name": "Çırak",
+      "description": "Host veya simülatörde kapsamı belirlenmiş bir edge tarzı bileşen — ring buffer, cooperative scheduler veya çerçeveli protokol — uygulayabilir; bütçenin tutulduğunu veya kaçırıldığını gösteren bir ölçüm üretebilir; başarısızlık politikasını (düşür, üzerine yaz, reddet, geri al) mentorun kontrol edebileceği bir nota yazabilir.",
+      "level": 2
+    },
+    {
+      "name": "Uygulayıcı",
+      "description": "Belirtilen RAM, yığın ve deadline limitleri altında çok bileşenli bir edge yolunu (üretici → tampon → protokol → yutak) bağımsız tasarlayabilir, uygulayabilir ve test edebilir; o yolda genel amaçlı ayırıcının, bloke eden yeniden denemenin veya imzasız imajın neden yasak olduğunu yazıyla savunabilir.",
+      "level": 3
+    },
+    {
+      "name": "Kalfa",
+      "description": "Simüle bir tesiste kaçırılan bir deadline'ı, protokol tıkanmasını veya başarısız güncellemeyi teşhis edebilir; katkı faktörünü (öncelik tersinmesi, tampon taşması, kimliklenmemiş imaj, eksik rollback yuvası) ayırabilir; belirtilen değişmezi geri getiren bir değişiklik üretebilir.",
+      "level": 4
+    },
+    {
+      "name": "Ustalık Kanıtı",
+      "description": "Başka bir çırağın edge tasarımını değerlendirebilir; içindeki sınırsız ayırmayı, sessiz üzerine yazmayı veya güvensiz güncelleme yolunu adlandırabilir; bütçe-önce / fail-safe-güncelleme sırasını kısıtlı sistemlere yeni birine öğretebilir.",
+      "level": 5
+    }
+  ]
+}

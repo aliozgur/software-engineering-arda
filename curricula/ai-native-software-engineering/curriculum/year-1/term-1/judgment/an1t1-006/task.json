@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "id": "an1t1-006",
   "title": "Knowing When Not to Reach for AI",
-  "term": "year-1/term-1",
+  "term": "year-1-term-1",
   "module": "judgment",
   "estimatedHours": 10,
   "objective": "Identify a real, upcoming piece of work where you deliberately do not use AI-generated code because it is an irreversible operation, security-sensitive code, or a requirement that is still genuinely unclear, and produce a written case for that decision plus the work completed without it.",

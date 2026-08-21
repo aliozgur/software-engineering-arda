@@ -7,27 +7,27 @@
     {
       "level": 1,
       "name": "Foundation",
-      "description": "Can explain core concepts and complete guided work."
+      "description": "Can write a pandas join with the keys and expected cardinality written down, and trace three rows through it by hand — under written guidance."
     },
     {
       "level": 2,
       "name": "Apprentice",
-      "description": "Can complete scoped tasks with limited guidance and produce evidence."
+      "description": "Can add an assertion that fails if a join explodes, unpack a chained one-liner into named steps, and keep the pipeline in versioned code a clean clone can run."
     },
     {
       "level": 3,
       "name": "Practitioner",
-      "description": "Can independently design, implement, test and explain non-trivial work."
+      "description": "Can independently build a group-by that matches a stated grain, write assertions on row counts and keys, and produce a pipeline another person can step through without a notebook cell dump."
     },
     {
       "level": 4,
       "name": "Journeyman",
-      "description": "Can handle ambiguity, diagnose failures and defend trade-offs."
+      "description": "Can diagnose a wrong aggregate as a join or group-by grain error, cite the exploding key or duplicated row, and produce a note that names the failed assertion and the fix."
     },
     {
       "level": 5,
       "name": "Mastery Evidence",
-      "description": "Can teach, review and make sound decisions across unfamiliar situations."
+      "description": "Can review another apprentice's pandas pipeline, name a join without a cardinality note or an assertion that cannot fail, and teach how to trace a row through an unfamiliar pipeline."
     }
   ]
 }

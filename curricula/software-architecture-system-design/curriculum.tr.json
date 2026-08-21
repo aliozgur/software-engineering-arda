@@ -1,0 +1,11 @@
+{
+  "name": "apprenti.dev Yazılım Mimarisi ve Sistem Tasarımı Çıraklık Programı",
+  "audience": "Mimari sorumluluğa geçmekte olan orta ve kıdemli mühendisler; güçlü uygulama becerisi zaten beklenir",
+  "philosophy": "Kanıta dayalı çıraklık: karar ver, gerekçelendir, savun, gözden geçir.",
+  "aiPrinciples": [
+    "Yapay zekâ yardımı maddi olarak kullanıldığında açıklanmalıdır.",
+    "Yapay zekâ açıklayabilir, ipucu verebilir, quiz yapabilir ve savunma provası çalıştırabilir; bir ödünleşim kararını veya görevin çırağa yazdırdığı ADR metnini üretmez.",
+    "Çırak, ileri sürülen her ödünleşimden ve bir capacity, gecikme veya SLO modelindeki her sayıdan sorumlu olmaya devam eder.",
+    "Mentor onayı belgenin cilasına değil, çırağın değişen bir kısıt altında kararı savunabilmesine dayanır."
+  ]
+}

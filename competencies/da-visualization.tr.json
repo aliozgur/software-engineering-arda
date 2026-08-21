@@ -5,27 +5,27 @@
     {
       "level": 1,
       "name": "Temel",
-      "description": "Temel kavramları açıklayabilir ve rehberli çalışmayı tamamlayabilir."
+      "description": "Yazılı rehberlik altında başlığı cümle olan bir grafik üretebilir, eksenleri birimle etiketleyebilir ve geometriyi adlandırabilir — bar, line veya scatter."
     },
     {
       "level": 2,
       "name": "Çırak",
-      "description": "Sınırlı rehberlikle kapsamı belirlenmiş görevleri tamamlayabilir ve kanıt üretebilir."
+      "description": "Yanıltıcı bir grafiği değiştirip neden yanıltığını açıklayabilir, rengi süs değil anlam için kullanabilir ve tane düzeyine göre bar versus line versus scatter gerekçelendirebilir."
     },
     {
       "level": 3,
       "name": "Uygulayıcı",
-      "description": "Basit olmayan çalışmaları bağımsız biçimde tasarlayabilir, uygulayabilir, test edebilir ve açıklayabilir."
+      "description": "Yabancının cümleyi grafikten okuyacağı şekilde bir iddiayı bağımsız kodlayabilir, filtreleri görünür tutabilir ve iddiayı değiştiren dual axis veya kesik ölçeği reddedebilir."
     },
     {
       "level": 4,
       "name": "Kalfa",
-      "description": "Belirsizliği yönetebilir, hataları teşhis edebilir ve ödünleşimleri savunabilir."
+      "description": "Mürekkebi başlıkla uymayan bir grafiği teşhis edebilir, yalan söyleyen ekseni veya encoding'i gösterebilir ve başka bir reviewer'ın yargılayabileceği bir önce/sonra çifti üretebilir."
     },
     {
       "level": 5,
       "name": "Ustalık Kanıtı",
-      "description": "Öğretebilir, inceleyebilir ve alışılmadık durumlarda sağlam kararlar verebilir."
+      "description": "Başka bir çırağın figürünü değerlendirebilir; dürüst-eksen ihlalini veya süs rengi adlandırabilir; tanıdık olmayan bir veri kümesinde tablonun grafikten ne zaman daha dürüst olduğunu öğretebilir."
     }
   ]
 }

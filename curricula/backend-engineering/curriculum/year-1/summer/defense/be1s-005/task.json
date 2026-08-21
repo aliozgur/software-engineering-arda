@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "id": "be1s-005",
   "title": "Capstone Defense: Inject a Failure and Recover",
-  "term": "year-1/summer",
+  "term": "year-1-summer",
   "module": "defense",
   "estimatedHours": 18,
   "objective": "Inject at least two backing-service failures, recover without rebuilding the schema, and write a post-incident note whose timeline is taken from logs.",

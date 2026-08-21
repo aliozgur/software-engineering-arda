@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "id": "sa1t3-003",
   "title": "Multi-Region Topology, Consistency, and Data Residency",
-  "term": "year-1/term-3",
+  "term": "year-1-term-3",
   "module": "multi-region",
   "estimatedHours": 9,
   "objective": "Choose active-active or primary-failover against stated RPO, RTO, and residency constraints, and record what users see after a region loss.",

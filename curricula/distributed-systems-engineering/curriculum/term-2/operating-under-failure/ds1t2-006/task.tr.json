@@ -1,0 +1,18 @@
+{
+  "title": "Bir Araya Getirdiğin Sistem için İşletme Sözleşmesi",
+  "objective": "En az partitioning veya replication artı bir outbox-veya-broker hop'u içeren bir yol birleştir, koşudan önce yazdığın üç-sınıflı bir arıza playbook'unu çalıştır ve neyin reddedildiğini, neyin retry edildiğini, neyin kaybolabileceğini ve her vakayı hangi trace veya sorgunun kanıtladığını kapsayan yanlışlanabilir bir işletme sözleşmesi yayınla.",
+  "whyThisMatters": "Önceki her görev bir mekanizmayı izole etti. Orta-kıdemli bir mühendise, o mekanizmalar tek bir yolda durduğunda ve sözleşme hâlâ tuttuğunda güvenilir. SWE müfredatı dağıtık sistemleri saga'lar ve bir Raft lab ile bitirir. Bu görev, bir mentorun seni page edebileceği bir sözleşmeyle biter.",
+  "evidence": [
+    "Koşulardan önce commit edilmiş, üç arıza sınıfını, beklenen client sonucunu, beklenen kalıcı sonucu ve her birini doğrulayacak telemetry sorgusunu adlandıran playbook dosyası",
+    "Üç sınıfın tümü için yakalanmış koşular; her birinde client çıktısı, bir state sorgusu (SQL, store GET veya Kafka consume) ve playbook sorgusuna uyan bir trace veya metric alıntısı",
+    "İşletme-sözleşmesi README'si: yalnızca numaralı, yanlışlanabilir kurallar — 'highly available' veya 'best effort' yok",
+    "Birleştirilmiş yolun Git geçmişi (yeni bir greenfield demo değil): playbook, sonra koşular, sonra uyuşmazlıklar sonrası sözleşme düzenlemeleri",
+    "Görev sorularını yanıtlayan değerlendirme notları"
+  ],
+  "acceptanceCriteria": [
+    "Birleştirilmiş yol (a) veri sahibi birden fazla process (replica'lar veya shard'lar) ve (b) asenkron bir hop (outbox, Kafka veya RabbitMQ) içerir; in-memory queue'lu tek process sayılmaz.",
+    "Playbook commit'i ilk koşu commit'inden önce gelir veya playbook dosyası üç sınıfın tümü için koşu log'larından daha erken timestamp taşır.",
+    "Üç yakalanmış koşunun her biri playbook'un doğrulama sorgusunu (trace, SQL veya consume) ve tahmin edilen client sonucu ile tahmin edilen kalıcı sonuca karşı pass/fail içerir.",
+    "İşletme sözleşmesi, en az şunları anan yanlışlanabilir kurallar listesidir: refuse vs timeout sınırları, adlandırılmış bir kayıp vakası (veya bunu doğru kılan ayarla açık 'ack edilmiş yazma kaybolmaz') ve accepted-then-lost'u sınıflandırmak için kullanılan telemetry sinyali."
+  ]
+}

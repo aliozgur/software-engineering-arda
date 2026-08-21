@@ -1,0 +1,17 @@
+{
+  "title": "Backend Servisi için HTTP Temelleri",
+  "objective": "HTTP'yi bir protokol olarak anlamak ve Python'da yöntem, durum kodu ve header seçimlerini kopyalamadan, bilinçli yaparak minimal bir HTTP API uygulamak.",
+  "whyThisMatters": "Bundan sonraki her backend görevi HTTP semantiğine hâkimiyet varsayar. Bir framework bunları gizlemeden önce yöntem, durum ve header seçimlerini elinizle doğru yapmak, o hâkimiyeti varsayılan değil gerçek kılar.",
+  "evidence": [
+    "Açıklama satırları eklenmiş ham HTTP istek/yanıt kaydı, bir metin dosyası olarak commit edilmiş",
+    "API'nin aşamalı kurulduğunu gösteren Git geçmişi: önce route'lar, sonra hata işleme, sonra smoke test",
+    "curl smoke test script'i ve her route'u kapsayan çıktısının yapıştırılmış hali",
+    "Her route için yöntem/durum seçimini açıklayan README"
+  ],
+  "acceptanceCriteria": [
+    "Her route, sonucuna uyan HTTP semantiğiyle bir durum kodu döner.",
+    "En az bir endpoint idempotent bir yöntemi, bir diğeri idempotent olmayan bir yöntemi gösterir ve README hangisinin hangisi olduğunu adlandırır.",
+    "Hata yanıtları geçerli JSON'dur ve endpoint'ler arasında tutarlı bir şekle sahiptir.",
+    "curl smoke test script'i her route'u, her iki başarısızlık durumunu da kapsayacak şekilde çalıştırır ve repository'ye commit edilmiştir."
+  ]
+}

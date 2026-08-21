@@ -1,0 +1,17 @@
+{
+  "title": "Backend Geliştirme Ortamı ve İş Akışı",
+  "objective": "Dönemin geri kalanının üzerine kurulacağı, lint, format, bağımlılık yönetimi ve disiplinli bir Git iş akışına sahip, tekrarlanabilir bir Python backend projesi kurmak.",
+  "whyThisMatters": "Bu müfredattaki sonraki her görev, çalışan ve tekrarlanabilir bir proje iskeleti ile disiplinli bir commit alışkanlığı varsayar. Bunu bir kez doğru kurmak, her sonraki görevde araçlarla boğuşmamak demektir.",
+  "evidence": [
+    "Ortamın tek bir yığın commit değil, en az üç aşamalı commit ile kurulduğunu gösteren Git geçmişi",
+    "Bağımlılık dosyası (requirements.txt veya pyproject.toml) ile lint/format yapılandırmasının repository'ye commit edilmiş hali",
+    "Temiz bir checkout'tan çalıştırılan smoke test/script çıktısının kanıt notuna yapıştırılmış hali",
+    "Ortamın sıfırdan nasıl yeniden üretileceğini açıklayan README bölümü"
+  ],
+  "acceptanceCriteria": [
+    "Proje, yalnızca commit edilmiş kurulum yönergeleriyle temiz bir checkout'tan çalışır.",
+    "Linter/formatter yapılandırma hatası vermeden çalışır.",
+    "Ortam kurulumu için en az üç aşamalı commit vardır.",
+    "README, bağımlılıkları kurmak ve smoke testi çalıştırmak için tam komutları belgeler."
+  ]
+}

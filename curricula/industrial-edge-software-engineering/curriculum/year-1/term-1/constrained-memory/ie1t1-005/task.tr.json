@@ -1,0 +1,19 @@
+{
+  "title": "Sabit boyutlu havuz, OOM politikası ve yeniden dolum ölçümü",
+  "objective": "Belgelenmiş OOM ve double-free sonuçlarıyla M sabit boyutlu blokluk bir havuz uygula; tam serbest bırakmadan sonra havuzun yeniden dolabildiğini kanıtla; betiklenmiş bir ayırma örüntüsüne karşı havuz baytlarının ölçümünü yayımla.",
+  "whyThisMatters": "M+1'de veya double-free'de ne olacağını söyleyemeyen bir 'özel ayırıcı' hâlâ ekstra adımlı bir heap'tir. Edge firmware'i, arıza kipleri çökme değil test olan bir havuz ister.",
+  "evidence": [
+    "Havuz C kaynakları ve artımlı Git geçmişli bir test programı",
+    "M başarıdan sonra alloc M+1'in belgelenmiş OOM sonucunu döndürdüğünü gösteren yakalanmış koşu",
+    "Aynı bloğun double-free'inin belgelenmiş hatayı döndürdüğünü gösteren yakalanmış koşu — çökme değil, sessiz başarı değil",
+    "M bloğun tümü serbest bırakıldıktan sonra sonraki tam M ayırmanın başarılı olduğunu gösteren yakalanmış koşu",
+    "Betiklenmiş bir örüntü için blok boyutu, blok sayısı, toplam havuz baytı ve tepe canlı blok raporlayan MEASURE.md",
+    "Görev sorularını yanıtlayan değerlendirme notları"
+  ],
+  "acceptanceCriteria": [
+    "M başarılı ayırmadan sonra ayırma M+1 belgelenmiş OOM kodunu ve null veya geçersiz bir handle döndürür; hem kod hem handle yakalanmış bir koşuda gösterilir.",
+    "Aynı bloğun double-free'i belgelenmiş bir hata döndürür (çökme değil, ikinci başarılı serbest bırakma değil).",
+    "Canlı M bloğun tümünü serbest bırakmak, sonraki M ayırma dizisinin başarılı olmasına izin verir; yakalanan koşu o yeniden dolum için başarı yazdırır.",
+    "MEASURE.md, adlandırılmış bir betiklenmiş örüntü için (örneğin hepsini ayır, her ikincisini serbest bırak, yeniden ayır) blok boyutu S, blok sayısı M, toplam havuz baytı ve tepe canlı blok için tamsayılar yazar."
+  ]
+}

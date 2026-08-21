@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "id": "be1t2-005",
   "title": "Logs, Metrics and Traces on the Request Path",
-  "term": "year-1/term-2",
+  "term": "year-1-term-2",
   "module": "observability",
   "estimatedHours": 14,
   "objective": "Instrument the running service so one request produces a shared request id in structured logs, a scrapeable latency metric, and a trace with at least two spans.",

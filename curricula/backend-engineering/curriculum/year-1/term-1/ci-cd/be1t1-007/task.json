@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "id": "be1t1-007",
   "title": "Continuous Integration Pipeline (Term 1 Milestone)",
-  "term": "year-1/term-1",
+  "term": "year-1-term-1",
   "module": "ci-cd",
   "estimatedHours": 14,
   "objective": "Wire lint, tests, and the container build into an automated pipeline that runs on every push and visibly blocks merges on failure.",

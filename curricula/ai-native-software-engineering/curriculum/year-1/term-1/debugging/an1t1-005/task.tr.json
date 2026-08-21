@@ -1,0 +1,18 @@
+{
+  "title": "Yapay Zekânın Soktuğu bir Hatayı Ayıklamak",
+  "objective": "Daha önce yapay zekâ destekli koddan kaynaklanan bir hatayı yöntemli biçimde ayıklayın: yeniden üretin, hipotez kurun, düzeltin ve düzeltmeyi bir regresyon testiyle kanıtlayın; düzeltmeyi yapay zekâya ürettirmeyin.",
+  "whyThisMatters": "Yapay zekânın soktuğu hatalar çoğu zaman inandırıcı durur ve yüzeysel bir okumayı atlatır. Onları yakalayan hata ayıklama disiplini, kodu yazmaktan ayrı, doğrulanabilir bir beceridir.",
+  "evidence": [
+    "Hatanın asgari, commit edilmiş yeniden üretimi (başarısız bir test veya yeniden üretilebilir bir script)",
+    "Düzeltme uygulanmadan önce kök neden hipotezini belirten yazılı not",
+    "Düzeltmeyi içeren, yeniden üretim commit'inden ayrı bir commit",
+    "Düzeltme öncesi kodda başarısız, düzeltme sonrası kodda geçen ve geçtiği gösterilmiş bir regresyon testi",
+    "İzin verilen yapay zekâ kullanımını (açıklama/ipucu) bağımsız yapılan teşhis ve düzeltmeden ayıran yapay zekâ kullanım beyanı"
+  ],
+  "acceptanceCriteria": [
+    "Bağımsız çalıştırılabilir, commit edilmiş başarısız bir test veya script olarak yeniden üretim vardır.",
+    "Kök neden hipotezi notu, düzeltme commit'inden önce gelir.",
+    "Regresyon testi, düzeltme öncesi commit'e checkout edildiğinde başarısız olur, düzeltme sonrası commit'e karşı geçer.",
+    "Not, varsa yapay zekâ yardımının ne için kullanıldığını, bağımsız yapılan teşhis ve düzeltmeden ayırır."
+  ]
+}

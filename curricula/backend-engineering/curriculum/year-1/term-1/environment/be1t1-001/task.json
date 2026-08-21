@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "id": "be1t1-001",
   "title": "Backend Development Environment and Workflow",
-  "term": "year-1/term-1",
+  "term": "year-1-term-1",
   "module": "environment",
   "estimatedHours": 8,
   "objective": "Have a reproducible Python backend project set up with linting, formatting, dependency management, and a disciplined Git workflow that the rest of the term's work builds on.",

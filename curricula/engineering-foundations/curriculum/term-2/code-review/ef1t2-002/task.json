@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "id": "ef1t2-002",
   "title": "Respond to Review Feedback Like a Teammate",
-  "term": "term-2",
+  "term": "year-1-term-2",
   "module": "code-review",
   "estimatedHours": 5,
   "objective": "Receive written review comments on a pull request you authored, reply to each one, and land accepted changes as separate commits after review started.",

@@ -1,0 +1,20 @@
+{
+  "title": "Yükü kırılma noktasına kadar test et",
+  "objective": "Belgelenmiş tek komutla basamaklı veya rampalı yük uygula; üç veya daha fazla yük düzeyinde p95 ve hata oranı raporla; pe1t1-001 SLO'sunun kırıldığı noktayı adlandır ve o anda bir doygunluk sinyali alıntıla.",
+  "whyThisMatters": "Rastgele bir VU sayısında tek yük testi koşusu demodur. Kapasite işi, sistemin SLO'yu karşılamayı bıraktığı sunulan yükü — kırılma noktasını — ve orada doyan kaynağı ister. Bu sayıyı tabloda tahmin etmek mimari yolunun alıştırmasıdır; bu dönem onu üretmeni ister.",
+  "evidence": [
+    "Yük betiği veya programı ve belgelenmiş bir iş yükü şekli üreten tek komut",
+    "En az üç yük düzeyi için tablo veya ham çıktı; her birinde sunulan yük, p95 ve hata oranı",
+    "Kırılma noktası ifadesi: pe1t1-001 SLO'sunun (veya yeniden yazılmış kopyasının) kırıldığı en düşük sunulan yük (RPS veya eşdeğeri)",
+    "Kırılma noktasında ölçülmüş bir kaynağı alıntılayan doygunluk notu (CPU yüzdesi, db bağlantıları, kilit beklemeleri veya kuyruk derinliği)",
+    "Kırılma noktasının altında seçilen bir çalışma noktasında en az üç karşılaştırılabilir koşu, p95 aralığıyla",
+    "Görev sorularını yanıtlayan değerlendirme notları"
+  ],
+  "acceptanceCriteria": [
+    "Belgelenmiş tek komut iş yükünü üretir; betik varış hızını veya VU sayısını ve süreyi yazar.",
+    "En az üç yük düzeyi raporlanır; her birinde sunulan yük, p95 gecikme ve hata oranı vardır.",
+    "Kırılma noktası, pe1t1-001 SLO'sunun (gecikme yüzdeliği veya hata oranı) kırıldığı en düşük raporlanan sunulan yüktür; o yük bir sayıdır.",
+    "Doygunluk notu, kırılma noktasında adlandırılmış bir kaynak için ölçülmüş bir değer alıntılar; 'doyduğu kesin' tahmini değildir.",
+    "Kırılma noktasının altındaki bir çalışma noktasında üç koşu sayısal bir p95 aralığı raporlar."
+  ]
+}

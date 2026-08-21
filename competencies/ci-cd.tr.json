@@ -1,30 +1,30 @@
 {
-  "title": "Ci CD'si",
-  "description": "Otomatik oluşturma, test etme, kalite kapıları, sürümler ve dağıtım ardışık düzenleri.",
+  "title": "CI/CD",
+  "description": "Build, test ve kalite kapılarını, kırmızı bir pipeline'ın merge'ü bloklayacağı şekilde bağlayabilir — ve laptop'tan değil pipeline'dan deploy edebilir.",
   "levels": [
     {
       "name": "Temel",
-      "description": "Temel kavramları açıklayabilir ve rehberli çalışmaları tamamlayabilir.",
+      "description": "Yazılı rehberlik altında her push'ta çalışan bir pipeline dosyasını commit'leyebilir ve bozuk bir testin fail edeceği adımı gösterebilir.",
       "level": 1
     },
     {
       "name": "Çırak",
-      "description": "Kapsamı belirlenmiş görevleri sınırlı yönlendirmeyle tamamlayabilir ve kanıt üretebilir.",
+      "description": "Her push ve pull veya merge request'te lint ve test çalıştırabilir, kasıtlı bozuk bir commit'in CI'ı kırmızıya çevirdiğini ve düzeltmenin yeşile döndürdüğünü gösterebilir ve pipeline kırmızıysa merge'ün bloklandığını belgelendirebilir.",
       "level": 2
     },
     {
       "name": "Uygulayıcı",
-      "description": "Kayda değer bir çalışmayı bağımsız olarak tasarlayabilir, uygulayabilir, test edebilir ve açıklayabilir.",
+      "description": "Git SHA ile tag'lenmiş bir container build'i bağımsız olarak ekleyebilir, testleri yalnızca host paketlerine değil o image'e karşı çalıştırabilir ve eşiği gerekçeli, kasıtlı bir ihlalde fail olduğu gösterilen bir kalite kapısı ekleyebilir.",
       "level": 3
     },
     {
       "name": "Kalfa",
-      "description": "Belirsizlikle başa çıkabilir, hataları teşhis edebilir ve ödünleşimleri gerekçelendirebilir.",
+      "description": "Laptop'ta yeşil, CI'da kırmızı — veya tersi — bir pipeline'ı teşhis edebilir; eksik servisi, image'i veya kapıyı gösterebilir; sürümlenmiş bir artifact uygulayıp smoke-check eden bir deploy işi üretebilir ki laptop-only deploy artık yol olmasın.",
       "level": 4
     },
     {
       "name": "Ustalık Kanıtı",
-      "description": "Alışılmadık durumlarda öğretebilir, değerlendirme yapabilir ve sağlam kararlar verebilir.",
+      "description": "Başka bir çırağın workflow'unu değerlendirebilir; zahmet veya gösteriş olan bir kapıyı adlandırabilir; tanıdık olmayan bir depoda build'i fail etmenin mi yoksa uyarı vermenin mi doğru olduğunu öğretebilir.",
       "level": 5
     }
   ]

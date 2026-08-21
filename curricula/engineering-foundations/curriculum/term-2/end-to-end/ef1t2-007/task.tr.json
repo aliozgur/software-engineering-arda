@@ -1,0 +1,21 @@
+{
+  "title": "Kapsamlı bir Değişikliği Uçtan Uca Teslim Etmek",
+  "objective": "Yazılı bir isteği alın, planlayın, var olan Python'da testlerin arkasında uygulayın ve inceleyicinin ek bağlama ihtiyaç duymadan üzerine gidebileceği bir pull request açın.",
+  "whyThisMatters": "Bu, junior bir mühendisin haftalık döngüsüdür: bir kayıt, bir plan, küçük bir diff, testler ve inceleyicinin kullanabileceği bir açıklama. Planı koddan önce commit ederek bir kez yavaş yapmak, dönemin kapanış gösterisidir.",
+  "evidence": [
+    "Gelen istek metni, kendi dosyası olarak commit edilmiş veya planda alıntılanmış",
+    "Her uygulama commit'inden önce gelen ve dosyaları, riskleri, testleri, bir saat tahmini ve kapsam dışını içeren bir plan commit'i",
+    "Tek bir nihai commit değil, aşamalı uygulama commit'lerini gösteren git log",
+    "Belgelenen doğrulama komutunun, yeni davranışın kapsandığını ve geçtiğini gösteren test komutu çıktısı",
+    "Pull request bağlantısı artı ham açıklama metni (sorun, değişiklik, doğrulama komutu ve sonucu, kapsam dışı)",
+    "Saatleri ve bir sonraki sefer farklı böleceğiniz veya tahmin edeceğiniz bir şeyi içeren tahmin-karşı-gerçek notu",
+    "Yapay zekâ planlamaya, uygulamaya veya pull request yazmaya yardımcı olduysa yapay zekâ kullanım beyanı"
+  ],
+  "acceptanceCriteria": [
+    "Herhangi bir uygulama commit'inden önce bir plan commit'i vardır; dokunulacak dosyaları, riskleri, eklenecek veya çalıştırılacak testleri, tam sayı bir saat tahmini ve kapsam dışını adlandırır.",
+    "Pull request açıklaması sorunu, değişikliği, kaydedilmiş sonucuyla en az bir somut doğrulama komutunu ve kapsam dışında bırakılanı içerir.",
+    "Yeni davranışı kapsayan otomatik testler, çıktısı kanıtta duran tek belgelenmiş bir komutla geçer.",
+    "Üretim kodu diff'i en fazla 200 satırdır veya tahmin notu daha büyük bir değişikliğin neden bölünemediğini ve sonraki bölmeyi adlandırır.",
+    "Tahmin-karşı-gerçek notu planlanan saatleri, gerçek saatleri ve bir sonraki sefer farklı tahmin edilecek veya kapsamlandırılacak adlandırılmış bir şeyi kaydeder."
+  ]
+}

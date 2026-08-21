@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "id": "ef1t1-001",
   "title": "Set Up a Professional Development Environment",
-  "term": "term-1",
+  "term": "year-1-term-1",
   "module": "environment-setup",
   "estimatedHours": 4,
   "objective": "Have a reproducible, version-controlled development environment (shell, editor, Git identity, Python toolchain) that you can rebuild from your own notes alone.",

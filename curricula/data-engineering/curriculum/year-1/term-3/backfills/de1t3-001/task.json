@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "id": "de1t3-001",
   "title": "Backfill a Historical Window Without Rewriting the Present",
-  "term": "year-1/term-3",
+  "term": "year-1-term-3",
   "module": "backfills",
   "estimatedHours": 10,
   "objective": "Reprocess a closed date window through the same transform as the incremental job, leave the current partition unchanged, and show a second backfill of that window is a no-op on row count.",

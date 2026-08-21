@@ -1,0 +1,19 @@
+{
+  "title": "İnsanı sayfalayan alarmlar ve sayfalamaması gerekenler",
+  "objective": "En az bir sayfalayan ve bir sayfalamayan alarm içeren bir alarm politikası yaz; sayfalayan alarmın kasten yakılan SLO'da ateş ettiğini ve sağlıklı trafikte sessiz kaldığını kanıtla; sayfala-veya-sayfalama kararını yazıyla savun.",
+  "whyThisMatters": "Eyleme geçilemeyen sayfa zahmettir. Bu görev, hangi koşulların gece 3'te bir insanı hak ettiğine, hangisinin biletle bekleyebileceğine karar verdiğin ve sayfalama kuralının bütçe yanınca gerçekten ateş ettiğini kanıtladığın yerdir.",
+  "evidence": [
+    "Her biri page veya ticket/info etiketli en az üç kurallı bir alarm-kuralları dosyası",
+    "Kimin, hangi gecikmeyle haberdar edildiğini adlandıran yönlendirme tablosu veya Alertmanager eşdeğeri yapılandırma",
+    "Sayfalayan alarmın sağlıklı durumda inactive olduğunu gösteren yakalanmış değerlendirme çıktısı",
+    "Sayfalayan alarmın kasten bozulmuş arızada ateş ettiğini gösteren yakalanmış değerlendirme çıktısı",
+    "Reddedilen sayfalama adayını içeren sayfa-karşısında-bilet gerekçe notu",
+    "Görev sorularını yanıtlayan değerlendirme notları"
+  ],
+  "acceptanceCriteria": [
+    "En az bir kural sayfalayan, en az biri sayfalamayan olarak işaretlenmiştir.",
+    "Sayfalayan kuralın koşulu, ob1t1-004'ten bir SLI veya SLO ile ilgili sorguyu (veya eşdeğer bir burn-rate) kaynak gösterir; yalnız host-down ping değildir.",
+    "Yakalanmış değerlendirme çıktısı, sayfalayan alarmın sağlıklı yakalamada inactive, kasten bozulmuş arıza yakalamasında ateş ettiğini gösterir.",
+    "Gerekçe notu, sayfa olarak reddedilen bir alarm adayını adlandırır ve yol açacağı zahmeti bir cümlede yazar."
+  ]
+}

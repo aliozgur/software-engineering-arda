@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "id": "pe1t1-006",
   "title": "Load Test to the Knee",
-  "term": "year-1/term-1",
+  "term": "year-1-term-1",
   "module": "load-testing",
   "estimatedHours": 12,
   "objective": "Apply a stepped or ramped load with one documented command, report p95 and error rate at three or more load levels, name the knee where the pe1t1-001 SLO fails, and quote a saturation signal at that point.",

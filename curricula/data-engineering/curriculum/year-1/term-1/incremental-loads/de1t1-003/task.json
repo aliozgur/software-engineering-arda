@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "id": "de1t1-003",
   "title": "Incremental Loads with a Watermark You Can Defend",
-  "term": "year-1/term-1",
+  "term": "year-1-term-1",
   "module": "incremental-loads",
   "estimatedHours": 8,
   "objective": "Replace the full extract with a high-watermark incremental load, store the watermark only after a successful warehouse commit, and demonstrate an explicit policy for late rows.",

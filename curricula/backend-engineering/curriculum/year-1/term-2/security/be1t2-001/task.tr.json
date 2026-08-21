@@ -1,0 +1,18 @@
+{
+  "title": "API'yi Kimlik Doğrulamak ve Yetkilendirmek",
+  "objective": "Mevcut Python API'sini, kimliği doğrulanmamış çağrıların reddedileceği, yetkili çağrıların role göre sınırlanacağı ve kimlik bilgilerinin düz metin olarak saklanmayacağı veya loglanmayacağı biçimde korumak.",
+  "whyThisMatters": "Açık bir API, işletebileceğiniz bir backend servisi değildir. Sonraki her sertleştirme ve bitirme görevi, bu servisin çağıranları ayırt ettiğini ve incelemede bunu kanıtlayabildiğini varsayar.",
+  "evidence": [
+    "Auth, rol kontrolleri ve testlerin tek bir yığın değil, ayrı commit'lerde eklendiğini gösteren Git geçmişi",
+    "Aynı korumalı kaynak için üç çağıranda 401, 403 ve 200 gösteren otomatik test çıktısı",
+    "Güvenlik şeması tanımlanmış ve korumalı route'ları işaretlenmiş OpenAPI belgesi",
+    "Auth yöntemini, rolleri ve en az bir kaynaktaki tam izni adlandıran README bölümü",
+    "Saklanan kimlik bilgilerinin hash'lendiğini ve token veya parolaların uygulama log'larında görünmediğini kanıtlayan bir grep veya döküm"
+  ],
+  "acceptanceCriteria": [
+    "Korumalı bir route'a kimliği doğrulanmamış istek, belgelenmiş hata JSON şeklinde 401 döner.",
+    "O kaynakta izni olmayan kimliği doğrulanmış bir çağıran 401 veya 404 değil, 403 alır.",
+    "Parola kullanılıyorsa, saklanan parola veritabanı dökümünde veya fixture'da yalnızca hash olarak görünür — hiçbir zaman düz metin olarak değil.",
+    "OpenAPI belgesi güvenlik şemasını tanımlar ve her korumalı route'u bunu gerektirir diye işaretler."
+  ]
+}

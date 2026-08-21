@@ -1,0 +1,11 @@
+{
+  "name": "apprenti.dev Gözlemlenebilirlik ve Üretim Mühendisliği",
+  "audience": "Sağlam mühendislik temeli olan, gözlemlenebilirlik ve üretim işletimine yönelen backend/platform mühendisi",
+  "philosophy": "Kanıta dayalı uzmanlaşma: enstrümante et, ölç, alarmla, yanıt ver, suçlamadan öğren.",
+  "aiPrinciples": [
+    "Yapay zekâ desteği, çalışmayı önemli ölçüde etkilediğinde açıklanmalıdır.",
+    "Görevler çözüm üretmeyi kısıtlayabilir; açıklama, ipucu ve kısa sınava izin verebilir.",
+    "Çırak, gönderilen her artefaktan sorumlu olmaya devam eder.",
+    "Mentor onayı yapay zekâ çıktı kalitesine değil, sergilenen anlayışa dayanır."
+  ]
+}

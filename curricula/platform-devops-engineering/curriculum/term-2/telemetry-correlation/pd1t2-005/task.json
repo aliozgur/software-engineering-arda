@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "id": "pd1t2-005",
   "title": "Correlate Logs, Metrics, and Traces for One Failure",
-  "term": "term-2",
+  "term": "year-1-term-2",
   "module": "telemetry-correlation",
   "estimatedHours": 13,
   "competencies": [

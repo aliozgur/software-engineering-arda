@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "id": "an1t1-005",
   "title": "Debugging an AI-Introduced Bug",
-  "term": "year-1/term-1",
+  "term": "year-1-term-1",
   "module": "debugging",
   "estimatedHours": 8,
   "objective": "Debug a bug that originated in earlier AI-assisted code, methodically: reproduce it, form a hypothesis, fix it, and prove the fix with a regression test, without asking AI to generate the fix directly.",

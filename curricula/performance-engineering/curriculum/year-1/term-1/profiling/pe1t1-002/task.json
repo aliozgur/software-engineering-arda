@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "id": "pe1t1-002",
   "title": "Profile the Hot Path, Don't Guess It",
-  "term": "year-1/term-1",
+  "term": "year-1-term-1",
   "module": "profiling",
   "estimatedHours": 10,
   "objective": "Record a suspected bottleneck before opening a profiler, then name the hottest CPU and allocation frames from committed profile files and relate their cost to algorithmic complexity.",

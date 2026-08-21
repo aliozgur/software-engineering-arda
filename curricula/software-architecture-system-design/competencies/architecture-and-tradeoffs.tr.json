@@ -1,0 +1,31 @@
+{
+  "title": "Mimari ve Ödünleşim Analizi",
+  "description": "İşlevsel olmayan gereksinimleri gerçek kısıtlarla tartmak, reddedilen alternatifleri adlandırıp gerekçelendiren ADR yazmak ve bir kısıt değiştiğinde sistem düzeyinde bir tasarım kararını savunmak.",
+  "levels": [
+    {
+      "level": 1,
+      "name": "Temel",
+      "description": "Verilen senaryoya ait NFR'leri ayırt edebilir ve en az birini ölçülebilir bir bütçeye — örneğin bir gecikme veya availability hedefi — çevirebilir; sayının kaynağını belirtir."
+    },
+    {
+      "level": 2,
+      "name": "Çırak",
+      "description": "Gerçek bir karar için tam bir ADR yazabilir: her biri ayrı gerekçeli en az iki reddedilmiş alternatif ve en az bir kabul edilmiş olumsuz sonuç."
+    },
+    {
+      "level": 3,
+      "name": "Uygulayıcı",
+      "description": "Mimari stilleri veya veri mimarisi seçeneklerini senaryoya özgü açık ölçütlere göre bağımsız karşılaştırabilir; genel bir tercihe sığınmadan, bir reviewer'ın karşı-senaryosuna karşı öneriyi savunabilir."
+    },
+    {
+      "level": 4,
+      "name": "Kalfa",
+      "description": "Bir sistem sınırında arıza ve kontrollü bozulmayı (degradation) tasarlayabilir; belirtilen bir kısıt değişince önceki mimari kararı gözden geçirip yeni kısıtın tam olarak neyi geçersiz kıldığını açıklayabilir."
+    },
+    {
+      "level": 5,
+      "name": "Ustalık Kanıtı",
+      "description": "Kapsamı kendi belirlediği belirsiz bir problem için uçtan uca mimari üretebilir ve teknik ile teknik olmayan karışık bir panel önünde savunabilir; canlı ortaya çıkan kısıt değişikliklerini işler ve ardından ADR setini günceller."
+    }
+  ]
+}

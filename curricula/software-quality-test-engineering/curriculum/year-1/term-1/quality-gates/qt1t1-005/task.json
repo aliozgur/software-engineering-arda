@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "id": "qt1t1-005",
   "title": "Wire Quality Gates into the Pipeline",
-  "term": "year-1/term-1",
+  "term": "year-1-term-1",
   "module": "quality-gates",
   "estimatedHours": 16,
   "objective": "Add static analysis, a coverage threshold, and at least one deeper test-quality gate to a real CI pipeline so a regression is blocked automatically, not caught by chance in review.",

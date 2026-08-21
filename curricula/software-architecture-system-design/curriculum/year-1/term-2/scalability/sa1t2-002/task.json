@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "id": "sa1t2-002",
   "title": "Capacity and Latency Budget Modeling",
-  "term": "year-1/term-2",
+  "term": "year-1-term-2",
   "module": "scalability",
   "estimatedHours": 8,
   "objective": "Build a back-of-envelope capacity model with stated formulas and assumptions, allocate a latency budget across components, and identify the most likely bottleneck with supporting evidence.",

@@ -1,0 +1,17 @@
+{
+  "title": "Bir Merge Çatışmasını Çözmek ve Geçmişi Rebase ile Temizlemek",
+  "objective": "Gerçek bir merge çatışmasını kasıtlı olarak oluşturup çözün ve paylaşılmadan önce dağınık bir commit geçmişini rebase ile temizleyin.",
+  "whyThisMatters": "Merge çatışmaları ve dağınık yerel geçmiş rutin iştir, istisna değil. İkisini de paniklemeden ve iş kaybetmeden ele almak, junior bir mühendisin gerçek ekip çalışmasının ilk gününde ihtiyaç duyduğu en somut Git becerilerinden biridir.",
+  "evidence": [
+    "Merge commit'ini ve çatışıp sonra çözülmüş dosyayı gösteren depo veya branch",
+    "Rebase öncesi ve sonrası commit hash'lerini gösteren git log veya reflog çıktısı",
+    "Rebase'nin commit hash'lerini neden değiştirdiğinin yazılı açıklaması",
+    "Yapay zekâ çatışmayı çözmeye veya rebase'i planlamaya yardımcı olduysa yapay zekâ kullanım beyanı"
+  ],
+  "acceptanceCriteria": [
+    "Çatışmalı merge tamamlanmıştır: merge commit'i vardır ve çözülmüş dosya, gerçekten çatışmayan yerlerde her iki tarafın da amaçlanan içeriğini içerir.",
+    "Yazılı bir not, aynı mantıksal değişikliğin rebase öncesi ve sonrası neden farklı bir commit hash'ine sahip olduğunu çırakın kendi sözleriyle açıklar.",
+    "Temizlenmiş branch, dağınık branch'ten daha az commit içerir ve kalan hiçbir commit mesajı yalnızca wip, fix, typo veya tek bir sözcük değildir.",
+    "Rebase edilen branch'ten iş kaybolmamıştır: rebase öncesi durum hâlâ kurtarılabilir, örneğin reflog veya bir yedek branch ya da tag ile."
+  ]
+}

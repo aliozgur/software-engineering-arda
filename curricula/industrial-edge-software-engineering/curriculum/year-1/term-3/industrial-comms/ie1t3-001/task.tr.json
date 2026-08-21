@@ -1,0 +1,19 @@
+{
+  "title": "Kasten bozabileceğin Modbus istek/yanıt",
+  "objective": "Fonksiyon 0x03 ve 0x06 için Modbus TCP ADU uygula; eşlenmemiş adreste exception 0x02 döndür; MBAP uzunluğunun PDU ile örtüştüğünü göster ve en az 20 üretilmiş vaka çalıştır.",
+  "whyThisMatters": "Bir PLC haritası JSON değildir. Bir MBAP başlığını ve illegal-address exception'ını hex-dökemiyorsan tesis entegrasyonlarını tahminle hata ayıklarsın. Bu görev resmi Modbus uygulama protokolü belirtimini host'ta kullanır — lisanslı yığın yok, donanım geçidi yok.",
+  "evidence": [
+    "Artımlı Git geçmişli sunucu ve istemci C (veya C sunucu artı belgelenmiş bir test istemcisi)",
+    "Yazıldıktan sonra holding register 0..3'ün 0x03 okumasının istek ve yanıtını gösteren yakalanmış hex dökümü",
+    "Eşlenmemiş bir adres okumasının exception fonksiyon 0x83 ve exception kodu 0x02 döndürdüğünü gösteren yakalanmış hex dökümü",
+    "Her iki yakalanmış çerçeve için MBAP length alanının belirtimdeki kalan MBAP kuralına göre PDU boyutuna eşit olduğunu gösteren not veya döküm",
+    "Geçme sayısıyla en az 20 üretilmiş (özellik) vakanın yakalanmış koşusu",
+    "Görev sorularını yanıtlayan değerlendirme notları"
+  ],
+  "acceptanceCriteria": [
+    "Holding register 0 ile 3'ün istemci okuması, daha önce fonksiyon 0x06 (veya onu da uyguladıysan 0x10) ile yazılan değerleri döndürür; istek ve yanıt hex dökümleri yakalanır.",
+    "Uygulanan haritanın dışındaki bir adresin okuması fonksiyon kodu 0x83 ve exception kodu 0x02 döndürür; hex dökümü yakalanır.",
+    "Hem başarı hem exception çerçeveleri için MBAP Length alanı, Modbus TCP ADU'da tanımlandığı gibi PDU boyutuyla tutarlıdır (Length = Length alanından sonraki kalan baytlar).",
+    "En az 20 vakalık bir özellik veya üretilmiş-vaka paketi tek komutta çalışır; yakalanan çıktı 20'ye büyük veya eşit bir geçme sayısı yazdırır."
+  ]
+}

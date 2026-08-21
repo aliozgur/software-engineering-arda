@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "id": "da2t1-001",
   "title": "Generalization, Leakage, and Validation Design",
-  "term": "year-2/term-1",
+  "term": "year-2-term-1",
   "module": "ml-foundations",
   "estimatedHours": 10,
   "competencies": [

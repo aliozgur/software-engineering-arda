@@ -2,32 +2,32 @@
   "schemaVersion": 1,
   "id": "networking",
   "title": "Networking",
-  "description": "Ethernet/IP/TCP/UDP/DNS/TLS, routing, sockets and packet analysis.",
+  "description": "Can read Ethernet/IP/TCP/UDP/DNS/TLS on the wire, write sockets, and choose which layer to trust when a capture and an application log disagree.",
   "levels": [
     {
       "level": 1,
       "name": "Foundation",
-      "description": "Can explain core concepts and complete guided work."
+      "description": "Can capture a packet, label MAC, IP, port and hostname on it, and compute a subnet from a written prefix — under written guidance."
     },
     {
       "level": 2,
       "name": "Apprentice",
-      "description": "Can complete scoped tasks with limited guidance and produce evidence."
+      "description": "Can annotate a capture that includes DNS and a default-gateway hop, write a socket client that handles disconnect, and choose TCP versus UDP for a stated payload with a one-sentence reason."
     },
     {
       "level": 3,
       "name": "Practitioner",
-      "description": "Can independently design, implement, test and explain non-trivial work."
+      "description": "Can independently identify handshake and sequence/ack behavior in a capture, implement a socket server that survives a peer reset, and distinguish TLS encryption, authentication and certificates on that path."
     },
     {
       "level": 4,
       "name": "Journeyman",
-      "description": "Can handle ambiguity, diagnose failures and defend trade-offs."
+      "description": "Can diagnose a failure where DNS, routing or TLS alone would mislead, cite the capture fields that prove it, and produce a note another on-call can follow without opening application source."
     },
     {
       "level": 5,
       "name": "Mastery Evidence",
-      "description": "Can teach, review and make sound decisions across unfamiliar situations."
+      "description": "Can review another apprentice's capture or socket code, name a field they mislabeled (MAC as IP, or TLS as encryption-only), and teach when to trust a packet dump over an application log on an unfamiliar host."
     }
   ]
 }

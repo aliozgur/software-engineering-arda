@@ -1,0 +1,19 @@
+{
+  "title": "Kayıplı simüle hat üzerinde güvenilir çerçeveler",
+  "objective": "Yapılandırılmış bir kesirde paket düşüren simüle bir datagram üzerinde kapsamı belirlenmiş güvenilir bir gönderici ve alıcı uygula; 10 KiB'yi bayt-özdeş aktar ve bir sequence/ACK yakalamasında en az bir yeniden iletim göster.",
+  "whyThisMatters": "Endüstriyel telemetri düşen hatlarda ölür. CS144'ün güvenilir bayt akışı doğru fikirdir; bir dilimini (stop-and-wait veya go-back-N) uygulayacaksın ki sonraki MQTT ve Modbus işi 'kütüphane benim için yeniden denedi' olmasın.",
+  "evidence": [
+    "Düşürme kesirini (en az yüzde 20) ve yeniden sıralamanın açık olup olmadığını yazan bir kayıp yapılandırma dosyası",
+    "Artımlı Git geçmişli gönderici/alıcı C (veya C artı ince bir koşum)",
+    "O kayıp altında bayt-özdeş (sağlama veya diff) en az 10 KiB'lik yakalanmış aktarım",
+    "Adlı bir sıra numarasının en az bir yeniden iletimini gösteren sequence/ACK günlüğü",
+    "Hangi CS144 fikrinin kullanıldığını (güvenilir bayt akışı, sıra uzayı, yeniden iletim zamanlayıcısı) ve kasten atlanan bir CS144 konusunu (örneğin congestion control) adlandıran README",
+    "Görev sorularını yanıtlayan değerlendirme notları"
+  ],
+  "acceptanceCriteria": [
+    "Kayıplı hat, koşunun okuduğu bir dosyada yapılandırıldığı gibi datagramların en az yüzde 20'sini düşürür; o dosya depodadır.",
+    "10 KiB veya daha büyük bir yük o kayıp altında alıcıya bayt-özdeş ulaşır; bir sağlama veya diff yakalanır.",
+    "Sequence/ACK günlüğü en az bir yeniden iletim gösteren bir satır içerir (aynı sıra numarası birden fazla kez gönderilmiş veya bir ACK boşluğunu bir yeniden gönderim izlemiş).",
+    "README uygulanan en az bir CS144 güvenilir-taşıma fikri ve atlanan birini adlandırır."
+  ]
+}

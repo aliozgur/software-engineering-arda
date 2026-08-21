@@ -1,30 +1,30 @@
 {
   "title": "Git",
-  "description": "Git veri modeli, commit'ler, branching, merging, rebasing, işbirliği ve depo hijyeni.",
+  "description": "working tree'deki işi Git'in commit çizgesi üzerinden bırakabilir, paylaşabilir ve kurtarabilir — başkalarının zaten sahip olduğu geçmişi yeniden yazmadan merge ile rebase arasında seçim yapabilir.",
   "levels": [
     {
       "name": "Temel",
-      "description": "Temel kavramları açıklayabilir ve rehberli çalışmaları tamamlayabilir.",
+      "description": "Yazılı rehberlik altında working tree'deki değişiklikleri stage'leyebilir, bir feature branch oluşturabilir, neyin ve neden değiştiğini söyleyen en az iki commit kaydedebilir ve bir gözden geçirenin eyleme geçebileceği bir pull request açabilir.",
       "level": 1
     },
     {
       "name": "Çırak",
-      "description": "Kapsamı belirlenmiş görevleri sınırlı yönlendirmeyle tamamlayabilir ve kanıt üretebilir.",
+      "description": "Çakışmalı bir merge'i her iki tarafın amaçlanan içeriği kalacak şekilde tamamlayabilir, dağınık yerel bir branch'i okunabilir bir geçmişe rebase edebilir ve rebase öncesi durumun hâlâ kurtarılabilir olduğunu gösterebilir.",
       "level": 2
     },
     {
       "name": "Uygulayıcı",
-      "description": "Kayda değer bir çalışmayı bağımsız olarak tasarlayabilir, uygulayabilir, test edebilir ve açıklayabilir.",
+      "description": "Paylaşılan bir branch'i bağımsız olarak incelenebilir tutabilir — duruma göre merge veya rebase seçebilir, başkalarının zaten sahip olduğu geçmişi yeniden yazmadan push edebilir ve her inceleme yorumunu izleyen bir commit veya yazılı bir değişiklik-yok gerekçesiyle yanıtlayabilir.",
       "level": 3
     },
     {
       "name": "Kalfa",
-      "description": "Belirsizlikle başa çıkabilir, hataları teşhis edebilir ve ödünleşimleri gerekçelendirebilir.",
+      "description": "Otomatik bir kontrol ve git bisect ile bir gerilemeyi teşhis edebilir, ilk kötü commit'i ve nedensel değişikliği adlandırabilir ve yeniden yazılmış bir geçmişten veya detached HEAD durumundan iş kaybetmeden kurtarabilir.",
       "level": 4
     },
     {
       "name": "Ustalık Kanıtı",
-      "description": "Alışılmadık durumlarda öğretebilir, değerlendirme yapabilir ve sağlam kararlar verebilir.",
+      "description": "Başka bir çırağın branch'ini yeniden yazılmış paylaşılan geçmiş, kurtarılamaz rebase'ler veya okunamaz commit'ler açısından değerlendirebilir; kurmadığı bir depoda ne zaman rebase, ne zaman merge edileceğini öğretebilir.",
       "level": 5
     }
   ]

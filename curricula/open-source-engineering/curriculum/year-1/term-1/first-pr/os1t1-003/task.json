@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "id": "os1t1-003",
   "title": "Open a Justified Contribution",
-  "term": "year-1/term-1",
+  "term": "year-1-term-1",
   "module": "first-pr",
   "estimatedHours": 10,
   "objective": "Open a small, justified change that addresses a real public issue — as an upstream pull request, or as a pull request on a local fork of that same public repository with the upstream issue URL attached.",

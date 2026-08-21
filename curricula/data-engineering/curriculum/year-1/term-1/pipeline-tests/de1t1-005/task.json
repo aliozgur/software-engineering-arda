@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "id": "de1t1-005",
   "title": "Test the Transform, Not the Warehouse Screenshot",
-  "term": "year-1/term-1",
+  "term": "year-1-term-1",
   "module": "pipeline-tests",
   "estimatedHours": 8,
   "objective": "Put automated tests around the transform and the load gates: uniqueness, required nulls, referential integrity, row-count conservation or a documented filter, and one business rule — including a fixture that must fail.",

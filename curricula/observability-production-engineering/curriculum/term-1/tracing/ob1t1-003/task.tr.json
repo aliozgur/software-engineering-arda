@@ -1,0 +1,18 @@
+{
+  "title": "Gerçek servis çağrıları arasında dağıtık tracing",
+  "objective": "En az iki bağımsız çalışan süreci geçen bir isteği OpenTelemetry tracing ile enstrümante et ve kasten yavaşlatılmış bir span'i yalnızca izle teşhis et.",
+  "whyThisMatters": "Günlük ve ölçüm bir şeyin yanlış olduğunu söyler; iz, kaynak kodu okumadan süreç sınırları boyunca nerede olduğunu söyler. Bu, dönemde sezgi yerine yalnızca telemetriyle teşhis etmen gereken ilk görevdir.",
+  "evidence": [
+    "Trace id'nin her iki süreçte göründüğü taban iz dışa aktarımı/ekran görüntüsü",
+    "Süreç sınırında context propagation gösteren enstrümantasyon kodu/yapılandırması",
+    "Yavaş bir span enjekte ettikten sonra yakalanmış ikinci iz dışa aktarımı/ekran görüntüsü",
+    "Yavaş span'i yalnızca iz verisiyle adlandıran yazılı teşhis notu",
+    "Görev sorularını yanıtlayan değerlendirme notları"
+  ],
+  "acceptanceCriteria": [
+    "Dışa aktarılan taban iz, her iki sürecin span'lerinin paylaştığı tek bir trace id gösterir.",
+    "İz, gerçek çağrı sırasını yansıtan ebeveyn/çocuk span yapısına sahiptir.",
+    "İkinci izdeki en uzun span, kasten yavaşlatılan bileşene karşılık gelir.",
+    "Teşhis notu yavaş span'i yalnızca span adları/süreleriyle tanımlar, kaynak kod incelemesiyle değil."
+  ]
+}

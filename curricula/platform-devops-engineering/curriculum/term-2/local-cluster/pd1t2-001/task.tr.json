@@ -1,0 +1,17 @@
+{
+  "title": "Servisi Yerel Bir Kubernetes Cluster'ına Deploy Et",
+  "evidence": [
+    "En az bir Deployment ve bir Service için commit edilmiş Kubernetes manifest'leri",
+    "Ready bir pod ve Service'i gösteren yakalanmış kubectl get çıktısı, artı seçilen cluster ürünü (kind veya minikube)",
+    "Belgelenmiş erişim yolu (port-forward, NodePort veya Ingress) üzerinden servise yakalanmış istek",
+    "Temiz bir makineden cluster oluşturan, çırağın image'ını yükleyen ve manifest'leri apply eden README veya script",
+    "Görev sorularını yanıtlayan değerlendirme notları",
+    "Yapay zekâ çalışmayı önemli ölçüde etkilediyse yapay zekâ kullanım beyanı"
+  ],
+  "acceptanceCriteria": [
+    "kind veya minikube cluster'ı belgelenmiş bir komutla oluşturulur ve ürün adı kanıt notuna yazılır.",
+    "Commit edilmiş manifest'ler en az bir Deployment ve bir Service içerir ve hatasız apply edilir.",
+    "Çalışan pod Ready olur; belgelenmiş readiness veya liveness probe yolu başarılıdır.",
+    "Workload üzerindeki image, daha önceki görevlerden çırağın yerel olarak yüklediği image'ıdır; herkese açık bir örnek uygulama değildir."
+  ]
+}

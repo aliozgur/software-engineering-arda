@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "id": "ie1t3-003",
   "title": "Signed OTA with dual-slot rollback you can fail on purpose",
-  "term": "year-1/term-3",
+  "term": "year-1-term-3",
   "module": "ota-and-safety",
   "estimatedHours": 10,
   "objective": "Simulate two firmware slots and a bootloader that refuses an invalid signature, refuses a downgrade when anti-rollback is on, and boots the previous slot after a failed health check.",

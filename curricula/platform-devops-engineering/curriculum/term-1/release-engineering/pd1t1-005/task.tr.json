@@ -1,0 +1,17 @@
+{
+  "title": "Yeniden Üretilebilir, Sürüm Numaralı Bir Release Kes",
+  "evidence": [
+    "Belgelenmiş bir SemVer sürümüne uyan ve belirli bir commit'i gösteren Git tag (örneğin v0.1.0)",
+    "En az iki sürüm için tarihli, kullanıcıya görünen değişiklikleri adlandıran (yalnızca 'updates' değil) CHANGELOG.md",
+    "O sürümle tag'lenmiş release artefaktı (image tag veya arşiv adı) artı tag'li commit'ten yeniden build komut çıktısı",
+    "Mentorun release'i kesmek ve yeniden build etmek için izlediği tam komutları listeleyen RELEASE.md",
+    "Görev sorularını yanıtlayan değerlendirme notları",
+    "Yapay zekâ çalışmayı önemli ölçüde etkilediyse yapay zekâ kullanım beyanı"
+  ],
+  "acceptanceCriteria": [
+    "Adı belgelenmiş bir SemVer sürümüne uyan ve release commit'ini gösteren bir git tag vardır.",
+    "CHANGELOG.md en az iki sürüm için tarihli girdiler içerir; her biri en az bir kullanıcıya görünen değişiklik adlandırır.",
+    "Bir release artefaktı (container image tag veya arşiv) o sürümle adlandırılır ve tag'li commit'ten aynı belgelenmiş komutla yeniden build edilir.",
+    "RELEASE.md, mentorun soru sormadan izleyebileceği kesme ve yeniden build komutlarını listeler."
+  ]
+}

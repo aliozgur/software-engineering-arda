@@ -1,0 +1,16 @@
+{
+  "title": "Yabancı bir Kod Tabanını Haritalamak",
+  "objective": "Sizin yazmadığınız bir kod tabanı için, yazarına sormadan, arama araçlarını kullanarak yapısının, giriş noktalarının ve bir modülün sorumluluklarının kısa yazılı haritasını üretin.",
+  "whyThisMatters": "Junior mühendisler boş bir dosyadan yeni kod yazmaktan çok daha fazla zamanı var olan kodu okuyarak geçirir. Yabancı bir kod tabanında kabile bilgisine değil, komut satırı aramasına dayanarak yönünüzü bulmak temel bir mesleki beceridir.",
+  "evidence": [
+    "Not deposuna commit edilmiş yazılı harita (Markdown dosyası)",
+    "Çalıştırılan gerçek arama komutlarından en az 5'ini, ne bulduklarını gösterecek kadar çevre çıktıyla gösteren terminal transkripti",
+    "Yapay zekâ kodun herhangi bir kısmını yorumlamaya yardımcı olduysa yapay zekâ kullanım beyanı"
+  ],
+  "acceptanceCriteria": [
+    "Yazılı harita, kod tabanının giriş noktasını ve nasıl bulunduğunu adlandırır.",
+    "Harita, en az 5 üst düzey modül veya dizini, her biri için kodu okuyarak (yalnızca README'den değil) yazılmış bir satırlık açıklamayla listeler.",
+    "Bir modül derinlemesine anlatılır: genel fonksiyonları veya sınıfları ve somut olarak adlandırılmış en az bir çağıran ile bir bağımlılık.",
+    "Harita, her bilgi parçasını bulmak için hangi arama komutlarının kullanıldığını belirtir; örneğin grep -rn veya git log --follow."
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "name": "apprenti.dev Uygulama Güvenliği Mühendisliği",
+  "audience": "Uygulama kodunu zaten canlıya alan ve uygulama güvenliği mühendisliğine uzmanlaşan yazılım mühendisleri",
+  "philosophy": "Savunmacı AppSec bir mühendislik işidir: sahip olduğunuz sistemin geçerli threat model'ini çıkarın, kusurları bulun, düzeltin ve her düzeltmeyi incelenebilir kanıtla kanıtlayın. Bu yol bir CTF değildir. LEARN BY DOING. GROW THROUGH MENTORSHIP.",
+  "aiPrinciples": [
+    "Yapay zekâ yardımı maddi olarak kullanıldığında açıklanmalıdır.",
+    "Görevler açıklamalara, ipuçlarına ve quizlere izin verirken çözüm üretmeyi kısıtlayabilir.",
+    "Çırak gönderilen her bulgudan, düzeltmeden ve doğrulamadan sorumlu olmaya devam eder.",
+    "Mentor onayı tarama puanına veya yapay zekâyla yazılmış bir rapora değil, sergilenen savunma yargısına ve kanıta dayanır."
+  ]
+}

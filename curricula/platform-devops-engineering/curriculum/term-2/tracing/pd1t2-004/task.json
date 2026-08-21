@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "id": "pd1t2-004",
   "title": "Trace a Request Path with OpenTelemetry",
-  "term": "term-2",
+  "term": "year-1-term-2",
   "module": "tracing",
   "estimatedHours": 13,
   "competencies": [

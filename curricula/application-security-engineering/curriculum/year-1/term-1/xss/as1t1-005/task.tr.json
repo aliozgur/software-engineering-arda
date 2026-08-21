@@ -1,0 +1,19 @@
+{
+  "title": "XSS ve Çıktı Encoding",
+  "objective": "Sahip olduğunuz veya yerelde işlettiğiniz uygulamada reflected veya stored bir XSS sink bulun, çıktıyı doğru context için encode edin ve encoding kaldırıldığında kırmızıya düşen bir testle düzeltmeyi kanıtlayın.",
+  "whyThisMatters": "XSS'i 'girdiyi sanitize et' diye ele almak asıl kontrolü gizler: tarayıcının parse edeceği context'te, çıkışta encode edin. Bir Content-Security-Policy defense in depth'tir, o encoding'in yerine geçmez.",
+  "evidence": [
+    "Sink'i, reflected mı stored mı olduğunu, encoding context'ini (HTML body, attribute, URL veya JavaScript) ve düzeltmeden önce escape edilmemiş markup gösteren yerel isteği adlandıran bir bulgu notu",
+    "Encoding düzeltmesi ile CSP veya residual-risk notunun ayrı commit'lerde olduğunu gösteren Git geçmişi",
+    "Sink'ten encoding kaldırıldığında başarısız olan ve encoding yerindeyken geçen, komut ve her iki çıktısıyla commit edilmiş bir test",
+    "charset=utf-8 içeren Content-Type ve Content-Security-Policy header'ını veya residual-risk paragrafını içeren yakalanmış bir HTML yanıtı",
+    "Görev sorularını yanıtlayan değerlendirme notu"
+  ],
+  "acceptanceCriteria": [
+    "Yalnızca yerel uygulamada, düzeltmeden önce saldırgan kontrollü escape edilmemiş markup üreten en az 1 reflected veya stored XSS sink tanımlanır ve gösterilir.",
+    "Düzeltme, context'e uygun encoding veya gerçekten açık olan bir framework auto-escape kullanır; notlar context'i HTML body, attribute, URL veya JavaScript olarak adlandırır.",
+    "HTML içeren yanıtlar charset=utf-8 içeren bir Content-Type bildirir.",
+    "Script'ler için unsafe-inline içermeyen bir Content-Security-Policy konur, veya notlar daha sıkı bir politikanın henüz neden mümkün olmadığını ve hangi residual risk'in kaldığını kaydeder.",
+    "Commit edilmiş bir test, düzeltilmiş sink'ten encoding kaldırıldığında başarısız olur ve encoding yerindeyken geçer; komut ve her iki çıktı kaydedilir."
+  ]
+}

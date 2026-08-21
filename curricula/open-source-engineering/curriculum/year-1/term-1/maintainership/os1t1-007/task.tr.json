@@ -1,0 +1,21 @@
+{
+  "title": "Gerçek Bir Proje İçin Maintainer Paketi Teslim Edin",
+  "objective": "Aynı gerçek public proje için bir haftalık maintainer paketi üretin: en az üç public issue'yu triage edin, en az bir public pull request inceleyin ve gerçek commit veya pull request'leri alıntılayan adlandırılmış bir SemVer sürümü için release notes taslağı yazın.",
+  "whyThisMatters": "Maintainership, bir teslim tarihinde verilen yargılar demetidir: neyin kabul edileceği, review'da ne söyleneceği ve bir release'in ne vaat edebileceği. Gerçek URL'lere dayanan bir paket kanıttır; ödev için yaratılmış oyuncak bir topluluk değildir.",
+  "evidence": [
+    "Paket için kullanılan public proje URL'si (os1t1-001'deki proje, not neden bırakıldığını kaydetmedikçe)",
+    "os1t1-002 kapalı kümesinden bir recommended-next-action başlığı olan en az üç ayrı public issue URL'si triage tablosu",
+    "O diff'ten en az iki dosya yolu adlandıran en az bir public pull-request URL'sinin incelemesi (gönderilen review URL'si veya UNPOSTED gövde)",
+    "X.Y.Z sürümü ve bir SemVer bump türüyle başlayan, her biri o repository'den bir commit SHA veya pull-request URL'si olan en az üç değişiklik listeleyen bir release-notes taslağı",
+    "Her birinde en az iki madde olan will-respond ve will-not-respond listeleri içeren bir destek-sınırı notu",
+    "Görev sorularını yanıtlayan değerlendirme notları",
+    "Yapay zekâ çalışmayı önemli ölçüde etkilediyse AI kullanım açıklaması"
+  ],
+  "acceptanceCriteria": [
+    "Paketteki her URL gerçek bir public issue, pull request, commit veya repository sayfasıdır; not uydurulmuş katkıda bulunan, issue veya topluluk içermez.",
+    "Triage tablosunda en az üç ayrı public issue URL'si vardır; her birinde tam olarak bir önerilen eylem: close-as-duplicate, ask-for-info, accept-as-bug, reject-as-wontfix, ready-for-PR.",
+    "Pull-request incelemesi pull-request URL'sini ve o diff'te görünen en az iki dosya yolunu adlandırır.",
+    "Release-notes taslağı X.Y.Z biçiminde bir sürüm string'i ve major, minor veya patch bump türüyle başlar ve her biri o repository'den bir commit SHA veya pull-request URL'siyle eşlenen en az üç değişiklik listeler.",
+    "Destek-sınırı notu will-respond ve will-not-respond listeleri içerir; her birinde en az iki madde vardır."
+  ]
+}

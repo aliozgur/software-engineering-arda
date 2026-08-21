@@ -1,0 +1,16 @@
+{
+  "title": "İnceleyicinin Üzerine Gidebileceği bir Pull Request Açıklaması Yazmak",
+  "objective": "Yaptığınız gerçek bir değişiklik için, inceleyicinin tüm diff'i önce okumadan neyin değiştiğini, nedenini ve nasıl doğrulayacağını anlamasını sağlayan bir teknik not veya pull request açıklaması yazın.",
+  "whyThisMatters": "Belirsiz bir PR açıklaması ('hatayı düzeltir', 'kodu günceller') her inceleyiciyi niyetinizi diff'ten tersine mühendislik yapmaya zorlar. Açık bir açıklama hem mesleki bir nezakettir hem de kendi incelemenizi hızlandırır.",
+  "evidence": [
+    "PR açıklama metni (bağlantı artı ham metin; çünkü PR açıklamaları sonradan düzenlenebilir)",
+    "Diff'i görmemiş bir okuyucunun yalnızca açıklamayı okuduktan sonra söylediğini ve bunun niyetinizle örtüşüp örtüşmediğini kaydeden kısa not",
+    "Yapay zekâ metnin herhangi bir kısmını taslaklamaya yardımcı olduysa yapay zekâ kullanım beyanı"
+  ],
+  "acceptanceCriteria": [
+    "Açıklama, değişikliği anlatmadan önce çözülen sorunu belirtir.",
+    "Açıklama, gerçekten yapılmış en az bir somut doğrulama adımını adlandırır — belirli bir test çalıştırması veya elle kontrol; yalnızca 'test ettim' değil.",
+    "Açıklama, kasıtlı olarak kapsam dışında bırakılan veya ertelenen her şeyi adlandırır.",
+    "Diff'i görmemiş bir okuyucu, yalnızca açıklamayı okuduktan sonra neyin değiştiğini ve nasıl doğrulanacağını anlatabilir; bu, gönderilen notta doğrulanmıştır."
+  ]
+}

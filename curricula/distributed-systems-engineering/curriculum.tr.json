@@ -1,0 +1,11 @@
+{
+  "name": "apprenti.dev Dağıtık Sistemler Mühendisliği",
+  "audience": "Dağıtık sistemler uzmanlığına yönelen orta ve kıdemli backend mühendisleri",
+  "philosophy": "Genişlik değil derinlik: ödünleşimler kulaktan dolma olmaktan çıkıp talep üzerine yeniden üretilebilecek hale gelene kadar gerçek sistemleri replica et, partition et ve kır.",
+  "aiPrinciples": [
+    "Yapay zekâ yardımı maddi olarak kullanıldığında açıklanmalıdır.",
+    "Bu müfredattaki en zor görevler, çırağın yönlendirilmiş değil bağımsız arıza avı çalıştırması için yapay zekâ ipucunu bilinçli olarak kısıtlar.",
+    "Çırak, bir yapay zekâ aracının yardım ettiği kod dahil gönderilen her artefakttan sorumlu olmaya devam eder.",
+    "Mentor onayı yapay zekâ çıktı kalitesine değil, gösterilen anlayışa ve yeniden üretilebilir kanıta dayanır."
+  ]
+}

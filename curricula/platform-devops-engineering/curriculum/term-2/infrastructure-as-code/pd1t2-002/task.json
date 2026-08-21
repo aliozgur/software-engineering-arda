@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "id": "pd1t2-002",
   "title": "Declare the Local Runtime in OpenTofu",
-  "term": "term-2",
+  "term": "year-1-term-2",
   "module": "infrastructure-as-code",
   "estimatedHours": 14,
   "competencies": [

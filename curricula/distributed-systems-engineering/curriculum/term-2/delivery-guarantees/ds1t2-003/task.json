@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "id": "ds1t2-003",
   "title": "Dual-Write Loss and a Transactional Outbox You Can Measure",
-  "term": "ds1t2",
+  "term": "year-1-term-2",
   "module": "delivery-guarantees",
   "estimatedHours": 16,
   "objective": "Implement a service that persists a domain row in PostgreSQL and publishes an event to Kafka, first as two independent writes so a crash drops the event, then as a transactional outbox, and capture both a lost-event run and a zero-loss replay with OpenTelemetry traces spanning commit, poller, and consumer.",

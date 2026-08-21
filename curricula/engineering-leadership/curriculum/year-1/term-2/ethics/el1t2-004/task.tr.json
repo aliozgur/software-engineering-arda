@@ -1,0 +1,17 @@
+{
+  "title": "İmzalayacağınız Tavsiyeyi Yazın",
+  "objective": "Belirli ACM Code maddelerini alıntılayan, en az üç seçeneği karşılaştıran ve bir escalation yolu adlandıran Harborline veri saklama isteği üzerine imzalı bir tavsiye yazın.",
+  "whyThisMatters": "Lead'lerden yasal asgari ile mesleki görev arasındaki boşlukta duran şeyleri 'sadece ship etmeleri' istenir. Bir his tavsiye değildir. Code'u alıntılayan, kimin zarar gördüğünü adlandıran ve aksi yönde karar verilirse ne ekleyeceğinizi belirten bir memo tavsiyedir.",
+  "evidence": [
+    "En az iki ACM Code of Ethics maddesini numara veya resmi başlıkla alıntılayan bir karar memo'su",
+    "En az üç seçenekli bir seçenek tablosu; her satır zarar gören tarafı ve somut zararı adlandırır",
+    "İlk 40 kelimede tavsiyeyi belirten en fazla 200 kelimelik bir paydaş notu",
+    "Aksi yönde karar verilirse ekleyeceğiniz belgeyi ve bir rolü adlandıran bir escalation yolu"
+  ],
+  "acceptanceCriteria": [
+    "Memo en az iki ACM Code maddesini numara veya resmi başlıkla alıntılar.",
+    "Seçenek tablosunda en az üç seçenek vardır; her satır zarar gören bir taraf ve somut bir zarar adlandırır.",
+    "Paydaş notu en fazla 200 kelimedir ve tavsiyeyi ilk 40 kelimede belirtir.",
+    "Escalation yolu bir rol ('legal'de biri' değil) ve ekleyeceğiniz dosya veya memo'yu adlandırır."
+  ]
+}

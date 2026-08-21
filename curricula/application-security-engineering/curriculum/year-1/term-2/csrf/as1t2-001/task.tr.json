@@ -1,0 +1,18 @@
+{
+  "title": "CSRF, Cookie'ler ve Güvensiz Method'lar",
+  "objective": "Sahip olduğunuz veya yerelde işlettiğiniz uygulamada CSRF ve cookie-flag boşluklarını bulun ve düzeltin; state değiştiren route'ların seçilen CSRF kontrolü olmayan bir isteği reddettiğini kanıtlayın.",
+  "whyThisMatters": "Cookie ile kimliği doğrulanan uygulamalar tarayıcıyı confused deputy olarak kullanır. SameSite, CSRF token'ları ve GET'te state değişimini yasaklamak farklı kontrollerdir; bu görev hangisine güvendiğinizi adlandırmanızı ve fail closed olduğunu göstermenizi ister.",
+  "evidence": [
+    "Her state değiştiren route'u, kullanılan CSRF kontrolünü (token veya SameSite=Strict, adlandırılmış) ve önce/sonra gözlenen cookie flag'lerini listeleyen bir bulgu notu",
+    "Cookie-flag değişiklikleri ile CSRF zorlamasının ayrı commit'lerde olduğunu gösteren Git geçmişi",
+    "Eksik token veya cross-site-style bir isteğin reddedildiğini gösteren commit edilmiş bir test veya script'lenmiş yerel istek",
+    "Login sonrası HttpOnly ve SameSite gösteren yakalanmış bir Set-Cookie header'ı, artı Secure veya yalnızca HTTP yerel lab'ler için residual-risk notu",
+    "Görev sorularını yanıtlayan değerlendirme notu"
+  ],
+  "acceptanceCriteria": [
+    "Belgelenmiş her state değiştiren route (POST, PUT, PATCH veya DELETE), CSRF token'ı veya eşdeğer SameSite=Strict cookie savunması olmayan bir isteği reddeder; notlar hangi kontrolün kullanıldığını adlandırır.",
+    "Session cookie'leri HttpOnly ve SameSite (Strict veya Lax, notlarda adlandırılmış) koyar; Secure konur, veya notlar yerel lab'in yalnızca HTTP olduğunu ve bunu residual risk olarak adlandırır.",
+    "Belgelenmiş hiçbir GET route'u uygulama state'ini değiştirmez.",
+    "Yerel uygulamaya commit edilmiş bir test veya script'lenmiş istek, eksik token veya cross-site-style bir isteğin reddedildiğini gösterir."
+  ]
+}

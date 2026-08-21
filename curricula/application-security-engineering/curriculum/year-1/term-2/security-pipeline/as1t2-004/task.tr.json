@@ -1,0 +1,20 @@
+{
+  "title": "Açıklayabileceğiniz CI Security Scanning",
+  "objective": "Sahip olduğunuz repository'de GitHub Actions'a bir SAST veya dependency-advisory taraması ekleyin, en az üç bulguyu triage edin, birini düzeltin, birini yazıyla kabul veya dismiss edin ve ekilen bir sorun üzerinde workflow'un kırmızıya düştüğünü gösterin.",
+  "whyThisMatters": "Kimsenin triage etmediği bir tarayıcı gürültüdür. AppSec becerisi bulguları sınıflandırmak, önemli olanı düzeltmek ve kalan bir bulgunun neden kabul edildiğini yazmak — sonra gate'in hâlâ kırmızıya düşebileceğini kanıtlamaktır.",
+  "evidence": [
+    "Push veya pull request'te SAST veya dependency-advisory taraması çalıştıran commit edilmiş GitHub Actions workflow",
+    "En az 3 bulguyu fix-now, fix-later, false-positive veya accepted olarak sınıflandıran, her birinde aracın finding id veya kural adını içeren bir triage notu",
+    "En az 1 fix-now bulguyu düzelten ve o finding id'ye referans veren bir commit",
+    "1 accepted veya false-positive bulgu için en az 3 cümlelik yazılı gerekçe",
+    "Notlarda adlandırılmış bir sınıfta ekilen bulguda işin başarısız olduğunu, plant kaldırıldıktan sonra geçtiğini gösteren workflow log'ları",
+    "Görev sorularını yanıtlayan değerlendirme notu"
+  ],
+  "acceptanceCriteria": [
+    "Bir GitHub Actions workflow'u pull request veya push'ta en az bir SAST veya dependency-advisory taraması çalıştırır.",
+    "Bir triage notu en az 3 bulguyu fix-now, fix-later, false-positive veya accepted olarak sınıflandırır.",
+    "En az 1 fix-now bulgu, finding id veya kural adına referans veren bir commit'te düzeltilir.",
+    "En az 1 accepted veya false-positive bulgunun en az 3 cümlelik yazılı gerekçesi vardır.",
+    "Workflow, notlarda adlandırılmış bir sınıfta ekilen bir bulguda başarısız ve plant kaldırıldıktan sonra geçer olarak gösterilir."
+  ]
+}

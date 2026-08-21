@@ -5,27 +5,27 @@
     {
       "level": 1,
       "name": "Temel",
-      "description": "Temel kavramları açıklayabilir ve rehberli çalışmayı tamamlayabilir."
+      "description": "Yazılı rehberlik altında bir prompt'u Git'te sürümlendirebilir, ikinci prompt'un skoruna bakmadan bir metrik tanımlayabilir ve held-out bir listede çalıştırabilir."
     },
     {
       "level": 2,
       "name": "Çırak",
-      "description": "Sınırlı rehberlikle kapsamı belirlenmiş görevleri tamamlayabilir ve kanıt üretebilir."
+      "description": "Yalnızca kazananları değil başarısızlıkları da gösterebilir, no-LLM bir baseline tutabilir (keyword kuralı veya daha küçük classifier) ve cost veya latency'yi büyüklük mertebesi olarak kaydedebilir."
     },
     {
       "level": 3,
       "name": "Uygulayıcı",
-      "description": "Basit olmayan çalışmaları bağımsız biçimde tasarlayabilir, uygulayabilir, test edebilir ve açıklayabilir."
+      "description": "Prompt'ları bağımsız olarak sürümlenmiş bileşenler gibi ele alabilir, tuning'den önce yazılmış held-out örneklerde değerlendirebilir ve metriği oynatmayan 'daha iyi hissettiren' bir değişikliği reddedebilir."
     },
     {
       "level": 4,
       "name": "Kalfa",
-      "description": "Belirsizliği yönetebilir, hataları teşhis edebilir ve ödünleşimleri savunabilir."
+      "description": "Çıktıları gördükten sonra yazılmış bir eval'i veya vibes'te kazanıp harness'te kaybeden bir prompt'u teşhis edebilir ve başka bir mühendisin rerun edebileceği bir failure set üretebilir."
     },
     {
       "level": 5,
       "name": "Ustalık Kanıtı",
-      "description": "Öğretebilir, inceleyebilir ve alışılmadık durumlarda sağlam kararlar verebilir."
+      "description": "Başka bir çırağın prompt paketini değerlendirebilir; tuning'den sonra yazılmış bir eval'i veya eksik no-LLM baseline'ı adlandırabilir; tanıdık olmayan bir görevde keyword kuralının ne zaman tutulacağını öğretebilir."
     }
   ]
 }

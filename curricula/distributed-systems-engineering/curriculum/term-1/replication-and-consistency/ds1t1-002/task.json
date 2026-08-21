@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "id": "ds1t1-002",
   "title": "Partition Behavior and the Availability Contract",
-  "term": "ds1t1",
+  "term": "year-1-term-1",
   "module": "replication-and-consistency",
   "estimatedHours": 14,
   "objective": "Extend the replicated store with a failure-injection harness that can kill, pause, or network-partition any single node, predict each failure's effect on reads and writes before running it, and then write a specific, falsifiable availability contract based on what actually happens.",

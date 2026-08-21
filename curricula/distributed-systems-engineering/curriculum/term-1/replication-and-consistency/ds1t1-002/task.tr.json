@@ -1,0 +1,17 @@
+{
+  "title": "Partition Davranışı ve Availability Sözleşmesi",
+  "objective": "Replicated store'u, herhangi bir tek node'u kill, pause veya network-partition edebilen bir arıza-enjeksiyon harness'iyle genişlet; her arızanın okuma ve yazma üzerindeki etkisini çalıştırmadan önce tahmin et; sonra gerçekten olan bitene dayanarak spesifik, yanlışlanabilir bir availability sözleşmesi yaz.",
+  "whyThisMatters": "CAP genellikle slogan olarak öğretilir. Burada cevabı henüz yokken bir tahmine bağlanırsın, sonra 'sistem available kalır' sezgisinin gerçekten öldürdüğün bir process'le karşılaşınca ayakta kalıp kalmadığını görürsün.",
+  "evidence": [
+    "Kill, pause ve partition enjektörlerinin aşamalı kurulduğunu gösteren harness kodu ve Git geçmişi",
+    "En az 15 deneme için (3 arıza sınıfı x 5+ deneme) tahmin edilen ve gerçek sonucu kaydeden sonuç log'u",
+    "Availability sözleşmesini spesifik, yanlışlanabilir bir kural olarak belirten README",
+    "Değerlendirme notları"
+  ],
+  "acceptanceCriteria": [
+    "Harness, diğerlerini etkilemeden tek bir adlandırılmış node'u bağımsız olarak kill, pause ve network-partition edebilir; bu koddan değil deneme log'larından gösterilir.",
+    "En az 15 kaydedilmiş deneme vardır (3 arıza sınıfı x 5+ deneme) ve her birinde hem tahmin edilen hem gerçek sonuç bulunur.",
+    "En az bir tahmin/sonuç uyuşmazlığı açıklamayla belgelenir; hiçbiri olmadıysa 15 denemenin tüm tahminleri karşılık gelen koşulardan önce zaman damgalıdır.",
+    "Availability sözleşmesi spesifik, yanlışlanabilir bir kural olarak belirtilir (örneğin sınırlı bir zaman penceresi ve tanımlanmış reddet/kabul davranışı); genel bir yüksek available iddiası değil."
+  ]
+}

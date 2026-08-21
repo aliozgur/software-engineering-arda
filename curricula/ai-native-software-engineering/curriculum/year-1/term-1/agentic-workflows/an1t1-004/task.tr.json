@@ -1,0 +1,18 @@
+{
+  "title": "Sınırlı bir Agentic Kodlama Oturumunu Kapsamlandırmak",
+  "objective": "Yapay zekâ asistanının dosyaları okuduğu, planladığı ve daha az adım-adım denetimle düzenlediği, dar kapsamlı bir agentic oturumu çalıştırın; doğrulama kontrolü oturum başlamadan önce tanımlanmış olsun.",
+  "whyThisMatters": "Çalıştırabileceğiniz bir kontrol olmadan 'bitmiş görünen' bir agentic oturum, sizi tek doğrulama döngüsü bırakır. Oturumu kapsamlandırmak ve kontrolü önceden sabitlemek, sonucu sonradan güvenle incelenebilir kılar.",
+  "evidence": [
+    "Oturum başlamadan önce kaydedilmiş, asistana verilen birebir kapsamlandırma prompt'u",
+    "Oturum çalışmadan önce tanımlanıp commit edilmiş doğrulama komutu veya test kaydı",
+    "Asistanın oturum sırasında ne okuduğunu, planladığını ve değiştirdiğini özetleyen kayıt",
+    "Ortaya çıkan diff; orijinal kapsama karşı dosya dosya incelenmiş, kapsam dışı her dosya için kısa karar notu",
+    "Kullanılan araç/modeli, amacı ve bağımsız olarak doğrulananı adlandıran yapay zekâ kullanım beyanı"
+  ],
+  "acceptanceCriteria": [
+    "Doğrulama komutu veya testi, agentic oturumun değişiklikleri commit edilmeden önce commit edilmiştir.",
+    "Kayıtlı kapsamlandırma prompt'u, kapsam içindeki dosyaları veya alanı ve en az bir açık kapsam-dışı sınırı adlandırır.",
+    "Diff yalnızca belirtilen kapsamdaki dosyalara dokunur; kapsam dışındaki her dosya inceleme notunda açıkça işaretlenmiş ve gerekçelendirilmiştir.",
+    "Doğrulama kontrolünün nihai değişikliğe karşı geçtiği gösterilmiştir."
+  ]
+}

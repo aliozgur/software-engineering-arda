@@ -1,0 +1,19 @@
+{
+  "title": "Dual-Write Kaybı ve Ölçebildiğin Transactional Outbox",
+  "objective": "PostgreSQL'de bir domain satırı persist eden ve Kafka'ya bir event publish eden bir servis yaz; önce bir crash'in event'i düşürdüğü iki bağımsız yazma olarak, sonra transactional outbox olarak; hem kayıp-event koşusunu hem de commit, poller ve consumer'ı kapsayan OpenTelemetry trace'leriyle sıfır-kayıp replay'i yakala.",
+  "whyThisMatters": "SWE saga görevi compensating adımlar ve idempotency key ister. Veritabanının zaten commit ettiği bir event'i kaybettirmez. O boşluk — commit oldu, publish hiç olmadı — production sistemlerin yeniden keşfettiği dual-write bug'ıdır. Ölçeceksin, kapatacaksın ve trace'leri tutacaksın.",
+  "evidence": [
+    "Outbox tablosu ve poller'dan önce commit edilmiş dual-write yolunu gösteren Git geçmişi",
+    "Yakalanmış dual-write koşusu: bir domain satırı vardır, karşılık gelen Kafka consume dump'ı o event'i içermez ve crash/kill noktası adlandırılır",
+    "Aynı crash noktasının yakalanmış outbox koşusu: satır vardır, event poller recovery sonrası görünür ve bir retry consumer'da ikinci bir domain etkisi yaratmaz",
+    "Dual-write yolunun DB span'inden sonra koptuğunu ve outbox yolunun aynı business id için poller publish ve consumer process boyunca devam ettiğini gösteren en az iki export edilmiş trace (veya screenshot artı ham JSON)",
+    "Outbox transaction sınırını ve consumer idempotency key'ini belirten README",
+    "Görev sorularını yanıtlayan değerlendirme notları"
+  ],
+  "acceptanceCriteria": [
+    "Dual-write yeniden üretimi, adlandırılmış crash sonrası hedef topic'in consume'unda event'i hiç görünmeyen commit edilmiş bir PostgreSQL satırı bırakır.",
+    "Outbox yeniden üretimi domain satırı ve outbox satırı için tek bir veritabanı transaction'ı kullanır; aynı crash ve bir poller restart sonrası event, domain etkisi olarak exactly once consume edilir (consumer idempotent ise telde duplicate'lere izin vardır).",
+    "İki trace (veya export edilmiş span) gönderilir: biri publish span'i olmadan DB yazmasından sonra biter; biri aynı business id için commit, outbox poll, publish ve consumer handling içerir.",
+    "README, consumer'ın kullandığı idempotency key'i adlandırır ve pipeline'ın at-least-once artı idempotence olduğunu, broker exactly-once olmadığını belirtir."
+  ]
+}

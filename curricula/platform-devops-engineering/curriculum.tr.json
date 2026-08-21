@@ -1,0 +1,11 @@
+{
+  "name": "apprenti.dev Platform / DevOps Mühendisliği Çıraklık Programı",
+  "audience": "Platform / DevOps uzmanlığına geçen, kod yazma becerisi sağlam ama altyapı deneyimi şart olmayan yazılım veya operasyon mühendisleri",
+  "philosophy": "Kanıta dayalı çıraklık: gerçek bir pipeline kur, onun üzerinden teslim et, ne olduğunu gözlemle ve geri alabil.",
+  "aiPrinciples": [
+    "Yapay zekâ yardımı maddi olarak kullanıldığında açıklanmalıdır.",
+    "Görevler açıklamalara, ipuçlarına ve quiz'lere izin verirken çözüm üretimini kısıtlayabilir.",
+    "Çırak gönderdiği her pipeline, altyapı değişikliği ve rollback'ten sorumlu olmaya devam eder.",
+    "Mentor onayı yalnızca otomasyonun yeşil geçmesine değil, gösterilen anlayışa ve canlı arıza enjeksiyonuna verilen yanıta dayanır."
+  ]
+}

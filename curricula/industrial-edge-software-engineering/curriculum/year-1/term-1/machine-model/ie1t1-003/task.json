@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "id": "ie1t1-003",
   "title": "Memory-mapped registers you can poke from a host",
-  "term": "year-1/term-1",
+  "term": "year-1-term-1",
   "module": "machine-model",
   "estimatedHours": 8,
   "objective": "Implement a host-side 256-byte MMIO window with four registers, little- and big-endian 32-bit accessors, a read-only STATUS, a write-triggered COUNT, and a documented alignment fault.",

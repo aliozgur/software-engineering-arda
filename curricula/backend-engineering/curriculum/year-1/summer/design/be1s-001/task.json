@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "id": "be1s-001",
   "title": "Capstone Design: Contract, Data Flow and Threat Model",
-  "term": "year-1/summer",
+  "term": "year-1-summer",
   "module": "design",
   "estimatedHours": 14,
   "objective": "Write the capstone contract, the write-path data flow across HTTP, Postgres, MongoDB and RabbitMQ, and a threat model mapped to concrete controls — before expanding the implementation.",

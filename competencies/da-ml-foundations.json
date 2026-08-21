@@ -7,27 +7,27 @@
     {
       "level": 1,
       "name": "Foundation",
-      "description": "Can explain core concepts and complete guided work."
+      "description": "Can implement a baseline — not only describe it — write the split rule, and report one metric with the unit of the prediction — under written guidance."
     },
     {
       "level": 2,
       "name": "Apprentice",
-      "description": "Can complete scoped tasks with limited guidance and produce evidence."
+      "description": "Can justify the split, keep feature choice off the test set, and discuss an error slice in words — who or which rows fail."
     },
     {
       "level": 3,
       "name": "Practitioner",
-      "description": "Can independently design, implement, test and explain non-trivial work."
+      "description": "Can independently name the deployment unit (user, day, store, document), implement two validation schemes in code, and write a split spec a teammate can reproduce."
     },
     {
       "level": 4,
       "name": "Journeyman",
-      "description": "Can handle ambiguity, diagnose failures and defend trade-offs."
+      "description": "Can diagnose a leak — a feature known only after the label time, a shuffled split on a user-level outcome — show the leak in a commit then remove it, and produce a spec another engineer can rerun."
     },
     {
       "level": 5,
       "name": "Mastery Evidence",
-      "description": "Can teach, review and make sound decisions across unfamiliar situations."
+      "description": "Can review another apprentice's model notebook, name a missing baseline or a test-set peek, and teach when a simple split is the wrong validation on an unfamiliar dataset."
     }
   ]
 }

@@ -2,32 +2,32 @@
   "schemaVersion": 1,
   "id": "operating-systems",
   "title": "Operating Systems",
-  "description": "Processes, threads, virtual memory, filesystems, system calls and synchronization.",
+  "description": "Can use processes, threads, virtual memory, filesystems and system calls — and can show which isolation or sync choice a failure actually needs.",
   "levels": [
     {
       "level": 1,
       "name": "Foundation",
-      "description": "Can explain core concepts and complete guided work."
+      "description": "Can start a parent/child process pair, record the system calls and pids involved, and distinguish a process from a program — under written guidance."
     },
     {
       "level": 2,
       "name": "Apprentice",
-      "description": "Can complete scoped tasks with limited guidance and produce evidence."
+      "description": "Can reproduce a race under stress, apply a lock that protects a stated invariant, and write a test that fails when the race returns."
     },
     {
       "level": 3,
       "name": "Practitioner",
-      "description": "Can independently design, implement, test and explain non-trivial work."
+      "description": "Can independently map virtual versus resident memory from measurements, run a filesystem experiment that shows write() returning is not durability, and document the cleanup path for a failed child."
     },
     {
       "level": 4,
       "name": "Journeyman",
-      "description": "Can handle ambiguity, diagnose failures and defend trade-offs."
+      "description": "Can diagnose a deadlock from wait relationships, distinguish reserved or virtual pages from resident ones when a symptom looks like a leak, and produce a note another engineer can use to reproduce the bug without a textbook."
     },
     {
       "level": 5,
       "name": "Mastery Evidence",
-      "description": "Can teach, review and make sound decisions across unfamiliar situations."
+      "description": "Can review another apprentice's concurrency fix, name a lock that protects no invariant (or an invariant with no lock), and teach when a thread versus a process is the right isolation boundary on an unfamiliar program."
     }
   ]
 }

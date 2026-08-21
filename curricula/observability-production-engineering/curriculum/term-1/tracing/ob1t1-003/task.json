@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "id": "ob1t1-003",
   "title": "Distributed Tracing Across Real Service Calls",
-  "term": "term-1",
+  "term": "year-1-term-1",
   "module": "tracing",
   "estimatedHours": 10,
   "objective": "Instrument one request that crosses at least two independently-running processes with OpenTelemetry tracing, and diagnose an induced slow span using the trace alone.",

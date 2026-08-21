@@ -1,0 +1,17 @@
+{
+  "title": "İnceleme Geri Bildirimine Takım Arkadaşı Gibi Yanıt Vermek",
+  "objective": "Yazar olduğunuz bir pull request üzerindeki yazılı inceleme yorumlarını alın, her birine yanıt verin ve kabul edilen değişiklikleri inceleme başladıktan sonra ayrı commit'ler olarak indirin.",
+  "whyThisMatters": "İnceleme bir geçti/kaldı damgası değil, bir konuşmadır. Sessizce yeniden yazıp push eden veya katılmadığı yorumları yok sayan junior'lar ekibi yavaşlatır. Mesleki beceri her yoruma yanıt vermek, kabul ettiğinizi değiştirmek, etmediğinizi yazılı ve kanıtlı olarak geri çevirmektir.",
+  "evidence": [
+    "Gelen inceleme yorumlarını ve yanıtlarınızı gösteren pull request bağlantısı veya barındırıcı onları gizlediyse Markdown dosyasına kopyalanmış yorum dizisi",
+    "İncelenen branch'ten, ilk inceleme yorumundan sonra eklenen commit'leri ve ele aldıkları yorumu adlandıran mesajları gösteren git log çıktısı",
+    "Her gelen yorumu, yanıt türünüzü (kabul, red veya açıklama) ve bir commit SHA veya yazılı red gerekçesini listeleyen inceleme-yanıt notu",
+    "Yapay zekâ herhangi bir yanıtı veya değişikliği taslaklamaya yardımcı olduysa yapay zekâ kullanım beyanı"
+  ],
+  "acceptanceCriteria": [
+    "Gelen her inceleme yorumunun, PR'da veya gönderilen notta çıraktan yazılı bir yanıtı vardır.",
+    "Kabul edilen en az 2 yorum, ilk inceleme yorumu oluştuktan sonra ayrı commit'ler olarak indirilmiştir ve o commit mesajları ele aldıkları yorumu adlandırır.",
+    "En az bir yorum ya yazılı gerekçeyle reddedilmiştir ya da değişiklikten sonra yeniden çalıştırılmış, adlandırılmış bir doğrulama komutuyla kabul edilmiştir.",
+    "İnceleme başladıktan sonraki geçmiş yalnızca ekler: gönderilen git log veya barındırıcı arayüzü, zaten incelenmiş commit'leri yeniden yazan bir force-push göstermez."
+  ]
+}

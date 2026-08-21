@@ -1,0 +1,19 @@
+{
+  "title": "Kök nedeni bitirmeden simüle olaya yanıt ver",
+  "objective": "Rastgele seçilmiş enjekte bir arızayı yalnızca alarm, günlük, ölçüm ve izlerle tespit et, yatıştır ve zaman çizelgesine bağla — kök neden satırını yazmadan önce kullanıcının gördüğü belirtinin giderildiğini göster.",
+  "whyThisMatters": "Nöbet, ekstra kaygılı bir hata ayıklama oturumu değildir. İlk iş kullanıcı acısını durdurmaktır; teşhis ikincidir. Bu görev o sırayı pratik ettiğin ve yazılı bir zaman çizelgesinde gerçekleri tahminlerden ayırdığın yerdir.",
+  "evidence": [
+    "Zaman çizelgesi başlamadan önce commit edilmiş, en az iki adlı arıza kipi için detect ve mitigate kapsayan bir runbook",
+    "En az üç adlı arıza kipi uygulayabilen bir enjektör betiği veya yapılandırması",
+    "Her satırı FACT veya HYPOTHESIS etiketli, zaman damgalı bir olay zaman çizelgesi",
+    "Zaman çizelgesinde kaynak gösterilen en az iki ayrı sinyal türü için yakalanmış artefaktlar (alarm, ölçüm/sorgu, günlük alıntısı veya iz)",
+    "Kullanıcının gördüğü belirtiyi, yatıştırma eylemini ve servisin restored sayıldığı zaman çizelgesi damgasını yazan geri getirme notu",
+    "Görev sorularını yanıtlayan değerlendirme notları"
+  ],
+  "acceptanceCriteria": [
+    "Runbook dosyası commit edilmiştir ve zaman çizelgesinin ilk kaydı o commit hash'ini veya bir dosya sağlama toplamını yürürlükteki runbook sürümü olarak alıntılar.",
+    "Zaman çizelgesi en az altı zaman damgalı kayıt içerir; en az üçü FACT, en az ikisi HYPOTHESIS etiketlidir.",
+    "Zaman çizelgesindeki geri getirme damgası, bir kök neden adlandıran ilk kayıttan önce veya o kayıttadır.",
+    "Zaman çizelgesinde en az iki ayrı sinyal türü (günlük, ölçüm, iz veya alarm) kaynak gösterilir; her birinin gönderimde yakalanmış bir artefaktı vardır."
+  ]
+}

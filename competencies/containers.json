@@ -2,32 +2,32 @@
   "schemaVersion": 1,
   "id": "containers",
   "title": "Containers",
-  "description": "Docker images, containers, networking, volumes and reproducible environments.",
+  "description": "Can package a service and its dependencies so a clean machine runs the same stack — images, networks, volumes and no secrets in the build.",
   "levels": [
     {
       "level": 1,
       "name": "Foundation",
-      "description": "Can explain core concepts and complete guided work."
+      "description": "Can build an image from a committed Dockerfile, run it on a documented port, and explain container versus VM — under written guidance."
     },
     {
       "level": 2,
       "name": "Apprentice",
-      "description": "Can complete scoped tasks with limited guidance and produce evidence."
+      "description": "Can pin a base image to a digest or immutable tag, exclude .git and secrets with .dockerignore, and docker compose up a service plus database from a clean checkout with only documented env vars."
     },
     {
       "level": 3,
       "name": "Practitioner",
-      "description": "Can independently design, implement, test and explain non-trivial work."
+      "description": "Can independently make a named volume survive container replacement, add healthchecks both services report as healthy, have services reach each other by Compose name, and run the test suite inside the container against the containerized database."
     },
     {
       "level": 4,
       "name": "Journeyman",
-      "description": "Can handle ambiguity, diagnose failures and defend trade-offs."
+      "description": "Can diagnose a stack that only works on the author's machine — bind-mounts, unpinned latest, hardcoded secrets or host-only IPs — and apply committed manifests so a local cluster shows a Ready pod serving the apprentice's image."
     },
     {
       "level": 5,
       "name": "Mastery Evidence",
-      "description": "Can teach, review and make sound decisions across unfamiliar situations."
+      "description": "Can review another apprentice's Dockerfile or Compose file, name a layer or volume that is toil or a secret leak, and teach when a local Kubernetes manifest is warranted versus Compose on an unfamiliar service."
     }
   ]
 }

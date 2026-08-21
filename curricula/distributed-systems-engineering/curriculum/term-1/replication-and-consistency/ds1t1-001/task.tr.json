@@ -1,0 +1,17 @@
+{
+  "title": "Ayarlanabilir Tutarlılıklı Replicated Key-Value Store",
+  "objective": "Yalnızca ağ üzerinden konuşan bağımsız OS process'leri olarak çalışan, client'ın seçebildiği bir okuma moduna sahip tek-leader, çok-follower bir key-value store kur ve bir modda var olup diğerinde olmayan gerçek bir tutarlılık anomalisinin yeniden üretilebilir gösterimini çıkar.",
+  "whyThisMatters": "Tutarlılık modelleri, kendi kurduğun bir sistemde bir anomaliyi talep üzerine görünür ve görünmez kıldığın anda kulaktan dolma olmaktan çıkar. Bu görev, dönemin geri kalanının kendini ölçtüğü tabandır: sonraki her görev, 'leader yazmayı ack etti' cümlesinin neyi garanti edip etmediğini net söyleyebileceğini varsayar.",
+  "evidence": [
+    "Follower'lar ve okuma modları eklenmeden önce commit edilmiş leader-only sürümü gösteren Git geçmişi",
+    "Yeniden üretim script'i artı relaxed modda anomaliyi, strict modda yokluğunu gösteren yakalanmış koşu çıktısı",
+    "Her modun sağladığı tutarlılık modelini, gösterilen anomaliye bağlayarak adlandıran README.md",
+    "Görev sorularını yanıtlayan değerlendirme notları"
+  ],
+  "acceptanceCriteria": [
+    "Leader ve en az iki follower, durumu yalnızca bir network socket protokolü üzerinden değiş tokuş eden ayrı OS process'leri olarak çalışır.",
+    "Yeniden üretim script'i stale/eksik okumayı relaxed modda her koşuda deterministik olarak yeniden üretir, strict modda hiç üretmez.",
+    "README her mod için belirli bir tutarlılık modeli (linearizable, sequential, causal veya eventual) adlandırır ve iddiayı genel bir sav değil, gösterilen anomaliye bağlar.",
+    "Yazma yolunun ack semantiği açıkça belirtilir (yalnızca-leader ack'i mı, quorum ack'i mi)."
+  ]
+}

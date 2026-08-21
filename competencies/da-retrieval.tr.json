@@ -5,27 +5,27 @@
     {
       "level": 1,
       "name": "Temel",
-      "description": "Temel kavramları açıklayabilir ve rehberli çalışmayı tamamlayabilir."
+      "description": "Yazılı rehberlik altında bir soru için chunk getirebilir, retrieved metne citation bağlayabilir ve store desteklemiyorsa reddedebilir."
     },
     {
       "level": 2,
       "name": "Çırak",
-      "description": "Sınırlı rehberlikle kapsamı belirlenmiş görevleri tamamlayabilir ve kanıt üretebilir."
+      "description": "Tuning'den önce bir eval set yazabilir, chunk size'ı kısa bir notta gerekçelendirebilir ve store dışındaki bir soruda refusal gösterebilir."
     },
     {
       "level": 3,
       "name": "Uygulayıcı",
-      "description": "Basit olmayan çalışmaları bağımsız biçimde tasarlayabilir, uygulayabilir, test edebilir ve açıklayabilir."
+      "description": "Temellendirilmiş yanıtları supported, unsupported veya refused olarak bağımsız değerlendirebilir, citation'ları model belleğine değil retrieved metne tutabilir ve ancak eval set donduktan sonra tune edebilir."
     },
     {
       "level": 4,
       "name": "Kalfa",
-      "description": "Belirsizliği yönetebilir, hataları teşhis edebilir ve ödünleşimleri savunabilir."
+      "description": "Model belleğine atıf yapan bir yanıtı, gereken olguyu bölen bir chunk size'ı veya retrieval görüldükten sonra yazılmış bir eval'i teşhis edebilir ve başka bir mühendisin rerun edebileceği bir case set üretebilir."
     },
     {
       "level": 5,
       "name": "Ustalık Kanıtı",
-      "description": "Öğretebilir, inceleyebilir ve alışılmadık durumlarda sağlam kararlar verebilir."
+      "description": "Başka bir çırağın retrieval harness'ini değerlendirebilir; store'da görünmeyen bir citation'ı veya eksik refusal'ı adlandırabilir; tanıdık olmayan bir corpus'ta ne zaman reddedileceğini öğretebilir."
     }
   ]
 }

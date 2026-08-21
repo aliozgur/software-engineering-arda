@@ -1,0 +1,18 @@
+{
+  "title": "İstek Yolunda Log, Metrik ve Trace",
+  "objective": "Çalışan servisi, tek bir isteğin yapılandırılmış log'larda paylaşılan bir request id, kazınabilir bir gecikme metriği ve en az iki span'lı bir trace üretmesi için enstrümante etmek.",
+  "whyThisMatters": "Yük testi, işletim ve bitirme savunması görevlerinin hepsi, baskı altındayken servisin ne yaptığını göstermenizi ister. Log, metrik ve trace şimdi yoksa o sonraki görevler tahmine dönüşür.",
+  "evidence": [
+    "Tek bir istekten, aynı request id'yi paylaşan, aşağı akış bir çağrı satırı da dahil commit edilmiş örnek log satırları",
+    "İstek sayısı ve bir gecikme histogramı veya özeti içeren metrik kazıması veya dışa aktarımı",
+    "Bir istek için en az iki span gösteren trace dışa aktarımı (JSON, Jaeger dökümü veya collector dosyası)",
+    "Servisi çalıştırıp log, metrik kazıması ve bir trace üretmek için README komutları",
+    "Önce log, sonra metrik, sonra trace olarak ayrı commit'leri gösteren Git geçmişi ve log'larda sır olmadığını kanıtlayan bir grep"
+  ],
+  "acceptanceCriteria": [
+    "Tek bir istek, aynı request id'yi paylaşan en az iki yapılandırılmış log satırı üretir; bunlardan biri bir veritabanı veya kuyruk çağrısındandır.",
+    "Bir metrik endpoint'i veya collector dışa aktarımı bir istek-sayısı metriği ile bir gecikme histogramı veya özeti içerir.",
+    "Bir istek için commit edilmiş trace dışa aktarımı en az iki span içerir.",
+    "Commit edilmiş log örnekleri ve loglama yapılandırmasına yapılan grep, token, parola veya sır değeri göstermez."
+  ]
+}

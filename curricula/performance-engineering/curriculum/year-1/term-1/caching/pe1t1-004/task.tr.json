@@ -1,0 +1,18 @@
+{
+  "title": "Önbelleği yalnızca kanıtla koy",
+  "objective": "Önce kaçırma maliyetini ölç; isabet oranı ve p95 farkı koşumdan gelen bir önbellek ekle; geçersiz kılma kuralını ve gözlenen bir bayat-veya-doğruluk vakasını belgele.",
+  "whyThisMatters": "p95'i oynatmayan önbellek, kazançsız ekstra arıza kipidir. p95'i oynatıp yazıdan sonra bayat cevap veren önbellek, kazanç kılığında bir doğruluk hatasıdır. Önbelleğin kalmasına izin vermeden önce hem gecikme kanıtı hem geçersiz kılma kuralı gerekir.",
+  "evidence": [
+    "Önbelleksiz taban koşum çıktısı; pe1t1-001 komutundan veya eşdeğer belgelenmiş komuttan p95",
+    "İsabet ve kaçırmayı tahmin değil sayılan olay olarak gösteren önbellek enstrümantasyonu",
+    "Aynı iş yükü için önbellek sonrası koşum çıktısı; p95 ve tabana göre hesaplanmış fark",
+    "Yazılı geçersiz kılma veya TTL kuralı ve kaydedilmiş bir doğruluk vakası (engellenen bayat okuma veya gözlediğin yazı-sonrası-kaçırma)",
+    "Görev sorularını yanıtlayan değerlendirme notları"
+  ],
+  "acceptanceCriteria": [
+    "Önbelleksiz taban p95, commit edilmiş bir koşum koşusundan alınan bir sayıdır.",
+    "İsabet oranı, çalışan sistemde artırdığın sayaçlardan hits / (hits + misses) olarak raporlanır; tahmin yüzde değildir.",
+    "Aynı iş yükü komutu için önbellek sonrası p95 raporlanır ve tabana göre fark hesaplanmış bir sayıdır (milisaniye veya yüzde).",
+    "Geçersiz kılma veya TTL kuralı hangi yazının veya sürenin hangi anahtarı sildiğini adlandırır; doğruluk vakası o kuralın gözlenen sonucunu kaydeder."
+  ]
+}

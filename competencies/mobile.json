@@ -2,32 +2,32 @@
   "schemaVersion": 1,
   "id": "mobile",
   "title": "Mobile",
-  "description": "Flutter application architecture, local persistence, networking and mobile lifecycle.",
+  "description": "Can structure a Flutter app with local persistence, networking and lifecycle so defined work succeeds offline — and can show a useful UI state when the network fails.",
   "levels": [
     {
       "level": 1,
       "name": "Foundation",
-      "description": "Can explain core concepts and complete guided work."
+      "description": "Can build a Flutter screen that reads and writes a local store, record the lifecycle hook that runs on resume, and show a loading state — under written guidance."
     },
     {
       "level": 2,
       "name": "Apprentice",
-      "description": "Can complete scoped tasks with limited guidance and produce evidence."
+      "description": "Can persist a defined offline use case, surface a useful UI state on a network failure, and document the persistence model — what lives on device versus server."
     },
     {
       "level": 3,
       "name": "Practitioner",
-      "description": "Can independently design, implement, test and explain non-trivial work."
+      "description": "Can independently keep app, domain and data layers so a mentor can find the persistence and HTTP boundaries, cover non-UI domain behavior and key widgets with tests, and survive an app kill mid-write without losing the documented invariant."
     },
     {
       "level": 4,
       "name": "Journeyman",
-      "description": "Can handle ambiguity, diagnose failures and defend trade-offs."
+      "description": "Can diagnose a bug that only appears after background/resume or a flaky network, cite lifecycle and persistence together, and produce a note another Flutter engineer can follow without opening the widget tree first."
     },
     {
       "level": 5,
       "name": "Mastery Evidence",
-      "description": "Can teach, review and make sound decisions across unfamiliar situations."
+      "description": "Can review another apprentice's Flutter project, name a network call that has no failure UI or a store treated as the server of record, and teach when to trust local persistence over a retry on an unfamiliar app."
     }
   ]
 }

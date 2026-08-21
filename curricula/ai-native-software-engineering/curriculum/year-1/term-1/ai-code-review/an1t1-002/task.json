@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "id": "an1t1-002",
   "title": "Critical Review of AI-Generated Code",
-  "term": "year-1/term-1",
+  "term": "year-1-term-1",
   "module": "ai-code-review",
   "estimatedHours": 7,
   "objective": "Generate a small function or module with AI assistance, then perform a structured critical review that finds and fixes at least one real defect before it would be considered mergeable.",

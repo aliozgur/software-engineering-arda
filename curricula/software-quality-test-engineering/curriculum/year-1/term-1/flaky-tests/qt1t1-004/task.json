@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "id": "qt1t1-004",
   "title": "Diagnose and Remediate a Flaky Test Suite",
-  "term": "year-1/term-1",
+  "term": "year-1-term-1",
   "module": "flaky-tests",
   "estimatedHours": 16,
   "objective": "Find the root cause of a genuinely flaky test and fix the underlying nondeterminism, rather than papering over it with a retry.",

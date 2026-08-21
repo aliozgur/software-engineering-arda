@@ -1,30 +1,30 @@
 {
   "title": "Python",
-  "description": "Deyimsel Python programlama, test etme, paketleme ve otomasyon.",
+  "description": "Geçersiz girdiyi ele alan, testlerle birlikte giden deyimsel Python yazabilir — temiz bir checkout'un README'deki komutlarla kurulup çalışması için projeyi paketleyebilir.",
   "levels": [
     {
       "name": "Temel",
-      "description": "Temel kavramları açıklayabilir ve rehberli çalışmaları tamamlayabilir.",
+      "description": "Yazılı rehberlik altında fonksiyon, koşul ve döngü içeren küçük CLI programları yazabilir; açıklanmamış bir traceback olmadan geçersiz girdiyi reddedebilir; public fonksiyonlara type hint ekleyebilir.",
       "level": 1
     },
     {
       "name": "Çırak",
-      "description": "Kapsamı belirlenmiş görevleri sınırlı yönlendirmeyle tamamlayabilir ve kanıt üretebilir.",
+      "description": "Girdiyi doğrulayıp rapor yazan, dosya okuyan bir CLI kurabilir; mutlu yol ve geçersiz dosyaları kapsayan pytest paketini tek komutla çalıştırabilir; ilk sürümü küçülten bir refactoring commit gösterebilir.",
       "level": 2
     },
     {
       "name": "Uygulayıcı",
-      "description": "Kayda değer bir çalışmayı bağımsız olarak tasarlayabilir, uygulayabilir, test edebilir ve açıklayabilir.",
+      "description": "Bağımlılık dosyası, lint/format yapılandırması ve temiz checkout'u yeniden üreten README komutlarıyla bir Python servisini veya pipeline'ını bağımsız olarak teslim edebilir — testler yalnızca mutlu yolu değil, adı konmuş bir hata kipini de doğrular.",
       "level": 3
     },
     {
       "name": "Kalfa",
-      "description": "Belirsizlikle başa çıkabilir, hataları teşhis edebilir ve ödünleşimleri gerekçelendirebilir.",
+      "description": "Bir traceback'in, eksik bir bağımlılığın veya sessiz bir except'in yanıltacağı bir arızayı teşhis edebilir; paketleme veya test boşluğunu adlandırabilir; başka bir mühendisin kurulum, test ve giriş noktasını çalıştırmak için izleyebileceği bir README üretebilir.",
       "level": 4
     },
     {
       "name": "Ustalık Kanıtı",
-      "description": "Alışılmadık durumlarda öğretebilir, değerlendirme yapabilir ve sağlam kararlar verebilir.",
+      "description": "Başka bir çırağın Python projesini değerlendirebilir; kırılgan bir testi veya I/O'yu test edilemez bir şeklin arkasına gizleyen bir fonksiyonu adlandırabilir; tanıdık olmayan bir kod tabanında bir exception'ı ne zaman yakalayıp ne zaman ileteceğini öğretebilir.",
       "level": 5
     }
   ]

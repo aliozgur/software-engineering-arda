@@ -1,30 +1,30 @@
 {
   "title": "Veritabanı Sistemleri",
-  "description": "Depolama, dizinler, sorgu yürütme, işlemler, eşzamanlılık ve kurtarma.",
+  "description": "Bir veritabanının işi nasıl sakladığını, index'lediğini, yürüttüğünü, izole ettiğini ve kurtardığını — bir sloganla değil bir plan, eşzamanlılık testi veya ölçülmüş replica ile — gösterebilir.",
   "levels": [
     {
       "name": "Temel",
-      "description": "Temel kavramları açıklayabilir ve rehberli çalışmaları tamamlayabilir.",
+      "description": "Yazılı rehberlik altında page ve buffer pool'un neden var olduğunu açıklayabilir, adı konmuş bir EXPLAIN düğümünü okuyabilir ve isolation'ı eşzamanlı transaction'ların bir özelliği olarak ele alabilir.",
       "level": 1
     },
     {
       "name": "Çırak",
-      "description": "Kapsamı belirlenmiş görevleri sınırlı yönlendirmeyle tamamlayabilir ve kanıt üretebilir.",
+      "description": "Bir depolama veya index yapısını testlerle çalıştırabilir, bir değişiklikten önce ve sonra EXPLAIN ANALYZE kaydedebilir ve bir isolation veya WAL iddiasını kendi sözleriyle belirtebilir.",
       "level": 2
     },
     {
       "name": "Uygulayıcı",
-      "description": "Kayda değer bir çalışmayı bağımsız olarak tasarlayabilir, uygulayabilir, test edebilir ve açıklayabilir.",
+      "description": "Ölçülen süreyi kısaltan bir index'i bağımsız olarak tutabilir, kısaltmayanı reddedebilir, naif bir eşzamanlılık hatasını bir testle ortaya çıkarabilir ve o hataya karşı bir isolation seviyesini gerekçelendirebilir.",
       "level": 3
     },
     {
       "name": "Kalfa",
-      "description": "Belirsizlikle başa çıkabilir, hataları teşhis edebilir ve ödünleşimleri gerekçelendirebilir.",
+      "description": "'Index ekle' veya 'transaction kullan'ın yanıltacağı bir stall, bayat replica okuma veya kayıp güncellemeyi teşhis edebilir; plan, lock veya LSN kanıtını gösterebilir; başka bir mühendisin kaynağı açmadan izleyebileceği bir recovery veya failover notu yazabilir.",
       "level": 4
     },
     {
       "name": "Ustalık Kanıtı",
-      "description": "Alışılmadık durumlarda öğretebilir, değerlendirme yapabilir ve sağlam kararlar verebilir.",
+      "description": "Başka bir çırağın index veya isolation seçimini değerlendirebilir; testin çürüttüğü bir folklor index'i veya isolation sloganını adlandırabilir; tanıdık olmayan bir motor üzerinde bir plana mı yoksa bir lock wait'e mi güvenileceğini öğretebilir.",
       "level": 5
     }
   ]

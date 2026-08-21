@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "id": "be1s-002",
   "title": "Integrate Relational, Document and Queue Persistence",
-  "term": "year-1/summer",
+  "term": "year-1-summer",
   "module": "persistence",
   "estimatedHours": 18,
   "objective": "Implement the designed write path so one domain write is committed in PostgreSQL, published, and projected into MongoDB, with a demonstrated behavior when the broker is down.",

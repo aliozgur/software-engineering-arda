@@ -1,30 +1,30 @@
 {
   "title": "Güvenlik",
-  "description": "Tehdit modelleme, kimlik doğrulama/yetkilendirme, güvenli kodlama, OWASP ve sır yönetimi.",
+  "description": "Tehdit modelleyebilir, kimlik doğrulayabilir, yetkilendirebilir ve sırları Git dışına tutabilir — sahip olduğu bir sistemde bir düzeltmeyi OWASP biçimli bir abuse case'e bağlayabilir.",
   "levels": [
     {
       "name": "Temel",
-      "description": "Temel kavramları açıklayabilir ve rehberli çalışmaları tamamlayabilir.",
+      "description": "Yazılı rehberlik altında numaralı trust boundary'ler içeren bir DFD çizebilir, her crossing store veya akışı sınıflandırabilir ve bir sır commit etmeden OWASP'a eşlenmiş bir tehdit listeleyebilir.",
       "level": 1
     },
     {
       "name": "Çırak",
-      "description": "Kapsamı belirlenmiş görevleri sınırlı yönlendirmeyle tamamlayabilir ve kanıt üretebilir.",
+      "description": "Parolaları dedicated bir hash ile saklayabilir, logout'un replay edilen bir session'ı reddettiğini kanıtlayabilir ve ekilen bir dummy'de fail olan bir scanner ile bir sırrı Git'ten environment'a taşıyabilir.",
       "level": 2
     },
     {
       "name": "Uygulayıcı",
-      "description": "Kayda değer bir çalışmayı bağımsız olarak tasarlayabilir, uygulayabilir, test edebilir ve açıklayabilir.",
+      "description": "Kullanıcı A'nın kullanıcı B'nin nesnesini okuyamadığı bir testle object-level authorization'ı bağımsız olarak kanıtlayabilir, aynı route'ta 401 ile 403'ü ayırabilir ve open, mitigated veya accepted içeren bir residual-risk register yazabilir.",
       "level": 3
     },
     {
       "name": "Kalfa",
-      "description": "Belirsizlikle başa çıkabilir, hataları teşhis edebilir ve ödünleşimleri gerekçelendirebilir.",
+      "description": "Gerçek bir uygulama diff'ini severity, OWASP veya CWE ve must-fix versus non-blocking ile değerlendirebilir; residual risk'i uygulayabilir veya kaydedebilir; o sistemden bir yatay ve bir dikey privilege hatasını adlandırabilir.",
       "level": 4
     },
     {
       "name": "Ustalık Kanıtı",
-      "description": "Alışılmadık durumlarda öğretebilir, değerlendirme yapabilir ve sağlam kararlar verebilir.",
+      "description": "Başka bir çırağın threat model'ini veya auth düzeltmesini değerlendirebilir; bir trust-boundary crossing'e eşlenmeyen bir checklist maddesini (veya history'de kalan bir sırrı) adlandırabilir; tanıdık olmayan bir uygulamada sunucu tarafı kontrole mi yoksa gizlenmiş bir UI kontrolüne mi güvenileceğini öğretebilir.",
       "level": 5
     }
   ]

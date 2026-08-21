@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "id": "qt1t2-005",
   "title": "Write a Test Plan a Mentor Would Actually Sign Off On",
-  "term": "year-1/term-2",
+  "term": "year-1-term-2",
   "module": "test-plan",
   "estimatedHours": 20,
   "objective": "Write and defend a test plan for a real, nontrivial upcoming change, covering scope, risk, test layers, quality gates, and what would make you, not just a tool, confident enough to ship.",

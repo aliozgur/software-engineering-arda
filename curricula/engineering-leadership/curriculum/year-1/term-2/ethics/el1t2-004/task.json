@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "id": "el1t2-004",
   "title": "Write the Recommendation You Would Sign",
-  "term": "year-1/term-2",
+  "term": "year-1-term-2",
   "module": "ethics",
   "estimatedHours": 6,
   "objective": "Write a signed recommendation on a Harborline data-retention ask that cites specific ACM Code sections, compares at least three options, and names an escalation path.",

@@ -1,30 +1,30 @@
 {
   "title": "Performans",
-  "description": "Ölçüm, profil oluşturma, kıyaslama, önbelleğe alma, yük testi ve kapasite muhakemesi.",
+  "description": "Kapasite iddiasının bir koşuya dayandığı şekilde ölçebilir, profile edebilir, benchmark yapabilir, cache ekleyebilir ve yük testi uygulayabilir — yalnızca hikâye olan bir hızlanmayı reddedebilir.",
   "levels": [
     {
       "name": "Temel",
-      "description": "Temel kavramları açıklayabilir ve rehberli çalışmaları tamamlayabilir.",
+      "description": "Yazılı rehberlik altında p50/p95/p99 basan belgelenmiş bir harness çalıştırabilir, sonuçlara bakmadan bir SLI ve bir SLO yazabilir ve donanım ile warmup'ı kaydedebilir.",
       "level": 1
     },
     {
       "name": "Çırak",
-      "description": "Kapsamı belirlenmiş görevleri sınırlı yönlendirmeyle tamamlayabilir ve kanıt üretebilir.",
+      "description": "Profil öncesi bir hipotez commit'leyebilir, profile dosyalarından en sıcak CPU ve allocation frame'lerini adlandırabilir ve cache hit rate'ini sayılmış hits/(hits+misses) olarak p95 delta ile raporlayabilir.",
       "level": 2
     },
     {
       "name": "Uygulayıcı",
-      "description": "Kayda değer bir çalışmayı bağımsız olarak tasarlayabilir, uygulayabilir, test edebilir ve açıklayabilir.",
+      "description": "SLO'nun bozulduğu diz'e (knee) yükü bağımsız olarak adımlayabilir, o noktada ölçülmüş bir saturation sinyalini alıntılayabilir ve replica sayısını o sayılardan, aritmetiği yazarak hesaplayabilir.",
       "level": 3
     },
     {
       "name": "Kalfa",
-      "description": "Belirsizlikle başa çıkabilir, hataları teşhis edebilir ve ödünleşimleri gerekçelendirebilir.",
+      "description": "Varyans olan bir hızlanmayı, p95'i oynatıp stale veri sunan bir cache'i veya RPS uyduran bir kapasite notunu teşhis edebilir; başka bir mühendisin tek komutla yeniden çalıştırabileceği bir not üretebilir.",
       "level": 4
     },
     {
       "name": "Ustalık Kanıtı",
-      "description": "Alışılmadık durumlarda öğretebilir, değerlendirme yapabilir ve sağlam kararlar verebilir.",
+      "description": "Başka bir çırağın harness'ini veya kapasite notunu değerlendirebilir; yalnızca ortalama veren bir benchmark'ı veya alıntısız bir girdi adlandırabilir; tanıdık olmayan bir serviste profile'a mı yoksa tahmine mi güvenileceğini öğretebilir.",
       "level": 5
     }
   ]

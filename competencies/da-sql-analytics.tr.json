@@ -5,27 +5,27 @@
     {
       "level": 1,
       "name": "Temel",
-      "description": "Temel kavramları açıklayabilir ve rehberli çalışmayı tamamlayabilir."
+      "description": "Yazılı rehberlik altında join koşulu ve tane düzeyi yorumlanmış bir SELECT yazabilir, dosya olarak kaydedebilir ve yerel bir veritabanına karşı çalıştırabilir."
     },
     {
       "level": 2,
       "name": "Çırak",
-      "description": "Sınırlı rehberlikle kapsamı belirlenmiş görevleri tamamlayabilir ve kanıt üretebilir."
+      "description": "Aggregate edilmeyen SELECT sütunları gerekçeli bir GROUP BY ekleyebilir, metriği bir pandas sonucuyla eşleştirebilir ve bir sütunun SELECT listesinde olup olmamasının nedenini belirtebilir."
     },
     {
       "level": 3,
       "name": "Uygulayıcı",
-      "description": "Basit olmayan çalışmaları bağımsız biçimde tasarlayabilir, uygulayabilir, test edebilir ve açıklayabilir."
+      "description": "Tane düzeyi soruya uyan analiz sorgularını bağımsız yazabilir, anlaşılmış bir metrikte SQL ve pandas eşliğini tutabilir ve patlayacak join'i belgeler."
     },
     {
       "level": 4,
       "name": "Kalfa",
-      "description": "Belirsizliği yönetebilir, hataları teşhis edebilir ve ödünleşimleri savunabilir."
+      "description": "Yanlış bir toplamı join veya GROUP BY tane hatası olarak teşhis edebilir, yinelenen anahtarı gösterebilir ve başka bir analistin çalıştırabileceği kırık/düzeltilmiş bir sorgu çifti üretebilir."
     },
     {
       "level": 5,
       "name": "Ustalık Kanıtı",
-      "description": "Öğretebilir, inceleyebilir ve alışılmadık durumlarda sağlam kararlar verebilir."
+      "description": "Başka bir çırağın SQL'ini değerlendirebilir; tane düzeyini değiştiren bir GROUP BY'ı veya pandas ile eşleşmeyen bir metriği adlandırabilir; tanıdık olmayan bir şemada SELECT'ten tane düzeyinin nasıl okunacağını öğretebilir."
     }
   ]
 }

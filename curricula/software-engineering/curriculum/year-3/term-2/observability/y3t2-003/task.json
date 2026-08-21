@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "id": "y3t2-003",
   "title": "Logs, Metrics and Traces",
-  "term": "year-3/term-2",
+  "term": "year-3-term-2",
   "module": "observability",
   "estimatedHours": 16,
   "competencies": [

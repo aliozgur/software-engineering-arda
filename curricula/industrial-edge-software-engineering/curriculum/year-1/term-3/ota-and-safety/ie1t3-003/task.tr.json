@@ -1,0 +1,19 @@
+{
+  "title": "Kasten bozabileceğin imzalı OTA ve çift yuvalı rollback",
+  "objective": "İki firmware yuvası ve geçersiz imzayı reddeden, anti-rollback açıkken düşürmeyi reddeden ve başarısız bir sağlık kontrolünden sonra önceki yuvayı açan bir bootloader simüle et.",
+  "whyThisMatters": "Geri alamadığın imzalı bir imaj yine bir tesisi brick eder. RFC 9019 mimarisi bir kütüphane değildir — bu görev, tehdit modelinin zaten adlandırdığı host-tarafı yuvalar, metadata ve arıza yollarıdır.",
+  "evidence": [
+    "Artımlı Git geçmişli bootloader ve yuva C kaynakları (flash yerine duran dosyalar)",
+    "Geçersiz imzalı bir imajın aktif yuvayı değiştirmeden bıraktığını gösteren yakalanmış günlük",
+    "Anti-rollback açıkken geçerli, sürümü güncelden küçük bir imajın reddedildiğini gösteren yakalanmış günlük",
+    "Geçerli bir apply'ı başarısız sağlık kontrolü ve önceki yuvanın açılmasının izlediğini, her iki yuva sürümü yazdırılmış, gösteren yakalanmış günlük",
+    "Her yuva için sürüm, hash ve imza-geçer biti gösteren yuva-metadata dökümü (dosya veya program çıktısı)",
+    "Görev sorularını yanıtlayan değerlendirme notları"
+  ],
+  "acceptanceCriteria": [
+    "İmzası doğrulanmayan bir imajı uygulamak aktif yuvanın sürümünü değiştirmeden bırakır; önce ve sonra sürümler yakalanmış gündüktedir.",
+    "Sürümü güncel aktif sürümden küçük, doğru imzalanmış bir imaj anti-rollback açıkken reddedilir; günlük reddedilen sürümü ve güncel sürümü yazar.",
+    "Doğru imzalanmış bir apply'dan sonra simüle başarısız bir sağlık kontrolü sonraki açılışın önceki yuvayı seçmesine yol açar; günlük her iki yuva sürümünü ve hangisinin aktif olduğunu yazdırır.",
+    "Her yuva için yuva metadata'sı sürüm, içerik hash'i ve bir imza-geçer biti veya eşdeğeri içerir; bir dosyada veya dökümde incelenebilir."
+  ]
+}

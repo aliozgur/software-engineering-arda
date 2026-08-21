@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "id": "qt1t2-004",
   "title": "Diagnose a Performance Regression Under Realistic Load",
-  "term": "year-1/term-2",
+  "term": "year-1-term-2",
   "module": "performance-diagnosis",
   "estimatedHours": 18,
   "objective": "Given a system behaving worse than expected under load, find the actual bottleneck using measurement and evidence, and prove the fix worked without breaking correctness.",

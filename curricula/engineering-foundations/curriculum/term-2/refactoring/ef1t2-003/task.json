@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "id": "ef1t2-003",
   "title": "Refactor Existing Code Without Changing Behavior",
-  "term": "term-2",
+  "term": "year-1-term-2",
   "module": "refactoring",
   "estimatedHours": 8,
   "objective": "Refactor an existing Python module behind a passing test net so behavior stays the same and a reviewer can see, commit by commit, which design smell each change addresses.",

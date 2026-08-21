@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "id": "ie1t1-004",
   "title": "ISR-safe ring buffer with a contract you can test",
-  "term": "year-1/term-1",
+  "term": "year-1-term-1",
   "module": "constrained-memory",
   "estimatedHours": 8,
   "objective": "Implement a single-producer, single-consumer ring buffer of compile-time power-of-two capacity, with a written overflow policy, wrap-around tests, and a simulated ISR that is the only caller of push.",

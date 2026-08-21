@@ -1,0 +1,17 @@
+{
+  "title": "Başka Ekiplerin Birlikte Yaşayacağı ADR'ı Yazın",
+  "objective": "Reddedilen alternatifleri adlandıran, en az üç ekip üzerindeki etkiyi belirten ve adlandırılmış bir kardeş-ekip kısıtından sonra tarih veya kapsamı revize eden ekip-ve-organizasyon ölçeğinde bir ADR yazın.",
+  "whyThisMatters": "Yalnızca sizin ekibinizin beğendiği bir karar bir tercihtir. Başka ekiplerin image'larını, log'larını veya secret'lerini değiştirmek zorunda olduğu bir karar liderliktir — ve reddedilen seçenekler, olumsuz sonuç ve etki tablosu yazılana kadar gerçek değildir.",
+  "evidence": [
+    "En az iki reddedilmiş alternatifi ayrı gerekçelerle ve seçilen seçeneğin en az bir kabul edilmiş olumsuz sonucunu adlandıran context/decision/consequences biçiminde bir ADR",
+    "En az üç ekipli bir etki tablosu; her satır gereken değişikliği ve sahip ekibi adlandırır",
+    "Kısıt veya reddedilen bir yanlış uygulama olarak en az bir Twelve-Factor faktörünün numara veya resmi adla alıntısı",
+    "Identity kısıtından sonra tarih veya kapsam revizyonunu gösteren Git geçmişi; o kısıt commit mesajında veya revizyon notunda alıntılanır"
+  ],
+  "acceptanceCriteria": [
+    "ADR en az iki reddedilmiş alternatif adlandırır, her birinin 'daha kötüydü'den ayrı bir gerekçesi vardır ve seçilen seçeneğin en az bir olumsuz sonucunu belirtir.",
+    "Etki tablosu en az üç ekip listeler; her satır somut bir değişiklik ve bir sahip ekip adlandırır.",
+    "ADR en az bir Twelve-Factor faktörünü numara veya resmi adla alıntılar.",
+    "Geçmiş, belirtilen Identity kısıtından sonra tarih veya kapsamın değiştiğini gösterir ve revizyon notu veya commit mesajı o kısıtı alıntılar."
+  ]
+}

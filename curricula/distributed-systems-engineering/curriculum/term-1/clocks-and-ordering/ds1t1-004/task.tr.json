@@ -1,0 +1,17 @@
+{
+  "title": "Wall-Clock Last-Write-Wins'e Karşı Happens-Before",
+  "objective": "Replicated store'a iki merge politikası ekle — wall clock ile last-write-wins ve version-vector / happens-before tespiti — ve LWW altında concurrent bir yazmayı kaybeden, sonra aynı çifti vector politikası altında concurrent olarak işaretleyen bir script çıkar.",
+  "whyThisMatters": "Replication ve fencing olduktan sonra kalan yalan, zamanın kendisinin total order olduğudur. SWE müfredatı hiçbir zaman yalnızca iki saatin anlaşamaması yüzünden var olan bir kayıp güncellemeyi zorlamaz. O kaybı görünür kılamazsan 'en son'u bir politika değil bir gerçek gibi görmeye devam edersin.",
+  "evidence": [
+    "LWW'nin version vector'lardan önce commit edildiğini gösteren Git geçmişi; her iki politikanın tek seferde bırakılması değil",
+    "Yeniden üretim script'i ve yakalanmış koşu: LWW concurrent yazmalardan birini atar; vector politikası çifti concurrent raporlar ve her iki değeri veya bir conflict kaydını tutar",
+    "Bu store için happens-before'u tanımlayan, iki yazmayı sıralı değil concurrent etiketleyen README",
+    "Görev sorularını yanıtlayan değerlendirme notları"
+  ],
+  "acceptanceCriteria": [
+    "LWW yeniden üretimi bir clock skew (veya atanmış timestamp) enjekte eder; böylece fiziksel olarak daha erken yazma daha geç timestamp taşır ve yakalanmış koşu o yazmanın kazandığını, diğer değerin gittiğini gösterir.",
+    "Vector-clock (veya version-vector) yeniden üretimi aynı iki yazmayı kullanır ve onları concurrent raporlar; merge sonrası her iki değer veya açık bir conflict kaydı incelenebilir kalır.",
+    "README happens-before kuralını replica id'leri ve counter'lar (veya eşdeğeri) cinsinden belirtir ve o kural altında iki yazmayı concurrent olarak adlandırır.",
+    "Wall-clock timestamp'leri vector politikasında tek merge anahtarı olarak kullanılmaz."
+  ]
+}

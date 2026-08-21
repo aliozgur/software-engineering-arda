@@ -1,0 +1,20 @@
+{
+  "title": "Yazarınız Olmadığınız Bir Pull Request'i İnceleyin",
+  "objective": "Yazarınız olmadığınız gerçek bir public pull request'i inceleyin: takibi üstlenebiliyorsanız review'ı gönderin, veya o pull request'ten dosya-ve-satır konumlarını alıntılayan eksiksiz gönderilmemiş bir review teslim edin.",
+  "whyThisMatters": "Maintainership çoğunlukla başkalarının diff'lerini okumaktır. Dosyaları adlandıran, bulguları etiketleyen ve tek bir özet durumu seçen bir review, bunu gerçek bir thread'de yapabildiğinizi kanıtlayan artefaktır.",
+  "evidence": [
+    "İncelenen public pull-request URL'si; yazar login'i çırağın login'i değildir",
+    "Gönderilen review URL'si veya UNPOSTED işaretli tam review markdown'ı",
+    "Her öğesi defect, convention, question veya praise etiketli, diff'ten bir dosya yolu adlandıran bir bulgu listesi",
+    "Tam olarak approve, request-changes veya comment olan tek satırlık özet durumu",
+    "Görev sorularını yanıtlayan değerlendirme notları",
+    "Yapay zekâ çalışmayı önemli ölçüde etkilediyse AI kullanım açıklaması"
+  ],
+  "acceptanceCriteria": [
+    "İncelenen pull-request URL'si public'tir ve pull-request yazar login'i çırağın login'inden farklıdır; ikisi de notta kaydedilir.",
+    "Review, o pull request'in diff'inde görünen en az üç ayrı dosya yolu adlandırır.",
+    "Her bulgu tam olarak defect, convention, question veya praise'den biriyle etiketlenir ve en az bir bulgu praise değildir.",
+    "Özet durumu tam olarak şunlardan biridir: approve, request-changes, comment.",
+    "Review gönderildiyse not public review URL'sini içerir; gönderilmediyse review gövdesi UNPOSTED işaretlidir ve hâlâ diff'ten en az üç path:line konumu alıntılar."
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "title": "Makineyi kur, sonra edge'e eşle",
+  "objective": "Resmi Nand2Tetris ALU ve Memory projelerini tamamla; sonra Hack makine yapılarını adlı bir MCU veya QEMU hedefine beş satırlık bir eşlem yaz.",
+  "whyThisMatters": "Yazmaçlar, adreslenebilir bellek ve saatli komut çevrimi, edge düğümünde atlanacak soyutlamalar değildir. Gerçek bir MCU'nun karşılık gelen parçalarına işaret edemiyorsan sonraki MMIO ve yalıtım işi folklor olur.",
+  "evidence": [
+    "Proje 2 (ALU) ve Proje 3 (Memory) geçen resmi Nand2Tetris test-betik çıktısı",
+    "Tek nihai döküm değil, artımlı geçmişle commit edilmiş HDL (veya resmi proje dosyaları)",
+    "Beş adlı Hack yapısının her birinin adlı bir MCU veya QEMU yapısı ve bir cümlelik mekanizmayla eşlendiği EDGE-MAP.md",
+    "Her adımda neyin okunup yazıldığını listeleyen yazılı bir fetch-decode-execute notu",
+    "Görev sorularını yanıtlayan değerlendirme notları"
+  ],
+  "acceptanceCriteria": [
+    "Proje 2 (ALU) ve Proje 3 (Memory) için resmi Nand2Tetris test betikleri yakalanmış bir günlükte geçer; günlük test dosyalarını adlandırır.",
+    "EDGE-MAP.md tam beş satır içerir: register, RAM, ROM, instruction word ve clock — her satır bir Hack yapısı ve adlı bir MCU ailesi (örneğin Cortex-M0) veya QEMU makinesindeki karşılık gelen yapıyı, artı bir cümlelik mekanizma adlandırır.",
+    "Fetch-decode-execute notu bu üç adımı ayrı paragraflar olarak listeler ve her adım için en az bir okunan ve en az bir yazılan konum adlandırır.",
+    "Git geçmişi, son geçen koşudan önce HDL veya proje dosyalarını değiştiren en az iki commit içerir."
+  ]
+}

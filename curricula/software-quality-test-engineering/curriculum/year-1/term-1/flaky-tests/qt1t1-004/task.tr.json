@@ -1,0 +1,18 @@
+{
+  "title": "Flaky Test Suite'ini Teşhis Et ve Onar",
+  "objective": "Gerçekten flaky bir testin kök nedenini bul ve retry ile örtmek yerine alttaki belirsizliği gider.",
+  "whyThisMatters": "Kırmızı CI işlerini rutin yeniden çalıştıran ekip kırmızı pipeline'lara güvenmeyi bırakır; otomatik testin değeri silinir. Flaky test bir rahatsızlık değil, güvenilirlik kusurudur.",
+  "evidence": [
+    "Düzeltmeden önce başarısızlık oranını gösteren CI çalıştırma geçmişi veya tekrarlanan yerel çıktı",
+    "Kök nedeni ayırıp düzelten, commit mesajında asıl mekanizmayı adlandıran bir commit",
+    "Düzeltmeden sonra karşılaştırılabilir sayıda çalıştırmada sıfır başarısızlık gösteren CI geçmişi veya tekrarlanan çıktı",
+    "Bu düzeltmeyle ilgili CI yapılandırma diff'i",
+    "Değerlendirme notu"
+  ],
+  "acceptanceCriteria": [
+    "Başarısızlık, düzeltmeden önce ölçülmüş, sıfır olmayan bir oranda yeniden üretilir; çalıştırma sayısı belirtilir.",
+    "Düzelten commit yalnızca 'fixed flaky test' değil, belirli belirsizlik mekanizmasını adlandırır.",
+    "Aynı tekrarlı çalıştırma kontrolü, düzeltmeden sonra karşılaştırılabilir veya daha yüksek çalıştırma sayısında sıfır başarısızlık gösterir.",
+    "Bu sınıf hatayı yakalama veya ele alma ile ilgili bir CI yapılandırma değişikliği commit'lenir."
+  ]
+}

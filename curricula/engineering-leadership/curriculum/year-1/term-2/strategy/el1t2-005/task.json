@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "id": "el1t2-005",
   "title": "A 90-Day Technical Strategy You Can Be Held To",
-  "term": "year-1/term-2",
+  "term": "year-1-term-2",
   "module": "strategy",
   "estimatedHours": 10,
   "objective": "Write a 90-day Checkout technical strategy with three bets, one explicit stop, named owners, and a constraint-change revision that cuts or descopes a bet.",

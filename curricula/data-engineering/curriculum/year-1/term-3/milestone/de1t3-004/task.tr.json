@@ -1,0 +1,20 @@
+{
+  "title": "Üretim Biçimli Bir Pipeline Teslim Et ve Bilerek Boz",
+  "objective": "Belgelenmiş paylaşılan bir warehouse'a bir batch yolu ve bir stream yolu çalıştır — sözleşmeler, bir DAG, testler, bir sınırlı backfill ve enstrümantasyon ile — sonra enjekte edilen bir hatadan kurtar ve test komutunun hâlâ geçtiğini göster.",
+  "whyThisMatters": "Ayrı görevler tutkali gizleyebilir. Üretim biçimli sistem tutkalın kendisidir: iki giriş yolu, sözleşmeli bir warehouse, gerçeği söyleyen bir zamanlayıcı ve tekrarlayabileceğin bir kurtarma. Yolun noktası budur; araç slaytı değil.",
+  "evidence": [
+    "Batch işini, stream tüketicisini, doğrulayıcıyı, DAG'ı ve test paketini çalıştıran belgelenmiş komutlar",
+    "Hem batch kaynağından hem stream kaynağından warehouse satırlarını gösteren, join veya paylaşılan anahtarı belgelenmiş bir sorgu",
+    "Enjekte edilen hata için önce ve sonra sayıları ile olay veya kurtarma notu",
+    "Kurtarma sonrası yakalanmış geçen test-komutu çalıştırması",
+    "Tek bir nihai commit değil, işi kapsayan Git geçmişi",
+    "Görev sorularını yanıtlayan değerlendirme notları"
+  ],
+  "acceptanceCriteria": [
+    "Repository bir batch işi, bir stream tüketicisi, bir sözleşme dosyası, bir DAG ve bir test komutu içerir; her biri belgelenmiş bir komuttan çalışır.",
+    "Batch ve stream yolları belgelenmiş paylaşılan bir warehouse tablosuna veya belgelenmiş bir anahtarla join edilen iki tabloya yazar ve bir sorgu her iki kaynaktan gelen satırları gösterir.",
+    "Enjekte edilen bir hata ve kurtarması, önce/sonra sayıları ve bir olay veya kurtarma notuyla yakalanmıştır.",
+    "Belgelenmiş test komutu kurtarma sonrası çalıştırılır ve geçer.",
+    "Bu görevin işi için Git geçmişi birden fazla commit içerir."
+  ]
+}

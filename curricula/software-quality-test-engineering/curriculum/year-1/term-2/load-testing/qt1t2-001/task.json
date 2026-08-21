@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "id": "qt1t2-001",
   "title": "Establish a Load-Testing Baseline and SLO",
-  "term": "year-1/term-2",
+  "term": "year-1-term-2",
   "module": "load-testing",
   "estimatedHours": 14,
   "objective": "Build a repeatable load test against a real API and define a latency/error-rate objective the system either meets or doesn't.",

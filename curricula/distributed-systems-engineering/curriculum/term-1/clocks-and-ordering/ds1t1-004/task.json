@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "id": "ds1t1-004",
   "title": "Wall-Clock Last-Write-Wins versus Happens-Before",
-  "term": "ds1t1",
+  "term": "year-1-term-1",
   "module": "clocks-and-ordering",
   "estimatedHours": 16,
   "objective": "Add two merge policies to the replicated store — last-write-wins by wall clock, and version-vector / happens-before detection — and produce a script that loses a concurrent write under LWW and then flags the same pair as concurrent under the vector policy.",

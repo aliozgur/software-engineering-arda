@@ -1,0 +1,19 @@
+{
+  "title": "Savunabileceğin Bir Watermark ile Artımlı Yükleme",
+  "objective": "Tam extract'i high-watermark artımlı yüklemeyle değiştir, watermark'ı yalnızca başarılı warehouse commit'inden sonra sakla ve geç satırlar için açık bir politika göster.",
+  "whyThisMatters": "Full refresh maliyeti ve geç veriyi gizler. Yazma commit olmadan ilerleyen watermark, pipeline'ın bir batch'i sessizce düşürmesine yol açar. Kimsenin planlamadığı geç satırlar altı hafta sonra 'warehouse yanlış' olur.",
+  "evidence": [
+    "Watermark deposu (tablo veya dosya) ve onu okuyan/yazan kod",
+    "Başarılı bir artımlı çalıştırmadan önce ve sonra yakalanmış watermark değerleri ve warehouse sayıları",
+    "Yalnızca daha eski satır içeren bir kaynağa karşı, sıfır yeni warehouse satırı gösteren yakalanmış artımlı çalıştırma",
+    "Geç satır politikası notu ve enjekte edilen beş geç satırın kaderi",
+    "Watermark güncellemesinden önce düşürme gösterimi ve sonraki çalıştırmanın yakalanmış anahtarları",
+    "Görev sorularını yanıtlayan değerlendirme notları"
+  ],
+  "acceptanceCriteria": [
+    "Başarılı bir artımlı çalıştırmadan sonra saklanan watermark, warehouse'a gerçekten commit edilen satırların maksimum kaynak timestamp'i veya id'sine eşittir; bu bir sorgu veya dosya dökümüyle gösterilir.",
+    "Yalnızca watermark'ta veya gerisinde satır içeren bir kaynağa karşı artımlı çalıştırma sıfır yeni warehouse satırı yükler; sayılar yakalanmıştır.",
+    "Yazılı geç satır politikası beş enjekte satır üzerinde gösterilir ve bu beşinin her biri tam olarak bir yerde durur: lookback yüklemesi, late tablosu veya dosyası, ya da reject log.",
+    "Extract'ten sonra ama watermark güncellemesinden önce öldürülen, sonra yeniden çalıştırılan bir iş hâlâ commit edilmemiş batch'i yükler (yakalanmış anahtarlar o batch'i içerir)."
+  ]
+}

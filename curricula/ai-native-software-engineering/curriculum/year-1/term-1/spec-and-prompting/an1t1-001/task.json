@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "id": "an1t1-001",
   "title": "Writing a Spec Precise Enough to Implement With AI",
-  "term": "year-1/term-1",
+  "term": "year-1-term-1",
   "module": "spec-and-prompting",
   "estimatedHours": 6,
   "objective": "Write a spec for a real, small feature that is precise enough for AI-generated code from it to need only minor correction, and disclose the whole process.",

@@ -1,0 +1,17 @@
+{
+  "title": "Prometheus ile Servis Metric'lerini Scrape Et",
+  "evidence": [
+    "Commit edilmiş Prometheus scrape yapılandırması ve /metrics veya bir exporter açan servis değişikliği",
+    "Scrape target'ın UP olduğunu gösteren yakalanmış Prometheus targets sayfası veya API çıktısı",
+    "Adlandırılmış iki PromQL sorgusu artı o serileri değiştiren belgelenmiş bir yük öncesi ve sonrası yakalanmış sonuçlar",
+    "Prometheus'u yerelde başlatan ve expression browser'ı açan README komutları",
+    "Görev sorularını yanıtlayan değerlendirme notları",
+    "Yapay zekâ çalışmayı önemli ölçüde etkilediyse yapay zekâ kullanım beyanı"
+  ],
+  "acceptanceCriteria": [
+    "Prometheus scrape yapılandırması commit edilmiştir ve Prometheus çırağın servis target'ını UP gösterir.",
+    "Servis, belgelenmiş bir yük uygulandığında değişen en az iki adlandırılmış metric dışa açar (request-count tarzı bir seri ve bir diğeri).",
+    "Kanıt notu, iki operasyonel soru için tam PromQL'i ve her biri için yük öncesi ve sonrası yakalanmış sonucu içerir.",
+    "En az bir metric serisi, servisi veya yerel ortamı adlandıran bir label içerir."
+  ]
+}

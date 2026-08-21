@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "id": "pe1t1-005",
   "title": "Tune a Query From the Plan, Not a Folklore Index",
-  "term": "year-1/term-1",
+  "term": "year-1-term-1",
   "module": "database-tuning",
   "estimatedHours": 12,
   "objective": "Load a dataset large enough that plans differ, capture EXPLAIN ANALYZE with actual time and buffers before and after a change, keep one index that helped, and reject one that did not.",

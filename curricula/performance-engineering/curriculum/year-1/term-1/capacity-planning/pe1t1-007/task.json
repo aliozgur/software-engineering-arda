@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "id": "pe1t1-007",
   "title": "Capacity From Your Own Numbers",
-  "term": "year-1/term-1",
+  "term": "year-1-term-1",
   "module": "capacity-planning",
   "estimatedHours": 10,
   "objective": "Build a capacity note whose every input cites a pe1t1-006 (or re-run) measurement, compute copies needed for a stated peak, project 2x and 5x, and show one sensitivity that changes the conclusion.",

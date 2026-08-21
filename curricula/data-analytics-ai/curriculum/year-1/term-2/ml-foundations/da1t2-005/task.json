@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "id": "da1t2-005",
   "title": "A First Supervised Model Without Magic",
-  "term": "year-1/term-2",
+  "term": "year-1-term-2",
   "module": "ml-foundations",
   "estimatedHours": 12,
   "competencies": [

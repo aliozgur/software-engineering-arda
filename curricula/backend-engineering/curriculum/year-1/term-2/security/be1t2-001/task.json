@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "id": "be1t2-001",
   "title": "Authenticate and Authorize the API",
-  "term": "year-1/term-2",
+  "term": "year-1-term-2",
   "module": "security",
   "estimatedHours": 14,
   "objective": "Protect the existing Python API so unauthenticated callers are rejected, authorized callers are limited by role, and credentials are never stored or logged in plaintext.",

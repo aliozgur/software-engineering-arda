@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "id": "sa1t3-002",
   "title": "Threat Modeling a System Boundary",
-  "term": "year-1/term-3",
+  "term": "year-1-term-3",
   "module": "security",
   "estimatedHours": 8,
   "objective": "Draw trust boundaries on a prior design, attach an architectural control to at least four threats, and record one control decision that names residual risk.",

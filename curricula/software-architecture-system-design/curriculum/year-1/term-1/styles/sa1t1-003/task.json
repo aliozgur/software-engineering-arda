@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "id": "sa1t1-003",
   "title": "Monolith vs. Microservices: A Defensible Comparison",
-  "term": "year-1/term-1",
+  "term": "year-1-term-1",
   "module": "styles",
   "estimatedHours": 7,
   "objective": "Compare at least three architectural styles against explicit, scenario-derived criteria and record a defensible recommendation.",

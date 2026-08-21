@@ -1,0 +1,18 @@
+{
+  "title": "Hesap Verilebileceğiniz 90 Günlük Teknik Strateji",
+  "objective": "Üç bahis, bir açık durdurma, adlandırılmış sahipler ve bir bahsi kesen veya kapsamını daraltan kısıt-değişikliği revizyonu içeren 90 günlük bir Checkout teknik stratejisi yazın.",
+  "whyThisMatters": "1:1 yürütebilen ve bir ADR yazabilen bir lead hâlâ başkalarının yürütebileceği zaman sınırlı bir strateji borçludur. Sıfatlar strateji değildir. İncelenebilir 90 günlük sonuçları olan bahisler, bir durdurma ve değişen kısıt altında önceden yazılmış bir kesim stratejidir.",
+  "evidence": [
+    "Tam olarak üç bahis ve bir durdurma adlandıran bir strateji memo'su; her bahiste 90 günlük incelenebilir sonuç ve Harborline kadrosundan adlandırılmış bir sahip vardır",
+    "Twelve-Factor bir faktörü veya el1t2-001'deki bir kararı adıyla alıntılayan en az bir bahis",
+    "Headcount veya error-budget kısıtından sonra adlandırılmış bir bahsi kesen veya kapsamını daraltan en fazla 300 kelimelik bir kısıt-değişikliği notu",
+    "Üç bahsi ve durdurmayı hâlâ içeren en fazla 400 kelimelik bir EM one-pager"
+  ],
+  "acceptanceCriteria": [
+    "Memo tam olarak üç bahis ve bir durdurma adlandırır; her bahiste 90 günlük incelenebilir bir sonuç ve Harborline kadrosunda adlandırılmış bir sahip vardır.",
+    "Durdurma, ekibin şu anda yaptığı işi adlandırır, varsayımsal gelecekteki bir projeyi değil.",
+    "En az bir bahis bir Twelve-Factor faktörünü numara veya adla alıntılar veya el1t2-001 kararını başlık veya harfle alıntılar.",
+    "Kısıt-değişikliği notu en fazla 300 kelimedir ve hangi bahsin kesildiğini veya kapsamının daraltıldığını ve nedenini adlandırır.",
+    "EM one-pager en fazla 400 kelimedir ve üç bahsi ile durdurmayı içerir."
+  ]
+}

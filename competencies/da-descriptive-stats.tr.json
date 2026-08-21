@@ -5,27 +5,27 @@
     {
       "level": 1,
       "name": "Temel",
-      "description": "Temel kavramları açıklayabilir ve rehberli çalışmayı tamamlayabilir."
+      "description": "Yazılı rehberlik altında mean, median ve basit bir dağılım grafiği üretebilir, tablonun kapsadığı birimi ve popülasyonu adlandırabilir ve cümle olan bir grafik başlığı yazabilir."
     },
     {
       "level": 2,
       "name": "Çırak",
-      "description": "Sınırlı rehberlikle kapsamı belirlenmiş görevleri tamamlayabilir ve kanıt üretebilir."
+      "description": "Aykırı değerleri varsayılan olarak silmeden tartışabilir, özetleri p-value ve 'significant' dilinden uzak tutabilir ve her iddiayı bir tablo veya figüre bağlayabilir."
     },
     {
       "level": 3,
       "name": "Uygulayıcı",
-      "description": "Basit olmayan çalışmaları bağımsız biçimde tasarlayabilir, uygulayabilir, test edebilir ve açıklayabilir."
+      "description": "Dağılıma uyan özeti bağımsız seçebilir (mean versus median, count versus rate), eksenleri ve filtreleri etiketleyebilir ve mürekkebin desteklemediği bir iddiayı reddedebilir."
     },
     {
       "level": 4,
       "name": "Kalfa",
-      "description": "Belirsizliği yönetebilir, hataları teşhis edebilir ve ödünleşimleri savunabilir."
+      "description": "Yanıltıcı bir özeti teşhis edebilir — çarpık bir kümenin mean'i, paydasız bir rate — cümleyi yalanlayan figürü gösterebilir ve başka bir okuyucunun aynı mürekkebe karşı kontrol edebileceği bir yeniden yazım üretebilir."
     },
     {
       "level": 5,
       "name": "Ustalık Kanıtı",
-      "description": "Öğretebilir, inceleyebilir ve alışılmadık durumlarda sağlam kararlar verebilir."
+      "description": "Başka bir çırağın istatistik yazısını değerlendirebilir; figürü aşan bir iddiayı adlandırabilir; tanıdık olmayan bir veri kümesinde median'ın ne zaman dürüst özet olduğunu öğretebilir."
     }
   ]
 }

@@ -1,0 +1,18 @@
+{
+  "title": "PostgreSQL Streaming Replication, Lag ve Dual-Primary Yazmalar",
+  "objective": "Docker'da bir primary ve en az bir streaming replica çalıştır, apply lag'inin yol açtığı stale bir okumayı ölç, replica'yı promote et, sonra eski primary client kabulünden fence edilmedikçe bir dual-primary yazma çatışmasını yeniden üret.",
+  "whyThisMatters": "Kendin kurduğun bir store, production veritabanlarının byte'ları gerçekte nasıl taşıdığını gizleyebilir. SWE müfredatı seni gerçek bir replica'yı promote etmeye veya failover sonrası eski primary'nin yazma kabulünü izlemeye hiç zorlamaz. İkisini de yapmadan 'standby'miz var' hâlâ kulaktan dolmadır.",
+  "evidence": [
+    "Primary-only, sonra replica, sonra failover/fence adımlarını ayrı commit'ler olarak gösteren Compose (veya eşdeğer) dosyaları ve Git geçmişi",
+    "Primary'de yazan, replica'da apply'ı geciktiren ve replica'dan stale veya eksik satır okuyan yakalanmış koşu; log'da pg_stat_replication veya eşdeğer sayılar",
+    "İkinci yakalanmış failover koşusu: promote, yeni primary'de yazma, sonra ya eski primary'de ayrışan bir yazma ya da fencing sonrası reddedilen bağlantı; timeline / LSN değerleri kaydıyla",
+    "Replica tipini (async veya sync), kullanılan lag metric'ini ve fencing yöntemini belirten README",
+    "Görev sorularını yanıtlayan değerlendirme notları"
+  ],
+  "acceptanceCriteria": [
+    "Primary ve replica, PostgreSQL streaming replication kullanan ayrı container'lar (veya VM'ler) olarak çalışır; tek-instance mantıksal kopya veya dump/restore döngüsü değil.",
+    "Lag gösterimi, stale okuma anında bir replica LSN veya replay lag sayısı kaydeder ve primary'deki aynı sorgu yeni satırı döner.",
+    "Promote sonrası yeni primary, eski primary'nin timeline'ında olmayan bir yazmayı kabul eder; yakalanmış log her iki taraf için timeline ID veya LSN içerir.",
+    "README ya çalışan bir fence adlandırır (eski primary client reddeder veya client'lar yeni primary'ye yönlendirilmeden kapatılır) ya da dual-primary yazma bilerek unfenced bırakıldıysa her iki node'daki çatışan satır değerlerini adlandırır."
+  ]
+}

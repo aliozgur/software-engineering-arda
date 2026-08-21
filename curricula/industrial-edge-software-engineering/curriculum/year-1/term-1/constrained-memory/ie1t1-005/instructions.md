@@ -1,4 +1,4 @@
-# Fixed-size pool, OOM policy, fragmentation numbers
+# Fixed-size pool, OOM policy, and refill measurement
 
 **Task ID:** `ie1t1-005`
 **Estimated effort:** 6 hours
