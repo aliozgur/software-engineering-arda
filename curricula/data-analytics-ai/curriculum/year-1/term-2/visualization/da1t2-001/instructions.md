@@ -14,7 +14,7 @@ Completion requires evidence that you can apply and explain the ideas.
 ## Authoritative resources
 
 - **Matplotlib Quick start**: https://matplotlib.org/stable/users/explain/quick_start.html
-- **Foundation of visualization notes (UW CSE512)**: https://courses.cs.washington.edu/courses/cse512/24sp/
+- **Fundamentals of Data Visualization (Claus O. Wilke)**: https://clauswilke.com/dataviz/
 
 Use the linked course/documentation as the primary source. You may use additional sources, but record them in your
 learning notes and prefer primary documentation over tutorial aggregation sites.

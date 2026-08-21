@@ -1,10 +1,10 @@
 {
   "schemaVersion": 1,
   "id": "tufte-principles",
-  "title": "UW CSE512 Data Visualization",
-  "url": "https://courses.cs.washington.edu/courses/cse512/24sp/",
-  "type": "course",
-  "provider": "University of Washington",
+  "title": "Fundamentals of Data Visualization",
+  "url": "https://clauswilke.com/dataviz/",
+  "type": "book",
+  "provider": "Claus O. Wilke",
   "tier": "reference",
   "topics": [
     "visualization"
