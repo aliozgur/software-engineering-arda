@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "id": "as1t1-005",
   "title": "XSS and Output Encoding",
-  "term": "year-1/term-1",
+  "term": "year-1-term-1",
   "module": "xss",
   "estimatedHours": 10,
   "objective": "Find a reflected or stored XSS sink in the application you own or operate locally, encode output for the correct context, and prove the fix with a test that fails when encoding is removed.",

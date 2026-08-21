@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "id": "ie1t3-001",
   "title": "Modbus request/response you can break on purpose",
-  "term": "year-1/term-3",
+  "term": "year-1-term-3",
   "module": "industrial-comms",
   "estimatedHours": 10,
   "objective": "Implement Modbus TCP ADU for function 0x03 and 0x06, return exception 0x02 on an unmapped address, show MBAP length matching the PDU, and run at least 20 generated cases.",

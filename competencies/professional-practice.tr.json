@@ -1,30 +1,30 @@
 {
   "title": "Mesleki Uygulama",
-  "description": "Teknik yazı, tasarım incelemeleri, tahmin, olay analizi ve iletişim.",
+  "description": "Bir takım arkadaşının eyleme geçirebileceği teknik yazıları yazabilir ve inceleyebilir — inceleme, süre tahmini ve olay iletişiminde olguyu, tahmini ve görüşü birbirinden ayırabilir.",
   "levels": [
     {
       "name": "Temel",
-      "description": "Temel kavramları açıklayabilir ve rehberli çalışmaları tamamlayabilir.",
+      "description": "Yazılı rehberlik altında sorunu, değişikliği, somut bir doğrulama adımını ve kapsam dışı bırakılanı belirten bir pull request açıklaması veya teknik not yazabilir.",
       "level": 1
     },
     {
       "name": "Çırak",
-      "description": "Kapsamı belirlenmiş görevleri sınırlı yönlendirmeyle tamamlayabilir ve kanıt üretebilir.",
+      "description": "İkinci bir kişinin yalnızca rapordan yeniden üretebileceği bir hata raporu yazabilir ve gerçek bir değişiklik üzerinde her biri engelleyici, öneri veya soru olarak etiketlenmiş en az beş inceleme yorumu bırakabilir.",
       "level": 2
     },
     {
       "name": "Uygulayıcı",
-      "description": "Kayda değer bir çalışmayı bağımsız olarak tasarlayabilir, uygulayabilir, test edebilir ve açıklayabilir.",
+      "description": "Varsayımları, en az bir reddedilmiş seçeneği ve yazara sormadan başka birinin çalıştırabileceği bir kontrolü adlandıran yazılı bir süre tahmini veya tasarım-inceleme notunu bağımsız olarak üretebilir.",
       "level": 3
     },
     {
       "name": "Kalfa",
-      "description": "Belirsizlikle başa çıkabilir, hataları teşhis edebilir ve ödünleşimleri gerekçelendirebilir.",
+      "description": "Güncellemeleri zaman damgalayan, canlı iletişimde kök nedeni olgu gibi söylemeyen bir olay iletişimi yürütebilir ve tespit, önleme veya yanıt olarak etiketlenmiş takip maddeleri içeren suçlamasız bir postmortem yazabilir.",
       "level": 4
     },
     {
       "name": "Ustalık Kanıtı",
-      "description": "Alışılmadık durumlarda öğretebilir, değerlendirme yapabilir ve sağlam kararlar verebilir.",
+      "description": "Başka bir çırağın pull request açıklamasını, inceleme zincirini veya postmortem'ini değerlendirebilir; yorumu olgu gibi sunan bir cümleyi adlandırabilir; tanıdık olmayan bir değişiklik veya olayda bunları ayrı tutmayı öğretebilir.",
       "level": 5
     }
   ]

@@ -7,27 +7,27 @@
     {
       "level": 1,
       "name": "Foundation",
-      "description": "Can explain core concepts and complete guided work."
+      "description": "Can produce a chart whose title is a sentence, label axes with units, and name the geometry — bar, line or scatter — under written guidance."
     },
     {
       "level": 2,
       "name": "Apprentice",
-      "description": "Can complete scoped tasks with limited guidance and produce evidence."
+      "description": "Can replace a misleading chart and explain why it misled, use color for a meaning not decoration, and justify bar versus line versus scatter for the grain."
     },
     {
       "level": 3,
       "name": "Practitioner",
-      "description": "Can independently design, implement, test and explain non-trivial work."
+      "description": "Can independently encode a claim so a stranger can read the sentence from the chart, keep filters visible, and refuse a dual axis or truncated scale that changes the claim."
     },
     {
       "level": 4,
       "name": "Journeyman",
-      "description": "Can handle ambiguity, diagnose failures and defend trade-offs."
+      "description": "Can diagnose a chart whose ink does not match the caption, cite the axis or encoding that lies, and produce a before/after pair another reviewer can judge."
     },
     {
       "level": 5,
       "name": "Mastery Evidence",
-      "description": "Can teach, review and make sound decisions across unfamiliar situations."
+      "description": "Can review another apprentice's figure, name an honest-axis violation or a decorative color, and teach when a table is more honest than a chart on an unfamiliar dataset."
     }
   ]
 }

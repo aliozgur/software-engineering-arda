@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "id": "pd1t2-001",
   "title": "Deploy the Service to a Local Kubernetes Cluster",
-  "term": "term-2",
+  "term": "year-1-term-2",
   "module": "local-cluster",
   "estimatedHours": 14,
   "competencies": [

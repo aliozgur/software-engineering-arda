@@ -1,0 +1,21 @@
+{
+  "title": "Gerekçeli Bir Katkı Açın",
+  "objective": "Gerçek bir public issue'yu ele alan küçük, gerekçeli bir değişiklik açın — upstream bir pull request olarak veya aynı public repository'nin yerel fork'unda, upstream issue URL'si ekli bir pull request olarak.",
+  "whyThisMatters": "Açık kaynak becerisi diskte duran özel bir patch değildir. Başka birinin inceleyebileceği, projenin zaten sahip olduğu bir issue'ya bağlı, projenin kendi Git ve inceleme kurallarını kullanan bir değişikliktir.",
+  "evidence": [
+    "Değişikliğin ele aldığı public upstream issue URL'si",
+    "Ya upstream pull-request URL'si, ya da fork pull-request URL'si artı fork clone URL'si ve upstream clone URL'si",
+    "En az iki commit gösteren, SHA'larıyla katkı branch'inin Git log'u",
+    "Diff'in dokunduğu her top-level path'in listesini içeren pull-request açıklama metni",
+    "Projenin commit, test veya DCO/CLA kuralını ve geldiği dosya yolunu alıntılayan kısa bir kural notu",
+    "Görev sorularını yanıtlayan değerlendirme notları",
+    "Yapay zekâ çalışmayı önemli ölçüde etkilediyse AI kullanım açıklaması"
+  ],
+  "acceptanceCriteria": [
+    "Pull-request açıklaması ilk yirmi satırda upstream issue URL'sini adlandırır.",
+    "Katkı branch'i en az iki commit içerir, evidence notunda git log SHA'larıyla gösterilir.",
+    "Pull-request açıklaması diff'in dokunduğu her top-level path'i listeler ve açılan diff başka top-level path içermez.",
+    "Açıklama, kullanıcıya veya maintainer'a görünen etki üzerine en az üç cümle içerir.",
+    "Ya pull-request URL'si upstream public repository'dedir, ya da not fork pull-request URL'sini, upstream clone URL'sini ve upstream issue URL'sini içerir ve fork'un o public repository'den clone edildiğini belirtir."
+  ]
+}

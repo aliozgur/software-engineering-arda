@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
   "id": "ie1t1-005",
-  "title": "Fixed-size pool, OOM policy, fragmentation numbers",
-  "term": "year-1/term-1",
+  "title": "Fixed-size pool, OOM policy, and refill measurement",
+  "term": "year-1-term-1",
   "module": "constrained-memory",
   "estimatedHours": 6,
   "objective": "Implement a pool of M fixed-size blocks with documented OOM and double-free results, prove the pool can refill after a full free, and publish a measurement of pool bytes versus a scripted allocation pattern.",

@@ -1,30 +1,30 @@
 {
   "title": "Algoritmalar",
-  "description": "Veri yapıları, algoritma tasarımı, karmaşıklık analizi ve problem çözme.",
+  "description": "Yazılı bir karmaşıklık gerekçesiyle bir veri yapısı veya algoritma seçip uygulayabilir — ölçülen maliyet Big-O ile çeliştiğinde sabitler veya girdi şekli yüzünden olduğunu gösterebilir.",
   "levels": [
     {
       "name": "Temel",
-      "description": "Temel kavramları açıklayabilir ve rehberli çalışmaları tamamlayabilir.",
+      "description": "Yazılı rehberlik altında bir spesifikasyondan liste, hash table veya sıralama uygulayabilir; her işlemin karmaşıklığını belgelendirebilir; boş, tipik ve en kötü girdi testlerini çalıştırabilir.",
       "level": 1
     },
     {
       "name": "Çırak",
-      "description": "Kapsamı belirlenmiş görevleri sınırlı yönlendirmeyle tamamlayabilir ve kanıt üretebilir.",
+      "description": "Farklı asimptotik davranışa sahip iki algoritma uygulayabilir; bir benchmark'ı tablo veya grafik haline getirebilir; başlıktan kopyalanmış bir tahmin olmayan bir karmaşıklık gerekçesi yazabilir.",
       "level": 2
     },
     {
       "name": "Uygulayıcı",
-      "description": "Kayda değer bir çalışmayı bağımsız olarak tasarlayabilir, uygulayabilir, test edebilir ve açıklayabilir.",
+      "description": "Belirtilen bir girdi-boyutu senaryosu için bağımsız olarak bir yapı veya algoritma seçebilir, testlerle uygulayabilir ve \"testler geçti\" yerine invariant veya tümevarım adımı kullanan bir doğruluk gerekçesi yazabilir.",
       "level": 3
     },
     {
       "name": "Kalfa",
-      "description": "Belirsizlikle başa çıkabilir, hataları teşhis edebilir ve ödünleşimleri gerekçelendirebilir.",
+      "description": "Big-O'nun pratikte önemli bir sabiti veya ortalama durum hikâyesinin gizlediği bir en kötü girdi ailesini sakladığı bir durumu teşhis edebilir; benchmark'ı veya girdi ailesini gösterebilir; başka bir mühendisin kesişim noktasını yeniden üretebileceği bir not üretebilir.",
       "level": 4
     },
     {
       "name": "Ustalık Kanıtı",
-      "description": "Alışılmadık durumlarda öğretebilir, değerlendirme yapabilir ve sağlam kararlar verebilir.",
+      "description": "Başka bir çırağın algoritma yazısını değerlendirebilir; gerekçesiz bir karmaşıklık iddiasını veya en kötü duruma hiç girmeyen bir test paketini adlandırabilir; tanıdık olmayan bir girdi-boyutu senaryosunda teoride daha kötü bir algoritmanın ne zaman doğru seçim olduğunu öğretebilir.",
       "level": 5
     }
   ]

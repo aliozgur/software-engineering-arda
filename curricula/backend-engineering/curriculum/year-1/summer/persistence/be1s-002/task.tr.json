@@ -1,0 +1,18 @@
+{
+  "title": "İlişkisel, Document ve Kuyruk Kalıcılığını Bütünleştirmek",
+  "objective": "Tasarlanan yazma yolunu, bir domain yazımının PostgreSQL'de commit edileceği, yayımlanacağı ve MongoDB'ye yansıtılacağı, broker kapalıyken davranışın gösterileceği biçimde uygulamak.",
+  "whyThisMatters": "İşletim ve savunma görevleri bu yolun var olduğunu ve belgelenmiş biçimde başarısız olduğunu varsayar. Yalnızca Postgres'i güncelleyen veya kuyruğun düşemeyeceğini varsayan bir yazım o incelemelerden geçmez.",
+  "evidence": [
+    "Transaction, publish, consumer yansıtması ve broker-kapalı yolunun ayrı commit'ler olduğunu gösteren Git geçmişi",
+    "Bir yazımın PostgreSQL'de ve consume sonrası MongoDB'de, veri akışı notuyla eşleşen id'lerle göründüğünü gösteren gösterim",
+    "Belgelenmiş broker-kapalı davranışının (5xx/503 veya bir outbox satırı) compose/broker durdurulmuş halde gösterimi",
+    "Mutlu yolu ve broker-kapalı yolu kapsayan entegrasyon testi çıktısı",
+    "API, PostgreSQL, MongoDB ve RabbitMQ'yu birlikte başlatan compose dosyası"
+  ],
+  "acceptanceCriteria": [
+    "Tek bir domain yazımı PostgreSQL'de vardır ve consumer çalıştıktan sonra MongoDB'de, ilişkisel id ile eşleşen bir anahtarla bulunur.",
+    "RabbitMQ durdurulduğunda API ya belgelenmiş bir 5xx/503 döner ya da bir outbox satırı kaydeder — seçilen davranış anlatılmaz, gösterilir.",
+    "Bir entegrasyon testi mutlu yolu ve broker-kapalı yolu kapsar ve commit edilmiş takımın parçasıdır.",
+    "docker compose up, commit edilmiş compose dosyasından API, PostgreSQL, MongoDB ve RabbitMQ'yu başlatır."
+  ]
+}

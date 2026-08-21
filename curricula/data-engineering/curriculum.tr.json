@@ -1,0 +1,11 @@
+{
+  "name": "apprenti.dev Veri Mühendisliği",
+  "audience": "Python ve SQL'i kullanan, analize değil pipeline mühendisliğine — veriyi taşıma, sözleşmeye bağlama, orkestre etme ve kurtarma — uzmanlaşan yazılım veya analitik mühendisi",
+  "philosophy": "Kanıta dayalı uzmanlaşma: sözleşmeyi yaz, veriyi taşı, korkusuzca yeniden çalıştır, kanıttan kurtar.",
+  "aiPrinciples": [
+    "Yapay zekâ yardımı maddi olarak kullanıldığında açıklanmalıdır.",
+    "Görevler açıklamalara, ipuçlarına ve quizlere izin verirken çözüm üretmeyi kısıtlayabilir.",
+    "Çırak gönderdiği her yüklemeden, sözleşmeden, backfill'den ve kurtarmadan sorumlu olmaya devam eder.",
+    "Mentor onayı tek bir yeşil çalıştırmaya değil, yeniden çalıştırma, hata kurtarma ve canlı açıklamaya dayanır."
+  ]
+}

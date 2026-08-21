@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "id": "pd1t1-001",
   "title": "Continuous Integration Pipeline for a Small Service",
-  "term": "term-1",
+  "term": "year-1-term-1",
   "module": "ci-cd",
   "estimatedHours": 10,
   "competencies": [

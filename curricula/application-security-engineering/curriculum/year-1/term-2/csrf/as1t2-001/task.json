@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "id": "as1t2-001",
   "title": "CSRF, Cookies and Unsafe Methods",
-  "term": "year-1/term-2",
+  "term": "year-1-term-2",
   "module": "csrf",
   "estimatedHours": 10,
   "objective": "Find and fix cross-site request forgery and cookie-flag gaps on the application you own or operate locally, and prove that state-changing routes reject a request that lacks the chosen CSRF control.",

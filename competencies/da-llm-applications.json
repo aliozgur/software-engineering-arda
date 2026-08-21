@@ -7,27 +7,27 @@
     {
       "level": 1,
       "name": "Foundation",
-      "description": "Can explain core concepts and complete guided work."
+      "description": "Can version a prompt in Git, define a metric before looking at a second prompt's score, and run it on a held-out list — under written guidance."
     },
     {
       "level": 2,
       "name": "Apprentice",
-      "description": "Can complete scoped tasks with limited guidance and produce evidence."
+      "description": "Can show failures not only wins, keep a no-LLM baseline (keyword rule or smaller classifier), and record cost or latency as an order of magnitude."
     },
     {
       "level": 3,
       "name": "Practitioner",
-      "description": "Can independently design, implement, test and explain non-trivial work."
+      "description": "Can independently treat prompts as versioned components, evaluate on held-out cases written before tuning, and refuse a 'feels better' change that does not move the metric."
     },
     {
       "level": 4,
       "name": "Journeyman",
-      "description": "Can handle ambiguity, diagnose failures and defend trade-offs."
+      "description": "Can diagnose an eval written after seeing outputs, or a prompt that wins on vibes and loses on the harness, and produce a failure set another engineer can rerun."
     },
     {
       "level": 5,
       "name": "Mastery Evidence",
-      "description": "Can teach, review and make sound decisions across unfamiliar situations."
+      "description": "Can review another apprentice's prompt pack, name an eval written after tuning or a missing no-LLM baseline, and teach when to keep the keyword rule on an unfamiliar task."
     }
   ]
 }

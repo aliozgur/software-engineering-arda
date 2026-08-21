@@ -2,32 +2,32 @@
   "schemaVersion": 1,
   "id": "distributed-systems",
   "title": "Distributed Systems",
-  "description": "Replication, consensus concepts, fault tolerance, consistency and distributed reasoning.",
+  "description": "Can reason about replication, consistency and fault tolerance on a network that fails — and can make a stated anomaly appear and disappear on demand.",
   "levels": [
     {
       "level": 1,
       "name": "Foundation",
-      "description": "Can explain core concepts and complete guided work."
+      "description": "Can run a leader and a follower as separate processes, state what a leader-only ack guarantees, and name the consistency model of a given read mode — under written guidance."
     },
     {
       "level": 2,
       "name": "Apprentice",
-      "description": "Can complete scoped tasks with limited guidance and produce evidence."
+      "description": "Can reproduce a stale read under a relaxed mode and its absence under a strict mode, write the acknowledgment rule (leader-only versus quorum), and keep failure assumptions explicit — no 'network is reliable'."
     },
     {
       "level": 3,
       "name": "Practitioner",
-      "description": "Can independently design, implement, test and explain non-trivial work."
+      "description": "Can independently add quorum writes and an epoch or fencing token, script a split-brain overwrite that fencing then refuses, and state N, W and R with W + R > N."
     },
     {
       "level": 4,
       "name": "Journeyman",
-      "description": "Can handle ambiguity, diagnose failures and defend trade-offs."
+      "description": "Can diagnose a two-leader observation as a safety violation or a stale term, document idempotency and compensation limits on a retryable workflow, and produce a failure-test suite another engineer can run without opening a paper."
     },
     {
       "level": 5,
       "name": "Mastery Evidence",
-      "description": "Can teach, review and make sound decisions across unfamiliar situations."
+      "description": "Can review another apprentice's replica or saga, name a write acknowledged before a majority apply (or a retry without duplicate semantics), and teach when to trust a quorum read over a leader-only read on an unfamiliar store."
     }
   ]
 }

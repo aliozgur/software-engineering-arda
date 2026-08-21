@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "id": "sa1t2-004",
   "title": "Designing for Failure and Controlled Degradation",
-  "term": "year-1/term-2",
+  "term": "year-1-term-2",
   "module": "failure",
   "estimatedHours": 8,
   "objective": "Name timeout, retry, and user-visible degradation for at least three dependencies, and record a retry budget that cannot exceed a stated NFR.",

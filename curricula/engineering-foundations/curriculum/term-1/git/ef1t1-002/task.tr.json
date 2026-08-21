@@ -1,0 +1,17 @@
+{
+  "title": "İlk Feature Branch'inizi ve Pull Request'inizi Açmak",
+  "objective": "Bir feature branch oluşturun, küçük ve gerçek bir değişikliği açık mesajlarla commit edin ve inceleyicinin üzerine gidebileceği bir açıklamayla pull request açın.",
+  "whyThisMatters": "Paylaşılan bir kod tabanına giden neredeyse her profesyonel değişiklik aynı döngüden geçer: branch, commit, push, pull request aç. Bunu gerçek teslim tarihi baskısı altında yapmadan önce bir kez yavaş ve bilinçli yapmak, bu görevin noktasıdır.",
+  "evidence": [
+    "Gerçek pull request'in bağlantısı",
+    "Branch'in commit kaydı (git log çıktısı veya PR'ın commits sekmesi)",
+    "PR açıklama metni",
+    "Yapay zekâ commit mesajlarını veya PR açıklamasını yazmaya yardımcı olduysa yapay zekâ kullanım beyanı"
+  ],
+  "acceptanceCriteria": [
+    "Branch adı, açıklayabileceğiniz tutarlı ve belgelenmiş bir kuralı izler (örneğin feature/<short-description>).",
+    "Branch en az iki commit içerir; her birinin mesajı neyin değiştiğini ve nedenini anlatır, yalnızca 'wip' veya 'fix' değildir.",
+    "Branch'i temel branch ile karşılaştıran bir pull request vardır; açıklama neyin değiştiğini, nedenini ve nasıl doğrulanacağını belirtir.",
+    "PR gönderimde bağlantılanmıştır ve mentor tarafından görülebilir kalır."
+  ]
+}

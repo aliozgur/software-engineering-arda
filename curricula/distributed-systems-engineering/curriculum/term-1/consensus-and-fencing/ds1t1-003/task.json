@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "id": "ds1t1-003",
   "title": "Quorum Writes and Epoch Fencing Against Split-Brain",
-  "term": "ds1t1",
+  "term": "year-1-term-1",
   "module": "consensus-and-fencing",
   "estimatedHours": 18,
   "objective": "Extend the replicated store so a write is acknowledged only after a majority applies it, introduce an epoch (or fencing token) that an isolated former leader cannot override, and produce a script that first reproduces a split-brain overwrite and then shows the same sequence refused once fencing is on.",

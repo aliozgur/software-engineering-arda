@@ -1,0 +1,18 @@
+{
+  "title": "Injection: Bul, Düzelt, Kanıtla",
+  "objective": "Sahip olduğunuz veya yerelde işlettiğiniz uygulamada en az iki injection sink bulun, bu sink'lerden string birleştirmeyi kaldırın ve bir düzeltmeyi, birleştirme geri geldiğinde kırmızıya düşen bir testle kanıtlayın.",
+  "whyThisMatters": "Parameterized query'lerin var olduğunu bilmek, bu uygulamadaki belirli bir sink'in artık güvenilmeyen girdiyi birleştirmediğini göstermek değildir. Eski concat geri geldiğinde kırmızıya düşen test, mentorun yeniden çalıştırabileceği kanıttır.",
+  "evidence": [
+    "En az 2 injection sink'ini dosya ve satır veya query-builder çağrısı, injection sınıfı ve OWASP kategorisiyle listeleyen bir bulgu notu",
+    "Her sink'in kendi commit'inde düzeltildiğini gösteren Git geçmişi",
+    "En az bir sink'te birleştirme geri geldiğinde başarısız olan ve düzeltmeyle geçen, komut ve çıktısı kaydedilmiş commit edilmiş bir test",
+    "Kaynakta düzeltilmiş query veya komut inşası; statement string'ine kullanıcı girdisi interpolate edilmez",
+    "Görev sorularını yanıtlayan değerlendirme notu"
+  ],
+  "acceptanceCriteria": [
+    "Sahip olunan veya yerel uygulamada dosya ve satır veya query-builder çağrısıyla en az 2 ayrı injection sink tanımlanır.",
+    "Tanımlanan her sink, kullanıcı girdisinin bir query string, komut string veya template ifadesine birleştirilmeyeceği şekilde değiştirilir.",
+    "En az 1 sink için commit edilmiş bir test, birleştirme geri geldiğinde başarısız olur ve düzeltmeyle geçer; komut ve her iki çıktı kaydedilir.",
+    "Notlar her sink'i bir OWASP Top 10 kategorisine eşler ve kullanılan kontrolü adlandırır (parameterized query, allow-list veya eşdeğeri)."
+  ]
+}

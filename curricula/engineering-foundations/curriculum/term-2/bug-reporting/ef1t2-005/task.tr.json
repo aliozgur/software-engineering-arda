@@ -1,0 +1,17 @@
+{
+  "title": "Başkasının Yeniden Üretebileceği bir Hata Raporu Yazmak",
+  "objective": "Gerçek bir Python kusuru için, kodu görmemiş bir takım arkadaşının yalnızca rapordan yeniden üretebileceği bir hata raporu yazın ve raporlanan gerçek sonuca uyan başarısız bir otomatik durum ekleyin.",
+  "whyThisMatters": "'Çalışmıyor' bir hata raporu değildir. Numaralı adımlar, beklenen ile gerçek, ortam ve asgari başarısız girdi, bir kaydı üzerine gidilebilir kılar — ve takım arkadaşının onu size geri fırlatmasını önler.",
+  "evidence": [
+    "Ortam, numaralı adımlar, beklenen sonuç, gerçek sonuç ve asgari bir girdi veya script içeren hata-raporu Markdown dosyası",
+    "Yalnızca raporu kullanan ikinci bir denemeden (başka biri veya en az birkaç saat sonra yeni bir terminalde siz) yeniden üretim kaydı",
+    "Yazdırılan veya assert edilen gerçek sonucu, raporun gerçek-sonuç cümlesine uyan başarısız bir otomatik test veya script çıktısı",
+    "Yapay zekâ raporu veya başarısız durumu taslaklamaya yardımcı olduysa yapay zekâ kullanım beyanı"
+  ],
+  "acceptanceCriteria": [
+    "Rapor dosyası şunların hepsini içerir: ortam (işletim sistemi, Python sürümü, ilgili paket sürümleri), numaralı yeniden üretim adımları, beklenen sonuç, gerçek sonuç ve asgari bir girdi veya script.",
+    "İkinci bir yeniden üretim denemesi, yalnızca rapordan başarılı olduğu belgelenmiştir veya kayıt, başarılı olmadan önce eklenmesi gereken kesin cümleyi alıntılar.",
+    "Commit edilmiş başarısız bir test veya script, raporun gerçek-sonuç cümlesine uyan çıktı üretir.",
+    "Rapor, önerilen bir yama veya olgu gibi sunulan bir kök neden iddiası içermez — bu görev rapordur, düzeltme değil."
+  ]
+}

@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "id": "de1t1-004",
   "title": "Crash the Job Mid-Load and Recover Without Duplicates",
-  "term": "year-1/term-1",
+  "term": "year-1-term-1",
   "module": "idempotency",
   "estimatedHours": 8,
   "objective": "Make the warehouse write idempotent under retry: upsert or delete-insert by natural key, a test that fails on duplicate keys, and a mid-load crash that restarts clean.",

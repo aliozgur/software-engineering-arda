@@ -1,0 +1,17 @@
+{
+  "title": "Servis Sınırında Contract Testing",
+  "objective": "Gerçek bir servis sınırına consumer-driven contract test ekle ki kırıcı bir değişiklik paylaşılan staging ortamında değil, deploy'dan önce yakalansın.",
+  "whyThisMatters": "Servisler arası entegrasyon hataları pahalıdır çünkü iki tarafın birim testleri geçebilirken arayüz üzerinde anlaşamayabilirler. Contract test, her iki servisin birlikte çalışmasına gerek kalmadan bu anlaşmazlığı yakalar.",
+  "evidence": [
+    "Commit'lenmiş sözleşme dosyası/dosyaları veya erişilebilir bir Pact broker export'u",
+    "Sözleşme doğrulamasının geçtiğini gösteren bir commit",
+    "Kasıtlı provider kırılmasından sonra doğrulamanın düştüğünü ve düzeltmeden sonra yeniden geçtiğini gösteren commit veya log",
+    "Contract test'in, provider tarafındaki bir birim testinin yakalayamayacağını yakaladığını yanıtlayan değerlendirme notu"
+  ],
+  "acceptanceCriteria": [
+    "Commit'lenmiş sözleşme en az 4 ayrı etkileşimi kapsar; en az biri hata yanıtıdır.",
+    "Tek bir komut sözleşmeyi provider'a karşı doğrular.",
+    "Kasıtlı bir provider kırılması sözleşme doğrulamasını düşürür; başarısızlık çıktısı yakalanmıştır.",
+    "Kırılma geri alındıktan sonra doğrulama yeniden geçer; bunu takip commit'i veya log kanıtlar."
+  ]
+}

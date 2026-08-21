@@ -1,0 +1,16 @@
+{
+  "title": "Bir Akranın Pull Request'ini İncelemek",
+  "objective": "Başkasının gerçek bir pull request'ine somut, üzerine gidilebilir ve mesleki olarak nazik yazılı kod inceleme geri bildirimi verin.",
+  "whyThisMatters": "Kodu iyi incelemek, onu yazmaktan ayrı bir beceridir. Belirsiz övgü ve belirsiz eleştiri, incelenen kişinin zamanını eşit ölçüde boşa harcar. Kendinizin de almak isteyeceği geri bildirimi pratik etmek, onu almak kadar önemlidir.",
+  "evidence": [
+    "Yorumların göründüğü incelenen PR bağlantısı veya doğrudan yorum mümkün olmadıysa yazılı inceleme metni",
+    "Her yorumu tek yerde blocking, suggestion veya question olarak sınıflandıran kısa öz-inceleme notu",
+    "Yapay zekâ inceleme yorumlarını taslaklamaya yardımcı olduysa yapay zekâ kullanım beyanı"
+  ],
+  "acceptanceCriteria": [
+    "Gerçek PR'da veya yazılı bir yerine-geçende, her biri somut bir satıra veya bölüme bağlı en az 5 inceleme yorumu vardır.",
+    "Her yorum blocking, suggestion veya question olarak etiketlenmiş veya açıkça ayırt edilebilir.",
+    "En az bir yorum yalnızca stile değil, somut bir kabul ölçütüne, teste veya davranışa atıf yapar.",
+    "Hiçbir yorum, önerilen bir alternatif veya yazarın gerekçesini davet eden bir soru olmadan salt olumsuz değildir."
+  ]
+}

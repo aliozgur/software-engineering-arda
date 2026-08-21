@@ -1,0 +1,19 @@
+{
+  "title": "Sıcak yolu profillendir, tahmin etme",
+  "objective": "Profil açmadan önce şüphelenilen darboğazı kaydet; commit edilmiş profil dosyalarından en sıcak CPU ve ayırma frame'lerini adlandır ve maliyetlerini algoritmik karmaşıklığa bağla.",
+  "whyThisMatters": "Deneyimli mühendisler de zamanın nereye gittiğini yanlış tahmin eder. Yanlış fonksiyonu yeniden yazmadan önce bunu öğrenmenin en ucuz yolu profildir. Bu görev düzeltmeyi yasaklar: yalnızca teşhis; yanlış tahmin git'te durur.",
+  "evidence": [
+    "Herhangi bir profil artefaktından önce commit edilmiş, şüphelenilen sıcak fonksiyonu adlandıran profil-öncesi hipotez dosyası",
+    "Ekran görüntüsü değil dosya olarak commit edilmiş bir CPU profili (pprof, async-profiler, py-spy veya dil eşdeğeri)",
+    "Aynı iş yükü için bir ayırma veya heap profili dosyası",
+    "Profilden en sıcak frame adını kopyalayan ve örnek veya zaman payını sayı olarak yazan teşhis notu",
+    "O frame'in işini MIT 6.006 büyüme sınıfına bağlayan (ör. doğrusal tarama karşısında log n arama) ve ölçülen maliyeti yanına koyan karmaşıklık notu",
+    "Görev sorularını yanıtlayan değerlendirme notları"
+  ],
+  "acceptanceCriteria": [
+    "Hipotez dosyası ilk profil dosyasından önce commit edilmiştir ve belirli bir fonksiyon veya modül adlandırır.",
+    "CPU ve ayırma/heap profil dosyalarının ikisi de depodadır (ikili veya metin dışa aktarım); yalnızca ekran görüntüsü değildir.",
+    "Teşhis notu en sıcak CPU frame'inin sembolünü profilden göründüğü haliyle kopyalar ve payını o dosyadan yüzde veya zaman olarak yazar.",
+    "Karmaşıklık notu sıcak iş için bir büyüme sınıfı adlandırır ve ölçülen payı yanına koyar — bu görevde eniyileme gönderilmez."
+  ]
+}

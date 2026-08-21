@@ -2,32 +2,32 @@
   "schemaVersion": 1,
   "id": "relational-data",
   "title": "Relational Data",
-  "description": "Relational modelling, SQL, normalization, constraints and PostgreSQL.",
+  "description": "Can model a domain as constrained tables, write SQL that joins and aggregates at the right grain, and choose an index from a measured plan rather than a rule of thumb.",
   "levels": [
     {
       "level": 1,
       "name": "Foundation",
-      "description": "Can explain core concepts and complete guided work."
+      "description": "Can draw an ER diagram that matches a CREATE TABLE script, name the primary and foreign keys, and write a SELECT with a join — under written guidance."
     },
     {
       "level": 2,
       "name": "Apprentice",
-      "description": "Can complete scoped tasks with limited guidance and produce evidence."
+      "description": "Can design a small PostgreSQL schema whose constraints reject a deliberate invalid insert, write queries with joins, aggregation and a CTE or subquery, and explain a normalization decision against that schema."
     },
     {
       "level": 3,
       "name": "Practitioner",
-      "description": "Can independently design, implement, test and explain non-trivial work."
+      "description": "Can independently ship ordered migrations from an empty database, load sample data, interpret EXPLAIN ANALYZE for a query the API actually runs, and keep or reject an index from recorded times rather than blanket rules."
     },
     {
       "level": 4,
       "name": "Journeyman",
-      "description": "Can handle ambiguity, diagnose failures and defend trade-offs."
+      "description": "Can diagnose a constraint or query failure where the diagram looked correct, show the rejected write or the misleading plan, and defend a denormalization or isolation choice with a measured trade-off."
     },
     {
       "level": 5,
       "name": "Mastery Evidence",
-      "description": "Can teach, review and make sound decisions across unfamiliar situations."
+      "description": "Can review another apprentice's schema, name a missing constraint or a vanity index, and teach when a join-heavy relational model is the wrong store on an unfamiliar domain."
     }
   ]
 }

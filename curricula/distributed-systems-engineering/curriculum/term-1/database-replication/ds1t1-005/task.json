@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "id": "ds1t1-005",
   "title": "PostgreSQL Streaming Replication, Lag, and Dual-Primary Writes",
-  "term": "ds1t1",
+  "term": "year-1-term-1",
   "module": "database-replication",
   "estimatedHours": 22,
   "objective": "Run a primary and at least one streaming replica in Docker, measure a stale read caused by apply lag, promote the replica, and then reproduce a dual-primary write conflict unless the old primary is fenced from accepting clients.",

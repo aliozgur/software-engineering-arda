@@ -1,0 +1,18 @@
+{
+  "title": "RabbitMQ ile Asenkron İş",
+  "objective": "API'den bir domain olayı yayımlamak, ayrı bir Python sürecinde tüketmek ve at-least-once teslimat ile poison-message yolunu göstermek.",
+  "whyThisMatters": "Sonraki görevler trace, yük ve kuyruğu geçen bir bitirme yazma yolu ekler. Publish, ack ve başarısızlık şimdi belirsizse, o sonraki görevlerin dürüstçe ölçeceği bir şey kalmaz.",
+  "evidence": [
+    "Compose dosyası ile publisher/consumer Python modülleri, aşamalı commit edilmiş",
+    "HTTP yanıtının, consumer yan etkiyi bitirmeden önce döndüğünü timestamp'lerle gösteren log alıntısı",
+    "Ack edilmemiş bir mesajın consumer çöküşünden sağ çıktığını ve yeniden başlatmadan sonra işlendiğini gösteren log veya management-UI dışa aktarımı",
+    "Poison veya işlenemez bir mesajın sıkı bir döngüde yeniden denenmek yerine dead-letter edildiğini veya kayda alındığını gösteren gösterim",
+    "Ack/nack uygulanırken yazılmış, yinelenen teslimatın nasıl ele alındığını belirten bir Markdown notu"
+  ],
+  "acceptanceCriteria": [
+    "Başarılı bir domain yazımı, ayrı bir consumer sürecinin işlediği bir mesaj yayımlar.",
+    "Log'lar veya bir kayıt, aynı yazım için HTTP yanıt timestamp'inin consumer'ın bitiş timestamp'inden önce geldiğini gösterir.",
+    "Publish'ten sonra ve ack'ten önce consumer'ı öldürmek mesajı erişilebilir bırakır; yeniden başlatmadan sonra consumer onu işler (log'da gösterilir).",
+    "İşlenemez bir mesaj, kanıtsız sonsuz yeniden deneme yerine bir dead-letter queue'ya veya kayda alınmış bir başarısızlığa yönlendirilir."
+  ]
+}

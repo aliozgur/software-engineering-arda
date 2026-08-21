@@ -1,0 +1,18 @@
+{
+  "title": "Mentorun Gerçekten Onaylayacağı Bir Test Planı Yaz",
+  "objective": "Yaklaşan, ciddiyeti olan gerçek bir değişiklik için kapsam, risk, test katmanları, kalite kapıları ve bir aracı değil seni teslimata ikna edecek şeyi kapsayan bir test planı yaz ve savun.",
+  "whyThisMatters": "Bu artefakt, test yazabilen ile gerçek bir değişikliğin hangi teste ihtiyaç duyduğuna karar vermesi güvenilen kişiyi ayırır; müfredatın biriktirdiği beceri budur.",
+  "evidence": [
+    "Riskleri, katmanları, uygulanan/atlanan kapıları ve açık dışlamaları adlandıran yazılı test planı",
+    "Plandaki en yüksek riskli testleri uygulayan, geçen commit'ler",
+    "Plan incelemesinin kaydı ve bunun sonucunda neyin değiştiği",
+    "Değerlendirme notu"
+  ],
+  "acceptanceCriteria": [
+    "Plan bu belirli değişikliğe özgü riskleri adlandırır; değişiklikler arasında yeniden kullanılan genel bir kontrol listesi değildir.",
+    "Plan hangi mevcut kalite kapılarının uygulandığını ve hangilerinin açıkça atlandığını, her biri için gerekçeyle belirtir.",
+    "Açıkça dışlanan en az 2 test senaryosu, dışlama gerekçesiyle adlandırılır.",
+    "Planda adlandırılan en yüksek riskli 2-3 testin en azından uygulanmış ve geçiyor olması.",
+    "İnceleme sonucu planda yapılmış en az bir değişikliğin kaydı vardır."
+  ]
+}

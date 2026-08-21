@@ -1,0 +1,18 @@
+{
+  "title": "Hash Partition'lar, Bir Hotspot ve Bir Reshard Penceresi",
+  "objective": "Key-value store'u en az üç shard process'ine partition et, ölçülmüş istek sayılarıyla tek-partition bir hotspot göster, sonra reshard et ve bir key'in okunamadığı, çift-sahipli olduğu veya her ikisinin olduğu sınırlı bir pencere yakala.",
+  "whyThisMatters": "Partitioning olmadan replication, key uzayını hâlâ tek makine gibi ele alır. SWE müfredatı seni canlı bir key'i sahipler arasında taşımaya ve pencereyi ölçmeye hiç zorlamaz. O pencere kaydettiğin bir sayı olana kadar 'shard'ladık' bir topoloji çizimidir, bir işletme sözleşmesi değil.",
+  "evidence": [
+    "Tek-shard store, sonra statik partition map, sonra reshard'ı ayrı commit'ler olarak gösteren Git geçmişi",
+    "Seçtiğin bir hotspot key dağılımı altında bir shard'ın diğer her shard'dan en az 3x istek aldığını gösteren per-shard counter'lı load-script koşusu",
+    "Başlangıç ve bitiş timestamp'leri (veya adım numaraları) ve GET'i başarısız olan, iki sahip dönen veya pencere sırasında hem eski hem yeni değeri dönen en az bir key içeren reshard log'u",
+    "Hash/range fonksiyonunu, partition sayısını ve reshard sözleşmesini yanlışlanabilir bir kural olarak belirten README",
+    "Görev sorularını yanıtlayan değerlendirme notları"
+  ],
+  "acceptanceCriteria": [
+    "En az üç shard process'i ayrık key range'lerine veya hash bucket'larına sahiptir; GET, mutlu yolda her shard'a broadcast ederek değil partition map ile yönlendirilir.",
+    "Hotspot koşusu per-shard istek sayılarını yazdırır ve bir shard, adlandırılmış diğer herhangi bir shard'ın en az 3 katıdır.",
+    "Reshard koşusu, adlandırılmış bir key'in okunamadığı, iki sahip tarafından sunulduğu veya iki farklı değerle sunulduğu boş olmayan bir pencere (başlangıç ve bitiş) kaydeder.",
+    "README yanlışlanabilir bir reshard sözleşmesi belirtir (örneğin: 'reshard sırasında, migrate olan bir key için GET, yeni sahip key'e sahip olana ve eski sahip sunmayı bırakana kadar 503 döner'); 'resharding available'dır' değil."
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "title": "Bildirilen bir Hatayı Yöntemli Ayıklamak",
+  "objective": "Var olan kod için bir hata raporunu alın, güvenilir biçimde yeniden üretin, kök nedeni yalıtın ve düzeltin; geride yalnızca düzeltme değil, sürecin yazılı kaydı kalsın.",
+  "whyThisMatters": "Yöntemli hata ayıklamayı tahmin etmekten ayıran alışkanlık, cevabı bilmeden önce ne denediğinizi yazmaktır. Mentor, şanslı bir düzeltmeyi anlaşılmış olandan ancak o kayıt varsa ayırt edebilir.",
+  "evidence": [
+    "Önce başarısız yeniden üretim, sonra düzeltme, sonra regresyon testi gösteren, ayrı commit'ler halinde commit geçmişi",
+    "Denenen hipotezleri ve her birinin nasıl doğrulandığını veya elendiğini adlandıran hata ayıklama kaydı",
+    "Düzeltme öncesi ve sonrası test çalıştırma çıktısı",
+    "Yapay zekâ bir hipotez veya düzeltme önerdiyse yapay zekâ kullanım beyanı"
+  ],
+  "acceptanceCriteria": [
+    "Yazılı hata ayıklama kaydı, yanlış çıkanlar dahil, sırayla denenmiş en az 3 hipotezi kaydeder.",
+    "Düzeltmeden önce, bir script veya başarısız test olarak asgari, yeniden üretilebilir bir başarısız durum vardır.",
+    "Düzeltmeden sonra, daha önce başarısız olan durum geçer ve var olan testler hâlâ geçer.",
+    "Hata yeniden ortaya çıksa yine başarısız olacak yeni bir otomatik test vardır."
+  ]
+}

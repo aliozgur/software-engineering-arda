@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "id": "pd1t3-005",
   "title": "Ship a Bad Release, Observe It, Roll It Back",
-  "term": "term-3",
+  "term": "year-1-term-3",
   "module": "incident-response",
   "estimatedHours": 22,
   "competencies": [

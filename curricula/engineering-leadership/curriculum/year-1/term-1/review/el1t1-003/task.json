@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "id": "el1t1-003",
   "title": "Review Notes That Teach Without Taking the Keyboard",
-  "term": "year-1/term-1",
+  "term": "year-1-term-1",
   "module": "review",
   "estimatedHours": 8,
   "objective": "Write review comments on a given change that teach the author, label every comment blocking or advisory, and keep the patch you would have written in a separate note.",

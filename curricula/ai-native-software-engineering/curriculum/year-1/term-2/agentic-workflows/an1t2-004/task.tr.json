@@ -1,0 +1,18 @@
+{
+  "title": "Başarısız veya Sapmış bir Agentic Oturumu Teşhis Etmek",
+  "objective": "Asistanın sapma ihtimali yüksek olacak kadar açık uçlu bir görevde daha uzun bir agentic oturum çalıştırın; sapmayı teşhis edin, istenmeyen kısmı version control ile geri alın ve başarılı olan daha dar bir takip oturumunu yeniden kapsamlandırın.",
+  "whyThisMatters": "Uzun, daha az denetimli oturumlar er geç yoldan çıkar. İyi kısmı kaybetmeden güvenle kurtarmak, oturumu ilk denemede doğru yapmaktan ayrı bir beceridir.",
+  "evidence": [
+    "Orijinal açık uçlu prompt ve oturumun gerçekte ne yaptığının kaydı veya transkript özeti",
+    "Oturumun amaçlanan kapsamdan nerede saptığının somut betimlemesi (ilgisiz bir dosyanın düzenlenmesi, uydurulmuş bir API veya istenenden fazla iş)",
+    "İstenmeyen kısmın ayrılıp revert edildiğini veya atıldığını, kullanılabilir kısmın korunduğunu gösteren Git geçmişi",
+    "Daha dar takip prompt'u ve kapsamda kaldığına ile doğrulamayı geçtiğine dair kanıt",
+    "Kullanılan araç/modeli, amacı ve bağımsız olarak doğrulananı adlandıran yapay zekâ kullanım beyanı"
+  ],
+  "acceptanceCriteria": [
+    "Sapma betimlemesi, orijinal niyetin dışında kalan somut bir dosya, karar veya davranışı adlandırır; genel bir şikayet değildir.",
+    "Git geçmişi, istenmeyen kısma yalıtılmış bir revert, reset veya atma işlemi gösterir; korunan işten ayırt edilebilir.",
+    "Takip oturumunun diff'i, kendi daha dar prompt'unda belirtilen sınırların içinde kalır.",
+    "Takip değişikliği, kanıtta gösterilen bir doğrulama adımını geçer."
+  ]
+}

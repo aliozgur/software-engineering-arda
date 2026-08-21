@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "id": "as1t1-001",
   "title": "Threat-Model a System You Own",
-  "term": "year-1/term-1",
+  "term": "year-1-term-1",
   "module": "threat-modelling",
   "estimatedHours": 10,
   "objective": "Produce a living threat model for an HTTP application you own or operate locally: data-flow diagram, data classification, abuse cases, and a residual-risk register mapped to the OWASP Top 10.",

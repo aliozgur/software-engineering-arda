@@ -1,0 +1,18 @@
+{
+  "title": "Sorguyu folklor indeksiyle değil planla ayarla",
+  "objective": "Planların ayrışacağı kadar büyük bir veri kümesi yükle; değişiklikten önce ve sonra gerçek süre ve tamponlarla EXPLAIN ANALYZE yakala; işe yarayan bir indeksi tut, yaramayanı reddet.",
+  "whyThisMatters": "Yazılım mühendisliği yolundaki 1. yıl PostgreSQL işi EXPLAIN yorumlatır. Bu görev gerçek süre, tampon sayıları ve sayılı reddedilmiş bir indeks ister. 'Sorgu indeks kullanıyor' ile 'sorgu hızlı' aynı şey değildir.",
+  "evidence": [
+    "Yüklenen satır sayısını yazan not (en az 100.000 satır veya mentorun onayladığı eşdeğer)",
+    "Herhangi bir indeks değişikliğinden önce hedef sorgunun EXPLAIN ANALYZE metni; gerçek süre ve en az bir tampon istatistiği",
+    "Tutulan indeksten sonra EXPLAIN ANALYZE metni; gerçek süre ve aynı tampon istatistiği",
+    "Gerçek süreyi en az %20 kısaltmayan ikinci bir indeksin (veya farklı indeksli aynı sorgunun) EXPLAIN ANALYZE metni; her iki gerçek süre alıntılanmış",
+    "Görev sorularını yanıtlayan değerlendirme notları"
+  ],
+  "acceptanceCriteria": [
+    "Veri kümesi notu en az 100.000 satır yazar veya mentorun yazdığı istisna, daha küçük kümenin planı neden hâlâ değiştirdiğini adlandırır.",
+    "Önce ve sonra EXPLAIN ANALYZE çıktıları metin olarak commit edilmiştir; her biri gerçek toplam süre ile shared hits veya shared reads alıntılar.",
+    "Tutulan indeks, sonraki gerçek süresi önceki gerçek süreden düşük olandır; her iki süre planlardan alıntılanır.",
+    "İkinci bir indeks, %20'den az iyileşme veya gerileme gösteren önce/sonra gerçek sürelerle belgelenir ve önerilen varsayılan değildir."
+  ]
+}

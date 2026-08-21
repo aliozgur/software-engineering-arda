@@ -1,0 +1,19 @@
+{
+  "title": "Kaliteyi Bozan Batch'te Fail-Closed Kal",
+  "objective": "Staging ile tüketicinin gördüğü yayın arasına kalite kontrolleri koy ki kötü bir batch warehouse'u last-good'da bıraksın, reddi karantinaya alsın ve başarısız kontrolü bir run_id altında günlüğe yazsın.",
+  "whyThisMatters": "Kısmi veya geçersiz veriyi yayınlayıp 'sonra düzeltiriz' diyen pipeline, tüketicilere warehouse'a güvenmemeyi öğretir. Fail-closed: last-good sorgulanabilir kalır, red incelenebilir, sonraki iyi batch yayınlanabilir.",
+  "evidence": [
+    "Kontrol tanımları (tazelik, hacim bandı, null oranı veya beklenmeyen değerler) kodda veya config'de",
+    "Başarısız bir batch çevresinde tüketicinin gördüğü tabloya ait önce ve sonra sorguları",
+    "run_id ve kontrol adını içeren, başarısız kontrol için yapılandırılmış bir log satırı",
+    "Reddedilen satırları veya reddedilen batch id'sini gerekçeyle gösteren karantina tablosu veya dosyası",
+    "Sonraki iyi batch'in hatadan sonra yayınlandığını kanıtlayan yakalanmış sayılar",
+    "Görev sorularını yanıtlayan değerlendirme notları"
+  ],
+  "acceptanceCriteria": [
+    "Adlandırılmış bir kontrolü bozan batch, tüketicinin gördüğü warehouse tablosunun satır sayısını veya max(updated_at) değerini değiştirmez; bu yakalanmış önce/sonra sorgularıyla gösterilir.",
+    "Başarısız kontrol adı ve bir run_id, JSON veya belgelenmiş key=value biçiminde ayrışan yapılandırılmış bir log satırında görünür.",
+    "Reddedilen satırlar veya reddedilen batch id, gerekçe sütunu veya alanı dolu bir karantina tablosu veya dosyasında durur.",
+    "Başarısız batch'ten sonra gelen iyi batch başarıyla yayınlanır; yakalanmış sayılar yalnızca iyi çalıştırmada değişir."
+  ]
+}

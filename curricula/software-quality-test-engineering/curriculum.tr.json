@@ -1,0 +1,11 @@
+{
+  "name": "apprenti.dev Yazılım Kalitesi ve Test Mühendisliği",
+  "audience": "Sağlam kod yazabilen, test ve kalite mühendisliğine uzmanlaşan geliştiriciler veya QA profesyonelleri",
+  "philosophy": "Kanıta dayalı test mühendisliği: testleri gerçek riske bağla, kaliteyi vekil ölçülerle değil doğrudan ölç ve pipeline'a eklediğin her kapıyı savun.",
+  "aiPrinciples": [
+    "Yapay zekâ yardımı maddi olarak kullanıldığında açıklanmalıdır.",
+    "Görevler açıklamalara, ipuçlarına, quizlere ve koçluğa izin verirken çözüm üretmeyi kısıtlayabilir.",
+    "Çırak gönderdiği her testten, kalite kapısından ve rapordan sorumlu olmaya devam eder.",
+    "Mentor onayı yalnızca yeşil bir pipeline'a değil, sergilenen teşhis ve tasarım becerisine dayanır."
+  ]
+}

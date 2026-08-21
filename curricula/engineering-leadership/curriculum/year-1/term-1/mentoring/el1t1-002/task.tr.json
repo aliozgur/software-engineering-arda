@@ -1,0 +1,15 @@
+{
+  "title": "Gündem ve Takip Bırakan Bir 1:1 Yürütün",
+  "objective": "Adlandırılmış bir kişi için zamanlanmış bir 1:1 gündemi ve yazılı bir takip üretin; bir gelişim konusu, bir zor konu ve lead'in de sahip olduğu eylemler içersin.",
+  "whyThisMatters": "Yalnızca 'oldu' denilen bir 1:1, mentorun inceleyebileceği mentorluk değildir. Gündem, olguyu yorumdan ayıran notlar ve sahip ile tarihli takip işin kendisidir.",
+  "evidence": [
+    "Konu süreleri belirtilen uzunluğa toplanan, bir gelişim konusu ve bir zor konu içeren 30 veya 45 dakikalık bir 1:1 için zamanlanmış gündem",
+    "En az bir cümleyi gözlemlenen olgu, en az bir cümleyi yorum olarak işaretleyen toplantı notları",
+    "En az iki eylemi listeleyen, her birinde sahip ve tarih olan, en az bir eylemin lead'e ait olduğu bir takip notu"
+  ],
+  "acceptanceCriteria": [
+    "Gündem, dakikaları belirtilen 30 veya 45 dakikalık uzunluğa toplanan zamanlanmış konular listeler ve hem bir gelişim konusu hem bir zor konu içerir.",
+    "Notlar en az bir cümleyi açıkça olgu, en az bir cümleyi yorum olarak etiketler.",
+    "Takip, sahip ve tarihli en az iki eylem listeler ve en az bir eylem lead'e atanır."
+  ]
+}

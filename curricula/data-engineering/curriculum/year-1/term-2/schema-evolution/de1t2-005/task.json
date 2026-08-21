@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "id": "de1t2-005",
   "title": "Evolve a Schema Without Breaking Yesterday's Consumer",
-  "term": "year-1/term-2",
+  "term": "year-1-term-2",
   "module": "schema-evolution",
   "estimatedHours": 8,
   "objective": "Ship an additive optional field that the old consumer still processes, then a breaking change that is detected instead of corrupting the warehouse, with a contract changelog for both.",

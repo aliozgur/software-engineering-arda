@@ -1,0 +1,18 @@
+{
+  "title": "RabbitMQ Ack Pencereleri, Broker Restart ve Bir Poison Message",
+  "objective": "Durable queue'larla RabbitMQ çalıştır ve dört adlandırılmış arıza noktasını karşılaştır — ack öncesi crash, side-effect sonrası crash, unacked bir mesaj varken broker restart ve hiç başarılı olmayan bir poison message — sonra her satırın gerçek teslimat garantisini ds1t2-002 / ds1t2-003'teki Kafka offset-commit penceresine karşı belirten bir tablo yaz.",
+  "whyThisMatters": "SWE RabbitMQ görevi retry, DLQ ve idempotent consumer ister. Bu, güvenilirliğin mutlu yoludur. Bu görev ack'i side-effect'e ve broker restart'a karşı zamanlar, sonra Kafka'nın offset commit'ini yanına koyar; böylece 'at-least-once' her iki broker'ın paylaştığı bir slogan değil, ölçtüğün pencereler kümesidir.",
+  "evidence": [
+    "RabbitMQ için Compose (veya eşdeğer) ve dört arıza koşusundan önce durable topolojiyi gösteren Git geçmişi",
+    "Dört satırlı sonuç tablosu (Markdown veya CSV): crash-before-ack, crash-after-side-effect, broker-restart-unacked, poison — her birinde tahmin edilen sonuç, gerçek sonuç ve domain etkisinin 0, 1 veya N kez çalışıp çalışmadığı",
+    "Yapılandırdığın sınırlı retry sayısından sonra mesajın dead-letter queue'da olduğunu gösteren poison yolu için yakalanmış broker/consumer log'ları",
+    "Prefetch, ack modu, retry limiti ve gerçek garantiyi (asla 'exactly-once' değil) belirten README",
+    "Görev sorularını yanıtlayan değerlendirme notları"
+  ],
+  "acceptanceCriteria": [
+    "Dört arıza sınıfının tümü durable bir queue ve durable publish edilmiş bir mesaja karşı çalıştırılır; tabloda karşılık gelen koşudan önce commit edilmiş veya zaman damgalı bir predicted sütunu vardır.",
+    "Crash-after-side-effect, bir idempotency key ikinci apply'ı bastırmadıkça domain etkisinin birden fazla kez olduğunu gösterir — ve tablo bunlardan hangisini uyguladığını söyler.",
+    "Poison message, yapılandırılmış retry sayısından sonra incelenebilir bir dead-letter queue'da görünür ve o sayı README'de ve broker policy veya uygulama retry döngüsünde bir sayıdır.",
+    "README dört satırın her birini eşdeğer Kafka arızasıyla (side-effect'ten önce vs sonra offset commit, uncommitted produce kaybı) satır başına bir cümlede karşılaştırır — marka tercihi değil."
+  ]
+}

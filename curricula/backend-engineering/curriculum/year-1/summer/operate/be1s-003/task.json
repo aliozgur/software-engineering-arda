@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "id": "be1s-003",
   "title": "Operate Under an SLO with a Full Container Stack",
-  "term": "year-1/summer",
+  "term": "year-1-summer",
   "module": "operate",
   "estimatedHours": 18,
   "objective": "Run the full stack from compose, measure the SLO signals, inject a fault that those signals show, and leave a runbook a teammate could follow.",

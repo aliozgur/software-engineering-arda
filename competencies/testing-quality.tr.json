@@ -1,30 +1,30 @@
 {
-  "title": "Kaliteyi Test Etme",
-  "description": "Birim/entegrasyon/sistem testi, test tasarımı, statik analiz ve kod kalitesi.",
+  "title": "Test ve Kalite",
+  "description": "Gerçek bir riskte kırmızıya düşen, amaçlanan davranışta yeşil kalan testler ve kalite kapıları tasarlayabilir — verilen bir kaçağı hangi katmanın yakalayacağını seçebilir.",
   "levels": [
     {
       "name": "Temel",
-      "description": "Temel kavramları açıklayabilir ve rehberli çalışmaları tamamlayabilir.",
+      "description": "Yazılı rehberlik altında mevcut davranışı sabitleyen — bir uç durum ve geçersiz bir girdi dahil — karakterizasyon testleri ekleyebilir ve kodu değiştirmeden şaşırtıcı bir sonucu adlandırabilir.",
       "level": 1
     },
     {
       "name": "Çırak",
-      "description": "Kapsamı belirlenmiş görevleri sınırlı yönlendirmeyle tamamlayabilir ve kanıt üretebilir.",
+      "description": "Yeniden üretilmiş bir hataya başarısız bir otomatik vaka bağlayabilir, hata geri gelirse başarısız olacak bir gerileme testi ekleyebilir ve test takımını belgelenmiş tek bir komutla çalıştırabilir.",
       "level": 2
     },
     {
       "name": "Uygulayıcı",
-      "description": "Kayda değer bir çalışmayı bağımsız olarak tasarlayabilir, uygulayabilir, test edebilir ve açıklayabilir.",
+      "description": "Riski katmana bağlayan bir test stratejisini bağımsız olarak yazabilir, birden fazla katmanda test uygulayabilir ve yalnızca o katmanın yakalayacağı bilinçli bir başarısızlığı gösterebilir.",
       "level": 3
     },
     {
       "name": "Kalfa",
-      "description": "Belirsizlikle başa çıkabilir, hataları teşhis edebilir ve ödünleşimleri gerekçelendirebilir.",
+      "description": "Kararsız, zayıf iddialı veya sözleşmeyi bozan bir test takımını teşhis edebilir, belirsizliği veya hayatta kalan mutantı adlandırabilir ve yalnızca yeniden çalıştırarak veya kapsam yüzdesini yükselterek değil, nedeni düzeltebilir.",
       "level": 4
     },
     {
       "name": "Ustalık Kanıtı",
-      "description": "Alışılmadık durumlarda öğretebilir, değerlendirme yapabilir ve sağlam kararlar verebilir.",
+      "description": "Başka bir çırağın test takımını veya kalite kapısını değerlendirebilir; zahmet veya gösteriş olan bir testi adlandırabilir; kendisinin yazmadığı bir sistemde bir birim testinin neden yanlış katman olduğunu öğretebilir.",
       "level": 5
     }
   ]

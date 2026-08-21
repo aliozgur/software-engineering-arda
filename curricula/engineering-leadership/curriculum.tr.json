@@ -1,0 +1,11 @@
+{
+  "name": "apprenti.dev Mühendislik Liderliği",
+  "audience": "Mentorluk, yetki devri ve ekipler arası teknik kararlar üstlenen kıdemli mühendisler ve tech lead'ler; güçlü uygulama becerisinin zaten var olduğu varsayılır",
+  "philosophy": "Liderlik incelenebilir bir iştir. Brief'i yazın, 1:1'i yürütün, kararı kaydedin, artefaktı gösterin. LEARN BY DOING. GROW THROUGH MENTORSHIP.",
+  "aiPrinciples": [
+    "Yapay zekâ yardımı maddi olarak kullanıldığında açıklanmalıdır.",
+    "Yapay zekâ açıklayabilir, ipucu verebilir ve quiz sorabilir; görevin çırağa üretmesini istediği brief'leri, gündemleri, ADR'leri, inceleme notlarını, incident iletişimini veya strateji notlarını yazmaz.",
+    "Çırak her öneriden ve her adlandırılmış ödünleşimden sorumlu olmaya devam eder.",
+    "Mentor onayı parlaklığa değil, çırağın artefaktı değişen bir kısıt altında savunabilmesine dayanır."
+  ]
+}

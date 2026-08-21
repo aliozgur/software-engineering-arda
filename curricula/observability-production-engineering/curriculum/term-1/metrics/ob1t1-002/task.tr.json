@@ -1,0 +1,18 @@
+{
+  "title": "İşine yarayan ölçümler: RED panolar, gösteriş sayıları değil",
+  "objective": "Bir servisi gerekçeli, küçük bir RED ölçüm kümesiyle (rate, errors, duration) enstrümante et ve sağlıklı durumu sağlıksızdan görünür ayıran sabit bir panoda birleştir.",
+  "whyThisMatters": "Kimsenin kasten seçmediği sayılarla dolu pano gürültüdür. Ölçümler, her biri belirli bir işletim sorusunu yanıtlıyorsa enstrümantasyon maliyetini hak eder — bu görevin kurduğu disiplin, ölçümleri kasten seçmek (ve reddetmek)tir.",
+  "evidence": [
+    "Reddedilen gösteriş-ölçümü adayını da içeren ölçüm gerekçe notu",
+    "Ölçüm uç noktasını doğrulayan promtool veya scrape çıktısı",
+    "Sağlıklı ve kasten bozulmuş durumlar altında yakalanmış çıktılı dört PromQL sorgusu",
+    "Bir pano tanım dosyası veya dışa aktarımı",
+    "Görev sorularını yanıtlayan değerlendirme notları"
+  ],
+  "acceptanceCriteria": [
+    "Prometheus (veya promtool check) açık ölçüm uç noktasını hatasız doğrular.",
+    "Gecikme ölçümü bir histogram veya summary'dir ve yakalanan sorgular p95 ile p99 içerir — tek ortalama değil.",
+    "Açılan en fazla altı ölçümün her birinin, adlandırılmış bir işletim sorusuna bağlayan bir cümlelik gerekçesi vardır.",
+    "Pano/sorgu kümesi, sağlıklı yakalama ile kasten bozulmuş yakalama arasında görünür farklı bir sonuç gösterir."
+  ]
+}

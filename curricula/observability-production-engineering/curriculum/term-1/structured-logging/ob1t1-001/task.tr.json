@@ -1,0 +1,18 @@
+{
+  "title": "Gerçekten sorgulanabilir yapılandırılmış günlük",
+  "objective": "Gerçek bir istek yolu için correlation id'li bir yapılandırılmış günlük şeması tasarla ve belirli işletim sorularını yanıtladığını kanıtla.",
+  "whyThisMatters": "Yapısız, tutarsız günlük satırları ölçekte okunamaz. Correlation id'li tanımlanmış bir şema, bu dönemdeki her şeyin (panolar, izler, alarmlar) üzerine kurulduğu temeldir.",
+  "evidence": [
+    "Her alanı ve anlamını adlandıran bir günlük şeması notu",
+    "Bir istek için tam correlation-id zincirini gösteren günlük alıntısı",
+    "Adlandırılmış üç işletim sorgusu ve yakalanmış çıktıları",
+    "Önce/sonra örnek satırlı yazılı bir redaksiyon kuralı",
+    "Görev sorularını yanıtlayan değerlendirme notları"
+  ],
+  "acceptanceCriteria": [
+    "Gösterilen istek yolundaki her günlük satırı geçerli yapılandırılmış veri olarak ayrışır (JSON veya belgelenmiş key=value biçimi).",
+    "Bir isteğin tüm günlük satırları aynı correlation id değerini paylaşır; en az üç satırda gösterilir.",
+    "Adlandırılmış üç işletim sorusunun her birinin karşılık gelen bir sorgusu ve yakalanmış çıktısı vardır.",
+    "Gönderilen günlük örneğinde hiçbir satır ham parola, API anahtarı, token veya kişisel sır değeri içermez."
+  ]
+}

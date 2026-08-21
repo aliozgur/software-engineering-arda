@@ -2,32 +2,32 @@
   "schemaVersion": 1,
   "id": "engineering-tooling",
   "title": "Engineering Tooling",
-  "description": "Command line, development environment, debugging, profiling and developer workflow.",
+  "description": "Can build a reproducible workstation and diagnose a stuck process or failing run from the terminal — and can choose which tool would answer a stated workflow question.",
   "levels": [
     {
       "level": 1,
       "name": "Foundation",
-      "description": "Can explain core concepts and complete guided work."
+      "description": "Can install a documented toolchain, rebuild git, the language runtime and the editor from their own notes in a new terminal, and run ten distinct shell commands without a GUI — under written guidance."
     },
     {
       "level": 2,
       "name": "Apprentice",
-      "description": "Can complete scoped tasks with limited guidance and produce evidence."
+      "description": "Can search an unfamiliar tree from the terminal, produce a map that cites the commands used, and leave a debug log of at least three hypotheses tried in order, including ones that were wrong."
     },
     {
       "level": 3,
       "name": "Practitioner",
-      "description": "Can independently design, implement, test and explain non-trivial work."
+      "description": "Can independently turn a reported defect into a failing reproduction, a fix and a regression test as separate commits, using the debugger or a recorded command log rather than guessing."
     },
     {
       "level": 4,
       "name": "Journeyman",
-      "description": "Can handle ambiguity, diagnose failures and defend trade-offs."
+      "description": "Can diagnose a failure whose cause is the environment or the toolchain — a PATH, permission, hung process or a profiled hotspot — and name the inspectable evidence that ruled the application code in or out."
     },
     {
       "level": 5,
       "name": "Mastery Evidence",
-      "description": "Can teach, review and make sound decisions across unfamiliar situations."
+      "description": "Can review another apprentice's setup notes or debug log, name a missing reproduction step or a committed secret, and teach which tool to reach for first on a machine they did not set up."
     }
   ]
 }

@@ -1,0 +1,17 @@
+{
+  "title": "Üretim Test Sinyali Olarak Sentetik Check Donat",
+  "objective": "Gerçek bir kullanıcı akışını sürekli çalıştıran ve sonucunu bir dashboard veya alarmın kullanabileceği bir metrik olarak açan sentetik/canary check ekle.",
+  "whyThisMatters": "Deploy öncesi testler davranışı yalnızca bir anda kanıtlar. Sentetik check, deploy'dan sonra da çalışan bir testtir; yalnızca gerçek altyapı, yapılandırma veya bağımlılık koşullarında görünen hataları yakalar.",
+  "evidence": [
+    "Commit'lenmiş sentetik check script'i veya iş yapılandırması",
+    "Metrik tanımı ve kasıtlı hata ile kurtarma sırasında bunu gösteren sorgu/ekran görüntüsü",
+    "Runbook girişi",
+    "Değerlendirme notu"
+  ],
+  "acceptanceCriteria": [
+    "Sentetik check yalnızca health/ping uç noktası değil, gerçek bir uçtan uca akışı çalıştırır.",
+    "Check'in sonucu, kaydedilmiş scrape/push aralığı olan sorgulanabilir bir metrik olarak açılır.",
+    "Kasıtlı bir hata metrikte bir check aralığı içinde yansır ve düzeltmeden sonra kurtulduğu gösterilir.",
+    "Runbook girişi belirli bir alarm eşiği ve ilk teşhis adımını belirtir."
+  ]
+}

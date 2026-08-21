@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "id": "ob1t1-008",
   "title": "Diagnose With Logs, Metrics, and Traces Together",
-  "term": "term-1",
+  "term": "year-1-term-1",
   "module": "diagnosis",
   "estimatedHours": 10,
   "objective": "Induce a failure that one signal type alone would mis-attribute, write a diagnosis that cites logs, metrics and traces together, and leave a runbook another on-call can follow without opening application source.",

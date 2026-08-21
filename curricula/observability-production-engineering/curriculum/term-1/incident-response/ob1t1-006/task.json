@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "id": "ob1t1-006",
   "title": "Respond to a Simulated Incident Before You Finish Root Cause",
-  "term": "term-1",
+  "term": "year-1-term-1",
   "module": "incident-response",
   "estimatedHours": 10,
   "objective": "Detect, mitigate, and timeline a randomly selected injected failure using only alerts, logs, metrics and traces — restore the user-visible symptom before writing the root-cause line.",

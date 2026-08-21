@@ -1,0 +1,17 @@
+{
+  "title": "Stack'i Modüllere Ayır ve Bir Planı Gözden Geçir",
+  "evidence": [
+    "İki adlandırılmış instance veya ortamda kullanılan en az bir child module'ü çağıran commit edilmiş root module",
+    "tofu validate çıktısı ve sonradan apply ile eşleşen belgelenmiş bir değişiklik için kaydedilmiş tofu plan",
+    "Child module'ü düzenlemeden ortam başına farkları taşıyan tfvars veya eşdeğer dosyalar",
+    "Input'ları, output'ları ve module'ün yapmasına izin verilmeyen bir şeyi listeleyen MODULE.md",
+    "Görev sorularını yanıtlayan değerlendirme notları",
+    "Yapay zekâ çalışmayı önemli ölçüde etkilediyse yapay zekâ kullanım beyanı"
+  ],
+  "acceptanceCriteria": [
+    "Root module, iki adlandırılmış instance veya ortamda apply edilen en az bir child module çağırır (örneğin iki namespace veya iki Compose projesi).",
+    "tofu validate temiz bir checkout'tan başarılı olur.",
+    "Belgelenmiş bir değişiklik için kaydedilmiş tofu plan eklenir ve sonraki apply o planla eşleşir (ekstra destroy veya create yok).",
+    "Ortam başına değişen değerler child module düzenlemelerinde değil, tfvars veya eşdeğerinde yaşar. MODULE.md input'ları, output'ları ve açık bir non-goal'ü listeler."
+  ]
+}

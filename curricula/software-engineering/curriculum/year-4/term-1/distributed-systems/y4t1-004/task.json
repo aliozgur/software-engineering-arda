@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "id": "y4t1-004",
   "title": "Idempotency, Sagas and Distributed Workflows",
-  "term": "year-4/term-1",
+  "term": "year-4-term-1",
   "module": "distributed-systems",
   "estimatedHours": 18,
   "competencies": [

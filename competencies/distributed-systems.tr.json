@@ -1,30 +1,30 @@
 {
   "title": "Dağıtık Sistemler",
-  "description": "Çoğaltma, fikir birliği kavramları, hata toleransı, tutarlılık ve dağıtılmış akıl yürütme.",
+  "description": "Ağın bozulduğu yerde çoğaltma, tutarlılık ve hata toleransı üzerine muhakeme edebilir — belirtilen bir anomalinin isteğe bağlı olarak belirmesini ve kaybolmasını sağlayabilir.",
   "levels": [
     {
       "name": "Temel",
-      "description": "Temel kavramları açıklayabilir ve rehberli çalışmaları tamamlayabilir.",
+      "description": "Yazılı rehberlik altında leader ve follower'ı ayrı process'ler olarak çalıştırabilir, leader-only ack'in neyi garanti ettiğini belirtebilir ve verilen bir okuma kipinin consistency model'ini adlandırabilir.",
       "level": 1
     },
     {
       "name": "Çırak",
-      "description": "Kapsamı belirlenmiş görevleri sınırlı yönlendirmeyle tamamlayabilir ve kanıt üretebilir.",
+      "description": "Gevşek kipte stale bir okumayı ve sıkı kipte yokluğunu yeniden üretebilir, acknowledgment kuralını yazabilir (leader-only versus quorum) ve hata varsayımlarını açık tutabilir — 'ağ güvenilirdir' yok.",
       "level": 2
     },
     {
       "name": "Uygulayıcı",
-      "description": "Kayda değer bir çalışmayı bağımsız olarak tasarlayabilir, uygulayabilir, test edebilir ve açıklayabilir.",
+      "description": "Quorum yazıları ve bir epoch veya fencing token'ı bağımsız olarak ekleyebilir, fencing'in sonra reddettiği bir split-brain üzerine yazmayı script'leyebilir ve W + R > N olacak şekilde N, W ve R'yi belirtebilir.",
       "level": 3
     },
     {
       "name": "Kalfa",
-      "description": "Belirsizlikle başa çıkabilir, hataları teşhis edebilir ve ödünleşimleri gerekçelendirebilir.",
+      "description": "İki-leader gözlemini bir safety ihlali veya stale bir term olarak teşhis edebilir; retry edilebilir bir workflow'da idempotency ve compensation sınırlarını belgeler; başka bir mühendisin makale açmadan çalıştırabileceği bir failure-test paketi üretebilir.",
       "level": 4
     },
     {
       "name": "Ustalık Kanıtı",
-      "description": "Alışılmadık durumlarda öğretebilir, değerlendirme yapabilir ve sağlam kararlar verebilir.",
+      "description": "Başka bir çırağın replica veya saga'sını değerlendirebilir; çoğunluk uygulamadan önce ack edilen bir yazıyı (veya duplicate semantiği olmayan bir retry'ı) adlandırabilir; tanıdık olmayan bir store'da quorum okumaya mı yoksa leader-only okumaya mı güvenileceğini öğretebilir.",
       "level": 5
     }
   ]

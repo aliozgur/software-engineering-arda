@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "id": "os1t1-001",
   "title": "Map a Real Project's Contribution Surface",
-  "term": "year-1/term-1",
+  "term": "year-1-term-1",
   "module": "contribution-surface",
   "estimatedHours": 6,
   "objective": "Select one active public repository and produce a written contribution-surface map a mentor can open: license, contribution path, build proof, and annotated recent issues or pull requests.",

@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "id": "de1t2-003",
   "title": "Consume a Stream Without Losing or Double-Writing",
-  "term": "year-1/term-2",
+  "term": "year-1-term-2",
   "module": "streaming",
   "estimatedHours": 10,
   "objective": "Consume at-least-once events into an idempotent warehouse sink, commit the offset or ack only after a successful write, and prove crash-before-ack plus replay do not grow the event_id set.",

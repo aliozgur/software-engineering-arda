@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "id": "ef1t1-005",
   "title": "Debug a Reported Bug Methodically",
-  "term": "term-1",
+  "term": "year-1-term-1",
   "module": "debugging",
   "estimatedHours": 6,
   "objective": "Take a bug report for existing code, reproduce it reliably, isolate the root cause, and fix it, leaving a written record of the process rather than just the fix.",

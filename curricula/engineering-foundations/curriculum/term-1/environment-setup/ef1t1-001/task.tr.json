@@ -1,0 +1,17 @@
+{
+  "title": "Profesyonel bir Geliştirme Ortamı Kurmak",
+  "objective": "Yalnızca kendi notlarınızdan yeniden kurabileceğiniz, yeniden üretilebilir ve version control altında bir geliştirme ortamına (shell, editör, Git kimliği, Python araç zinciri) sahip olun.",
+  "whyThisMatters": "Bu müfredattaki sonraki her görev, bir terminalde gezinebildiğinizi, dosyaları Git ile yönetebildiğinizi ve kendi makinenizle savaşmadan Python çalıştırabildiğinizi varsayar. Bu sürtünmeyi ilk günden bilinçli olarak kaldırmak, gerçek iş zamanını sonradan kurulum sorunlarına kaptırmaktan korur.",
+  "evidence": [
+    "Kurulum notlarını içeren bir Git deposu; notların sonradan yazılmadığını, zaman içinde biriktiğini gösteren birden fazla commit",
+    "Kurulum notları dosyasının kendisi: her aracı, tam kurulum komutunu ve neden gerektiğine dair bir satırı adlandırır",
+    "En az 10 ayrı shell komutunun çalıştırıldığını ve çıktısını gösteren bir terminal transkripti veya kaydı",
+    "Yapay zekâ kurulumun herhangi bir kısmını yazmaya veya ayıklamaya yardımcı olduysa yapay zekâ kullanım beyanı"
+  ],
+  "acceptanceCriteria": [
+    "Kurulum notları dosyası, kurulan her aracı ve kurmak için kullanılan tam komutu veya adımları listeler.",
+    "Belgelenen adımları yepyeni bir terminal oturumundan izlemek, belgelenmemiş adım olmadan çalışan bir git, python3 ve editör çağrısı üretir.",
+    "Notlarda en az 10 ayrı shell komutu kullanılır ve açıklanır; dolaşım, yönlendirme, ortam değişkenleri, izinler veya süreç incelemesini kapsar.",
+    "Commit edilmiş hiçbir dosyada API anahtarı, token veya parola görünmez."
+  ]
+}

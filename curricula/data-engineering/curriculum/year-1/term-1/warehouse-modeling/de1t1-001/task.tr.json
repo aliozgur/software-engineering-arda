@@ -1,0 +1,18 @@
+{
+  "title": "Modellemeden Önce Operasyonel Veriyi Staging'e Al",
+  "objective": "Kaynak tane düzeyini koruyan bir staging şeması ve açık tane düzeyi, anahtarlar ve bir yavaş değişen öznitelik kararı içeren bir warehouse şeması tasarla — işi bir analitik rapora çevirmeden.",
+  "whyThisMatters": "Doğrudan 'temiz' tabloya yazan bir pipeline kaynağı gizler. Staging denetim izidir; warehouse sözleşmeli şekildir. Bu ayrımı yanlış kurmak, sessiz yeniden yazımların ve yeniden oynatılamayan yüklemelerin başlangıcıdır.",
+  "evidence": [
+    "Her kaynak alanını kapsayan kaynak-hedef eşlemesi",
+    "Staging ve warehouse şemalarını ve tablolarını oluşturan commit'lenmiş SQL DDL",
+    "Reddedilen seçimde yanlış sonuç döndürecek bir sorguyu içeren SCD karar notu",
+    "Oluşturulan şema ve tabloların yakalanmış listesi",
+    "Görev sorularını yanıtlayan değerlendirme notları"
+  ],
+  "acceptanceCriteria": [
+    "Kaynak-hedef eşlemesi her kaynak alanını ya adlandırılmış bir staging sütununa indirilmiş ya da tek satırlık gerekçeyle açıkça düşürülmüş olarak listeler.",
+    "Warehouse fact veya birincil tablosundaki bir yorum ya da not, tane düzeyini tek cümlede belirtir.",
+    "Değişen bir öznitelik için yazılı SCD type-1 ile type-2 kararı ve reddedilen seçimde yanlış cevap döndüren bir örnek sorgu vardır.",
+    "staging ve warehouse adlı PostgreSQL şemaları vardır ve yakalanmış bir \\d veya information_schema listesi her birinde en az bir tablo gösterir."
+  ]
+}

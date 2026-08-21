@@ -1,0 +1,18 @@
+{
+  "title": "Gerçekten yakabileceğin SLO ve hata bütçeleri",
+  "objective": "Mevcut ölçümlerden iki SLI türet, her biri için zaman pencereli bir SLO yayımla ve kasten bozulmuş bir arızadan sonra kalan hata bütçesinin küçüldüğünü göster.",
+  "whyThisMatters": "Hiç hesaplanmayan SLO bir dilektir. Hata bütçeleri güvenilirliği harcayabileceğin veya savunabileceğin bir sayıya çevirir — 'düşmüş gibi geldi' ile ürüne götürebileceğin bir karar arasındaki fark.",
+  "evidence": [
+    "SLI formülleri, hedefler, pencereler ve her hedef için kaynaklı gerekçe içeren bir SLO belgesi",
+    "Her SLI'yı ve kalan hata bütçesini hesaplamakta kullanılan PromQL (veya eşdeğeri)",
+    "Sağlıklı tabanda yakalanmış SLI ve kalan-bütçe çıktısı, sayısal kalan bütçeyle",
+    "Kasten bozulmuş arızadan sonra yakalanmış SLI ve kalan-bütçe çıktısı; kesin olarak daha küçük kalan bütçe gösteren",
+    "Görev sorularını yanıtlayan değerlendirme notları"
+  ],
+  "acceptanceCriteria": [
+    "İki SLI'nın her biri, ham sayım değil oran veya yüzde döndüren adlı bir sorgu olarak ifade edilir.",
+    "Her SLO bir hedef yüzde ve bir zaman penceresi adlandırır (örneğin 7 günde yüzde 99,5).",
+    "Arıza sonrası kalan hata bütçesi, taban kalan bütçeden kesin olarak küçük bir sayıdır; yakalanmış sorgu çıktısında gösterilir.",
+    "SLO belgesi, kalan bütçe sıfıra ulaşırsa engellenecek veya izin verilecek somut bir eylem adlandırır."
+  ]
+}

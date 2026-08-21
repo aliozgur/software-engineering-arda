@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "id": "ds1t2-005",
   "title": "Traces That Distinguish Refuse, Hang, and Accepted-then-Lost",
-  "term": "ds1t2",
+  "term": "year-1-term-2",
   "module": "operating-under-failure",
   "estimatedHours": 16,
   "objective": "Instrument a request path you already built (the store, the outbox pipeline, or both) with OpenTelemetry, inject three failures, and produce exported traces plus a decision table a mentor can use to classify a request as refused, hung, or accepted-then-lost without asking you what happened.",

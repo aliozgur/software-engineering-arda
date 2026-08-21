@@ -1,0 +1,19 @@
+{
+  "title": "Host'tan dürtebileceğin bellek eşlemeli yazmaçlar",
+  "objective": "Dört yazmaçlı host-tarafı 256 baytlık bir MMIO penceresi uygula: little- ve big-endian 32-bit erişimciler, salt okunur STATUS, yazıyla tetiklenen COUNT ve belgelenmiş bir hizalama hatası.",
+  "whyThisMatters": "Endüstriyel çevrebirimler 'metotlu nesneler' değildir — yan etkili adreslerdir. Endianlığı ve hizalamayı test edilebilir gerçekler olarak gösteremezsen sonra karşılaştığın her sensör ve PLC yazmacını yanlış konuşursun.",
+  "evidence": [
+    "256 baytlık aygıt penceresi ve host poke programı için C kaynakları, artımlı Git geçmişiyle",
+    "DATA yazısının COUNT'u 1 artırdığını gösteren yakalanmış test koşusu",
+    "STATUS'a yazının saklanan STATUS değerini değiştirmeden bıraktığını gösteren yakalanmış test koşusu",
+    "0x01020304 değeri için DATA'daki dört baytın hem LE hem BE 32-bit erişimciler altında yakalanmış dökümü",
+    "0x09 ofsetinde hizasız 32-bit okumanın belgelenmiş hatayı, tahmin edilmiş bir değer değil, döndürdüğünü gösteren yakalama",
+    "Görev sorularını yanıtlayan değerlendirme notları"
+  ],
+  "acceptanceCriteria": [
+    "Aygıt penceresi 256 bayt, bayt-adreslenebilir ve STATUS'u 0x00'da (salt okunur), CTRL'yi 0x04'te (okuma/yazma), DATA'yı 0x08'de (okuma/yazma) ve COUNT'u 0x0C'de (salt okunur, her başarılı DATA yazısında 1 artar) açar.",
+    "DATA'da little-endian 32-bit erişimciyle 0x01020304 yazısı ve aynı değerin big-endian 32-bit erişimciyle yazısı pencerede iki farklı 4 baytlık dizi üretir; her iki dizi yakalanır.",
+    "0x00 ofsetine yazı STATUS baytlarını değiştirmez; önce ve sonra dökümler yakalanır.",
+    "0x09 ofsetinde hizasız 32-bit okuma veya yazı belgelenmiş bir hata kodu veya sonuç döndürür; sessizce birleştirilmiş bir 32-bit değer saklamaz veya döndürmez."
+  ]
+}

@@ -1,30 +1,30 @@
 {
   "title": "İşletim Sistemleri",
-  "description": "İşlemler, iş parçacıkları, sanal bellek, dosya sistemleri, sistem çağrıları ve senkronizasyon.",
+  "description": "İşlemler, iş parçacıkları, sanal bellek, dosya sistemleri ve sistem çağrılarını kullanabilir — bir arızanın gerçekten hangi yalıtım veya senkronizasyon seçimini gerektirdiğini gösterebilir.",
   "levels": [
     {
       "name": "Temel",
-      "description": "Temel kavramları açıklayabilir ve rehberli çalışmaları tamamlayabilir.",
+      "description": "Yazılı rehberlik altında bir parent/child işlem çifti başlatabilir, ilgili sistem çağrılarını ve pid'leri kaydedebilir ve bir işlemi bir programdan ayırabilir.",
       "level": 1
     },
     {
       "name": "Çırak",
-      "description": "Kapsamı belirlenmiş görevleri sınırlı yönlendirmeyle tamamlayabilir ve kanıt üretebilir.",
+      "description": "Stres altında bir race'i yeniden üretebilir, belirtilen bir invariant'ı koruyan bir lock uygulayabilir ve race geri geldiğinde başarısız olan bir test yazabilir.",
       "level": 2
     },
     {
       "name": "Uygulayıcı",
-      "description": "Kayda değer bir çalışmayı bağımsız olarak tasarlayabilir, uygulayabilir, test edebilir ve açıklayabilir.",
+      "description": "Ölçümlerden sanal bellek ile resident bellek ayrımını bağımsız olarak çıkarabilir, write() dönüşünün dayanıklılık olmadığını gösteren bir dosya sistemi deneyi çalıştırabilir ve başarısız bir child için cleanup yolunu belgeler.",
       "level": 3
     },
     {
       "name": "Kalfa",
-      "description": "Belirsizlikle başa çıkabilir, hataları teşhis edebilir ve ödünleşimleri gerekçelendirebilir.",
+      "description": "Wait ilişkilerinden bir deadlock teşhis edebilir, sızıntı gibi görünen bir semptomda reserved veya sanal sayfaları resident olanlardan ayırabilir; başka bir mühendisin ders kitabına bakmadan bug'ı yeniden üretebileceği bir not üretebilir.",
       "level": 4
     },
     {
       "name": "Ustalık Kanıtı",
-      "description": "Alışılmadık durumlarda öğretebilir, değerlendirme yapabilir ve sağlam kararlar verebilir.",
+      "description": "Başka bir çırağın concurrency düzeltmesini değerlendirebilir; invariant korumayan bir lock'u (veya lock'u olmayan bir invariant'ı) adlandırabilir; tanıdık olmayan bir programda thread mi process mi doğru yalıtım sınırı olduğunu öğretebilir.",
       "level": 5
     }
   ]

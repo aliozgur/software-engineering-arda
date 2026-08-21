@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "id": "ie1t1-002",
   "title": "Build the machine, then map it to the edge",
-  "term": "year-1/term-1",
+  "term": "year-1-term-1",
   "module": "machine-model",
   "estimatedHours": 8,
   "objective": "Complete the official Nand2Tetris ALU and Memory projects, then write a five-row map from Hack machine constructs to a named MCU or QEMU target.",

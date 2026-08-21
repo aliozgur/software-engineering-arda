@@ -1,0 +1,15 @@
+{
+  "title": "Gözlemlenebilirliği Mimari Bir Yüzey Olarak Ele Almak",
+  "objective": "Önceki bir tasarımdaki her servis sınırına adlandırılmış bir tanı sinyali atamak, iki arızayı yalnızca o sinyallerle yürümek ve sampling veya cardinality limitini bir sayı olarak kaydetmek.",
+  "whyThisMatters": "Teşhis edilemeyen bir tasarım, işletilemeyen bir tasarımdır. Enstrümantasyon sonradan gelen bir platform işi değildir: her sınırda yanıtlamanız gereken sorular ve ödemeye razı olduğunuz cardinality, mimari karardır. Onlar olmadan önceki dönemin SLO'larının okuyacağı bir şey yoktur.",
+  "evidence": [
+    "Önceki bir diyagramdaki her servis sınırını kapsayan bir enstrümantasyon haritası; her birinde en az bir adlandırılmış sinyal (span, metric veya log event) ve o sinyalin yanıtladığı soru",
+    "Yalnızca adlandırılmış sinyalleri kullanan, nedeni ayırt eden sinyali belirten, iki ayrı arıza senaryosu için bir teşhis notu",
+    "Sampling oranını veya cardinality limitini bir sayı olarak belirten ve o limite çarpıldığında kaybolan teşhisi adlandıran bir ADR"
+  ],
+  "acceptanceCriteria": [
+    "Gönderilen diyagramdaki her servis sınırının en az bir adlandırılmış sinyali ve o sinyalin yanıtlaması beklenen bir sorusu vardır.",
+    "İki arıza senaryosunun her biri yalnızca adlandırılmış sinyallerle teşhis edilir; not, nedeni diğer senaryodan ayırt eden somut sinyali adlandırır.",
+    "ADR, sampling oranını veya cardinality limitini bir sayı olarak belirtir ve o limite çarpıldığında imkânsız veya gecikmeli hale gelen bir teşhisi adlandırır."
+  ]
+}

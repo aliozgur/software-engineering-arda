@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "id": "ie1t2-004",
   "title": "Reliable frames over a lossy simulated link",
-  "term": "year-1/term-2",
+  "term": "year-1-term-2",
   "module": "industrial-comms",
   "estimatedHours": 10,
   "objective": "Implement a scoped reliable sender and receiver over a simulated datagram that drops a configured fraction of packets, transfer 10 KiB byte-identical, and show at least one retransmission in a sequence/ACK capture.",

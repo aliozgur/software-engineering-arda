@@ -1,0 +1,19 @@
+{
+  "title": "Sahip Olduğunuz Bir Sistemin Threat Model'ini Çıkarın",
+  "objective": "Sahip olduğunuz veya yerelde işlettiğiniz bir HTTP uygulaması için yaşayan bir threat model üretin: data-flow diagram, veri sınıflandırması, abuse case'ler ve OWASP Top 10'a eşlenmiş bir residual-risk register.",
+  "whyThisMatters": "Genel bir OWASP checklist'i, bu sistemin hangi trust-boundary geçişlerinin gerçekten önemli olduğunu ekibe söylemez. Bu yoldaki sonraki görevler burada yazdığınız register'a göre düzeltir ve doğrular; bu yüzden model işi yönlendirecek kadar somut olmalıdır.",
+  "evidence": [
+    "DFD'yi Mermaid veya commit edilmiş bir görsel olarak içeren, commit edilmiş threat-model belgesi (örneğin docs/threat-model.md)",
+    "O belgede her data store'u ve bir trust boundary'yi geçen her akışı kapsayan veri sınıflandırma tablosu",
+    "O belgede listelenen her tehdit için durum içeren residual-risk register",
+    "Modelin birden fazla commit'te yazıldığını gösteren Git geçmişi (önce DFD, sonra sınıflandırma, sonra tehditler, sonra residual risk)",
+    "Görev sorularını yanıtlayan değerlendirme notu"
+  ],
+  "acceptanceCriteria": [
+    "DFD en az 3 process, 2 data store ve numaralandırılmış 2 trust boundary gösterir.",
+    "Her data store ve bir trust boundary'yi geçen her data flow public, internal, confidential veya secret olarak sınıflandırılmıştır.",
+    "Register en az 8 tehdit listeler; her biri bileşeni, trust-boundary geçişini, bir OWASP Top 10 kategorisini veya outside Top 10 etiketini ve open, mitigated veya accepted durumunu adlandırır.",
+    "En az 2 tehdit şu biçimde abuse case olarak yazılmıştır: As an attacker who …, I can …, which harms ….",
+    "Commit edilmiş modelde veya repository'nin başka bir yerinde secret değer, parola, token veya connection string görünmez."
+  ]
+}

@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "id": "ds1t2-004",
   "title": "RabbitMQ Ack Windows, Broker Restart, and a Poison Message",
-  "term": "ds1t2",
+  "term": "year-1-term-2",
   "module": "delivery-guarantees",
   "estimatedHours": 16,
   "objective": "Run RabbitMQ with durable queues and compare four named failure points — crash before ack, crash after side-effect, broker restart while a message is unacked, and a poison message that never succeeds — then write a table that states the actual delivery guarantee for each row against the Kafka offset-commit window from ds1t2-002 / ds1t2-003.",

@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "id": "pd1t3-004",
   "title": "Alert on a Burned SLO, Not on a Noisy Threshold",
-  "term": "term-3",
+  "term": "year-1-term-3",
   "module": "alerting",
   "estimatedHours": 18,
   "competencies": [

@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "id": "an1t2-001",
   "title": "Refactoring AI-Generated Code for Maintainability",
-  "term": "year-1/term-2",
+  "term": "year-1-term-2",
   "module": "refactoring",
   "estimatedHours": 8,
   "objective": "Take a working but poorly-structured AI-generated implementation and refactor it for maintainability without changing its observable behavior, using a test suite as the safety net.",

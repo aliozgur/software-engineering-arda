@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "id": "ef1t1-007",
   "title": "Resolve a Merge Conflict and Clean Up History with Rebase",
-  "term": "term-1",
+  "term": "year-1-term-1",
   "module": "git",
   "estimatedHours": 5,
   "objective": "Deliberately create and resolve a real merge conflict, and use rebase to clean up a messy commit history before it's shared.",

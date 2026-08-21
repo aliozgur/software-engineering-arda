@@ -5,27 +5,27 @@
     {
       "level": 1,
       "name": "Temel",
-      "description": "Temel kavramları açıklayabilir ve rehberli çalışmayı tamamlayabilir."
+      "description": "Yazılı rehberlik altında anahtarları ve beklenen cardinality'si yazılmış bir pandas join yazabilir ve üç satırı elden izleyebilir."
     },
     {
       "level": 2,
       "name": "Çırak",
-      "description": "Sınırlı rehberlikle kapsamı belirlenmiş görevleri tamamlayabilir ve kanıt üretebilir."
+      "description": "Join patlarsa fail olan bir assertion ekleyebilir, zincirlenmiş bir one-liner'ı adlı adımlara ayırabilir ve pipeline'ı temiz bir clone'un çalıştıracağı sürümlenmiş kodda tutabilir."
     },
     {
       "level": 3,
       "name": "Uygulayıcı",
-      "description": "Basit olmayan çalışmaları bağımsız biçimde tasarlayabilir, uygulayabilir, test edebilir ve açıklayabilir."
+      "description": "Belirtilen tane düzeyine uyan bir group-by'ı bağımsız kurabilir, satır sayısı ve anahtarlar üzerinde assertion yazabilir ve başka birinin notebook hücre dökümü olmadan adımlayabileceği bir pipeline üretebilir."
     },
     {
       "level": 4,
       "name": "Kalfa",
-      "description": "Belirsizliği yönetebilir, hataları teşhis edebilir ve ödünleşimleri savunabilir."
+      "description": "Yanlış bir aggregate'i join veya group-by tane hatası olarak teşhis edebilir; patlayan anahtarı veya yinelenen satırı gösterebilir; fail olan assertion'ı ve düzeltmeyi adlandıran bir not üretebilir."
     },
     {
       "level": 5,
       "name": "Ustalık Kanıtı",
-      "description": "Öğretebilir, inceleyebilir ve alışılmadık durumlarda sağlam kararlar verebilir."
+      "description": "Başka bir çırağın pandas pipeline'ını değerlendirebilir; cardinality notu olmayan bir join'i veya fail edemeyen bir assertion'ı adlandırabilir; tanıdık olmayan bir pipeline'da bir satırın nasıl izleneceğini öğretebilir."
     }
   ]
 }

@@ -1,30 +1,30 @@
 {
   "title": "Yapay Zekâ Destekli Mühendislik",
-  "description": "Sorumlu yapay zekâ destekli geliştirme, açıklama, doğrulama ve insan sorumluluğunun sürdürülmesi.",
+  "description": "Gerçek işte yapay zekâyı açıklayarak ve çıktıyı doğrulayarak kullanabilir — insanın sorumlu kalması için kod üretilmemesi gereken anı seçebilir.",
   "levels": [
     {
       "name": "Temel",
-      "description": "Temel kavramları açıklayabilir ve rehberli çalışmaları tamamlayabilir.",
+      "description": "Yazılı rehberlik altında yapay zekâya izin verilen rehberli bir değişikliği tamamlayabilir; aracı, amacı ve bağımsız olarak kontrol edileni adlandıran bir açıklama yazabilir; hangi bölümlerin üretildiğini işaretleyebilir.",
       "level": 1
     },
     {
       "name": "Çırak",
-      "description": "Kapsamı belirlenmiş görevleri sınırlı yönlendirmeyle tamamlayabilir ve kanıt üretebilir.",
+      "description": "Herhangi bir üretilmiş uygulamadan önce bir belirtim kaydedebilir, verilen istemi saklayabilir ve çıktıda, onu kendisinin saymadan önce yapılmış en az bir somut düzeltmeyi listeleyebilir.",
       "level": 2
     },
     {
       "name": "Uygulayıcı",
-      "description": "Kayda değer bir çalışmayı bağımsız olarak tasarlayabilir, uygulayabilir, test edebilir ve açıklayabilir.",
+      "description": "Üretim istemeden önce bir iskelette başarısız olan testleri bağımsız olarak yazabilir, o testleri kabul kapısı olarak tutabilir ve en az bir öneriyi gerekçesiyle reddedebilir.",
       "level": 3
     },
     {
       "name": "Kalfa",
-      "description": "Belirsizlikle başa çıkabilir, hataları teşhis edebilir ve ödünleşimleri gerekçelendirebilir.",
+      "description": "Sapmış bir oturumu veya üretilmemesi gereken bir durumu teşhis edebilir — istenmeyen farkı ayırıp geri alabilir, veya geri döndürülemez, güvenlik duyarlı ya da hâlâ belirsiz bir değişiklik için üretimi sakınabilir — ve işten önce yazılmış bir karar kaydı tutabilir.",
       "level": 4
     },
     {
       "name": "Ustalık Kanıtı",
-      "description": "Alışılmadık durumlarda öğretebilir, değerlendirme yapabilir ve sağlam kararlar verebilir.",
+      "description": "Başka bir çırağın yapay zekâ destekli değişikliğini veya inceleme taslağını değerlendirebilir; modelin kaçırdığı bir hatayı veya yorumu adlandırabilir; kendisinin belirtmediği bir problemde ne zaman kod üretilmeyeceğini öğretebilir.",
       "level": 5
     }
   ]

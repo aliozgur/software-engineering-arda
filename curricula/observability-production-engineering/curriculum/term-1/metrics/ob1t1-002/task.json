@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "id": "ob1t1-002",
   "title": "Metrics That Matter: RED Dashboards, Not Vanity Numbers",
-  "term": "term-1",
+  "term": "year-1-term-1",
   "module": "metrics",
   "estimatedHours": 8,
   "objective": "Instrument a service with a small, justified set of RED metrics (rate, errors, duration) and assemble them into a fixed dashboard that visibly distinguishes a healthy state from an unhealthy one.",

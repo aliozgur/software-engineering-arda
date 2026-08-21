@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "id": "de1t2-004",
   "title": "Handle Late and Out-of-Order Events on Purpose",
-  "term": "year-1/term-2",
+  "term": "year-1-term-2",
   "module": "streaming",
   "estimatedHours": 8,
   "objective": "Assign windows by event time, apply a documented allowed-lateness policy, and show in-window out-of-order events update the correct window while late events follow the written rule.",

@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "id": "de1t2-002",
   "title": "Orchestrate a DAG That Tells the Truth After Failure",
-  "term": "year-1/term-2",
+  "term": "year-1-term-2",
   "module": "orchestration",
   "estimatedHours": 10,
   "objective": "Schedule extract, validate, load, and quality_gate so a failed load leaves the gate skipped, the warehouse at last-good, and a retry of load alone can finish the run.",

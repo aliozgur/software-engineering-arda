@@ -1,0 +1,18 @@
+{
+  "title": "Refuse, Hang ve Accepted-then-Lost'u Ayıran Trace'ler",
+  "objective": "Zaten kurduğun bir istek yolunu (store, outbox pipeline veya her ikisi) OpenTelemetry ile instrument et, üç arıza enjekte et ve bir mentorun senden ne olduğunu sormadan bir isteği refused, hung veya accepted-then-lost olarak sınıflandırabileceği export edilmiş trace'ler artı bir karar tablosu çıkar.",
+  "whyThisMatters": "Sistemi zaten kırabiliyorsun. İşletmek, bu üç sonucu yalnızca telemetry'den ayırt etmek demektir. SWE müfredatı o sınıflandırmayı hiç istemez. Bir yazmanın kaybolduğunu bilmenin tek yolu hangi process'i öldürdüğünü hatırlamaksa, henüz bir işletme sinyalin yoktur.",
+  "evidence": [
+    "Trace'lerin aşamalı eklendiğini gösteren instrumentation kodu ve Git geçmişi (client, servis ve en az bir downstream: replica, poller veya broker produce)",
+    "Refuse, hang ve accepted-then-lost olarak etiketlenmiş, her biri bir request id'ye bağlı üç export edilmiş trace (JSON veya collector dump)",
+    "README'de karar tablosu: hangi span adları, status code'lar ve süre eşikleri her sonucu sınıflandırır; üç trace çalışılmış örnek olarak",
+    "En az 30 enjekte isteğin kısa yakalanmış koşusu; etiketleri yalnızca tabloyu kullanarak (failure-injector log'ları değil) atadın, doğru etiket skoruyla",
+    "Görev sorularını yanıtlayan değerlendirme notları"
+  ],
+  "acceptanceCriteria": [
+    "Üç sonucun her birinin, ikinci bir kişinin injector log'ları olmadan açabileceği export edilmiş bir trace'i (veya trace + metric) vardır.",
+    "Karar tablosu yalnızca telemetry alanlarını kullanır (span status, span adı, süre, eksik child span, attribute değerleri) — 'leader'ı öldürdük' değil.",
+    "30-isteklik etiketleme koşusu yalnızca tabloyu kullanır ve hem atanan etiketi hem injector'ın gerçek sınıfını kaydeder; 30'dan en az 24'ü eşleşir ve her uyuşmazlık açıklanır.",
+    "Accepted-then-lost, refuse olarak etiketlenmez: client veya servis span'i success kaydetmiş olmalıdır; downstream span eksiktir veya o request id için consume/read span hiç görünmez."
+  ]
+}

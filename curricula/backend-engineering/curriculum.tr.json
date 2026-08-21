@@ -1,0 +1,11 @@
+{
+  "name": "apprenti.dev Backend Mühendisliği Çıraklık Programı",
+  "audience": "Programlamayı zaten bilen, backend servis mühendisliğine uzmanlaşan junior–orta seviye geliştiriciler",
+  "philosophy": "Kanıta dayalı çıraklık: tutarlı tek bir backend servisini tasarla, geliştir, test et, işlet ve savun.",
+  "aiPrinciples": [
+    "Yapay zekâ yardımı maddi olarak kullanıldığında açıklanmalıdır.",
+    "Görevler açıklamalara, ipuçlarına ve kısa sınavlara izin verirken çözüm üretmeyi kısıtlayabilir.",
+    "Çırak gönderilen her çıktıdan sorumlu olmaya devam eder.",
+    "Mentor onayı, yapay zekâ çıktı kalitesine değil, kanıtlanmış anlayışa dayanır."
+  ]
+}

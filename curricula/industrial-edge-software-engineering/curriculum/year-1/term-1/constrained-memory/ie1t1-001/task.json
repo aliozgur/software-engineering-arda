@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "id": "ie1t1-001",
   "title": "Budget every byte: static allocation, firmware style",
-  "term": "year-1/term-1",
+  "term": "year-1-term-1",
   "module": "constrained-memory",
   "estimatedHours": 8,
   "objective": "Ship a host-side C telemetry store that never calls a general-purpose allocator, publishes a numeric memory budget, and proves the binary stays inside that budget.",

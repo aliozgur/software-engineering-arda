@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "id": "os1t1-007",
   "title": "Ship a Maintainer Packet for a Real Project",
-  "term": "year-1/term-1",
+  "term": "year-1-term-1",
   "module": "maintainership",
   "estimatedHours": 9,
   "objective": "Produce a one-week maintainer packet for the same real public project: triage at least three public issues, review at least one public pull request, and draft release notes for a named SemVer version citing real commits or pull requests.",

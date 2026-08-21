@@ -1,30 +1,30 @@
 {
   "title": "Go",
-  "description": "Go dili, arayüzler, hata yönetimi, eşzamanlılık ve ağ hizmetleri.",
+  "description": "Hataları deyimsel ele alan ve devam eden işi iptal eden Go ağ servisleri yazabilir — goroutine ve channel'ları yalnızca koordinasyonu sadeleştirdikleri yerde kullanabilir.",
   "levels": [
     {
       "name": "Temel",
-      "description": "Temel kavramları açıklayabilir ve rehberli çalışmaları tamamlayabilir.",
+      "description": "Yazılı rehberlik altında fonksiyon, interface ve döndürülen error'larla küçük bir Go module yazabilir, go test çalıştırabilir ve başarısız bir çağrının error yolunu adlandırabilir.",
       "level": 1
     },
     {
       "name": "Çırak",
-      "description": "Kapsamı belirlenmiş görevleri sınırlı yönlendirmeyle tamamlayabilir ve kanıt üretebilir.",
+      "description": "Koordinasyon için goroutine veya channel kullanan küçük bir HTTP veya TCP servisi kurabilir; context iptalini ve bir timeout'u iletebilir; test edilen yollarda race detector'ı temiz olan bir go test çıktısı gönderebilir.",
       "level": 2
     },
     {
       "name": "Uygulayıcı",
-      "description": "Kayda değer bir çalışmayı bağımsız olarak tasarlayabilir, uygulayabilir, test edebilir ve açıklayabilir.",
+      "description": "Kapanışı devam eden işi iptal eden, beklenen hatalarda panic yerine error döndüren ve iptal veya race yok sayılırsa fail olan testlerle eşzamanlı bir Go servisini bağımsız olarak teslim edebilir.",
       "level": 3
     },
     {
       "name": "Kalfa",
-      "description": "Belirsizlikle başa çıkabilir, hataları teşhis edebilir ve ödünleşimleri gerekçelendirebilir.",
+      "description": "Geçen bir testin yanıltacağı bir takılmayı, sızan goroutine'i veya data race'i teşhis edebilir; race detector raporunu veya düşürülen context'i gösterebilir; başka bir mühendisin tüm paketi okumadan hatayı yeniden üretebileceği bir not üretebilir.",
       "level": 4
     },
     {
       "name": "Ustalık Kanıtı",
-      "description": "Alışılmadık durumlarda öğretebilir, değerlendirme yapabilir ve sağlam kararlar verebilir.",
+      "description": "Başka bir çırağın Go servisini değerlendirebilir; süs olarak kullanılan bir channel'ı veya yok sayılan iptal edilmiş bir context'i adlandırabilir; tanıdık olmayan bir pakette channel'ın ne zaman kullanılmaması gerektiğini öğretebilir.",
       "level": 5
     }
   ]

@@ -1,0 +1,18 @@
+{
+  "title": "Çok Dosyalı bir Agentic Değişikliği Doğrulamak",
+  "objective": "Tek bir özelliğe doğru en az üç dosyayı değiştiren bir agentic oturum çalıştırın; ardından tüm değişikliği bütüncül doğrulayın — değişen parçaların nasıl etkileştiği dahil, her dosyayı tek başına değil.",
+  "whyThisMatters": "Çok dosyalı agentic değişiklikler yerelde makul, bütünde yanlış olabilir — bir dosyada arayüz değişir, diğerinde çağıran güncellenmez. Buradaki doğrulama becerisi tam da o sınıf hatayı yakalamaktır.",
+  "evidence": [
+    "Oturumdan önce commit edilmiş, değişmesi beklenen dosyaları adlandıran plan veya kapsamlandırma prompt'u",
+    "Değişen tüm dosyalar boyunca ortaya çıkan diff",
+    "Değişen dosyalardan en az ikisinin etkileşimini birlikte çalıştıran, geçtiği gösterilmiş bir entegrasyon düzeyi test veya belgelenmiş elle yürüme",
+    "Orijinal planda olmayan her değişen dosya ve nedeni üzerine not",
+    "Kullanılan araç/modeli, amacı ve bağımsız olarak doğrulananı adlandıran yapay zekâ kullanım beyanı"
+  ],
+  "acceptanceCriteria": [
+    "Diff üç veya daha fazla dosyaya dokunur.",
+    "En az iki değişen dosyayı birlikte çalıştıran bir entegrasyon düzeyi kontrol vardır; yalnızca her dosyanın yalıtık birim testleri değildir.",
+    "Entegrasyon düzeyi kontrolün nihai değişikliğe karşı geçtiği gösterilmiştir.",
+    "Plan dışı her dosya değişikliği açıkça not edilmiş ve gerekçelendirilmiştir."
+  ]
+}

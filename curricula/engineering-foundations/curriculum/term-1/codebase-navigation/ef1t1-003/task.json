@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "id": "ef1t1-003",
   "title": "Map an Unfamiliar Codebase",
-  "term": "term-1",
+  "term": "year-1-term-1",
   "module": "codebase-navigation",
   "estimatedHours": 6,
   "objective": "Given a codebase you didn't write, produce a short written map of its structure, entry points, and one module's responsibilities, using search tools rather than asking the author.",

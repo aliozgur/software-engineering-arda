@@ -1,0 +1,18 @@
+{
+  "title": "Güvenlik İncelemesi ve Tekrarlanabilir Sürüm",
+  "objective": "Pipeline'ı test eden, tarayan ve bir image yayımlayan etiketli bir sürüm çıkarmak, bir bulgu üreten bir güvenlik incelemesi yürütmek ve önceki tag'e rollback'i dry-run etmek.",
+  "whyThisMatters": "Bir yığını işletmek, onu yayımlayıp geri alabilmekle aynı şey değildir. Bitirme savunması bilinen-iyi bir tag'in var olduğunu ve bir incelemenin gerçekten başarısız kontrollere baktığını varsayar.",
+  "evidence": [
+    "Adı yayımlanan image tag'iyle eşleşen bir git tag, artı o tag için test, tarama ve yayımlamayı gösteren pipeline log'u",
+    "Authn/authz, injection ve sırları kapsayan, en az bir bulgusu olan bir güvenlik incelemesi notu",
+    "Bulguyu düzelten commit veya kanıt notunda mentorun adı geçen yazılı kabul edilmiş risk",
+    "Önceki image tag'ini ve tam komutları adlandıran rollback yönergeleri, artı bir dry-run dökümü",
+    "İnceleme notlarının düzeltme commit'inden önce geldiğini gösteren Git geçmişi ve etiketli sürümden request id'lerin hâlâ çalıştığını kanıtlayan bir kazıma veya log"
+  ],
+  "acceptanceCriteria": [
+    "Bir git tag vardır ve yayımlanan image tag dizesi o git tag ile özdeştir.",
+    "O tag'in pipeline log'u testleri, image taramasını ve bir image yayımlama adımını gösterir.",
+    "Güvenlik incelemesi notu en az bir bulgu ve ya bir düzeltme commit'i ya da mentorun adını veren bir kabul-edilmiş-risk satırı içerir.",
+    "Rollback yönergeleri önceki image tag'ini ve tam komutları adlandırır; bir dry-run dökümü bu komutların çalıştırıldığını gösterir."
+  ]
+}

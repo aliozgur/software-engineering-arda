@@ -28,6 +28,7 @@
   "mentorship": "optional",
   "sourceLocale": "en",
   "contentLocales": [
-    "en"
+    "en",
+    "tr"
   ]
 }

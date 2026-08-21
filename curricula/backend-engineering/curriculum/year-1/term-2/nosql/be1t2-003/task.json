@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "id": "be1t2-003",
   "title": "A Document Store for Data That Does Not Fit Tables",
-  "term": "year-1/term-2",
+  "term": "year-1-term-2",
   "module": "nosql",
   "estimatedHours": 14,
   "objective": "Add MongoDB to the same service for a workload that is a poor fit for the PostgreSQL schema, and write down exactly what still belongs in Postgres and why.",

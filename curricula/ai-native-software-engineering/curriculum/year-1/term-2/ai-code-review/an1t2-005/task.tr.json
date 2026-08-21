@@ -1,0 +1,18 @@
+{
+  "title": "Başkasının İşini Yapay Zekâ Destekli İnceleyici Olarak İncelemek",
+  "objective": "Gerçek bir değişiklik kümesinde yazar değil inceleyici olun; inceleme yorumlarını taslak olarak yapay zekâya yazdırın ve taslağın kaçırdığı en az bir esaslı yorum bulun ve ekleyin.",
+  "whyThisMatters": "Yapay zekânın yorumlarını olduğu gibi ileten bir inceleyici aslında inceleme yapmıyor demektir. Bu müfredatın mentor karşısında ölçtüğü beceri, insan inceleyicinin eklediğidir.",
+  "evidence": [
+    "Yapay zekânın yazdığı inceleme yorumları; nihai inceleme yazılmadan önce bir commit veya tarihli dosya olarak kaydedilmiş",
+    "Gerçekten gönderilen veya iletilen nihai inceleme: hangi yapay zekâ taslak yorumlarının tutulduğu, atıldığı veya düzenlendiği ve nedeni",
+    "Yapay zekâ taslağında olmayan en az bir esaslı inceleme yorumu (doğruluk, güvenlik veya eksik test kapsamı; stil değil) ve ardındaki gerekçe",
+    "Yanlış, ilgisiz veya zaten ele alınmış olduğu için atılan bir yapay zekâ taslak yorumu üzerine not",
+    "Kullanılan araç/modeli, amacı ve bağımsız olarak doğrulananı adlandıran yapay zekâ kullanım beyanı"
+  ],
+  "acceptanceCriteria": [
+    "Düzenlenmemiş yapay zekâ taslak yorumları nihai incelemeden ayrı saklanmıştır ve ondan önce tarihlenmiş veya commit edilmiştir.",
+    "Nihai incelemedeki en az bir esaslı yorumun yapay zekâ taslağında karşılığı yoktur.",
+    "En az bir yapay zekâ taslak yorumu, belirtilmiş bir gerekçeyle açıkça atılmış olarak işaretlenmiştir.",
+    "İncelenen değişiklik kümesi, gerçek bağlamı olmayan sentetik bir parçacık değil, gerçek bir projenin gerçek diff'idir."
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "title": "Gecikme ve bellek bütçesi altında kimlikli telemetri",
+  "objective": "Telemetri kayıtlarını bir MAC ile kimliklendir; belgelenmiş bir pencerede kötü MAC ve replay'i reddet; kayıt başına doğrulama süresi artı yazılı bir bütçenin içinde kalan ekstra RAM yayımla.",
+  "whyThisMatters": "İmzalı bir firmware yuvası sonraki 10 000 sensör çerçevesini korumaz. Bu kapanış, kimlik doğrulamayı bir edge düğümünün karşılayabileceği şekilde eklemeni ister — ölçülmüş, bütçelenmiş ve fail-closed — slogan olarak 'TLS aç' değil.",
+  "evidence": [
+    "Artımlı Git geçmişli telemetri kimlik C kaynakları (HMAC veya AEAD)",
+    "Kötü MAC'li bir kaydın reddedildiğini gösteren yakalanmış test",
+    "Daha önce kabul edilmiş bir sıra veya nonce'un replay'inin reddedildiğini gösteren yakalanmış test",
+    "N=1000 kayıt için kayıt başına MAC doğrulama süresi (veya host-çevrim tahmini) ve imzasız yola göre ekstra RAM raporlayan MEASURE.md",
+    "Ölçülen anahtar-artı-pencere baytlarının aşmadığı, MEASURE.md'de yazılı ekstra-RAM bütçesi",
+    "Görev sorularını yanıtlayan değerlendirme notları"
+  ],
+  "acceptanceCriteria": [
+    "MAC'i doğrulanmayan bir kayıt reddedilir; test çıktısı reject-mac veya eşdeğer belgelenmiş bir kod adlandırır.",
+    "Daha önce kabul edilmiş bir kaydı (aynı sıra numarası veya nonce) yeniden oynatmak reddedilir; test çıktısı reject-replay veya eşdeğerini adlandırır.",
+    "MEASURE.md sayısal bir kayıt başına doğrulama süresi (milisaniye veya nanosaniye, kullanılan saatle) ve imzasız yola göre bayt cinsinden ekstra RAM raporlar; ikisi de 1000 kayıt üzerinden ölçülür.",
+    "MEASURE.md anahtarlar artı replay penceresi için bayt cinsinden bir ekstra-RAM bütçesi yazar; ölçülen ekstra RAM o bütçeye küçük veya eşittir."
+  ]
+}

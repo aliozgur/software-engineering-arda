@@ -1,0 +1,15 @@
+{
+  "title": "Belirsiz Gereksinimleri Ölçülebilir NFR Bütçelerine Çevirmek",
+  "objective": "Gerçekçi bir sistem brief'ini alıp en az dört NFR için nicel, kaynaklı bütçeler üretmek.",
+  "whyThisMatters": "Bu müfredattaki sonraki her mimari karar, yazılmış bir sayıya göre yargılanır. \"Hızlı\" ve \"güvenilir\" ile tasarım yapılamaz; bir p99 gecikme hedefi ve bir availability yüzdesi ile yapılabilir. Bir gereksinimi nicelleyemeyen mimar, ona karşı kurulmuş bir tasarımı da savunamaz.",
+  "evidence": [
+    "En az dört ayrı kalite niteliğini adlandıran bir NFR sayfası; her birinde nicel bir hedef ve o sayının kaynağı veya varsayımı",
+    "Sayfanın en az bir kez gözden geçirildiğini gösteren Git geçmişi; commit mesajı veya not, sayıyı neyin değiştirdiğini ve nedenini belirtir",
+    "Hangi NFR'nin nicellenmesinin en zor olduğunu ve son sayının nasıl seçildiğini belirten kısa bir not"
+  ],
+  "acceptanceCriteria": [
+    "En az dört ayrı NFR, sıfat değil, ölçülebilir bir sayı olarak belirtilmiştir.",
+    "Her bütçe, o sayıya nasıl ulaşıldığını (bir benchmark, karşılaştırılabilir bir sistem veya açıkça belirtilmiş bir varsayım) adlandırır.",
+    "Revizyon geçmişi, ilk taslaktan sonra en az bir bütçenin değiştiğini ve nedenini belirten bir not içerir."
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "title": "PostgreSQL Üzerinde REST API",
+  "objective": "Önceki görevin şeması üzerinde, doğrulama, tutarlı hatalar ve eşleşen bir OpenAPI belgesiyle çalışan bir REST API'yi Python'da uygulamak.",
+  "whyThisMatters": "API, veritabanı ve belgelemenin birbirini tutması gereken ilk görev budur. Bu üçlü uzlaşma, API'yi sizin dışınızdaki birinin kullanabilir kılan şeydir.",
+  "evidence": [
+    "API, doğrulama ve OpenAPI belgesinin tek bir commit değil, aşamalı kurulduğunu gösteren Git geçmişi",
+    "Repository'ye commit edilmiş OpenAPI belge dosyası ve belgenin geçerli olduğunu gösteren doğrulama",
+    "Simüle edilmiş bir hatada transaction rollback'ini gösteren test veya script çıktısı",
+    "Doğrulama hatasının belgelenmiş hata şeklinde üretildiğini gösteren curl veya otomatik test çıktısı"
+  ],
+  "acceptanceCriteria": [
+    "Uygulanan her route, eşleşen istek ve yanıt şemalarıyla OpenAPI belgesinde yer alır.",
+    "Birden fazla tabloya dokunan bir işlem bir transaction içine alınır; bir rollback testi ile gösterilir.",
+    "Geçersiz girdi 500 değil, doğrulama hata gövdesi olan bir 4xx yanıt üretir.",
+    "OpenAPI belgesi OpenAPI şemasına karşı doğrulanır."
+  ]
+}

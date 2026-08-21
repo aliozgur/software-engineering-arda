@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "id": "ob1t1-005",
   "title": "Alerts That Page a Human, and Alerts That Should Not",
-  "term": "term-1",
+  "term": "year-1-term-1",
   "module": "alerting",
   "estimatedHours": 8,
   "objective": "Write an alerting policy with at least one paging alert and one non-paging alert, prove the paging alert fires on an induced SLO burn and stays silent on healthy traffic, and defend the page-or-not decision in writing.",

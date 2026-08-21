@@ -2,32 +2,32 @@
   "schemaVersion": 1,
   "id": "computer-architecture",
   "title": "Computer Architecture",
-  "description": "Digital logic, CPU, assembly, memory hierarchy and machine-level execution.",
+  "description": "Can trace machine-level execution from digital logic and assembly through the memory hierarchy — and can locate where a value lives when a result is wrong.",
   "levels": [
     {
       "level": 1,
       "name": "Foundation",
-      "description": "Can explain core concepts and complete guided work."
+      "description": "Can assemble a small program, record the registers it uses, and trace one instruction through fetch-decode-execute — under written guidance."
     },
     {
       "level": 2,
       "name": "Apprentice",
-      "description": "Can complete scoped tasks with limited guidance and produce evidence."
+      "description": "Can implement a selected hardware project that passes provided tests, document an assembly program's register and memory use, and distinguish registers, RAM and persistent storage in a short note."
     },
     {
       "level": 3,
       "name": "Practitioner",
-      "description": "Can independently design, implement, test and explain non-trivial work."
+      "description": "Can independently trace a full instruction cycle on a machine they built or simulated, locate a given value in the memory hierarchy, and show which path an address takes."
     },
     {
       "level": 4,
       "name": "Journeyman",
-      "description": "Can handle ambiguity, diagnose failures and defend trade-offs."
+      "description": "Can diagnose a wrong result as a logic, datapath or memory-hierarchy mistake, cite the failing instruction and the storage level involved, and defend why a cache miss is not a software bug."
     },
     {
       "level": 5,
       "name": "Mastery Evidence",
-      "description": "Can teach, review and make sound decisions across unfamiliar situations."
+      "description": "Can review another apprentice's CPU or assembly work, name a step they skipped in the instruction cycle, and teach how a load walks the memory hierarchy on an unfamiliar ISA or simulator."
     }
   ]
 }

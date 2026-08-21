@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "id": "qt1t2-003",
   "title": "Instrument Synthetic Checks as Production Test Signal",
-  "term": "year-1/term-2",
+  "term": "year-1-term-2",
   "module": "production-signal",
   "estimatedHours": 14,
   "objective": "Add a synthetic/canary check that continuously exercises a real user-facing flow and exposes its result as a metric a dashboard or alert can act on.",

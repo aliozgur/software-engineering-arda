@@ -2,32 +2,32 @@
   "schemaVersion": 1,
   "id": "c-memory",
   "title": "C Memory",
-  "description": "C fundamentals, pointers, memory layout and low-level reasoning.",
+  "description": "Can write C that owns pointers and heap so allocated memory is freed — and can choose a static budget, pool or ring buffer when malloc is the wrong tool.",
   "levels": [
     {
       "level": 1,
       "name": "Foundation",
-      "description": "Can explain core concepts and complete guided work."
+      "description": "Can write C that allocates and frees heap memory, inspect stack versus heap in a debugger, and name whether a given argument is passed by pointer or by value — under written guidance."
     },
     {
       "level": 2,
       "name": "Apprentice",
-      "description": "Can complete scoped tasks with limited guidance and produce evidence."
+      "description": "Can implement a dynamic list or hash table in C that frees every allocation, write a note that names stack, heap and common pointer errors, and show a captured debugger session that inspects a pointer and the bytes it addresses."
     },
     {
       "level": 3,
       "name": "Practitioner",
-      "description": "Can independently design, implement, test and explain non-trivial work."
+      "description": "Can independently ship a host-side C component with a written byte budget or fixed-size pool, a gate that rejects malloc, and a captured size or linker-map excerpt proving .data + .bss stay inside that budget."
     },
     {
       "level": 4,
       "name": "Journeyman",
-      "description": "Can handle ambiguity, diagnose failures and defend trade-offs."
+      "description": "Can diagnose a leak, double-free, overflow or alignment fault that a return value alone would hide, cite the layout or overflow/OOM policy that explains it, and produce a note another engineer can follow to reproduce the fault without opening a debugger first."
     },
     {
       "level": 5,
       "name": "Mastery Evidence",
-      "description": "Can teach, review and make sound decisions across unfamiliar situations."
+      "description": "Can review another apprentice's C memory work, name an unchecked malloc, missing free, or untested overflow/OOM path, and teach when a static buffer, pool or ring buffer is the right tool on an unfamiliar constrained target."
     }
   ]
 }

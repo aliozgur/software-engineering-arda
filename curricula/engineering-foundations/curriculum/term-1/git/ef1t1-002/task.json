@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "id": "ef1t1-002",
   "title": "Open Your First Feature Branch and Pull Request",
-  "term": "term-1",
+  "term": "year-1-term-1",
   "module": "git",
   "estimatedHours": 5,
   "objective": "Create a feature branch, commit a small real change with clear messages, and open a pull request with a description a reviewer could act on.",

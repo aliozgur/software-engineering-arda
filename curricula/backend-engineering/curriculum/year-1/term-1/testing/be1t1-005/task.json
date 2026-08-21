@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "id": "be1t1-005",
   "title": "Automated Testing for the Service",
-  "term": "year-1/term-1",
+  "term": "year-1-term-1",
   "module": "testing",
   "estimatedHours": 14,
   "objective": "Build a test suite that covers the service's real failure modes, not just its happy path, running against a real PostgreSQL test database.",

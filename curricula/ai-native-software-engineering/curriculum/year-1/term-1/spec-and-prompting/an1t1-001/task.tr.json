@@ -1,0 +1,18 @@
+{
+  "title": "Yapay Zekâ ile Uygulanacak Kadar Kesin bir Spec Yazmak",
+  "objective": "Gerçek, küçük bir özellik için, yapay zekânın ürettiği kodun yalnızca küçük düzeltmeler gerektireceği kadar kesin bir spec yazın ve sürecin tamamını açıklayın.",
+  "whyThisMatters": "Belirsiz bir prompt, bitmiş gibi görünen ama yanlış sorunu çözen kod üretir. Kesin bir spec, AI-native çalışmada atıl sohbet metni değil; birinci sınıf bir mühendislik çıktısıdır.",
+  "evidence": [
+    "Herhangi bir yapay zekâ üretimi uygulama kodu oluşmadan önce commit edilmiş bir SPEC.md (veya eşdeğeri)",
+    "En az iki aşamalı commit gösteren Git geçmişi: önce spec commit'i, ardından bir veya daha fazla uygulama commit'i",
+    "Asistana verilen spec metninin birebir halini gösteren kayıtlı prompt veya transkript",
+    "Yapay zekânın ürettiği çıktıda yapılan somut değişiklikleri ve her birinin neden gerektiğini listeleyen düzeltme notu",
+    "Kullanılan araç/modeli, amacı ve bağımsız olarak doğrulananı adlandıran yapay zekâ kullanım beyanı"
+  ],
+  "acceptanceCriteria": [
+    "SPEC.md, yapay zekâ üretimi uygulama kodunu içeren ilk commit'ten önce gelen bir commit olarak durur.",
+    "Spec, ilgili dosyaları veya arayüzleri adlandırır, en az bir açık kapsam-dışı madde belirtir ve somut bir doğrulama adımı koyar.",
+    "Düzeltme notu, genel bir onay değil, yapay zekânın ürettiği kodda yapılmış en az bir somut değişiklik listeler.",
+    "Yapay zekâ kullanım beyanı, kullanılan araç/modeli ve bağımsız olarak doğrulananı adlandırır."
+  ]
+}

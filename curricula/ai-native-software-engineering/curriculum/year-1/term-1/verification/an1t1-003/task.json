@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "id": "an1t1-003",
   "title": "Test-Driven Verification of AI-Generated Code",
-  "term": "year-1/term-1",
+  "term": "year-1-term-1",
   "module": "verification",
   "estimatedHours": 8,
   "objective": "Write the test cases for a small feature before requesting an AI-generated implementation, then use those untouched tests as the acceptance gate for what the AI produces.",

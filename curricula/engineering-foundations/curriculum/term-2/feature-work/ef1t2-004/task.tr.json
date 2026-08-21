@@ -1,0 +1,19 @@
+{
+  "title": "Başkasının Kodunda Küçük bir Değişiklik İndirmek",
+  "objective": "Sizin yazmadığınız bir kod tabanına, dosya ve satırla atıf yapabileceğiniz iki mevcut kurala uyan, küçük ve kapsamlı bir Python davranış değişikliği ekleyin; yeni yol için test bırakın.",
+  "whyThisMatters": "İlk iş nadiren boş bir depodur. Beceri, incelemeye yetecek kadar küçük bir değişiklik yapmak, kod tabanının zaten kullandığı üslupta kalmak ve aynı işi yapmanın ikinci bir yolunu uydurmamaktır.",
+  "evidence": [
+    "Zaman damgası veya git log'daki konumu herhangi bir uygulama commit'inden önce gelen bir tasarım-notu commit'i",
+    "Tasarım notunda adlandırılan kapsamlı dosyalarla sınırlı üretim kodu diff'i",
+    "Yeni veya değişen davranış için en az 2 yeni test senaryosunu, hepsi geçerek gösteren test komutu çıktısı",
+    "Pull request bağlantısı artı açıklama metni (sorun, değişiklik, doğrulama, kapsam dışı)",
+    "En az 2 mevcut örüntüyü dosya ve satırla atıf yapan ve değişikliğinizdeki eşleşen konumu gösteren kural notu",
+    "Yapay zekâ yaklaşımı seçmeye veya değişikliği yazmaya yardımcı olduysa yapay zekâ kullanım beyanı"
+  ],
+  "acceptanceCriteria": [
+    "Herhangi bir uygulama commit'inden önce bir tasarım-notu commit'i vardır; dokunmayı planladığınız dosyaları, izlemeyi planladığınız mevcut örüntüyü ve değişikliği nasıl doğrulamayı planladığınızı adlandırır.",
+    "Üretim kodu diff'i, yeni veya mevcut test dosyaları sayılmadan, en fazla 3 mevcut dosyaya dokunur.",
+    "Yeni veya değişen davranışı kapsayan en az 2 yeni otomatik test senaryosu vardır ve belgelenen test komutu onların geçtiğini gösterir.",
+    "Kural notu en az 2 mevcut örüntüyü dosya yolu ve satır numarasıyla atıf yapar ve her birini izleyen değişikliğinizdeki dosya ve satırı adlandırır."
+  ]
+}

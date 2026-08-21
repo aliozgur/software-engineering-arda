@@ -1,0 +1,18 @@
+{
+  "title": "Bir Kez Yükle, Sonra Yeniden Yükleyebildiğini Kanıtla",
+  "objective": "Önceki görevin staging ve warehouse şemalarına tekrarlanabilir bir batch extract-load işi yaz ve değişmeyen bir anlık görüntüye karşı ikinci çalıştırmanın warehouse anahtar kümesini büyütmediğini kanıtla.",
+  "whyThisMatters": "Bir kez çalışan yükleme bir script'tir. Satırları ikiye katlamadan yeniden çalıştırabildiğin yükleme bir pipeline'dır. Sonraki her artımlı yükleme, backfill ve kurtarma görevi bu yeniden çalıştırma özelliğinin zaten var olduğunu varsayar.",
+  "evidence": [
+    "İş komutu ve çalıştırdığı Python veya SQL giriş noktası",
+    "1. ve 2. çalıştırmadan sonra yakalanmış warehouse satır sayıları ve birincil anahtar sorguları",
+    "Staging replace-or-truncate stratejisini adlandıran kısa not",
+    "Tek bir nihai döküm olmayan, en az üç commit içeren Git geçmişi",
+    "Görev sorularını yanıtlayan değerlendirme notları"
+  ],
+  "acceptanceCriteria": [
+    "İş, gizli manuel GUI adımı içermeyen belgelenmiş bir komutla tetiklenir.",
+    "Değişmeyen bir kaynak anlık görüntüsünde iki tam çalıştırmadan sonra warehouse satır sayısı ve birincil anahtar kümesi aynıdır; bu iki yakalanmış sayı veya anahtar sorgusuyla gösterilir.",
+    "Bir not, her tam extract öncesi staging'in truncate mu, replace mı yoksa swap mı edildiğini adlandırır.",
+    "Git geçmişi, bitmiş ağacın tek commit'i değil, her biri işi veya şemayı değiştiren en az üç commit içerir."
+  ]
+}

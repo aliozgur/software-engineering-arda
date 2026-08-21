@@ -1,0 +1,15 @@
+{
+  "title": "Monolith ve Microservices: Savunulabilir Bir Karşılaştırma",
+  "objective": "En az üç mimari stili, senaryodan türetilmiş açık ölçütlere göre karşılaştırıp savunulabilir bir öneri kaydetmek.",
+  "whyThisMatters": "Sistemin yapısal stilini seçmek, bir mimarın kariyerindeki en sonuç doğuran ve en çok yeniden tartışılan kararlardan biridir. Asıl başarısızlık bir kez yanlış stil seçmek değil — nedenini söyleyememektir; bu da bir sonraki sefer aynı kötü gerekçelerle başka bir yanlış stili davet eder.",
+  "evidence": [
+    "Belirtilmiş NFR'lerden çekilmiş en az üç açık ölçüte göre en az üç mimari seçeneği puanlayan yazılı bir karşılaştırma",
+    "Karşılaştırmaya atıfta bulunan, nihai öneriyi kaydeden bir ADR",
+    "Sonucu en çok hangi ölçütün değiştirdiğini ve nedenini belirten bir not"
+  ],
+  "acceptanceCriteria": [
+    "En az üç mimari stil, yalnızca anlatı metniyle değil, aynı açık ölçütlere göre karşılaştırılmıştır.",
+    "Her ölçüt, senaryodaki belirli bir NFR veya kısıta bağlıdır.",
+    "Nihai ADR, önerinin tersine dönmesi için senaryoda neyin değişmesi gerektiğini belirtir."
+  ]
+}

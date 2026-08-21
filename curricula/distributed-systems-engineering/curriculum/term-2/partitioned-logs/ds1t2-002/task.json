@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "id": "ds1t2-002",
   "title": "Kafka ISR, acks=all, and Unclean Leader Election",
-  "term": "ds1t2",
+  "term": "year-1-term-2",
   "module": "partitioned-logs",
   "estimatedHours": 18,
   "objective": "Run a three-broker Kafka cluster, produce with acks=all and min.insync.replicas=2, then reproduce two outcomes of the same broker-death sequence: unbounded produce failures when unclean leader election is off, and a committed offset that disappears when it is on.",

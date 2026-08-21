@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "id": "os1t1-006",
   "title": "Apply License Obligations and SemVer to a Real Change",
-  "term": "year-1/term-1",
+  "term": "year-1-term-1",
   "module": "license-and-semver",
   "estimatedHours": 7,
   "objective": "Classify the chosen project's OSI license obligations for a contributor, and assign a SemVer bump to one real published version or pull request with a justification that quotes SemVer 2.0.0.",

@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "id": "ob1t1-007",
   "title": "A Blameless Postmortem You Would Not Be Ashamed to Share",
-  "term": "term-1",
+  "term": "year-1-term-1",
   "module": "postmortem",
   "estimatedHours": 8,
   "objective": "Turn the simulated incident from ob1t1-006 into a blameless postmortem whose follow-ups split across detection, prevention and response, and rewrite one blameful paragraph so it names a system condition instead of a person.",

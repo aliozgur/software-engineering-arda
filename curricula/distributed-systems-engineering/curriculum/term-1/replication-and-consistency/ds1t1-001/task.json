@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "id": "ds1t1-001",
   "title": "Replicated Key-Value Store with Tunable Consistency",
-  "term": "ds1t1",
+  "term": "year-1-term-1",
   "module": "replication-and-consistency",
   "estimatedHours": 12,
   "objective": "Build a single-leader, multi-follower key-value store that runs as independent OS processes communicating only over the network, with a client-selectable read mode, and produce a reproducible demonstration of a real consistency anomaly that exists in one mode and not the other.",

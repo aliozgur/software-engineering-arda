@@ -1,33 +1,33 @@
 {
   "schemaVersion": 1,
   "id": "nosql",
-  "title": "Nosql",
-  "description": "Document data modelling and reasoned use of MongoDB/non-relational stores.",
+  "title": "NoSQL",
+  "description": "Can model documents for a workload that tables fit poorly, query nested fields, and say which invariants still belong in a relational store.",
   "levels": [
     {
       "level": 1,
       "name": "Foundation",
-      "description": "Can explain core concepts and complete guided work."
+      "description": "Can insert and read a document, point at a nested field in the shape, and state that NoSQL is not 'no schema' — under written guidance."
     },
     {
       "level": 2,
       "name": "Apprentice",
-      "description": "Can complete scoped tasks with limited guidance and produce evidence."
+      "description": "Can add MongoDB beside an existing PostgreSQL service, write and read a document through a committed path, filter on a nested field, and name one invariant Postgres still enforces that the document store does not."
     },
     {
       "level": 3,
       "name": "Practitioner",
-      "description": "Can independently design, implement, test and explain non-trivial work."
+      "description": "Can independently choose a document shape for a stated workload, add indexes that match the actual queries, and write a decision memo covering consistency, join or aggregation cost, schema evolution and duplicated-data update risk."
     },
     {
       "level": 4,
       "name": "Journeyman",
-      "description": "Can handle ambiguity, diagnose failures and defend trade-offs."
+      "description": "Can diagnose a projection or dual-write failure where the document looked fine, show a stale or duplicated field, and defend which facts stay in PostgreSQL versus MongoDB when a write crosses both."
     },
     {
       "level": 5,
       "name": "Mastery Evidence",
-      "description": "Can teach, review and make sound decisions across unfamiliar situations."
+      "description": "Can review another apprentice's collection, name a copied-relational model or a missing uniqueness claim, and teach when a document store is the wrong default on an unfamiliar workload."
     }
   ]
 }

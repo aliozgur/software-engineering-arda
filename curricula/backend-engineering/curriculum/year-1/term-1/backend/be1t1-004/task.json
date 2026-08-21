@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "id": "be1t1-004",
   "title": "A REST API Backed by PostgreSQL",
-  "term": "year-1/term-1",
+  "term": "year-1-term-1",
   "module": "backend",
   "estimatedHours": 20,
   "objective": "Implement a working REST API in Python over the schema from the previous task, with validation, consistent errors, and a matching OpenAPI document.",

@@ -1,30 +1,30 @@
 {
   "title": "Açık Kaynak",
-  "description": "Lisanslama, dokümantasyon, yayın/PR işbirliği ve bakım.",
+  "description": "Bir lisansı okuyabilir, gerekçeli ve issue'ya bağlı bir PR açabilir ve gerçek bir public projede maintainership uygulayabilir — triage, review ve SemVer notları.",
   "levels": [
     {
       "name": "Temel",
-      "description": "Temel kavramları açıklayabilir ve rehberli çalışmaları tamamlayabilir.",
+      "description": "Yazılı rehberlik altında bir public repo'nun SPDX lisansını adlandırabilir, CONTRIBUTING'in var olup olmadığını alıntılayabilir ve clone/build komutlarını exit code ile kaydedebilir.",
       "level": 1
     },
     {
       "name": "Çırak",
-      "description": "Kapsamı belirlenmiş görevleri sınırlı yönlendirmeyle tamamlayabilir ve kanıt üretebilir.",
+      "description": "Gerçek bir upstream issue'ya bağlı küçük bir PR açabilir, projenin commit veya DCO/CLA kuralını izleyebilir ve review geri bildirimi ile yanıtın jurnalini tutabilir.",
       "level": 2
     },
     {
       "name": "Uygulayıcı",
-      "description": "Kayda değer bir çalışmayı bağımsız olarak tasarlayabilir, uygulayabilir, test edebilir ve açıklayabilir.",
+      "description": "Public issue'ları kapalı bir sonraki-aksiyon kümesiyle bağımsız olarak triage edebilir, diff'teki dosyaları adlandırarak bir public PR'ı review edebilir ve gerçek commit veya PR'lara atıf yapan SemVer release notes taslağı yazabilir.",
       "level": 3
     },
     {
       "name": "Kalfa",
-      "description": "Belirsizlikle başa çıkabilir, hataları teşhis edebilir ve ödünleşimleri gerekçelendirebilir.",
+      "description": "Will-respond ve will-not-respond sınırları olan bir maintainer paketi çıkarabilir, lisansı ve SemVer kısıtlarına göre işi kabul veya reddedebilir ve başka bir maintainer'ın yalnızca URL'lerden hareket edebileceği notlar üretebilir.",
       "level": 4
     },
     {
       "name": "Ustalık Kanıtı",
-      "description": "Alışılmadık durumlarda öğretebilir, değerlendirme yapabilir ve sağlam kararlar verebilir.",
+      "description": "Başka bir çırağın katkısını veya paketini değerlendirebilir; uydurulmuş bir issue URL'sini veya atladıkları bir lisans yükümlülüğünü adlandırabilir; tanıdık olmayan bir projede close-as-wontfix ile ask-for-info arasını öğretebilir.",
       "level": 5
     }
   ]

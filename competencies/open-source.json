@@ -2,32 +2,32 @@
   "schemaVersion": 1,
   "id": "open-source",
   "title": "Open Source",
-  "description": "Licensing, documentation, issue/PR collaboration and maintainership.",
+  "description": "Can read a license, open a justified issue-linked PR, and practice maintainership — triage, review and SemVer notes — on a real public project.",
   "levels": [
     {
       "level": 1,
       "name": "Foundation",
-      "description": "Can explain core concepts and complete guided work."
+      "description": "Can name a public repo's SPDX license, quote whether CONTRIBUTING exists, and record clone/build commands with an exit code — under written guidance."
     },
     {
       "level": 2,
       "name": "Apprentice",
-      "description": "Can complete scoped tasks with limited guidance and produce evidence."
+      "description": "Can open a small PR linked to a real upstream issue, follow the project's commit or DCO/CLA rule, and keep a journal of review feedback and the response."
     },
     {
       "level": 3,
       "name": "Practitioner",
-      "description": "Can independently design, implement, test and explain non-trivial work."
+      "description": "Can independently triage public issues with a closed set of next actions, review a public PR naming files from the diff, and draft SemVer release notes citing real commits or PRs."
     },
     {
       "level": 4,
       "name": "Journeyman",
-      "description": "Can handle ambiguity, diagnose failures and defend trade-offs."
+      "description": "Can ship a maintainer packet with will-respond and will-not-respond boundaries, accept or reject work against license and SemVer constraints, and produce notes another maintainer can act on from URLs alone."
     },
     {
       "level": 5,
       "name": "Mastery Evidence",
-      "description": "Can teach, review and make sound decisions across unfamiliar situations."
+      "description": "Can review another apprentice's contribution or packet, name an invented issue URL or a license obligation they skipped, and teach when to close-as-wontfix versus ask-for-info on an unfamiliar project."
     }
   ]
 }

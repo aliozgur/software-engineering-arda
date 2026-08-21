@@ -1,0 +1,18 @@
+{
+  "title": "Yavaş Sorguları İndekslemek ve Açıklamak",
+  "objective": "API'nin gerçekten çalıştırdığı sorguları ölçmek, yalnızca planların haklı çıkardığı index'leri eklemek ve mentorun yeniden açabileceği bir önce/sonra EXPLAIN ANALYZE kaydı tutmak.",
+  "whyThisMatters": "'Foreign key'lerde index olmalı' diye eklenen bir index tahmindir. Sonraki yük testi ve bitirme görevleri kapasiteyi kanıtla savunmanızı ister; o kanıt burada başlar.",
+  "evidence": [
+    "En az üç API destekli sorgu için, özet değil dosya olarak commit edilmiş önce ve sonra EXPLAIN ANALYZE planları",
+    "Haklı görülen index'leri ekleyen migration, mevcut migration dizisinde",
+    "Her sorguyu, önceki plan tipi ve süresini, sonraki plan tipi ve süresini ve kullanılan index'i listeleyen README tablosu",
+    "Bir sorguyu index'lememeye karar verdiğiniz anda yazılmış, gerekçesini açıklayan kısa not",
+    "Ölçüm commit'lerinin index migration'ından önce geldiğini gösteren Git geçmişi, tersi değil"
+  ],
+  "acceptanceCriteria": [
+    "Commit edilmiş en az bir plan çifti, migration sonrası Seq Scan'in Index Scan veya Index Only Scan'e dönüştüğünü gösterir.",
+    "Önce ve sonra planlar repository'de dosyadır; her biri EXPLAIN ANALYZE ile üretilmiştir, bellekten yeniden yazılmamıştır.",
+    "Index eklenmeyen bir sorgu, yazılı gerekçesiyle repository'de belgelenir.",
+    "Index migration'ı, mevcut 1. Dönem migration'larından sonra boş bir veritabanında uygulanır; elle çalıştırılan SQL yoktur."
+  ]
+}

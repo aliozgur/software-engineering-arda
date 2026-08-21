@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "id": "pe1t1-004",
   "title": "Cache Only With Evidence",
-  "term": "year-1/term-1",
+  "term": "year-1-term-1",
   "module": "caching",
   "estimatedHours": 10,
   "objective": "Measure miss cost first, then add a cache whose hit rate and p95 delta are produced by the harness, and document the invalidation rule plus one observed stale-or-correctness case.",

@@ -1,0 +1,17 @@
+{
+  "title": "Suite Kalitesini Mutation Testing ile Ölç",
+  "objective": "Var olan bir test paketinde mutation testing aracı çalıştır, mutation score'u yorumla ve ortaya çıkardığı en az bir gerçek boşluğu kapat.",
+  "whyThisMatters": "Satır ve dal coverage yalnızca test sırasında kodun çalıştığını kanıtlar; yanlış bir sonucu testin fark edeceğini değil. Mutation testing, coverage yüzdesinin göremediği zayıf veya eksik assertion'ları ortaya çıkarır.",
+  "evidence": [
+    "Komut ve zaman damgasıyla commit'lenmiş veya yapıştırılmış, önce ve sonra mutation test çıktısı",
+    "Her biri belirli bir hayatta kalan mutanta bağlı, test ekleyen veya güçlendiren commit'ler",
+    "Öldürülmeden bırakılan bir hayatta kalan mutant için yazılı gerekçe",
+    "Değerlendirme notu"
+  ],
+  "acceptanceCriteria": [
+    "Aynı modül için hem baseline mutation score hem satır-coverage yüzdesi kaydedilir.",
+    "En az 3 hayatta kalan mutant, yakalanmayan yanlış davranış cinsinden tek tek anlatılır.",
+    "Bu mutantlardan en az 2'si yeni veya güçlendirilmiş bir testle öldürülür; bu önce/sonra mutation score ile gösterilir.",
+    "Bir hayatta kalan mutant kasten canlı bırakılır ve yazılı gerekçesi vardır."
+  ]
+}

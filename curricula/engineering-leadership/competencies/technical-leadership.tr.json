@@ -1,0 +1,31 @@
+{
+  "title": "Teknik Liderlik",
+  "description": "İncelenebilir artefaktlarla mentorluk ve yetki devri; işe alıp çıkarma yetkisine dayanmadan etki kurma; başka insanların ve ekiplerin birlikte yaşamak zorunda olduğu teknik kararlar alma.",
+  "levels": [
+    {
+      "level": 1,
+      "name": "Temel",
+      "description": "Belirli bir teslimatı veya gözlemlenen davranışı (kişilik özelliği değil) ve bir sonraki check-in tarihini adlandıran yazılı bir 1:1 gündemi, yetki devri brief'i veya inceleme notu üretebilir."
+    },
+    {
+      "level": 2,
+      "name": "Çırak",
+      "description": "Kapsamı belirlenmiş bir mentorluk veya yetki devri döngüsünü tamamlayabilir ve incelenebilir artefakt bırakabilir: gerçek veya role-play bir 1:1'de kullanılan gündem, blocking ile advisory olarak etiketlenmiş inceleme yorumları ve her eylem için sahip ile tarih kaydeden bir takip."
+    },
+    {
+      "level": 3,
+      "name": "Uygulayıcı",
+      "description": "En az iki reddedilmiş alternatifi adlandıran, yazarın ekibi dışındaki kimi etkilediğini belirten ve en az bir kabul edilmiş olumsuz sonucu kaydeden ekip ölçeğinde bir teknik kararı (ADR veya eşdeğer brief) bağımsız yazabilir."
+    },
+    {
+      "level": 4,
+      "name": "Kalfa",
+      "description": "Başka bir ekibin adlandırılmış itirazlarını öngören, yazarın neyi bırakacağını belirten ve belirtilen karşı argümandan sonra isteği 'ikisini de yap'a çökmeden revize eden ekipler arası bir etki brief'i üretebilir."
+    },
+    {
+      "level": 5,
+      "name": "Ustalık Kanıtı",
+      "description": "Ekibin neyi bırakacağını, her bahisin sahibini ve adlandırılmış bir kısıt değişirse hangi bahsin kesileceğini adlandıran 90 günlük bir ekip teknik stratejisi yazıp savunabilir — ve başka bir lead'i aynı sınıfta artefakt üretmeye yönlendirebilir."
+    }
+  ]
+}

@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "id": "ef1t1-004",
   "title": "Write Characterization Tests for Existing Code",
-  "term": "term-1",
+  "term": "year-1-term-1",
   "module": "testing",
   "estimatedHours": 6,
   "objective": "Add automated tests that pin down what an existing, untested Python function or small module actually does today, including at least one surprising or edge-case behavior.",

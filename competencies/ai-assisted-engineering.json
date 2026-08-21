@@ -1,33 +1,33 @@
 {
   "schemaVersion": 1,
   "id": "ai-assisted-engineering",
-  "title": "Ai Assisted Engineering",
-  "description": "Responsible AI-assisted development, disclosure, verification and maintaining human accountability.",
+  "title": "AI-Assisted Engineering",
+  "description": "Can use AI on real work while disclosing it and verifying the output — and can choose when not to generate code so the human stays accountable.",
   "levels": [
     {
       "level": 1,
       "name": "Foundation",
-      "description": "Can explain core concepts and complete guided work."
+      "description": "Can complete a guided change with AI allowed, write a disclosure that names the tool, the purpose and what was independently checked, and mark which parts were generated — under written guidance."
     },
     {
       "level": 2,
       "name": "Apprentice",
-      "description": "Can complete scoped tasks with limited guidance and produce evidence."
+      "description": "Can commit a spec before any generated implementation, save the prompt as given, and list at least one concrete correction made to the output before treating it as theirs."
     },
     {
       "level": 3,
       "name": "Practitioner",
-      "description": "Can independently design, implement, test and explain non-trivial work."
+      "description": "Can independently write tests that fail on a stub before requesting generation, keep those tests as the acceptance gate, and reject at least one suggestion with a stated reason."
     },
     {
       "level": 4,
       "name": "Journeyman",
-      "description": "Can handle ambiguity, diagnose failures and defend trade-offs."
+      "description": "Can diagnose a session that drifted or a case that should not be generated — isolate and revert the unwanted diff, or withhold generation for an irreversible, security-sensitive or still-unclear change — and keep a decision record written before the work."
     },
     {
       "level": 5,
       "name": "Mastery Evidence",
-      "description": "Can teach, review and make sound decisions across unfamiliar situations."
+      "description": "Can review another apprentice's AI-assisted change or review draft, name a defect or a comment the model missed, and teach when not to generate code on a problem they did not specify."
     }
   ]
 }

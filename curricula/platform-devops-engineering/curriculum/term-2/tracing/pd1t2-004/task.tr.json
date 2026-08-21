@@ -1,0 +1,17 @@
+{
+  "title": "OpenTelemetry ile Bir İstek Yolunu Trace Et",
+  "evidence": [
+    "Servisteki commit edilmiş instrumentation değişikliği ve commit edilmiş yerel exporter veya collector yapılandırması",
+    "Kod yoluna uyan adlı en az iki span içeren, belgelenmiş bir istek için yakalanmış trace",
+    "Mentorun yakalamayı istekle eşleştirebilmesi için kanıt notuna yazılmış trace id",
+    "Yerel backend'i başlatan ve tek bir traced isteği yeniden üreten README komutları",
+    "Görev sorularını yanıtlayan değerlendirme notları",
+    "Yapay zekâ çalışmayı önemli ölçüde etkilediyse yapay zekâ kullanım beyanı"
+  ],
+  "acceptanceCriteria": [
+    "Servis, commit edilmiş bir OpenTelemetry instrumentation değişikliği içerir (SDK, auto-instrumentation veya eşdeğeri).",
+    "Belgelenmiş bir istek için yakalanmış trace, kod yoluna uyan adlı en az iki span içerir (örneğin handler artı outbound veya datastore).",
+    "Trace'ler, yapılandırması commit edilmiş yerel bir backend'e (collector artı UI, Jaeger, Zipkin veya file exporter) export edilir.",
+    "Kanıt notu o isteğin trace id'sini kaydeder. Ücretli APM ürünü gerekmez."
+  ]
+}

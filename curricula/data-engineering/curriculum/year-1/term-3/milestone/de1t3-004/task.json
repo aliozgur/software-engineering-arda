@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "id": "de1t3-004",
   "title": "Ship a Production-Shaped Pipeline and Break It On Purpose",
-  "term": "year-1/term-3",
+  "term": "year-1-term-3",
   "module": "milestone",
   "estimatedHours": 12,
   "objective": "Run one batch path and one stream path into a documented shared warehouse, with contracts, a DAG, tests, one bounded backfill, and instrumentation — then recover from an injected failure and show the test command still passes.",

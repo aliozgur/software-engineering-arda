@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "id": "de1t2-001",
   "title": "Write a Data Contract Producers Cannot Ignore",
-  "term": "year-1/term-2",
+  "term": "year-1-term-2",
   "module": "data-contracts",
   "estimatedHours": 8,
   "objective": "Author a versioned producer-consumer contract and a validator that rejects breaking batches while accepting a documented additive change.",

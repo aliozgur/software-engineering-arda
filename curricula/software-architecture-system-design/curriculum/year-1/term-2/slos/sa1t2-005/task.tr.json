@@ -1,0 +1,15 @@
+{
+  "title": "Tasarım Kısıtı Olarak SLO ve Error Budget",
+  "objective": "Önceki NFR bütçelerini açık formüllü SLI'lara çevirmek, belirtilen bir pencere için error budget hesaplamak ve o bütçenin yasaklayacağı bir değişikliği adlandırmak.",
+  "whyThisMatters": "Bir availability sıfatı riskli bir launch'u durduramaz. Belirtilmiş bir SLI ve belirtilmiş bir pencereden hesaplanan bir error budget durdurabilir: mimara \"bu hafta değil\" dedirtecek ve aritmetiği gösterecek sayıdır. O sayı olmadan güvenilirlik, her feature deadline tartışmasını kaybeden bir hissiyattır.",
+  "evidence": [
+    "En az iki SLI içeren bir SLO sayfası; her biri ölçüm formülü artı bir hedef sayı ve bir zaman penceresi olarak yazılmış",
+    "Bu SLO'lardan biri için belirtilmiş bir pencerede error-budget hesabı; formül ve sonuçta izin verilen arıza niceliği görünür",
+    "O pencerede kalan bütçeden fazlasını tüketecek somut bir değişikliği — bir launch, bir migration veya gevşetilmiş bir timeout — aritmetiğiyle adlandıran bir not"
+  ],
+  "acceptanceCriteria": [
+    "En az iki SLI'nın her biri, \"hızlı\" veya \"güvenilir\" gibi bir sıfat değil, adlandırılmış event'ler veya örnekler içeren bir oran veya ölçüm formülüdür.",
+    "Error budget, SLO hedefi ve belirtilmiş bir zaman penceresinden hesaplanır; sonuç yeniden ifade edilmiş bir yüzde değil, bir niceliktir (başarısız istek, kullanılamayan dakika veya eşdeğeri).",
+    "Yasaklanan-değişiklik notu somut bir değişikliği adlandırır ve o pencere için kalan bütçenin aşılacağını gösteren aritmetik sunar."
+  ]
+}

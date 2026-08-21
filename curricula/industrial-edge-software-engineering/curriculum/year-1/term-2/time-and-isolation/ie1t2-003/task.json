@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "id": "ie1t2-003",
   "title": "Priority inversion you can reproduce and then bound",
-  "term": "year-1/term-2",
+  "term": "year-1-term-2",
   "module": "time-and-isolation",
   "estimatedHours": 8,
   "objective": "Reproduce classic priority inversion with three tasks and a mutex, capture a timeline where High is blocked while Medium runs, then apply a named inheritance or ceiling protocol and show High's blocking time drops to a written bound.",

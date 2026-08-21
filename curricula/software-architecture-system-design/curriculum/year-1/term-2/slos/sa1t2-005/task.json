@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "id": "sa1t2-005",
   "title": "SLOs and Error Budgets as Design Constraints",
-  "term": "year-1/term-2",
+  "term": "year-1-term-2",
   "module": "slos",
   "estimatedHours": 8,
   "objective": "Turn prior NFR budgets into SLIs with explicit formulas, compute an error budget for a stated window, and name one change that budget would forbid.",

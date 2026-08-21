@@ -1,30 +1,30 @@
 {
   "title": "Mesajlaşma",
-  "description": "Kuyruklar, pub/sub, onaylar, yeniden denemeler, yetersizlik, sıralama ve karşı basınç.",
+  "description": "Ack, retry ve sıralamanın ölçüldüğü şekilde publish ve consume edebilir — exactly-once iddia etmek yerine gerçek teslimat garantisini söyleyebilir.",
   "levels": [
     {
       "name": "Temel",
-      "description": "Temel kavramları açıklayabilir ve rehberli çalışmaları tamamlayabilir.",
+      "description": "Yazılı rehberlik altında bir kuyruğa mesaj publish edebilir, ayrı bir süreçte consume edebilir ve ack ile nack'i gösterebilir.",
       "level": 1
     },
     {
       "name": "Çırak",
-      "description": "Kapsamı belirlenmiş görevleri sınırlı yönlendirmeyle tamamlayabilir ve kanıt üretebilir.",
+      "description": "API'den bir domain event publish edebilir, HTTP yanıtının consumer bitmeden döndüğünü gösterebilir, crash sonrası unacked bir mesajı kurtarabilir ve zehirli bir mesajı sınırlı retry ile incelenebilir bir dead-letter yoluna yönlendirebilir.",
       "level": 2
     },
     {
       "name": "Uygulayıcı",
-      "description": "Kayda değer bir çalışmayı bağımsız olarak tasarlayabilir, uygulayabilir, test edebilir ve açıklayabilir.",
+      "description": "Yinelenen teslimatı domain durumu için bağımsız olarak güvenli kılabilir, idempotency key'i yazabilir ve adlı bir senaryoda RabbitMQ ile Kafka'yı karşılaştırabilir — sıralamayı markaya değil bir partition'a bağlayarak.",
       "level": 3
     },
     {
       "name": "Kalfa",
-      "description": "Belirsizlikle başa çıkabilir, hataları teşhis edebilir ve ödünleşimleri gerekçelendirebilir.",
+      "description": "Yalnızca 'at-least-once'ın yanıltacağı bir dual-write, ack-window veya unclean-leader hatasını teşhis edebilir; kaybolan veya yinelenen etkiyi gösterebilir; başka bir nöbetçinin uygulama kaynağını açmadan kullanabileceği bir sonuç tablosu üretebilir.",
       "level": 4
     },
     {
       "name": "Ustalık Kanıtı",
-      "description": "Alışılmadık durumlarda öğretebilir, değerlendirme yapabilir ve sağlam kararlar verebilir.",
+      "description": "Başka bir çırağın topolojisini değerlendirebilir; gelişigüzel bir exactly-once iddiasını veya sınırsız bir retry'ı adlandırabilir; tanıdık olmayan bir pipeline'da bir Kafka offset'ine mi yoksa bir RabbitMQ ack'ine mi güvenileceğini öğretebilir.",
       "level": 5
     }
   ]

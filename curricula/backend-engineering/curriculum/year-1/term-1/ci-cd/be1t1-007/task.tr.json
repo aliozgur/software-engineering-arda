@@ -1,0 +1,17 @@
+{
+  "title": "Sürekli Entegrasyon Pipeline'ı (1. Dönem Dönüm Noktası)",
+  "objective": "Lint, testler ve container build'ini her push'ta çalışan, başarısızlıkta merge'ü görünür biçimde engelleyen otomatik bir pipeline'a bağlamak.",
+  "whyThisMatters": "Bu, dönemin döngüsünü kapatır: şimdiye kadar kurulan her şey artık hafızayla değil otomatik kontrol edilir; asıl mesele de budur.",
+  "evidence": [
+    "Repository'ye commit edilmiş CI workflow dosyası",
+    "Hem başarısız hem geçen bir koşunun bağlantıları veya dışa aktarılmış log'ları",
+    "Kasıtlı kırılmayı ve düzeltmesini ayrı commit'ler olarak gösteren Git geçmişi",
+    "Pipeline aşamalarını ve branch korumasının kurulumunu anlatan README bölümü"
+  ],
+  "acceptanceCriteria": [
+    "Pipeline her push'ta lint, gerçek bir veritabanı servisine karşı tam test takımı ve bir container build çalıştırır.",
+    "Kasıtlı olarak kırılmış bir commit pipeline'ı düşürür; başarısızlık koşu log'unda görünür.",
+    "Düzeltme commit'i pipeline'ı yeşile çevirir.",
+    "Pipeline kırmızıysa merge engellenir veya engellendiği belgelenir."
+  ]
+}

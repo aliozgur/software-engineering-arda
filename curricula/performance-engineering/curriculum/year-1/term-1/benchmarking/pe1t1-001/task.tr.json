@@ -1,0 +1,19 @@
+{
+  "title": "Önce ölç: yinelenebilir bir taban koşumu",
+  "objective": "Sonuçlara bakmadan önce gecikme ve hata SLI'larını tanımla; tek komutluk bir koşumla üç koşuluk bir taban üret — p50/p95/p99 ve belgelenmiş sapmayla.",
+  "whyThisMatters": "Kimsenin yeniden üretemediği bir hızlanma ölçü değil, hikâyedir. Dönemin sonraki işleri — profil, önbellek, yük testi, kapasite — sayıları bu koşumdan alır. Taban tek şanslı koşunun ortalamasıysa sonraki her iddia güvensizdir.",
+  "evidence": [
+    "İlk sonuç dosyasından önce commit edilmiş, p95 veya p99 gecikme hedefi ile hata oranı hedefi yazan bir SLI/SLO notu",
+    "Koşum betiği veya programı ve bir koşu üreten README komutu",
+    "Her birinde p50, p95, p99 ve hata oranı olan en az üç koşunun ham çıktısı",
+    "Üç p95 değerini ve sayısal aralığını yazan taban notu",
+    "Donanım ve ısınma notu (CPU modeli veya instance türü, atılan ısınma yinelemesi sayısı)",
+    "Görev sorularını yanıtlayan değerlendirme notları"
+  ],
+  "acceptanceCriteria": [
+    "SLI/SLO dosyası bir p95 veya p99 gecikme hedefi ile bir hata oranı hedefi yazar ve commit'i ilk sonuç dosyasından öncedir.",
+    "Belgelenmiş tek komut, yalnızca ortalama değil p50, p95 ve p99 yazdıran veya yazan bir koşu üretir.",
+    "En az üç koşu çıktı dosyası commit edilmiştir; bir sapma notu bu koşulardaki p95 sayısal aralığını yazar.",
+    "Donanım notu makineyi veya instance türünü ve zamanlanan pencereden önce atılan ısınma yinelemesi sayısını adlandırır."
+  ]
+}

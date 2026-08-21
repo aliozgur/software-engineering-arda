@@ -2,32 +2,32 @@
   "schemaVersion": 1,
   "id": "security",
   "title": "Security",
-  "description": "Threat modelling, authentication/authorization, secure coding, OWASP and secrets management.",
+  "description": "Can threat-model, authenticate, authorize and keep secrets out of Git — and can map a fix to an OWASP-shaped abuse case on a system they own.",
   "levels": [
     {
       "level": 1,
       "name": "Foundation",
-      "description": "Can explain core concepts and complete guided work."
+      "description": "Can draw a DFD with numbered trust boundaries, classify each crossing store or flow, and list an OWASP-mapped threat without committing a secret — under written guidance."
     },
     {
       "level": 2,
       "name": "Apprentice",
-      "description": "Can complete scoped tasks with limited guidance and produce evidence."
+      "description": "Can store passwords with a dedicated hash, prove logout rejects a replayed session, and move a secret from Git to the environment with a scanner that fails on a planted dummy."
     },
     {
       "level": 3,
       "name": "Practitioner",
-      "description": "Can independently design, implement, test and explain non-trivial work."
+      "description": "Can independently prove object-level authorization with a test that user A cannot read user B's object, distinguish 401 from 403 on the same route, and write a residual-risk register with open, mitigated or accepted."
     },
     {
       "level": 4,
       "name": "Journeyman",
-      "description": "Can handle ambiguity, diagnose failures and defend trade-offs."
+      "description": "Can review a real application diff with severity, OWASP or CWE, and must-fix versus non-blocking; apply or record residual risk; and name one horizontal and one vertical privilege failure from that system."
     },
     {
       "level": 5,
       "name": "Mastery Evidence",
-      "description": "Can teach, review and make sound decisions across unfamiliar situations."
+      "description": "Can review another apprentice's threat model or auth fix, name a checklist item that does not map to a trust-boundary crossing (or a secret left in history), and teach when to trust a server-side check over a hidden UI control on an unfamiliar app."
     }
   ]
 }

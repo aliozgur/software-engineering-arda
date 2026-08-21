@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "id": "be1s-004",
   "title": "Security Review and a Repeatable Release",
-  "term": "year-1/summer",
+  "term": "year-1-summer",
   "module": "release",
   "estimatedHours": 18,
   "objective": "Ship a tagged release whose pipeline tests, scans and publishes an image, execute a security review that produces a finding, and dry-run a rollback to the previous tag.",

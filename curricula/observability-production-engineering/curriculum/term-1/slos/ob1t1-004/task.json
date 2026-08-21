@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "id": "ob1t1-004",
   "title": "SLOs and Error Budgets You Can Actually Burn",
-  "term": "term-1",
+  "term": "year-1-term-1",
   "module": "slos",
   "estimatedHours": 8,
   "objective": "Derive two SLIs from existing metrics, publish an SLO with a time window for each, and show remaining error budget shrink after an induced failure.",

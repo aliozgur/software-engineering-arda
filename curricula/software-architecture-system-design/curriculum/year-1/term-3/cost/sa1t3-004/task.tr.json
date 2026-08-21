@@ -1,0 +1,15 @@
+{
+  "title": "Bütçe Kesintisine Karşı Bir Tasarımı Savunmak",
+  "objective": "Formülleri yazılmış bir maliyet modeli kurmak, adlandırılmış yüzdelik bir bütçe kesintisinden sonra önceki bir ADR'ı gözden geçirmek ve ürün adı kullanmadan kullanıcıya görünen etkiyi adlandıran tek sayfalık bir not yazmak.",
+  "whyThisMatters": "Maliyet, gecikme ile aynı itibara sahip bir kısıttır. Yüzde 40'lık bir kesintiden sağ çıkamayan veya kesintiyi datastore'unu umursamayan birine anlatamayan bir tasarım, sizin yerinize — kötü — kesilecektir. Bu görev, mimari yargının mesleki pratikle kesiştiği yerdir: kararı gözden geçir, sonra kullanıcının ne fark edeceğini söyle.",
+  "evidence": [
+    "Önceki bir capacity veya topoloji kararından türetilmiş en az üç maliyet sürücüsü için formül ve birim gösteren bir maliyet modeli",
+    "Belirtilmiş yüzdelik bir bütçe kesintisine yanıt veren, neyin düşürüldüğünü veya ertelendiğini adlandıran, superseded veya amended bir ADR",
+    "Kesintinin kullanıcıya görünen etkisini, bulut veya datastore ürün adı içermeyen bir cümlede adlandıran, en fazla 400 sözcükle bir paydaş notu"
+  ],
+  "acceptanceCriteria": [
+    "Maliyet modeli en az üç sürücü için (örneğin compute-hours, stored-gigabytes, egress-gigabytes veya replica-count çarpı instance-cost) bir formül ve bir birim belirtir.",
+    "İkinci bir ADR, önceki bir kararı superseded veya amended olarak işaretler, kesinti yüzdesini adlandırır ve düşürülen en az bir yeteneği, bölgeyi veya replica'yı adlandırır.",
+    "Paydaş notu en fazla 400 sözcüktür ve bulut, kuyruk veya datastore ürünü adlandırmadan kullanıcıya görünen etkiyi belirten bir cümle içerir."
+  ]
+}

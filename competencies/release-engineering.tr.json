@@ -1,30 +1,30 @@
 {
   "title": "Sürüm Mühendisliği",
-  "description": "Bağımlılıklar, paketler, anlamsal sürüm oluşturma, değişiklik günlükleri ve tekrarlanabilir sürümler.",
+  "description": "Sürümlenmiş, yeniden üretilebilir bir release kesebilir: lockfile, SemVer, kullanıcıya görünen değişikliğin changelog'u ve başka bir mühendisin tag'den yeniden üretebileceği bir artifact.",
   "levels": [
     {
       "name": "Temel",
-      "description": "Temel kavramları açıklayabilir ve rehberli çalışmaları tamamlayabilir.",
+      "description": "Yazılı rehberlik altında bir commit'i SemVer adıyla tag'leyebilir, kullanıcıya görünen bir değişikliği adlandıran bir changelog satırı yazabilir ve ekosistemin beklediği lockfile'ı gösterebilir.",
       "level": 1
     },
     {
       "name": "Çırak",
-      "description": "Kapsamı belirlenmiş görevleri sınırlı yönlendirmeyle tamamlayabilir ve kanıt üretebilir.",
+      "description": "Belgelenmiş komutla o commit'ten yeniden build olan tag'li bir release kesebilir, en az iki sürüm için CHANGELOG girdileri tutabilir ve mentorun soru sormadan izleyebileceği bir RELEASE.md yazabilir.",
       "level": 2
     },
     {
       "name": "Uygulayıcı",
-      "description": "Kayda değer bir çalışmayı bağımsız olarak tasarlayabilir, uygulayabilir, test edebilir ve açıklayabilir.",
+      "description": "Patch, minor ve major'ı örneklerle bağımsız olarak ayırt edebilir, yeniden üretilebilir bir bağımlılık envanteri tutabilir ve rutin bir güncellemeyi acil bir güvenlik yanıtından yazılı bir politikada ayırabilir.",
       "level": 3
     },
     {
       "name": "Kalfa",
-      "description": "Belirsizlikle başa çıkabilir, hataları teşhis edebilir ve ödünleşimleri gerekçelendirebilir.",
+      "description": "Yeniden build edilemeyen bir release'i teşhis edebilir — eksik lockfile, pinsiz bağımlılık, build config'de sır veya tag ile örtüşmeyen sürüm — ve API sürümünü uygulama release sürümünden ayıran bir uyumluluk veya deprecation notu üretebilir.",
       "level": 4
     },
     {
       "name": "Ustalık Kanıtı",
-      "description": "Alışılmadık durumlarda öğretebilir, değerlendirme yapabilir ve sağlam kararlar verebilir.",
+      "description": "Başka bir çırağın release'ini değerlendirebilir; yalnızca 'updates' olan bir changelog'u veya bir kırılmayı gizleyen SemVer bump'ını adlandırabilir; tanıdık olmayan bir depoda artifact'in tag'li image mi yoksa dil paketi mi olduğunu öğretebilir.",
       "level": 5
     }
   ]

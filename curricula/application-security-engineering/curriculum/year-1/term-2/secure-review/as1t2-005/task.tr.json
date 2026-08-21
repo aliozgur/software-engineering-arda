@@ -1,0 +1,20 @@
+{
+  "title": "Yazılı Kararlı Secure Code Review",
+  "objective": "Sahip olduğunuz gerçek bir uygulama diff'ini inceleyin, severity, OWASP veya CWE eşlemesi ve önerilen düzeltmeyle en az dört bulgu yazın; must-fix öğelerini uygulayın veya residual risk kaydedin.",
+  "whyThisMatters": "Bir ekipte AppSec işinin çoğu review'dır, kişisel bir CTF değildir. Kullanılabilir bir review hunk'ı, zayıflığı, severity'yi ve ne yapılacağını adlandırır — ve genel bir checklist olmaması için neyin kapsam dışı olduğunu belirtir.",
+  "evidence": [
+    "En az 40 satır uygulama kodunun incelenen diff'i (pull request bağlantısı veya commit edilmiş patch); yalnızca dokümantasyon değil",
+    "Her biri severity (high, medium veya low), OWASP kategorisi veya CWE id, dosya ve hunk ve önerilen düzeltme listeleyen en az 4 bulgulu yazılı bir review",
+    "En az 1 must-fix ve en az 1 non-blocking işaretli bulgu",
+    "Must-fix öğelerini uygulayan commit'ler veya açık bırakılan her must-fix için residual-risk kayıtları",
+    "Bu review'ın neyi kapsamadığını belirten bir out-of-scope paragrafı",
+    "Görev sorularını yanıtlayan değerlendirme notu"
+  ],
+  "acceptanceCriteria": [
+    "Review, en az 40 satır uygulama kodunun (yalnızca dokümantasyon değil) bir diff'ini kapsar.",
+    "Review en az 4 bulgu listeler; her birinde severity (high, medium veya low), OWASP kategorisi veya CWE id, dosya ve hunk ve önerilen bir düzeltme vardır.",
+    "En az 1 bulgu must-fix, en az 1 bulgu non-blocking olarak işaretlenir.",
+    "Must-fix öğeleri takip commit'lerinde uygulanır veya kalan her must-fix'in threat-model register'ında bir residual-risk kaydı vardır.",
+    "Review, genel bir checklist olmaması için neyin kapsam dışı olduğunu belirtir."
+  ]
+}

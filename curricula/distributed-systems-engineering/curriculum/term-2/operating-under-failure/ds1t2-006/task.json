@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "id": "ds1t2-006",
   "title": "Operating Contract for the System You Assembled",
-  "term": "ds1t2",
+  "term": "year-1-term-2",
   "module": "operating-under-failure",
   "estimatedHours": 18,
   "objective": "Assemble a path that includes at least partitioning or replication plus an outbox-or-broker hop, run a three-class failure playbook you wrote before the run, and publish a falsifiable operating contract covering what is refused, what is retried, what can be lost, and which trace or query proves each case.",

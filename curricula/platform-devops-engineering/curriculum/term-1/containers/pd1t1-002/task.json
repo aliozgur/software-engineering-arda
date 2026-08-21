@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "id": "pd1t1-002",
   "title": "Containerize the Service You Already Test in CI",
-  "term": "term-1",
+  "term": "year-1-term-1",
   "module": "containers",
   "estimatedHours": 12,
   "competencies": [

@@ -1,0 +1,17 @@
+{
+  "title": "Tek Bir Arıza için Log, Metric ve Trace'i İlişkilendir",
+  "evidence": [
+    "Trace id alanı içeren yapılandırılmış request log'ları yayan commit edilmiş logging değişikliği",
+    "Bir isteği trace id ve timestamp ile adlandıran, eşleşen log satırını, metric hareketini ve trace'i ekleyen teşhis notu",
+    "Belgelenmiş arızayı bilerek tetikleyen komut veya script",
+    "Bu repository'den log, Prometheus ve trace backend'inin nasıl başlatılacağını belirten README",
+    "Görev sorularını yanıtlayan değerlendirme notları",
+    "Yapay zekâ çalışmayı önemli ölçüde etkilediyse yapay zekâ kullanım beyanı"
+  ],
+  "acceptanceCriteria": [
+    "Yapılandırılmış request log'ları (JSON veya key=value), başarısız olan istek yolunda bir trace id alanı içerir.",
+    "Teşhis notu bir isteği (trace id artı timestamp) adlandırır ve eşleşen log satırını, hareket eden bir metric'i ve eşleşen trace'i gösterir.",
+    "Arıza, belgelenmiş bir eylemle tetiklenir (zorlanmış 5xx, timeout veya kötü bağımlılık); açıklanamayan bir crash değil.",
+    "Teşhis notu başarısız span'i veya log satırını ve hareket eden metric'i belirtir. Üç backend de repository'den yerelde başlar."
+  ]
+}

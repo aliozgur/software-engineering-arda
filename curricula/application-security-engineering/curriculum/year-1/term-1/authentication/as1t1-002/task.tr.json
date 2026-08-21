@@ -1,0 +1,20 @@
+{
+  "title": "Savunabileceğiniz Authentication",
+  "objective": "Sahip olduğunuz veya yerelde işlettiğiniz uygulamadaki authentication kusurlarını bulun ve düzeltin; parola saklama, session veya token iptali ve başarısız login davranışını incelenebilir testlerle kanıtlayın.",
+  "whyThisMatters": "'Login'i olan bir API yazmak, credential'ların nasıl saklandığını, bir session'ın nasıl öldüğünü ve başarısız bir denemenin neyi ifşa ettiğini savunabilmek değildir. Authentication bug'ları, mentorun yerel uygulamada sizin kırmanızı ve onarmanızı izleyebileceği kusurlardır.",
+  "evidence": [
+    "En az 2 authentication kusurunu route veya dosya konumu, önceki ve sonraki davranışla listeleyen bir bulgu notu",
+    "Her düzeltmenin kendi commit'inde olduğunu gösteren Git geçmişi; tek bir birleşik 'security' commit'i değil",
+    "Saklanan parolanın plaintext olmadığını ve parolanın çıplak bir SHA-2'si olmadığını gösteren commit edilmiş bir test veya sorgu",
+    "Logout veya iptalden sonra yeniden oynatılan bir session veya token'ın reddedildiğini gösteren commit edilmiş bir test",
+    "Başarılı bir login ve başarısız bir login için yakalanmış HTTP request/response çiftleri",
+    "Görev sorularını yanıtlayan değerlendirme notu"
+  ],
+  "acceptanceCriteria": [
+    "Parolalar ayrılmış bir password hash ile saklanır (bcrypt, scrypt veya argon2); commit edilmiş bir test veya sorgu, saklanan değerin plaintext olmadığını ve parolanın çıplak bir SHA-2'si olmadığını gösterir.",
+    "Logout veya açık iptal, session veya token'ı geçersiz kılar; önceki credential'ın yeniden oynatılması reddedilir.",
+    "Sahip olunan veya yerel uygulamada bulunan en az 2 authentication kusuru dosya, satır veya route ile listelenir, sonra düzeltilmiş olarak gösterilir.",
+    "Başarısız login, bilinmeyen hesap ve yanlış parola için aynı HTTP status ve body şeklini kullanır; notlar bilinçli bir istisnayı ve residual risk'i belgelemedikçe.",
+    "Gönderilen branch'teki hiçbir commit'te parola, session secret veya API key commit edilmez."
+  ]
+}

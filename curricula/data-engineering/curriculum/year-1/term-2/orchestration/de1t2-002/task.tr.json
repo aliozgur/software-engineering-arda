@@ -1,0 +1,19 @@
+{
+  "title": "Hata Sonrası Gerçeği Söyleyen Bir DAG Orkestre Et",
+  "objective": "extract, validate, load ve quality_gate'i öyle zamanla ki başarısız load kapıyı atlanmış bıraksın, warehouse last-good'da kalsın ve yalnızca load retry'si çalıştırmayı bitirebilsin.",
+  "whyThisMatters": "Her zaman extract'ten başlayan bir cron satırı hata sonrası yalan söyler: ya göremediğin işi yeniden yaparsın ya da yayını engellemesi gereken kapıyı atarsın. Zamanlayıcının görev durumları süs değil, kanıtın parçasıdır.",
+  "evidence": [
+    "extract, validate, load ve quality_gate bağımlılıklarını gösteren DAG veya eşdeğer tanım",
+    "Enjekte edilen load hatasından sonra quality_gate'in skipped veya upstream-failed olduğunu gösteren zamanlayıcı UI veya log kanıtı",
+    "O başarısız çalıştırma boyunca warehouse sayıları önce ve sonra",
+    "Yeni extract olmadan başarılı load retry'sini ve ardından quality_gate başarısını gösteren çalıştırma geçmişi",
+    "Retry sayısı, timeout ve her görevin başarı anlamını belirten not",
+    "Görev sorularını yanıtlayan değerlendirme notları"
+  ],
+  "acceptanceCriteria": [
+    "DAG tanımı extract, validate, load ve quality_gate'i listeler; quality_gate, load'un aşağısındadır.",
+    "Enjekte edilen bir load hatasından sonra zamanlayıcı UI veya görev log'ları quality_gate'i success değil, skipped veya upstream-failed durumda gösterir.",
+    "Tüketicinin gördüğü warehouse tablosu başarısız çalıştırma boyunca değişmez; bu önce/sonra sayılarıyla gösterilir.",
+    "Başarılı olan bir load retry'sinin ardından quality_gate, extract yeniden çalıştırılmadan başarıya ulaşır; bu görev instance log'larında veya çalıştırma geçmişinde görünür."
+  ]
+}

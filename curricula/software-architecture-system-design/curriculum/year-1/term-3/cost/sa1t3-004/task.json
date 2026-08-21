@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "id": "sa1t3-004",
   "title": "Defending a Design Against a Budget Cut",
-  "term": "year-1/term-3",
+  "term": "year-1-term-3",
   "module": "cost",
   "estimatedHours": 8,
   "objective": "Build a cost model with stated formulas, revise a prior ADR after a named percentage budget cut, and write a one-page note that names the user-visible impact without product names.",

@@ -7,27 +7,27 @@
     {
       "level": 1,
       "name": "Foundation",
-      "description": "Can explain core concepts and complete guided work."
+      "description": "Can name the population and the sample, compute a named interval in code, and write a claim that does not say 'caused' — under written guidance."
     },
     {
       "level": 2,
       "name": "Apprentice",
-      "description": "Can complete scoped tasks with limited guidance and produce evidence."
+      "description": "Can implement the interval method they named, discuss bias as it applies to this dataset — not a generic list — and keep causal language out unless the design supports it."
     },
     {
       "level": 3,
       "name": "Practitioner",
-      "description": "Can independently design, implement, test and explain non-trivial work."
+      "description": "Can independently choose an interval that matches the sampling design, state what the interval does and does not cover, and refuse a cause claim the design cannot support."
     },
     {
       "level": 4,
       "name": "Journeyman",
-      "description": "Can handle ambiguity, diagnose failures and defend trade-offs."
+      "description": "Can diagnose a confidence interval treated as a causal proof, or a sample treated as the population, and produce a rewrite that names the method and the limit."
     },
     {
       "level": 5,
       "name": "Mastery Evidence",
-      "description": "Can teach, review and make sound decisions across unfamiliar situations."
+      "description": "Can review another apprentice's inference note, name a causal verb the design cannot carry (or an unnamed interval), and teach when to stay at association on an unfamiliar study."
     }
   ]
 }

@@ -1,0 +1,18 @@
+{
+  "title": "Gerçekçi Yük Altında Performans Regresyonunu Teşhis Et",
+  "objective": "Yük altında beklenenden kötü davranan bir sistemde asıl darboğazı ölçüm ve kanıtla bul ve düzeltmenin doğruluğu bozmadan işe yaradığını kanıtla.",
+  "whyThisMatters": "Yanlış şeyi optimize etmek zaman kaybettirir ve faydasız karmaşıklık ekler. Bu görev kasten açıktır: üretimde darboğazı kimse baştan vermez.",
+  "evidence": [
+    "Belirlenen darboğazı destekleyen profiling veya metrik çıktısı",
+    "Düzeltmeden önce kaydedilmiş yazılı hipotez, yanlış çıkan hipotez dahil",
+    "Aynı iş yükü için önce/sonra yük testi sonuçları",
+    "Düzeltmeden sonra hâlâ geçen bir doğruluk test paketi çalıştırması",
+    "Değerlendirme notu"
+  ],
+  "acceptanceCriteria": [
+    "Belirli bir darboğaz hipotezi, düzeltme uygulanmadan önce yazıyla kaydedilir.",
+    "Profiling veya metrik kanıtı, varsayım değil, belirlenen darboğazı destekler.",
+    "Aynı iş yükü için önce/sonra gecikme dağılımlarının ikisi de raporlanır.",
+    "Doğruluk test paketi performans düzeltmesinden sonra geçtiği gösterilir."
+  ]
+}

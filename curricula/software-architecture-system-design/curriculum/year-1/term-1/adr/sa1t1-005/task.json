@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "id": "sa1t1-005",
   "title": "Defending an Architecture Decision Under a Changed Constraint",
-  "term": "year-1/term-1",
+  "term": "year-1-term-1",
   "module": "adr",
   "estimatedHours": 6,
   "objective": "Defend a previously written ADR live against a skeptical reviewer, then revise it in response to one deliberately changed constraint.",

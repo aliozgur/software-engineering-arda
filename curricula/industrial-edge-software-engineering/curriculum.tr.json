@@ -1,0 +1,11 @@
+{
+  "name": "apprenti.dev Endüstriyel / Edge Yazılım Mühendisliği",
+  "audience": "Üretim kodu yazan, kaynak kısıtlı ve endüstriyel edge yazılıma yönelen gömülü, IIoT ve backend mühendisleri",
+  "philosophy": "LEARN BY DOING. GROW THROUGH MENTORSHIP. Önce bütçeye göre tasarla: her bayt, her tick ve her güncelleme yolu, zaten elinde olan bir host'ta ölçülür — silikondan önce simülasyon, flash'tan önce fail-safe.",
+  "aiPrinciples": [
+    "Yapay zekâ desteği, çalışmayı önemli ölçüde etkilediğinde açıklanmalıdır.",
+    "Bu müfredattaki görevler varsayılan olarak guided yapay zekâ kullanır: açıklama, ipucu ve kısa sınava izin vardır; tam çözüme yoktur.",
+    "Çırak, bir yapay zekâ aracının üretmeye yardım ettiği C dahil, gönderilen her artefaktan sorumlu olmaya devam eder.",
+    "Mentor onayı, sergilenen anlayışa ve incelenebilir kanıta dayanır — yalnız yeşil bir test koşusu yetmez."
+  ]
+}

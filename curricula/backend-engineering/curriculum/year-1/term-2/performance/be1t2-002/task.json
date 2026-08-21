@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "id": "be1t2-002",
   "title": "Index and Explain the Slow Queries",
-  "term": "year-1/term-2",
+  "term": "year-1-term-2",
   "module": "performance",
   "estimatedHours": 14,
   "objective": "Measure the queries the API actually runs, add only the indexes the plans justify, and keep a before/after EXPLAIN ANALYZE record a mentor can reopen.",

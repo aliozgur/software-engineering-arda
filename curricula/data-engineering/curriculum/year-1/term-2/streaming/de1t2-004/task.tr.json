@@ -1,0 +1,19 @@
+{
+  "title": "Geç ve Sırasız Olayları Bilerek Yönet",
+  "objective": "Pencereleri event time ile ata, belgelenmiş bir izin verilen gecikme politikası uygula ve pencere içi sırasız olayların doğru pencereyi güncellediğini, geç olayların yazılı kuralı izlediğini göster.",
+  "whyThisMatters": "Processing time olayı gördüğün andır. Event time olduğu andır. Bunları karıştırmak, gün kapandıktan sonra 'günlük toplam'ın kaymasına ve bunun politika mı hata mı olduğunu kimsenin söyleyememesine yol açar.",
+  "evidence": [
+    "Kodda veya config'de pencere boyutu, event-time alanı ve izin verilen gecikme değeri",
+    "processing_time'ı B penceresinde, event_time'ı A penceresinde olup A'ya inen yakalanmış bir olay",
+    "Geç olay politikası notu ve enjekte edilen on geç olayın kaderi",
+    "İzin verilen gecikme içindeki sırasız bir olay için önce ve sonra ölçüler",
+    "Gecikme dışı bir olaydan sonra yazılı politikayla örtüşen kapalı pencere ölçüsü",
+    "Görev sorularını yanıtlayan değerlendirme notları"
+  ],
+  "acceptanceCriteria": [
+    "Pencere ataması processing_time değil event_time kullanır; bunu processing_time'ı B'de, event_time'ı A'da olan bir olayın A'ya inmesi gösterir.",
+    "On geç olayın tümü ya özgün pencere ölçülerinin güncellemesi ya da late_events tablosu veya dosyasındaki satırlar olarak görünür ve seçilen politika bir notta adlandırılır.",
+    "İzin verilen gecikme penceresi içindeki sırasız bir olay o pencerenin ölçüsüne dahil edilir; bu yakalanmış önce/sonra değerleriyle gösterilir.",
+    "İzin verilen gecikmenin ötesindeki bir olay, yazılı politika öyle demedikçe kapalı bir pencereyi sessizce değiştirmez — yakalanmış ölçü politikayla örtüşür."
+  ]
+}

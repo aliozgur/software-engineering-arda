@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "id": "be1t2-006",
   "title": "Load Test the Service and Name the Bottleneck",
-  "term": "year-1/term-2",
+  "term": "year-1-term-2",
   "module": "load-testing",
   "estimatedHours": 14,
   "objective": "Run a repeatable load script against the containerized service, record percentile latencies, name the bottleneck with attached evidence, and rerun the same script after one change.",

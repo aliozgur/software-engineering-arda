@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "id": "sa1t2-003",
   "title": "Caching as an Architectural Decision, Not a Speed Hack",
-  "term": "year-1/term-2",
+  "term": "year-1-term-2",
   "module": "caching",
   "estimatedHours": 8,
   "objective": "Compare cache placements against stated latency and consistency budgets, then record a decision that names its invalidation rule as a number or an explicit event.",

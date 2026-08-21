@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "id": "an1t2-005",
   "title": "Reviewing Someone Else's Work as an AI-Assisted Reviewer",
-  "term": "year-1/term-2",
+  "term": "year-1-term-2",
   "module": "ai-code-review",
   "estimatedHours": 7,
   "objective": "Act as the reviewer, not the author, of a real change set, using AI to draft review comments as a starting point, and find and add at least one substantive comment the AI draft missed.",

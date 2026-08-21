@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "id": "qt1t1-003",
   "title": "Measure Suite Quality with Mutation Testing",
-  "term": "year-1/term-1",
+  "term": "year-1-term-1",
   "module": "mutation-testing",
   "estimatedHours": 14,
   "objective": "Run a mutation-testing tool against an existing test suite, interpret the mutation score, and close at least one real gap it exposes.",

@@ -1,30 +1,30 @@
 {
-  "title": "Ağ oluşturma",
-  "description": "Ethernet/IP/TCP/UDP/DNS/TLS, yönlendirme, soketler ve paket analizi.",
+  "title": "Ağ",
+  "description": "Ethernet/IP/TCP/UDP/DNS/TLS'i kabloda okuyabilir, soket yazabilir ve bir capture ile bir uygulama günlüğü çeliştiğinde hangi katmana güvenileceğini seçebilir.",
   "levels": [
     {
       "name": "Temel",
-      "description": "Temel kavramları açıklayabilir ve rehberli çalışmaları tamamlayabilir.",
+      "description": "Yazılı rehberlik altında bir paket yakalayabilir, üzerinde MAC, IP, port ve hostname etiketleyebilir ve yazılı bir prefix'ten subnet hesaplayabilir.",
       "level": 1
     },
     {
       "name": "Çırak",
-      "description": "Kapsamı belirlenmiş görevleri sınırlı yönlendirmeyle tamamlayabilir ve kanıt üretebilir.",
+      "description": "DNS ve bir default-gateway hop'u içeren bir capture'ı açıklayabilir, disconnect'i ele alan bir socket client yazabilir ve belirtilen bir payload için TCP ile UDP arasında tek cümlelik gerekçeyle seçim yapabilir.",
       "level": 2
     },
     {
       "name": "Uygulayıcı",
-      "description": "Kayda değer bir çalışmayı bağımsız olarak tasarlayabilir, uygulayabilir, test edebilir ve açıklayabilir.",
+      "description": "Bir capture'da handshake ve sequence/ack davranışını bağımsız olarak tanıyabilir, peer reset'inden sağ çıkan bir socket server uygulayabilir ve o yolda TLS şifreleme, kimlik doğrulama ve sertifikaları ayırabilir.",
       "level": 3
     },
     {
       "name": "Kalfa",
-      "description": "Belirsizlikle başa çıkabilir, hataları teşhis edebilir ve ödünleşimleri gerekçelendirebilir.",
+      "description": "Yalnızca DNS, routing veya TLS'in yanıltacağı bir arızayı teşhis edebilir; bunu kanıtlayan capture alanlarını gösterebilir; başka bir nöbetçinin uygulama kaynağını açmadan izleyebileceği bir not üretebilir.",
       "level": 4
     },
     {
       "name": "Ustalık Kanıtı",
-      "description": "Alışılmadık durumlarda öğretebilir, değerlendirme yapabilir ve sağlam kararlar verebilir.",
+      "description": "Başka bir çırağın capture'ını veya socket kodunu değerlendirebilir; yanlış etiketlenmiş bir alanı adlandırabilir (MAC'i IP sanmak, veya TLS'i yalnızca şifreleme sanmak); tanıdık olmayan bir host'ta paket dökümüne mi yoksa uygulama günlüğüne mi güvenileceğini öğretebilir.",
       "level": 5
     }
   ]

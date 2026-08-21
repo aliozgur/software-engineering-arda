@@ -1,0 +1,17 @@
+{
+  "title": "Image'ı CI'da Build Et ve Test Et",
+  "evidence": [
+    "Image-build job'unu ve o image'ı kullanan test job'unu gösteren commit edilmiş pipeline dosyası",
+    "Git SHA içeren image tag'ini yazdıran geçen bir koşunun CI log'u",
+    "Dockerfile'ı bozan bir commit'in build job'unun o nedenle düştüğünü gösteren CI log'u ve revert commit",
+    "Test adımının yalnızca runner host'una kurulu paketlere karşı değil, build edilen image'a karşı çalıştığını gösteren CI log'u veya yakalanmış çıktı",
+    "Görev sorularını yanıtlayan değerlendirme notları",
+    "Yapay zekâ çalışmayı önemli ölçüde etkilediyse yapay zekâ kullanım beyanı"
+  ],
+  "acceptanceCriteria": [
+    "Pipeline, ilgili her push ve pull/merge request'te Dockerfile'ı build eder.",
+    "Bir test adımı, o job'un az önce build ettiği image'a karşı çalışır; yalnızca runner host'una kurulu bağımlılıklara karşı değil.",
+    "Image build'ini bozan bir commit CI'ın o nedenle kırmızıya döndüğünü gösterir, ardından follow-up commit'te revert edilir.",
+    "Build edilen image kısa veya tam git SHA ile tag'lenir ve bu tag CI log'unda görünür."
+  ]
+}

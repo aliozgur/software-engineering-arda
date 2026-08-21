@@ -1,0 +1,19 @@
+{
+  "title": "Yapay Zekâ Yardımıyla bir Tasarım İncelemesi Hazırlamak",
+  "objective": "Gerçek bir tasarım kararı için yapay zekâya bir tasarım belgesi taslağı yazdırın; ardından kendi sözlerinizle somut bir ödünleşimi savunan, gerçek bir mentor incelemesine hazır hale getirin.",
+  "whyThisMatters": "Kimsenin gözden geçirmediği, yapay zekânın yazdığı bir tasarım belgesi kolay seçilir ve kolay parçalanır. Mesleki beceri, taslağı başlangıç noktası olarak kullanırken ödünleşimden sorumlu kalanın siz olmanızdır.",
+  "evidence": [
+    "Düzenlenmemiş ilk yapay zekâ taslak bölümü; gözden geçirilmiş sürüm oluşmadan önce commit edilmiş veya tarihlenmiş",
+    "Gözden geçirilmiş tasarım belgesi: en az bir ödünleşim bölümü kendi sözlerinizle yeniden yazılmış, somut bir alternatif değerlendirilmiş ve reddedilmiş",
+    "Yapay zekâ taslağındaki yanlış veya sizin sisteminize uymayan bir olgusal iddiayı veya seçeneği ve bunu nasıl fark ettiğinizi adlandıran not",
+    "Taslağın gözden geçirmeden önce kaydedildiğini gösteren Git geçmişi veya tarihli dosyalar; tek bir birleşik döküm değil",
+    "Kullanılan araç/modeli, amacı ve bağımsız olarak doğrulananı adlandıran yapay zekâ kullanım beyanı"
+  ],
+  "acceptanceCriteria": [
+    "Düzenlenmemiş yapay zekâ taslağı saklanmıştır ve gözden geçirilmiş belgeden ayırt edilebilir.",
+    "Yapay zekâ taslağı, gözden geçirilmiş belgeden önce commit edilmiş veya tarihlenmiştir.",
+    "Gözden geçirilmiş belge, değerlendirilip reddedilmiş en az bir alternatifi belirtilmiş bir gerekçeyle ortaya koyar.",
+    "Not, yapay zekâ taslağından somut bir hatalı veya uygulanamaz iddiayı adlandırır; genel bir feragatname değildir.",
+    "Nihai belge, ilgilendiği somut sistemi veya özelliği adlandırır; yeniden dile getirilmiş genel bir şablon değildir."
+  ]
+}

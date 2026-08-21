@@ -1,0 +1,20 @@
+{
+  "title": "Sertleştir, Doğrula ve Residual Risk'i Kaydet",
+  "objective": "Sahip olduğunuz uygulamada yolu kapatın: threat-model register'ı güncelleyin, security regression suite ve CI taramasını yeşil tutun ve her residual risk'i bir karara bağlayan bir evidence pack yayınlayın.",
+  "whyThisMatters": "AppSec işi, son bug sınıfının blog yazısı bir düzeltmesi olduğunda bitmez. Mentorun tek bir paketi açıp modeli, testleri, pipeline'ı ve düzeltmemeyi seçtiğiniz riskleri — sahipler ve sonraki eylemlerle — gördüğünde biter.",
+  "evidence": [
+    "as1t1-001 ve sonraki görevlerden her öğede durum (mitigated, accepted veya transferred) ve mitigated olmayan her öğede sonraki eylem artı sahip içeren güncellenmiş threat-model register",
+    "Gönderilen commit'te as1t2-002 security regression suite'inin geçtiğini gösteren tarihli komut çıktısı",
+    "Aynı commit'te as1t2-004 workflow'unun yeşil bir GitHub Actions çalışması veya run id'li yapıştırılmış log",
+    "Threat model, sınıflandırma tablosu, regression çıktısı, CI çalışması, secret-scan sonucu ve header yakalamasına bağlanan bir evidence-pack belgesi",
+    "Olasılık, etki ve bu yolda neden düzeltilmedikleriyle en az 2 kabul edilmiş residual-risk yazısı",
+    "Görev sorularını yanıtlayan değerlendirme notu"
+  ],
+  "acceptanceCriteria": [
+    "Güncellenmiş threat-model register, as1t1-001'den her öğede bir durum (mitigated, accepted veya transferred) taşır ve sonraki eylem ile sahibi olmadan open bırakılmış öğe yoktur.",
+    "as1t2-002 security regression suite'i gönderilen commit'te geçer; komut ve tarihli çıktı dahildir.",
+    "as1t2-004 CI security workflow'u gönderilen commit'te yeşildir.",
+    "Bir evidence-pack belgesi threat model, sınıflandırma tablosu, regression çıktısı, CI çalışması, secret-scan sonucu ve header yakalamasına bağlanır.",
+    "En az 2 kabul edilmiş residual risk; olasılık, etki ve bu yolda neden düzeltilmedikleriyle yazılır."
+  ]
+}

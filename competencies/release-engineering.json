@@ -2,32 +2,32 @@
   "schemaVersion": 1,
   "id": "release-engineering",
   "title": "Release Engineering",
-  "description": "Dependencies, packages, semantic versioning, changelogs and reproducible releases.",
+  "description": "Can cut a versioned, rebuildable release: lockfiles, SemVer, a changelog of user-facing change, and an artifact another engineer can reproduce from the tag.",
   "levels": [
     {
       "level": 1,
       "name": "Foundation",
-      "description": "Can explain core concepts and complete guided work."
+      "description": "Can tag a commit with a SemVer name, write a changelog line that names a user-facing change, and point at the lockfile the ecosystem expects — under written guidance."
     },
     {
       "level": 2,
       "name": "Apprentice",
-      "description": "Can complete scoped tasks with limited guidance and produce evidence."
+      "description": "Can cut a tagged release whose artifact rebuilds from that commit with the documented command, keep CHANGELOG entries for at least two versions, and write RELEASE.md a mentor can follow without asking a question."
     },
     {
       "level": 3,
       "name": "Practitioner",
-      "description": "Can independently design, implement, test and explain non-trivial work."
+      "description": "Can independently distinguish patch, minor and major with examples, keep a reproducible dependency inventory, and separate a routine update from an urgent security response in a written policy."
     },
     {
       "level": 4,
       "name": "Journeyman",
-      "description": "Can handle ambiguity, diagnose failures and defend trade-offs."
+      "description": "Can diagnose a release that cannot be rebuilt — missing lockfile, unpinned dependency, secret in build config, or a version that does not match the tag — and produce a compatibility or deprecation note that distinguishes API version from application release version."
     },
     {
       "level": 5,
       "name": "Mastery Evidence",
-      "description": "Can teach, review and make sound decisions across unfamiliar situations."
+      "description": "Can review another apprentice's release, name a changelog that is only 'updates' or a SemVer bump that hides a break, and teach when a tagged image is the artifact versus a language package on an unfamiliar repository."
     }
   ]
 }

@@ -1,0 +1,20 @@
+{
+  "title": "Kanıtlı bir kazanç, reddedilmiş bir sahte kazanç",
+  "objective": "Kodu değiştirmeden önce darboğaz hipotezini kaydet; aynı iş yükünde p95 veya SLO-karşılayan RPS'yi oynatan bir değişiklik gönder; işe yaramayan ikinci bir değişikliği belgele; doğruluğu yeniden doğrula.",
+  "whyThisMatters": "Yazılım mühendisliği performans görevi ölç, profillendir, düzelt ve sahte-eniyilemeyi-reddet işlerini tek 18 saatlik geçişte birleştirir. Sende zaten koşum, profiller, izler, bir önbellek deneyi, sorgu planları, bir kırılma noktası ve bir kapasite notu var. Bu kapanış yargı ister: önce/sonra sayılarla savunabileceğin bir kazanç ve göndermeyi reddettiğin görünen bir kazanç.",
+  "evidence": [
+    "Eniyileme diff'inden önce commit edilmiş, darboğazı ve oynamasını beklediğin metriği adlandıran hipotez dosyası",
+    "Aynı pe1t1-001 veya pe1t1-006 komutundan önce ve sonra sonuçlar; her biri p95 veya SLO-karşılayan RPS alıntılar",
+    "Metrik farkını sayı olarak yazan ve değişikliği gerekçelendiren profil, iz veya EXPLAIN kanıtına işaret eden gönderilmiş-değişiklik notu",
+    "İyileşme veya gerileme göstermeyen önce/sonra sayıları olan reddedilmiş-değişiklik notu ve değişikliğin varsayılan yolda olmadığına dair doğrulama",
+    "Gönderilmiş değişiklikten sonra geçen bir doğruluk testi veya değişmezlik kontrolü",
+    "Görev sorularını yanıtlayan değerlendirme notları"
+  ],
+  "acceptanceCriteria": [
+    "Hipotez dosyası ilk eniyileme commit'inden önce commit edilmiştir ve bir darboğaz ile bir metrik (p95 veya SLO-karşılayan RPS) adlandırır.",
+    "Önce ve sonra koşular aynı belgelenmiş komutu kullanır; her iki sonuç p95 veya SLO-karşılayan RPS'yi sayı olarak alıntılar.",
+    "Gönderilen değişiklik o metriği amaçlanan yönde oynatır; fark iki koşudan hesaplanır.",
+    "İkinci bir değişikliğin kazanç veya gerileme göstermeyen commit edilmiş önce/sonra sayıları vardır ve varsayılan yolda yoktur.",
+    "Gönderilen değişiklikten sonra geçen bir doğruluk testi veya kaydedilmiş değişmezlik gösterilir."
+  ]
+}

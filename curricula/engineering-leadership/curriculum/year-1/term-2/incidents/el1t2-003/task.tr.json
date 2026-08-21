@@ -1,0 +1,15 @@
+{
+  "title": "Debugger'ı Değil, Incident Comms'u Yürütün",
+  "objective": "Zaman damgalı bir comms timeline, eşzamanlı bir karar kaydı ve detect, prevent veya respond etiketli takipleri olan blameless bir postmortem üretin.",
+  "whyThisMatters": "Bir incident sırasında lead'in işi çoğu zaman kanal, karar kaydı ve müşterilere ile yöneticilere giden sözlerdir — en zekice stack trace değil. Bu artefaktlar incelenebilir. 'Sakin kaldım' incelenebilir değildir.",
+  "evidence": [
+    "En az dört zaman damgalı güncelleme, en az iki kitle ve postmortem'den önce root-cause-as-fact içermeyen bir comms timeline",
+    "Her biri o andaki bilinen bilgiyi (sonradan öğrenilen gerçeği değil) belirten en az üç kayıtlı karar kaydı",
+    "En az iki katkı faktörü adlandıran, bir kişinin karakterini veya yetkinliğini suçlayan sıfır cümle içeren ve her biri detect, prevent veya respond etiketli sahip rolü olan en az iki takipli blameless postmortem"
+  ],
+  "acceptanceCriteria": [
+    "Timeline'da en az dört zaman damgalı güncelleme ve en az iki farklı kitle vardır; hiçbir comms-timeline güncellemesi bir root cause'u olgu olarak belirtmez.",
+    "Karar kaydında en az üç girdi vardır; her girdi o zaman damgasında bilineni belirtir, sonradan öğrenilen nedeni değil.",
+    "Postmortem en az iki katkı faktörü adlandırır, kesintiyi bir kişinin karakterine veya yetkinliğine bağlayan cümle içermez ve her biri sahip rolü ile detect/prevent/respond etiketi olan en az iki takip listeler."
+  ]
+}

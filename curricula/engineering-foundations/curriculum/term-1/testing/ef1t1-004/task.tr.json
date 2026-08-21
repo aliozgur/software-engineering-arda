@@ -1,0 +1,17 @@
+{
+  "title": "Var Olan Kod için Karakterizasyon Testleri Yazmak",
+  "objective": "Testi olmayan mevcut bir Python fonksiyonunun veya küçük bir modülünün bugün gerçekte ne yaptığını sabitleyen otomatik testler ekleyin; en az bir şaşırtıcı veya uç durum davranışı dahil.",
+  "whyThisMatters": "Meslekteki test yazımının çoğu, boş sayfaya karşı test güdümlü geliştirme değildir — zaten var olan ve testi olmayan koda güvenlik ağı eklemektir. Karakterizasyon testleri, o kodu sonradan, bir şeyin bağlı olduğunu bilmediğiniz davranışı kırmadan değiştirmenizi sağlar.",
+  "evidence": [
+    "Ne karakterize ettiklerini anlatan bir mesajla commit edilmiş test dosyası(ları)",
+    "Tüm testlerin geçtiğini gösteren konsol çıktısı",
+    "Bulunan şaşırtıcı veya uç durum davranışını adlandıran kısa not",
+    "Yapay zekâ test senaryoları üretmeye yardımcı olduysa yapay zekâ kullanım beyanı"
+  ],
+  "acceptanceCriteria": [
+    "En az 6 test senaryosu vardır; normal girdi, en az bir uç durum ve en az bir geçersiz veya beklenmeyen girdi kapsanır.",
+    "Tüm testler, değiştirilmemiş mevcut koda karşı geçer.",
+    "Bir yorum veya eşlik eden not, kodun mevcut davranışının şaşırtıcı veya yanlış göründüğü en az bir yeri, düzeltmeden adlandırır.",
+    "Testler tek belgelenmiş bir komutla çalışır ve o komutun çıktısı kanıta eklenmiştir."
+  ]
+}

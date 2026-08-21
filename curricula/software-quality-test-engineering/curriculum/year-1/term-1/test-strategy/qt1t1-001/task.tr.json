@@ -1,0 +1,18 @@
+{
+  "title": "Test Stratejisini Gerçek Riske Bağla",
+  "objective": "Gerçek bir sistem için, her test katmanını alışkanlığa değil belirli bir risk sınıfına bağlayan bir test stratejisi ve piramidi üret.",
+  "whyThisMatters": "Yönsüz test yazmak bakımı pahalı olan ve yine de önemli hataları kaçıran paketler üretir. Risk-katman haritası, her şeyi biraz veya en kolay ulaşılabileni test etmek yerine ekibin sıradaki testi seçmek için gerçekten kullandığı artefakttır.",
+  "evidence": [
+    "Paketin tek commit'te değil, adım adım kurulduğunu gösteren Git geçmişi",
+    "Commit'lenmiş risk-test-katmanı tablosu (ör. docs/test-strategy.md)",
+    "Tüm paketin geçtiğini gösteren komut ve çıktı",
+    "Karşılık gelen düzeltme geri alındığında bir testin düştüğünü, sonra geri gelince yeniden geçtiğini gösteren commit veya diff",
+    "Görevin sorularını yanıtlayan değerlendirme notu"
+  ],
+  "acceptanceCriteria": [
+    "Risk tablosu en az 8 ayrı hata kipini listeler; her biri tam olarak bir test katmanına eşlenir.",
+    "Listelenen risklerden en az 5'inin, riski adıyla veya yorumla referanslayan geçen bir testi vardır.",
+    "En az 1 test, karşılık gelen düzeltme geri alındığında düşer ve geri gelince yeniden geçer.",
+    "Tüm paket tek belgelenmiş komutla sonuna kadar çalışır."
+  ]
+}

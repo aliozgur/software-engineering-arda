@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "id": "pe1t1-008",
   "title": "One Evidenced Win, One Rejected Fake",
-  "term": "year-1/term-1",
+  "term": "year-1-term-1",
   "module": "synthesis",
   "estimatedHours": 12,
   "objective": "Record a bottleneck hypothesis before changing code, ship one change that moves p95 or SLO-meeting RPS on the identical workload, document a second change that did not help, and revalidate correctness.",

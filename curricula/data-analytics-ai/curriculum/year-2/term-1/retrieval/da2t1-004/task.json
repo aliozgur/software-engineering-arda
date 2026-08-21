@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "id": "da2t1-004",
   "title": "Retrieval-Grounded Answers",
-  "term": "year-2/term-1",
+  "term": "year-2-term-1",
   "module": "retrieval",
   "estimatedHours": 12,
   "competencies": [

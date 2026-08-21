@@ -1,0 +1,17 @@
+{
+  "title": "Klavyeyi Almadan Öğreten İnceleme Notları",
+  "objective": "Verilen bir değişiklik üzerine yazarı öğreten inceleme yorumları yazın, her yorumu blocking veya advisory etiketleyin ve yazacağınız patch'i ayrı bir notta tutun.",
+  "whyThisMatters": "PR'ı sessizce yeniden yazan bir lead yeşil CI ve bir sonraki PR'ı land edemeyen bir junior üretir. İnceleme notları bir mentorluk artefaktıdır: incelenebilir, etiketlenmiş ve klavyeyi almaktan ayrı olmalıdır.",
+  "evidence": [
+    "Verilen Harborline diff'i üzerine en az dört yorumlu inceleme notları; her yorum blocking veya advisory etiketli",
+    "Soru olan ve düzeltmeyi içermeyen en az bir yorum",
+    "İnceleyenin yapacağı değişikliği ve bunun neden review yorumlarına yapıştırılmadığını belirten ayrı bir reviewer-patch notu",
+    "En az üç istenen değişiklik ve tam olarak bir açık non-issue içeren yazara dönük özet"
+  ],
+  "acceptanceCriteria": [
+    "Her satır içi yorum blocking veya advisory etiketliydi ve en az dört yorum vardır.",
+    "En az bir yorum, metninde düzeltilmiş kodu veya tam düzeltmeyi içermeyen bir sorudur.",
+    "Ayrı bir not, inceleyenin yazacağı değişikliği listeler ve bunun neden inceleme yorumlarından çekildiğini belirtir.",
+    "Yazara dönük özet en az üç istenen değişikliği ve bu PR'da değiştirilmemesi gereken tam olarak bir şeyi adlandırır."
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "title": "Cache'i Hız Hilesi Değil, Mimari Karar Olarak Ele Almak",
+  "objective": "Cache yerleşimlerini belirtilen gecikme ve tutarlılık bütçelerine göre karşılaştırmak, ardından invalidation kuralını bir sayı veya açık bir event olarak adlandıran bir karar kaydetmek.",
+  "whyThisMatters": "Bayat okuma sınırı yazılmamış bir cache, itiraf edilmemiş bir tutarlılık kararıdır. \"Daha hızlı olsun\" diye cache ekleyip invalidation'ı örtük bırakan mimarlar, eventual consistency'yi kazara seçer — ve bunu bir incident'te öğrenir.",
+  "evidence": [
+    "En az iki cache yerleşimi artı cache'siz bir seçeneğin karşılaştırması; her biri önceki bir görevdeki aynı gecikme ve tutarlılık bütçesine göre puanlanmış",
+    "Seçilen yerleşimi ve invalidation veya TTL kuralını bir sayı veya açık bir geçersizleştirme event'i olarak belirten bir ADR",
+    "Seçilen kural altında bayat değerin azami yaşını adlandıran bir stale-read senaryosunu adım adım anlatan bir not"
+  ],
+  "acceptanceCriteria": [
+    "En az iki cache yerleşimi ve cache'siz bir seçenek, genel bir tercih değil, aynı belirtilmiş gecikme ve tutarlılık bütçelerine göre puanlanmıştır.",
+    "ADR, invalidation kuralını saniye cinsinden bir TTL veya kaydı düşüren ya da yenileyen adlandırılmış bir event olarak belirtir.",
+    "Stale-read notu somut bir okumayı, yanlış olacak değeri ve seçilen kural altında o yanlış değerin azami yaşını adlandırır."
+  ]
+}

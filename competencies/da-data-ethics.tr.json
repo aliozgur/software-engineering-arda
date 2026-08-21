@@ -5,27 +5,27 @@
     {
       "level": 1,
       "name": "Temel",
-      "description": "Temel kavramları açıklayabilir ve rehberli çalışmayı tamamlayabilir."
+      "description": "Yazılı rehberlik altında lisansı veya kullanım koşullarını atıflayabilir, reddettikleri bir kullanımı adlandırabilir ve tool, amaç ve bağımsız kontrol edileni içeren bir AI disclosure yazabilir."
     },
     {
       "level": 2,
       "name": "Çırak",
-      "description": "Sınırlı rehberlikle kapsamı belirlenmiş görevleri tamamlayabilir ve kanıt üretebilir."
+      "description": "Bu veri kümesi veya sistem üzerinde somut bir unfair-but-legal örnek verebilir, tabloda kimlerin eksik olduğunu adlandırabilir ve analiz değişince ethics notunu güncelleyebilir."
     },
     {
       "level": 3,
       "name": "Uygulayıcı",
-      "description": "Basit olmayan çalışmaları bağımsız biçimde tasarlayabilir, uygulayabilir, test edebilir ve açıklayabilir."
+      "description": "Sistemi kimin kullanmaması gerektiğini belirten bir system card'ı bağımsız yazabilir, oversight'ı işler hale getirebilir — kim bakıyor, ne sıklıkla — ve tavsiyeyi kanıttan güçlü tutmayabilir."
     },
     {
       "level": 4,
       "name": "Kalfa",
-      "description": "Belirsizliği yönetebilir, hataları teşhis edebilir ve ödünleşimleri savunabilir."
+      "description": "Tool'u gizleyen bir disclosure'ı, kullanımı yasaklayan bir lisansı veya adlandırılmış eksik grubu olmayan bir adalet iddiasını teşhis edebilir ve başka bir reviewer'ın ekibi sorumlu tutabileceği bir card üretebilir."
     },
     {
       "level": 5,
       "name": "Ustalık Kanıtı",
-      "description": "Öğretebilir, inceleyebilir ve alışılmadık durumlarda sağlam kararlar verebilir."
+      "description": "Başka bir çırağın ethics notunu veya system card'ını değerlendirebilir; slogan oversight'ı veya lisansın yasakladığı bir kullanımı adlandırabilir; tanıdık olmayan bir veri kümesinde kimlerin eksik olduğunun nasıl adlandırılacağını öğretebilir."
     }
   ]
 }

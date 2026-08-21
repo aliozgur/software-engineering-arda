@@ -2,32 +2,32 @@
   "schemaVersion": 1,
   "id": "algorithms",
   "title": "Algorithms",
-  "description": "Data structures, algorithm design, complexity analysis and problem solving.",
+  "description": "Can choose and implement a data structure or algorithm with a written complexity argument — and can show when measured cost disagrees with Big-O because of constants or input shape.",
   "levels": [
     {
       "level": 1,
       "name": "Foundation",
-      "description": "Can explain core concepts and complete guided work."
+      "description": "Can implement a list, hash table or sort from a written spec, document the complexity of each operation, and run tests on empty, typical and worst-case inputs — under written guidance."
     },
     {
       "level": 2,
       "name": "Apprentice",
-      "description": "Can complete scoped tasks with limited guidance and produce evidence."
+      "description": "Can implement two algorithms with different asymptotic behavior, tabulate or graph a benchmark, and write a complexity justification that is not a guess copied from a title."
     },
     {
       "level": 3,
       "name": "Practitioner",
-      "description": "Can independently design, implement, test and explain non-trivial work."
+      "description": "Can independently pick a structure or algorithm for a stated input-size scenario, implement it with tests, and write a correctness argument that uses an invariant or an induction-style step rather than \"the tests passed.\""
     },
     {
       "level": 4,
       "name": "Journeyman",
-      "description": "Can handle ambiguity, diagnose failures and defend trade-offs."
+      "description": "Can diagnose a case where Big-O hides a practically important constant or a worst-case family the average-case story conceals, cite the benchmark or the input family, and produce a note another engineer can follow to reproduce the crossover."
     },
     {
       "level": 5,
       "name": "Mastery Evidence",
-      "description": "Can teach, review and make sound decisions across unfamiliar situations."
+      "description": "Can review another apprentice's algorithm write-up, name a complexity claim that is unjustified or a test suite that never hits the worst case, and teach when a theoretically worse algorithm is the right choice on an unfamiliar input-size scenario."
     }
   ]
 }

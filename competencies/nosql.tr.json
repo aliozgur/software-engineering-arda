@@ -1,30 +1,30 @@
 {
-  "title": "Nosql",
-  "description": "MongoDB/ilişkisel olmayan depoların veri modellemesini ve gerekçeli kullanımını belgeleyin.",
+  "title": "NoSQL",
+  "description": "Tabloların uymadığı bir iş yükü için document modelleyebilir, iç içe alanları sorgulayabilir ve hangi değişmezlerin hâlâ ilişkisel depoda kalması gerektiğini söyleyebilir.",
   "levels": [
     {
       "name": "Temel",
-      "description": "Temel kavramları açıklayabilir ve rehberli çalışmaları tamamlayabilir.",
+      "description": "Yazılı rehberlik altında bir document ekleyip okuyabilir, şekilde iç içe bir alanı gösterebilir ve NoSQL'in 'şemasız' olmadığını söyleyebilir.",
       "level": 1
     },
     {
       "name": "Çırak",
-      "description": "Kapsamı belirlenmiş görevleri sınırlı yönlendirmeyle tamamlayabilir ve kanıt üretebilir.",
+      "description": "Mevcut bir PostgreSQL servisinin yanına MongoDB ekleyebilir, commit'lenmiş bir yoldan document yazıp okuyabilir, iç içe bir alana göre filtreleyebilir ve document store'un uygulamadığı, Postgres'in hâlâ zorladığı bir değişmezi adlandırabilir.",
       "level": 2
     },
     {
       "name": "Uygulayıcı",
-      "description": "Kayda değer bir çalışmayı bağımsız olarak tasarlayabilir, uygulayabilir, test edebilir ve açıklayabilir.",
+      "description": "Belirtilen bir iş yükü için bağımsız olarak bir document şekli seçebilir, gerçek sorgulara uyan index ekleyebilir ve tutarlılık, join veya aggregation maliyeti, şema evrimi ve yinelenen veri güncelleme riskini kapsayan bir karar notu yazabilir.",
       "level": 3
     },
     {
       "name": "Kalfa",
-      "description": "Belirsizlikle başa çıkabilir, hataları teşhis edebilir ve ödünleşimleri gerekçelendirebilir.",
+      "description": "Document'in iyi göründüğü bir projection veya dual-write hatasını teşhis edebilir; bayat veya yinelenmiş bir alanı gösterebilir; bir yazı her ikisini de geçtiğinde hangi olguların PostgreSQL'de, hangilerinin MongoDB'de kalacağını savunabilir.",
       "level": 4
     },
     {
       "name": "Ustalık Kanıtı",
-      "description": "Alışılmadık durumlarda öğretebilir, değerlendirme yapabilir ve sağlam kararlar verebilir.",
+      "description": "Başka bir çırağın collection'ını değerlendirebilir; kopyalanmış ilişkisel bir modeli veya eksik bir uniqueness iddiasını adlandırabilir; tanıdık olmayan bir iş yükünde document store'un neden yanlış varsayılan olduğunu öğretebilir.",
       "level": 5
     }
   ]

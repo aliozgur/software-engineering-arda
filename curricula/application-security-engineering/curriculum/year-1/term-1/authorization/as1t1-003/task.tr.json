@@ -1,0 +1,20 @@
+{
+  "title": "Authorization ve Nesne Düzeyinde Erişim",
+  "objective": "Sahip olduğunuz veya yerelde işlettiğiniz uygulamadaki kırık erişim kontrolünü bulun ve düzeltin; object-level ve function-level kontrollerin sunucu tarafında zorlandığını kanıtlayın.",
+  "whyThisMatters": "Authentication birinin kim olduğunu yanıtlar. Authorization o kişinin belirli bir nesneye ne yapabileceğini yanıtlar. Yaygın başarısızlık bir IDOR'dur: route bir session'ın var olduğunu kontrol eder, sonra istemcinin gönderdiği herhangi bir tanımlayıcıyı yükler. Bu görevin yakalamak için kurulduğu kusur budur.",
+  "evidence": [
+    "En az 2 authorization kusurunu route, nesne tanımlayıcısı ve bunları göstermek için kullanılan iki yerel kullanıcıyla listeleyen bir bulgu notu",
+    "Her düzeltmenin kendi commit'inde olduğunu gösteren Git geçmişi",
+    "Kullanıcı A'nın belgelenmiş object-id route'u üzerinden kullanıcı B'nin nesnesini okuyamadığı, güncelleyemediği veya silemediği commit edilmiş bir test",
+    "Aynı route'a kimliği doğrulanmamış, kimliği doğrulanmış ama yetkisiz ve yetkili istekler için yakalanmış HTTP",
+    "Bu sistemden bir yatay ve bir dikey yetki örneğini adlandıran notlar",
+    "Görev sorularını yanıtlayan değerlendirme notu"
+  ],
+  "acceptanceCriteria": [
+    "Kimliği doğrulanmış bir kullanıcı, belgelenmiş object-id route'u üzerinden başka bir kullanıcının nesnesini okuyamaz, güncelleyemez veya silemez; commit edilmiş bir test 401 veya 403 gösterir ve notlar hangisini kullandığını belirtir.",
+    "Korumalı bir route'a kimliği doğrulanmamış istek 401 alır; kimliği doğrulanmış ama yetkisiz istek 403 alır, veya notlar farklı bir çifti belgeler ve gerekçelendirir.",
+    "Ayrıcalıklı bir eylemde en az bir function-level kontrol sunucu tarafında zorlanır; yalnızca kullanıcı arayüzünde gizlenmez.",
+    "Sahip olunan veya yerel uygulamada bulunan en az 2 authorization kusuru route veya dosya konumuyla listelenir ve düzeltilmiş olarak gösterilir.",
+    "Notlar bu sistemden alınmış bir yatay ve bir dikey yetki örneğini adlandırır."
+  ]
+}

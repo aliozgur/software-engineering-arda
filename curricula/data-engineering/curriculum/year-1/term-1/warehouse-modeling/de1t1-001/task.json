@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "id": "de1t1-001",
   "title": "Stage Operational Data Before You Model It",
-  "term": "year-1/term-1",
+  "term": "year-1-term-1",
   "module": "warehouse-modeling",
   "estimatedHours": 8,
   "objective": "Design a staging schema that preserves source grain and a warehouse schema with an explicit grain, keys, and one slowly-changing-attribute decision — without turning the work into an analytics report.",

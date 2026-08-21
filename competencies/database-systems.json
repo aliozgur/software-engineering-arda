@@ -2,32 +2,32 @@
   "schemaVersion": 1,
   "id": "database-systems",
   "title": "Database Systems",
-  "description": "Storage, indexes, query execution, transactions, concurrency and recovery.",
+  "description": "Can show how a database stores, indexes, executes, isolates and recovers work — from a plan, a concurrency test or a measured replica, not a slogan.",
   "levels": [
     {
       "level": 1,
       "name": "Foundation",
-      "description": "Can explain core concepts and complete guided work."
+      "description": "Can explain why pages and a buffer pool exist, read a named EXPLAIN node, and treat isolation as a property of concurrent transactions — under written guidance."
     },
     {
       "level": 2,
       "name": "Apprentice",
-      "description": "Can complete scoped tasks with limited guidance and produce evidence."
+      "description": "Can exercise a storage or index structure with tests, record EXPLAIN ANALYZE before and after a change, and state an isolation or WAL claim in their own words."
     },
     {
       "level": 3,
       "name": "Practitioner",
-      "description": "Can independently design, implement, test and explain non-trivial work."
+      "description": "Can independently keep an index that cut measured time, reject one that did not, expose a naive concurrency bug with a test, and justify an isolation level against that bug."
     },
     {
       "level": 4,
       "name": "Journeyman",
-      "description": "Can handle ambiguity, diagnose failures and defend trade-offs."
+      "description": "Can diagnose a stall, stale replica read or lost update where 'add an index' or 'use a transaction' would mislead, cite the plan, lock or LSN evidence, and write a recovery or failover note another engineer can follow without opening source."
     },
     {
       "level": 5,
       "name": "Mastery Evidence",
-      "description": "Can teach, review and make sound decisions across unfamiliar situations."
+      "description": "Can review another apprentice's index or isolation choice, name a folklore index or an isolation slogan the test contradicts, and teach when to trust a plan over a lock wait (or the reverse) on an unfamiliar engine."
     }
   ]
 }

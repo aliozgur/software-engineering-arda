@@ -1,30 +1,30 @@
 {
-  "title": "Csharp Dotnet",
-  "description": "C#, .NET, eşzamansız programlama ve üretim arka uç mühendisliği.",
+  "title": "C# / .NET",
+  "description": "Uyarıların, iptalin ve sunucu tarafı yetkilendirmenin uygulandığı C# / .NET servisleri kurabilir — .Result veya .Wait ile bloklamadan async I/O yazabilir.",
   "levels": [
     {
       "name": "Temel",
-      "description": "Temel kavramları açıklayabilir ve rehberli çalışmaları tamamlayabilir.",
+      "description": "Yazılı rehberlik altında nullable reference type'lar, unit test'ler ve belgelenmiş public API seçimleriyle modern bir C# console veya library yazabilir.",
       "level": 1
     },
     {
       "name": "Çırak",
-      "description": "Kapsamı belirlenmiş görevleri sınırlı yönlendirmeyle tamamlayabilir ve kanıt üretebilir.",
+      "description": "Gerçekten iptal eden bir CancellationToken ile async I/O uygulayabilir; uygulama yollarında .Result/.Wait'i reddedebilir; derleyici uyarılarını hata sayabilir; çözüme configuration ve yapılandırılmış logging ekleyebilir.",
       "level": 2
     },
     {
       "name": "Uygulayıcı",
-      "description": "Kayda değer bir çalışmayı bağımsız olarak tasarlayabilir, uygulayabilir, test edebilir ve açıklayabilir.",
+      "description": "Sunucu tarafı yetkilendirme, sır sızdırmayan tutarlı hatalar, auth ve transaction'ı kapsayan integration test'ler ve bir istemcinin tüketebileceği bir OpenAPI belgesi ile sürümlü bir ASP.NET Core API'yi bağımsız olarak teslim edebilir.",
       "level": 3
     },
     {
       "name": "Kalfa",
-      "description": "Belirsizlikle başa çıkabilir, hataları teşhis edebilir ve ödünleşimleri gerekçelendirebilir.",
+      "description": "Bloklanmış bir async çağrının, yutulan bir iptalin veya eksik bir yetkilendirme kontrolünün başarı gibi görüneceği bir arızayı teşhis edebilir; kanıtlayan stack'i veya testi gösterebilir; başka bir mühendisin debugger'a girmeden hatayı yeniden üretebileceği bir not üretebilir.",
       "level": 4
     },
     {
       "name": "Ustalık Kanıtı",
-      "description": "Alışılmadık durumlarda öğretebilir, değerlendirme yapabilir ve sağlam kararlar verebilir.",
+      "description": "Başka bir çırağın C# / .NET servisini değerlendirebilir; bloklanmış bir async çağrıyı, gürültü sayılan bir uyarıyı veya yalnızca istemcide duran bir yetkilendirme kontrolünü adlandırabilir; tanıdık olmayan bir kod tabanında record, DI veya CancellationToken'ın ne zaman kullanılacağını öğretebilir.",
       "level": 5
     }
   ]

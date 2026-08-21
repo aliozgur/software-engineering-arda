@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "id": "an1t2-004",
   "title": "Diagnosing a Failed or Runaway Agentic Session",
-  "term": "year-1/term-2",
+  "term": "year-1-term-2",
   "module": "agentic-workflows",
   "estimatedHours": 9,
   "objective": "Deliberately run a longer agentic session on a task open-ended enough that the assistant is likely to drift, then diagnose the drift, roll back the unwanted part with version control, and re-scope a narrower follow-up session that succeeds.",

@@ -1,0 +1,17 @@
+{
+  "title": "Laptop'tan Değil, Pipeline Üzerinden Deploy Et",
+  "evidence": [
+    "Deploy manifest'lerini apply eden ve smoke check çalıştıran commit edilmiş pipeline job",
+    "Deploy edilen image tag'i o koşunun git SHA'sına veya release tag'ine eşit olan geçen bir koşunun CI/CD log'u",
+    "Smoke check'i düşüren bir commit'in CI/CD log'u artı yeşile dönen revert veya fix commit",
+    "Runner tipini (hosted kind-in-job, self-hosted veya local runner) belirten ve bunu doğrulayan bir log satırı içeren not",
+    "Görev sorularını yanıtlayan değerlendirme notları",
+    "Yapay zekâ çalışmayı önemli ölçüde etkilediyse yapay zekâ kullanım beyanı"
+  ],
+  "acceptanceCriteria": [
+    "Yalnızca laptop komutu değil, bir pipeline job deploy manifest'lerini apply eder ve smoke check çalıştırır.",
+    "Smoke check'i düşüren bir commit o job'un kırmızıya döndüğünü gösterir, ardından follow-up commit'te düzeltilir.",
+    "Geçen koşunun deploy ettiği image tag (veya eşdeğer sürüm), o koşunun git SHA'sına veya release tag'ine eşittir.",
+    "Kanıt notu runner düzenini belirtir ve mentor bunu job log'unda görebilir."
+  ]
+}

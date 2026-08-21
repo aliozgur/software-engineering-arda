@@ -1,0 +1,15 @@
+{
+  "title": "Takviminizin Gizlediği Yetki Devri Haritasını Yazın",
+  "objective": "Aşırı yüklü bir lead takvimini bir sahiplik haritasına ve adlandırılmış bir sahibin koridor sohbeti olmadan yürütebileceği iki yazılı yetki devri brief'ine çevirin.",
+  "whyThisMatters": "İlginç işi kendinde tutan ve her şeye 'yardım eden' bir tech lead darboğaz olur. Yalnızca Slack'te veya kafanızda yaşayan yetki devri sözlü bir umuttur — mentor inceleyemez, sahip de buna bağlanamaz.",
+  "evidence": [
+    "Harborline haftasından en az on ayrı iş kalemini kapsayan bir sahiplik haritası; her satır mevcut sahibi, önerilen sahibi veya drop'u ve tek satırlık gerekçeli bir keep/delegate/drop/escalate etiketi adlandırır",
+    "İki yetki devri brief'i; her biri tek bir sahip, bir son tarih, incelenebilir bir done-artifact, sahibin sormadan verebileceği en az bir karar ve en az bir açık non-goal adlandırır",
+    "Belirtilen midpoint kısıtından sonra en az bir brief'in revize edildiğini gösteren Git geçmişi; kısıt commit mesajında veya bir revizyon notunda alıntılanır"
+  ],
+  "acceptanceCriteria": [
+    "Sahiplik haritasında en az on ayrı iş kalemi vardır; en az üçü delegate, en az biri drop olarak etiketlenir.",
+    "İki brief'in her biri tek bir sahip, bir takvim tarihi, incelenebilir bir done-artifact, en az bir solo karar ve en az bir non-goal adlandırır.",
+    "Geçmiş, midpoint kısıtından ('Priya is already on-call this week') sonra bir brief'in değiştiğini gösterir ve revizyon notu veya commit mesajı o kısıtı alıntılar."
+  ]
+}

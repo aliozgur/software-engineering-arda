@@ -1,0 +1,19 @@
+{
+  "title": "Bugünü Ezmeden Tarihsel Pencereyi Backfill Et",
+  "objective": "Kapalı bir tarih penceresini artımlı işle aynı transform üzerinden yeniden işle, güncel partition'ı değiştirme ve aynı pencerenin ikinci backfill'inin satır sayısında no-op olduğunu göster.",
+  "whyThisMatters": "Bugünün işi çalışırken 'tüm tarihi' tarayan bir backfill, şimdiyi açıklayamadığın bir yeniden ifadeyle ezer. Sınırlı pencereler, paylaşılan transform kodu ve değişmeyen güncel partition, yeniden işleme ile rulet arasındaki farktır.",
+  "evidence": [
+    "Açık başlangıç ve bitiş tarihi alan backfill komutu veya DAG parametreleri",
+    "Güncel (backfill olmayan) partition'ın satır sayısı ve max(updated_at) için önce ve sonra sorguları",
+    "Backfill edilen pencere için önce ve sonra satır sayıları, sayıyı sıfır değiştiren ikinci çalıştırma dahil",
+    "Hem artımlı hem backfill yollarının import ettiği paylaşılan transform fonksiyonu veya modülü",
+    "Backfill için log'larda yakalanmış run_id veya Airflow çalıştırma kimliği",
+    "Görev sorularını yanıtlayan değerlendirme notları"
+  ],
+  "acceptanceCriteria": [
+    "Backfill komutu veya DAG'ı açık bir başlangıç ve bitiş tarihi alır ve tüm tarihi taramaz; bu kodda veya DAG parametrelerinde görünür.",
+    "Güncel, backfill olmayan partition'ın satır sayısı ve max(updated_at) değeri backfill'den önce ve sonra aynıdır; bu yakalanmış sorgularla gösterilir.",
+    "Aynı backfill penceresini yeniden çalıştırmak o pencerenin satır sayısını sıfır değiştirir.",
+    "Backfill ve artımlı yol, pencereyle parametrelenmiş aynı transform fonksiyonunu veya modülünü çağırır; bu import veya task callable ile gösterilir."
+  ]
+}

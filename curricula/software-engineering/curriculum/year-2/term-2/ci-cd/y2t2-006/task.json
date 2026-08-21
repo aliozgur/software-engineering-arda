@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "id": "y2t2-006",
   "title": "Continuous Integration and Release Discipline",
-  "term": "year-2/term-2",
+  "term": "year-2-term-2",
   "module": "ci-cd",
   "estimatedHours": 14,
   "competencies": [

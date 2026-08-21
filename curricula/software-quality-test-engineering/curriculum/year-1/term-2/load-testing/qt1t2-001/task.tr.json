@@ -1,0 +1,17 @@
+{
+  "title": "Yük Testi Baseline'ı ve SLO Kur",
+  "objective": "Gerçek bir API'ye karşı tekrarlanabilir bir yük testi kur ve sistemin ya tuttuğu ya da tutmadığı bir gecikme/hata-oranı hedefi tanımla.",
+  "whyThisMatters": "Tekrarlanabilir baseline olmadan performans işi tahmindir: gerçek regresyonu gürültüden, iyileşmeyi tesadüften ayıramazsın.",
+  "evidence": [
+    "Repository'ye commit'lenmiş yük testi script'i",
+    "En az 3 çalıştırmanın ham çıktısı veya raporu",
+    "SLO'yu, ölçülen gecikme dağılımını ve geçti/kaldı kararını belirten kısa rapor",
+    "Değerlendirme notu"
+  ],
+  "acceptanceCriteria": [
+    "SLO (bir gecikme yüzdelik hedefi ve bir hata-oranı hedefi) sonuçlar gösterilmeden önce belirtilir, sonradan uydurulmaz.",
+    "Yük testi tek belgelenmiş komutla çalışır ve her çalıştırmada aynı iş yükü şeklini üretir.",
+    "En az 3 çalıştırmanın sonuçları, çalıştırmalar arası varyans dahil raporlanır.",
+    "SLO'ya karşı karar yalnızca ortalamayı değil, p95 veya p99 gecikmeyi anar."
+  ]
+}

@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "id": "ie1t3-004",
   "title": "Authenticated telemetry under a latency and memory budget",
-  "term": "year-1/term-3",
+  "term": "year-1-term-3",
   "module": "ota-and-safety",
   "estimatedHours": 8,
   "objective": "Authenticate telemetry records with a MAC, reject a bad MAC and a replay inside a documented window, and publish per-record verify time plus extra RAM that stay inside a written budget.",

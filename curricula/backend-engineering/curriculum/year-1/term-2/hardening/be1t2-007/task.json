@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "id": "be1t2-007",
   "title": "Harden the Image and the Pipeline (Term 2 Milestone)",
-  "term": "year-1/term-2",
+  "term": "year-1-term-2",
   "module": "hardening",
   "estimatedHours": 14,
   "objective": "Run the container as a non-root user, fail CI on a documented image-scan severity, and keep secrets out of the Dockerfile and workflow files.",

@@ -2,32 +2,32 @@
   "schemaVersion": 1,
   "id": "professional-practice",
   "title": "Professional Practice",
-  "description": "Technical writing, design reviews, estimation, incident analysis and communication.",
+  "description": "Can write and review technical artifacts a teammate can act on — and can keep fact, estimate and opinion separable in reviews, estimates and incident comms.",
   "levels": [
     {
       "level": 1,
       "name": "Foundation",
-      "description": "Can explain core concepts and complete guided work."
+      "description": "Can write a pull-request description or technical note that states the problem, the change, a concrete verification step and what is out of scope — under written guidance."
     },
     {
       "level": 2,
       "name": "Apprentice",
-      "description": "Can complete scoped tasks with limited guidance and produce evidence."
+      "description": "Can write a bug report a second person can reproduce from the report alone, and leave at least five review comments on a real change, each labeled blocking, suggestion or question."
     },
     {
       "level": 3,
       "name": "Practitioner",
-      "description": "Can independently design, implement, test and explain non-trivial work."
+      "description": "Can independently produce a written estimate or design-review note that names assumptions, at least one rejected option, and a check another person can run without asking the author."
     },
     {
       "level": 4,
       "name": "Journeyman",
-      "description": "Can handle ambiguity, diagnose failures and defend trade-offs."
+      "description": "Can run incident communication that timestamps updates, keeps root cause out of live comms, and write a blameless postmortem with follow-ups tagged detect, prevent or respond."
     },
     {
       "level": 5,
       "name": "Mastery Evidence",
-      "description": "Can teach, review and make sound decisions across unfamiliar situations."
+      "description": "Can review another apprentice's pull-request description, review thread or postmortem, name a sentence that presents interpretation as fact, and teach how to keep those apart on an unfamiliar change or incident."
     }
   ]
 }

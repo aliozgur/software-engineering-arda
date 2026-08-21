@@ -1,0 +1,17 @@
+{
+  "title": "Servisi Container'a Almak",
+  "objective": "Servisi ve veritabanı bağımlılığını, temiz bir makinede aynı şekilde çalışan container'lara paketlemek.",
+  "whyThisMatters": "Yalnızca sizin makinenizde çalışan bir servis henüz bir backend servisi değildir. Bu müfredattaki sonraki CI ve dağıtım işi, bu container biçiminin zaten var olduğunu varsayar.",
+  "evidence": [
+    "Repository'ye commit edilmiş Dockerfile ve docker-compose.yml",
+    "Temiz bir docker compose up çıktısı ve container içinde geçen bir test koşusu",
+    "Build/run/teardown komutlarını ve dışarı alınmış yapılandırma değişkenlerini belgeleyen README",
+    "Container işinin aşamalı commit'lerle yapıldığını gösteren Git geçmişi"
+  ],
+  "acceptanceCriteria": [
+    "docker compose up, belgelenmiş ortam değişkenlerinin ötesinde elle adım olmadan, temiz bir checkout'tan çalışan bir servis ve veritabanı ayağa kaldırır.",
+    "Dockerfile veya kaynakta hiçbir sır veya ortama özgü değer sabit kodlanmamıştır.",
+    "Test takımı, container içinden, container'daki veritabanına karşı geçer.",
+    "Image etiketlenir ve boyutu README'de bildirilir."
+  ]
+}

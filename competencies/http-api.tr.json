@@ -1,30 +1,30 @@
 {
-  "title": "Http API'si",
-  "description": "HTTP semantiği, REST tarzı API'ler, sözleşmeler, hatalar, sürüm oluşturma ve API tasarımı.",
+  "title": "HTTP API",
+  "description": "Method, status code ve hata gövdeleri yazılı sözleşmeyle örtüşen HTTP API'ler tasarlayıp uygulayabilir — tüketicileri gelişigüzel kırmadan o sözleşmeyi evrimleştirebilir.",
   "levels": [
     {
       "name": "Temel",
-      "description": "Temel kavramları açıklayabilir ve rehberli çalışmaları tamamlayabilir.",
+      "description": "Yazılı rehberlik altında ham bir HTTP istek/yanıtını yakalayıp açıklama ekleyebilir; sonuçla örtüşen status code'lu route'lar uygulayabilir; hangi route'un idempotent hangisinin olmadığını adlandırabilir.",
       "level": 1
     },
     {
       "name": "Çırak",
-      "description": "Kapsamı belirlenmiş görevleri sınırlı yönlendirmeyle tamamlayabilir ve kanıt üretebilir.",
+      "description": "OpenAPI belgesi uygulamayla örtüşen, hataları stack trace veya sır içermeyen tutarlı bir JSON şeklinde olan ve curl smoke test'i her route'u (hata durumları dahil) çalıştıran minimal bir HTTP API teslim edebilir.",
       "level": 2
     },
     {
       "name": "Uygulayıcı",
-      "description": "Kayda değer bir çalışmayı bağımsız olarak tasarlayabilir, uygulayabilir, test edebilir ve açıklayabilir.",
+      "description": "Birden fazla depoya dokunan bir kaynağı transaction içinde bağımsız olarak ekleyebilir; geçersiz girdide 500 değil 4xx döndürebilir; OpenAPI istek ve yanıt şemalarını çalışan servisle uyumlu tutabilir.",
       "level": 3
     },
     {
       "name": "Kalfa",
-      "description": "Belirsizlikle başa çıkabilir, hataları teşhis edebilir ve ödünleşimleri gerekçelendirebilir.",
+      "description": "Error gövdeli 200'ün, idempotent olmayan GET'in veya sızan bir stack'in başarı gibi görüneceği bir istemci arızasını teşhis edebilir; yakalanmış isteği ve bunu yasaklayan sözleşme maddesini gösterebilir; başka bir ekibin sunucu kaynağını okumadan izleyebileceği bir uyumluluk matrisi ve deprecation yolu üretebilir.",
       "level": 4
     },
     {
       "name": "Ustalık Kanıtı",
-      "description": "Alışılmadık durumlarda öğretebilir, değerlendirme yapabilir ve sağlam kararlar verebilir.",
+      "description": "Başka bir çırağın API'sini veya OpenAPI belgesini değerlendirebilir; HTTP semantiğini bozan bir status code, method veya sızan hata ayrıntısını adlandırabilir; tanıdık olmayan bir sözleşmede bir değişikliğin ne zaman uyumlu ne zaman kırıcı olduğunu öğretebilir.",
       "level": 5
     }
   ]

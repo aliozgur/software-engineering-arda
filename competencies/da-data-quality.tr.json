@@ -5,27 +5,27 @@
     {
       "level": 1,
       "name": "Temel",
-      "description": "Temel kavramları açıklayabilir ve rehberli çalışmayı tamamlayabilir."
+      "description": "Yazılı rehberlik altında sütun bazında eksik değer sayabilir, sessiz bir fillna yerine kural yazabilir ve bir alanın ne zaman bilindiğini adlandırabilir."
     },
     {
       "level": 2,
       "name": "Çırak",
-      "description": "Sınırlı rehberlikle kapsamı belirlenmiş görevleri tamamlayabilir ve kanıt üretebilir."
+      "description": "Eksiklik için yalnızca sayı değil bir süreç hikâyesi anlatabilir, sessiz doldurmayı reddedebilir ve gelecek bilgiyi şimdiki zamana sızdıracak bir alanı işaretleyebilir."
     },
     {
       "level": 3,
       "name": "Uygulayıcı",
-      "description": "Basit olmayan çalışmaları bağımsız biçimde tasarlayabilir, uygulayabilir, test edebilir ve açıklayabilir."
+      "description": "Yeni bir dosyaya yetecek kadar somut bir temizleme checklist'ini bağımsız yazabilir, kuralları sürümlenmiş kodda uygulayabilir ve alanın bilindiği anı içeren bir leakage örneği kaydedebilir."
     },
     {
       "level": 4,
       "name": "Kalfa",
-      "description": "Belirsizliği yönetebilir, hataları teşhis edebilir ve ödünleşimleri savunabilir."
+      "description": "Kural olmadan satır atan veya dolduran 'temiz' bir tabloyu teşhis edebilir, süreç sinyali olan eksiklik örüntüsünü gösterebilir ve sormadan başka bir analistin uygulayabileceği bir checklist üretebilir."
     },
     {
       "level": 5,
       "name": "Ustalık Kanıtı",
-      "description": "Öğretebilir, inceleyebilir ve alışılmadık durumlarda sağlam kararlar verebilir."
+      "description": "Başka bir çırağın temizleme notlarını değerlendirebilir; sessiz bir doldurmayı veya feature sanılan bir leakage alanını adlandırabilir; tanıdık olmayan bir dosyada eksikliğin süreç olarak nasıl okunacağını öğretebilir."
     }
   ]
 }

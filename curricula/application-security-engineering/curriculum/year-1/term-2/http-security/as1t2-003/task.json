@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "id": "as1t2-003",
   "title": "HTTP Security Headers and CORS as a Contract",
-  "term": "year-1/term-2",
+  "term": "year-1-term-2",
   "module": "http-security",
   "estimatedHours": 8,
   "objective": "Set browser security headers and an explicit CORS allow-list on the application you own or operate locally, and demonstrate each header with a captured response.",

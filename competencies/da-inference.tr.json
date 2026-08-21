@@ -5,27 +5,27 @@
     {
       "level": 1,
       "name": "Temel",
-      "description": "Temel kavramları açıklayabilir ve rehberli çalışmayı tamamlayabilir."
+      "description": "Yazılı rehberlik altında popülasyon ile örneklemi adlandırabilir, kodda adı konmuş bir aralık hesaplayabilir ve 'caused' demeyen bir iddia yazabilir."
     },
     {
       "level": 2,
       "name": "Çırak",
-      "description": "Sınırlı rehberlikle kapsamı belirlenmiş görevleri tamamlayabilir ve kanıt üretebilir."
+      "description": "Adlandırdıkları interval yöntemini uygulayabilir, bias'ı genel liste değil bu veri kümesine göre tartışabilir ve tasarım desteklemedikçe nedensel dili dışarıda tutabilir."
     },
     {
       "level": 3,
       "name": "Uygulayıcı",
-      "description": "Basit olmayan çalışmaları bağımsız biçimde tasarlayabilir, uygulayabilir, test edebilir ve açıklayabilir."
+      "description": "Örnekleme tasarımına uyan bir aralığı bağımsız seçebilir, aralığın neyi kapsayıp kapsamadığını belirtebilir ve tasarımın taşıyamayacağı bir neden iddiasını reddedebilir."
     },
     {
       "level": 4,
       "name": "Kalfa",
-      "description": "Belirsizliği yönetebilir, hataları teşhis edebilir ve ödünleşimleri savunabilir."
+      "description": "Nedensel kanıt sanılan bir confidence interval'ı veya popülasyon sanılan bir örneklemi teşhis edebilir ve yöntemi ile sınırını adlandıran bir yeniden yazım üretebilir."
     },
     {
       "level": 5,
       "name": "Ustalık Kanıtı",
-      "description": "Öğretebilir, inceleyebilir ve alışılmadık durumlarda sağlam kararlar verebilir."
+      "description": "Başka bir çırağın çıkarım notunu değerlendirebilir; tasarımın taşıyamayacağı bir nedensel fiili (veya adı konmamış bir aralığı) adlandırabilir; tanıdık olmayan bir çalışmada association'da kalınacağını öğretebilir."
     }
   ]
 }

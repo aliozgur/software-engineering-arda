@@ -1,0 +1,15 @@
+{
+  "title": "Belirtilen Erişim Örüntülerine Göre Veri Mimarisi Seçmek",
+  "objective": "Somut erişim örüntülerine karşı bir depolama ve tutarlılık modeli seçip gerekçelendirmek ve en az bir hassas veri öğesini sınıflandırmak.",
+  "whyThisMatters": "Veri mimarisi kararları, çalışan bir sistemde geri alınması en zor kararlardır. Depolama modelini verinin gerçekten nasıl okunup yazıldığına göre değil, tanıdık olduğu için seçmek, bir mimarın yapabileceği en pahalı hatalardan biridir.",
+  "evidence": [
+    "Her data store'un nerede durduğunu ve her sınırda varsayılan tutarlılık modelini gösteren bir veri akış diyagramı",
+    "Depolama seçimini belirtilen erişim örüntülerine karşı gerekçelendiren, en az bir reddedilmiş depolama seçeneğini adlandıran bir ADR",
+    "En az bir veri öğesini hassas olarak sınıflandıran ve bunun doğurduğu mimari gereksinimi belirten bir not"
+  ],
+  "acceptanceCriteria": [
+    "Seçilen depolama modeli, genel bir tercih değil, brief'teki en az üç somut erişim örüntüsüne karşı gerekçelendirilmiştir.",
+    "ADR, diyagramda gösterilen her servis sınırında varsayılan tutarlılık modelini belirtir.",
+    "En az bir hassas veri öğesi, yalnızca anılmakla kalmaz; karşılık gelen bir mimari kontrol ile tanımlanır."
+  ]
+}

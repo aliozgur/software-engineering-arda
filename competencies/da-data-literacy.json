@@ -7,27 +7,27 @@
     {
       "level": 1,
       "name": "Foundation",
-      "description": "Can explain core concepts and complete guided work."
+      "description": "Can state the grain of a row in one sentence, mark a column as a variable or a value, and name one question the table cannot answer — under written guidance."
     },
     {
       "level": 2,
       "name": "Apprentice",
-      "description": "Can complete scoped tasks with limited guidance and produce evidence."
+      "description": "Can reshape a messy table into tidy form in versioned code, define missing values instead of silently filling them, and write the analysis question before the first insight heading."
     },
     {
       "level": 3,
       "name": "Practitioner",
-      "description": "Can independently design, implement, test and explain non-trivial work."
+      "description": "Can independently decide which questions a dataset can and cannot answer from grain and types, keep a dead-end in the repo, and change one assumption live and update the claim."
     },
     {
       "level": 4,
       "name": "Journeyman",
-      "description": "Can handle ambiguity, diagnose failures and defend trade-offs."
+      "description": "Can diagnose a wrong conclusion as a grain, type or tidy-form mistake, cite the row definition that was violated, and produce a schema note another analyst can apply to a new file."
     },
     {
       "level": 5,
       "name": "Mastery Evidence",
-      "description": "Can teach, review and make sound decisions across unfamiliar situations."
+      "description": "Can review another apprentice's schema or EDA, name a question the grain cannot support (or a column treated as both variable and value), and teach how to read grain on an unfamiliar table."
     }
   ]
 }

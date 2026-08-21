@@ -1,0 +1,20 @@
+{
+  "title": "Test edilebilir sözleşmeli, ISR-güvenli ring buffer",
+  "objective": "Derleme zamanı iki-üssü kapasiteli, tek üretici / tek tüketici bir ring buffer uygula; yazılı taşma politikası, wrap-around testleri ve push'un tek çağırıcısı olan simüle bir ISR ile.",
+  "whyThisMatters": "Bir edge düğümünün ilk veri kaybettiği yer, bir kesme (veya sensör iş parçacığı) ile ana döngü arasındaki sınırdır. Test edilmemiş taşma politikası olan bir ring buffer, sessiz bir saha hatasıdır.",
+  "evidence": [
+    "O çeviri biriminde malloc/calloc/realloc/free olmayan ring-buffer C kaynakları",
+    "drop-newest veya drop-oldest ve tam dolu/boş koşullarını adlandıran POLICY.md",
+    "Belgelenmiş politika altında kapasite N'ye N+3 öğe yazıp kalan öğeleri okuyan ve beklenen diziyi gösteren yakalanmış wrap-around test koşusu",
+    "push'un yalnızca simüle ISR bağlamından, pop'un yalnızca main'den çağrıldığı yakalanmış eşzamanlılık tarzı test",
+    "Testlerin taşma politikasından önce veya onunla eklendiğini, tek nihai commit olmadığını gösteren Git geçmişi",
+    "Görev sorularını yanıtlayan değerlendirme notları"
+  ],
+  "acceptanceCriteria": [
+    "Kapasite derleme zamanı bir iki üssüdür; static assert veya derlemeyi düşüren bir test, iki üssü olmayan kapasiteyi reddeder.",
+    "Kapasite doldurulduktan sonra belgelenmiş taşma politikası gözlenir: POLICY.md drop-newest veya drop-oldest adlandırır ve yakalanmış bir test düşürülen veya üzerine yazılan öğe sayısını raporlar.",
+    "Bir wrap-around testi kapasite N'ye N+3 öğe yazar, sonra kalan öğeleri okur; yakalanan dizi POLICY.md'deki politikayla örtüşür.",
+    "ISR simülasyonu push'u yalnızca simüle kesme bağlamından, pop'u yalnızca main'den çağırır; test kaynağı veya bir yorum bloğu o sözleşmeyi yazar ve yakalanan koşu veri yarışı sanitizer raporu olmadan biter (veya TSan/ASan çalıştırıldığını belgeler).",
+    "Ring-buffer çeviri biriminin özyinelemeli grep'i malloc, calloc, realloc veya free çağrısı bulmaz."
+  ]
+}

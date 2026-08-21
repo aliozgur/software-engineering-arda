@@ -1,0 +1,16 @@
+{
+  "name": "Junior Geliştiriciler için Mühendislik Temelleri",
+  "audience": "Kod yazabilen ama mesleki pratik birikimi henüz az olan, yeni mezun veya profesyonel mühendislik rolünün ilk aylarındaki junior geliştiriciler",
+  "philosophy": "LEARN BY DOING. GROW THROUGH MENTORSHIP. Kanıta dayalı çıraklık: lisansın veya bootcamp'in çoğu zaman atladığı mesleki pratik — gerçek Git iş akışları, yabancı kodu okumak, var olanı test etmek, yöntemli hata ayıklama ve inceleyici için yazmak.",
+  "assumptions": [
+    "Haftalık süre (10-15 saat), bu müfredatın yapılandırılmış bir oryantasyon programının yanında yürüdüğünü varsayar; görev çalışması haftanın tamamı değil, bir parçasıdır. Tamamen kendi temposunda ilerleyen bir çırak farklı bir tempo gerektirebilir.",
+    "Çıraklar başlamadan önce en az bir dilde program yazmayı bilir. Bu müfredat dil temellerini değil, mesleki pratiği öğretir.",
+    "Uygulamalı görevlerde ortak uygulama dili Python'dır ki kanıtlar çıraklar arasında karşılaştırılabilir olsun; Git, araçlar ve inceleme görevleri bunun dışında dilden bağımsız tutulur."
+  ],
+  "aiPrinciples": [
+    "Yapay zekâ yardımı maddi olarak kullanıldığında açıklanmalıdır.",
+    "Bu müfredattaki görevler varsayılan olarak rehberli kullanıma açıktır: açıklama, ipucu ve kısa sınav serbesttir; tam çözüm üretmek değildir.",
+    "Çırak, yapay zekâ destekli olsun ya da olmasın, gönderilen her çıktıdan sorumlu olmaya devam eder.",
+    "Mentor onayı, yapay zekâ çıktı kalitesine değil, gösterilen anlayışa ve incelenebilir kanıta dayanır."
+  ]
+}

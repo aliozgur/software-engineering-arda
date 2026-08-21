@@ -1,0 +1,15 @@
+{
+  "title": "Çalışan Bir Mimarlığı Big-Bang Rewrite Olmadan Evriltmek",
+  "objective": "Önceki bir kararın üç adımlı evrimini planlamak: her adımda neyin dual-running olduğunu, örtüşme sırasındaki uyumluluk sözleşmesini ve son geri alınabilir adımı adlandırmak.",
+  "whyThisMatters": "İlk günde savunduğunuz mimari, üçüncü yılda birlikte yaşamanız istenecek mimari değildir. Beceri daha iyi bir stil seçmek değil — rollback'i olmayan bir rewrite olmadan buradan oraya geçmektir. Karar, hedef stil değil, örtüşme sırasındaki uyumluluktur; stil yalnızca varış noktasıdır.",
+  "evidence": [
+    "En az üç adımdan oluşan bir migration sırası; her adımda neyin dual-running olduğu ve hangi client veya writer'ların taşındığı adlandırılmış",
+    "Tüm örtüşme boyunca tutulması gereken uyumluluk sözleşmesini (API, event schema veya veri temsili) belirten ve önceki hedef-stil ADR'ını hâlâ yürürlükte veya superseded olarak işaretleyen bir ADR",
+    "Hâlâ geri alınabilir son adımı ve rollback'i tetikleyecek incelenebilir kanıtı adlandıran bir rollback notu"
+  ],
+  "acceptanceCriteria": [
+    "Sıra en az üç adımdır; her adım neyin dual-running olduğunu adlandırır (iki writer, iki okuma yolu veya eski ve yeni event consumer'lar).",
+    "ADR, örtüşme boyunca tutulması gereken bir uyumluluk sözleşmesi belirtir ve o örtüşme sırasında yasak olan en az bir değişikliği adlandırır.",
+    "Rollback notu, son geri alınabilir adımı numarasıyla adlandırır ve rollback'i tetikleyecek kanıtı (bir metric, bir error budget, başarısız bir contract test) adlandırır."
+  ]
+}

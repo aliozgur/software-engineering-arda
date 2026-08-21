@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "id": "sa1t1-001",
   "title": "Turning Vague Requirements into Measurable NFR Budgets",
-  "term": "year-1/term-1",
+  "term": "year-1-term-1",
   "module": "nfr",
   "estimatedHours": 6,
   "objective": "Take a realistic system brief and produce quantified, sourced budgets for at least four non-functional requirements.",

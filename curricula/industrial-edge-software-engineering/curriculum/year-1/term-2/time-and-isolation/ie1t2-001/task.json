@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "id": "ie1t2-001",
   "title": "Cooperative scheduler with a deadline-miss log",
-  "term": "year-1/term-2",
+  "term": "year-1-term-2",
   "module": "time-and-isolation",
   "estimatedHours": 8,
   "objective": "Build a tick-based cooperative scheduler for three tasks with periods and recorded compute costs, then produce one captured run with zero misses and one captured run that attributes at least one miss to a named task.",

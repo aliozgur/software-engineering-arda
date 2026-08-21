@@ -1,0 +1,21 @@
+{
+  "title": "Gerçek Bir Değişikliğe Lisans Yükümlülükleri ve SemVer Uygulayın",
+  "objective": "Seçilen projenin OSI lisans yükümlülüklerini bir katkıda bulunan için sınıflandırın ve SemVer 2.0.0'ı alıntılayan bir gerekçeyle gerçek bir yayınlanmış sürüme veya pull request'e SemVer bump atayın.",
+  "whyThisMatters": "Lisans yükümlülüklerini veya sürüm vaatlerini yok sayan merge edilmiş bir patch, maintainer'ın incident'ı olur. Buradaki yargı quiz tanımına karşı değil, gerçek LICENSE ve gerçek public API'ye karşı yazılır.",
+  "evidence": [
+    "Proje URL'si, SPDX tanımlayıcısı ve kullanılan OSI lisans sayfası URL'si",
+    "Her biri MUST veya MUST-NOT etiketli, her biri bir lisans bölüm başlığını veya OSI sayfa başlığını alıntılayan en az dört maddelik yükümlülük listesi",
+    "Geçerli yayınlanmış sürüm string'ini, tam olarak bir bump türünü (major, minor veya patch), değişen veya değişmeyen public API yüzeyini ve alıntılanmış bir SemVer 2.0.0 kuralını adlandıran bir SemVer karar notu",
+    "Bump'ın uygulandığı pull-request URL'si veya release-tag URL'si",
+    "Üçüncü taraf dosya satırı: ya eklenen bağımlılığın lisans tanımlayıcısı, ya da tam cümle no third-party file added",
+    "Görev sorularını yanıtlayan değerlendirme notları",
+    "Yapay zekâ çalışmayı önemli ölçüde etkilediyse AI kullanım açıklaması"
+  ],
+  "acceptanceCriteria": [
+    "Nottaki SPDX tanımlayıcısı projenin LICENSE dosyası veya host'un lisans metadata'sıyla eşleşir.",
+    "Yükümlülük listesi en az dört madde içerir; her biri MUST veya MUST-NOT ile başlar, her biri lisans metninden veya OSI sayfasından bir bölüm başlığı veya madde alıntılar.",
+    "SemVer notu, bir tag'de veya paket metadata'sında yayınlanmış geçerli sürüm string'ini adlandırır ve tam olarak major, minor veya patch'ten birini önerir.",
+    "SemVer notu kullanılan SemVer 2.0.0 cümlesini alıntılar ve değişen veya değişmeyen public API yüzeyini adlandırır.",
+    "Değişiklik üçüncü taraf bir dosya veya bağımlılık eklediyse lisans tanımlayıcısı kaydedilir; aksi halde not tam olarak \"no third-party file added\" cümlesini içerir."
+  ]
+}

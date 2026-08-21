@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "id": "de1t3-002",
   "title": "Recover a Failed Production Load From Evidence",
-  "term": "year-1/term-3",
+  "term": "year-1-term-3",
   "module": "failure-recovery",
   "estimatedHours": 10,
   "objective": "Inject a production-shaped failure, diagnose it from logs, metrics, offsets or watermarks, and warehouse counts, restore last-good from that evidence, and replay the failed window without duplicate keys.",

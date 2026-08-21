@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "id": "de1t3-003",
   "title": "Instrument a Pipeline the Way On-Call Will Query It",
-  "term": "year-1/term-3",
+  "term": "year-1-term-3",
   "module": "pipeline-observability",
   "estimatedHours": 8,
   "objective": "Emit freshness, volume, error or reject count, and lag or watermark delay for a real run, correlate logs with a run_id, and write one paging alert and one silent alert with numeric thresholds.",

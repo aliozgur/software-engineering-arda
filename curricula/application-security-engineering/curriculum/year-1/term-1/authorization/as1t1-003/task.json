@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "id": "as1t1-003",
   "title": "Authorization and Object-Level Access",
-  "term": "year-1/term-1",
+  "term": "year-1-term-1",
   "module": "authorization",
   "estimatedHours": 12,
   "objective": "Find and fix broken access control in the application you own or operate locally, and prove that object-level and function-level checks are enforced server-side.",

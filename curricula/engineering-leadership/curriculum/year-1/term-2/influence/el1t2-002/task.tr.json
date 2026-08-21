@@ -1,0 +1,15 @@
+{
+  "title": "Yönetmediğiniz Bir Ekipten Emredemeyeceğiniz Bir Değişiklik İsteyin",
+  "objective": "Yönetmediğiniz bir ekip için tek sayfalık bir istek yazın, en az üç itirazı kaydedin ve kapsam, tarih veya teklifi kesen bir tavizden sonra isteği revize edin.",
+  "whyThisMatters": "Staff-plus işinin çoğu işe alıp çıkarma yetkisi olmadan etkidir. 'İyi geçti' denilen bir toplantı kanıt değildir. Brief, itiraz kaydı ve revize edilmiş istek kanıttır.",
+  "evidence": [
+    "İsteği tek cümlede belirten, diğer ekip için bir fayda adlandıran ve sizin yapacağınız veya fonlayacağınız bir şeyi adlandıran tek sayfalık bir brief",
+    "Diğer lead'in sesiyle yazılmış en az üç ayrı itiraz ve her birine yanıtınızı içeren bir itiraz kaydı",
+    "Role-play'den sonra adlandırılmış kapsam, tarih veya teklifte ilkinden farklı olan revize edilmiş bir istek"
+  ],
+  "acceptanceCriteria": [
+    "Brief isteği tek cümlede belirtir, Identity için (yalnızca Checkout için değil) bir fayda adlandırır ve Checkout'un yapacağı veya fonlayacağı bir şeyi adlandırır.",
+    "İtiraz kaydında en az üç ayrı itiraz vardır; en az bir taviz kapsam kesimi, tarih kaydırma veya fonlanmış bir tekliftir — yalnızca 'daha iyi iletişim kuracağız' değildir.",
+    "Revize edilmiş istek dosyası ilk istekten adlandırılmış bir kapsam, tarih veya teklifte farklıdır."
+  ]
+}

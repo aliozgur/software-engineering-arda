@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "id": "pd1t1-005",
   "title": "Cut a Reproducible Versioned Release",
-  "term": "term-1",
+  "term": "year-1-term-1",
   "module": "release-engineering",
   "estimatedHours": 12,
   "competencies": [

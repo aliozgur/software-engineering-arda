@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "id": "pd1t1-004",
   "title": "Build and Test the Image in CI",
-  "term": "term-1",
+  "term": "year-1-term-1",
   "module": "ci-cd",
   "estimatedHours": 12,
   "competencies": [

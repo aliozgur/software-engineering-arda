@@ -5,27 +5,27 @@
     {
       "level": 1,
       "name": "Temel",
-      "description": "Temel kavramları açıklayabilir ve rehberli çalışmayı tamamlayabilir."
+      "description": "Yazılı rehberlik altında bir baseline uygulayabilir — yalnızca betimlemez — split kuralını yazabilir ve tahmin birimiyle bir metrik raporlayabilir."
     },
     {
       "level": 2,
       "name": "Çırak",
-      "description": "Sınırlı rehberlikle kapsamı belirlenmiş görevleri tamamlayabilir ve kanıt üretebilir."
+      "description": "Split'i gerekçelendirebilir, feature seçimini test set dışında tutabilir ve bir error slice'ı sözle tartışabilir — kim veya hangi satırlar başarısız."
     },
     {
       "level": 3,
       "name": "Uygulayıcı",
-      "description": "Basit olmayan çalışmaları bağımsız biçimde tasarlayabilir, uygulayabilir, test edebilir ve açıklayabilir."
+      "description": "Deployment birimini bağımsız adlandırabilir (user, day, store, document), iki validation şemasını kodda uygulayabilir ve bir teammate'in yeniden üretebileceği bir split spec yazabilir."
     },
     {
       "level": 4,
       "name": "Kalfa",
-      "description": "Belirsizliği yönetebilir, hataları teşhis edebilir ve ödünleşimleri savunabilir."
+      "description": "Bir sızıntıyı teşhis edebilir — label zamanından sonra bilinen bir feature, user-level sonuçta karıştırılmış split — sızıntıyı bir commit'te gösterip sonra kaldırabilir ve başka bir mühendisin rerun edebileceği bir spec üretebilir."
     },
     {
       "level": 5,
       "name": "Ustalık Kanıtı",
-      "description": "Öğretebilir, inceleyebilir ve alışılmadık durumlarda sağlam kararlar verebilir."
+      "description": "Başka bir çırağın model notebook'unu değerlendirebilir; eksik baseline'ı veya test-set peek'i adlandırabilir; tanıdık olmayan bir veri kümesinde basit split'in ne zaman yanlış validation olduğunu öğretebilir."
     }
   ]
 }

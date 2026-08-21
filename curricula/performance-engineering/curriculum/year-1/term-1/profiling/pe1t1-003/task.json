@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "id": "pe1t1-003",
   "title": "Attribute Latency With Traces, Not Averages",
-  "term": "year-1/term-1",
+  "term": "year-1-term-1",
   "module": "profiling",
   "estimatedHours": 10,
   "objective": "Instrument one request path with a parent span and at least three child spans, capture a fast and a slow trace, and explain where wall time went — including any disagreement with the CPU profile from pe1t1-002.",

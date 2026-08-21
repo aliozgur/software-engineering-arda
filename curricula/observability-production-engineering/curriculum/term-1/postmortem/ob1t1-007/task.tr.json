@@ -1,0 +1,17 @@
+{
+  "title": "Paylaşmaktan çekinmeyeceğin suçlamasız postmortem",
+  "objective": "ob1t1-006'daki simüle olayı, takipleri tespit, önleme ve müdahale arasında bölünen suçlamasız bir postmortem'e çevir; suçlayıcı bir paragrafı kişi yerine bir sistem koşulu adlandıracak şekilde yeniden yaz.",
+  "whyThisMatters": "Yazılı öğrenme üretmeyen olay tekrarlanır. Suç, sonraki zaman çizelgesini kötüleştirir: insanlar gerçekleri saklar. Bu görev, kişinin değil sistemin nerede kırıldığını yazmayı pratik ettiğin yerdir.",
+  "evidence": [
+    "Özet, kullanıcının gördüğü etki, zaman çizelgesi, katkı faktörleri, iyi giden, kötü giden ve takipleri kapsayan bir postmortem belgesi",
+    "Aynı gönderimde suçlayıcı-paragraf taslağı ve yeniden yazımı",
+    "En az biri detection, biri prevention, biri response etiketli, her biri done-when satırlı bir takip tablosu",
+    "Görev sorularını yanıtlayan değerlendirme notları"
+  ],
+  "acceptanceCriteria": [
+    "Postmortem en az iki katkı faktörü adlandırır; hiçbiri kişi adı veya kişisel sıfat değildir (dikkatsiz, tembel, bilmeliydi).",
+    "Takip eylemleri en az biri detection, biri prevention, biri response etiketli içerir; her birinin bir satırlık done-when ölçütü vardır.",
+    "Suçlayıcı paragraf ve yeniden yazımı birlikte görünür; yeniden yazımda kişi adı ve 'bilmeliydi' ifadesi yoktur.",
+    "Etki bölümü kullanıcının gördüğü bir etki ile bir süre veya istek sayısı yazar; yalnızca iç hata adı değildir."
+  ]
+}

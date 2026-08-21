@@ -1,0 +1,15 @@
+{
+  "title": "Arıza ve Kontrollü Bozulma için Tasarlamak",
+  "objective": "En az üç bağımlılık için timeout, retry ve kullanıcıya görünen bozulmayı (degradation) adlandırmak; belirtilen bir NFR'yi aşamayacak bir retry bütçesi kaydetmek.",
+  "whyThisMatters": "Yalnızca mutlu yolu anlatan bir tasarım, bir umuttur. Timeout'lar, retry'lar ve bir bağımlılık düştüğünde kullanıcının gördüğü şey sonradan eklenen süs değil, mimaridir — kısmi bir kesintinin kısmi kalıp kalmayacağını veya kendi elinizle bir cascade'e dönüşüp dönüşmeyeceğini onlar belirler.",
+  "evidence": [
+    "En az üç bağımlılığı kapsayan bir arıza-modu tablosu; her satırda adlandırılmış bir arıza, milisaniye veya saniye cinsinden bir timeout ve kullanıcıya görünen bozulma",
+    "Retry bütçesini (azami deneme ve backoff) ve bu bütçenin aşmasına izin verilmeyen NFR'yi belirten bir ADR",
+    "En az bir bağımlılığı non-retryable olarak işaretleyen bir not; gerekçe \"retry etmemek daha basit\" değildir"
+  ],
+  "acceptanceCriteria": [
+    "En az üç bağımlılığın her birinde adlandırılmış bir arıza modu, bir timeout sayısı ve her satır için \"hata sayfası göster\" olmayan kullanıcıya görünen bir bozulma vardır.",
+    "ADR, retry bütçesini azami deneme artı backoff olarak belirtir ve bütçenin aşmaması gereken NFR'yi (gecikme, availability veya bir retry-amplification tavanı) adlandırır.",
+    "En az bir bağımlılık, bir yan etki, bir idempotency boşluğu veya bir cascade riskine bağlı gerekçeyle non-retryable işaretlenmiştir — kolaylık için değil."
+  ]
+}

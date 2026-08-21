@@ -1,0 +1,17 @@
+{
+  "name": "AI-Native Yazılım Mühendisliği",
+  "audience": "AI-native geliştirme pratiğine geçmek isteyen, halihazırda çalışan yazılım mühendisleri",
+  "philosophy": "LEARN BY DOING. GROW THROUGH MENTORSHIP. Kanıta dayalı çıraklık: yapay zekâ yardımı yargının yerine geçmez; açıklanır, doğrulanır ve mesleki pratikte birinci sınıf bir parçadır.",
+  "assumptions": [
+    "Çıraklar zaten çalışan yazılım mühendisidir: en az bir dilde kod yazabilir, test edebilir ve inceleyebilir; bu görevlerin dayanağı olacak gerçek bir projeleri vardır.",
+    "Haftalık süre, bu yolun işin yanında yürüdüğünü varsayar (haftada yaklaşık 5 saat yapılandırılmış pratik). Tamamen kendi temposunda ilerleyen bir çırak daha hızlı gidebilir.",
+    "Görevler dilden bağımsızdır. Zaten teslim ettiğiniz yığını kullanın; bu yol için oyuncak bir dil uydurmayın."
+  ],
+  "aiPrinciples": [
+    "Yapay zekâ yardımı her görevde açıklanır; yalnızca bir şey ters gittiğinde değil.",
+    "Yapay zekânın ürettiği işin eleştirel incelemesi, yapay zekânın kullanılıp kullanılmadığına değil, çırakın neyi doğruladığına, değiştirdiğine ve reddettiğine göre değerlendirilir.",
+    "Çırak, yapay zekâ destekli olsun ya da olmasın, gönderilen her çıktıdan sorumlu olmaya devam eder.",
+    "Bazı görevler, değerlendirilen yargı 'ne zaman uzanmamak gerektiğini bilmek' olduğu için çözüm üretimini kasıtlı olarak kısıtlar.",
+    "Mentor onayı, yapay zekâ çıktısının ne kadar cilalı göründüğüne değil, gösterilen doğrulama ve yargıya dayanır."
+  ]
+}

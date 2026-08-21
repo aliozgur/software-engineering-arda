@@ -1,0 +1,18 @@
+{
+  "title": "Kafka ISR, acks=all ve Unclean Leader Election",
+  "objective": "Üç broker'lık bir Kafka cluster çalıştır, acks=all ve min.insync.replicas=2 ile produce et, sonra aynı broker-ölüm dizisinin iki sonucunu yeniden üret: unclean leader election kapalıyken sınırsız produce hataları ve açıkken kaybolan bir committed offset.",
+  "whyThisMatters": "SWE Kafka görevi senden offset, group ve partition-kapsamlı sıralamayı açıklamanı ister. Commit edilmiş bir mesajı kaybettirmez. Success dönen bir produce ve o offset'i hiç görmeyen bir consume'un olana kadar 'acks=all' bir ayardır, bir dayanıklılık iddiası değil.",
+  "evidence": [
+    "Üç broker'lık cluster için Compose (veya eşdeğer) ve unclean-election deneyinden önce cluster'ın ayağa kalktığını gösteren Git geçmişi",
+    "unclean.leader.election.enable=false ile yakalanmış produce/consume koşusu: ISR min.insync.replicas altına düşünce produce'lar fail veya block olur ve recovery sonrası daha önce ack edilmiş hiçbir offset eksik değildir",
+    "Aynı topic yapılandırma ailesinde unclean.leader.election.enable=true ile yakalanmış koşu: yeni leader seçildikten sonra en az bir ack edilmiş produce offset'i yoktur; broker log'ları veya ISR üyeliği yazdırılır",
+    "Her koşu için replication.factor, min.insync.replicas, acks ve tam unclean-election ayarını belirten README",
+    "Görev sorularını yanıtlayan değerlendirme notları"
+  ],
+  "acceptanceCriteria": [
+    "Cluster'da üç broker vardır; deney topic'inin replication.factor=3 ve min.insync.replicas=2'si vardır; producer acks=all kullanır.",
+    "Clean-election (veya unclean=false) koşusu, ikiden az in-sync replica kalınca produce hataları veya sınırlı bir bekleme gösterir ve recovered partition'ın sonraki consume'u, producer'ın ack işaretlediği her offset'i içerir.",
+    "unclean=true koşusu, producer'ın ack saydığı ve failover sonrası consume'un hiç dönmediği en az bir offset gösterir; log o offset'i adlandırır.",
+    "README her sıralama iddiasını tek bir partition'a bağlar ve unclean-election çelişkisini adlandırmadan yapılandırmayı 'exactly-once' veya 'veri kaybı yok' diye çağırmaz."
+  ]
+}

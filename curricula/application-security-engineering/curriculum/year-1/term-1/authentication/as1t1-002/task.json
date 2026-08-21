@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "id": "as1t1-002",
   "title": "Authentication You Can Defend",
-  "term": "year-1/term-1",
+  "term": "year-1-term-1",
   "module": "authentication",
   "estimatedHours": 12,
   "objective": "Find and fix authentication defects in the application you own or operate locally, and prove password storage, session or token revocation, and failed-login behaviour with inspectable tests.",

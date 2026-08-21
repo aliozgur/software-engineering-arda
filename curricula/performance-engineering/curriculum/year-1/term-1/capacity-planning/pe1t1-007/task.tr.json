@@ -1,0 +1,18 @@
+{
+  "title": "Kapasiteyi kendi sayılarınla kur",
+  "objective": "Her girdisi pe1t1-006 (veya yeniden koşu) ölçümünü kaynak gösteren bir kapasite notu yaz; belirtilen tepe için gereken kopyayı hesapla; 2x ve 5x projeksiyon yap; sonucu değiştiren bir duyarlılık göster.",
+  "whyThisMatters": "Mimari müfredatının kapasite görevi zarf-arkası girdilere izin verir. Bu dönem vermez. Ölçülmüş, SLO'yu karşılayan bir RPS'ye dayanmayan replica sayısı tahmindir. Kıdemli mühendisler, bir koşuya kadar denetlenebilen kapasite notlarına imza atar.",
+  "evidence": [
+    "Her girdiyi (SLO'yu karşılayan RPS, p95, hata oranı, doygunluk sinyali) pe1t1-006 veya burada commit edilmiş bir yeniden koşudan dosya veya koşu kimliğiyle listeleyen kapasite notu",
+    "Ölçülmüş SLO-karşılayan yükün en az 2 katı belirtilen tepe için gereken replica veya eşdeğer kapasitenin gösterilmiş aritmetiği",
+    "2x ve 5x projeksiyon; her biri hangi kaynağın belirtilen limite önce ulaştığını adlandırır ve daha önceki ölçümlerden alınan istek başına veya saniye başına maliyeti kullanır",
+    "Bir girdiyi ikiye katlayan veya yarıya indiren ve yeniden hesaplanmış replica veya kapasite sayısını gösteren duyarlılık paragrafı",
+    "Görev sorularını yanıtlayan değerlendirme notları"
+  ],
+  "acceptanceCriteria": [
+    "Kapasite notundaki her girdi sayısı, pe1t1-006 veya bu görevdeki bir yeniden koşudan commit edilmiş bir koşu dosyası veya log satırını kaynak gösterir — uydurulmuş RPS veya p95 yoktur.",
+    "Ölçülmüş SLO-karşılayan yükün en az 2 katı tepe için gereken kapasite, formül yazılarak hesaplanır (yalnızca nihai tamsayı değil).",
+    "2x ve 5x projeksiyonların her biri bir kaynak ve o kaynağı ilk limit yapan ölçülmüş istek başına veya saniye başına maliyeti adlandırır.",
+    "Duyarlılık vakası, alıntılanan bir girdiyi 2x veya 0.5x değiştirir ve aynı formülden yeni kapasite sayısını gösterir."
+  ]
+}

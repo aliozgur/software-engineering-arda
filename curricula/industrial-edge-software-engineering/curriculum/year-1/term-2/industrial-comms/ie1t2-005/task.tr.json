@@ -1,0 +1,19 @@
+{
+  "title": "Yeniden bağlanma ve backoff ile MQTT QoS 1 telemetri",
+  "objective": "Localhost bir MQTT broker'a en az bir QoS 1 telemetri yükü yayınla; ClientId ve oturum seçimini belgele; listelenmiş bir backoff ve yeniden denenen veya packet identifier ile açıklanan yinelenmiş uçuştaki mesajla zorlanmış bir kopuş göster.",
+  "whyThisMatters": "Edge düğümleri Wi-Fi ve hücreselden düşer. Yeniden bağlanma hikâyesi olmayan QoS 1, ekstra paketli QoS 0'dır. Bu görev OASIS MQTT 5.0 belirtimini ve kendin çalıştırdığın bir broker'ı kullanır — asla ücretli bir bulut IoT hub'ı değil.",
+  "evidence": [
+    "Commit edilmiş veya yakalanmış localhost broker yapılandırması veya çalıştırma komutu (Eclipse Mosquitto veya eşdeğeri); yapılandırmada bulut uç noktası yok",
+    "İstemci kaynakları veya belgelenmiş bir Paho/libmosquitto programı artı yazdığın ince bir sarmalayıcı",
+    "QoS 1 yükünün alındığını gösteren yakalanmış abone veya broker günlüğü",
+    "ClientId ve clean-start karşısında kalıcı-oturum seçimini bir cümlelik gerekçeyle yazan SESSION.md",
+    "Backoff gecikmelerini listeleyen ve uçuştaki mesajın yeniden denendiğini veya bir packet identifier ile yinelenmeyi açıklayan yakalanmış yeniden bağlanma koşusu",
+    "Görev sorularını yanıtlayan değerlendirme notları"
+  ],
+  "acceptanceCriteria": [
+    "Broker localhost'ta (veya belgelenmiş bir loopback adresinde) dinler; istemci yapılandırması kamusal bir bulut IoT hostname'i içermez.",
+    "Bir abone bir QoS 1 PUBLISH alır; yakalanmış günlük konu ve yükü gösterir.",
+    "SESSION.md ClientId dizgisini ve Clean Start (MQTT 5) / clean session'ın true veya false olduğunu bir cümlelik gerekçeyle yazar.",
+    "Uçuş ortasında zorlanmış bir kopuşu, SESSION.md'de yazılan en az iki backoff değeri listesine uyan yeniden bağlanma gecikmeleri izler ve uçuştaki yük ya yeniden denenir ya da günlükte bir packet identifier ile yinelenme açıklanır."
+  ]
+}

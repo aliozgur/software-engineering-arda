@@ -2,32 +2,32 @@
   "schemaVersion": 1,
   "id": "web-foundations",
   "title": "Web Foundations",
-  "description": "HTML, CSS, JavaScript/TypeScript, browser model and accessibility.",
+  "description": "Can ship HTML, CSS and browser JavaScript — later TypeScript — that a keyboard user can complete, and can inspect DOM, network and storage in DevTools when the page UI conceals a fault.",
   "levels": [
     {
       "level": 1,
       "name": "Foundation",
-      "description": "Can explain core concepts and complete guided work."
+      "description": "Can mark up a multi-page site with semantic landmarks and labels, write responsive CSS without a UI framework, and complete core interactions with the keyboard — under written guidance."
     },
     {
       "level": 2,
       "name": "Apprentice",
-      "description": "Can complete scoped tasks with limited guidance and produce evidence."
+      "description": "Can attach DOM event handlers and a fetch to a public or test endpoint, capture what the Network tab shows that the page UI does not, and name the same-origin constraint that applies to the request."
     },
     {
       "level": 3,
       "name": "Practitioner",
-      "description": "Can independently design, implement, test and explain non-trivial work."
+      "description": "Can independently convert a small JavaScript application to TypeScript with domain types instead of unjustified any, test async error paths, and document the build, type-check and test commands."
     },
     {
       "level": 4,
       "name": "Journeyman",
-      "description": "Can handle ambiguity, diagnose failures and defend trade-offs."
+      "description": "Can diagnose a broken request, missing label or keyboard trap where the rendered page would look fine, cite the DevTools panel or accessibility check that proves it, and produce a note another engineer can follow to reproduce the fault without a framework."
     },
     {
       "level": 5,
       "name": "Mastery Evidence",
-      "description": "Can teach, review and make sound decisions across unfamiliar situations."
+      "description": "Can review another apprentice's page or TypeScript conversion, name a missing landmark, an unjustified any, or a compile-time type treated as runtime validation, and teach when the type checker is not enough on an unfamiliar front-end."
     }
   ]
 }

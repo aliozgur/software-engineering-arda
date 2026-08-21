@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "id": "qt1t1-001",
   "title": "Map a Test Strategy to Real Risk",
-  "term": "year-1/term-1",
+  "term": "year-1-term-1",
   "module": "test-strategy",
   "estimatedHours": 10,
   "objective": "Produce a test strategy and pyramid for a real system that ties each test layer to a specific class of risk, not to habit.",

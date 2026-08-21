@@ -1,0 +1,20 @@
+{
+  "title": "Gerçek Bir Public Issue'yu Triage Edin",
+  "objective": "Seçilen projedeki gerçek bir public issue'yu triage edin: reproduce edin veya neden reproduce edilemediğini belgeleyin ve mentorun thread'e karşı kontrol edebileceği maintainer kalitesinde bir not yazın.",
+  "whyThisMatters": "Katkı zamanının çoğu bir issue'nun gerçekte ne olduğuna karar vermeye harcanır. Triage'ı yok sayan bir patch maintainer'ın haftasını boşa harcar; kesin bir triage notu zaten bir katkıdır.",
+  "evidence": [
+    "Triage edilen public upstream issue URL'si",
+    "Numaralı reproduction adımları, açık bir sonuç (reproduced / not-reproduced / blocked-with-reason), önerilen label'(lar) ve tek bir recommended-next-action başlığı içeren commit edilmiş bir triage notu",
+    "Reproduction denemesinden yakalanmış komut çıktısı veya log alıntısı, dosya olarak saklanır, yalnızca ekran görüntüsü değil",
+    "Triage yorumu gönderildiyse public yorum URL'si, veya UNPOSTED işaretli tam yorum metni",
+    "Görev sorularını yanıtlayan değerlendirme notları",
+    "Yapay zekâ çalışmayı önemli ölçüde etkilediyse AI kullanım açıklaması"
+  ],
+  "acceptanceCriteria": [
+    "Issue URL'si gerçek bir repository'deki public bir issue'dur (os1t1-001'deki proje veya notta adlandırılmış, yeni haritalanmış bir public proje).",
+    "Triage notu numaralı reproduction adımları ve tam olarak bir sonuç satırı içerir: reproduced, not-reproduced veya blocked-with-reason.",
+    "Not, projede zaten var olan en az bir label önerir veya projenin label'ı olmadığını belirtir ve projenin ihtiyaç duyacağı bir label adlandırır.",
+    "Notun metni şunlardan biri olan tek bir başlığı vardır: close-as-duplicate, ask-for-info, accept-as-bug, reject-as-wontfix, ready-for-PR.",
+    "Başlık close-as-duplicate ise not duplicate issue URL'sini içerir; reject-as-wontfix ise not CONTRIBUTING veya proje politikasından bir cümle alıntılar."
+  ]
+}

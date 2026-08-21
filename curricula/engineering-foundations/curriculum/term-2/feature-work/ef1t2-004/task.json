@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "id": "ef1t2-004",
   "title": "Land a Small Change in Someone Else's Code",
-  "term": "term-2",
+  "term": "year-1-term-2",
   "module": "feature-work",
   "estimatedHours": 8,
   "objective": "Add a small, scoped Python behavior change to a codebase you did not write, matching two existing conventions you can cite by file and line, and leaving tests for the new path.",

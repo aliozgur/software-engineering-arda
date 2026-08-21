@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "id": "ob1t1-001",
   "title": "Structured Logging You Can Actually Query",
-  "term": "term-1",
+  "term": "year-1-term-1",
   "module": "structured-logging",
   "estimatedHours": 6,
   "objective": "Design a structured log schema with correlation identifiers for one real request path, and prove it answers specific operational questions.",

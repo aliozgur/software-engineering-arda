@@ -1,0 +1,18 @@
+{
+  "title": "On-Call'un Sorgulayacağı Gibi Pipeline'ı Donat",
+  "objective": "Gerçek bir çalıştırma için tazelik, hacim, hata veya red sayısı ve lag veya watermark gecikmesi yay, log'ları bir run_id ile ilişkilendir ve sayısal eşikli bir sayfalayan alarm ile bir sessiz alarm yaz.",
+  "whyThisMatters": "Servis CPU'su yanlış grafiktir. Pipeline on-call'u şunu sorar: 09:00 yayını geç mi, yüzde birden fazla mı düşürdük, stream kaynaktan geride mi? Bu sorular bir insanın stack trace okumasını gerektiriyorsa enstrümantasyon bitmemiştir.",
+  "evidence": [
+    "Gerçek bir çalıştırmadan tazelik, hacim, hata veya red ve lag veya watermark gecikmesi için yakalanmış değerler",
+    "O çalıştırmadan aynı run_id'yi paylaşan en az dört yapılandırılmış log satırı",
+    "Biri sayfalayan, biri sayfalamayan, ikisi de sayısal eşikli alarm-politikası notu",
+    "Yükleme gecikmesi ve düşürme oranı için yakalanmış çıktılı iki operasyonel sorgu veya komut",
+    "Görev sorularını yanıtlayan değerlendirme notları"
+  ],
+  "acceptanceCriteria": [
+    "Gerçek bir çalıştırmadan yakalanmış değerlerle dört adlandırılmış metrik vardır: tazelik, hacim, hata veya red sayısı ve lag veya watermark gecikmesi.",
+    "Bir çalıştırmadan gönderilen her log satırı aynı run_id'yi paylaşır ve en az dört böyle satır dahildir.",
+    "Alarm-politikası notu bir sayfalayan ve bir sayfalamayan koşul belirtir; her birinin sayısal eşiği vardır.",
+    "Adlandırılmış bir yüklemenin geç olup olmadığı ve düşürme oranının yüzde biri aşıp aşmadığı — her biri bir sorgu veya komut ve yakalanmış çıktıya sahiptir."
+  ]
+}

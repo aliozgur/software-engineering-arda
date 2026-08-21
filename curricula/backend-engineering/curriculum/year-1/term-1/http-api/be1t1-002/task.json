@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "id": "be1t1-002",
   "title": "HTTP Fundamentals for a Backend Service",
-  "term": "year-1/term-1",
+  "term": "year-1-term-1",
   "module": "http-api",
   "estimatedHours": 12,
   "objective": "Understand HTTP as a protocol and implement a minimal HTTP API in Python using correct methods, status codes and headers, chosen deliberately rather than copied.",

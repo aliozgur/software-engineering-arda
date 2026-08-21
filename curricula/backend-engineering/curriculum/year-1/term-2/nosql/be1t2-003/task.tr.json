@@ -1,0 +1,18 @@
+{
+  "title": "Tabloya Sığmayan Veri için Document Store",
+  "objective": "PostgreSQL şemasına uymayan bir iş yükü için aynı servise MongoDB eklemek ve hâlâ Postgres'te kalması gerekenleri — nedenleriyle birlikte — yazmak.",
+  "whyThisMatters": "İlişkisel modeli kopyalayan ikinci bir veritabanı, kazancı olmayan ekstra hareketli parçadır. Bitirme her iki store'u da bütünleştirecek; hangi gerçeğin hangisine ait olduğunu burada öğrenirsiniz.",
+  "evidence": [
+    "Mevcut PostgreSQL servisinin yanında MongoDB'yi ayağa kaldıran güncellenmiş docker-compose dosyası",
+    "Dosya olarak commit edilmiş örnek document'ler ve bunları üreten Python okuma/yazma yolu",
+    "Collection'da iç içe bir alana filtre uygulayan bir sorgunun çıktısı",
+    "Postgres'in hâlâ uyguladığı, MongoDB'nin uygulamadığı bir değişmezi adlandıran, yazma yolu bitmeden yazılmış bir Markdown notu",
+    "Compose, document şekli ve servis yolunun ayrı commit'lerde olduğunu gösteren Git geçmişi"
+  ],
+  "acceptanceCriteria": [
+    "docker compose up, commit edilmiş compose dosyasından mevcut PostgreSQL container'ının yanında MongoDB'yi başlatır.",
+    "Çalışan servis en az bir document yazar ve bir endpoint veya commit edilmiş bir script üzerinden onu geri okur.",
+    "Collection'a karşı commit edilmiş bir sorgu iç içe bir alana filtre uygular ve sonuç kanıt notuna yapıştırılır.",
+    "Repository'deki bir Markdown notu, PostgreSQL'in hâlâ uyguladığı, document store'un uygulamadığı bir değişmezi adlandırır."
+  ]
+}

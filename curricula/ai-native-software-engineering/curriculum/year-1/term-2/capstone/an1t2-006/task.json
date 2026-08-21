@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "id": "an1t2-006",
   "title": "Capstone: Disclosed AI-Assisted Feature Delivery End-to-End",
-  "term": "year-1/term-2",
+  "term": "year-1-term-2",
   "module": "capstone",
   "estimatedHours": 14,
   "objective": "Deliver one real, moderately ambiguous feature end to end — spec, AI-assisted implementation including at least one multi-file agentic step, independent test-driven verification, a critical review pass, and a refactor — with disclosure at every step, ready to defend in a live mentor review.",

@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "id": "be1t2-004",
   "title": "Asynchronous Work with RabbitMQ",
-  "term": "year-1/term-2",
+  "term": "year-1-term-2",
   "module": "messaging",
   "estimatedHours": 16,
   "objective": "Publish a domain event from the API, consume it in a separate Python process, and demonstrate at-least-once delivery plus a poison-message path.",

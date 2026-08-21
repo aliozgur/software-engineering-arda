@@ -2,32 +2,32 @@
   "schemaVersion": 1,
   "id": "git",
   "title": "Git",
-  "description": "Git data model, commits, branching, merging, rebasing, collaboration and repository hygiene.",
+  "description": "Can land, share and recover work from the working tree through Git's commit graph — and can choose merge versus rebase without rewriting history others already have.",
   "levels": [
     {
       "level": 1,
       "name": "Foundation",
-      "description": "Can explain core concepts and complete guided work."
+      "description": "Can stage changes from the working tree, create a feature branch, record at least two commits whose messages state what changed and why, and open a pull request a reviewer can act on — under written guidance."
     },
     {
       "level": 2,
       "name": "Apprentice",
-      "description": "Can complete scoped tasks with limited guidance and produce evidence."
+      "description": "Can complete a conflicted merge so both sides' intended content survive, rebase a messy local branch into a readable history, and show the pre-rebase state is still recoverable."
     },
     {
       "level": 3,
       "name": "Practitioner",
-      "description": "Can independently design, implement, test and explain non-trivial work."
+      "description": "Can independently keep a shared branch reviewable — choose merge or rebase for the situation, push without rewriting history others already have, and answer each review comment with a follow-up commit or a written no-change reason."
     },
     {
       "level": 4,
       "name": "Journeyman",
-      "description": "Can handle ambiguity, diagnose failures and defend trade-offs."
+      "description": "Can diagnose a regression with git bisect and an automated check, name the first bad commit and the causal change, and recover from a rewritten or detached HEAD without losing work."
     },
     {
       "level": 5,
       "name": "Mastery Evidence",
-      "description": "Can teach, review and make sound decisions across unfamiliar situations."
+      "description": "Can review another apprentice's branch for rewritten shared history, unrecoverable rebases or unreadable commits, and teach when to rebase versus merge on a repository they did not set up."
     }
   ]
 }

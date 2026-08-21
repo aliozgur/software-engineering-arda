@@ -1,0 +1,18 @@
+{
+  "title": "Ekran Görüntüsünü Değil, Transform'u Test Et",
+  "objective": "Transform ve yükleme kapılarının çevresine otomatik test koy: benzersizlik, zorunlu null'lar, referans bütünlüğü, satır sayısı korunumu veya belgelenmiş bir filtre ve bir iş kuralı — düşmesi gereken bir fixture dahil.",
+  "whyThisMatters": "Yeşil bir warehouse ekran görüntüsü test değildir. Kaynak sütunu boş geldiği anda transform çürür. Veritabanı olmadan koşabilen testler bunu yakalar; PostgreSQL'e karşı bir entegrasyon testi sandığın kısıtı yakalar.",
+  "evidence": [
+    "Belgelenmiş test komutu ve en az beş testin yakalanmış geçen çalıştırması",
+    "Kötü fixture'a karşı yakalanmış başarısız çalıştırma; hata iletisi ihlal edilen kuralı adlandırır",
+    "Veritabanı açmadan koşan iki (veya daha fazla) test ve PostgreSQL'e giden test",
+    "Entegrasyon testinin dayandığı unique veya foreign-key kısıtının listesi veya sorgusu",
+    "Görev sorularını yanıtlayan değerlendirme notları"
+  ],
+  "acceptanceCriteria": [
+    "En az beş otomatik test tek belgelenmiş komuttan çalışır ve yakalanmış bir çalıştırma bunları mutlu fixture'da geçirir.",
+    "Kötü fixture'a karşı ikinci yakalanmış çalıştırma en az bir adlandırılmış testin düştüğünü gösterir ve hata iletisi ihlal edilen kuralı adlandırır.",
+    "En az iki test, veritabanı bağlantısı açmadan transform'u yürütür.",
+    "En az bir test PostgreSQL'e karşı çalışır ve gerekli unique veya foreign-key kısıtı yoksa düşer; bunu yakalanmış bir kısıt listesi veya o kısıtı atılabilir bir veritabanında düşürdükten sonra yakalanmış bir başarısızlık gösterir."
+  ]
+}

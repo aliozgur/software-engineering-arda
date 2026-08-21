@@ -1,0 +1,17 @@
+{
+  "title": "Kötü Bir Release Gönder, Gözlemle, Geri Al",
+  "evidence": [
+    "Mentorun listeleyebileceği git tag veya image tag'leriyle iki sürümlü artefakt (iyi vN-1 ve kötü vN)",
+    "Kötü sürümün trafik aldığı dönemden yakalanmış alert veya SLO burn artı eşleşen bir trace veya yapılandırılmış log",
+    "Rollback'in workload'u vN-1'e döndürdüğünün kanıtı (çalışan nesnelerde image tag veya version label), belgelenmiş release süreciyle; kötü image'ı yeniden yazarak değil",
+    "Detect / mitigate / resolve zaman damgaları, sinyallerin ne gösterdiği ve tek somut follow-up içeren, kişi suçlamayan INCIDENT.md",
+    "Görev sorularını yanıtlayan değerlendirme notları",
+    "Yapay zekâ çalışmayı önemli ölçüde etkilediyse yapay zekâ kullanım beyanı"
+  ],
+  "acceptanceCriteria": [
+    "İki sürümlü artefakt vardır (kötü vN ve iyi vN-1); rollback sonrası çalışan workload image tag veya version label olarak vN-1 gösterir.",
+    "Kötü release önce deploy edilmiş olarak gösterilir; yakalanmış bir alert veya SLO burn ve eşleşen bir trace veya yapılandırılmış log vardır.",
+    "Rollback belgelenmiş release sürecini kullanır (pipeline, OpenTofu veya önceki tag'in apply'ı) ve kötü image'ı hotfix olarak üzerine yazmaz veya yeniden build etmez.",
+    "Rollback sonrası alert resolve olur ve bir smoke isteği başarılıdır. INCIDENT.md bir zaman çizelgesi, sinyaller ve bir follow-up içerir; bir kişiyi suçlamaz."
+  ]
+}

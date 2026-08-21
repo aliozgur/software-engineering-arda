@@ -1,0 +1,20 @@
+{
+  "title": "Kaybetmeden ve Çift Yazmadan Stream Tüket",
+  "objective": "At-least-once olayları idempotent bir warehouse sink'e tüket, offset veya ack'i yalnızca başarılı yazımdan sonra commit et ve ack öncesi çöküş ile replay'in event_id kümesini büyütmediğini kanıtla.",
+  "whyThisMatters": "Stream'ler yazı ile ack arasında bozulur. Önce ack edersen düşürürsün. Benzersiz event_id olmadan önce yazarsan çift yazarsın. Kuyruk-log tercihi replay'i değiştirir; idempotent sink ihtiyacını kaldırmaz.",
+  "evidence": [
+    "Üretici ve tüketici kodu ile warehouse'daki event_id benzersizlik kısıtı",
+    "O kısıta karşı başarısız olan veya no-op olan yakalanmış yinelenen insert denemesi",
+    "Ack öncesi çöküş gösterimi ve yeniden başlatma sonrası distinct event_id sayısı",
+    "Distinct event_id sayısını artırmayan bir replay veya yeniden teslimat çalıştırması",
+    "Hem Kafka hem RabbitMQ'yu adlandıran, en az üç cümlelik kuyruk-log notu",
+    "Görev sorularını yanıtlayan değerlendirme notları"
+  ],
+  "acceptanceCriteria": [
+    "Warehouse'da event_id üzerinde benzersizlik kısıtı veya eşdeğeri vardır ve yinelenen insert denemesi başarısız olur veya no-op'tur; bu yakalanmış bir ifade ile gösterilir.",
+    "Tüketici Kafka offset'ini veya RabbitMQ mesajını yalnızca warehouse yazımı başarı döndükten sonra commit/ack eder; bunu kod sırası ve ack öncesi çöküş gösterimi kanıtlar.",
+    "Ack öncesi çöküş ve yeniden başlatmadan sonra warehouse event_id sayısı, üretilen distinct olay sayısına eşittir, daha fazla değil.",
+    "Daha erken bir offset'ten replay veya kuyruk yeniden teslimatı distinct event_id sayısını artırmaz.",
+    "Bir not dosyası hem Kafka hem RabbitMQ'yu adlandıran, en az üç cümlelik kuyruk-log karşılaştırması içerir."
+  ]
+}

@@ -2,32 +2,32 @@
   "schemaVersion": 1,
   "id": "testing-quality",
   "title": "Testing Quality",
-  "description": "Unit/integration/system testing, test design, static analysis and code quality.",
+  "description": "Can design tests and quality gates that fail for a real risk and stay green for intended behavior — and can choose which layer would have caught a given miss.",
   "levels": [
     {
       "level": 1,
       "name": "Foundation",
-      "description": "Can explain core concepts and complete guided work."
+      "description": "Can add characterization tests that pin existing behavior — including an edge case and an invalid input — and name one surprising result without changing the code — under written guidance."
     },
     {
       "level": 2,
       "name": "Apprentice",
-      "description": "Can complete scoped tasks with limited guidance and produce evidence."
+      "description": "Can attach a failing automated case to a reproduced defect, then add a regression test that would fail if the bug returned, and run the suite with one documented command."
     },
     {
       "level": 3,
       "name": "Practitioner",
-      "description": "Can independently design, implement, test and explain non-trivial work."
+      "description": "Can independently write a risk-to-layer test strategy, implement tests at more than one layer, and show a deliberate failure that only that layer would catch."
     },
     {
       "level": 4,
       "name": "Journeyman",
-      "description": "Can handle ambiguity, diagnose failures and defend trade-offs."
+      "description": "Can diagnose a flaky, weakly asserted or contract-breaking suite, name the nondeterminism or surviving mutant, and fix the cause rather than retrying or raising coverage alone."
     },
     {
       "level": 5,
       "name": "Mastery Evidence",
-      "description": "Can teach, review and make sound decisions across unfamiliar situations."
+      "description": "Can review another apprentice's suite or quality gate, name a test that is toil or vanity, and teach when a unit test is the wrong layer on a system they did not write."
     }
   ]
 }

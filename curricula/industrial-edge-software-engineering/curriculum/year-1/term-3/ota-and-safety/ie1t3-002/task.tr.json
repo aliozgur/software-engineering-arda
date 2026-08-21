@@ -1,0 +1,18 @@
+{
+  "title": "Güncelleyiciyi yazmadan önce IIoT edge düğümünü tehdit modelle",
+  "objective": "Simüle bir IIoT edge düğümü için en az altı varlık, dört saldırgan konumu, varlık başına bir somut azaltma, bir güven-sınırı diyagramı ve RFC 9019'a bağlı açık bir imzasız-veya-rollback firmware tehdidi içeren bir tehdit modeli üret.",
+  "whyThisMatters": "Tehdit modeli olmayan OTA, düğümlerin brick olduğu veya ele geçirildiği yoldur. RFC 9019 firmware-güncelleme sorununu adlandırır; bu görev varlıkları ve sınırları yazdığın yerdir ki sonraki görevin çift yuva tasarımı bir listeye, bir havaya değil, yanıt versin.",
+  "evidence": [
+    "En az altı varlık, en az dört saldırgan konumu ve varlık başına bir somut azaltma listeleyen THREAT.md",
+    "THREAT.md içinde en az iki güven sınırı adlandıran bir veri-akışı veya güven-sınırı diyagramı (Mermaid veya ASCII şekil)",
+    "İmzasız veya geri alınabilir bir firmware imajını tehdit olarak adlandıran ve hem imzalamayı hem bir tazelik veya anti-rollback kontrolünü adlandıran, RFC 9019'u bölüm veya alıntıyla kaynak gösteren bir bölüm",
+    "THREAT.md'nin herhangi bir güncelleyici kodundan önce taslaklandığını gösteren Git geçmişi (güncelleyici sonraki görevdir)",
+    "Görev sorularını yanıtlayan değerlendirme notları"
+  ],
+  "acceptanceCriteria": [
+    "THREAT.md en az altı varlık ve en az dört saldırgan konumu listeler (örneğin: yerel bus, fiziksel debug, uplink MITM, kötücül güncelleme sunucusu).",
+    "Altı varlığın her birinin bir mekanizma adlandıran azaltması vardır (örneğin telemetride HMAC, üretimde SWD'yi kapat, TLS-PSK, imzalı imaj) — yalnız 'güvenlik kullan' veya 'her şeyi şifrele' ifadesi değil.",
+    "Diyagram en az iki güven sınırı adlandırır (örneğin sensor-bus karşısında MCU, MCU karşısında uplink).",
+    "Bir tehdit imzasız veya sürüm-düşürülmüş bir firmware imajıdır; azaltması imzalamayı ve bir tazelik veya anti-rollback kontrolünü adlandırır ve RFC 9019'u kaynak gösterir (bölüm numarası veya alıntılanmış bir cümle)."
+  ]
+}

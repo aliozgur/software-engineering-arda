@@ -1,33 +1,33 @@
 {
   "schemaVersion": 1,
   "id": "http-api",
-  "title": "Http Api",
-  "description": "HTTP semantics, REST-style APIs, contracts, errors, versioning and API design.",
+  "title": "HTTP API",
+  "description": "Can design and implement HTTP APIs whose methods, status codes and error bodies match a written contract — and can evolve that contract without casually breaking consumers.",
   "levels": [
     {
       "level": 1,
       "name": "Foundation",
-      "description": "Can explain core concepts and complete guided work."
+      "description": "Can capture and annotate a raw HTTP request and response, implement routes whose status codes match the outcome, and name which route is idempotent and which is not — under written guidance."
     },
     {
       "level": 2,
       "name": "Apprentice",
-      "description": "Can complete scoped tasks with limited guidance and produce evidence."
+      "description": "Can ship a minimal HTTP API whose OpenAPI document agrees with the implementation, whose errors are a consistent JSON shape with no stack traces or secrets, and whose curl smoke test exercises every route including failure cases."
     },
     {
       "level": 3,
       "name": "Practitioner",
-      "description": "Can independently design, implement, test and explain non-trivial work."
+      "description": "Can independently add a resource that touches more than one store inside a transaction, return 4xx not 500 for invalid input, and keep OpenAPI request and response schemas in agreement with the running service."
     },
     {
       "level": 4,
       "name": "Journeyman",
-      "description": "Can handle ambiguity, diagnose failures and defend trade-offs."
+      "description": "Can diagnose a client failure where a 200-with-error-body, a non-idempotent GET, or a leaked stack would look like success, cite the captured request and the contract clause that forbids it, and produce a compatibility matrix plus deprecation path another team can follow without reading the server source."
     },
     {
       "level": 5,
       "name": "Mastery Evidence",
-      "description": "Can teach, review and make sound decisions across unfamiliar situations."
+      "description": "Can review another apprentice's API or OpenAPI document, name a status code, method or leaked error detail that violates HTTP semantics, and teach when a change is compatible versus breaking on an unfamiliar contract."
     }
   ]
 }

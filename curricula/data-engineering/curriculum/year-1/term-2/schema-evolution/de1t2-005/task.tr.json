@@ -1,0 +1,18 @@
+{
+  "title": "Dünkü Tüketiciyi Kırmadan Şemayı Evrilt",
+  "objective": "Eski tüketicinin hâlâ işlediği additive isteğe bağlı bir alanı çıkar, ardından warehouse'u bozmak yerine yakalanan bir breaking değişikliği gönder; ikisi için de sözleşme changelog'u olsun.",
+  "whyThisMatters": "Üreticiler payload değiştirir. Tüketiciler daha sonra deploy edilir. Tip değişikliği veya yeniden adlandırma sessiz bir coerce olarak inerse dünün tane düzeyi gider ve backfill kurgu olur. Uyumluluk test edilen bir özelliktir; JSON'un 'esnek' olduğuna dair bir umut değil.",
+  "evidence": [
+    "v1, additive sürüm ve gerekçeli breaking sürümü listeleyen sözleşme changelog'u",
+    "Yalnızca isteğe bağlı bir alan ekleyen payload'ı başarıyla işleyen eski tüketicinin yakalanmış çalıştırması",
+    "Breaking bir payload karşısında bozuk warehouse satırı yazmayan eski tüketicinin yakalanmış çalıştırması",
+    "Additive değişiklik deploy edildikten sonra v1 payload'ların hâlâ yüklendiğini gösteren test veya replay",
+    "Görev sorularını yanıtlayan değerlendirme notları"
+  ],
+  "acceptanceCriteria": [
+    "Eski tüketici yalnızca isteğe bağlı bir alan ekleyen bir v2 payload'ı başarıyla işler; bu yakalanmış bir satır veya log ile gösterilir.",
+    "Breaking bir payload ile karşılaşan eski tüketici bozuk warehouse satırı yazmaz: log'lanan bir hatayla reddeder veya bir uyumluluk shim'i okur ve yakalanmış warehouse örneği kesilmiş veya yanlış tipli zorunlu alan göstermez.",
+    "Sözleşme changelog'u v1, additive sürüm ve breaking sürümü listeler; breaking girişinde tarih veya gerekçe vardır.",
+    "Bir test veya replay, additive değişiklik deploy edildikten sonra v1 payload'ların hâlâ yüklendiğini gösterir."
+  ]
+}

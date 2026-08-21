@@ -1,30 +1,30 @@
 {
   "title": "Web Temelleri",
-  "description": "HTML, CSS, JavaScript/TypeScript, tarayıcı modeli ve erişilebilirlik.",
+  "description": "Klavye kullanıcısının tamamlayabileceği HTML, CSS ve tarayıcı JavaScript'i — ileride TypeScript — teslim edebilir; sayfa arayüzü bir arızayı gizleyince DevTools'ta DOM, network ve storage'ı inceleyebilir.",
   "levels": [
     {
       "name": "Temel",
-      "description": "Temel kavramları açıklayabilir ve rehberli çalışmaları tamamlayabilir.",
+      "description": "Yazılı rehberlik altında anlamsal landmark ve etiketlerle çok sayfalı bir site işaretleyebilir, UI framework kullanmadan responsive CSS yazabilir ve çekirdek etkileşimleri klavyeyle tamamlayabilir.",
       "level": 1
     },
     {
       "name": "Çırak",
-      "description": "Kapsamı belirlenmiş görevleri sınırlı yönlendirmeyle tamamlayabilir ve kanıt üretebilir.",
+      "description": "DOM olay işleyicileri ve bir public veya test endpoint'ine fetch bağlayabilir; Network sekmesinin sayfa arayüzünün göstermediğini yakalayabilir; isteğe uygulanan same-origin kısıtını adlandırabilir.",
       "level": 2
     },
     {
       "name": "Uygulayıcı",
-      "description": "Kayda değer bir çalışmayı bağımsız olarak tasarlayabilir, uygulayabilir, test edebilir ve açıklayabilir.",
+      "description": "Gerekçesiz any yerine domain type'larla küçük bir JavaScript uygulamasını bağımsız olarak TypeScript'e çevirebilir; async hata yollarını test edebilir; build, type-check ve test komutlarını belgelendirebilir.",
       "level": 3
     },
     {
       "name": "Kalfa",
-      "description": "Belirsizlikle başa çıkabilir, hataları teşhis edebilir ve ödünleşimleri gerekçelendirebilir.",
+      "description": "Çizilmiş sayfanın iyi görüneceği bozuk bir isteği, eksik bir etiketi veya klavye tuzağını teşhis edebilir; kanıtlayan DevTools panelini veya erişilebilirlik kontrolünü gösterebilir; başka bir mühendisin framework olmadan hatayı yeniden üretebileceği bir not üretebilir.",
       "level": 4
     },
     {
       "name": "Ustalık Kanıtı",
-      "description": "Alışılmadık durumlarda öğretebilir, değerlendirme yapabilir ve sağlam kararlar verebilir.",
+      "description": "Başka bir çırağın sayfasını veya TypeScript dönüşümünü değerlendirebilir; eksik bir landmark'ı, gerekçesiz bir any'yi veya runtime doğrulama sayılan bir derleme-zamanı tipi adlandırabilir; tanıdık olmayan bir ön yüzde type checker'ın ne zaman yetmeyeceğini öğretebilir.",
       "level": 5
     }
   ]

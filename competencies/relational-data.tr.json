@@ -1,30 +1,30 @@
 {
   "title": "İlişkisel Veriler",
-  "description": "İlişkisel modelleme, SQL, normalleştirme, kısıtlamalar ve PostgreSQL.",
+  "description": "Bir alanı kısıtlı tablolar olarak modelleyebilir, doğru tanede join ve aggregate yapan SQL yazabilir ve bir dizini kuraldan değil ölçülmüş bir plandan seçebilir.",
   "levels": [
     {
       "name": "Temel",
-      "description": "Temel kavramları açıklayabilir ve rehberli çalışmaları tamamlayabilir.",
+      "description": "Yazılı rehberlik altında CREATE TABLE betiğiyle örtüşen bir ER diyagramı çizebilir, primary ve foreign key'leri adlandırabilir ve join içeren bir SELECT yazabilir.",
       "level": 1
     },
     {
       "name": "Çırak",
-      "description": "Kapsamı belirlenmiş görevleri sınırlı yönlendirmeyle tamamlayabilir ve kanıt üretebilir.",
+      "description": "Kasıtlı geçersiz bir insert'i reddeden kısıtları olan küçük bir PostgreSQL şeması tasarlayabilir; join, aggregation ve bir CTE veya subquery içeren sorgular yazabilir; o şemaya karşı bir normalleştirme kararını açıklayabilir.",
       "level": 2
     },
     {
       "name": "Uygulayıcı",
-      "description": "Kayda değer bir çalışmayı bağımsız olarak tasarlayabilir, uygulayabilir, test edebilir ve açıklayabilir.",
+      "description": "Boş bir veritabanından sıralı migration'ları bağımsız olarak çıkarabilir, örnek veri yükleyebilir, API'nin gerçekten çalıştırdığı bir sorgu için EXPLAIN ANALYZE yorumlayabilir ve bir dizini genel kurallardan değil kaydedilmiş sürelerden tutabilir veya reddedebilir.",
       "level": 3
     },
     {
       "name": "Kalfa",
-      "description": "Belirsizlikle başa çıkabilir, hataları teşhis edebilir ve ödünleşimleri gerekçelendirebilir.",
+      "description": "Diyagramın doğru göründüğü bir kısıt veya sorgu hatasını teşhis edebilir; reddedilen yazıyı veya yanıltıcı planı gösterebilir; bir denormalizasyon veya isolation seçimini ölçülmüş bir ödünleşimle savunabilir.",
       "level": 4
     },
     {
       "name": "Ustalık Kanıtı",
-      "description": "Alışılmadık durumlarda öğretebilir, değerlendirme yapabilir ve sağlam kararlar verebilir.",
+      "description": "Başka bir çırağın şemasını değerlendirebilir; eksik bir kısıtı veya gösteriş dizinini adlandırabilir; tanıdık olmayan bir alanda join ağırlıklı ilişkisel modelin neden yanlış depo olduğunu öğretebilir.",
       "level": 5
     }
   ]

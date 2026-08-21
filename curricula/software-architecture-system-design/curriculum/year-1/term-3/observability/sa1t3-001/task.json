@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "id": "sa1t3-001",
   "title": "Observability as an Architectural Surface",
-  "term": "year-1/term-3",
+  "term": "year-1-term-3",
   "module": "observability",
   "estimatedHours": 8,
   "objective": "Assign a named diagnostic signal to every service boundary on a prior design, walk two failures using only those signals, and record a sampling or cardinality limit as a number.",

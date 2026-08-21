@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "id": "y4t2-002",
   "title": "Production Incident Simulation",
-  "term": "year-4/term-2",
+  "term": "year-4-term-2",
   "module": "incident",
   "estimatedHours": 14,
   "competencies": [

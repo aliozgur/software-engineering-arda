@@ -101,7 +101,7 @@ state and model runtime data should not be committed to Git.
 - JSON Schema: validation contracts
 - Locale overlays: sibling `{stem}.{locale}.{ext}` next to the canonical file (e.g. `instructions.tr.md`). See [docs/CONTENT_LOCALES.md](docs/CONTENT_LOCALES.md). Canonical files stay English (`sourceLocale`). Do not reuse `curriculum.json` `languages` for human locales.
 
-Only the two reference apprenticeships currently ship Turkish overlays. The specializations are English-only.
+Every curriculum in this repository ships English plus Turkish sibling overlays (`contentLocales`: `en`, `tr`). Canonical files stay English.
 
 `curriculum.json` may declare `progression`:
 

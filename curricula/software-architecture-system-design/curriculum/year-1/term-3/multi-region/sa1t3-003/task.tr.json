@@ -1,0 +1,15 @@
+{
+  "title": "Çok Bölgeli Topoloji, Tutarlılık ve Data Residency",
+  "objective": "Belirtilen RPO, RTO ve residency kısıtlarına göre active-active veya primary-failover seçmek ve bir bölge kaybından sonra kullanıcıların ne gördüğünü kaydetmek.",
+  "whyThisMatters": "İkinci bir bölge, bir güvenilirlik etiketi değildir. Tutarlılık, failover ve yasal sınır kararıdır. RPO, RTO ve bir bölgeyi terk etmemesi gereken bir veri sınıfı yazmadan iki kutuya \"active-active\" yazan mimarlar bir slayt tasarlamıştır, sistem değil.",
+  "evidence": [
+    "Active-active veya primary-failover olduğunu belirten, failover yolunda RPO ve RTO sayıları olan bir bölge topolojisi diyagramı",
+    "Bir bölge kaybından sonra kullanıcının gördüğü tutarlılık modelini ve ayrı gerekçeli en az bir reddedilmiş topolojiyi adlandıran bir ADR",
+    "En az bir veri sınıfını residency-kısıtlı olarak işaretleyen, kalması gereken bölge veya yargı alanını ve onu orada tutan mimari kuralı adlandıran bir not"
+  ],
+  "acceptanceCriteria": [
+    "Topoloji active-active veya primary-failover olarak etiketlenir; RPO ve RTO, \"hızlı failover\" değil, birimli sayılar olarak belirtilir.",
+    "ADR, bir bölge kaybından sonra kullanıcıların gördüğü tutarlılık modelini (izin verilen bir stale-read sınırı veya reddedilen bir yazma dahil) belirtir ve reddedilen topolojiyi \"daha karmaşıktı\" dışında bir gerekçeyle adlandırır.",
+    "En az bir veri sınıfı residency-kısıtlı işaretlenir; adlandırılmış bir bölge veya yargı alanı ve o sınıfın oranın dışında çoğaltılmasını veya işlenmesini engelleyen bir kural vardır."
+  ]
+}

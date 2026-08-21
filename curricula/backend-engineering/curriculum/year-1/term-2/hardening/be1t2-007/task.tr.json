@@ -1,0 +1,18 @@
+{
+  "title": "Image ve Pipeline'ı Sertleştirmek (2. Dönem Dönüm Noktası)",
+  "objective": "Container'ı root olmayan bir kullanıcı olarak çalıştırmak, belgelenmiş bir image-tarama şiddetinde CI'yı düşürmek ve sırları Dockerfile ile workflow dosyalarının dışında tutmak.",
+  "whyThisMatters": "1. Dönem pipeline'ın kırmızıya dönebileceğini kanıtladı. 2. Dönem, image'ın ve pipeline'ın kendisini kolay başarısızlıklara — üretimde root, bilinen zayıf paketler ve Git'teki sırlar — düşman kılarak kapanır.",
+  "evidence": [
+    "Son aşamada root olmayan USER gösteren Dockerfile ve build, test ve tarama yapan workflow dosyası",
+    "Başarısız bir tarama veya başarısız bir root-kullanıcı kontrolünün ve sonraki geçen koşunun dışa aktarılmış log'ları",
+    "Kasıtlı kırılma ile düzeltmenin ayrı, tanınabilir commit'ler olduğu Git geçmişi",
+    "Tarama aracını, düşüren şiddeti ve sırların nasıl sağlandığını adlandıran README taban çizgisi",
+    "Dockerfile ve workflow YAML'de sır değeri olmadığını gösteren bir grep"
+  ],
+  "acceptanceCriteria": [
+    "Son image aşaması USER'ı root olmayan bir uid veya adlı kullanıcıya ayarlar; docker compose run whoami (veya eşdeğeri) root değildir.",
+    "Image taraması README'de adlandırılan şiddette bir bulgu bildirdiğinde CI düşer; başarısız bir koşu log'u ile gösterilir.",
+    "Dockerfile veya workflow YAML'de parola, token veya API anahtarı görünmez.",
+    "Pipeline her push'ta hâlâ lint, gerçek servis container'larına karşı testler, bir image build ve taramayı çalıştırır."
+  ]
+}

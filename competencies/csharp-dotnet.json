@@ -1,33 +1,33 @@
 {
   "schemaVersion": 1,
   "id": "csharp-dotnet",
-  "title": "Csharp Dotnet",
-  "description": "C#, .NET, async programming and production backend engineering.",
+  "title": "C# / .NET",
+  "description": "Can build C# / .NET services where warnings, cancellation and server-side authorization are enforced — and can write async I/O without blocking on .Result or .Wait.",
   "levels": [
     {
       "level": 1,
       "name": "Foundation",
-      "description": "Can explain core concepts and complete guided work."
+      "description": "Can write a modern C# console or library with nullable reference types, unit tests, and documented public API choices — under written guidance."
     },
     {
       "level": 2,
       "name": "Apprentice",
-      "description": "Can complete scoped tasks with limited guidance and produce evidence."
+      "description": "Can implement async I/O whose CancellationToken actually cancels, refuse .Result/.Wait on application paths, treat compiler warnings as failures, and add configuration plus structured logging to the solution."
     },
     {
       "level": 3,
       "name": "Practitioner",
-      "description": "Can independently design, implement, test and explain non-trivial work."
+      "description": "Can independently ship a versioned ASP.NET Core API with server-side authorization, consistent errors that do not leak secrets, integration tests covering auth and transactions, and an OpenAPI document a client can consume."
     },
     {
       "level": 4,
       "name": "Journeyman",
-      "description": "Can handle ambiguity, diagnose failures and defend trade-offs."
+      "description": "Can diagnose a failure where a blocked async call, swallowed cancellation, or missing authorization check would look like success, cite the stack or test that proves it, and produce a note another engineer can follow to reproduce the fault without stepping the debugger first."
     },
     {
       "level": 5,
       "name": "Mastery Evidence",
-      "description": "Can teach, review and make sound decisions across unfamiliar situations."
+      "description": "Can review another apprentice's C# / .NET service, name a blocked async call, a warning treated as noise, or an authorization check that lives only in the client, and teach when to use a record, DI or a CancellationToken on an unfamiliar codebase."
     }
   ]
 }

@@ -1,0 +1,15 @@
+{
+  "title": "Uçtan Uca Mimari: Sun, Savun, Gözden Geçir",
+  "objective": "Belirtilmiş NFR'lere bağlı en az üç ADR içeren, kapsamı kendi belirlenmiş bir mimari paket üretmek; canlı olarak bir değişen kısıta karşı savunmak ve o kısıtın geçersiz kıldığı ADR'ı superseded yapmak.",
+  "whyThisMatters": "Tekil kararlar yerelde doğru, bütünde tutarsız olabilir. Bu kapanış görevi bir sistemi — NFR'ler, kararlar, nicel bir model, bir teşhis öyküsü — bir araya getirmenizi ve bir kısıt değişince paketi baştan yazmadan bir parçayı gözden geçirmenizi ister. Bu müfredatın çalıştırdığı iş budur.",
+  "evidence": [
+    "Bir NFR sayfası, belirtilmiş bir NFR'ye izlenen en az üç ADR, bir nicel model (capacity, SLO veya maliyet), bir sistem diyagramı ve iki arızayı ayırt edecek sinyalleri adlandıran kısa bir teşhis öyküsü içeren bir mimari paket",
+    "Değişen kısıtı ve orijinal paketi en çok zorlayan somut soruyu adlandıran savunma-oturumu notları",
+    "Orijinalleri sessizce silmeden değişen kısıta yanıt veren, superseded veya amended bir ADR; artı kısıtın neyi geçersiz kıldığının yan yana notu"
+  ],
+  "acceptanceCriteria": [
+    "Paket en az üç ADR içerir; her ADR yanıt verdiği NFR veya kısıtı adlandırır.",
+    "Teşhis öyküsü iki arızayı ve onları ayırt edecek somut sinyali adlandırır; önceki bir gözlemlenebilirlik veya SLO artefaktıyla aynı sözcük dağarcığını kullanır.",
+    "Savunma notları bir değişen kısıtı ve çırağın canlı olarak tam yanıtlayamadığı bir soruyu adlandırır; ikinci bir ADR, geçersiz kılınan kararı sessizce değiştirmek yerine superseded veya amended olarak işaretler."
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "title": "Günlük, ölçüm ve izi birlikte kullanarak teşhis et",
+  "objective": "Tek bir sinyal türünün yanlış atayacağı bir arıza üret; günlük, ölçüm ve izi birlikte kaynak gösteren bir teşhis yaz; başka bir nöbetçinin uygulama kaynağını açmadan izleyebileceği bir runbook bırak.",
+  "whyThisMatters": "Üç sinyal, anlaşmazlıkları için vardır. 'API başarısız' diyen bir ölçüm tek yavaş bir bağımlılığı gizleyebilir; bir günlük satırı iki hop ötede bir zaman aşımını gizleyebilir. Bu son görev, anlaşmazlığı fark edebildiğini ve ob1t1-006 sırasında dilediğin yolu yazabildiğini kanıtladığın yerdir.",
+  "evidence": [
+    "Üretilen koşulu ve yalnızca ölçüm okumasının neden yanıltacağını anlatan arıza-enjeksiyon notu",
+    "Yanlış veya eksik sonucu yazan, sorgu çıktısı ekli yalnızca-ölçüm ilk-geçiş notu",
+    "O sonucu düzelten bir günlük alıntısı (correlation id görünür) ve bir iz dışa aktarımı",
+    "Bir ölçüm/sorgu sonucu, bir günlük satırı ve bir span adı/süresi kaynak gösteren birleşik teşhis notu",
+    "Detect, Diagnose ve Recover etiketli bölümleri olan, her birinde somut bir komut, sorgu veya eylem bulunan bir runbook",
+    "Görev sorularını yanıtlayan değerlendirme notları"
+  ],
+  "acceptanceCriteria": [
+    "Yalnızca-ölçüm ilk-geçiş notu, birleşik teşhisin düzelttiği veya daralttığı bir sonuç yazar.",
+    "Birleşik teşhis en az bir ölçüm veya sorgu sonucu, correlation id'li bir günlük satırı ve süresi olan bir span adı kaynak gösterir.",
+    "Runbook'un üç etiketli bölümü vardır — Detect, Diagnose, Recover — her birinde en az bir somut komut, sorgu veya eylem.",
+    "Runbook uygulama kaynağını açma yönergesi içermez (satır numaralı dosya adı yok, 'foo.py oku' yok)."
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "title": "Başarısız Üretim Yüklemesini Kanıttan Kurtar",
+  "objective": "Üretim biçimli bir hata enjekte et; log, metrik, offset veya watermark ve warehouse sayılarından teşhis et; last-good'u o kanıttan geri yükle; başarısız pencereyi yinelenen anahtar olmadan replay et.",
+  "whyThisMatters": "'Salı yükledik sanırım' folkloruyle başlayan kurtarma ikinci bir olay yaratır. Zaman çizelgesi artefaktlara atıf yapmak zorundadır. Last-good, tahmin-silme değil, yakaladığın bir checksum veya anlık görüntüdür.",
+  "evidence": [
+    "Her biri bir log satırı, metrik, offset veya watermark ya da sorgu sonucuna atıf yapan, en az üç zaman damgalı girişli olay notu",
+    "Yakalanmış olay öncesi anlık görüntü veya checksum ve onunla örtüşen geri yükleme sonrası sorgu",
+    "Replay sonrası pencere sayıları ve doğal anahtar veya event_id üzerinde benzersizlik kontrolü",
+    "Neyi sayfalayacağını veya hatanın neden sessiz kalacağını adlandıran tespit-sinyali paragrafı",
+    "Görev sorularını yanıtlayan değerlendirme notları"
+  ],
+  "acceptanceCriteria": [
+    "Olay notu, her biri bir log satırı, metrik, offset veya watermark ya da sorgu sonucuna — hatıraya değil — atıf yapan en az üç zaman damgalı girişli bir zaman çizelgesi içerir.",
+    "Last-good geri yükleme, tüketicinin gördüğü verinin yakalanmış olay öncesi anlık görüntü veya checksum ile örtüştüğünü gösteren bir sorguyla kanıtlanır.",
+    "Geri yüklemeden sonraki replay, yinelenen doğal anahtar veya event_id olmadan beklenen pencere sayılarını üretir.",
+    "Not, sayfalayacak tespit sinyalini adlandırır ya da bu hatanın neden sessiz kalacağını, sinyal veya boşluğu somut adlandırarak belirtir."
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "title": "Infrastructure as Code",
+  "description": "Bildirimsel provisioning, drift tespiti ve gözden geçirilebilir altyapı değişiklikleri.",
+  "levels": [
+    {
+      "level": 1,
+      "name": "Temel",
+      "description": "Bildirimsel infrastructure-as-code'u emirsel bir kurulum script'inden ayıran şeyi açıklayabilir ve mevcut bir plan/apply döngüsünü rehberlikle çalıştırabilir."
+    },
+    {
+      "level": 2,
+      "name": "Çırak",
+      "description": "Kapsamı belirlenmiş bir altyapı parçası için küçük, çalışan bir infrastructure-as-code tanımı yazabilir ve temiz durumdan sınırlı yönlendirmeyle apply edebilir."
+    },
+    {
+      "level": 3,
+      "name": "Uygulayıcı",
+      "description": "Çok kaynaklı bir stack için infrastructure-as-code tanımını bağımsız olarak tasarlayabilir, modüllere ayırabilir ve apply edebilir; oluşturduğu her resource'u açıklayabilir."
+    },
+    {
+      "level": 4,
+      "name": "Kalfa",
+      "description": "Beyan edilen ile gerçek altyapı durumu arasındaki drift'i tespit edebilir ve seçtiği düzeltme yolunu (geri al, import veya kodlaştır) mentor sorularına karşı savunabilir."
+    },
+    {
+      "level": 5,
+      "name": "Ustalık Kanıtı",
+      "description": "Apply öncesinde plan çıktısı ve policy kontrolleri görünen, gözden geçirilebilir bir altyapı-değişikliği iş akışı tasarlayabilir ve paylaşılan altyapı kodunu nasıl güvenle evrimleştireceğini bir meslektaşına öğretebilir."
+    }
+  ]
+}
