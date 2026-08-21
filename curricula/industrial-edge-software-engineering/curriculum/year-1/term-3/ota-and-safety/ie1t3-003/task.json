@@ -1,0 +1,46 @@
+{
+  "schemaVersion": 1,
+  "id": "ie1t3-003",
+  "title": "Signed OTA with dual-slot rollback you can fail on purpose",
+  "term": "year-1/term-3",
+  "module": "ota-and-safety",
+  "estimatedHours": 10,
+  "objective": "Simulate two firmware slots and a bootloader that refuses an invalid signature, refuses a downgrade when anti-rollback is on, and boots the previous slot after a failed health check.",
+  "whyThisMatters": "A signed image that you cannot roll back still bricks a plant. RFC 9019's architecture is not a library — this task is the host-side slots, metadata, and failure paths that your threat model already named.",
+  "competencies": [
+    "security",
+    "embedded-and-edge-systems"
+  ],
+  "resources": [
+    "rfc-9019"
+  ],
+  "instructionsFile": "instructions.md",
+  "aiPolicy": {
+    "mode": "guided",
+    "allowedCapabilities": ["explain", "hint", "quiz"],
+    "solutionGenerationAllowed": false,
+    "disclosureRequired": true
+  },
+  "evidence": [
+    "Bootloader and slot C sources (files standing in for flash) with incremental Git history",
+    "A captured log showing an image with an invalid signature leaving the active slot unchanged",
+    "A captured log showing a valid image with version less than current rejected while anti-rollback is on",
+    "A captured log showing a valid apply followed by a failed health check and boot of the previous slot, with both slot versions printed",
+    "A slot-metadata dump (file or program output) showing version, hash, and signature-valid bit for each slot",
+    "Reflection notes answering the task questions"
+  ],
+  "acceptanceCriteria": [
+    "Applying an image whose signature does not verify leaves the active slot's version unchanged; before and after versions are in the captured log.",
+    "Applying a correctly signed image whose version is less than the current active version is rejected when anti-rollback is enabled; the log states the rejected version and the current version.",
+    "After a correctly signed apply, a simulated failed health check causes the next boot to select the previous slot; the log prints both slot versions and which one is active.",
+    "Slot metadata for each slot includes version, content hash, and a signature-valid bit or equivalent, inspectable in a file or dump."
+  ],
+  "statusModel": [
+    "not_started",
+    "in_progress",
+    "submitted",
+    "revision_requested",
+    "resubmitted",
+    "approved"
+  ]
+}

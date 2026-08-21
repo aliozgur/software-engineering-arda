@@ -1,0 +1,49 @@
+{
+  "schemaVersion": 1,
+  "id": "as1t2-002",
+  "title": "Verify the Fix: Security Regression Suite",
+  "term": "year-1/term-2",
+  "module": "verification",
+  "estimatedHours": 12,
+  "objective": "Build a single-command security regression suite that guards the controls from term 1 and CSRF, and prove at least two tests fail when their corresponding fix is reverted.",
+  "whyThisMatters": "A fix without a test that can go red is a story. This path's motto is learn by doing; the suite is how a mentor — and your future self — re-checks that authorization, injection, encoding and CSRF controls still hold.",
+  "competencies": [
+    "security",
+    "testing-quality"
+  ],
+  "resources": [
+    "owasp-top10"
+  ],
+  "instructionsFile": "instructions.md",
+  "aiPolicy": {
+    "mode": "guided",
+    "allowedCapabilities": [
+      "explain",
+      "hint",
+      "quiz"
+    ],
+    "solutionGenerationAllowed": false,
+    "disclosureRequired": true
+  },
+  "evidence": [
+    "A test-inventory table listing each test, the threat-model id or OWASP category it guards, and the command that runs the suite",
+    "Git history showing the suite grown across multiple commits, not added in one dump",
+    "Command output of the full suite passing, with a timestamp",
+    "Command output of at least 2 named tests failing after their fix is reverted, then passing after restore",
+    "Reflection note answering the task questions"
+  ],
+  "acceptanceCriteria": [
+    "The suite contains at least 8 tests covering at least 4 of: authentication, authorization, injection, XSS, CSRF, secrets-not-in-response.",
+    "Each test file or test name references a threat-model threat id or an OWASP category.",
+    "At least 2 tests are shown failing when their corresponding fix is reverted, then passing when the fix is restored; commands and outputs are recorded.",
+    "The full suite runs to completion with a single documented command."
+  ],
+  "statusModel": [
+    "not_started",
+    "in_progress",
+    "submitted",
+    "revision_requested",
+    "resubmitted",
+    "approved"
+  ]
+}

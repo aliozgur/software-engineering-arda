@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "id": "apprenti-dev-data-engineering-2026",
+  "name": "apprenti.dev Data Engineering",
+  "version": "0.1.0",
+  "durationMonths": "6-9",
+  "audience": "Software or analytics engineer with working Python and SQL, specializing into pipeline engineering — moving, contracting, orchestrating and recovering data, not analyzing it.",
+  "philosophy": "Evidence-driven specialization: write the contract, move the data, rerun without fear, recover from the evidence. LEARN BY DOING. GROW THROUGH MENTORSHIP.",
+  "defaultWeeklyHours": {
+    "duringTerm": "5-8"
+  },
+  "roles": [
+    "apprentice",
+    "mentor"
+  ],
+  "languages": [
+    "Python",
+    "SQL"
+  ],
+  "corePlatforms": [
+    "PostgreSQL",
+    "Apache Kafka",
+    "RabbitMQ",
+    "Apache Airflow",
+    "pandas",
+    "Git"
+  ],
+  "aiPrinciples": [
+    "AI assistance must be disclosed when materially used.",
+    "Tasks may restrict solution generation while allowing explanations, hints and quizzes.",
+    "The apprentice remains accountable for every load, contract, backfill and recovery they submit.",
+    "Mentor approval is based on demonstrated reruns, failure recovery and live explanation, not a single successful run."
+  ],
+  "progression": "sequential",
+  "mentorship": "optional",
+  "sourceLocale": "en",
+  "contentLocales": ["en"]
+}

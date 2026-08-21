@@ -1,0 +1,14 @@
+{
+  "schemaVersion": 1,
+  "id": "year-1/term-1",
+  "title": "Term 1 — Batch Pipelines and Warehouse Loads",
+  "estimatedHours": 48,
+  "tasks": [
+    "de1t1-001",
+    "de1t1-002",
+    "de1t1-003",
+    "de1t1-004",
+    "de1t1-005",
+    "de1t1-006"
+  ]
+}

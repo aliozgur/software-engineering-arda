@@ -1,0 +1,40 @@
+{
+  "schemaVersion": 1,
+  "id": "sa1t1-005",
+  "title": "Defending an Architecture Decision Under a Changed Constraint",
+  "term": "year-1/term-1",
+  "module": "adr",
+  "estimatedHours": 6,
+  "objective": "Defend a previously written ADR live against a skeptical reviewer, then revise it in response to one deliberately changed constraint.",
+  "whyThisMatters": "A decision that only survives when nobody pushes back isn't a decision, it's a guess that hasn't been tested yet. Being able to revise a specific decision when a specific constraint changes, without rewriting everything from scratch, is the difference between an architect and someone who happened to be right once.",
+  "competencies": [
+    "architecture-and-tradeoffs",
+    "professional-practice"
+  ],
+  "resources": ["adr-github-io"],
+  "instructionsFile": "instructions.md",
+  "aiPolicy": {
+    "mode": "guided",
+    "allowedCapabilities": ["explain", "hint", "quiz", "coach"],
+    "solutionGenerationAllowed": false,
+    "disclosureRequired": true
+  },
+  "evidence": [
+    "The original ADR plus a superseding or amended ADR responding to the mentor's changed constraint",
+    "Notes from the defense session naming the specific question that most challenged the original decision",
+    "A diff or side-by-side note showing exactly what changed between the two ADRs and why"
+  ],
+  "acceptanceCriteria": [
+    "A second ADR marks the first as superseded or amended, rather than replacing it silently.",
+    "The revision addresses the specific changed constraint raised in the defense, not a generic rewrite.",
+    "The notes name at least one question the apprentice could not fully answer during the defense."
+  ],
+  "statusModel": [
+    "not_started",
+    "in_progress",
+    "submitted",
+    "revision_requested",
+    "resubmitted",
+    "approved"
+  ]
+}

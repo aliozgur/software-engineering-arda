@@ -1,0 +1,50 @@
+{
+  "schemaVersion": 1,
+  "id": "pe1t1-006",
+  "title": "Load Test to the Knee",
+  "term": "year-1/term-1",
+  "module": "load-testing",
+  "estimatedHours": 12,
+  "objective": "Apply a stepped or ramped load with one documented command, report p95 and error rate at three or more load levels, name the knee where the pe1t1-001 SLO fails, and quote a saturation signal at that point.",
+  "whyThisMatters": "A single load-test run at an arbitrary VU count is a demo. Capacity work needs the offered load where the system stops meeting the SLO — the knee — and the resource that is saturated there. Guessing that number in a spreadsheet is the architecture-path exercise; this term requires you to produce it.",
+  "competencies": [
+    "performance",
+    "observability",
+    "database-systems"
+  ],
+  "resources": [
+    "prometheus",
+    "opentelemetry",
+    "postgres-docs"
+  ],
+  "instructionsFile": "instructions.md",
+  "aiPolicy": {
+    "mode": "guided",
+    "allowedCapabilities": ["explain", "hint", "quiz"],
+    "solutionGenerationAllowed": false,
+    "disclosureRequired": true
+  },
+  "evidence": [
+    "The load script or program plus the single command that produces a documented workload shape",
+    "A table or raw outputs for at least three load levels, each with offered load, p95, and error rate",
+    "A knee statement: the lowest offered load (RPS or equivalent) at which the pe1t1-001 SLO (or a restated copy) fails",
+    "A saturation note quoting one measured resource at the knee (CPU percent, db connections, lock waits, or queue depth)",
+    "At least three comparable runs at one chosen operating point below the knee, with p95 range",
+    "Reflection notes answering the task questions"
+  ],
+  "acceptanceCriteria": [
+    "One documented command produces the workload; the script states arrival rate or VU count and duration.",
+    "At least three load levels are reported, each with offered load, p95 latency, and error rate.",
+    "The knee is the lowest reported offered load at which the SLO from pe1t1-001 (latency percentile or error rate) fails; that load is a number.",
+    "The saturation note quotes a measured value for one named resource at the knee, not a guess about what 'must have' saturated.",
+    "Three runs at one operating point below the knee report a numeric p95 range."
+  ],
+  "statusModel": [
+    "not_started",
+    "in_progress",
+    "submitted",
+    "revision_requested",
+    "resubmitted",
+    "approved"
+  ]
+}

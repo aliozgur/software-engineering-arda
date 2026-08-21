@@ -1,0 +1,47 @@
+{
+  "schemaVersion": 1,
+  "id": "ie1t3-001",
+  "title": "Modbus request/response you can break on purpose",
+  "term": "year-1/term-3",
+  "module": "industrial-comms",
+  "estimatedHours": 10,
+  "objective": "Implement Modbus TCP ADU for function 0x03 and 0x06, return exception 0x02 on an unmapped address, show MBAP length matching the PDU, and run at least 20 generated cases.",
+  "whyThisMatters": "A PLC map is not JSON. If you cannot hex-dump an MBAP header and an illegal-address exception, you will debug plant integrations by guessing. This task uses the official Modbus application protocol spec on the host — no licensed stack, no hardware gateway.",
+  "competencies": [
+    "networking",
+    "testing-quality",
+    "embedded-and-edge-systems"
+  ],
+  "resources": [
+    "modbus-application-protocol"
+  ],
+  "instructionsFile": "instructions.md",
+  "aiPolicy": {
+    "mode": "guided",
+    "allowedCapabilities": ["explain", "hint", "quiz"],
+    "solutionGenerationAllowed": false,
+    "disclosureRequired": true
+  },
+  "evidence": [
+    "Server and client C (or C server plus a documented test client) with incremental Git history",
+    "A captured hex dump of a 0x03 read of holding registers 0..3 after those registers were written, showing request and response",
+    "A captured hex dump of a read of an unmapped address returning exception function 0x83 and exception code 0x02",
+    "A note or dump showing the MBAP length field equals the PDU size plus the remaining MBAP rule in the spec for both captured frames",
+    "A captured run of at least 20 generated (property) cases with a pass count",
+    "Reflection notes answering the task questions"
+  ],
+  "acceptanceCriteria": [
+    "A client read of holding registers 0 through 3 returns the values previously written with function 0x06 (or 0x10 if you also implement it); request and response hex dumps are captured.",
+    "A read of an address outside the implemented map returns function code 0x83 and exception code 0x02; the hex dump is captured.",
+    "For both the success and exception frames, the MBAP Length field is consistent with the PDU size as defined in the Modbus TCP ADU (Length = remaining bytes after the Length field).",
+    "A property or generated-case suite of at least 20 cases runs in one command; the captured output prints a pass count greater than or equal to 20."
+  ],
+  "statusModel": [
+    "not_started",
+    "in_progress",
+    "submitted",
+    "revision_requested",
+    "resubmitted",
+    "approved"
+  ]
+}

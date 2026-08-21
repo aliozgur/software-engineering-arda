@@ -1,0 +1,44 @@
+{
+  "schemaVersion": 1,
+  "id": "el1t1-003",
+  "title": "Review Notes That Teach Without Taking the Keyboard",
+  "term": "year-1/term-1",
+  "module": "review",
+  "estimatedHours": 8,
+  "objective": "Write review comments on a given change that teach the author, label every comment blocking or advisory, and keep the patch you would have written in a separate note.",
+  "whyThisMatters": "A lead who silently rewrites the PR produces green CI and a junior who cannot land the next one. Review notes are a mentoring artifact: they must be inspectable, labeled, and distinct from taking the keyboard.",
+  "competencies": [
+    "technical-leadership",
+    "professional-practice"
+  ],
+  "resources": [
+    "staffeng"
+  ],
+  "instructionsFile": "instructions.md",
+  "aiPolicy": {
+    "mode": "guided",
+    "allowedCapabilities": ["explain", "hint", "quiz"],
+    "solutionGenerationAllowed": false,
+    "disclosureRequired": true
+  },
+  "evidence": [
+    "Review notes on the provided Harborline diff with at least four comments, every comment labeled blocking or advisory",
+    "At least one comment that is a question and does not contain the fix",
+    "A separate reviewer-patch note that states the change the reviewer would have made and why it was not pasted into the review",
+    "An author-facing summary with at least three requested changes and exactly one explicit non-issue"
+  ],
+  "acceptanceCriteria": [
+    "Every inline comment is labeled blocking or advisory, and there are at least four comments.",
+    "At least one comment is a question whose text does not include the patched code or the exact fix.",
+    "A separate note lists the change the reviewer would have written and states why it was withheld from the review comments.",
+    "The author-facing summary names at least three requested changes and exactly one thing that should not be changed in this PR."
+  ],
+  "statusModel": [
+    "not_started",
+    "in_progress",
+    "submitted",
+    "revision_requested",
+    "resubmitted",
+    "approved"
+  ]
+}

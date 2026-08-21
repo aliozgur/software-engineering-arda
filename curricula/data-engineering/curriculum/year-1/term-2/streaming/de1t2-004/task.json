@@ -1,0 +1,48 @@
+{
+  "schemaVersion": 1,
+  "id": "de1t2-004",
+  "title": "Handle Late and Out-of-Order Events on Purpose",
+  "term": "year-1/term-2",
+  "module": "streaming",
+  "estimatedHours": 8,
+  "objective": "Assign windows by event time, apply a documented allowed-lateness policy, and show in-window out-of-order events update the correct window while late events follow the written rule.",
+  "whyThisMatters": "Processing time is when you saw the event. Event time is when it happened. Mixing them is how a 'daily total' moves after the day is closed and nobody can say whether that was policy or a bug.",
+  "competencies": [
+    "messaging",
+    "data-pipelines",
+    "database-systems"
+  ],
+  "resources": [
+    "kafka-docs",
+    "postgres-docs"
+  ],
+  "instructionsFile": "instructions.md",
+  "aiPolicy": {
+    "mode": "guided",
+    "allowedCapabilities": ["explain", "hint", "quiz"],
+    "solutionGenerationAllowed": false,
+    "disclosureRequired": true
+  },
+  "evidence": [
+    "The window size, event-time field, and allowed-lateness value in code or config",
+    "A captured event whose processing_time is in window B and event_time is in window A, landing in A",
+    "The late-event policy note and the fate of ten injected late events",
+    "Before and after measures for an out-of-order event inside allowed lateness",
+    "A closed-window measure that matches the written policy after a beyond-lateness event",
+    "Reflection notes answering the task questions"
+  ],
+  "acceptanceCriteria": [
+    "Window assignment uses event_time, not processing_time, shown by an event whose processing_time is in window B but event_time is in window A landing in A.",
+    "All ten late events appear either as updates to their original window measures or as rows in a late_events table or file, and the chosen policy is named in a note.",
+    "An out-of-order event inside the allowed-lateness window is included in that window's measure, shown by captured before and after values.",
+    "An event beyond allowed lateness does not silently change a closed window unless the written policy says it does — the captured measure matches the policy."
+  ],
+  "statusModel": [
+    "not_started",
+    "in_progress",
+    "submitted",
+    "revision_requested",
+    "resubmitted",
+    "approved"
+  ]
+}

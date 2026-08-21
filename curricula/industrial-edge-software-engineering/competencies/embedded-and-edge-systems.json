@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "embedded-and-edge-systems",
+  "title": "Embedded and Edge Systems",
+  "description": "Resource-constrained design, deterministic scheduling, industrial protocol work, and fail-safe firmware update — the capability to ship software that stays inside a stated memory and latency budget and can be updated without bricking the node.",
+  "levels": [
+    {
+      "level": 1,
+      "name": "Foundation",
+      "description": "Can complete a guided host-side exercise that stays inside a written memory or latency budget, and can point at the measurement (size report, tick log, or capture) that shows which constraint was binding."
+    },
+    {
+      "level": 2,
+      "name": "Apprentice",
+      "description": "Can implement a scoped edge-style component — ring buffer, cooperative scheduler, or framed protocol — on a host or simulator, produce a measurement that shows the budget was met or missed, and write the failure policy (drop, overwrite, refuse, roll back) in a note a mentor can check."
+    },
+    {
+      "level": 3,
+      "name": "Practitioner",
+      "description": "Can independently design, implement and test a multi-component edge path (producer → buffer → protocol → sink) under stated RAM, stack and deadline limits, and can defend in writing why a general-purpose allocator, blocking retry, or unsigned image is forbidden on that path."
+    },
+    {
+      "level": 4,
+      "name": "Journeyman",
+      "description": "Can diagnose a missed deadline, protocol stall or failed update in a simulated plant, isolate the contributing factor (priority inversion, buffer overflow, unauthenticated image, missing rollback slot), and produce a change that restores the stated invariant."
+    },
+    {
+      "level": 5,
+      "name": "Mastery Evidence",
+      "description": "Can review another apprentice's edge design, name any unbounded allocation, silent overwrite or unsafe update path in it, and teach the budget-first / fail-safe-update sequence to someone new to constrained systems."
+    }
+  ]
+}

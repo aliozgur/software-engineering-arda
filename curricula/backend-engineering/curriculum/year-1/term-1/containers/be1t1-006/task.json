@@ -1,0 +1,37 @@
+{
+  "schemaVersion": 1,
+  "id": "be1t1-006",
+  "title": "Containerizing the Service",
+  "term": "year-1/term-1",
+  "module": "containers",
+  "estimatedHours": 12,
+  "objective": "Package the service and its database dependency into containers that run identically on a clean machine.",
+  "whyThisMatters": "A service that only runs on your machine isn't a backend service yet. The CI and deployment work later in this curriculum assumes this containerized shape already exists.",
+  "competencies": [
+    "containers",
+    "engineering-tooling"
+  ],
+  "resources": [
+    "docker-docs",
+    "twelve-factor"
+  ],
+  "instructionsFile": "instructions.md",
+  "aiPolicy": {
+    "mode": "guided",
+    "allowedCapabilities": ["explain", "hint", "quiz"],
+    "solutionGenerationAllowed": false,
+    "disclosureRequired": true
+  },
+  "evidence": [
+    "The Dockerfile and docker-compose.yml committed to the repository",
+    "Terminal output of a clean docker compose up and a passing test run inside the container",
+    "README documenting build/run/teardown commands and the externalized configuration variables",
+    "Git history showing the containerization work in incremental commits"
+  ],
+  "acceptanceCriteria": [
+    "docker compose up brings up a working service and database from a clean checkout with no manual steps beyond documented environment variables.",
+    "No secret or environment-specific value is hardcoded in the Dockerfile or source.",
+    "The test suite passes when run inside the container against the containerized database.",
+    "The image is tagged and its size is reported in the README."
+  ]
+}

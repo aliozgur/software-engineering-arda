@@ -1,0 +1,48 @@
+{
+  "schemaVersion": 1,
+  "id": "de1t1-006",
+  "title": "Fail Closed When a Batch Violates Quality",
+  "term": "year-1/term-1",
+  "module": "quality-gates",
+  "estimatedHours": 8,
+  "objective": "Put quality checks between staging and consumer-facing publish so a bad batch leaves the warehouse at last-good, quarantines the reject, and logs the failed check under a run id.",
+  "whyThisMatters": "A pipeline that publishes partial or invalid data and 'fixes it later' trains consumers to distrust the warehouse. Fail closed: last-good stays queryable, the reject is inspectable, and the next good batch can publish.",
+  "competencies": [
+    "da-data-quality",
+    "testing-quality",
+    "observability"
+  ],
+  "resources": [
+    "pandas-docs",
+    "postgres-docs"
+  ],
+  "instructionsFile": "instructions.md",
+  "aiPolicy": {
+    "mode": "guided",
+    "allowedCapabilities": ["explain", "hint", "quiz"],
+    "solutionGenerationAllowed": false,
+    "disclosureRequired": true
+  },
+  "evidence": [
+    "The check definitions (freshness, volume band, null rate or unexpected values) in code or config",
+    "Before and after queries on the consumer-facing table around a failing batch",
+    "A structured log line for the failed check that includes run_id and check name",
+    "The quarantine table or file showing rejected rows or the rejected batch id with a reason",
+    "Captured counts proving a later good batch published after the failure",
+    "Reflection notes answering the task questions"
+  ],
+  "acceptanceCriteria": [
+    "A batch that fails a named check leaves the consumer-facing warehouse table's row count or max(updated_at) unchanged, shown by captured before and after queries.",
+    "The failing check name and a run_id appear in a structured log line that parses as JSON or a documented key=value format.",
+    "Rejected rows or the rejected batch id appear in a quarantine table or file with a reason column or field populated.",
+    "A subsequent good batch publishes successfully after the failed one, shown by captured counts that change only on the good run."
+  ],
+  "statusModel": [
+    "not_started",
+    "in_progress",
+    "submitted",
+    "revision_requested",
+    "resubmitted",
+    "approved"
+  ]
+}

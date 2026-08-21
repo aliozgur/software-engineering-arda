@@ -1,0 +1,12 @@
+{
+  "schemaVersion": 1,
+  "id": "year-1/term-3",
+  "title": "Term 3 — Backfills, Recovery, and Production Shape",
+  "estimatedHours": 40,
+  "tasks": [
+    "de1t3-001",
+    "de1t3-002",
+    "de1t3-003",
+    "de1t3-004"
+  ]
+}

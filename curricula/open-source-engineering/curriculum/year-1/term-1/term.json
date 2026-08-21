@@ -1,0 +1,15 @@
+{
+  "schemaVersion": 1,
+  "id": "year-1-term-1",
+  "title": "Term 1 — Open Source Contribution and Maintainership",
+  "estimatedHours": 54,
+  "tasks": [
+    "os1t1-001",
+    "os1t1-002",
+    "os1t1-003",
+    "os1t1-004",
+    "os1t1-005",
+    "os1t1-006",
+    "os1t1-007"
+  ]
+}

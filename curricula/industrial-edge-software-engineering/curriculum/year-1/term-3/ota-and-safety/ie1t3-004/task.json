@@ -1,0 +1,48 @@
+{
+  "schemaVersion": 1,
+  "id": "ie1t3-004",
+  "title": "Authenticated telemetry under a latency and memory budget",
+  "term": "year-1/term-3",
+  "module": "ota-and-safety",
+  "estimatedHours": 8,
+  "objective": "Authenticate telemetry records with a MAC, reject a bad MAC and a replay inside a documented window, and publish per-record verify time plus extra RAM that stay inside a written budget.",
+  "whyThisMatters": "A signed firmware slot does not protect the next 10 000 sensor frames. This capstone asks you to add authentication the way an edge node can afford it — measured, budgeted, and fail-closed — not 'enable TLS' as a slogan.",
+  "competencies": [
+    "security",
+    "performance",
+    "embedded-and-edge-systems"
+  ],
+  "resources": [
+    "mbedtls-docs",
+    "oasis-mqtt-v5"
+  ],
+  "instructionsFile": "instructions.md",
+  "aiPolicy": {
+    "mode": "guided",
+    "allowedCapabilities": ["explain", "hint", "quiz"],
+    "solutionGenerationAllowed": false,
+    "disclosureRequired": true
+  },
+  "evidence": [
+    "Telemetry auth C sources (HMAC or AEAD) with incremental Git history",
+    "A captured test showing a record with a bad MAC rejected",
+    "A captured test showing a replay of an already-accepted sequence or nonce rejected",
+    "MEASURE.md reporting per-record MAC verify time (or host-cycle estimate) and extra RAM versus an unsigned path, for N=1000 records",
+    "A written extra-RAM budget in MEASURE.md that the measured key-plus-window bytes do not exceed",
+    "Reflection notes answering the task questions"
+  ],
+  "acceptanceCriteria": [
+    "A record whose MAC does not verify is rejected; the test output names reject-mac or an equivalent documented code.",
+    "Replaying a previously accepted record (same sequence number or nonce) is rejected; the test output names reject-replay or equivalent.",
+    "MEASURE.md reports a numeric per-record verify time (milliseconds or nanoseconds, with the clock used) and extra RAM in bytes versus the unsigned path, both measured over 1000 records.",
+    "MEASURE.md states an extra-RAM budget in bytes for keys plus the replay window; the measured extra RAM is less than or equal to that budget."
+  ],
+  "statusModel": [
+    "not_started",
+    "in_progress",
+    "submitted",
+    "revision_requested",
+    "resubmitted",
+    "approved"
+  ]
+}

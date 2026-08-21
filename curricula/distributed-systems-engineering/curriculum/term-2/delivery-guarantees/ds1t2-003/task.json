@@ -1,0 +1,42 @@
+{
+  "schemaVersion": 1,
+  "id": "ds1t2-003",
+  "title": "Dual-Write Loss and a Transactional Outbox You Can Measure",
+  "term": "ds1t2",
+  "module": "delivery-guarantees",
+  "estimatedHours": 16,
+  "objective": "Implement a service that persists a domain row in PostgreSQL and publishes an event to Kafka, first as two independent writes so a crash drops the event, then as a transactional outbox, and capture both a lost-event run and a zero-loss replay with OpenTelemetry traces spanning commit, poller, and consumer.",
+  "whyThisMatters": "The SWE saga task asks for compensating steps and idempotency keys. It does not force you to lose an event that your database already committed. That gap — commit succeeded, publish never happened — is the dual-write bug production systems keep rediscovering. You will measure it, then close it, and keep the traces.",
+  "competencies": [
+    "distributed-systems",
+    "messaging",
+    "database-systems",
+    "observability"
+  ],
+  "resources": [
+    "postgres-docs",
+    "kafka-docs",
+    "opentelemetry"
+  ],
+  "instructionsFile": "instructions.md",
+  "aiPolicy": {
+    "mode": "guided",
+    "allowedCapabilities": ["explain", "hint", "quiz"],
+    "solutionGenerationAllowed": false,
+    "disclosureRequired": true
+  },
+  "evidence": [
+    "Git history with the dual-write path committed before the outbox table and poller",
+    "A captured dual-write run: a domain row exists, the corresponding Kafka consume dump does not contain that event, and the crash/kill point is named",
+    "A captured outbox run of the same crash point: the row exists, the event appears after poller recovery, and a retry does not create a second domain effect on the consumer",
+    "At least two exported traces (or trace screenshots plus raw JSON) showing the dual-write path breaking after the DB span and the outbox path continuing through poller publish and consumer process",
+    "README stating the outbox transaction boundary and the consumer idempotency key",
+    "Reflection notes answering the task questions"
+  ],
+  "acceptanceCriteria": [
+    "The dual-write reproduction leaves a committed PostgreSQL row whose event never appears in a consume of the target topic after the named crash.",
+    "The outbox reproduction uses one database transaction for the domain row and the outbox row; after the same crash and a poller restart, the event is consumed exactly once as a domain effect (duplicates allowed on the wire if the consumer is idempotent).",
+    "Two traces (or exported spans) are submitted: one ends after the DB write with no publish span; one includes commit, outbox poll, publish, and consumer handling for the same business id.",
+    "README names the idempotency key the consumer uses and states that the pipeline is at-least-once plus idempotence, not broker exactly-once."
+  ]
+}

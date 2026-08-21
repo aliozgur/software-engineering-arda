@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "id": "ds1t2-005",
+  "title": "Traces That Distinguish Refuse, Hang, and Accepted-then-Lost",
+  "term": "ds1t2",
+  "module": "operating-under-failure",
+  "estimatedHours": 16,
+  "objective": "Instrument a request path you already built (the store, the outbox pipeline, or both) with OpenTelemetry, inject three failures, and produce exported traces plus a decision table a mentor can use to classify a request as refused, hung, or accepted-then-lost without asking you what happened.",
+  "whyThisMatters": "You can already break the system. Operating it means telling those three outcomes apart from telemetry alone. The SWE curriculum never asks for that classification. If the only way to know a write was lost is to remember which process you killed, you do not yet have an operating signal.",
+  "competencies": [
+    "distributed-systems",
+    "observability"
+  ],
+  "resources": [
+    "opentelemetry",
+    "docker-docs"
+  ],
+  "instructionsFile": "instructions.md",
+  "aiPolicy": {
+    "mode": "guided",
+    "allowedCapabilities": ["explain", "hint", "quiz"],
+    "solutionGenerationAllowed": false,
+    "disclosureRequired": true
+  },
+  "evidence": [
+    "Instrumentation code and git history showing traces added incrementally (client, service, and at least one downstream: replica, poller, or broker produce)",
+    "Three exported traces (JSON or collector dump) labeled refuse, hang, and accepted-then-lost, each tied to a request id",
+    "A decision table in README: which span names, status codes, and duration thresholds classify each outcome, with the three traces as worked examples",
+    "A short captured run of at least 30 injected requests whose labels you assigned using only the table (not the failure-injector logs), with a score of correct labels",
+    "Reflection notes answering the task questions"
+  ],
+  "acceptanceCriteria": [
+    "Each of the three outcomes has an exported trace (or trace + metrics) that a second person can open without the injector logs.",
+    "The decision table uses only telemetry fields (span status, span name, duration, missing child span, attribute values) — not 'we killed the leader.'",
+    "The 30-request labeling run uses the table alone and records both the assigned label and the injector's true class; at least 24 of 30 match, and every mismatch is explained.",
+    "Accepted-then-lost is not labeled as refuse: the client or service span must have recorded success while a downstream span is missing or a consume/read span never appears for that request id."
+  ]
+}

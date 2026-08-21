@@ -1,0 +1,49 @@
+{
+  "schemaVersion": 1,
+  "id": "os1t1-005",
+  "title": "Review a Pull Request You Did Not Author",
+  "term": "year-1/term-1",
+  "module": "code-review",
+  "estimatedHours": 7,
+  "objective": "Review one real public pull request you did not author: post the review if you can own the follow-up, or submit a complete unposted review that quotes file-and-line locations from that pull request.",
+  "whyThisMatters": "Maintainership is mostly reading other people's diffs. A review that names files, labels findings, and chooses a single summary state is the artifact that proves you can do that on a real thread.",
+  "competencies": [
+    "open-source",
+    "git",
+    "professional-practice"
+  ],
+  "resources": [
+    "pro-git",
+    "acm-code"
+  ],
+  "instructionsFile": "instructions.md",
+  "aiPolicy": {
+    "mode": "guided",
+    "allowedCapabilities": ["explain", "hint", "quiz"],
+    "solutionGenerationAllowed": false,
+    "disclosureRequired": true
+  },
+  "evidence": [
+    "The public pull-request URL reviewed, whose author login is not the apprentice's login",
+    "The posted review URL, or the full review markdown marked UNPOSTED",
+    "A findings list in which each item is labeled defect, convention, question, or praise, naming a file path from the diff",
+    "A one-line summary state that is exactly approve, request-changes, or comment",
+    "Reflection notes answering the task questions",
+    "AI disclosure entry when AI materially influenced the work"
+  ],
+  "acceptanceCriteria": [
+    "The reviewed pull-request URL is public and the pull-request author login is different from the apprentice's login, both recorded in the note.",
+    "The review names at least three distinct file paths that appear in that pull request's diff.",
+    "Each finding is labeled exactly one of defect, convention, question, or praise, and at least one finding is not praise.",
+    "The summary state is exactly one of: approve, request-changes, comment.",
+    "If the review was posted, the note includes the public review URL; if not, the review body is marked UNPOSTED and still quotes at least three path:line locations from the diff."
+  ],
+  "statusModel": [
+    "not_started",
+    "in_progress",
+    "submitted",
+    "revision_requested",
+    "resubmitted",
+    "approved"
+  ]
+}

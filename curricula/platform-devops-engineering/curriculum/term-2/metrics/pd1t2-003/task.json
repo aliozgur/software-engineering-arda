@@ -1,0 +1,35 @@
+{
+  "schemaVersion": 1,
+  "id": "pd1t2-003",
+  "title": "Scrape Service Metrics with Prometheus",
+  "term": "term-2",
+  "module": "metrics",
+  "estimatedHours": 12,
+  "competencies": [
+    "observability"
+  ],
+  "resources": [
+    "prometheus"
+  ],
+  "instructionsFile": "instructions.md",
+  "aiPolicy": {
+    "mode": "guided",
+    "allowedCapabilities": ["explain", "hint", "quiz"],
+    "solutionGenerationAllowed": false,
+    "disclosureRequired": true
+  },
+  "evidence": [
+    "Committed Prometheus scrape configuration and the service change that exposes /metrics or an exporter",
+    "Captured Prometheus targets page or API output showing the scrape target as UP",
+    "Two named PromQL queries plus captured results taken before and after a documented load that changes those series",
+    "README commands that start Prometheus locally and open the expression browser",
+    "Reflection notes answering the task questions",
+    "AI disclosure entry when AI materially influenced the work"
+  ],
+  "acceptanceCriteria": [
+    "Prometheus scrape configuration is committed and Prometheus shows the apprentice's service target as UP.",
+    "The service exposes at least two named metrics (a request-count style series and one other) that change when a documented load is applied.",
+    "The evidence note includes the exact PromQL for two operational questions and a captured result for each, before and after the load.",
+    "At least one metric series includes a label that names the service or the local environment."
+  ]
+}

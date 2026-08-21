@@ -1,0 +1,12 @@
+{
+  "schemaVersion": 1,
+  "id": "year-1/term-1",
+  "title": "Term 1 — Leading the People on Your Team",
+  "estimatedHours": 30,
+  "tasks": [
+    "el1t1-001",
+    "el1t1-002",
+    "el1t1-003",
+    "el1t1-004"
+  ]
+}

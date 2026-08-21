@@ -1,0 +1,43 @@
+{
+  "schemaVersion": 1,
+  "id": "ef1t1-003",
+  "title": "Map an Unfamiliar Codebase",
+  "term": "term-1",
+  "module": "codebase-navigation",
+  "estimatedHours": 6,
+  "objective": "Given a codebase you didn't write, produce a short written map of its structure, entry points, and one module's responsibilities, using search tools rather than asking the author.",
+  "whyThisMatters": "Junior engineers spend far more time reading existing code than writing new code from a blank file. Being able to orient yourself in an unfamiliar codebase using command-line search, not tribal knowledge, is a core professional skill.",
+  "competencies": [
+    "engineering-tooling",
+    "software-design"
+  ],
+  "resources": [
+    "mit-missing-semester"
+  ],
+  "instructionsFile": "instructions.md",
+  "aiPolicy": {
+    "mode": "guided",
+    "allowedCapabilities": ["explain", "hint", "quiz"],
+    "solutionGenerationAllowed": false,
+    "disclosureRequired": true
+  },
+  "evidence": [
+    "The written map (Markdown file) committed to a notes repository",
+    "A terminal transcript showing at least 5 of the actual search commands run, with enough surrounding output to see what they found",
+    "AI disclosure entry if AI was used to help interpret any part of the code"
+  ],
+  "acceptanceCriteria": [
+    "The written map names the codebase's entry point and how it was located.",
+    "The map lists at least 5 top-level modules or directories with a one-line description of each, based on reading the code, not the README alone.",
+    "One module is described in depth: its public functions or classes, and at least one caller and one dependency, each named specifically.",
+    "The map states which search commands were used to find each piece of information, for example grep -rn or git log --follow."
+  ],
+  "statusModel": [
+    "not_started",
+    "in_progress",
+    "submitted",
+    "revision_requested",
+    "resubmitted",
+    "approved"
+  ]
+}

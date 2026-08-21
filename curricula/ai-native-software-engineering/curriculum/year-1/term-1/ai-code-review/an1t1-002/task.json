@@ -1,0 +1,50 @@
+{
+  "schemaVersion": 1,
+  "id": "an1t1-002",
+  "title": "Critical Review of AI-Generated Code",
+  "term": "year-1/term-1",
+  "module": "ai-code-review",
+  "estimatedHours": 7,
+  "objective": "Generate a small function or module with AI assistance, then perform a structured critical review that finds and fixes at least one real defect before it would be considered mergeable.",
+  "whyThisMatters": "Rubber-stamping AI output is the failure mode this curriculum is built against. Treating a generated draft as a first pass, not a final answer, is the actual skill being assessed.",
+  "competencies": [
+    "ai-assisted-engineering",
+    "software-design",
+    "testing-quality"
+  ],
+  "resources": [
+    "google-eng-practices-review"
+  ],
+  "instructionsFile": "instructions.md",
+  "aiPolicy": {
+    "mode": "guided",
+    "allowedCapabilities": [
+      "explain",
+      "hint",
+      "quiz"
+    ],
+    "solutionGenerationAllowed": true,
+    "disclosureRequired": true
+  },
+  "evidence": [
+    "The unmodified AI-generated first draft, kept separate from your edits (a distinct commit or attached diff)",
+    "A written review note listing each issue found, categorized as correctness, security, readability, or maintainability",
+    "A follow-up commit fixing at least one correctness or security issue found in review, referencing the review note",
+    "A note naming one AI suggestion you rejected and the concrete reason it was not adopted",
+    "AI disclosure entry naming the tool/model used, purpose, and what was independently verified"
+  ],
+  "acceptanceCriteria": [
+    "The unmodified AI draft is present in git history or an attached diff, separate from the corrected version.",
+    "The review note identifies at least three distinct issues, at least one of which is correctness or security, not only style.",
+    "At least one identified issue is fixed in a commit that references the review note.",
+    "The rejected-suggestion note names the specific suggestion and the concrete reason it was not adopted."
+  ],
+  "statusModel": [
+    "not_started",
+    "in_progress",
+    "submitted",
+    "revision_requested",
+    "resubmitted",
+    "approved"
+  ]
+}

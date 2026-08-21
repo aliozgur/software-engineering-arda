@@ -1,0 +1,35 @@
+{
+  "schemaVersion": 1,
+  "id": "pd1t3-004",
+  "title": "Alert on a Burned SLO, Not on a Noisy Threshold",
+  "term": "term-3",
+  "module": "alerting",
+  "estimatedHours": 18,
+  "competencies": [
+    "observability"
+  ],
+  "resources": [
+    "prometheus"
+  ],
+  "instructionsFile": "instructions.md",
+  "aiPolicy": {
+    "mode": "guided",
+    "allowedCapabilities": ["explain", "hint", "quiz"],
+    "solutionGenerationAllowed": false,
+    "disclosureRequired": true
+  },
+  "evidence": [
+    "Committed Prometheus rule file defining at least one SLO-style alert (error-budget or burn), not only a raw CPU threshold",
+    "Captured Alertmanager or Prometheus alerts API/UI output showing the alert firing under the documented failure",
+    "Captured output showing the same alert resolved after the failure was removed",
+    "A written SLO, window, and burn or budget threshold with a one-paragraph justification, plus a runbook section in the same repository that the alert annotation points to",
+    "Reflection notes answering the task questions",
+    "AI disclosure entry when AI materially influenced the work"
+  ],
+  "acceptanceCriteria": [
+    "A committed Prometheus rule file defines at least one SLO-style alert (burn or error-budget), not only a raw host CPU or memory threshold.",
+    "Injecting the documented failure makes the alert fire; removing the failure makes it resolve. Both states are captured.",
+    "The SLO, window, and threshold are written down with a one-paragraph justification — not left as an uncommented copy-paste.",
+    "The alert annotation includes a pointer to a runbook section in the same repository. No alert is defined that the apprentice cannot both fire and resolve."
+  ]
+}

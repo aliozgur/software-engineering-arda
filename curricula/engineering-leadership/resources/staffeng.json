@@ -1,0 +1,15 @@
+{
+  "schemaVersion": 1,
+  "id": "staffeng",
+  "title": "Staff Engineer (Will Larson)",
+  "url": "https://staffeng.com/",
+  "type": "book",
+  "provider": "Will Larson / staffeng.com",
+  "tier": "primary",
+  "topics": [
+    "technical-leadership",
+    "staff-plus",
+    "influence",
+    "mentoring"
+  ]
+}

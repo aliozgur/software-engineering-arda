@@ -1,0 +1,35 @@
+{
+  "schemaVersion": 1,
+  "id": "pd1t3-003",
+  "title": "Detect Drift and Choose a Remediation",
+  "term": "term-3",
+  "module": "drift",
+  "estimatedHours": 18,
+  "competencies": [
+    "infrastructure-as-code"
+  ],
+  "resources": [
+    "opentofu-docs"
+  ],
+  "instructionsFile": "instructions.md",
+  "aiPolicy": {
+    "mode": "guided",
+    "allowedCapabilities": ["explain", "hint", "quiz"],
+    "solutionGenerationAllowed": false,
+    "disclosureRequired": true
+  },
+  "evidence": [
+    "Plan excerpt after a documented out-of-band change showing the drifted resource address and attribute",
+    "Experiment A notes: apply that restored the declared state, plus the empty or restoring plan excerpt",
+    "Experiment B notes: either an import or a configuration change that codified the out-of-band object, plus a subsequent empty plan",
+    "A short defense of why revert was chosen for A and import-or-codify for B",
+    "Reflection notes answering the task questions",
+    "AI disclosure entry when AI materially influenced the work"
+  ],
+  "acceptanceCriteria": [
+    "After a documented out-of-band change, tofu plan shows that specific drift (resource address and the drifted attribute).",
+    "Experiment A restores declared state by apply (revert); the follow-up plan no longer lists that drift.",
+    "Experiment B either imports the out-of-band resource or updates the configuration to match it (codify), and the follow-up plan is empty for that resource.",
+    "Destroy is not the only remediation demonstrated. Both experiments include plan excerpts in the notes."
+  ]
+}

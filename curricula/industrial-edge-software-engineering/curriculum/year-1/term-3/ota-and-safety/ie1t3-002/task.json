@@ -1,0 +1,45 @@
+{
+  "schemaVersion": 1,
+  "id": "ie1t3-002",
+  "title": "Threat-model an IIoT edge node before you write the updater",
+  "term": "year-1/term-3",
+  "module": "ota-and-safety",
+  "estimatedHours": 6,
+  "objective": "Produce a threat model for a simulated IIoT edge node with at least six assets, four attacker positions, one specific mitigation per asset, a trust-boundary diagram, and an explicit unsigned-or-rollback firmware threat tied to RFC 9019.",
+  "whyThisMatters": "OTA without a threat model is how nodes get bricked or owned. RFC 9019 names the firmware-update problem; this task is where you write the assets and boundaries so the next task's dual-slot design is answering a list, not a vibe.",
+  "competencies": [
+    "security",
+    "embedded-and-edge-systems"
+  ],
+  "resources": [
+    "rfc-9019"
+  ],
+  "instructionsFile": "instructions.md",
+  "aiPolicy": {
+    "mode": "guided",
+    "allowedCapabilities": ["explain", "hint", "quiz"],
+    "solutionGenerationAllowed": false,
+    "disclosureRequired": true
+  },
+  "evidence": [
+    "THREAT.md listing at least six assets, at least four attacker positions, and one specific mitigation per asset",
+    "A data-flow or trust-boundary diagram (Mermaid or an ASCII figure) in THREAT.md that names at least two trust boundaries",
+    "A section that names an unsigned or roll-backable firmware image as a threat and a mitigation that names both signing and a freshness or anti-rollback check, citing RFC 9019 by section or quote",
+    "Git history showing THREAT.md drafted before any updater code (the updater is the next task)",
+    "Reflection notes answering the task questions"
+  ],
+  "acceptanceCriteria": [
+    "THREAT.md lists at least six assets and at least four attacker positions (for example: local bus, physical debug, uplink MITM, malicious update server).",
+    "Each of the six assets has a mitigation that names a mechanism (for example HMAC on telemetry, disable SWD in production, TLS-PSK, signed image) — not the phrase 'use security' or 'encrypt everything' alone.",
+    "The diagram names at least two trust boundaries (for example sensor-bus vs MCU, MCU vs uplink).",
+    "One threat is an unsigned or version-downgraded firmware image; its mitigation names signing and a freshness or anti-rollback check and cites RFC 9019 (section number or a quoted sentence)."
+  ],
+  "statusModel": [
+    "not_started",
+    "in_progress",
+    "submitted",
+    "revision_requested",
+    "resubmitted",
+    "approved"
+  ]
+}

@@ -1,0 +1,45 @@
+{
+  "schemaVersion": 1,
+  "id": "ie1t2-004",
+  "title": "Reliable frames over a lossy simulated link",
+  "term": "year-1/term-2",
+  "module": "industrial-comms",
+  "estimatedHours": 10,
+  "objective": "Implement a scoped reliable sender and receiver over a simulated datagram that drops a configured fraction of packets, transfer 10 KiB byte-identical, and show at least one retransmission in a sequence/ACK capture.",
+  "whyThisMatters": "Industrial telemetry dies on links that drop. CS144's reliable byte stream is the right idea; you will implement a sliver of it (stop-and-wait or go-back-N) so later MQTT and Modbus work is not 'the library retried for me.'",
+  "competencies": [
+    "networking"
+  ],
+  "resources": [
+    "stanford-cs144"
+  ],
+  "instructionsFile": "instructions.md",
+  "aiPolicy": {
+    "mode": "guided",
+    "allowedCapabilities": ["explain", "hint", "quiz"],
+    "solutionGenerationAllowed": false,
+    "disclosureRequired": true
+  },
+  "evidence": [
+    "A loss config file stating the drop fraction (at least 20 percent) and whether reorder is enabled",
+    "Sender/receiver C (or C plus a thin harness) with incremental Git history",
+    "A captured transfer of at least 10 KiB that is byte-identical (checksum or diff) under that loss",
+    "A sequence/ACK log showing at least one retransmission of a named sequence number",
+    "README naming which CS144 idea was used (reliable byte stream, sequence space, retransmission timer) and one CS144 topic deliberately omitted (for example congestion control)",
+    "Reflection notes answering the task questions"
+  ],
+  "acceptanceCriteria": [
+    "The lossy link drops at least 20 percent of datagrams as configured in a file the run reads; that file is in the repository.",
+    "A 10 KiB or larger payload arrives byte-identical on the receiver under that loss; a checksum or diff is captured.",
+    "The sequence/ACK log contains at least one line that shows a retransmission (same sequence number sent more than once, or an ACK gap followed by a resend).",
+    "README names at least one CS144 reliable-transport idea that was implemented and one that was omitted."
+  ],
+  "statusModel": [
+    "not_started",
+    "in_progress",
+    "submitted",
+    "revision_requested",
+    "resubmitted",
+    "approved"
+  ]
+}

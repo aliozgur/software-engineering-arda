@@ -1,0 +1,40 @@
+{
+  "schemaVersion": 1,
+  "id": "ds1t2-006",
+  "title": "Operating Contract for the System You Assembled",
+  "term": "ds1t2",
+  "module": "operating-under-failure",
+  "estimatedHours": 18,
+  "objective": "Assemble a path that includes at least partitioning or replication plus an outbox-or-broker hop, run a three-class failure playbook you wrote before the run, and publish a falsifiable operating contract covering what is refused, what is retried, what can be lost, and which trace or query proves each case.",
+  "whyThisMatters": "Every earlier task isolated one mechanism. A mid-to-senior engineer is trusted when those mechanisms sit in one path and the contract still holds. The SWE curriculum ends distributed systems with sagas and a Raft lab. This task ends with a contract a mentor could page you on.",
+  "competencies": [
+    "distributed-systems",
+    "messaging",
+    "observability"
+  ],
+  "resources": [
+    "kafka-docs",
+    "opentelemetry",
+    "docker-docs"
+  ],
+  "instructionsFile": "instructions.md",
+  "aiPolicy": {
+    "mode": "guided",
+    "allowedCapabilities": ["explain", "hint", "quiz"],
+    "solutionGenerationAllowed": false,
+    "disclosureRequired": true
+  },
+  "evidence": [
+    "A playbook file committed before the runs, naming three failure classes, the expected client result, the expected durable result, and the telemetry query that would confirm each",
+    "Captured runs for all three classes, each with client output, a state query (SQL, store GET, or Kafka consume), and a trace or metric excerpt matching the playbook query",
+    "The operating-contract README: numbered, falsifiable rules only — no 'highly available' or 'best effort'",
+    "Git history of the assembled path (not a new greenfield demo) showing playbook, then runs, then contract edits after mismatches",
+    "Reflection notes answering the task questions"
+  ],
+  "acceptanceCriteria": [
+    "The assembled path includes (a) more than one process that owns data (replicas or shards) and (b) an asynchronous hop (outbox, Kafka, or RabbitMQ); a single process with an in-memory queue does not count.",
+    "The playbook commit precedes the first run commit or the playbook file carries timestamps earlier than the run logs for all three classes.",
+    "Each of the three captured runs includes the playbook's confirmation query (trace, SQL, or consume) and a pass/fail against the predicted client result and predicted durable result.",
+    "The operating contract is a list of falsifiable rules that mention at least: refuse vs timeout bounds, a named loss case (or an explicit 'no acked write is lost' with the setting that makes it true), and the telemetry signal used to classify accepted-then-lost."
+  ]
+}

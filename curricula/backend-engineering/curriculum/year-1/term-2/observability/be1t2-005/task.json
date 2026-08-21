@@ -1,0 +1,39 @@
+{
+  "schemaVersion": 1,
+  "id": "be1t2-005",
+  "title": "Logs, Metrics and Traces on the Request Path",
+  "term": "year-1/term-2",
+  "module": "observability",
+  "estimatedHours": 14,
+  "objective": "Instrument the running service so one request produces a shared request id in structured logs, a scrapeable latency metric, and a trace with at least two spans.",
+  "whyThisMatters": "The load-test, operate, and capstone-defense tasks all ask you to show what the service is doing under stress. If logs, metrics and traces are missing now, those later tasks become guesses.",
+  "competencies": [
+    "observability",
+    "python"
+  ],
+  "resources": [
+    "opentelemetry",
+    "prometheus",
+    "python-docs"
+  ],
+  "instructionsFile": "instructions.md",
+  "aiPolicy": {
+    "mode": "guided",
+    "allowedCapabilities": ["explain", "hint", "quiz"],
+    "solutionGenerationAllowed": false,
+    "disclosureRequired": true
+  },
+  "evidence": [
+    "Committed sample log lines from a single request that share one request id, including a line from a downstream call",
+    "A scrape or export of metrics that includes request count and a latency histogram or summary",
+    "A trace export (JSON, Jaeger dump, or collector file) showing at least two spans for one request",
+    "README commands to run the service and produce logs, a metrics scrape, and one trace",
+    "Git history showing logs, then metrics, then traces as separate commits, plus a grep proving no secrets in logs"
+  ],
+  "acceptanceCriteria": [
+    "A single request produces at least two structured log lines that share one request id, one of them from a database or queue call.",
+    "A metrics endpoint or collector export includes a request-count metric and a latency histogram or summary.",
+    "A committed trace export for one request contains at least two spans.",
+    "A grep of committed log samples and logging configuration shows no token, password, or secret values."
+  ]
+}

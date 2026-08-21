@@ -1,0 +1,48 @@
+{
+  "schemaVersion": 1,
+  "id": "de1t3-002",
+  "title": "Recover a Failed Production Load From Evidence",
+  "term": "year-1/term-3",
+  "module": "failure-recovery",
+  "estimatedHours": 10,
+  "objective": "Inject a production-shaped failure, diagnose it from logs, metrics, offsets or watermarks, and warehouse counts, restore last-good from that evidence, and replay the failed window without duplicate keys.",
+  "whyThisMatters": "Recovery that starts from folklore ('I think we loaded Tuesday') creates a second incident. The timeline has to cite artifacts. Last-good has to be a checksum or snapshot you captured, not a guess-delete.",
+  "competencies": [
+    "observability",
+    "data-pipelines",
+    "messaging"
+  ],
+  "resources": [
+    "kafka-docs",
+    "postgres-docs",
+    "airflow-docs"
+  ],
+  "instructionsFile": "instructions.md",
+  "aiPolicy": {
+    "mode": "guided",
+    "allowedCapabilities": ["explain", "hint", "quiz"],
+    "solutionGenerationAllowed": false,
+    "disclosureRequired": true
+  },
+  "evidence": [
+    "An incident note with a timestamped timeline of at least three entries that each cite a log line, metric, offset or watermark, or query result",
+    "A captured pre-incident snapshot or checksum and a post-restore query that matches it",
+    "Post-replay window counts and a uniqueness check on the natural key or event_id",
+    "The detection-signal paragraph naming what would have paged or why the failure would have been silent",
+    "Reflection notes answering the task questions"
+  ],
+  "acceptanceCriteria": [
+    "The incident note contains a timestamped timeline with at least three entries that each cite a log line, metric, offset or watermark, or query result — not recollection.",
+    "Last-good restore is demonstrated by a query showing consumer-facing data matching a captured pre-incident snapshot or checksum.",
+    "Replay after restore produces the expected window counts without duplicate natural keys or event_ids.",
+    "The note names the detection signal that would have paged, or states why this failure would have been silent, with the signal or gap named specifically."
+  ],
+  "statusModel": [
+    "not_started",
+    "in_progress",
+    "submitted",
+    "revision_requested",
+    "resubmitted",
+    "approved"
+  ]
+}

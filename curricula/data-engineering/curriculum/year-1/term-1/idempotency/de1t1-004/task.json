@@ -1,0 +1,47 @@
+{
+  "schemaVersion": 1,
+  "id": "de1t1-004",
+  "title": "Crash the Job Mid-Load and Recover Without Duplicates",
+  "term": "year-1/term-1",
+  "module": "idempotency",
+  "estimatedHours": 8,
+  "objective": "Make the warehouse write idempotent under retry: upsert or delete-insert by natural key, a test that fails on duplicate keys, and a mid-load crash that restarts clean.",
+  "whyThisMatters": "At-least-once delivery is the default once anything can fail. If retry is not idempotent, every production incident becomes a duplicate-key or double-count incident. You want the same job path on retry, not a cleanup script that exists only for the demo.",
+  "competencies": [
+    "data-pipelines",
+    "testing-quality",
+    "python"
+  ],
+  "resources": [
+    "python-docs",
+    "postgres-docs"
+  ],
+  "instructionsFile": "instructions.md",
+  "aiPolicy": {
+    "mode": "guided",
+    "allowedCapabilities": ["explain", "hint", "quiz"],
+    "solutionGenerationAllowed": false,
+    "disclosureRequired": true
+  },
+  "evidence": [
+    "The upsert or delete-insert load path and the natural key it uses",
+    "A test run that fails when a duplicate natural key is inserted, plus the commit that introduced the duplicate fixture",
+    "Captured warehouse key counts after a mid-load crash and restart",
+    "Captured warehouse row count before and after retrying an already-successful load",
+    "Reflection notes answering the task questions"
+  ],
+  "acceptanceCriteria": [
+    "A named automated test fails when a duplicate natural key is inserted, shown by a commit that introduces a duplicate fixture and a captured failing test run.",
+    "After a mid-load crash and a restart of the same job command, the warehouse has no duplicate natural keys and matches the source snapshot's expected key set.",
+    "Retrying an already-successful load changes the warehouse row count by zero, shown as before and after counts.",
+    "The warehouse write used on retry is the same function or job entrypoint as the happy path, not a separate cleanup script that exists only for the demonstration."
+  ],
+  "statusModel": [
+    "not_started",
+    "in_progress",
+    "submitted",
+    "revision_requested",
+    "resubmitted",
+    "approved"
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "schemaVersion": 1,
+  "id": "apprenti-dev-engineering-leadership-2026",
+  "name": "apprenti.dev Engineering Leadership",
+  "version": "0.1.0",
+  "duration": "4-6 months",
+  "audience": "Senior engineers and tech leads taking on mentoring, delegation, and cross-team technical decisions; assumes strong implementation skill already",
+  "philosophy": "Leadership is inspectable work. Write the brief, run the 1:1, record the decision, show the artifact. LEARN BY DOING. GROW THROUGH MENTORSHIP.",
+  "defaultWeeklyHours": "4-7",
+  "roles": [
+    "apprentice",
+    "mentor"
+  ],
+  "aiPrinciples": [
+    "AI assistance must be disclosed when materially used.",
+    "AI may explain, hint, and quiz; it does not generate the briefs, agendas, ADRs, review notes, incident comms, or strategy memos a task asks the apprentice to produce.",
+    "The apprentice remains accountable for every recommendation and every named trade-off.",
+    "Mentor approval is based on the apprentice's ability to defend the artifact under a changed constraint, not on polish."
+  ],
+  "progression": "sequential",
+  "mentorship": "optional",
+  "sourceLocale": "en",
+  "contentLocales": ["en"]
+}

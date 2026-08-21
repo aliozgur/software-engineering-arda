@@ -1,0 +1,36 @@
+{
+  "schemaVersion": 1,
+  "id": "pd1t2-005",
+  "title": "Correlate Logs, Metrics, and Traces for One Failure",
+  "term": "term-2",
+  "module": "telemetry-correlation",
+  "estimatedHours": 13,
+  "competencies": [
+    "observability"
+  ],
+  "resources": [
+    "opentelemetry",
+    "prometheus"
+  ],
+  "instructionsFile": "instructions.md",
+  "aiPolicy": {
+    "mode": "guided",
+    "allowedCapabilities": ["explain", "hint", "quiz"],
+    "solutionGenerationAllowed": false,
+    "disclosureRequired": true
+  },
+  "evidence": [
+    "Committed logging change that emits structured request logs including a trace id field",
+    "A diagnosis note that names one request by trace id and timestamp and attaches the matching log line, metric movement, and trace",
+    "Command or script that deliberately triggers the documented failure",
+    "README stating how to start logs, Prometheus, and the trace backend from this repository",
+    "Reflection notes answering the task questions",
+    "AI disclosure entry when AI materially influenced the work"
+  ],
+  "acceptanceCriteria": [
+    "Structured request logs (JSON or key=value) include a trace id field on the request path that failed.",
+    "The diagnosis note names one request (trace id plus timestamp) and shows the matching log line, a metric that moved, and the matching trace.",
+    "The failure is triggered by a documented action (forced 5xx, timeout, or bad dependency), not an unexplained crash.",
+    "The diagnosis note states the failing span or log line and the metric that moved. All three backends start locally from the repository."
+  ]
+}

@@ -1,0 +1,51 @@
+{
+  "schemaVersion": 1,
+  "id": "os1t1-007",
+  "title": "Ship a Maintainer Packet for a Real Project",
+  "term": "year-1/term-1",
+  "module": "maintainership",
+  "estimatedHours": 9,
+  "objective": "Produce a one-week maintainer packet for the same real public project: triage at least three public issues, review at least one public pull request, and draft release notes for a named SemVer version citing real commits or pull requests.",
+  "whyThisMatters": "Maintainership is a bundle of judgments issued on a deadline: what to accept, what to say on a review, and what a release may promise. A packet grounded in real URLs is the evidence; a toy community created for the assignment is not.",
+  "competencies": [
+    "open-source",
+    "git",
+    "professional-practice"
+  ],
+  "resources": [
+    "semver",
+    "acm-code",
+    "pro-git"
+  ],
+  "instructionsFile": "instructions.md",
+  "aiPolicy": {
+    "mode": "guided",
+    "allowedCapabilities": ["explain", "hint", "quiz"],
+    "solutionGenerationAllowed": false,
+    "disclosureRequired": true
+  },
+  "evidence": [
+    "The public project URL used for the packet (the project from os1t1-001 unless the note records why it was abandoned)",
+    "A triage table of at least three distinct public issue URLs, each with a recommended-next-action heading from the os1t1-002 closed set",
+    "A review of at least one public pull-request URL naming at least two file paths from that diff (posted review URL or UNPOSTED body)",
+    "A release-notes draft that starts with version X.Y.Z and a SemVer bump type, and lists at least three changes each with a commit SHA or pull-request URL from that repository",
+    "A support-boundary note with a will-respond list and a will-not-respond list, each with at least two items",
+    "Reflection notes answering the task questions",
+    "AI disclosure entry when AI materially influenced the work"
+  ],
+  "acceptanceCriteria": [
+    "Every URL in the packet is a real public issue, pull request, commit, or repository page; the note contains no invented contributor, issue, or community.",
+    "The triage table has at least three distinct public issue URLs, each with exactly one recommended action from: close-as-duplicate, ask-for-info, accept-as-bug, reject-as-wontfix, ready-for-PR.",
+    "The pull-request review names the pull-request URL and at least two file paths that appear in that diff.",
+    "The release-notes draft starts with a version string of the form X.Y.Z and a bump type of major, minor, or patch, and lists at least three changes each paired with a commit SHA or pull-request URL from that repository.",
+    "The support-boundary note contains a will-respond list and a will-not-respond list, each with at least two items."
+  ],
+  "statusModel": [
+    "not_started",
+    "in_progress",
+    "submitted",
+    "revision_requested",
+    "resubmitted",
+    "approved"
+  ]
+}

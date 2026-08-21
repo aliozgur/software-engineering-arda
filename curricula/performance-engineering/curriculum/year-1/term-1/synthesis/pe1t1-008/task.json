@@ -1,0 +1,51 @@
+{
+  "schemaVersion": 1,
+  "id": "pe1t1-008",
+  "title": "One Evidenced Win, One Rejected Fake",
+  "term": "year-1/term-1",
+  "module": "synthesis",
+  "estimatedHours": 12,
+  "objective": "Record a bottleneck hypothesis before changing code, ship one change that moves p95 or SLO-meeting RPS on the identical workload, document a second change that did not help, and revalidate correctness.",
+  "whyThisMatters": "The software-engineering performance task combines measure, profile, fix, and reject-a-fake-opt in one 18-hour pass. You already have a harness, profiles, traces, a cache experiment, query plans, a knee, and a capacity note. This close asks for judgment: one win you can defend with before/after numbers, and one apparent win you refuse to ship.",
+  "competencies": [
+    "performance",
+    "observability",
+    "database-systems"
+  ],
+  "resources": [
+    "prometheus",
+    "opentelemetry",
+    "postgres-docs",
+    "mit-6006"
+  ],
+  "instructionsFile": "instructions.md",
+  "aiPolicy": {
+    "mode": "guided",
+    "allowedCapabilities": ["explain", "hint", "quiz"],
+    "solutionGenerationAllowed": false,
+    "disclosureRequired": true
+  },
+  "evidence": [
+    "A hypothesis file committed before the optimization diff, naming the bottleneck and the metric you expect to move",
+    "Before and after results from the identical pe1t1-001 or pe1t1-006 command, each quoting p95 or SLO-meeting RPS",
+    "A shipped-change note stating the metric delta as a number and pointing at the profile, trace, or EXPLAIN evidence that justified the change",
+    "A rejected-change note with before/after numbers showing no improvement or a regression, and confirmation the change is not on the default path",
+    "A correctness test or invariant check shown passing after the shipped change",
+    "Reflection notes answering the task questions"
+  ],
+  "acceptanceCriteria": [
+    "The hypothesis file is committed before the first optimization commit and names one bottleneck plus one metric (p95 or SLO-meeting RPS).",
+    "Before and after runs use the same documented command; both results quote p95 or SLO-meeting RPS as numbers.",
+    "The shipped change moves that metric in the intended direction; the delta is computed from the two runs.",
+    "A second change has committed before/after numbers showing no gain or a regression and is absent from the default path.",
+    "A correctness test or recorded invariant is shown passing after the shipped change."
+  ],
+  "statusModel": [
+    "not_started",
+    "in_progress",
+    "submitted",
+    "revision_requested",
+    "resubmitted",
+    "approved"
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "schemaVersion": 1,
+  "id": "be1s-002",
+  "title": "Integrate Relational, Document and Queue Persistence",
+  "term": "year-1/summer",
+  "module": "persistence",
+  "estimatedHours": 18,
+  "objective": "Implement the designed write path so one domain write is committed in PostgreSQL, published, and projected into MongoDB, with a demonstrated behavior when the broker is down.",
+  "whyThisMatters": "The operate and defense tasks assume this path exists and fails in a documented way. A write that only updates Postgres, or that pretends the queue cannot fail, will not survive those reviews.",
+  "competencies": [
+    "nosql",
+    "messaging",
+    "relational-data"
+  ],
+  "resources": [
+    "postgres-docs",
+    "mongodb-docs",
+    "rabbitmq-tutorials"
+  ],
+  "instructionsFile": "instructions.md",
+  "aiPolicy": {
+    "mode": "guided",
+    "allowedCapabilities": ["explain", "hint", "quiz"],
+    "solutionGenerationAllowed": false,
+    "disclosureRequired": true
+  },
+  "evidence": [
+    "Git history showing the transaction, the publish, the consumer projection, and the broker-down path as separate commits",
+    "A demonstration that one write is visible in PostgreSQL and, after consume, in MongoDB, with ids that match the data-flow note",
+    "A demonstration of the documented broker-down behavior (5xx/503 or an outbox row), with the compose/broker stopped",
+    "Integration-test output covering the happy path and the broker-down path",
+    "The compose file that starts the API, PostgreSQL, MongoDB and RabbitMQ together"
+  ],
+  "acceptanceCriteria": [
+    "A single domain write is present in PostgreSQL and, after the consumer runs, present in MongoDB with a key that matches the relational id.",
+    "With RabbitMQ stopped, the API either returns a documented 5xx/503 or records an outbox row — the chosen behavior is shown, not described.",
+    "An integration test covers the happy path and the broker-down path and is part of the committed suite.",
+    "docker compose up starts the API, PostgreSQL, MongoDB and RabbitMQ from the committed compose file."
+  ]
+}

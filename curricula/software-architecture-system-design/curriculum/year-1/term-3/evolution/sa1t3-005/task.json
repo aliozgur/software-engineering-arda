@@ -1,0 +1,40 @@
+{
+  "schemaVersion": 1,
+  "id": "sa1t3-005",
+  "title": "Evolving a Running Architecture Without a Big-Bang Rewrite",
+  "term": "year-1/term-3",
+  "module": "evolution",
+  "estimatedHours": 8,
+  "objective": "Plan a three-step evolution of a prior decision that names what is dual-running in each step, the compatibility contract during overlap, and the last reversible step.",
+  "whyThisMatters": "The architecture you can defend on day one is not the architecture you will be asked to live with in year three. The skill is not picking a better style — it is getting from here to there without a rewrite that has no rollback. Compatibility during overlap is the decision; the target style is just the destination.",
+  "competencies": [
+    "architecture-and-tradeoffs",
+    "software-design"
+  ],
+  "resources": ["adr-github-io", "twelve-factor"],
+  "instructionsFile": "instructions.md",
+  "aiPolicy": {
+    "mode": "guided",
+    "allowedCapabilities": ["explain", "hint", "quiz"],
+    "solutionGenerationAllowed": false,
+    "disclosureRequired": true
+  },
+  "evidence": [
+    "A migration sequence of at least three steps that names, for each step, what is dual-running and which clients or writers have moved",
+    "An ADR stating the compatibility contract (API, event schema, or data representation) that must hold for the whole overlap, and marking the prior target-style ADR as still in force or superseded",
+    "A rollback note naming the last step that is still reversible and the inspectable evidence that would trigger rollback"
+  ],
+  "acceptanceCriteria": [
+    "The sequence has at least three steps, and each step names what is dual-running (two writers, two read paths, or old and new event consumers).",
+    "The ADR states a compatibility contract that must hold for the overlap and names at least one change that is forbidden during that overlap.",
+    "The rollback note names the last reversible step by number and names the evidence (a metric, an error budget, a failed contract test) that would trigger rollback."
+  ],
+  "statusModel": [
+    "not_started",
+    "in_progress",
+    "submitted",
+    "revision_requested",
+    "resubmitted",
+    "approved"
+  ]
+}

@@ -1,0 +1,45 @@
+{
+  "schemaVersion": 1,
+  "id": "ie1t1-001",
+  "title": "Budget every byte: static allocation, firmware style",
+  "term": "year-1/term-1",
+  "module": "constrained-memory",
+  "estimatedHours": 8,
+  "objective": "Ship a host-side C telemetry store that never calls a general-purpose allocator, publishes a numeric memory budget, and proves the binary stays inside that budget.",
+  "whyThisMatters": "Edge software fails when heap policy is hope. Every later task in this curriculum assumes you can refuse malloc, name the sections that consume RAM, and show a measurement instead of a claim.",
+  "competencies": [
+    "c-memory",
+    "embedded-and-edge-systems"
+  ],
+  "resources": [
+    "gnu-ld"
+  ],
+  "instructionsFile": "instructions.md",
+  "aiPolicy": {
+    "mode": "guided",
+    "allowedCapabilities": ["explain", "hint", "quiz"],
+    "solutionGenerationAllowed": false,
+    "disclosureRequired": true
+  },
+  "evidence": [
+    "MEMORY.md stating numeric byte budgets for .text, .data, .bss and stack",
+    "A captured size or linker-map excerpt showing .data + .bss at or below the written data budget",
+    "Git history showing the budget written before the store was implemented, not after",
+    "A captured compile, link or CI failure that rejects a deliberate malloc/calloc/realloc/free call",
+    "Reflection notes answering the task questions"
+  ],
+  "acceptanceCriteria": [
+    "A recursive grep (or equivalent) of the submitted C sources finds no call to malloc, calloc, realloc or free.",
+    "MEMORY.md states a number of bytes for each of .text, .data, .bss and stack, plus a total RAM cap of at most 64 KiB for .data + .bss + stack.",
+    "A captured size(1) report or linker map shows .data + .bss less than or equal to the .data + .bss budget written in MEMORY.md.",
+    "A documented gate (compile-time #error, linker undefined-reference, or CI grep that fails the build) rejects a commit that calls malloc, and a captured log of that rejection is included."
+  ],
+  "statusModel": [
+    "not_started",
+    "in_progress",
+    "submitted",
+    "revision_requested",
+    "resubmitted",
+    "approved"
+  ]
+}

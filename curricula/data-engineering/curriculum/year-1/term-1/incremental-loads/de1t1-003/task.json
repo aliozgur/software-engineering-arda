@@ -1,0 +1,48 @@
+{
+  "schemaVersion": 1,
+  "id": "de1t1-003",
+  "title": "Incremental Loads with a Watermark You Can Defend",
+  "term": "year-1/term-1",
+  "module": "incremental-loads",
+  "estimatedHours": 8,
+  "objective": "Replace the full extract with a high-watermark incremental load, store the watermark only after a successful warehouse commit, and demonstrate an explicit policy for late rows.",
+  "whyThisMatters": "Full refreshes hide cost and hide late data. A watermark that advances before the write commits is how a pipeline silently drops a batch. Late rows that nobody planned for become 'the warehouse is wrong' six weeks later.",
+  "competencies": [
+    "python",
+    "database-systems",
+    "data-pipelines"
+  ],
+  "resources": [
+    "python-docs",
+    "postgres-docs"
+  ],
+  "instructionsFile": "instructions.md",
+  "aiPolicy": {
+    "mode": "guided",
+    "allowedCapabilities": ["explain", "hint", "quiz"],
+    "solutionGenerationAllowed": false,
+    "disclosureRequired": true
+  },
+  "evidence": [
+    "The watermark store (table or file) and the code that reads and writes it",
+    "Captured watermark values and warehouse counts before and after a successful incremental run",
+    "A captured incremental run against a source that contains only older rows, showing zero new warehouse rows",
+    "A late-row policy note plus the fate of five injected late rows",
+    "A crash-before-watermark-update demonstration with the following rerun's captured keys",
+    "Reflection notes answering the task questions"
+  ],
+  "acceptanceCriteria": [
+    "After a successful incremental run, the stored watermark equals the maximum source timestamp or id of rows actually committed to the warehouse, shown by a query or file dump.",
+    "An incremental run against a source that contains only rows at or behind the watermark loads zero new warehouse rows, with captured counts.",
+    "A written late-row policy is demonstrated on five injected rows, and each of those five appears in exactly one of: a lookback load, a late table or file, or a reject log.",
+    "A run that is killed after extract but before the watermark update, then rerun, still loads the uncommitted batch (captured keys include that batch)."
+  ],
+  "statusModel": [
+    "not_started",
+    "in_progress",
+    "submitted",
+    "revision_requested",
+    "resubmitted",
+    "approved"
+  ]
+}

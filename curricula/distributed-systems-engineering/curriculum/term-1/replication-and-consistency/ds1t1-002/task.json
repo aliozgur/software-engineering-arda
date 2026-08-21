@@ -1,0 +1,37 @@
+{
+  "schemaVersion": 1,
+  "id": "ds1t1-002",
+  "title": "Partition Behavior and the Availability Contract",
+  "term": "ds1t1",
+  "module": "replication-and-consistency",
+  "estimatedHours": 14,
+  "objective": "Extend the replicated store with a failure-injection harness that can kill, pause, or network-partition any single node, predict each failure's effect on reads and writes before running it, and then write a specific, falsifiable availability contract based on what actually happens.",
+  "whyThisMatters": "CAP is usually taught as a slogan. Here you commit to a prediction before you have the answer, then find out whether your intuition about 'the system stays available' survives contact with a process you actually killed.",
+  "competencies": [
+    "distributed-systems",
+    "networking"
+  ],
+  "resources": [
+    "mit-65840",
+    "stanford-cs144"
+  ],
+  "instructionsFile": "instructions.md",
+  "aiPolicy": {
+    "mode": "guided",
+    "allowedCapabilities": ["explain", "hint", "quiz"],
+    "solutionGenerationAllowed": false,
+    "disclosureRequired": true
+  },
+  "evidence": [
+    "Harness code and git history showing kill, pause, and partition injectors built incrementally",
+    "A results log recording, for at least 15 trials (3 failure classes x 5+ trials each), the predicted and actual outcome",
+    "README stating the availability contract as a specific, falsifiable rule",
+    "Reflection notes"
+  ],
+  "acceptanceCriteria": [
+    "The harness can independently kill, pause, and network-partition a single named node without affecting the others, demonstrated by trial logs rather than by code alone.",
+    "At least 15 recorded trials exist (3 failure classes x 5+ trials each) with both a predicted and an actual outcome for each.",
+    "At least one prediction/outcome mismatch is documented with an explanation, or, if none occurred, all 15 trial predictions are timestamped before their corresponding runs.",
+    "The availability contract is stated as a specific, falsifiable rule (e.g. a bounded time window and a defined refuse/accept behavior), not a general claim of high availability."
+  ]
+}

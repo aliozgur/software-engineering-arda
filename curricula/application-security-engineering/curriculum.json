@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "apprenti-dev-application-security-engineering-2026",
+  "name": "apprenti.dev Application Security Engineering",
+  "version": "0.1.0",
+  "durationMonths": "4-6",
+  "audience": "Software engineers who already ship application code and are specializing into application security engineering",
+  "philosophy": "Defensive AppSec as engineering: model the threats that apply to a system you own, find the defects, fix them, and prove each fix with inspectable evidence. This path is not a CTF. LEARN BY DOING. GROW THROUGH MENTORSHIP.",
+  "defaultWeeklyHours": {
+    "duringTerm": "5-7"
+  },
+  "roles": [
+    "apprentice",
+    "mentor"
+  ],
+  "corePlatforms": [
+    "Git",
+    "GitHub Actions",
+    "A local HTTP application the apprentice owns or operates"
+  ],
+  "aiPrinciples": [
+    "AI assistance must be disclosed when materially used.",
+    "Tasks may restrict solution generation while allowing explanations, hints and quizzes.",
+    "The apprentice remains accountable for every finding, fix and verification submitted.",
+    "Mentor approval is based on demonstrated defensive judgment and evidence, not on a scan score or an AI-written report."
+  ],
+  "progression": "sequential",
+  "mentorship": "optional",
+  "sourceLocale": "en",
+  "contentLocales": [
+    "en"
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "schemaVersion": 1,
+  "id": "year-1-term-1",
+  "title": "Year 1 / Term 1 — Building a Backend Service",
+  "estimatedHours": 94,
+  "tasks": [
+    "be1t1-001",
+    "be1t1-002",
+    "be1t1-003",
+    "be1t1-004",
+    "be1t1-005",
+    "be1t1-006",
+    "be1t1-007"
+  ]
+}

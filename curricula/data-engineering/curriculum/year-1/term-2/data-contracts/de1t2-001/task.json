@@ -1,0 +1,47 @@
+{
+  "schemaVersion": 1,
+  "id": "de1t2-001",
+  "title": "Write a Data Contract Producers Cannot Ignore",
+  "term": "year-1/term-2",
+  "module": "data-contracts",
+  "estimatedHours": 8,
+  "objective": "Author a versioned producer-consumer contract and a validator that rejects breaking batches while accepting a documented additive change.",
+  "whyThisMatters": "A schema in someone's head is not a contract. Grain, nullability, freshness and version have to live in a file the load path actually reads. Otherwise every source change becomes a warehouse surprise.",
+  "competencies": [
+    "data-pipelines",
+    "da-data-quality",
+    "testing-quality"
+  ],
+  "resources": [
+    "postgres-docs",
+    "python-docs"
+  ],
+  "instructionsFile": "instructions.md",
+  "aiPolicy": {
+    "mode": "guided",
+    "allowedCapabilities": ["explain", "hint", "quiz"],
+    "solutionGenerationAllowed": false,
+    "disclosureRequired": true
+  },
+  "evidence": [
+    "The contract file naming grain, primary key, field types and nullability, freshness SLA, owner and version",
+    "Validator output rejecting a batch that is missing a required field, including the field name",
+    "Validator output accepting a batch that only adds an optional field, plus the contract rule that allows it",
+    "Validator output rejecting a removed or renamed required field, plus the changelog line that marks it breaking",
+    "Reflection notes answering the task questions"
+  ],
+  "acceptanceCriteria": [
+    "The contract file names grain, primary key, every field's type and nullability, a freshness SLA, an owner, and a version.",
+    "A batch missing a required field is rejected by the validator with a non-zero exit or equivalent, is not published, and the captured output includes the field name.",
+    "A batch that only adds an optional field is accepted without a major version bump, or the contract requires a minor bump and the validator enforces that rule — the chosen rule is written in the contract.",
+    "Removing or renaming a required field is classified as breaking in the contract changelog and is rejected by the validator."
+  ],
+  "statusModel": [
+    "not_started",
+    "in_progress",
+    "submitted",
+    "revision_requested",
+    "resubmitted",
+    "approved"
+  ]
+}

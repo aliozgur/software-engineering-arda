@@ -1,0 +1,49 @@
+{
+  "schemaVersion": 1,
+  "id": "an1t1-006",
+  "title": "Knowing When Not to Reach for AI",
+  "term": "year-1/term-1",
+  "module": "judgment",
+  "estimatedHours": 10,
+  "objective": "Identify a real, upcoming piece of work where you deliberately do not use AI-generated code because it is an irreversible operation, security-sensitive code, or a requirement that is still genuinely unclear, and produce a written case for that decision plus the work completed without it.",
+  "whyThisMatters": "The AI-native skill this curriculum is built around is not 'always use AI' — it is judgment about when the risk of an unverified or premature suggestion outweighs the speed gain.",
+  "competencies": [
+    "ai-assisted-engineering",
+    "professional-practice"
+  ],
+  "resources": [
+    "acm-code",
+    "owasp-top10"
+  ],
+  "instructionsFile": "instructions.md",
+  "aiPolicy": {
+    "mode": "guided",
+    "allowedCapabilities": [
+      "explain",
+      "hint",
+      "quiz"
+    ],
+    "solutionGenerationAllowed": false,
+    "disclosureRequired": true
+  },
+  "evidence": [
+    "A decision memo, written and committed before starting the work, naming the specific risk and why it justified not using AI generation for this piece",
+    "Git history or a work log showing incremental progress on the withheld work without AI-generated implementation code",
+    "A note on where AI was still used for the task, if at all, distinguished clearly from what was deliberately withheld",
+    "A reflection on what would have had to be true for the decision to go the other way"
+  ],
+  "acceptanceCriteria": [
+    "The decision memo is committed before the implementation work it concerns.",
+    "The named risk is one of: an irreversible operation, security-sensitive code, or an explicitly unclear requirement, and the memo explains which and why.",
+    "No AI-generated implementation code appears in the submitted work for the withheld part, per the disclosure entry.",
+    "The reflection names a concrete condition, not a vague hedge, under which the decision would have been different."
+  ],
+  "statusModel": [
+    "not_started",
+    "in_progress",
+    "submitted",
+    "revision_requested",
+    "resubmitted",
+    "approved"
+  ]
+}

@@ -1,0 +1,52 @@
+{
+  "schemaVersion": 1,
+  "id": "as1t1-002",
+  "title": "Authentication You Can Defend",
+  "term": "year-1/term-1",
+  "module": "authentication",
+  "estimatedHours": 12,
+  "objective": "Find and fix authentication defects in the application you own or operate locally, and prove password storage, session or token revocation, and failed-login behaviour with inspectable tests.",
+  "whyThisMatters": "Building an API that 'has login' is not the same as being able to defend how credentials are stored, how a session dies, and what a failed attempt reveals. Authentication bugs are the ones a mentor can watch you break and repair on the local app.",
+  "competencies": [
+    "security",
+    "http-api"
+  ],
+  "resources": [
+    "owasp-top10",
+    "rfc-http"
+  ],
+  "instructionsFile": "instructions.md",
+  "aiPolicy": {
+    "mode": "guided",
+    "allowedCapabilities": [
+      "explain",
+      "hint",
+      "quiz"
+    ],
+    "solutionGenerationAllowed": false,
+    "disclosureRequired": true
+  },
+  "evidence": [
+    "A findings note listing at least 2 authentication defects with route or file location, before and after behaviour",
+    "Git history showing each fix in its own commit, not one combined 'security' commit",
+    "A committed test or query showing the stored password is not plaintext and is not a bare SHA-2 of the password",
+    "A committed test showing that a replayed session or token is rejected after logout or revocation",
+    "Captured HTTP request/response pairs for a successful login and a failed login",
+    "Reflection note answering the task questions"
+  ],
+  "acceptanceCriteria": [
+    "Passwords are stored with a dedicated password hash (bcrypt, scrypt, or argon2); a committed test or query shows the stored value is not plaintext and is not a bare SHA-2 of the password.",
+    "Logout or explicit revocation invalidates the session or token; a replay of the prior credential is rejected.",
+    "At least 2 authentication defects found in the owned or local app are listed with file, line, or route, then shown fixed.",
+    "Failed login uses the same HTTP status and body shape for an unknown account and a wrong password, unless the notes document a deliberate exception and the residual risk.",
+    "No password, session secret, or API key is committed in any commit on the submitted branch."
+  ],
+  "statusModel": [
+    "not_started",
+    "in_progress",
+    "submitted",
+    "revision_requested",
+    "resubmitted",
+    "approved"
+  ]
+}

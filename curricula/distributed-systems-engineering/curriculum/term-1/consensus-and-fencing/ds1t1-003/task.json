@@ -1,0 +1,36 @@
+{
+  "schemaVersion": 1,
+  "id": "ds1t1-003",
+  "title": "Quorum Writes and Epoch Fencing Against Split-Brain",
+  "term": "ds1t1",
+  "module": "consensus-and-fencing",
+  "estimatedHours": 18,
+  "objective": "Extend the replicated store so a write is acknowledged only after a majority applies it, introduce an epoch (or fencing token) that an isolated former leader cannot override, and produce a script that first reproduces a split-brain overwrite and then shows the same sequence refused once fencing is on.",
+  "whyThisMatters": "Leader election without fencing is how two nodes both believe they are allowed to accept writes. The SWE Raft lab asks you to reason about two leaders in the abstract. This task makes the lost-update appear, then disappear, in the store you already run, so 'consensus' is a safety property you can violate on demand — not a protocol name.",
+  "competencies": [
+    "distributed-systems",
+    "networking"
+  ],
+  "resources": [
+    "mit-65840"
+  ],
+  "instructionsFile": "instructions.md",
+  "aiPolicy": {
+    "mode": "guided",
+    "allowedCapabilities": ["explain", "hint", "quiz"],
+    "solutionGenerationAllowed": false,
+    "disclosureRequired": true
+  },
+  "evidence": [
+    "Git history with a commit of the unfenced quorum store before the fencing change, plus a later commit that adds epoch checks",
+    "A reproduction script and a captured run showing the split-brain overwrite under the unfenced path and a refused or fenced write under the fenced path",
+    "README stating the quorum rule (N, W, R), what an epoch/token is, who issues it, and which write is discarded or refused",
+    "Reflection notes answering the task questions"
+  ],
+  "acceptanceCriteria": [
+    "A write is acknowledged only after a majority of the configured replica set has applied it; a minority-only apply is not treated as committed.",
+    "The unfenced reproduction deterministically overwrites a newer majority write with a stale write from a partitioned former leader, and the captured run shows both values.",
+    "With fencing enabled, the identical sequence refuses or ignores the stale leader's write; the majority value is the one a subsequent quorum read returns.",
+    "README names N, W, and R as integers, states W + R > N, and names the epoch/token field checked on every write — not a general claim that 'we use consensus.'"
+  ]
+}

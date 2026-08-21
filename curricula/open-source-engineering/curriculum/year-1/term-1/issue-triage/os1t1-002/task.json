@@ -1,0 +1,47 @@
+{
+  "schemaVersion": 1,
+  "id": "os1t1-002",
+  "title": "Triage a Real Public Issue",
+  "term": "year-1/term-1",
+  "module": "issue-triage",
+  "estimatedHours": 7,
+  "objective": "Triage one real public issue on the chosen project: reproduce or document why it cannot be reproduced, and write a maintainer-quality note a mentor can check against the thread.",
+  "whyThisMatters": "Most contribution time is spent deciding what an issue actually is. A patch that ignores triage wastes a maintainer's week; a precise triage note is already a contribution.",
+  "competencies": [
+    "open-source",
+    "professional-practice"
+  ],
+  "resources": [
+    "acm-code"
+  ],
+  "instructionsFile": "instructions.md",
+  "aiPolicy": {
+    "mode": "guided",
+    "allowedCapabilities": ["explain", "hint", "quiz"],
+    "solutionGenerationAllowed": false,
+    "disclosureRequired": true
+  },
+  "evidence": [
+    "The public upstream issue URL that was triaged",
+    "A committed triage note with numbered reproduction steps, an explicit result (reproduced / not-reproduced / blocked-with-reason), proposed label(s), and a single recommended-next-action heading",
+    "Captured command output or a log excerpt from the reproduction attempt, stored as a file, not only a screenshot",
+    "Either the public comment URL if a triage comment was posted, or the exact comment text marked UNPOSTED",
+    "Reflection notes answering the task questions",
+    "AI disclosure entry when AI materially influenced the work"
+  ],
+  "acceptanceCriteria": [
+    "The issue URL is a public issue on a real repository (the project from os1t1-001, or a newly mapped public project named in the note).",
+    "The triage note contains numbered reproduction steps and exactly one result line that is reproduced, not-reproduced, or blocked-with-reason.",
+    "The note proposes at least one label that already exists on the project, or states that the project has no labels and names one label the project would need.",
+    "The note has a single heading whose text is one of: close-as-duplicate, ask-for-info, accept-as-bug, reject-as-wontfix, ready-for-PR.",
+    "If the heading is close-as-duplicate, the note includes the duplicate issue URL; if reject-as-wontfix, the note quotes a sentence from CONTRIBUTING or project policy."
+  ],
+  "statusModel": [
+    "not_started",
+    "in_progress",
+    "submitted",
+    "revision_requested",
+    "resubmitted",
+    "approved"
+  ]
+}

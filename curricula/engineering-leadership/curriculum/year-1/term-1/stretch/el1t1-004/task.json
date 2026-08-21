@@ -1,0 +1,42 @@
+{
+  "schemaVersion": 1,
+  "id": "el1t1-004",
+  "title": "Design a Stretch Assignment You Will Not Rescue",
+  "term": "year-1/term-1",
+  "module": "stretch",
+  "estimatedHours": 8,
+  "objective": "Write a stretch brief and a three-check-in plan that name the done-artifact, the decisions the owner may make, and what the lead will refuse to implement.",
+  "whyThisMatters": "Delegation without a kill-criteria and an 'I will not' list becomes a rescue the week before the deadline. A stretch assignment is a leadership artifact: scope, support, and the line you will not cross.",
+  "competencies": [
+    "technical-leadership"
+  ],
+  "resources": [
+    "staffeng",
+    "twelve-factor"
+  ],
+  "instructionsFile": "instructions.md",
+  "aiPolicy": {
+    "mode": "guided",
+    "allowedCapabilities": ["explain", "hint", "quiz"],
+    "solutionGenerationAllowed": false,
+    "disclosureRequired": true
+  },
+  "evidence": [
+    "A stretch brief naming one owner, one inspectable done-artifact, at least two constraints, and at least three items on an 'I will not do this for you' list",
+    "A check-in plan with three dated inspections, each naming the artifact the lead will open (not a mood check)",
+    "A midpoint stuck-note that records a hint or a scope cut and states what the lead refused to implement"
+  ],
+  "acceptanceCriteria": [
+    "The brief names a single owner, one inspectable done-artifact, at least two constraints, and at least three items the lead will not implement for the owner.",
+    "The check-in plan has three calendar dates; each date names a specific file, PR, or doc the lead will inspect.",
+    "The midpoint note describes a stuck moment, records either a written hint or a written scope cut, and names one implementation the lead refused to do."
+  ],
+  "statusModel": [
+    "not_started",
+    "in_progress",
+    "submitted",
+    "revision_requested",
+    "resubmitted",
+    "approved"
+  ]
+}

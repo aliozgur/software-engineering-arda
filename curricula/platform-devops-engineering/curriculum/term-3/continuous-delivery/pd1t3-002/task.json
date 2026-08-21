@@ -1,0 +1,37 @@
+{
+  "schemaVersion": 1,
+  "id": "pd1t3-002",
+  "title": "Deploy Through the Pipeline, Not From Your Laptop",
+  "term": "term-3",
+  "module": "continuous-delivery",
+  "estimatedHours": 20,
+  "competencies": [
+    "ci-cd",
+    "release-engineering"
+  ],
+  "resources": [
+    "github-actions",
+    "gitlab-ci"
+  ],
+  "instructionsFile": "instructions.md",
+  "aiPolicy": {
+    "mode": "guided",
+    "allowedCapabilities": ["explain", "hint", "quiz"],
+    "solutionGenerationAllowed": false,
+    "disclosureRequired": true
+  },
+  "evidence": [
+    "Committed pipeline job that applies deploy manifests and runs a smoke check",
+    "CI/CD log of a passing run whose deployed image tag equals the git SHA or release tag of that run",
+    "CI/CD log of a commit that fails the smoke check, plus the revert or fix commit that goes green",
+    "A note stating the runner type (hosted kind-in-job, self-hosted, or local runner) with a log line that confirms it",
+    "Reflection notes answering the task questions",
+    "AI disclosure entry when AI materially influenced the work"
+  ],
+  "acceptanceCriteria": [
+    "A pipeline job — not a laptop-only command — applies the deploy manifests and runs a smoke check.",
+    "A commit that makes the smoke check fail is shown failing that job, then corrected in a follow-up commit.",
+    "The image tag (or equivalent version) deployed by the passing run equals the git SHA or release tag of that run.",
+    "The evidence note states the runner arrangement and a mentor can see that arrangement in the job log."
+  ]
+}

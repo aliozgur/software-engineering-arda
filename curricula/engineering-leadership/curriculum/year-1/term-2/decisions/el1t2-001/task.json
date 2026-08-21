@@ -1,0 +1,44 @@
+{
+  "schemaVersion": 1,
+  "id": "el1t2-001",
+  "title": "Write the ADR Other Teams Have to Live With",
+  "term": "year-1/term-2",
+  "module": "decisions",
+  "estimatedHours": 8,
+  "objective": "Write a team-and-org-scope ADR that names rejected alternatives, states impact on at least three teams, and revises date or scope after a named sister-team constraint.",
+  "whyThisMatters": "A decision that only your team likes is a preference. A decision other teams must change their images, logs, or secrets for is leadership — and it is not real until the rejected options, the negative consequence, and the impact table are written down.",
+  "competencies": [
+    "technical-leadership",
+    "professional-practice"
+  ],
+  "resources": [
+    "twelve-factor"
+  ],
+  "instructionsFile": "instructions.md",
+  "aiPolicy": {
+    "mode": "guided",
+    "allowedCapabilities": ["explain", "hint", "quiz"],
+    "solutionGenerationAllowed": false,
+    "disclosureRequired": true
+  },
+  "evidence": [
+    "An ADR in a context/decision/consequences shape that names at least two rejected alternatives with distinct reasons and at least one accepted negative consequence",
+    "An impact table with at least three teams, each row naming a required change and the owning team",
+    "A citation of at least one Twelve-Factor factor by number or official name as a constraint or as a rejected misapplication",
+    "Git history showing a date or scope revision after the Identity constraint, with that constraint quoted in the commit message or revision note"
+  ],
+  "acceptanceCriteria": [
+    "The ADR names at least two rejected alternatives, each with a reason distinct from 'it was worse,' and states at least one negative consequence of the chosen option.",
+    "The impact table lists at least three teams; each row names a concrete change and an owning team.",
+    "The ADR cites at least one Twelve-Factor factor by number or official name.",
+    "History shows the date or scope changed after the stated Identity constraint, and the revision note or commit message quotes that constraint."
+  ],
+  "statusModel": [
+    "not_started",
+    "in_progress",
+    "submitted",
+    "revision_requested",
+    "resubmitted",
+    "approved"
+  ]
+}

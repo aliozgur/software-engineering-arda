@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "agentic-development-workflow",
+  "title": "Agentic Development Workflow",
+  "description": "Can scope, run, verify and recover multi-step agentic coding sessions where an AI assistant reads, plans and edits code with reduced turn-by-turn supervision.",
+  "levels": [
+    {
+      "level": 1,
+      "name": "Foundation",
+      "description": "Can run a single-file agentic coding session with a narrow, explicit scope and a verification check (a test or command) defined before the session starts."
+    },
+    {
+      "level": 2,
+      "name": "Apprentice",
+      "description": "Can scope a multi-file agentic task with a plan reviewed before execution, and can verify the resulting diff against that plan file by file."
+    },
+    {
+      "level": 3,
+      "name": "Practitioner",
+      "description": "Can diagnose when an agentic session has drifted from its stated scope or produced an incorrect plan, and can redirect or re-scope it with a narrower prompt instead of accepting the drift."
+    },
+    {
+      "level": 4,
+      "name": "Journeyman",
+      "description": "Can recover a multi-step agentic session that made a destructive or incorrect change, using version control and session history to isolate and revert only the affected work while keeping what is usable."
+    },
+    {
+      "level": 5,
+      "name": "Mastery Evidence",
+      "description": "Can define a repeatable agentic workflow — verification checks, session-scoping conventions and rollback discipline — that another engineer could follow to run agentic sessions safely on a real codebase."
+    }
+  ]
+}

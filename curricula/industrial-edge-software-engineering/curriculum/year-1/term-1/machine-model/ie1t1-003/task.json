@@ -1,0 +1,47 @@
+{
+  "schemaVersion": 1,
+  "id": "ie1t1-003",
+  "title": "Memory-mapped registers you can poke from a host",
+  "term": "year-1/term-1",
+  "module": "machine-model",
+  "estimatedHours": 8,
+  "objective": "Implement a host-side 256-byte MMIO window with four registers, little- and big-endian 32-bit accessors, a read-only STATUS, a write-triggered COUNT, and a documented alignment fault.",
+  "whyThisMatters": "Industrial peripherals are not 'objects with methods' — they are addresses with side effects. If you cannot show endianness and alignment as testable facts, you will mis-talk every sensor and PLC register you meet later.",
+  "competencies": [
+    "computer-architecture",
+    "c-memory"
+  ],
+  "resources": [
+    "nand2tetris",
+    "qemu-docs"
+  ],
+  "instructionsFile": "instructions.md",
+  "aiPolicy": {
+    "mode": "guided",
+    "allowedCapabilities": ["explain", "hint", "quiz"],
+    "solutionGenerationAllowed": false,
+    "disclosureRequired": true
+  },
+  "evidence": [
+    "C sources for the 256-byte device window and the host poke program, with incremental Git history",
+    "A captured test run showing DATA write incrementing COUNT by 1",
+    "A captured test run showing a write to STATUS leaving the stored STATUS value unchanged",
+    "A captured dump of the four bytes at DATA for the value 0x01020304 under both LE and BE 32-bit accessors",
+    "A captured unaligned 32-bit read at offset 0x09 returning the documented error, not a guessed value",
+    "Reflection notes answering the task questions"
+  ],
+  "acceptanceCriteria": [
+    "The device window is 256 bytes, byte-addressable, and exposes STATUS at 0x00 (read-only), CTRL at 0x04 (read/write), DATA at 0x08 (read/write), and COUNT at 0x0C (read-only, increments by 1 on each successful DATA write).",
+    "A write of 0x01020304 through the little-endian 32-bit accessor at DATA and a write of the same value through the big-endian 32-bit accessor produce two different 4-byte sequences in the window; both sequences are captured.",
+    "A write to offset 0x00 does not change the STATUS bytes; before and after dumps are captured.",
+    "An unaligned 32-bit read or write at offset 0x09 returns a documented error code or result and does not store or return a silently assembled 32-bit value."
+  ],
+  "statusModel": [
+    "not_started",
+    "in_progress",
+    "submitted",
+    "revision_requested",
+    "resubmitted",
+    "approved"
+  ]
+}

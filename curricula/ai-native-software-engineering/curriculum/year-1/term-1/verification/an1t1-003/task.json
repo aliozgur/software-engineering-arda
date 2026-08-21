@@ -1,0 +1,50 @@
+{
+  "schemaVersion": 1,
+  "id": "an1t1-003",
+  "title": "Test-Driven Verification of AI-Generated Code",
+  "term": "year-1/term-1",
+  "module": "verification",
+  "estimatedHours": 8,
+  "objective": "Write the test cases for a small feature before requesting an AI-generated implementation, then use those untouched tests as the acceptance gate for what the AI produces.",
+  "whyThisMatters": "Verification written after the fact tends to mirror whatever the AI already produced. Tests written first, independent of the implementation, are a real check rather than a confirmation ritual.",
+  "competencies": [
+    "ai-assisted-engineering",
+    "testing-quality"
+  ],
+  "resources": [
+    "fowler-tdd",
+    "anthropic-prompt-guide"
+  ],
+  "instructionsFile": "instructions.md",
+  "aiPolicy": {
+    "mode": "guided",
+    "allowedCapabilities": [
+      "explain",
+      "hint",
+      "quiz"
+    ],
+    "solutionGenerationAllowed": true,
+    "disclosureRequired": true
+  },
+  "evidence": [
+    "A commit containing only the test suite, before any implementation commit exists",
+    "A test run log showing the tests failing against a stub or empty implementation",
+    "A test run log showing the AI-generated implementation passing the untouched test suite",
+    "A note describing any test you had to change after seeing the AI's implementation, and whether that change was justified",
+    "AI disclosure entry naming the tool/model used, purpose, and what was independently verified"
+  ],
+  "acceptanceCriteria": [
+    "The test-suite commit precedes the implementation commit in git history.",
+    "A failing test run against a stub implementation is included as evidence.",
+    "A passing test run against the AI-generated implementation is included as evidence.",
+    "Any post-hoc test change is explicitly justified in the note, not silently made."
+  ],
+  "statusModel": [
+    "not_started",
+    "in_progress",
+    "submitted",
+    "revision_requested",
+    "resubmitted",
+    "approved"
+  ]
+}

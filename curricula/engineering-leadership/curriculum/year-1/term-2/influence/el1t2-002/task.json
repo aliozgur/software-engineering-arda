@@ -1,0 +1,41 @@
+{
+  "schemaVersion": 1,
+  "id": "el1t2-002",
+  "title": "Ask Another Team for a Change You Cannot Order",
+  "term": "year-1/term-2",
+  "module": "influence",
+  "estimatedHours": 8,
+  "objective": "Write a one-page ask for a team you do not manage, log at least three objections, and revise the ask after a concession that cuts scope, date, or offer.",
+  "whyThisMatters": "Staff-plus work is mostly influence without hire-and-fire authority. A meeting that 'went well' is not evidence. The brief, the objection log, and the revised ask are.",
+  "competencies": [
+    "technical-leadership"
+  ],
+  "resources": [
+    "staffeng"
+  ],
+  "instructionsFile": "instructions.md",
+  "aiPolicy": {
+    "mode": "guided",
+    "allowedCapabilities": ["explain", "hint", "quiz"],
+    "solutionGenerationAllowed": false,
+    "disclosureRequired": true
+  },
+  "evidence": [
+    "A one-page brief that states the ask in one sentence, names a benefit for the other team, and names one thing you will do or fund",
+    "An objection log with at least three distinct objections written in the other lead's voice, each with your response",
+    "A revised ask that differs from the first in a named scope, date, or offer, after the role-play"
+  ],
+  "acceptanceCriteria": [
+    "The brief states the ask in a single sentence, names a benefit for Identity (not only Checkout), and names one thing Checkout will do or fund.",
+    "The objection log has at least three distinct objections; at least one concession is a scope cut, a date move, or a funded offer — not only 'we will communicate better.'",
+    "The revised ask file differs from the first ask in a named scope, date, or offer."
+  ],
+  "statusModel": [
+    "not_started",
+    "in_progress",
+    "submitted",
+    "revision_requested",
+    "resubmitted",
+    "approved"
+  ]
+}

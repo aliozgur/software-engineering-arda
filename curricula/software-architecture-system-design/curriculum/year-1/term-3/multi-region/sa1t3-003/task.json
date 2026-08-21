@@ -1,0 +1,42 @@
+{
+  "schemaVersion": 1,
+  "id": "sa1t3-003",
+  "title": "Multi-Region Topology, Consistency, and Data Residency",
+  "term": "year-1/term-3",
+  "module": "multi-region",
+  "estimatedHours": 9,
+  "objective": "Choose active-active or primary-failover against stated RPO, RTO, and residency constraints, and record what users see after a region loss.",
+  "whyThisMatters": "A second region is not a reliability sticker. It is a consistency, failover, and legal-boundary decision. Architects who draw two boxes labelled 'active-active' without an RPO, an RTO, and a data class that must not leave a region have designed a slide, not a system.",
+  "competencies": [
+    "architecture-and-tradeoffs",
+    "distributed-systems",
+    "database-systems",
+    "security"
+  ],
+  "resources": ["postgres-docs"],
+  "instructionsFile": "instructions.md",
+  "aiPolicy": {
+    "mode": "guided",
+    "allowedCapabilities": ["explain", "hint", "quiz"],
+    "solutionGenerationAllowed": false,
+    "disclosureRequired": true
+  },
+  "evidence": [
+    "A region topology diagram stating active-active or primary-failover, with RPO and RTO numbers on the failover path",
+    "An ADR naming the consistency model a user sees after a region loss, and at least one rejected topology with a distinct reason",
+    "A note marking at least one data class as residency-constrained, naming the region or jurisdiction it must remain in and the architectural rule that keeps it there"
+  ],
+  "acceptanceCriteria": [
+    "The topology is labelled active-active or primary-failover and states RPO and RTO as numbers with units, not as 'fast failover.'",
+    "The ADR states the consistency model users see after a region loss (including a permitted stale-read bound or a refused write) and names a rejected topology with a reason other than 'it was more complex.'",
+    "At least one data class is marked residency-constrained with a named region or jurisdiction and a rule that prevents that class from being replicated or processed outside it."
+  ],
+  "statusModel": [
+    "not_started",
+    "in_progress",
+    "submitted",
+    "revision_requested",
+    "resubmitted",
+    "approved"
+  ]
+}

@@ -1,0 +1,47 @@
+{
+  "schemaVersion": 1,
+  "id": "pe1t1-001",
+  "title": "Measure First: A Repeatable Baseline Harness",
+  "term": "year-1/term-1",
+  "module": "benchmarking",
+  "estimatedHours": 8,
+  "objective": "Define latency and error SLIs before looking at results, then produce a three-run baseline with p50/p95/p99 and documented variance from a single-command harness.",
+  "whyThisMatters": "A speedup nobody can reproduce is a story, not a measurement. Later tasks in this term — profile, cache, load test, capacity — all cite numbers from this harness. If the baseline is a single mean from one lucky run, every later claim is untrustworthy.",
+  "competencies": [
+    "performance",
+    "observability"
+  ],
+  "resources": [
+    "prometheus",
+    "opentelemetry"
+  ],
+  "instructionsFile": "instructions.md",
+  "aiPolicy": {
+    "mode": "guided",
+    "allowedCapabilities": ["explain", "hint", "quiz"],
+    "solutionGenerationAllowed": false,
+    "disclosureRequired": true
+  },
+  "evidence": [
+    "A committed SLI/SLO note whose commit precedes the first results file, stating a p95 or p99 latency target and an error-rate target",
+    "The harness script or program plus a README command that produces one run",
+    "Raw output from at least three runs, each recording p50, p95, p99 and error rate",
+    "A baseline note stating the three p95 values and their numeric range",
+    "A hardware and warmup note (CPU model or instance type, how many warmup iterations were discarded)",
+    "Reflection notes answering the task questions"
+  ],
+  "acceptanceCriteria": [
+    "The SLI/SLO file states a p95 or p99 latency target and an error-rate target, and its commit precedes the first results file.",
+    "One documented command produces a run that prints or writes p50, p95 and p99 — not only a mean.",
+    "At least three run output files are committed; a variance note states the numeric range of p95 across those runs.",
+    "The hardware note names the machine or instance type and the number of warmup iterations discarded before the timed window."
+  ],
+  "statusModel": [
+    "not_started",
+    "in_progress",
+    "submitted",
+    "revision_requested",
+    "resubmitted",
+    "approved"
+  ]
+}

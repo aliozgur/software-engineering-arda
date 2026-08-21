@@ -1,0 +1,13 @@
+{
+  "schemaVersion": 1,
+  "id": "term-3",
+  "title": "Term 3 — Release Safely, Respond to Failure",
+  "estimatedHours": 96,
+  "tasks": [
+    "pd1t3-001",
+    "pd1t3-002",
+    "pd1t3-003",
+    "pd1t3-004",
+    "pd1t3-005"
+  ]
+}

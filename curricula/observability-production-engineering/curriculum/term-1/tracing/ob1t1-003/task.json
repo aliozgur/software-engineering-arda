@@ -1,0 +1,45 @@
+{
+  "schemaVersion": 1,
+  "id": "ob1t1-003",
+  "title": "Distributed Tracing Across Real Service Calls",
+  "term": "term-1",
+  "module": "tracing",
+  "estimatedHours": 10,
+  "objective": "Instrument one request that crosses at least two independently-running processes with OpenTelemetry tracing, and diagnose an induced slow span using the trace alone.",
+  "whyThisMatters": "Logs and metrics tell you something is wrong; a trace tells you where, across process boundaries, without reading source code. This is the first task in the term where you must diagnose using telemetry alone rather than intuition.",
+  "competencies": [
+    "observability",
+    "performance"
+  ],
+  "resources": [
+    "opentelemetry"
+  ],
+  "instructionsFile": "instructions.md",
+  "aiPolicy": {
+    "mode": "guided",
+    "allowedCapabilities": ["explain", "hint", "quiz"],
+    "solutionGenerationAllowed": false,
+    "disclosureRequired": true
+  },
+  "evidence": [
+    "A baseline trace export/screenshot with the trace id visible across both processes",
+    "Instrumentation code/config showing context propagation across the process boundary",
+    "A second trace export/screenshot captured after injecting a slow span",
+    "A written diagnosis note naming the slow span using only trace data",
+    "Reflection notes answering the task questions"
+  ],
+  "acceptanceCriteria": [
+    "The exported baseline trace shows a single trace id shared by spans from both processes.",
+    "The trace has a parent/child span structure reflecting the real call order.",
+    "The second trace's longest span corresponds to the component deliberately slowed down.",
+    "The diagnosis note identifies the slow span using only span names/durations, not source-code inspection."
+  ],
+  "statusModel": [
+    "not_started",
+    "in_progress",
+    "submitted",
+    "revision_requested",
+    "resubmitted",
+    "approved"
+  ]
+}

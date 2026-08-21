@@ -1,0 +1,46 @@
+{
+  "schemaVersion": 1,
+  "id": "ie1t2-005",
+  "title": "MQTT QoS 1 telemetry with reconnect and backoff",
+  "term": "year-1/term-2",
+  "module": "industrial-comms",
+  "estimatedHours": 8,
+  "objective": "Publish at least one QoS 1 telemetry payload to a localhost MQTT broker, document ClientId and session choice, and demonstrate a forced disconnect with a listed backoff and a retried or duplicate-explained in-flight message.",
+  "whyThisMatters": "Edge nodes drop off Wi-Fi and cellular. QoS 1 without a reconnect story is QoS 0 with extra packets. This task uses the OASIS MQTT 5.0 spec and a broker you run yourself — never a paid cloud IoT hub.",
+  "competencies": [
+    "networking",
+    "embedded-and-edge-systems"
+  ],
+  "resources": [
+    "oasis-mqtt-v5"
+  ],
+  "instructionsFile": "instructions.md",
+  "aiPolicy": {
+    "mode": "guided",
+    "allowedCapabilities": ["explain", "hint", "quiz"],
+    "solutionGenerationAllowed": false,
+    "disclosureRequired": true
+  },
+  "evidence": [
+    "A localhost broker config or run command (Eclipse Mosquitto or equivalent) committed or captured; no cloud endpoint in the config",
+    "Client sources or a documented Paho/libmosquitto program plus a thin wrapper you wrote",
+    "A captured subscriber or broker log showing the QoS 1 payload received",
+    "SESSION.md stating ClientId and clean-start versus persistent-session choice with one sentence of reason",
+    "A captured reconnect run listing backoff delays and showing the in-flight message retried or a duplicate explained by packet identifier",
+    "Reflection notes answering the task questions"
+  ],
+  "acceptanceCriteria": [
+    "The broker listens on localhost (or a documented loopback address); the client config contains no public cloud IoT hostname.",
+    "A QoS 1 PUBLISH is received by a subscriber; the captured log shows the topic and payload.",
+    "SESSION.md states the ClientId string and whether Clean Start (MQTT 5) / clean session is true or false, with one sentence of reason.",
+    "A forced disconnect mid-flight is followed by reconnect delays that match a list of at least two backoff values written in SESSION.md, and the in-flight payload is either retried or a duplicate is explained by a packet identifier in the log."
+  ],
+  "statusModel": [
+    "not_started",
+    "in_progress",
+    "submitted",
+    "revision_requested",
+    "resubmitted",
+    "approved"
+  ]
+}

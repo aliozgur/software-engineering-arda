@@ -1,0 +1,37 @@
+{
+  "schemaVersion": 1,
+  "id": "apprenti-dev-industrial-edge-software-engineering-2026",
+  "name": "apprenti.dev Industrial / Edge Software Engineering",
+  "version": "0.1.0",
+  "durationMonths": "6-9",
+  "audience": "Embedded, IIoT, and backend engineers who already write production code and are specializing in resource-constrained and industrial-edge software",
+  "philosophy": "LEARN BY DOING. GROW THROUGH MENTORSHIP. Design for the budget first: every byte, every tick, and every update path is measured on a host you already have — simulation before silicon, fail-safe before flash.",
+  "defaultWeeklyHours": {
+    "duringTerm": "6-8"
+  },
+  "roles": [
+    "apprentice",
+    "mentor"
+  ],
+  "languages": [
+    "C"
+  ],
+  "corePlatforms": [
+    "Git",
+    "GCC or Clang on the host",
+    "QEMU (optional; for xv6 and any MCU image the apprentice already has)",
+    "Eclipse Mosquitto running on localhost"
+  ],
+  "aiPrinciples": [
+    "AI assistance must be disclosed when materially used.",
+    "Tasks in this curriculum default to guided AI use: explanations, hints and quizzes are allowed; complete solutions are not.",
+    "The apprentice remains accountable for every submitted artifact, including C that an AI tool helped produce.",
+    "Mentor approval is based on demonstrated understanding and inspectable evidence — a green test run alone is not enough."
+  ],
+  "progression": "sequential",
+  "mentorship": "optional",
+  "sourceLocale": "en",
+  "contentLocales": [
+    "en"
+  ]
+}

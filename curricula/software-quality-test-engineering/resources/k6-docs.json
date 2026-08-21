@@ -1,0 +1,10 @@
+{
+  "schemaVersion": 1,
+  "id": "k6-docs",
+  "title": "k6 Documentation",
+  "url": "https://k6.io/docs/",
+  "type": "official_docs",
+  "provider": "Grafana Labs",
+  "tier": "reference",
+  "topics": ["load-testing", "performance"]
+}

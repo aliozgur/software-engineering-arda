@@ -1,0 +1,13 @@
+{
+  "schemaVersion": 1,
+  "id": "fowler-tdd",
+  "title": "Martin Fowler: Test-Driven Development",
+  "url": "https://martinfowler.com/bliki/TestDrivenDevelopment.html",
+  "type": "article",
+  "provider": "Martin Fowler",
+  "tier": "reference",
+  "topics": [
+    "tdd",
+    "testing-quality"
+  ]
+}

@@ -1,0 +1,45 @@
+{
+  "schemaVersion": 1,
+  "id": "ob1t1-006",
+  "title": "Respond to a Simulated Incident Before You Finish Root Cause",
+  "term": "term-1",
+  "module": "incident-response",
+  "estimatedHours": 10,
+  "objective": "Detect, mitigate, and timeline a randomly selected injected failure using only alerts, logs, metrics and traces — restore the user-visible symptom before writing the root-cause line.",
+  "whyThisMatters": "On-call is not a debugging session with extra anxiety. The first job is to stop user pain; diagnosis comes second. This task is where you practice that order, and keep facts apart from guesses on a written timeline.",
+  "competencies": [
+    "incident-response"
+  ],
+  "resources": [
+    "google-sre-book"
+  ],
+  "instructionsFile": "instructions.md",
+  "aiPolicy": {
+    "mode": "guided",
+    "allowedCapabilities": ["explain", "hint", "quiz"],
+    "solutionGenerationAllowed": false,
+    "disclosureRequired": true
+  },
+  "evidence": [
+    "A runbook covering detect and mitigate for at least two named failure modes, committed before the timeline starts",
+    "An injector script or config that can apply at least three named failure modes",
+    "A timestamped incident timeline with each line labeled FACT or HYPOTHESIS",
+    "Captured artifacts for at least two distinct signal types cited in the timeline (alert, metric/query, log excerpt, or trace)",
+    "A restoration note stating the user-visible symptom, the mitigation action, and the timeline timestamp when service was called restored",
+    "Reflection notes answering the task questions"
+  ],
+  "acceptanceCriteria": [
+    "The runbook file is committed, and the timeline's first entry quotes that commit hash or a file checksum as the runbook version in force.",
+    "The timeline contains at least six timestamped entries; at least three are labeled FACT and at least two are labeled HYPOTHESIS.",
+    "The restoration timestamp in the timeline is at or before the first entry that names a root cause.",
+    "At least two distinct signal types (logs, metrics, traces, or alerts) are cited in the timeline, each with a captured artifact in the submission."
+  ],
+  "statusModel": [
+    "not_started",
+    "in_progress",
+    "submitted",
+    "revision_requested",
+    "resubmitted",
+    "approved"
+  ]
+}

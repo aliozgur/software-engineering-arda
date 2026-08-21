@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "technical-leadership",
+  "title": "Technical Leadership",
+  "description": "Mentoring and delegating through inspectable artifacts, influencing without relying on hire-and-fire authority, and making technical decisions that other people and teams have to live with.",
+  "levels": [
+    {
+      "level": 1,
+      "name": "Foundation",
+      "description": "Can produce a written 1:1 agenda, a delegation brief, or a review note that names a specific deliverable or observed behavior (not a personality trait) and a next check-in date."
+    },
+    {
+      "level": 2,
+      "name": "Apprentice",
+      "description": "Can complete a scoped mentoring or delegation cycle and leave inspectable artifacts: an agenda used in a real or role-played 1:1, review comments labeled blocking versus advisory, and a follow-up that records an owner and a date for each action."
+    },
+    {
+      "level": 3,
+      "name": "Practitioner",
+      "description": "Can independently write a team-scope technical decision (ADR or equivalent brief) that names at least two rejected alternatives, states who outside the author's team is affected, and records at least one accepted negative consequence."
+    },
+    {
+      "level": 4,
+      "name": "Journeyman",
+      "description": "Can produce a cross-team influence brief that anticipates named objections from another team, states what the author will give up, and revises the ask after a stated counter-argument without collapsing into 'do both.'"
+    },
+    {
+      "level": 5,
+      "name": "Mastery Evidence",
+      "description": "Can write and defend a 90-day team technical strategy that names what the team will stop doing, how each bet is owned, and which bet would be cut if a named constraint changed — and can walk another lead through producing the same class of artifact."
+    }
+  ]
+}

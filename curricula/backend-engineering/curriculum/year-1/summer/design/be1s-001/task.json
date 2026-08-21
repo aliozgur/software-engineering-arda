@@ -1,0 +1,41 @@
+{
+  "schemaVersion": 1,
+  "id": "be1s-001",
+  "title": "Capstone Design: Contract, Data Flow and Threat Model",
+  "term": "year-1/summer",
+  "module": "design",
+  "estimatedHours": 14,
+  "objective": "Write the capstone contract, the write-path data flow across HTTP, Postgres, MongoDB and RabbitMQ, and a threat model mapped to concrete controls — before expanding the implementation.",
+  "whyThisMatters": "The remaining capstone tasks implement, operate and defend this design. A vague diagram now becomes an unreviewable service later. Mentors will approve the design before the next task starts.",
+  "competencies": [
+    "security",
+    "http-api",
+    "messaging"
+  ],
+  "resources": [
+    "openapi",
+    "rfc-http",
+    "owasp-top10",
+    "twelve-factor"
+  ],
+  "instructionsFile": "instructions.md",
+  "aiPolicy": {
+    "mode": "guided",
+    "allowedCapabilities": ["explain", "hint", "quiz"],
+    "solutionGenerationAllowed": false,
+    "disclosureRequired": true
+  },
+  "evidence": [
+    "An OpenAPI document for every route the capstone will implement, plus a validator run pasted in the evidence note",
+    "A data-flow note that names every hop a successful write takes, including the queue and the consumer side effect",
+    "A threat-model table mapping at least four OWASP Top 10 items to a control that already exists or will be built in a named later task",
+    "An SLO file with a numeric latency target, a numeric availability target, and the signal you will use to measure each",
+    "Git history showing contract, data flow, threat model, and SLO as separate commits, including one design reversal noted mid-work"
+  ],
+  "acceptanceCriteria": [
+    "The OpenAPI document validates and lists every route the remaining capstone tasks will implement, including error responses.",
+    "The data-flow note names the HTTP handler, the Postgres transaction, the publish, the consumer, and the document-store write as distinct hops.",
+    "The threat model maps at least four OWASP Top 10 items to a control, each tagged existing or planned with a task id.",
+    "The SLO names a numeric p95 latency, a numeric availability target, and the metric or log query that measures each."
+  ]
+}

@@ -1,0 +1,46 @@
+{
+  "schemaVersion": 1,
+  "id": "ef1t2-003",
+  "title": "Refactor Existing Code Without Changing Behavior",
+  "term": "term-2",
+  "module": "refactoring",
+  "estimatedHours": 8,
+  "objective": "Refactor an existing Python module behind a passing test net so behavior stays the same and a reviewer can see, commit by commit, which design smell each change addresses.",
+  "whyThisMatters": "Mixing a cleanup with a behavior change is how regressions hide in a 'just a refactor' pull request. Professionals separate the two: tests pin today's behavior, then each commit changes structure only.",
+  "competencies": [
+    "software-design",
+    "testing-quality"
+  ],
+  "resources": [
+    "python-docs",
+    "harvard-cs50p"
+  ],
+  "instructionsFile": "instructions.md",
+  "aiPolicy": {
+    "mode": "guided",
+    "allowedCapabilities": ["explain", "hint", "quiz"],
+    "solutionGenerationAllowed": false,
+    "disclosureRequired": true
+  },
+  "evidence": [
+    "Test-command output captured before the first refactor commit and after the last, both showing zero failures",
+    "git log of the refactor branch with at least 3 commits that each contain only a named refactor",
+    "A refactoring note that maps each of those commit SHAs to the smell it addressed and the files it touched",
+    "The production-code diff for the branch",
+    "AI disclosure entry if AI suggested a refactoring or rewrote a function"
+  ],
+  "acceptanceCriteria": [
+    "The documented test command run before the first refactor and after the last shows zero failures, and the passing-test count after is greater than or equal to the count before.",
+    "At least 3 commits exist whose messages name a refactoring (for example extract function, rename, reduce nesting, remove duplication) and whose diffs contain no new feature and no bug fix.",
+    "The refactoring note lists each of those commit SHAs, the smell addressed, and the file paths touched.",
+    "No public function signature in the refactored module changed unless the note lists that exact signature and shows the rename-only caller updates landed in the same commit."
+  ],
+  "statusModel": [
+    "not_started",
+    "in_progress",
+    "submitted",
+    "revision_requested",
+    "resubmitted",
+    "approved"
+  ]
+}

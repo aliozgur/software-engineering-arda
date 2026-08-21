@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "id": "be1t2-004",
+  "title": "Asynchronous Work with RabbitMQ",
+  "term": "year-1/term-2",
+  "module": "messaging",
+  "estimatedHours": 16,
+  "objective": "Publish a domain event from the API, consume it in a separate Python process, and demonstrate at-least-once delivery plus a poison-message path.",
+  "whyThisMatters": "The next tasks add traces, load, and a capstone write path that crosses the queue. If publish, ack, and failure are vague now, those later tasks have nothing honest to measure.",
+  "competencies": [
+    "messaging",
+    "python"
+  ],
+  "resources": [
+    "rabbitmq-tutorials",
+    "python-docs"
+  ],
+  "instructionsFile": "instructions.md",
+  "aiPolicy": {
+    "mode": "guided",
+    "allowedCapabilities": ["explain", "hint", "quiz"],
+    "solutionGenerationAllowed": false,
+    "disclosureRequired": true
+  },
+  "evidence": [
+    "The compose file and the publisher/consumer Python modules, committed incrementally",
+    "A log excerpt with timestamps showing the HTTP response returning before the consumer finishes the side effect",
+    "A log or management-UI export showing an unacked message surviving a consumer crash and being handled after restart",
+    "A demonstration of a poison or unprocessable message being dead-lettered or recorded, not retried in a tight loop",
+    "A Markdown note, written while implementing ack/nack, stating how duplicates are handled"
+  ],
+  "acceptanceCriteria": [
+    "A successful domain write publishes a message that a separate consumer process handles.",
+    "Logs or a capture show the HTTP response timestamp earlier than the consumer's completion timestamp for the same write.",
+    "Killing the consumer after publish and before ack leaves the message available; after restart the consumer handles it (shown in a log).",
+    "An unprocessable message is routed to a dead-letter queue or a recorded failure, not retried indefinitely without evidence."
+  ]
+}

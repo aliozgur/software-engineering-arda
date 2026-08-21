@@ -1,0 +1,48 @@
+{
+  "schemaVersion": 1,
+  "id": "ie1t1-004",
+  "title": "ISR-safe ring buffer with a contract you can test",
+  "term": "year-1/term-1",
+  "module": "constrained-memory",
+  "estimatedHours": 8,
+  "objective": "Implement a single-producer, single-consumer ring buffer of compile-time power-of-two capacity, with a written overflow policy, wrap-around tests, and a simulated ISR that is the only caller of push.",
+  "whyThisMatters": "The first place an edge node loses data is the boundary between an interrupt (or sensor thread) and the main loop. A ring buffer with an untested overflow policy is a silent plant-floor bug.",
+  "competencies": [
+    "c-memory",
+    "operating-systems",
+    "testing-quality"
+  ],
+  "resources": [
+    "gnu-ld"
+  ],
+  "instructionsFile": "instructions.md",
+  "aiPolicy": {
+    "mode": "guided",
+    "allowedCapabilities": ["explain", "hint", "quiz"],
+    "solutionGenerationAllowed": false,
+    "disclosureRequired": true
+  },
+  "evidence": [
+    "Ring-buffer C sources with no malloc/calloc/realloc/free in that translation unit",
+    "POLICY.md naming drop-newest or drop-oldest and the exact full/empty conditions",
+    "A captured test run of wrap-around: write N+3 items into capacity N under the documented policy, then read remaining items and show the expected sequence",
+    "A captured concurrency-style test where push is called only from the simulated ISR context and pop only from main",
+    "Git history showing tests added before or with the overflow policy, not as a single final commit",
+    "Reflection notes answering the task questions"
+  ],
+  "acceptanceCriteria": [
+    "Capacity is a compile-time power of two; a static assert or a test that fails the build rejects a non-power-of-two capacity.",
+    "After filling to capacity, the documented overflow policy is observed: POLICY.md names drop-newest or drop-oldest, and a captured test reports the count of dropped or overwritten items.",
+    "A wrap-around test writes N+3 items into a buffer of capacity N, then reads the remaining items; the captured sequence matches the policy in POLICY.md.",
+    "The ISR simulation calls push only from the simulated interrupt context and pop only from main; the test source or a comment block states that contract, and the captured run completes without a data race sanitizer report (or documents that TSan/ASan was run).",
+    "A recursive grep of the ring-buffer translation unit finds no call to malloc, calloc, realloc or free."
+  ],
+  "statusModel": [
+    "not_started",
+    "in_progress",
+    "submitted",
+    "revision_requested",
+    "resubmitted",
+    "approved"
+  ]
+}

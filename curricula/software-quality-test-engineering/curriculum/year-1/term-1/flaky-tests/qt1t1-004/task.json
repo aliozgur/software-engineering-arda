@@ -1,0 +1,47 @@
+{
+  "schemaVersion": 1,
+  "id": "qt1t1-004",
+  "title": "Diagnose and Remediate a Flaky Test Suite",
+  "term": "year-1/term-1",
+  "module": "flaky-tests",
+  "estimatedHours": 16,
+  "objective": "Find the root cause of a genuinely flaky test and fix the underlying nondeterminism, rather than papering over it with a retry.",
+  "whyThisMatters": "A team that routinely reruns failing CI jobs stops trusting red pipelines, which erases the value of automated testing entirely. A flaky test is a reliability defect, not a nuisance to route around.",
+  "competencies": [
+    "testing-quality",
+    "ci-cd",
+    "observability"
+  ],
+  "resources": [
+    "github-actions",
+    "gitlab-ci"
+  ],
+  "instructionsFile": "instructions.md",
+  "aiPolicy": {
+    "mode": "guided",
+    "allowedCapabilities": ["explain", "hint", "quiz"],
+    "solutionGenerationAllowed": false,
+    "disclosureRequired": true
+  },
+  "evidence": [
+    "CI run history or repeated local run output showing the failure rate before the fix",
+    "A commit isolating and fixing the root cause, with a commit message naming the actual mechanism",
+    "CI run history or repeated run output after the fix showing zero failures across a comparable number of runs",
+    "The CI configuration diff related to this fix",
+    "A reflection note"
+  ],
+  "acceptanceCriteria": [
+    "The failure is reproduced at a measured, nonzero rate before the fix, with the run count stated.",
+    "The fixing commit names the specific nondeterminism mechanism, not just 'fixed flaky test.'",
+    "The same repeated-run check shows zero failures after the fix, at a comparable or higher run count.",
+    "A CI configuration change related to catching or handling this class of failure is committed."
+  ],
+  "statusModel": [
+    "not_started",
+    "in_progress",
+    "submitted",
+    "revision_requested",
+    "resubmitted",
+    "approved"
+  ]
+}

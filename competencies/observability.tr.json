@@ -1,30 +1,30 @@
 {
   "title": "gözlemlenebilirlik",
-  "description": "Yapılandırılmış günlükler, ölçümler, izler, SLO düşüncesi ve üretim teşhisi.",
+  "description": "Bir servisi, üretim sorularının günlükler, ölçümler ve izlerden yanıtlanacağı şekilde donatabilir — sinyaller çeliştiğinde hangisine güvenileceğini seçebilir.",
   "levels": [
     {
       "name": "Temel",
-      "description": "Temel kavramları açıklayabilir ve rehberli çalışmaları tamamlayabilir.",
+      "description": "Yazılı rehberlik altında correlation id içeren yapılandırılmış günlükler üretebilir, adı konmuş az sayıda ölçüm yayınlayabilir ve belirtilen bir işletim sorusunu hangi alanın veya serinin yanıtlayacağını gösterebilir.",
       "level": 1
     },
     {
       "name": "Çırak",
-      "description": "Kapsamı belirlenmiş görevleri sınırlı yönlendirmeyle tamamlayabilir ve kanıt üretebilir.",
+      "description": "Tek bir istek yolunu günlükler, RED ölçümleri ve süreçler arası bir iz ile donatabilir; sağlıklı bir kaydı bilinçli olarak bozulmuş bir kayıttan ayıran sorgular yazabilir; gönderilen örnekten sırları çıkarabilir.",
       "level": 2
     },
     {
       "name": "Uygulayıcı",
-      "description": "Kayda değer bir çalışmayı bağımsız olarak tasarlayabilir, uygulayabilir, test edebilir ve açıklayabilir.",
+      "description": "Mevcut telemetriden bağımsız olarak SLI'lar ve bir SLO tanımlayabilir, bir yanmadan önce ve sonra kalan hata bütçesini hesaplayabilir; bütçe yanınca sayfalayan, sağlıklı trafikte sessiz kalan bir alarm yazabilir.",
       "level": 3
     },
     {
       "name": "Kalfa",
-      "description": "Belirsizlikle başa çıkabilir, hataları teşhis edebilir ve ödünleşimleri gerekçelendirebilir.",
+      "description": "Tek bir sinyal türünün yanıltacağı bir arızayı teşhis edebilir; günlük, ölçüm ve izleri birlikte gösterebilir; başka bir nöbetçinin uygulama kaynağını açmadan izleyebileceği bir runbook üretebilir.",
       "level": 4
     },
     {
       "name": "Ustalık Kanıtı",
-      "description": "Alışılmadık durumlarda öğretebilir, değerlendirme yapabilir ve sağlam kararlar verebilir.",
+      "description": "Başka bir çırağın enstrümantasyonunu veya SLO'sunu değerlendirebilir; zahmet veya gösteriş olan bir ölçümü veya alarmı adlandırabilir; tanıdık olmayan bir serviste bir ize mi yoksa bir günlük satırına mı güvenileceğini öğretebilir.",
       "level": 5
     }
   ]

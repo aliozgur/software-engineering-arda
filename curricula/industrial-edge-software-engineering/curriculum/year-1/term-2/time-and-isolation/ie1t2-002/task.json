@@ -1,0 +1,46 @@
+{
+  "schemaVersion": 1,
+  "id": "ie1t2-002",
+  "title": "Isolation on a real OS, then the MCU contrast",
+  "term": "year-1/term-2",
+  "module": "time-and-isolation",
+  "estimatedHours": 8,
+  "objective": "Boot xv6 under QEMU from the official MIT 6.1810 materials, show a user process and one syscall or trap, and write a four-row UNIX-versus-MCU contrast a mentor can check.",
+  "whyThisMatters": "An edge node often has no process boundary. If you cannot name what xv6 buys with virtual memory and syscalls, you will over-trust firmware that shares one address space with every driver.",
+  "competencies": [
+    "operating-systems",
+    "computer-architecture"
+  ],
+  "resources": [
+    "mit-61810",
+    "qemu-docs"
+  ],
+  "instructionsFile": "instructions.md",
+  "aiPolicy": {
+    "mode": "guided",
+    "allowedCapabilities": ["explain", "hint", "quiz"],
+    "solutionGenerationAllowed": false,
+    "disclosureRequired": true
+  },
+  "evidence": [
+    "A captured xv6-under-QEMU session (or official 6.1810 lab output) showing a user process and a syscall or trap",
+    "A source citation (file and function name) for the trap or syscall path you exercised",
+    "MCU-CONTRAST.md with four named rows — isolation unit, memory protection, privileged transition, failure mode — each with a UNIX/xv6 column and an MCU/RTOS column",
+    "A paragraph in MCU-CONTRAST.md stating one security property xv6 gets from virtual memory that a Cortex-M0 without an MPU does not",
+    "Reflection notes answering the task questions"
+  ],
+  "acceptanceCriteria": [
+    "The captured session log shows xv6 (or the official 6.1810 user environment) running under QEMU and includes a user-level command or program plus evidence of a syscall or trap (kernel print, strace-equivalent, or a breakpoint note with the trap function name).",
+    "MCU-CONTRAST.md has four rows titled isolation unit, memory protection, privileged transition, and failure mode; each row has a UNIX/xv6 mechanism and a corresponding MCU or RTOS mechanism.",
+    "MCU-CONTRAST.md contains a paragraph that names one security property provided by xv6 virtual memory and states that a Cortex-M0-class core without an MPU does not have that property.",
+    "The source citation names a file and function from the 6.1810/xv6 tree (for example trampoline/usertrap or syscall), not a blog paraphrase."
+  ],
+  "statusModel": [
+    "not_started",
+    "in_progress",
+    "submitted",
+    "revision_requested",
+    "resubmitted",
+    "approved"
+  ]
+}

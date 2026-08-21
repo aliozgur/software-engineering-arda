@@ -1,0 +1,51 @@
+{
+  "schemaVersion": 1,
+  "id": "ef1t2-007",
+  "title": "Ship a Scoped Change End to End",
+  "term": "term-2",
+  "module": "end-to-end",
+  "estimatedHours": 9,
+  "objective": "Take a written request, plan it, implement it in existing Python behind tests, and open a pull request a reviewer can act on without extra context.",
+  "whyThisMatters": "This is the weekly loop of a junior engineer: a ticket, a plan, a small diff, tests, and a description a reviewer can use. Doing it once slowly, with the plan committed before the code, is the term's closing demonstration.",
+  "competencies": [
+    "software-design",
+    "testing-quality",
+    "professional-practice"
+  ],
+  "resources": [
+    "pro-git",
+    "python-docs",
+    "harvard-cs50p"
+  ],
+  "instructionsFile": "instructions.md",
+  "aiPolicy": {
+    "mode": "guided",
+    "allowedCapabilities": ["explain", "hint", "quiz"],
+    "solutionGenerationAllowed": false,
+    "disclosureRequired": true
+  },
+  "evidence": [
+    "The incoming request text, committed as its own file or quoted in the plan",
+    "A plan commit that precedes every implementation commit and includes files, risks, tests, an hour estimate, and out of scope",
+    "git log showing incremental implementation commits, not a single final commit",
+    "Test-command output for the documented verification command, showing the new behavior covered and passing",
+    "A pull request link plus the raw description text (problem, change, verification command and its result, out of scope)",
+    "An estimate-versus-actual note with hours and one thing you would split or estimate differently next time",
+    "AI disclosure entry if AI helped plan, implement, or write the pull request"
+  ],
+  "acceptanceCriteria": [
+    "A plan commit exists before any implementation commit and names files to touch, risks, tests to add or run, an integer hour estimate, and out of scope.",
+    "The pull request description includes the problem, the change, at least one concrete verification command with its recorded result, and what was left out of scope.",
+    "Automated tests covering the new behavior pass via a single documented command whose output is in the evidence.",
+    "The production-code diff is at most 200 lines, or the estimate note states why a larger change could not be split and names the next split.",
+    "The estimate-versus-actual note records planned hours, actual hours, and one named thing that would be estimated or scoped differently next time."
+  ],
+  "statusModel": [
+    "not_started",
+    "in_progress",
+    "submitted",
+    "revision_requested",
+    "resubmitted",
+    "approved"
+  ]
+}

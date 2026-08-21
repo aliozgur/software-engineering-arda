@@ -1,0 +1,48 @@
+{
+  "schemaVersion": 1,
+  "id": "de1t3-001",
+  "title": "Backfill a Historical Window Without Rewriting the Present",
+  "term": "year-1/term-3",
+  "module": "backfills",
+  "estimatedHours": 10,
+  "objective": "Reprocess a closed date window through the same transform as the incremental job, leave the current partition unchanged, and show a second backfill of that window is a no-op on row count.",
+  "whyThisMatters": "A backfill that scans 'all history' while today's job is running is how you overwrite the present with a restatement you cannot explain. Bounded windows, shared transform code, and an unchanged current partition are the difference between reprocessing and roulette.",
+  "competencies": [
+    "data-pipelines",
+    "database-systems",
+    "observability"
+  ],
+  "resources": [
+    "airflow-docs",
+    "postgres-docs"
+  ],
+  "instructionsFile": "instructions.md",
+  "aiPolicy": {
+    "mode": "guided",
+    "allowedCapabilities": ["explain", "hint", "quiz"],
+    "solutionGenerationAllowed": false,
+    "disclosureRequired": true
+  },
+  "evidence": [
+    "The backfill command or DAG parameters that take an explicit start and end date",
+    "Before and after queries of the current (non-backfill) partition's row count and max(updated_at)",
+    "Before and after row counts for the backfilled window, including a second run that changes the count by zero",
+    "The shared transform function or module imported by both incremental and backfill paths",
+    "A run_id or Airflow run identifier for the backfill, captured in logs",
+    "Reflection notes answering the task questions"
+  ],
+  "acceptanceCriteria": [
+    "The backfill command or DAG takes an explicit start and end date and does not scan all history, shown in code or DAG parameters.",
+    "Row count and max(updated_at) of the current non-backfill partition are identical before and after the backfill, shown by captured queries.",
+    "Re-running the same backfill window changes that window's row count by zero.",
+    "Backfill and incremental invoke the same transform function or module, parameterized by window, shown by import or task callable."
+  ],
+  "statusModel": [
+    "not_started",
+    "in_progress",
+    "submitted",
+    "revision_requested",
+    "resubmitted",
+    "approved"
+  ]
+}

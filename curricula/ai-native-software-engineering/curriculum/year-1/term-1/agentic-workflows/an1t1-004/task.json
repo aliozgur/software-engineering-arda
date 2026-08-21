@@ -1,0 +1,50 @@
+{
+  "schemaVersion": 1,
+  "id": "an1t1-004",
+  "title": "Scoping a Bounded Agentic Coding Session",
+  "term": "year-1/term-1",
+  "module": "agentic-workflows",
+  "estimatedHours": 6,
+  "objective": "Run one narrowly-scoped agentic session, in which an AI assistant reads files, plans, and edits with reduced turn-by-turn supervision, on a small multi-step task, with a verification check defined before the session starts.",
+  "whyThisMatters": "An agentic session that 'looks done' without a check you can run leaves you as the only verification loop. Scoping the session and fixing the check beforehand is what makes the result safely reviewable afterward.",
+  "competencies": [
+    "ai-assisted-engineering",
+    "agentic-development-workflow"
+  ],
+  "resources": [
+    "claude-code-best-practices",
+    "anthropic-prompt-guide"
+  ],
+  "instructionsFile": "instructions.md",
+  "aiPolicy": {
+    "mode": "guided",
+    "allowedCapabilities": [
+      "explain",
+      "hint",
+      "quiz"
+    ],
+    "solutionGenerationAllowed": true,
+    "disclosureRequired": true
+  },
+  "evidence": [
+    "The exact scoping prompt given to the assistant, saved before the session started",
+    "A record of the verification command or test defined and committed before the session ran",
+    "A summary log of what the assistant read, planned, and changed during the session",
+    "The resulting diff, reviewed file by file against the original scope, with a short decision note on any out-of-scope file",
+    "AI disclosure entry naming the tool/model used, purpose, and what was independently verified"
+  ],
+  "acceptanceCriteria": [
+    "The verification command or test is committed before the agentic session's changes are committed.",
+    "The saved scoping prompt names the files or area in scope and at least one explicit out-of-scope boundary.",
+    "The diff touches only files inside the stated scope, or any file outside scope is explicitly flagged and justified in the review note.",
+    "The verification check is shown passing against the final change."
+  ],
+  "statusModel": [
+    "not_started",
+    "in_progress",
+    "submitted",
+    "revision_requested",
+    "resubmitted",
+    "approved"
+  ]
+}

@@ -1,0 +1,48 @@
+{
+  "schemaVersion": 1,
+  "id": "de1t1-002",
+  "title": "Load Once, Then Prove You Can Load Again",
+  "term": "year-1/term-1",
+  "module": "batch-etl",
+  "estimatedHours": 8,
+  "objective": "Write a repeatable batch extract-load job into the staging and warehouse schemas from the previous task, and prove a second run against an unchanged snapshot does not grow the warehouse key set.",
+  "whyThisMatters": "A load that works once is a script. A load you can run again without doubling rows is a pipeline. Every later incremental, backfill and recovery task assumes this rerun property already exists.",
+  "competencies": [
+    "python",
+    "data-pipelines",
+    "database-systems"
+  ],
+  "resources": [
+    "python-docs",
+    "postgres-docs",
+    "pandas-docs"
+  ],
+  "instructionsFile": "instructions.md",
+  "aiPolicy": {
+    "mode": "guided",
+    "allowedCapabilities": ["explain", "hint", "quiz"],
+    "solutionGenerationAllowed": false,
+    "disclosureRequired": true
+  },
+  "evidence": [
+    "The job command and the Python or SQL entrypoint it runs",
+    "Captured warehouse row counts and primary-key queries after run 1 and run 2",
+    "A short note naming the staging replace-or-truncate strategy",
+    "Git history with at least three commits that are not a single final dump",
+    "Reflection notes answering the task questions"
+  ],
+  "acceptanceCriteria": [
+    "The job is invoked by a documented command that takes no hidden manual GUI steps.",
+    "After two full runs on an unchanged source snapshot, the warehouse row count is identical and the primary-key set is identical, shown as two captured count or key queries.",
+    "A note names whether staging is truncated, replaced, or swapped before each full extract.",
+    "Git history contains at least three commits that each change the job or schema, not one commit of the finished tree."
+  ],
+  "statusModel": [
+    "not_started",
+    "in_progress",
+    "submitted",
+    "revision_requested",
+    "resubmitted",
+    "approved"
+  ]
+}

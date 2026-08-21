@@ -1,0 +1,49 @@
+{
+  "schemaVersion": 1,
+  "id": "as1t1-001",
+  "title": "Threat-Model a System You Own",
+  "term": "year-1/term-1",
+  "module": "threat-modelling",
+  "estimatedHours": 10,
+  "objective": "Produce a living threat model for an HTTP application you own or operate locally: data-flow diagram, data classification, abuse cases, and a residual-risk register mapped to the OWASP Top 10.",
+  "whyThisMatters": "A generic OWASP checklist does not tell a team which of this system's trust-boundary crossings actually matter. Later tasks in this path fix and verify against the register you write here, so the model has to be specific enough to steer work.",
+  "competencies": [
+    "security"
+  ],
+  "resources": [
+    "owasp-top10"
+  ],
+  "instructionsFile": "instructions.md",
+  "aiPolicy": {
+    "mode": "guided",
+    "allowedCapabilities": [
+      "explain",
+      "hint",
+      "quiz"
+    ],
+    "solutionGenerationAllowed": false,
+    "disclosureRequired": true
+  },
+  "evidence": [
+    "Committed threat-model document (for example docs/threat-model.md) containing the DFD as Mermaid or a committed image",
+    "Data-classification table in that document covering every data store and every flow that crosses a trust boundary",
+    "Residual-risk register in that document with status on every listed threat",
+    "Git history showing the model written in more than one commit (DFD, then classification, then threats, then residual risk)",
+    "Reflection note answering the task questions"
+  ],
+  "acceptanceCriteria": [
+    "The DFD shows at least 3 processes, 2 data stores, and 2 numbered trust boundaries.",
+    "Every data store and every data flow that crosses a trust boundary is classified as public, internal, confidential, or secret.",
+    "The register lists at least 8 threats; each names the component, the trust-boundary crossing, an OWASP Top 10 category or the label outside Top 10, and a status of open, mitigated, or accepted.",
+    "At least 2 threats are written as abuse cases in the form: As an attacker who …, I can …, which harms ….",
+    "No secret values, passwords, tokens, or connection strings appear in the committed model or elsewhere in the repository."
+  ],
+  "statusModel": [
+    "not_started",
+    "in_progress",
+    "submitted",
+    "revision_requested",
+    "resubmitted",
+    "approved"
+  ]
+}

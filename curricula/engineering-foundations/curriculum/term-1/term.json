@@ -1,0 +1,15 @@
+{
+  "schemaVersion": 1,
+  "id": "term-1",
+  "title": "Term 1 — Getting Oriented",
+  "estimatedHours": 36,
+  "tasks": [
+    "ef1t1-001",
+    "ef1t1-002",
+    "ef1t1-003",
+    "ef1t1-004",
+    "ef1t1-005",
+    "ef1t1-006",
+    "ef1t1-007"
+  ]
+}

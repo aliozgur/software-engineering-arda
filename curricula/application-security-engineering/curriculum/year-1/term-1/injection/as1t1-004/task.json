@@ -1,0 +1,49 @@
+{
+  "schemaVersion": 1,
+  "id": "as1t1-004",
+  "title": "Injection: Find, Fix, Prove",
+  "term": "year-1/term-1",
+  "module": "injection",
+  "estimatedHours": 10,
+  "objective": "Find at least two injection sinks in the application you own or operate locally, remove string concatenation from those sinks, and prove one fix with a test that fails when concatenation is restored.",
+  "whyThisMatters": "Knowing that parameterized queries exist is not the same as showing that a specific sink in this app no longer concatenates untrusted input. The test that fails when the old concat returns is the evidence a mentor can re-run.",
+  "competencies": [
+    "security",
+    "testing-quality"
+  ],
+  "resources": [
+    "owasp-top10"
+  ],
+  "instructionsFile": "instructions.md",
+  "aiPolicy": {
+    "mode": "guided",
+    "allowedCapabilities": [
+      "explain",
+      "hint",
+      "quiz"
+    ],
+    "solutionGenerationAllowed": false,
+    "disclosureRequired": true
+  },
+  "evidence": [
+    "A findings note listing at least 2 injection sinks with file and line or query-builder call, the injection class, and the OWASP category",
+    "Git history showing each sink fixed in its own commit",
+    "A committed test that fails when concatenation is restored on at least one sink and passes with the fix in place, with command and output recorded",
+    "The fixed query or command construction in source, with no user input interpolated into the statement string",
+    "Reflection note answering the task questions"
+  ],
+  "acceptanceCriteria": [
+    "At least 2 distinct injection sinks are identified with file and line or query-builder call in the owned or local app.",
+    "Each identified sink is changed so user input is not concatenated into a query string, command string, or template expression.",
+    "For at least 1 sink, a committed test fails when the concatenation is restored and passes with the fix in place; command and both outputs are recorded.",
+    "The notes map each sink to an OWASP Top 10 category and name the control used (parameterized query, allow-list, or equivalent)."
+  ],
+  "statusModel": [
+    "not_started",
+    "in_progress",
+    "submitted",
+    "revision_requested",
+    "resubmitted",
+    "approved"
+  ]
+}

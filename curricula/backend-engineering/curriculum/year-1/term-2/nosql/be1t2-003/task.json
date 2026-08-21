@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "id": "be1t2-003",
+  "title": "A Document Store for Data That Does Not Fit Tables",
+  "term": "year-1/term-2",
+  "module": "nosql",
+  "estimatedHours": 14,
+  "objective": "Add MongoDB to the same service for a workload that is a poor fit for the PostgreSQL schema, and write down exactly what still belongs in Postgres and why.",
+  "whyThisMatters": "A second database that just copies the relational model is extra moving parts with no gain. The capstone will integrate both stores; this task is where you learn which facts belong in which one.",
+  "competencies": [
+    "nosql",
+    "database-systems"
+  ],
+  "resources": [
+    "mongodb-docs",
+    "postgres-docs"
+  ],
+  "instructionsFile": "instructions.md",
+  "aiPolicy": {
+    "mode": "guided",
+    "allowedCapabilities": ["explain", "hint", "quiz"],
+    "solutionGenerationAllowed": false,
+    "disclosureRequired": true
+  },
+  "evidence": [
+    "The updated docker-compose file that starts MongoDB next to the existing PostgreSQL service",
+    "Sample documents committed as a file, plus the Python read/write path that produces them",
+    "Output of a query that filters on a nested field in the collection",
+    "A Markdown note naming one invariant Postgres still enforces that MongoDB does not, written before you finished the write path",
+    "Git history showing compose, document shape, and the service path in separate commits"
+  ],
+  "acceptanceCriteria": [
+    "docker compose up starts MongoDB alongside the existing PostgreSQL container from the committed compose file.",
+    "The running service writes at least one document and reads it back through an endpoint or a committed script.",
+    "A committed query against the collection filters on a nested field and the result is pasted in the evidence note.",
+    "A Markdown note in the repository names one invariant PostgreSQL still enforces that the document store does not."
+  ]
+}

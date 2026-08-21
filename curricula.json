@@ -8,6 +8,62 @@
     {
       "path": "curricula/data-analytics-ai",
       "id": "apprenti-dev-data-analytics-ai-2026"
+    },
+    {
+      "path": "curricula/ai-native-software-engineering",
+      "id": "apprenti-dev-ai-native-software-engineering-2026"
+    },
+    {
+      "path": "curricula/backend-engineering",
+      "id": "apprenti-dev-backend-engineering-2026"
+    },
+    {
+      "path": "curricula/software-architecture-system-design",
+      "id": "apprenti-dev-software-architecture-system-design-2026"
+    },
+    {
+      "path": "curricula/engineering-foundations",
+      "id": "apprenti-dev-engineering-foundations-2026"
+    },
+    {
+      "path": "curricula/platform-devops-engineering",
+      "id": "apprenti-dev-platform-devops-engineering-2026"
+    },
+    {
+      "path": "curricula/distributed-systems-engineering",
+      "id": "apprenti-dev-distributed-systems-engineering-2026"
+    },
+    {
+      "path": "curricula/data-engineering",
+      "id": "apprenti-dev-data-engineering-2026"
+    },
+    {
+      "path": "curricula/application-security-engineering",
+      "id": "apprenti-dev-application-security-engineering-2026"
+    },
+    {
+      "path": "curricula/software-quality-test-engineering",
+      "id": "apprenti-dev-software-quality-test-engineering-2026"
+    },
+    {
+      "path": "curricula/engineering-leadership",
+      "id": "apprenti-dev-engineering-leadership-2026"
+    },
+    {
+      "path": "curricula/performance-engineering",
+      "id": "apprenti-dev-performance-engineering-2026"
+    },
+    {
+      "path": "curricula/observability-production-engineering",
+      "id": "apprenti-dev-observability-production-engineering-2026"
+    },
+    {
+      "path": "curricula/open-source-engineering",
+      "id": "apprenti-dev-open-source-engineering-2026"
+    },
+    {
+      "path": "curricula/industrial-edge-software-engineering",
+      "id": "apprenti-dev-industrial-edge-software-engineering-2026"
     }
   ]
 }

@@ -1,0 +1,44 @@
+{
+  "schemaVersion": 1,
+  "id": "ef1t1-002",
+  "title": "Open Your First Feature Branch and Pull Request",
+  "term": "term-1",
+  "module": "git",
+  "estimatedHours": 5,
+  "objective": "Create a feature branch, commit a small real change with clear messages, and open a pull request with a description a reviewer could act on.",
+  "whyThisMatters": "Almost every professional change to a shared codebase goes through the same loop: branch, commit, push, open a pull request. Doing it once slowly and deliberately, before doing it under real deadline pressure, is the point of this task.",
+  "competencies": [
+    "git"
+  ],
+  "resources": [
+    "pro-git",
+    "mit-missing-semester"
+  ],
+  "instructionsFile": "instructions.md",
+  "aiPolicy": {
+    "mode": "guided",
+    "allowedCapabilities": ["explain", "hint", "quiz"],
+    "solutionGenerationAllowed": false,
+    "disclosureRequired": true
+  },
+  "evidence": [
+    "A link to the actual pull request",
+    "The branch's commit log (via git log output or the PR's commits tab)",
+    "The PR description text",
+    "AI disclosure entry if AI helped write commit messages or the PR description"
+  ],
+  "acceptanceCriteria": [
+    "The branch name follows a consistent, documented convention (for example feature/<short-description>) that you can explain.",
+    "The branch contains at least two commits, each with a message describing what changed and why, not just 'wip' or 'fix'.",
+    "A pull request exists comparing the branch to the base branch, with a description stating what changed, why, and how to verify it.",
+    "The PR is linked in the submission and remains viewable by the mentor."
+  ],
+  "statusModel": [
+    "not_started",
+    "in_progress",
+    "submitted",
+    "revision_requested",
+    "resubmitted",
+    "approved"
+  ]
+}

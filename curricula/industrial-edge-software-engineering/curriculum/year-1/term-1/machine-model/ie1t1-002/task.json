@@ -1,0 +1,44 @@
+{
+  "schemaVersion": 1,
+  "id": "ie1t1-002",
+  "title": "Build the machine, then map it to the edge",
+  "term": "year-1/term-1",
+  "module": "machine-model",
+  "estimatedHours": 8,
+  "objective": "Complete the official Nand2Tetris ALU and Memory projects, then write a five-row map from Hack machine constructs to a named MCU or QEMU target.",
+  "whyThisMatters": "Registers, addressable memory, and a clocked instruction cycle are not abstractions you can skip on an edge node. If you cannot point at the corresponding parts of a real MCU, later MMIO and isolation work will be folklore.",
+  "competencies": [
+    "computer-architecture"
+  ],
+  "resources": [
+    "nand2tetris"
+  ],
+  "instructionsFile": "instructions.md",
+  "aiPolicy": {
+    "mode": "guided",
+    "allowedCapabilities": ["explain", "hint", "quiz"],
+    "solutionGenerationAllowed": false,
+    "disclosureRequired": true
+  },
+  "evidence": [
+    "Captured official Nand2Tetris test-script output showing Project 2 (ALU) and Project 3 (Memory) passing",
+    "The HDL (or official project files) committed with incremental history, not one final dump",
+    "EDGE-MAP.md with five named Hack constructs each paired to a named MCU or QEMU construct and one sentence of mechanism",
+    "A written fetch-decode-execute note listing what is read and written in each step",
+    "Reflection notes answering the task questions"
+  ],
+  "acceptanceCriteria": [
+    "The official Nand2Tetris test scripts for Project 2 (ALU) and Project 3 (Memory) are shown passing in a captured log; the log names the test files.",
+    "EDGE-MAP.md contains exactly five rows: register, RAM, ROM, instruction word, and clock — each row names one Hack construct and one corresponding construct on a named MCU family (for example Cortex-M0) or QEMU machine, plus one sentence of mechanism.",
+    "The fetch-decode-execute note lists those three steps as separate paragraphs and, for each step, names at least one location that is read and at least one location that is written.",
+    "Git history contains at least two commits that change HDL or project files before the final passing run."
+  ],
+  "statusModel": [
+    "not_started",
+    "in_progress",
+    "submitted",
+    "revision_requested",
+    "resubmitted",
+    "approved"
+  ]
+}

@@ -1,0 +1,49 @@
+{
+  "schemaVersion": 1,
+  "id": "an1t1-005",
+  "title": "Debugging an AI-Introduced Bug",
+  "term": "year-1/term-1",
+  "module": "debugging",
+  "estimatedHours": 8,
+  "objective": "Debug a bug that originated in earlier AI-assisted code, methodically: reproduce it, form a hypothesis, fix it, and prove the fix with a regression test, without asking AI to generate the fix directly.",
+  "whyThisMatters": "AI-introduced bugs are often plausible-looking and survive a shallow read. The debugging discipline that catches them is a distinct, verifiable skill from writing the code in the first place.",
+  "competencies": [
+    "ai-assisted-engineering",
+    "testing-quality"
+  ],
+  "resources": [
+    "mit-missing-semester"
+  ],
+  "instructionsFile": "instructions.md",
+  "aiPolicy": {
+    "mode": "guided",
+    "allowedCapabilities": [
+      "explain",
+      "hint",
+      "quiz"
+    ],
+    "solutionGenerationAllowed": false,
+    "disclosureRequired": true
+  },
+  "evidence": [
+    "A minimal, committed reproduction of the bug (a failing test or reproducible script)",
+    "A written note stating the root-cause hypothesis before the fix was applied",
+    "A commit containing the fix, separate from the reproduction commit",
+    "A regression test, run and shown passing, that fails on the pre-fix code and passes on the post-fix code",
+    "AI disclosure entry distinguishing any allowed AI use (explain/hint) from the independently performed diagnosis and fix"
+  ],
+  "acceptanceCriteria": [
+    "A reproduction exists as a committed failing test or script, runnable independently.",
+    "The root-cause hypothesis note predates the fix commit.",
+    "The regression test fails when checked out against the pre-fix commit and passes against the post-fix commit.",
+    "The note distinguishes what AI assistance was used for, if any, from the independently performed diagnosis and fix."
+  ],
+  "statusModel": [
+    "not_started",
+    "in_progress",
+    "submitted",
+    "revision_requested",
+    "resubmitted",
+    "approved"
+  ]
+}

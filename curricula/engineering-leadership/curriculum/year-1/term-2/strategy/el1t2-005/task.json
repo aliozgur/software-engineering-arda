@@ -1,0 +1,46 @@
+{
+  "schemaVersion": 1,
+  "id": "el1t2-005",
+  "title": "A 90-Day Technical Strategy You Can Be Held To",
+  "term": "year-1/term-2",
+  "module": "strategy",
+  "estimatedHours": 10,
+  "objective": "Write a 90-day Checkout technical strategy with three bets, one explicit stop, named owners, and a constraint-change revision that cuts or descopes a bet.",
+  "whyThisMatters": "A lead who can run 1:1s and write one ADR still needs a time-bounded strategy other people can execute. Adjectives are not a strategy. Bets with inspectable 90-day outcomes, a stop, and a pre-written cut under a changed constraint are.",
+  "competencies": [
+    "technical-leadership",
+    "professional-practice"
+  ],
+  "resources": [
+    "staffeng",
+    "twelve-factor"
+  ],
+  "instructionsFile": "instructions.md",
+  "aiPolicy": {
+    "mode": "guided",
+    "allowedCapabilities": ["explain", "hint", "quiz"],
+    "solutionGenerationAllowed": false,
+    "disclosureRequired": true
+  },
+  "evidence": [
+    "A strategy memo that names exactly three bets and one stop, each bet with a 90-day inspectable outcome and a named owner from the Harborline roster",
+    "At least one bet that cites a Twelve-Factor factor or a decision from el1t2-001 by name",
+    "A constraint-change note of at most 300 words that cuts or descopes a named bet after the headcount or error-budget constraint",
+    "An EM one-pager of at most 400 words that still contains the three bets and the stop"
+  ],
+  "acceptanceCriteria": [
+    "The memo names exactly three bets and one stop; each bet has a 90-day inspectable outcome and a named owner on the Harborline roster.",
+    "The stop names work the team is currently doing, not a hypothetical future project.",
+    "At least one bet cites a Twelve-Factor factor by number or name, or cites the el1t2-001 decision by title or letter.",
+    "The constraint-change note is at most 300 words and names which bet is cut or descoped and why.",
+    "The EM one-pager is at most 400 words and includes the three bets and the stop."
+  ],
+  "statusModel": [
+    "not_started",
+    "in_progress",
+    "submitted",
+    "revision_requested",
+    "resubmitted",
+    "approved"
+  ]
+}

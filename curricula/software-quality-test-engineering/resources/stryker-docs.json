@@ -1,0 +1,10 @@
+{
+  "schemaVersion": 1,
+  "id": "stryker-docs",
+  "title": "Stryker Mutator Documentation",
+  "url": "https://stryker-mutator.io/docs/",
+  "type": "official_docs",
+  "provider": "Stryker Mutator",
+  "tier": "reference",
+  "topics": ["mutation-testing", "testing-quality"]
+}

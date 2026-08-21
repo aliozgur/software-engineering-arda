@@ -1,0 +1,46 @@
+{
+  "schemaVersion": 1,
+  "id": "pe1t1-004",
+  "title": "Cache Only With Evidence",
+  "term": "year-1/term-1",
+  "module": "caching",
+  "estimatedHours": 10,
+  "objective": "Measure miss cost first, then add a cache whose hit rate and p95 delta are produced by the harness, and document the invalidation rule plus one observed stale-or-correctness case.",
+  "whyThisMatters": "A cache that does not move p95 is extra failure mode for no gain. A cache that moves p95 but serves stale answers after a write is a correctness bug dressed as a win. This task requires both the latency evidence and the invalidation rule before the cache is allowed to stay.",
+  "competencies": [
+    "performance",
+    "database-systems"
+  ],
+  "resources": [
+    "postgres-docs",
+    "mit-6006"
+  ],
+  "instructionsFile": "instructions.md",
+  "aiPolicy": {
+    "mode": "guided",
+    "allowedCapabilities": ["explain", "hint", "quiz"],
+    "solutionGenerationAllowed": false,
+    "disclosureRequired": true
+  },
+  "evidence": [
+    "Baseline harness output without the cache, including p95 from pe1t1-001's command or an equivalent documented command",
+    "Cache instrumentation showing hits and misses as counted events, not an estimated rate",
+    "After-cache harness output for the identical workload, with p95 and the computed delta vs baseline",
+    "A written invalidation or TTL rule and a recorded correctness case (stale read prevented, or a miss-after-write you observed)",
+    "Reflection notes answering the task questions"
+  ],
+  "acceptanceCriteria": [
+    "Baseline p95 without the cache is a number taken from a committed harness run.",
+    "Hit rate is reported as hits / (hits + misses) from counters you increment in the running system, not a guessed percentage.",
+    "After-cache p95 for the identical workload command is reported, and the delta vs baseline is a computed number (milliseconds or percent).",
+    "The invalidation or TTL rule names what write or expiry clears which key, and the correctness case records an observed outcome of that rule."
+  ],
+  "statusModel": [
+    "not_started",
+    "in_progress",
+    "submitted",
+    "revision_requested",
+    "resubmitted",
+    "approved"
+  ]
+}

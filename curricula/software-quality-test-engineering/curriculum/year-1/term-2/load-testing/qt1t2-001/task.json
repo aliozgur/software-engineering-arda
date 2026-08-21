@@ -1,0 +1,44 @@
+{
+  "schemaVersion": 1,
+  "id": "qt1t2-001",
+  "title": "Establish a Load-Testing Baseline and SLO",
+  "term": "year-1/term-2",
+  "module": "load-testing",
+  "estimatedHours": 14,
+  "objective": "Build a repeatable load test against a real API and define a latency/error-rate objective the system either meets or doesn't.",
+  "whyThisMatters": "Performance work without a repeatable baseline is guesswork: you cannot tell a real regression from noise, and you cannot tell an improvement from a fluke.",
+  "competencies": [
+    "performance",
+    "testing-quality"
+  ],
+  "resources": [
+    "k6-docs"
+  ],
+  "instructionsFile": "instructions.md",
+  "aiPolicy": {
+    "mode": "guided",
+    "allowedCapabilities": ["explain", "hint", "quiz"],
+    "solutionGenerationAllowed": false,
+    "disclosureRequired": true
+  },
+  "evidence": [
+    "The load test script, committed to the repository",
+    "Raw output or a report from at least 3 runs",
+    "A short report stating the SLO, the measured latency distribution, and a pass/fail verdict",
+    "A reflection note"
+  ],
+  "acceptanceCriteria": [
+    "The SLO (a latency percentile target and an error-rate target) is stated before results are shown, not fitted to them afterward.",
+    "The load test runs with a single documented command and produces the same workload shape each run.",
+    "Results from at least 3 runs are reported, including run-to-run variance.",
+    "The verdict against the SLO cites p95 or p99 latency, not only the mean."
+  ],
+  "statusModel": [
+    "not_started",
+    "in_progress",
+    "submitted",
+    "revision_requested",
+    "resubmitted",
+    "approved"
+  ]
+}

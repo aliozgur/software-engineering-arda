@@ -1,0 +1,13 @@
+{
+  "schemaVersion": 1,
+  "id": "term-1",
+  "title": "Term 1 — Build and Ship Foundations",
+  "estimatedHours": 58,
+  "tasks": [
+    "pd1t1-001",
+    "pd1t1-002",
+    "pd1t1-003",
+    "pd1t1-004",
+    "pd1t1-005"
+  ]
+}

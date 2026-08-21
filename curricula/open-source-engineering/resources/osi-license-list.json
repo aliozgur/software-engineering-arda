@@ -1,0 +1,13 @@
+{
+  "schemaVersion": 1,
+  "id": "osi-license-list",
+  "title": "The Open Source Initiative — Licenses",
+  "url": "https://opensource.org/licenses",
+  "type": "reference",
+  "provider": "Open Source Initiative",
+  "tier": "primary",
+  "topics": [
+    "licensing",
+    "open-source"
+  ]
+}

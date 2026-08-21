@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "id": "ds1t2-001",
+  "title": "Hash Partitions, a Hotspot, and a Reshard Window",
+  "term": "ds1t2",
+  "module": "partitioning",
+  "estimatedHours": 16,
+  "objective": "Partition the key-value store across at least three shard processes, demonstrate a single-partition hotspot with measured request counts, then reshard and capture a bounded window in which a key is unreadable, double-owned, or both.",
+  "whyThisMatters": "Replication without partitioning still treats the key space as one machine. The SWE curriculum never makes you move a live key between owners and measure the window. Until that window is a number you recorded, 'we sharded it' is a topology drawing, not an operating contract.",
+  "competencies": [
+    "distributed-systems",
+    "database-systems"
+  ],
+  "resources": [
+    "mit-65840",
+    "docker-docs"
+  ],
+  "instructionsFile": "instructions.md",
+  "aiPolicy": {
+    "mode": "guided",
+    "allowedCapabilities": ["explain", "hint", "quiz"],
+    "solutionGenerationAllowed": false,
+    "disclosureRequired": true
+  },
+  "evidence": [
+    "Git history showing a single-shard store, then a static partition map, then a reshard, as separate commits",
+    "A load-script run whose per-shard counters show one shard receiving at least 3x the requests of each other shard under a hotspot key distribution you chose",
+    "A reshard log with start and end timestamps (or step numbers) and at least one key whose GET failed, returned two owners, or returned both the old and new value during the window",
+    "README stating the hash/range function, the number of partitions, and the reshard contract as a falsifiable rule",
+    "Reflection notes answering the task questions"
+  ],
+  "acceptanceCriteria": [
+    "At least three shard processes own disjoint key ranges or hash buckets; a GET is routed by the partition map, not by broadcasting to every shard on the happy path.",
+    "The hotspot run prints per-shard request counts and one shard is at least 3x any other named shard.",
+    "The reshard run records a non-empty window (start and end) during which a named key is unreadable, served by two owners, or served with two different values.",
+    "README states a falsifiable reshard contract (for example: 'during reshard, GET for a migrating key returns 503 until the new owner has the key and the old owner has stopped serving it') rather than 'resharding is available.'"
+  ]
+}

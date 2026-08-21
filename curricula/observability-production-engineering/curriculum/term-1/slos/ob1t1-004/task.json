@@ -1,0 +1,46 @@
+{
+  "schemaVersion": 1,
+  "id": "ob1t1-004",
+  "title": "SLOs and Error Budgets You Can Actually Burn",
+  "term": "term-1",
+  "module": "slos",
+  "estimatedHours": 8,
+  "objective": "Derive two SLIs from existing metrics, publish an SLO with a time window for each, and show remaining error budget shrink after an induced failure.",
+  "whyThisMatters": "An SLO that is never computed is a wish. Error budgets turn reliability into a number you can spend or defend — the difference between 'it felt down' and a decision you can take to a product conversation.",
+  "competencies": [
+    "observability",
+    "performance"
+  ],
+  "resources": [
+    "google-sre-book",
+    "prometheus"
+  ],
+  "instructionsFile": "instructions.md",
+  "aiPolicy": {
+    "mode": "guided",
+    "allowedCapabilities": ["explain", "hint", "quiz"],
+    "solutionGenerationAllowed": false,
+    "disclosureRequired": true
+  },
+  "evidence": [
+    "An SLO document with SLI formulas, targets, windows, and a sourced justification for each target",
+    "The PromQL (or equivalent) used to compute each SLI and the remaining error budget",
+    "Captured SLI and remaining-budget output at a healthy baseline, with numeric remaining budget",
+    "Captured SLI and remaining-budget output after an induced failure, showing a strictly smaller remaining budget",
+    "Reflection notes answering the task questions"
+  ],
+  "acceptanceCriteria": [
+    "Each of the two SLIs is expressed as a named query that returns a ratio or percentage, not a raw count.",
+    "Each SLO names a target percentage and a time window (for example 99.5 percent over 7 days).",
+    "The after-failure remaining error budget is a number strictly less than the baseline remaining budget, shown in captured query output.",
+    "The SLO document names one concrete action that would be blocked or allowed if remaining budget reached zero."
+  ],
+  "statusModel": [
+    "not_started",
+    "in_progress",
+    "submitted",
+    "revision_requested",
+    "resubmitted",
+    "approved"
+  ]
+}

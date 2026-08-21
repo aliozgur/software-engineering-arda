@@ -1,0 +1,47 @@
+{
+  "schemaVersion": 1,
+  "id": "ie1t2-001",
+  "title": "Cooperative scheduler with a deadline-miss log",
+  "term": "year-1/term-2",
+  "module": "time-and-isolation",
+  "estimatedHours": 8,
+  "objective": "Build a tick-based cooperative scheduler for three tasks with periods and recorded compute costs, then produce one captured run with zero misses and one captured run that attributes at least one miss to a named task.",
+  "whyThisMatters": "Determinism on an edge node is not 'the loop is fast enough.' It is a schedule you can break on purpose and a log that names who missed. Later priority-inversion work assumes this scheduler exists.",
+  "competencies": [
+    "operating-systems",
+    "embedded-and-edge-systems",
+    "performance"
+  ],
+  "resources": [
+    "freertos-kernel-book"
+  ],
+  "instructionsFile": "instructions.md",
+  "aiPolicy": {
+    "mode": "guided",
+    "allowedCapabilities": ["explain", "hint", "quiz"],
+    "solutionGenerationAllowed": false,
+    "disclosureRequired": true
+  },
+  "evidence": [
+    "SCHED.md naming the policy (cooperative; fixed order or rate-monotonic) and the tick source",
+    "Scheduler C sources and a driver that registers three tasks with period_ticks and a recorded compute cost",
+    "A captured run of a feasible set showing zero deadline misses over at least 1000 ticks",
+    "A captured run where one task's cost is raised above its period, showing at least one miss attributed to that task id",
+    "Git history showing the feasible run committed before the overload experiment",
+    "Reflection notes answering the task questions"
+  ],
+  "acceptanceCriteria": [
+    "Three tasks are registered with a period in ticks and a recorded compute cost (busy-loop iterations or a hook the driver controls).",
+    "A captured run with a feasible set prints a miss count of 0 over at least 1000 ticks.",
+    "A captured run with one task's cost raised so that cost_ticks >= period_ticks prints at least one deadline miss whose log line names that task's id.",
+    "SCHED.md states in one paragraph that the scheduler is cooperative (a task runs to completion of its slice / function) and names the tick source (host clock, incrementing integer, or a timer fd)."
+  ],
+  "statusModel": [
+    "not_started",
+    "in_progress",
+    "submitted",
+    "revision_requested",
+    "resubmitted",
+    "approved"
+  ]
+}

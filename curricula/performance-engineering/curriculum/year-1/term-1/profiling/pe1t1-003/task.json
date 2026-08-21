@@ -1,0 +1,46 @@
+{
+  "schemaVersion": 1,
+  "id": "pe1t1-003",
+  "title": "Attribute Latency With Traces, Not Averages",
+  "term": "year-1/term-1",
+  "module": "profiling",
+  "estimatedHours": 10,
+  "objective": "Instrument one request path with a parent span and at least three child spans, capture a fast and a slow trace, and explain where wall time went — including any disagreement with the CPU profile from pe1t1-002.",
+  "whyThisMatters": "CPU profiles explain burn. They do not explain waiting. A p95 that is 'slow' because of I/O, locks, or a downstream call will not show up as the hottest CPU frame. Traces are how you attribute wall-clock latency to a span you can name.",
+  "competencies": [
+    "performance",
+    "observability"
+  ],
+  "resources": [
+    "opentelemetry",
+    "prometheus"
+  ],
+  "instructionsFile": "instructions.md",
+  "aiPolicy": {
+    "mode": "guided",
+    "allowedCapabilities": ["explain", "hint", "quiz"],
+    "solutionGenerationAllowed": false,
+    "disclosureRequired": true
+  },
+  "evidence": [
+    "Instrumentation that creates one parent span and at least three named child spans on a single request path",
+    "A fast-request trace export (JSON, OTLP dump, or equivalent) with each span duration in milliseconds",
+    "A slow-request trace export for the same operation, similarly timed",
+    "A comparison note stating the largest child span's share of the slow request as a computed percentage, and whether that span matches the hottest CPU frame from pe1t1-002",
+    "Reflection notes answering the task questions"
+  ],
+  "acceptanceCriteria": [
+    "A captured trace for one request includes a parent span and at least three distinctly named child spans.",
+    "Fast and slow traces for the same operation are both committed, each listing span durations in milliseconds.",
+    "The comparison note computes the largest child span's share of the slow parent duration as a percentage from those milliseconds.",
+    "The note states match or mismatch with the hottest CPU frame from pe1t1-002 (or a re-taken profile in this task) and names the difference if they disagree."
+  ],
+  "statusModel": [
+    "not_started",
+    "in_progress",
+    "submitted",
+    "revision_requested",
+    "resubmitted",
+    "approved"
+  ]
+}

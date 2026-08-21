@@ -1,0 +1,55 @@
+{
+  "schemaVersion": 1,
+  "id": "de1t3-004",
+  "title": "Ship a Production-Shaped Pipeline and Break It On Purpose",
+  "term": "year-1/term-3",
+  "module": "milestone",
+  "estimatedHours": 12,
+  "objective": "Run one batch path and one stream path into a documented shared warehouse, with contracts, a DAG, tests, one bounded backfill, and instrumentation — then recover from an injected failure and show the test command still passes.",
+  "whyThisMatters": "Separate tasks can hide glue. A production-shaped system is the glue: two inbound paths, one contracted warehouse, a scheduler that tells the truth, and a recovery you can repeat. This is the point of the path, not a slide deck of tools.",
+  "competencies": [
+    "data-pipelines",
+    "database-systems",
+    "messaging",
+    "testing-quality",
+    "observability",
+    "python"
+  ],
+  "resources": [
+    "postgres-docs",
+    "kafka-docs",
+    "rabbitmq-tutorials",
+    "airflow-docs",
+    "python-docs"
+  ],
+  "instructionsFile": "instructions.md",
+  "aiPolicy": {
+    "mode": "guided",
+    "allowedCapabilities": ["explain", "hint", "quiz"],
+    "solutionGenerationAllowed": false,
+    "disclosureRequired": true
+  },
+  "evidence": [
+    "Documented commands that run the batch job, the stream consumer, the validator, the DAG, and the test suite",
+    "A query showing warehouse rows from both the batch source and the stream source, with the join or shared key documented",
+    "Before and after counts plus an incident or recovery note for the injected failure",
+    "A captured passing test-command run after recovery",
+    "Git history spanning the work, not a single final commit",
+    "Reflection notes answering the task questions"
+  ],
+  "acceptanceCriteria": [
+    "The repository contains a batch job, a stream consumer, a contract file, a DAG, and a test command, each runnable from a documented command.",
+    "Batch and stream paths write to a documented shared warehouse table or to two tables joined by a documented key, and a query shows rows originating from both sources.",
+    "An injected failure and its recovery are captured with before and after counts and an incident or recovery note.",
+    "The documented test command is run after recovery and passes.",
+    "Git history contains more than one commit for this task's work."
+  ],
+  "statusModel": [
+    "not_started",
+    "in_progress",
+    "submitted",
+    "revision_requested",
+    "resubmitted",
+    "approved"
+  ]
+}

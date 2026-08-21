@@ -1,0 +1,42 @@
+{
+  "schemaVersion": 1,
+  "id": "el1t2-003",
+  "title": "Lead the Incident Comms, Not the Debugger",
+  "term": "year-1/term-2",
+  "module": "incidents",
+  "estimatedHours": 8,
+  "objective": "Produce a timestamped comms timeline, a contemporaneous decision log, and a blameless postmortem with follow-ups tagged detect, prevent, or respond.",
+  "whyThisMatters": "During an incident the lead's job is often the channel, the decision log, and the words that go to customers and execs — not the cleverest stack trace. Those artifacts are inspectable. 'I stayed calm' is not.",
+  "competencies": [
+    "professional-practice",
+    "technical-leadership"
+  ],
+  "resources": [
+    "staffeng"
+  ],
+  "instructionsFile": "instructions.md",
+  "aiPolicy": {
+    "mode": "guided",
+    "allowedCapabilities": ["explain", "hint", "quiz"],
+    "solutionGenerationAllowed": false,
+    "disclosureRequired": true
+  },
+  "evidence": [
+    "A comms timeline with at least four timestamped updates, at least two audiences, and no root-cause-as-fact in updates before the postmortem",
+    "A decision log with at least three entries, each stating the information known at that time rather than the later truth",
+    "A blameless postmortem naming at least two contributing factors, containing zero sentences that blame a person's character or competence, and at least two follow-ups each tagged detect, prevent, or respond with an owner role"
+  ],
+  "acceptanceCriteria": [
+    "The timeline has at least four timestamped updates and at least two different audiences; no comms-timeline update states a root cause as fact.",
+    "The decision log has at least three entries; each entry states what was known at that timestamp, not the cause learned later.",
+    "The postmortem names at least two contributing factors, contains no sentence that attributes the outage to a person's character or competence, and lists at least two follow-ups each with an owner role and a detect/prevent/respond tag."
+  ],
+  "statusModel": [
+    "not_started",
+    "in_progress",
+    "submitted",
+    "revision_requested",
+    "resubmitted",
+    "approved"
+  ]
+}

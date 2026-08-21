@@ -1,0 +1,44 @@
+{
+  "schemaVersion": 1,
+  "id": "ef1t2-002",
+  "title": "Respond to Review Feedback Like a Teammate",
+  "term": "term-2",
+  "module": "code-review",
+  "estimatedHours": 5,
+  "objective": "Receive written review comments on a pull request you authored, reply to each one, and land accepted changes as separate commits after review started.",
+  "whyThisMatters": "Review is a conversation, not a pass/fail stamp. Juniors who silently push a rewrite, or who ignore comments they disagree with, slow the team down. The professional skill is answering every comment, changing what you accept, and declining what you don't — in writing, with evidence.",
+  "competencies": [
+    "professional-practice",
+    "git"
+  ],
+  "resources": [
+    "pro-git"
+  ],
+  "instructionsFile": "instructions.md",
+  "aiPolicy": {
+    "mode": "guided",
+    "allowedCapabilities": ["explain", "hint", "quiz"],
+    "solutionGenerationAllowed": false,
+    "disclosureRequired": true
+  },
+  "evidence": [
+    "A link to the pull request showing incoming review comments and your replies, or the comment thread copied into a Markdown file if the host hid them",
+    "git log output from the reviewed branch showing commits appended after the first review comment, with commit messages that name the comment they address",
+    "A review-response note listing every incoming comment, your reply type (accepted, declined, or clarified), and a commit SHA or a written decline reason",
+    "AI disclosure entry if AI helped draft any reply or change"
+  ],
+  "acceptanceCriteria": [
+    "Every incoming review comment has a written reply from the apprentice on the PR or in the submitted note.",
+    "At least 2 accepted comments are landed as separate commits after the first review comment exists, and those commit messages name the comment they address.",
+    "At least one comment is either declined in writing with a reason, or accepted with a named verification command that was re-run after the change.",
+    "History after review started is append-only: the submitted git log or host UI shows no force-push that rewrote the already-reviewed commits."
+  ],
+  "statusModel": [
+    "not_started",
+    "in_progress",
+    "submitted",
+    "revision_requested",
+    "resubmitted",
+    "approved"
+  ]
+}

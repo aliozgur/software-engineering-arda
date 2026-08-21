@@ -1,0 +1,47 @@
+{
+  "schemaVersion": 1,
+  "id": "de1t1-005",
+  "title": "Test the Transform, Not the Warehouse Screenshot",
+  "term": "year-1/term-1",
+  "module": "pipeline-tests",
+  "estimatedHours": 8,
+  "objective": "Put automated tests around the transform and the load gates: uniqueness, required nulls, referential integrity, row-count conservation or a documented filter, and one business rule — including a fixture that must fail.",
+  "whyThisMatters": "A green warehouse screenshot is not a test. Transforms rot the first time a source column arrives empty. Tests that can run without a database catch that; one integration test against PostgreSQL catches the constraint you thought you had.",
+  "competencies": [
+    "testing-quality",
+    "data-pipelines",
+    "da-data-quality"
+  ],
+  "resources": [
+    "python-docs",
+    "postgres-docs"
+  ],
+  "instructionsFile": "instructions.md",
+  "aiPolicy": {
+    "mode": "guided",
+    "allowedCapabilities": ["explain", "hint", "quiz"],
+    "solutionGenerationAllowed": false,
+    "disclosureRequired": true
+  },
+  "evidence": [
+    "The documented test command and a captured passing run of at least five tests",
+    "A captured failing run against a bad fixture, with the failure message naming the violated rule",
+    "The two (or more) tests that run without a database, and the one that hits PostgreSQL",
+    "A listing or query showing the unique or foreign-key constraint the integration test depends on",
+    "Reflection notes answering the task questions"
+  ],
+  "acceptanceCriteria": [
+    "At least five automated tests run from one documented command, and a captured run shows them passing on the happy fixture.",
+    "A second captured run against a bad fixture shows at least one named test failing, and the failure message names the violated rule.",
+    "At least two tests execute the transform without opening a database connection.",
+    "At least one test runs against PostgreSQL and would fail if a required unique or foreign-key constraint were absent, shown by a captured constraint listing or a captured failure after dropping that constraint in a disposable database."
+  ],
+  "statusModel": [
+    "not_started",
+    "in_progress",
+    "submitted",
+    "revision_requested",
+    "resubmitted",
+    "approved"
+  ]
+}

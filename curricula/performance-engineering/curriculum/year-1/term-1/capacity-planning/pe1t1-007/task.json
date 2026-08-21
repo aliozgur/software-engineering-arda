@@ -1,0 +1,46 @@
+{
+  "schemaVersion": 1,
+  "id": "pe1t1-007",
+  "title": "Capacity From Your Own Numbers",
+  "term": "year-1/term-1",
+  "module": "capacity-planning",
+  "estimatedHours": 10,
+  "objective": "Build a capacity note whose every input cites a pe1t1-006 (or re-run) measurement, compute copies needed for a stated peak, project 2x and 5x, and show one sensitivity that changes the conclusion.",
+  "whyThisMatters": "The architecture curriculum's capacity task allows back-of-envelope inputs. This term does not. A replica count that does not cite a measured SLO-meeting RPS is a guess. Staff engineers sign capacity notes that can be audited back to a run.",
+  "competencies": [
+    "performance",
+    "observability"
+  ],
+  "resources": [
+    "prometheus",
+    "mit-6006"
+  ],
+  "instructionsFile": "instructions.md",
+  "aiPolicy": {
+    "mode": "guided",
+    "allowedCapabilities": ["explain", "hint", "quiz"],
+    "solutionGenerationAllowed": false,
+    "disclosureRequired": true
+  },
+  "evidence": [
+    "A capacity note that lists each input (SLO-meeting RPS, p95, error rate, saturation signal) with a file or run id from pe1t1-006 or a re-run committed here",
+    "Shown arithmetic for required replicas or equivalent capacity at a stated peak of at least 2x the measured SLO-meeting load",
+    "A 2x and a 5x projection each naming which resource hits a stated limit first, using a per-request or per-second cost taken from earlier measurements",
+    "A sensitivity paragraph that doubles or halves one input and shows the recomputed replica or capacity number",
+    "Reflection notes answering the task questions"
+  ],
+  "acceptanceCriteria": [
+    "Every input number in the capacity note cites a committed run file or log line from pe1t1-006 or a re-run in this task — no invented RPS or p95.",
+    "Required capacity for a peak of at least 2x the measured SLO-meeting load is computed with the formula written out (not only the final integer).",
+    "The 2x and 5x projections each name one resource and the measured per-request or per-second cost that makes that resource the first limit.",
+    "The sensitivity case changes one cited input by 2x or 0.5x and shows the new capacity number from the same formula."
+  ],
+  "statusModel": [
+    "not_started",
+    "in_progress",
+    "submitted",
+    "revision_requested",
+    "resubmitted",
+    "approved"
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "architecture-and-tradeoffs",
+  "title": "Architecture and Trade-off Analysis",
+  "description": "Weighing non-functional requirements against real constraints, writing architecture decision records that name and justify rejected alternatives, and defending a system-level design decision when a constraint changes.",
+  "levels": [
+    {
+      "level": 1,
+      "name": "Foundation",
+      "description": "Can identify the non-functional requirements relevant to a given scenario and translate at least one into a measurable budget, such as a latency or availability target, with a stated source for the number."
+    },
+    {
+      "level": 2,
+      "name": "Apprentice",
+      "description": "Can write a complete architecture decision record for a real decision that names at least two rejected alternatives, each with a distinct stated reason, and at least one accepted negative consequence."
+    },
+    {
+      "level": 3,
+      "name": "Practitioner",
+      "description": "Can independently compare architectural styles or data-architecture options against explicit, scenario-specific criteria and defend the recommendation against a reviewer's counter-scenario without retreating to a general preference."
+    },
+    {
+      "level": 4,
+      "name": "Journeyman",
+      "description": "Can design for failure and degradation across a system boundary, and can revise a prior architecture decision when a stated constraint changes, explaining precisely what the new constraint invalidated."
+    },
+    {
+      "level": 5,
+      "name": "Mastery Evidence",
+      "description": "Can produce and defend an end-to-end architecture for a self-scoped, ambiguous problem in front of a mixed technical and non-technical panel, incorporating constraint changes raised live and revising the ADR set afterward."
+    }
+  ]
+}

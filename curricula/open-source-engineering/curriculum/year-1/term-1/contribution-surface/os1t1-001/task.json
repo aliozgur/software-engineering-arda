@@ -1,0 +1,49 @@
+{
+  "schemaVersion": 1,
+  "id": "os1t1-001",
+  "title": "Map a Real Project's Contribution Surface",
+  "term": "year-1/term-1",
+  "module": "contribution-surface",
+  "estimatedHours": 6,
+  "objective": "Select one active public repository and produce a written contribution-surface map a mentor can open: license, contribution path, build proof, and annotated recent issues or pull requests.",
+  "whyThisMatters": "A first useful contribution starts with reading the project the way a maintainer does — license, process, and what is actually open — not with a guess at a drive-by patch.",
+  "competencies": [
+    "open-source",
+    "professional-practice"
+  ],
+  "resources": [
+    "osi-license-list",
+    "acm-code"
+  ],
+  "instructionsFile": "instructions.md",
+  "aiPolicy": {
+    "mode": "guided",
+    "allowedCapabilities": ["explain", "hint", "quiz"],
+    "solutionGenerationAllowed": false,
+    "disclosureRequired": true
+  },
+  "evidence": [
+    "A committed Markdown note (for example docs/contribution-surface.md) that names the public repository URL, default branch, and checked-out commit SHA",
+    "The exact clone, build, and/or test commands run, plus the recorded exit code of the last command",
+    "An SPDX license identifier copied from that repository and a one-paragraph obligation note citing the matching OSI license page",
+    "A table of at least five distinct public issue or pull-request URLs, each with status and a one-sentence contribution-fit judgment",
+    "Quoted path-or-absent notes for CONTRIBUTING and CODE_OF_CONDUCT (or the project's equivalent files)",
+    "Reflection notes answering the task questions",
+    "AI disclosure entry when AI materially influenced the work"
+  ],
+  "acceptanceCriteria": [
+    "The note records a public repository URL, the default branch name, and a 40-character commit SHA that exists on that branch.",
+    "The note records the clone command, the build or test command actually run, and that command's exit code.",
+    "The SPDX identifier in the note matches the repository LICENSE file or the host's license metadata for that repository.",
+    "The table lists at least five distinct public issue or pull-request URLs, each with a status of open, closed, or merged and a one-sentence contribution-fit judgment.",
+    "The note states whether CONTRIBUTING and CODE_OF_CONDUCT (or named equivalents) exist, with a repository file path if they do, or the exact phrase \"not present\" if they do not."
+  ],
+  "statusModel": [
+    "not_started",
+    "in_progress",
+    "submitted",
+    "revision_requested",
+    "resubmitted",
+    "approved"
+  ]
+}

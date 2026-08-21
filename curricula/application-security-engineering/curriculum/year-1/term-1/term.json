@@ -1,0 +1,14 @@
+{
+  "schemaVersion": 1,
+  "id": "year-1-term-1",
+  "title": "Term 1 — Threat Model, Identity and Common Defects",
+  "estimatedHours": 62,
+  "tasks": [
+    "as1t1-001",
+    "as1t1-002",
+    "as1t1-003",
+    "as1t1-004",
+    "as1t1-005",
+    "as1t1-006"
+  ]
+}

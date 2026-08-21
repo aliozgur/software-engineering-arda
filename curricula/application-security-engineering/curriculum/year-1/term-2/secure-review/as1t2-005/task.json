@@ -1,0 +1,51 @@
+{
+  "schemaVersion": 1,
+  "id": "as1t2-005",
+  "title": "Secure Code Review with a Written Verdict",
+  "term": "year-1/term-2",
+  "module": "secure-review",
+  "estimatedHours": 8,
+  "objective": "Review a real application diff you own, write at least four findings with severity, OWASP or CWE mapping, and a recommended fix, and either apply must-fix items or record residual risk.",
+  "whyThisMatters": "AppSec work in a team is mostly review, not a personal CTF. A usable review names the hunk, the weakness, the severity, and what to do — and it states what was out of scope so it is not a generic checklist.",
+  "competencies": [
+    "security"
+  ],
+  "resources": [
+    "owasp-top10",
+    "portswigger-academy"
+  ],
+  "instructionsFile": "instructions.md",
+  "aiPolicy": {
+    "mode": "guided",
+    "allowedCapabilities": [
+      "explain",
+      "hint",
+      "quiz"
+    ],
+    "solutionGenerationAllowed": false,
+    "disclosureRequired": true
+  },
+  "evidence": [
+    "The reviewed diff (pull request link or committed patch) of at least 40 lines of application code, not only documentation",
+    "A written review with at least 4 findings, each listing severity (high, medium, or low), OWASP category or CWE id, file and hunk, and a recommended fix",
+    "At least 1 finding marked must-fix and at least 1 marked non-blocking",
+    "Commits applying must-fix items, or residual-risk entries for any must-fix item left open",
+    "An out-of-scope paragraph stating what this review did not cover",
+    "Reflection note answering the task questions"
+  ],
+  "acceptanceCriteria": [
+    "The review covers a diff of at least 40 lines of application code (not only documentation).",
+    "The review lists at least 4 findings, each with severity (high, medium, or low), OWASP category or CWE id, file and hunk, and a recommended fix.",
+    "At least 1 finding is marked must-fix and at least 1 is marked non-blocking.",
+    "Must-fix items are applied in follow-up commits, or each leftover must-fix has a residual-risk entry in the threat-model register.",
+    "The review states what was out of scope so it is not a generic checklist."
+  ],
+  "statusModel": [
+    "not_started",
+    "in_progress",
+    "submitted",
+    "revision_requested",
+    "resubmitted",
+    "approved"
+  ]
+}

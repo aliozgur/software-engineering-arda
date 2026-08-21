@@ -1,0 +1,35 @@
+{
+  "schemaVersion": 1,
+  "id": "pd1t1-002",
+  "title": "Containerize the Service You Already Test in CI",
+  "term": "term-1",
+  "module": "containers",
+  "estimatedHours": 12,
+  "competencies": [
+    "containers"
+  ],
+  "resources": [
+    "docker-docs"
+  ],
+  "instructionsFile": "instructions.md",
+  "aiPolicy": {
+    "mode": "guided",
+    "allowedCapabilities": ["explain", "hint", "quiz"],
+    "solutionGenerationAllowed": false,
+    "disclosureRequired": true
+  },
+  "evidence": [
+    "Committed Dockerfile and .dockerignore from a clean checkout",
+    "Command output of docker build showing a successful image with a digest or image ID",
+    "Command output of docker run plus a request to a documented endpoint that succeeds without bind-mounting source code",
+    "A short note listing the base-image pin (digest or immutable tag) and which paths .dockerignore excludes",
+    "Reflection notes answering the task questions",
+    "AI disclosure entry when AI materially influenced the work"
+  ],
+  "acceptanceCriteria": [
+    "docker build succeeds from a clean checkout using only committed files.",
+    "docker run serves the service on a documented port without bind-mounting the working tree.",
+    ".dockerignore excludes .git, local env files, and secrets; the note lists those exclusions.",
+    "The FROM instruction pins a digest or an immutable version tag, not an unpinned latest tag as the only pin."
+  ]
+}

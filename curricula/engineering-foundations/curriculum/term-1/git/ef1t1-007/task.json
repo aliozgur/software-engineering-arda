@@ -1,0 +1,44 @@
+{
+  "schemaVersion": 1,
+  "id": "ef1t1-007",
+  "title": "Resolve a Merge Conflict and Clean Up History with Rebase",
+  "term": "term-1",
+  "module": "git",
+  "estimatedHours": 5,
+  "objective": "Deliberately create and resolve a real merge conflict, and use rebase to clean up a messy commit history before it's shared.",
+  "whyThisMatters": "Merge conflicts and messy local history are routine, not exceptional. Handling both without panic, and without losing work, is one of the most concrete Git skills a junior engineer needs on day one of real teamwork.",
+  "competencies": [
+    "git"
+  ],
+  "resources": [
+    "pro-git",
+    "mit-missing-semester"
+  ],
+  "instructionsFile": "instructions.md",
+  "aiPolicy": {
+    "mode": "guided",
+    "allowedCapabilities": ["explain", "hint", "quiz"],
+    "solutionGenerationAllowed": false,
+    "disclosureRequired": true
+  },
+  "evidence": [
+    "The repository or branch showing the merge commit and the conflicted-then-resolved file",
+    "A git log or reflog output showing commit hashes before and after the rebase",
+    "The written explanation of why rebase changes commit hashes",
+    "AI disclosure entry if AI helped resolve the conflict or plan the rebase"
+  ],
+  "acceptanceCriteria": [
+    "The conflicted merge is completed: the merge commit exists, and the resolved file contains the intended content from both sides where they don't actually conflict.",
+    "A written note explains, in the apprentice's own words, why the same logical change has a different commit hash before and after a rebase.",
+    "The cleaned-up branch has fewer commits than the messy branch, and no remaining commit message is only wip, fix, typo, or a single word.",
+    "No work from the rebased branch was lost: the pre-rebase state is still recoverable, for example via reflog or a backup branch or tag."
+  ],
+  "statusModel": [
+    "not_started",
+    "in_progress",
+    "submitted",
+    "revision_requested",
+    "resubmitted",
+    "approved"
+  ]
+}

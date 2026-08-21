@@ -1,0 +1,48 @@
+{
+  "schemaVersion": 1,
+  "id": "de1t2-002",
+  "title": "Orchestrate a DAG That Tells the Truth After Failure",
+  "term": "year-1/term-2",
+  "module": "orchestration",
+  "estimatedHours": 10,
+  "objective": "Schedule extract, validate, load, and quality_gate so a failed load leaves the gate skipped, the warehouse at last-good, and a retry of load alone can finish the run.",
+  "whyThisMatters": "A cron line that always starts from extract lies after a failure: you either redo work you cannot see or skip a gate that should have blocked publish. The scheduler's task states are part of the evidence, not decoration.",
+  "competencies": [
+    "data-pipelines",
+    "observability",
+    "python"
+  ],
+  "resources": [
+    "airflow-docs",
+    "python-docs"
+  ],
+  "instructionsFile": "instructions.md",
+  "aiPolicy": {
+    "mode": "guided",
+    "allowedCapabilities": ["explain", "hint", "quiz"],
+    "solutionGenerationAllowed": false,
+    "disclosureRequired": true
+  },
+  "evidence": [
+    "The DAG or equivalent definition showing extract, validate, load, and quality_gate dependencies",
+    "Scheduler UI or log evidence that quality_gate is skipped or upstream-failed after an injected load failure",
+    "Before and after warehouse counts across that failed run",
+    "Run history showing a successful load retry followed by quality_gate success without a new extract",
+    "A note stating retry count, timeout, and the success meaning of each task",
+    "Reflection notes answering the task questions"
+  ],
+  "acceptanceCriteria": [
+    "The DAG definition lists extract, validate, load, and quality_gate, with quality_gate downstream of load.",
+    "After an injected load failure, the scheduler UI or task logs show quality_gate in a skipped or upstream-failed state, not success.",
+    "The consumer-facing warehouse table is unchanged across the failed run, shown by before and after counts.",
+    "A retry of load that succeeds is followed by quality_gate success without re-running extract, shown in task instance logs or run history."
+  ],
+  "statusModel": [
+    "not_started",
+    "in_progress",
+    "submitted",
+    "revision_requested",
+    "resubmitted",
+    "approved"
+  ]
+}

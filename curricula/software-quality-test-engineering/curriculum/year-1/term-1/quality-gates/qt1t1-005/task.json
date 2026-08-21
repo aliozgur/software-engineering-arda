@@ -1,0 +1,45 @@
+{
+  "schemaVersion": 1,
+  "id": "qt1t1-005",
+  "title": "Wire Quality Gates into the Pipeline",
+  "term": "year-1/term-1",
+  "module": "quality-gates",
+  "estimatedHours": 16,
+  "objective": "Add static analysis, a coverage threshold, and at least one deeper test-quality gate to a real CI pipeline so a regression is blocked automatically, not caught by chance in review.",
+  "whyThisMatters": "A pipeline that runs tests but enforces no threshold lets quality drift silently. A gate that actually blocks a merge is the mechanism that makes a quality standard stick.",
+  "competencies": [
+    "ci-cd",
+    "testing-quality"
+  ],
+  "resources": [
+    "github-actions",
+    "gitlab-ci"
+  ],
+  "instructionsFile": "instructions.md",
+  "aiPolicy": {
+    "mode": "guided",
+    "allowedCapabilities": ["explain", "hint", "quiz"],
+    "solutionGenerationAllowed": false,
+    "disclosureRequired": true
+  },
+  "evidence": [
+    "The committed CI configuration file(s) showing all three gates",
+    "Pipeline run logs or links showing each gate individually failing on a deliberate violation",
+    "Pipeline run logs or links showing the pipeline passing once each violation is reverted",
+    "A written threshold-justification note"
+  ],
+  "acceptanceCriteria": [
+    "The CI configuration includes a lint/static-analysis gate that fails the build, a coverage-threshold gate, and one additional test-quality gate.",
+    "Each of the three gates is shown individually failing a deliberately introduced violation.",
+    "Each gate is shown passing again once the corresponding violation is reverted.",
+    "Each threshold has a written justification, not left at a tool's default with no comment."
+  ],
+  "statusModel": [
+    "not_started",
+    "in_progress",
+    "submitted",
+    "revision_requested",
+    "resubmitted",
+    "approved"
+  ]
+}

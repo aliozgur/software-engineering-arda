@@ -1,0 +1,14 @@
+{
+  "schemaVersion": 1,
+  "id": "adr-github-io",
+  "title": "Architectural Decision Records (adr.github.io)",
+  "url": "https://adr.github.io/",
+  "type": "reference",
+  "provider": "adr GitHub organization (community-maintained)",
+  "tier": "reference",
+  "topics": [
+    "architecture-decision-records",
+    "documentation",
+    "architectural-knowledge-management"
+  ]
+}

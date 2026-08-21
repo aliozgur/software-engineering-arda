@@ -1,0 +1,40 @@
+{
+  "schemaVersion": 1,
+  "id": "sa1t1-002",
+  "title": "Writing Your First Architecture Decision Record",
+  "term": "year-1/term-1",
+  "module": "adr",
+  "estimatedHours": 5,
+  "objective": "Write a complete ADR for a real decision, naming rejected alternatives and at least one accepted negative consequence.",
+  "whyThisMatters": "An architecture decision that isn't written down is a decision no one can review, question, or safely revisit later. The ADR is the smallest unit of accountable architecture judgment used throughout this curriculum, and every later task builds on being able to write one well.",
+  "competencies": [
+    "architecture-and-tradeoffs",
+    "software-design"
+  ],
+  "resources": ["adr-github-io"],
+  "instructionsFile": "instructions.md",
+  "aiPolicy": {
+    "mode": "guided",
+    "allowedCapabilities": ["explain", "hint", "quiz"],
+    "solutionGenerationAllowed": false,
+    "disclosureRequired": true
+  },
+  "evidence": [
+    "The ADR file itself, committed to a repository, in a context/decision/consequences shape",
+    "At least two rejected alternatives named in the ADR, each with a reason distinct from the others",
+    "Git history showing at least one revision of the ADR after a stated review comment or a self-identified gap"
+  ],
+  "acceptanceCriteria": [
+    "The ADR names at least two rejected alternatives, each with a stated reason distinct from 'it was worse.'",
+    "At least one negative consequence or accepted trade-off of the chosen option is stated explicitly.",
+    "The ADR is traceable to at least one NFR budget or explicit constraint it responds to."
+  ],
+  "statusModel": [
+    "not_started",
+    "in_progress",
+    "submitted",
+    "revision_requested",
+    "resubmitted",
+    "approved"
+  ]
+}

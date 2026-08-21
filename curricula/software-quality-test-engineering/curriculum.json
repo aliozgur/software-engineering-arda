@@ -1,0 +1,34 @@
+{
+  "schemaVersion": 1,
+  "id": "apprenti-dev-software-quality-test-engineering-2026",
+  "name": "apprenti.dev Software Quality and Test Engineering Apprenticeship",
+  "version": "0.1.0",
+  "durationMonths": "4-6",
+  "audience": "Developers or QA professionals with solid coding ability who are specializing into test and quality engineering",
+  "philosophy": "Evidence-driven test engineering: map tests to real risk, measure quality directly instead of by proxy, and defend every gate you add to a pipeline.",
+  "defaultWeeklyHours": {
+    "duringTerm": "5-7"
+  },
+  "roles": [
+    "apprentice",
+    "mentor"
+  ],
+  "corePlatforms": [
+    "GitHub Actions",
+    "GitLab CI",
+    "Prometheus",
+    "k6",
+    "Stryker Mutator",
+    "Pact"
+  ],
+  "aiPrinciples": [
+    "AI assistance must be disclosed when materially used.",
+    "Tasks may restrict solution generation while allowing explanations, hints, quizzes and coaching.",
+    "The apprentice remains accountable for every test, quality gate and report submitted.",
+    "Mentor approval is based on demonstrated diagnostic and design ability, not on a green pipeline alone."
+  ],
+  "progression": "sequential",
+  "mentorship": "optional",
+  "sourceLocale": "en",
+  "contentLocales": ["en"]
+}

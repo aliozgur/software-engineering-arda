@@ -1,0 +1,46 @@
+{
+  "schemaVersion": 1,
+  "id": "ie1t2-003",
+  "title": "Priority inversion you can reproduce and then bound",
+  "term": "year-1/term-2",
+  "module": "time-and-isolation",
+  "estimatedHours": 8,
+  "objective": "Reproduce classic priority inversion with three tasks and a mutex, capture a timeline where High is blocked while Medium runs, then apply a named inheritance or ceiling protocol and show High's blocking time drops to a written bound.",
+  "whyThisMatters": "A missed deadline that only happens when a low-priority logger holds a lock is the kind of bug plants ship. If you cannot turn inversion on and off in a log, you cannot claim the node is deterministic.",
+  "competencies": [
+    "operating-systems",
+    "performance"
+  ],
+  "resources": [
+    "freertos-kernel-book",
+    "mit-61810"
+  ],
+  "instructionsFile": "instructions.md",
+  "aiPolicy": {
+    "mode": "guided",
+    "allowedCapabilities": ["explain", "hint", "quiz"],
+    "solutionGenerationAllowed": false,
+    "disclosureRequired": true
+  },
+  "evidence": [
+    "INVERSION.md naming priority inheritance or priority ceiling and one situation the other protocol would handle differently",
+    "A captured timeline (tick log) showing High blocked for at least N ticks while Medium runs and Low still holds the lock, with N written in INVERSION.md",
+    "A captured timeline after the fix showing High's blocking time less than or equal to the written bound",
+    "Git history with the inversion reproduction committed before the fix",
+    "Reflection notes answering the task questions"
+  ],
+  "acceptanceCriteria": [
+    "The reproduction log shows three named tasks (Low, Medium, High) and a mutex; High is blocked while Medium is running and Low still owns the mutex for at least the N ticks stated in INVERSION.md.",
+    "INVERSION.md names exactly one protocol used in the fix: priority inheritance or priority ceiling.",
+    "The post-fix log, using the same arrival order, shows High's contiguous blocked time less than or equal to the bound written in INVERSION.md.",
+    "INVERSION.md contains one sentence naming a situation the other protocol (the one not implemented) would handle differently."
+  ],
+  "statusModel": [
+    "not_started",
+    "in_progress",
+    "submitted",
+    "revision_requested",
+    "resubmitted",
+    "approved"
+  ]
+}

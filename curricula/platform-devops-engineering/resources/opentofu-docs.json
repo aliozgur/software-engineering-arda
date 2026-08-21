@@ -1,0 +1,15 @@
+{
+  "schemaVersion": 1,
+  "id": "opentofu-docs",
+  "title": "OpenTofu Documentation",
+  "url": "https://opentofu.org/docs/",
+  "type": "official_docs",
+  "provider": "OpenTofu (Linux Foundation)",
+  "tier": "reference",
+  "topics": [
+    "infrastructure-as-code",
+    "terraform",
+    "opentofu",
+    "provisioning"
+  ]
+}

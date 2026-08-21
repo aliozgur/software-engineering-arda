@@ -1,0 +1,37 @@
+{
+  "schemaVersion": 1,
+  "id": "ds1t1-001",
+  "title": "Replicated Key-Value Store with Tunable Consistency",
+  "term": "ds1t1",
+  "module": "replication-and-consistency",
+  "estimatedHours": 12,
+  "objective": "Build a single-leader, multi-follower key-value store that runs as independent OS processes communicating only over the network, with a client-selectable read mode, and produce a reproducible demonstration of a real consistency anomaly that exists in one mode and not the other.",
+  "whyThisMatters": "Consistency models stop being folklore the moment you can make an anomaly appear and disappear on demand in a system you built yourself. This task is the baseline the rest of the term measures itself against: every later task assumes you can say precisely what 'the leader acknowledged the write' does and does not guarantee.",
+  "competencies": [
+    "distributed-systems",
+    "database-systems",
+    "networking"
+  ],
+  "resources": [
+    "mit-65840"
+  ],
+  "instructionsFile": "instructions.md",
+  "aiPolicy": {
+    "mode": "guided",
+    "allowedCapabilities": ["explain", "hint", "quiz"],
+    "solutionGenerationAllowed": false,
+    "disclosureRequired": true
+  },
+  "evidence": [
+    "Git history showing the leader-only version committed before followers and read modes were added",
+    "The reproduction script plus a captured run of its output showing the anomaly under relaxed mode and its absence under strict mode",
+    "README.md naming the consistency model each mode satisfies, tied to the demonstrated anomaly",
+    "Reflection notes answering the task questions"
+  ],
+  "acceptanceCriteria": [
+    "The leader and at least two followers run as separate OS processes exchanging state only over a network socket protocol.",
+    "The reproduction script deterministically reproduces the stale/missing read every run under relaxed mode and never under strict mode.",
+    "README names a specific consistency model (linearizable, sequential, causal, or eventual) for each mode and ties the claim to the demonstrated anomaly, not to a general assertion.",
+    "The write path's acknowledgment semantics are stated explicitly (leader-only ack vs. quorum ack)."
+  ]
+}

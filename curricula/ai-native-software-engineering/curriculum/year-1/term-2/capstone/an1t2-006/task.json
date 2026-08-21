@@ -1,0 +1,54 @@
+{
+  "schemaVersion": 1,
+  "id": "an1t2-006",
+  "title": "Capstone: Disclosed AI-Assisted Feature Delivery End-to-End",
+  "term": "year-1/term-2",
+  "module": "capstone",
+  "estimatedHours": 14,
+  "objective": "Deliver one real, moderately ambiguous feature end to end — spec, AI-assisted implementation including at least one multi-file agentic step, independent test-driven verification, a critical review pass, and a refactor — with disclosure at every step, ready to defend in a live mentor review.",
+  "whyThisMatters": "This is where every earlier discipline in the curriculum — spec-writing, critical review, verification, agentic scoping, refactoring, and judgment about AI's limits — has to work together on one piece of real, ambiguous work, not in isolation.",
+  "competencies": [
+    "ai-assisted-engineering",
+    "software-design",
+    "testing-quality",
+    "professional-practice",
+    "agentic-development-workflow"
+  ],
+  "resources": [
+    "claude-code-best-practices",
+    "google-eng-practices-review"
+  ],
+  "instructionsFile": "instructions.md",
+  "aiPolicy": {
+    "mode": "guided",
+    "allowedCapabilities": [
+      "explain",
+      "hint",
+      "quiz"
+    ],
+    "solutionGenerationAllowed": true,
+    "disclosureRequired": true
+  },
+  "evidence": [
+    "A spec written before implementation, including at least one requirement you had to clarify or interpret yourself because it was originally ambiguous",
+    "Git history showing spec, tests, agentic implementation step(s), review notes, and refactor as separable, ordered commits",
+    "A test suite written before or independent of the AI-generated implementation, shown passing on the final code",
+    "A critical review note listing issues found in the AI-generated output and which were fixed",
+    "A disclosure log covering every material AI use across the whole task: tool/model, purpose, and what was independently verified"
+  ],
+  "acceptanceCriteria": [
+    "Git history shows the spec commit precedes the implementation commits.",
+    "At least one implementation step is an agentic, multi-file change, identifiable in the evidence.",
+    "The independent test suite passes against the final submitted code, shown in a test run log.",
+    "The critical review note lists at least one issue that was found and fixed, distinct from the original spec's requirements.",
+    "The disclosure log accounts for every commit that contains AI-generated content."
+  ],
+  "statusModel": [
+    "not_started",
+    "in_progress",
+    "submitted",
+    "revision_requested",
+    "resubmitted",
+    "approved"
+  ]
+}

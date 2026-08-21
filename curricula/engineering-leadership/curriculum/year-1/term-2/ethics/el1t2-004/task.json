@@ -1,0 +1,43 @@
+{
+  "schemaVersion": 1,
+  "id": "el1t2-004",
+  "title": "Write the Recommendation You Would Sign",
+  "term": "year-1/term-2",
+  "module": "ethics",
+  "estimatedHours": 6,
+  "objective": "Write a signed recommendation on a Harborline data-retention ask that cites specific ACM Code sections, compares at least three options, and names an escalation path.",
+  "whyThisMatters": "Leads are asked to 'just ship' things that sit in the gap between legal minimum and professional duty. A vibe is not a recommendation. A memo that cites the Code, names who is harmed, and states what you would attach if overruled is.",
+  "competencies": [
+    "professional-practice"
+  ],
+  "resources": [
+    "acm-code"
+  ],
+  "instructionsFile": "instructions.md",
+  "aiPolicy": {
+    "mode": "guided",
+    "allowedCapabilities": ["explain", "hint", "quiz"],
+    "solutionGenerationAllowed": false,
+    "disclosureRequired": true
+  },
+  "evidence": [
+    "A decision memo that cites at least two ACM Code of Ethics sections by their number or official title",
+    "An options table with at least three options, each naming a harmed party and a concrete harm",
+    "A stakeholder note of at most 200 words that states the recommendation in the first 40 words",
+    "An escalation path that names a role and the document you would attach if overruled"
+  ],
+  "acceptanceCriteria": [
+    "The memo cites at least two ACM Code sections by number or official title.",
+    "The options table has at least three options; each row names a harmed party and a concrete harm.",
+    "The stakeholder note is at most 200 words and states the recommendation in the first 40 words.",
+    "The escalation path names a role (not 'someone in legal') and the file or memo you would attach."
+  ],
+  "statusModel": [
+    "not_started",
+    "in_progress",
+    "submitted",
+    "revision_requested",
+    "resubmitted",
+    "approved"
+  ]
+}

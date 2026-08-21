@@ -1,0 +1,42 @@
+{
+  "schemaVersion": 1,
+  "id": "el1t1-001",
+  "title": "Write the Delegation Map Your Calendar Is Hiding",
+  "term": "year-1/term-1",
+  "module": "delegation",
+  "estimatedHours": 8,
+  "objective": "Turn a overloaded lead calendar into an ownership map and two written delegation briefs a named owner could execute without a hallway conversation.",
+  "whyThisMatters": "A tech lead who keeps the interesting work and 'helps' on everything becomes the bottleneck. Delegation that lives only in Slack or in your head is a verbal hope — a mentor cannot inspect it, and the owner cannot be held to it.",
+  "competencies": [
+    "technical-leadership",
+    "professional-practice"
+  ],
+  "resources": [
+    "staffeng"
+  ],
+  "instructionsFile": "instructions.md",
+  "aiPolicy": {
+    "mode": "guided",
+    "allowedCapabilities": ["explain", "hint", "quiz"],
+    "solutionGenerationAllowed": false,
+    "disclosureRequired": true
+  },
+  "evidence": [
+    "An ownership map covering at least ten distinct work items from the Harborline week, each row naming current owner, proposed owner or drop, and a keep/delegate/drop/escalate label with a one-line reason",
+    "Two delegation briefs, each naming a single owner, a due date, an inspectable done-artifact, at least one decision the owner may make without asking, and at least one explicit non-goal",
+    "Git history showing at least one brief revised after the stated midpoint constraint, with the constraint quoted in the commit message or a revision note"
+  ],
+  "acceptanceCriteria": [
+    "The ownership map has at least ten distinct work items; at least three are labeled delegate and at least one is labeled drop.",
+    "Each of the two briefs names a single owner, a calendar date, an inspectable done-artifact, at least one solo decision, and at least one non-goal.",
+    "History shows one brief changed after the midpoint constraint ('Priya is already on-call this week'), and the revision note or commit message quotes that constraint."
+  ],
+  "statusModel": [
+    "not_started",
+    "in_progress",
+    "submitted",
+    "revision_requested",
+    "resubmitted",
+    "approved"
+  ]
+}

@@ -1,0 +1,51 @@
+{
+  "schemaVersion": 1,
+  "id": "de1t2-003",
+  "title": "Consume a Stream Without Losing or Double-Writing",
+  "term": "year-1/term-2",
+  "module": "streaming",
+  "estimatedHours": 10,
+  "objective": "Consume at-least-once events into an idempotent warehouse sink, commit the offset or ack only after a successful write, and prove crash-before-ack plus replay do not grow the event_id set.",
+  "whyThisMatters": "Streams fail between write and ack. If you ack first, you drop. If you write first without a unique event id, you double. The queue-versus-log choice changes how you replay; it does not remove the need for an idempotent sink.",
+  "competencies": [
+    "messaging",
+    "data-pipelines",
+    "python"
+  ],
+  "resources": [
+    "kafka-docs",
+    "rabbitmq-tutorials",
+    "python-docs",
+    "postgres-docs"
+  ],
+  "instructionsFile": "instructions.md",
+  "aiPolicy": {
+    "mode": "guided",
+    "allowedCapabilities": ["explain", "hint", "quiz"],
+    "solutionGenerationAllowed": false,
+    "disclosureRequired": true
+  },
+  "evidence": [
+    "Producer and consumer code plus the warehouse uniqueness constraint on event_id",
+    "A captured duplicate-insert attempt that fails or no-ops against that constraint",
+    "A crash-before-ack demonstration and the post-restart distinct event_id count",
+    "A replay or redelivery run whose distinct event_id count does not increase",
+    "A queue-versus-log note of at least three sentences naming both Kafka and RabbitMQ",
+    "Reflection notes answering the task questions"
+  ],
+  "acceptanceCriteria": [
+    "The warehouse has a uniqueness constraint or equivalent on event_id, and a duplicate insert attempt fails or is a no-op, shown in a captured statement.",
+    "The consumer commits the Kafka offset or acks the RabbitMQ message only after the warehouse write returns success, shown by code order plus a crash-before-ack demonstration.",
+    "After crash-before-ack and restart, the warehouse event_id count equals the number of distinct produced events, not more.",
+    "A replay from an earlier offset or a queue redelivery does not increase the distinct event_id count.",
+    "A notes file contains a queue-versus-log comparison of at least three sentences that names both Kafka and RabbitMQ."
+  ],
+  "statusModel": [
+    "not_started",
+    "in_progress",
+    "submitted",
+    "revision_requested",
+    "resubmitted",
+    "approved"
+  ]
+}

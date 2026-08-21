@@ -1,0 +1,43 @@
+{
+  "schemaVersion": 1,
+  "id": "ef1t2-001",
+  "title": "Review a Peer's Pull Request",
+  "term": "term-2",
+  "module": "code-review",
+  "estimatedHours": 4,
+  "objective": "Give written code review feedback on someone else's real pull request that is specific, actionable, and professionally kind.",
+  "whyThisMatters": "Reviewing code well is a distinct skill from writing it. Vague praise and vague criticism both waste a reviewee's time. Practicing feedback you'd be comfortable receiving yourself is as important as practicing receiving it.",
+  "competencies": [
+    "professional-practice",
+    "git"
+  ],
+  "resources": [
+    "pro-git"
+  ],
+  "instructionsFile": "instructions.md",
+  "aiPolicy": {
+    "mode": "guided",
+    "allowedCapabilities": ["explain", "hint", "quiz"],
+    "solutionGenerationAllowed": false,
+    "disclosureRequired": true
+  },
+  "evidence": [
+    "A link to the reviewed PR with comments visible, or the written review text if commenting directly wasn't possible",
+    "A short self-review note classifying each comment as blocking, suggestion, or question, in one place",
+    "AI disclosure entry if AI helped draft review comments"
+  ],
+  "acceptanceCriteria": [
+    "At least 5 review comments exist on the actual PR, or as a written substitute, each tied to a specific line or section.",
+    "Each comment is labeled or clearly distinguishable as blocking, suggestion, or question.",
+    "At least one comment references a specific acceptance criterion, test, or behavior, not only style.",
+    "No comment is purely negative without a suggested alternative or a question inviting the author's reasoning."
+  ],
+  "statusModel": [
+    "not_started",
+    "in_progress",
+    "submitted",
+    "revision_requested",
+    "resubmitted",
+    "approved"
+  ]
+}

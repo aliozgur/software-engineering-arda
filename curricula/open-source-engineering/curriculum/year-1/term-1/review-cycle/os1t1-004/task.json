@@ -1,0 +1,49 @@
+{
+  "schemaVersion": 1,
+  "id": "os1t1-004",
+  "title": "Close the Review Loop",
+  "term": "year-1/term-1",
+  "module": "review-cycle",
+  "estimatedHours": 8,
+  "objective": "Respond to review on the real contribution: address each comment with a follow-up commit or a written no-change reason, using a maintainer review if one exists or a documented self-review plus a second-person review if none has arrived.",
+  "whyThisMatters": "Opening a pull request is the start of collaboration. The skill maintainers actually need is a visible response to each comment without rewriting history they cannot follow.",
+  "competencies": [
+    "open-source",
+    "git",
+    "professional-practice"
+  ],
+  "resources": [
+    "pro-git",
+    "acm-code"
+  ],
+  "instructionsFile": "instructions.md",
+  "aiPolicy": {
+    "mode": "guided",
+    "allowedCapabilities": ["explain", "hint", "quiz"],
+    "solutionGenerationAllowed": false,
+    "disclosureRequired": true
+  },
+  "evidence": [
+    "The pull-request URL from os1t1-003 (upstream or public fork)",
+    "Review thread URL(s), or a committed self-review dated in the note plus the second-person reviewer's name or handle and date",
+    "A table with one row per review item: comment summary, reply, and either a follow-up commit SHA or the phrase no change plus a one-sentence reason",
+    "Git log showing a commit timestamp after the first review comment or after the self-review date, unless every row is no change",
+    "Reflection notes answering the task questions",
+    "AI disclosure entry when AI materially influenced the work"
+  ],
+  "acceptanceCriteria": [
+    "The table has one row for every review comment on the pull request, or — if no maintainer review exists — at least four self-review items plus every item the second-person reviewer raised.",
+    "Each row contains a comment summary, a reply that names the file or line under discussion, and either a commit SHA or the exact phrase \"no change\" plus a one-sentence reason.",
+    "At least one commit on the branch has an author date after the first review comment (or after the recorded self-review date), unless every row is marked no change.",
+    "The pull-request description still contains the upstream issue URL from os1t1-003.",
+    "Every reply is written as one or more complete sentences; no reply is only an emoji, only \"fixed\", or only a pasted patch with no explanation."
+  ],
+  "statusModel": [
+    "not_started",
+    "in_progress",
+    "submitted",
+    "revision_requested",
+    "resubmitted",
+    "approved"
+  ]
+}

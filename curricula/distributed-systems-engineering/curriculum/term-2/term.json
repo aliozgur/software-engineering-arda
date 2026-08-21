@@ -1,0 +1,14 @@
+{
+  "schemaVersion": 1,
+  "id": "ds1t2",
+  "title": "Term 2 — Partitioning, Delivery Guarantees and Operating Under Failure",
+  "estimatedHours": 100,
+  "tasks": [
+    "ds1t2-001",
+    "ds1t2-002",
+    "ds1t2-003",
+    "ds1t2-004",
+    "ds1t2-005",
+    "ds1t2-006"
+  ]
+}
