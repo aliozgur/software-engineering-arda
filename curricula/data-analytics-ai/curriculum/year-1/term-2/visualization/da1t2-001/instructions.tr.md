@@ -14,7 +14,7 @@ Tamamlama, fikirleri uygulayabildiğinizi ve açıklayabildiğinizi gösteren ka
 ## Yetkili kaynaklar
 
 - **Matplotlib Quick start**: https://matplotlib.org/stable/users/explain/quick_start.html
-- **Foundation of visualization notes (UW CSE512)**: https://courses.cs.washington.edu/courses/cse512/24sp/
+- **Fundamentals of Data Visualization (Claus O. Wilke)**: https://clauswilke.com/dataviz/
 
 Bağlantısı verilen kursu veya belgeyi birincil kaynak olarak kullanın. Ek kaynaklardan yararlanabilirsiniz; ancak bunları
 öğrenme notlarınıza kaydedin ve derleme eğitim siteleri yerine birincil belgeleri tercih edin.
