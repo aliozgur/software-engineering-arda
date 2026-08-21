@@ -1,0 +1,27 @@
+{
+  "schemaVersion": 1,
+  "id": "apprenti-dev-open-source-engineering-2026",
+  "name": "Open Source Engineering",
+  "version": "0.1.0",
+  "audience": "Junior through senior engineers building real open-source contribution and maintainership skill",
+  "philosophy": "Contribute to real projects, get real feedback, and grow from a first pull request to maintainer judgment — every artifact is a real, externally-verifiable contribution, never a simulation of one.",
+  "defaultWeeklyHours": "4-6",
+  "durationMonths": "2-3",
+  "roles": [
+    "apprentice",
+    "mentor"
+  ],
+  "corePlatforms": [
+    "Git"
+  ],
+  "aiPrinciples": [
+    "AI assistance must be disclosed when materially used, especially on anything submitted to a real external project.",
+    "AI may explain, hint, and quiz, but must never author the code, prose, or review comments the apprentice submits under their own name to a real maintainer or contributor.",
+    "The apprentice remains accountable for every real pull request, issue comment, and review submitted under their own account.",
+    "Mentor approval is based on the real, externally-verifiable artifact — a PR, issue, or review URL — and the apprentice's ability to explain and defend it, not on how polished the submission looks."
+  ],
+  "progression": "sequential",
+  "mentorship": "optional",
+  "sourceLocale": "en",
+  "contentLocales": ["en"]
+}

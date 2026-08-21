@@ -1,0 +1,15 @@
+{
+  "schemaVersion": 1,
+  "id": "mbedtls-docs",
+  "title": "Mbed TLS Documentation",
+  "url": "https://mbed-tls.readthedocs.io/en/latest/",
+  "type": "official_docs",
+  "provider": "Trusted Firmware / Mbed TLS",
+  "tier": "reference",
+  "topics": [
+    "hmac",
+    "constrained-crypto",
+    "tls",
+    "embedded-security"
+  ]
+}

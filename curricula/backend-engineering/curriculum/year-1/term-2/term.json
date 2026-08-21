@@ -1,0 +1,15 @@
+{
+  "schemaVersion": 1,
+  "id": "year-1-term-2",
+  "title": "Year 1 / Term 2 — Hardening and Scaling the Service",
+  "estimatedHours": 100,
+  "tasks": [
+    "be1t2-001",
+    "be1t2-002",
+    "be1t2-003",
+    "be1t2-004",
+    "be1t2-005",
+    "be1t2-006",
+    "be1t2-007"
+  ]
+}

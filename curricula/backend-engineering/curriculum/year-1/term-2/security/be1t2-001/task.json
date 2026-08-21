@@ -1,0 +1,39 @@
+{
+  "schemaVersion": 1,
+  "id": "be1t2-001",
+  "title": "Authenticate and Authorize the API",
+  "term": "year-1/term-2",
+  "module": "security",
+  "estimatedHours": 14,
+  "objective": "Protect the existing Python API so unauthenticated callers are rejected, authorized callers are limited by role, and credentials are never stored or logged in plaintext.",
+  "whyThisMatters": "An open API is not a backend service you can operate. Every later hardening and capstone task assumes this service already distinguishes callers and can prove it under review.",
+  "competencies": [
+    "security",
+    "http-api"
+  ],
+  "resources": [
+    "rfc-http",
+    "owasp-top10",
+    "python-docs"
+  ],
+  "instructionsFile": "instructions.md",
+  "aiPolicy": {
+    "mode": "guided",
+    "allowedCapabilities": ["explain", "hint", "quiz"],
+    "solutionGenerationAllowed": false,
+    "disclosureRequired": true
+  },
+  "evidence": [
+    "Git history showing auth, role checks, and tests added in separate commits, not one dump",
+    "Automated test output showing a 401, a 403, and a 200 for the same protected resource under three callers",
+    "The OpenAPI document with a declared security scheme and protected routes marked",
+    "A README section naming the auth method, the roles, and the exact permission on at least one resource",
+    "A grep or dump proving stored credentials are hashed and that tokens or passwords do not appear in application logs"
+  ],
+  "acceptanceCriteria": [
+    "An unauthenticated request to a protected route returns 401 with the documented error JSON shape.",
+    "An authenticated caller without permission on that resource returns 403, not 401 or 404.",
+    "A stored password, if passwords are used, appears only as a hash in the database dump or fixture — never as plaintext.",
+    "The OpenAPI document declares the security scheme and marks every protected route as requiring it."
+  ]
+}

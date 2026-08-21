@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "id": "be1t1-002",
+  "title": "HTTP Fundamentals for a Backend Service",
+  "term": "year-1/term-1",
+  "module": "http-api",
+  "estimatedHours": 12,
+  "objective": "Understand HTTP as a protocol and implement a minimal HTTP API in Python using correct methods, status codes and headers, chosen deliberately rather than copied.",
+  "whyThisMatters": "Every backend task after this one assumes fluency with HTTP semantics. Getting method, status and header choices right by hand, before a framework hides them, is what makes that fluency real instead of assumed.",
+  "competencies": [
+    "http-api",
+    "python"
+  ],
+  "resources": [
+    "rfc-http",
+    "mdn",
+    "python-docs"
+  ],
+  "instructionsFile": "instructions.md",
+  "aiPolicy": {
+    "mode": "guided",
+    "allowedCapabilities": ["explain", "hint", "quiz"],
+    "solutionGenerationAllowed": false,
+    "disclosureRequired": true
+  },
+  "evidence": [
+    "The annotated raw HTTP request/response capture, committed as a text file",
+    "Git history showing the API built incrementally: routes, then error handling, then the smoke test",
+    "The curl smoke test script and a paste of its output covering every route",
+    "README explaining the method/status choice for each route"
+  ],
+  "acceptanceCriteria": [
+    "Each route responds with a status code that matches HTTP semantics for its outcome.",
+    "At least one endpoint demonstrates an idempotent method and one demonstrates a non-idempotent method, and the README names which is which.",
+    "Error responses are valid JSON with a consistent shape across endpoints.",
+    "The curl smoke test script exercises every route, including both failure cases, and is committed to the repository."
+  ]
+}

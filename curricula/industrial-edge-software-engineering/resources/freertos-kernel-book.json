@@ -1,0 +1,15 @@
+{
+  "schemaVersion": 1,
+  "id": "freertos-kernel-book",
+  "title": "Mastering the FreeRTOS Real Time Kernel (official book)",
+  "url": "https://www.freertos.org/Documentation/RTOS_book.html",
+  "type": "book",
+  "provider": "FreeRTOS / Amazon",
+  "tier": "primary",
+  "topics": [
+    "rtos",
+    "scheduling",
+    "priority-inversion",
+    "mutex"
+  ]
+}

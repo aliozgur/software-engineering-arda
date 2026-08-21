@@ -1,0 +1,46 @@
+{
+  "schemaVersion": 1,
+  "id": "qt1t2-004",
+  "title": "Diagnose a Performance Regression Under Realistic Load",
+  "term": "year-1/term-2",
+  "module": "performance-diagnosis",
+  "estimatedHours": 18,
+  "objective": "Given a system behaving worse than expected under load, find the actual bottleneck using measurement and evidence, and prove the fix worked without breaking correctness.",
+  "whyThisMatters": "Optimizing the wrong thing costs time and adds complexity with no benefit. This task is deliberately open-ended: nobody hands you the bottleneck up front in production.",
+  "competencies": [
+    "performance",
+    "observability"
+  ],
+  "resources": [
+    "k6-docs",
+    "prometheus"
+  ],
+  "instructionsFile": "instructions.md",
+  "aiPolicy": {
+    "mode": "guided",
+    "allowedCapabilities": ["explain", "hint", "quiz"],
+    "solutionGenerationAllowed": false,
+    "disclosureRequired": true
+  },
+  "evidence": [
+    "Profiling or metrics output supporting the identified bottleneck",
+    "A written hypothesis recorded before the fix, including any hypothesis that turned out wrong",
+    "Before/after load test results for the identical workload",
+    "A correctness test suite run showing it still passes after the fix",
+    "A reflection note"
+  ],
+  "acceptanceCriteria": [
+    "A specific bottleneck hypothesis is recorded in writing before the fix is implemented.",
+    "Profiling or metrics evidence supports the identified bottleneck, not just an assumption.",
+    "Before/after latency distributions for the identical workload are both reported.",
+    "The correctness test suite is shown passing after the performance fix."
+  ],
+  "statusModel": [
+    "not_started",
+    "in_progress",
+    "submitted",
+    "revision_requested",
+    "resubmitted",
+    "approved"
+  ]
+}

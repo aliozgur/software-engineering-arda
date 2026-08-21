@@ -1,0 +1,45 @@
+{
+  "schemaVersion": 1,
+  "id": "ef1t2-005",
+  "title": "Write a Bug Report Someone Else Can Reproduce",
+  "term": "term-2",
+  "module": "bug-reporting",
+  "estimatedHours": 5,
+  "objective": "Write a bug report for a real Python defect such that a teammate who has not seen the code can reproduce it from the report alone, and attach a failing automated case that matches the reported actual result.",
+  "whyThisMatters": "'It doesn't work' is not a bug report. Numbered steps, expected versus actual, environment, and a minimal failing input are what make a ticket actionable — and what keep a teammate from bouncing it back to you.",
+  "competencies": [
+    "professional-practice",
+    "testing-quality"
+  ],
+  "resources": [
+    "python-docs",
+    "harvard-cs50p"
+  ],
+  "instructionsFile": "instructions.md",
+  "aiPolicy": {
+    "mode": "guided",
+    "allowedCapabilities": ["explain", "hint", "quiz"],
+    "solutionGenerationAllowed": false,
+    "disclosureRequired": true
+  },
+  "evidence": [
+    "The bug-report Markdown file containing environment, numbered steps, expected result, actual result, and a minimal input or script",
+    "A reproduction log from a second attempt (another person, or you after at least a few hours in a new terminal) that used only the report",
+    "Output of a failing automated test or script whose printed or asserted actual result matches the report's actual-result sentence",
+    "AI disclosure entry if AI helped draft the report or the failing case"
+  ],
+  "acceptanceCriteria": [
+    "The report file contains all of: environment (OS, Python version, relevant package versions), numbered reproduction steps, expected result, actual result, and a minimal input or script.",
+    "A second reproduction attempt is documented as succeeding from the report alone, or the log quotes the exact sentence that had to be added before it succeeded.",
+    "A committed failing test or script produces output that matches the report's actual-result sentence.",
+    "The report does not include a proposed patch or a root-cause claim presented as fact — this task is the report, not the fix."
+  ],
+  "statusModel": [
+    "not_started",
+    "in_progress",
+    "submitted",
+    "revision_requested",
+    "resubmitted",
+    "approved"
+  ]
+}

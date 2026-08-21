@@ -1,0 +1,44 @@
+{
+  "schemaVersion": 1,
+  "id": "ef1t1-004",
+  "title": "Write Characterization Tests for Existing Code",
+  "term": "term-1",
+  "module": "testing",
+  "estimatedHours": 6,
+  "objective": "Add automated tests that pin down what an existing, untested Python function or small module actually does today, including at least one surprising or edge-case behavior.",
+  "whyThisMatters": "Most professional test-writing isn't test-driven development against a blank page — it's adding a safety net to code that already exists and has no tests. Characterization tests let you change that code later without breaking behavior you didn't know something depended on.",
+  "competencies": [
+    "testing-quality"
+  ],
+  "resources": [
+    "harvard-cs50p",
+    "python-docs"
+  ],
+  "instructionsFile": "instructions.md",
+  "aiPolicy": {
+    "mode": "guided",
+    "allowedCapabilities": ["explain", "hint", "quiz"],
+    "solutionGenerationAllowed": false,
+    "disclosureRequired": true
+  },
+  "evidence": [
+    "The test file(s), committed with a message describing what they characterize",
+    "Console output of the test run showing all tests passing",
+    "A short note identifying the surprising or edge-case behavior found",
+    "AI disclosure entry if AI helped generate test cases"
+  ],
+  "acceptanceCriteria": [
+    "At least 6 test cases exist, covering normal input, at least one edge case, and at least one invalid or unexpected input.",
+    "All tests pass against the existing code, unmodified.",
+    "A comment or accompanying note names at least one place where the code's current behavior looks surprising or wrong, without fixing it.",
+    "Tests run with a single documented command, and that command's output is included in the evidence."
+  ],
+  "statusModel": [
+    "not_started",
+    "in_progress",
+    "submitted",
+    "revision_requested",
+    "resubmitted",
+    "approved"
+  ]
+}

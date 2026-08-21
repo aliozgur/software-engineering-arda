@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "id": "apprenti-dev-platform-devops-engineering-2026",
+  "name": "apprenti.dev Platform / DevOps Engineering Apprenticeship",
+  "version": "0.1.0",
+  "audience": "Software engineers or ops engineers moving into platform/DevOps specialization, with solid coding ability but not necessarily prior infrastructure experience",
+  "philosophy": "Evidence-driven apprenticeship: build a real pipeline, ship through it, observe what happens, and be able to roll it back.",
+  "estimatedDurationMonths": "6-9",
+  "defaultWeeklyHours": 7.5,
+  "roles": [
+    "apprentice",
+    "mentor"
+  ],
+  "languages": [
+    "Bash",
+    "YAML",
+    "HCL"
+  ],
+  "corePlatforms": [
+    "Docker",
+    "Kubernetes (kind/minikube)",
+    "GitHub Actions",
+    "GitLab CI",
+    "OpenTofu/Terraform",
+    "Prometheus",
+    "OpenTelemetry"
+  ],
+  "aiPrinciples": [
+    "AI assistance must be disclosed when materially used.",
+    "Tasks may restrict solution generation while allowing explanations, hints and quizzes.",
+    "The apprentice remains accountable for every pipeline, infrastructure change and rollback they submit.",
+    "Mentor approval is based on demonstrated understanding and live failure-injection response, not passing automation alone."
+  ],
+  "progression": "sequential",
+  "mentorship": "optional",
+  "sourceLocale": "en",
+  "contentLocales": ["en"]
+}

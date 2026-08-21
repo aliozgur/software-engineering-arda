@@ -1,0 +1,39 @@
+{
+  "schemaVersion": 1,
+  "id": "be1t1-004",
+  "title": "A REST API Backed by PostgreSQL",
+  "term": "year-1/term-1",
+  "module": "backend",
+  "estimatedHours": 20,
+  "objective": "Implement a working REST API in Python over the schema from the previous task, with validation, consistent errors, and a matching OpenAPI document.",
+  "whyThisMatters": "This is the first task where the API, the database, and the documentation all have to agree with each other. That three-way agreement is what makes an API usable by someone who isn't you.",
+  "competencies": [
+    "http-api",
+    "relational-data",
+    "python"
+  ],
+  "resources": [
+    "postgres-docs",
+    "openapi",
+    "python-docs"
+  ],
+  "instructionsFile": "instructions.md",
+  "aiPolicy": {
+    "mode": "guided",
+    "allowedCapabilities": ["explain", "hint", "quiz"],
+    "solutionGenerationAllowed": false,
+    "disclosureRequired": true
+  },
+  "evidence": [
+    "Git history showing the API, validation, and OpenAPI document built incrementally rather than in one commit",
+    "The OpenAPI document file committed to the repository, plus confirmation it validates",
+    "A test or script output demonstrating the transaction rollback on a simulated failure",
+    "curl or automated test output showing a validation failure producing the documented error shape"
+  ],
+  "acceptanceCriteria": [
+    "Every implemented route appears in the OpenAPI document with matching request and response schemas.",
+    "An operation that touches more than one table is wrapped in a transaction, demonstrated by a rollback test.",
+    "Invalid input produces a 4xx response with a validation error body, not a 500.",
+    "The OpenAPI document validates against the OpenAPI schema."
+  ]
+}

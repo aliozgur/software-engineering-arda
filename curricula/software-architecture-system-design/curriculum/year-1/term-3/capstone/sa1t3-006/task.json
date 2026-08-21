@@ -1,0 +1,41 @@
+{
+  "schemaVersion": 1,
+  "id": "sa1t3-006",
+  "title": "End-to-End Architecture: Present, Defend, Revise",
+  "term": "year-1/term-3",
+  "module": "capstone",
+  "estimatedHours": 10,
+  "objective": "Produce a self-scoped architecture packet with at least three ADRs tied to stated NFRs, defend it live against one changed constraint, and supersede the ADR that constraint invalidated.",
+  "whyThisMatters": "Single decisions can be locally right and globally incoherent. This closing task asks you to compose a system — NFRs, decisions, a quantitative model, a diagnostic story — and revise one piece when a constraint changes, without rewriting the packet from scratch. That is the job this curriculum was training.",
+  "competencies": [
+    "architecture-and-tradeoffs",
+    "professional-practice",
+    "observability"
+  ],
+  "resources": ["adr-github-io", "opentelemetry"],
+  "instructionsFile": "instructions.md",
+  "aiPolicy": {
+    "mode": "guided",
+    "allowedCapabilities": ["explain", "hint", "quiz", "coach"],
+    "solutionGenerationAllowed": false,
+    "disclosureRequired": true
+  },
+  "evidence": [
+    "An architecture packet containing an NFR sheet, at least three ADRs each tracing to a stated NFR, one quantitative model (capacity, SLO, or cost), one system diagram, and a short diagnostic story naming the signals that would distinguish two failures",
+    "Defense-session notes naming the changed constraint and the specific question that most challenged the original packet",
+    "A superseding or amended ADR that addresses the changed constraint without silently deleting the originals, plus a side-by-side note of what the constraint invalidated"
+  ],
+  "acceptanceCriteria": [
+    "The packet contains at least three ADRs, and each ADR names the NFR or constraint it responds to.",
+    "The diagnostic story names two failures and the specific signal that would distinguish them, using the same vocabulary as a prior observability or SLO artifact.",
+    "Defense notes name one changed constraint and one question the apprentice could not fully answer live; a second ADR marks the invalidated decision as superseded or amended rather than replacing it silently."
+  ],
+  "statusModel": [
+    "not_started",
+    "in_progress",
+    "submitted",
+    "revision_requested",
+    "resubmitted",
+    "approved"
+  ]
+}

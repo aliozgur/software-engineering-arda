@@ -1,0 +1,45 @@
+{
+  "schemaVersion": 1,
+  "id": "ef1t1-005",
+  "title": "Debug a Reported Bug Methodically",
+  "term": "term-1",
+  "module": "debugging",
+  "estimatedHours": 6,
+  "objective": "Take a bug report for existing code, reproduce it reliably, isolate the root cause, and fix it, leaving a written record of the process rather than just the fix.",
+  "whyThisMatters": "The habit that separates methodical debugging from guessing is writing down what you tried before you knew the answer. A mentor can tell a lucky fix apart from an understood one only if that record exists.",
+  "competencies": [
+    "engineering-tooling",
+    "testing-quality"
+  ],
+  "resources": [
+    "mit-missing-semester",
+    "python-docs"
+  ],
+  "instructionsFile": "instructions.md",
+  "aiPolicy": {
+    "mode": "guided",
+    "allowedCapabilities": ["explain", "hint", "quiz"],
+    "solutionGenerationAllowed": false,
+    "disclosureRequired": true
+  },
+  "evidence": [
+    "Commit history showing a failing reproduction, then a fix, then a regression test, as separate commits",
+    "The debugging log naming the hypotheses tried and how each was ruled in or out",
+    "Test run output before and after the fix",
+    "AI disclosure entry if AI suggested a hypothesis or fix"
+  ],
+  "acceptanceCriteria": [
+    "A written debugging log records at least 3 hypotheses tried in order, including ones that turned out wrong.",
+    "A minimal, reproducible failing case exists before the fix, as a script or a failing test.",
+    "After the fix, the previously failing case passes, and any pre-existing tests still pass.",
+    "A new automated test exists that would fail again if the bug reappeared."
+  ],
+  "statusModel": [
+    "not_started",
+    "in_progress",
+    "submitted",
+    "revision_requested",
+    "resubmitted",
+    "approved"
+  ]
+}

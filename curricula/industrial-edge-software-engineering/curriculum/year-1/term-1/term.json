@@ -1,0 +1,13 @@
+{
+  "schemaVersion": 1,
+  "id": "year-1/term-1",
+  "title": "Term 1 — Constrained machines",
+  "estimatedHours": 38,
+  "tasks": [
+    "ie1t1-001",
+    "ie1t1-002",
+    "ie1t1-003",
+    "ie1t1-004",
+    "ie1t1-005"
+  ]
+}

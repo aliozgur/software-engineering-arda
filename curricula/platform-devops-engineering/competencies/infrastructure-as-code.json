@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "infrastructure-as-code",
+  "title": "Infrastructure as Code",
+  "description": "Declarative provisioning, drift detection and reviewable infrastructure changes.",
+  "levels": [
+    {
+      "level": 1,
+      "name": "Foundation",
+      "description": "Can explain what distinguishes declarative infrastructure-as-code from an imperative setup script, and can run an existing plan/apply cycle with guidance."
+    },
+    {
+      "level": 2,
+      "name": "Apprentice",
+      "description": "Can write a small, working infrastructure-as-code definition for a scoped piece of infrastructure and apply it from a clean state with limited guidance."
+    },
+    {
+      "level": 3,
+      "name": "Practitioner",
+      "description": "Can independently design, modularize and apply an infrastructure-as-code definition for a multi-resource stack, and can explain every resource it creates."
+    },
+    {
+      "level": 4,
+      "name": "Journeyman",
+      "description": "Can detect drift between declared and actual infrastructure state, and can defend a chosen remediation path (revert, import, or codify) under mentor questioning."
+    },
+    {
+      "level": 5,
+      "name": "Mastery Evidence",
+      "description": "Can design a reviewable infrastructure-change workflow, with plan output and policy checks surfaced before apply, and can teach a peer how to safely evolve shared infrastructure code."
+    }
+  ]
+}

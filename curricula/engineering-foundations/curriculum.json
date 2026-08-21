@@ -1,0 +1,37 @@
+{
+  "schemaVersion": 1,
+  "id": "apprenti-dev-engineering-foundations-2026",
+  "name": "apprenti.dev Engineering Foundations for Junior Developers",
+  "version": "0.1.0",
+  "durationMonths": "4-6",
+  "audience": "New graduates or junior developers in their first months in a professional engineering role, who can already write code but have little professional practice",
+  "philosophy": "LEARN BY DOING. GROW THROUGH MENTORSHIP. The professional practices a degree or bootcamp usually skips: real Git workflows, reading unfamiliar code, testing what already exists, methodical debugging, and writing for a reviewer.",
+  "defaultWeeklyHours": {
+    "structuredOnboarding": "10-15"
+  },
+  "assumptions": [
+    "Weekly hours (10-15) assume this curriculum runs alongside a structured onboarding program, where task work is one part of the week rather than the whole of it; a fully self-paced apprentice may need a different pace.",
+    "Apprentices already know how to program in at least one language before starting. This curriculum teaches professional practice, not language fundamentals.",
+    "Python is used as the shared implementation language for hands-on tasks so evidence is comparable across apprentices; Git, tooling, and review tasks are otherwise kept language-agnostic."
+  ],
+  "roles": [
+    "apprentice",
+    "mentor"
+  ],
+  "languages": [
+    "Python"
+  ],
+  "corePlatforms": [
+    "Git"
+  ],
+  "aiPrinciples": [
+    "AI assistance must be disclosed when materially used.",
+    "Tasks in this curriculum default to guided AI use: explanations, hints and quizzes are allowed, complete solutions are not.",
+    "The apprentice remains accountable for every submitted artifact, AI-assisted or not.",
+    "Mentor approval is based on demonstrated understanding and inspectable evidence, not on AI output quality."
+  ],
+  "progression": "sequential",
+  "mentorship": "optional",
+  "sourceLocale": "en",
+  "contentLocales": ["en"]
+}

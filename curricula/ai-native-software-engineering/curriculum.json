@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "apprenti-dev-ai-native-software-engineering-2026",
+  "name": "AI-Native Software Engineering",
+  "version": "0.1.0",
+  "audience": "Working software engineers upskilling into AI-native development practice",
+  "philosophy": "LEARN BY DOING. GROW THROUGH MENTORSHIP. AI assistance becomes a disclosed, verified, first-class part of professional engineering practice — never a shortcut around judgment, and never a reason to skip it.",
+  "defaultWeeklyHours": 5,
+  "durationMonths": "4-6",
+  "assumptions": [
+    "Apprentices are already working software engineers: they can write, test, and review code in at least one language, and they have a real project they can use as the substrate for these tasks.",
+    "Weekly hours assume this path runs alongside a job (about 5 hours of structured practice per week). A fully self-paced apprentice may move faster.",
+    "Tasks are language-agnostic. Use the stack you already ship in; do not invent a toy language just for this path."
+  ],
+  "roles": [
+    "apprentice",
+    "mentor"
+  ],
+  "corePlatforms": [
+    "Git"
+  ],
+  "aiPrinciples": [
+    "AI assistance is disclosed on every task, not only when something goes wrong.",
+    "Critical review of AI-generated work is judged on what the apprentice verified, changed and rejected, not on whether AI was used.",
+    "The apprentice remains accountable for every submitted artifact, whether AI-assisted or independently produced.",
+    "Some tasks deliberately withhold AI solution generation because the judgment being assessed is knowing when not to reach for it.",
+    "Mentor approval is based on demonstrated verification and judgment, not on how polished the AI output looked."
+  ],
+  "progression": "sequential",
+  "mentorship": "optional",
+  "sourceLocale": "en",
+  "contentLocales": ["en"]
+}

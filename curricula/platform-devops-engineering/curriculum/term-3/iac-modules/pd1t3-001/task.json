@@ -1,0 +1,35 @@
+{
+  "schemaVersion": 1,
+  "id": "pd1t3-001",
+  "title": "Modularize the Stack and Review a Plan",
+  "term": "term-3",
+  "module": "iac-modules",
+  "estimatedHours": 18,
+  "competencies": [
+    "infrastructure-as-code"
+  ],
+  "resources": [
+    "opentofu-docs"
+  ],
+  "instructionsFile": "instructions.md",
+  "aiPolicy": {
+    "mode": "guided",
+    "allowedCapabilities": ["explain", "hint", "quiz"],
+    "solutionGenerationAllowed": false,
+    "disclosureRequired": true
+  },
+  "evidence": [
+    "Committed root module that calls at least one child module used in two named instances or environments",
+    "tofu validate output and a saved tofu plan for a documented change that later matches the apply",
+    "tfvars or equivalent files that carry per-environment differences without editing the child module",
+    "MODULE.md listing inputs, outputs, and one thing the module is not allowed to do",
+    "Reflection notes answering the task questions",
+    "AI disclosure entry when AI materially influenced the work"
+  ],
+  "acceptanceCriteria": [
+    "The root module calls at least one child module that is applied in two named instances or environments (for example two namespaces or two Compose projects).",
+    "tofu validate succeeds from a clean checkout.",
+    "A saved tofu plan for a documented change is attached, and a subsequent apply matches that plan (no extra destroys or creates).",
+    "Values that differ per environment live in tfvars or equivalent, not in edits to the child module. MODULE.md lists inputs, outputs, and one explicit non-goal."
+  ]
+}

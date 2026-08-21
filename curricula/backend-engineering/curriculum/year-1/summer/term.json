@@ -1,0 +1,13 @@
+{
+  "schemaVersion": 1,
+  "id": "year-1-summer",
+  "title": "Year 1 / Summer — Capstone: An Integrated Backend Service",
+  "estimatedHours": 86,
+  "tasks": [
+    "be1s-001",
+    "be1s-002",
+    "be1s-003",
+    "be1s-004",
+    "be1s-005"
+  ]
+}

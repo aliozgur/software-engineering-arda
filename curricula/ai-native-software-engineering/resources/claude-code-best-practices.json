@@ -1,0 +1,13 @@
+{
+  "schemaVersion": 1,
+  "id": "claude-code-best-practices",
+  "title": "Best Practices for Agentic Coding",
+  "url": "https://code.claude.com/docs/en/best-practices",
+  "type": "official_docs",
+  "provider": "Anthropic",
+  "tier": "reference",
+  "topics": [
+    "agentic-coding",
+    "ai-assisted-engineering"
+  ]
+}

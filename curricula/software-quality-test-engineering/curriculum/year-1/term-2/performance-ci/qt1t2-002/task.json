@@ -1,0 +1,46 @@
+{
+  "schemaVersion": 1,
+  "id": "qt1t2-002",
+  "title": "Add a Performance Regression Gate to the Pipeline",
+  "term": "year-1/term-2",
+  "module": "performance-ci",
+  "estimatedHours": 16,
+  "objective": "Turn a load test into an automated CI check that fails when a change regresses latency or error rate beyond a stated margin.",
+  "whyThisMatters": "A load test that only runs manually before a big release catches regressions too late and too rarely. A gate in the pipeline catches them at the commit that introduced them.",
+  "competencies": [
+    "performance",
+    "ci-cd"
+  ],
+  "resources": [
+    "k6-docs",
+    "github-actions",
+    "gitlab-ci"
+  ],
+  "instructionsFile": "instructions.md",
+  "aiPolicy": {
+    "mode": "guided",
+    "allowedCapabilities": ["explain", "hint", "quiz"],
+    "solutionGenerationAllowed": false,
+    "disclosureRequired": true
+  },
+  "evidence": [
+    "The CI job configuration for the performance gate",
+    "Pipeline log or output showing the gate failing on a deliberate regression",
+    "Pipeline log or output showing the gate passing after the regression is reverted",
+    "A written note on how CI noise/variance was accounted for"
+  ],
+  "acceptanceCriteria": [
+    "The CI configuration runs the load test and compares the result to a stored baseline, not an arbitrary hardcoded number picked without justification.",
+    "A deliberately introduced regression is shown failing the gate, with the pipeline output captured.",
+    "The pipeline is shown passing again once the regression is reverted.",
+    "The noise/variance-handling approach is documented, naming the specific margin or iteration count chosen."
+  ],
+  "statusModel": [
+    "not_started",
+    "in_progress",
+    "submitted",
+    "revision_requested",
+    "resubmitted",
+    "approved"
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "id": "google-sre-book",
+  "title": "Site Reliability Engineering (Google SRE Book)",
+  "url": "https://sre.google/sre-book/table-of-contents/",
+  "type": "book",
+  "provider": "Google",
+  "tier": "reference",
+  "topics": [
+    "sre",
+    "slo",
+    "error-budgets",
+    "alerting",
+    "postmortems",
+    "incident-response"
+  ]
+}

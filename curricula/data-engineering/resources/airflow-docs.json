@@ -1,0 +1,15 @@
+{
+  "schemaVersion": 1,
+  "id": "airflow-docs",
+  "title": "Apache Airflow Documentation",
+  "url": "https://airflow.apache.org/docs/apache-airflow/stable/",
+  "type": "official_docs",
+  "provider": "Apache Airflow",
+  "tier": "primary",
+  "topics": [
+    "orchestration",
+    "dags",
+    "scheduling",
+    "retries"
+  ]
+}

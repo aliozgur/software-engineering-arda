@@ -1,0 +1,48 @@
+{
+  "schemaVersion": 1,
+  "id": "os1t1-003",
+  "title": "Open a Justified Contribution",
+  "term": "year-1/term-1",
+  "module": "first-pr",
+  "estimatedHours": 10,
+  "objective": "Open a small, justified change that addresses a real public issue — as an upstream pull request, or as a pull request on a local fork of that same public repository with the upstream issue URL attached.",
+  "whyThisMatters": "Open-source skill is not a private patch sitting on disk. It is a change another person can review, linked to an issue the project already has, using the project's own Git and review conventions.",
+  "competencies": [
+    "open-source",
+    "git"
+  ],
+  "resources": [
+    "pro-git"
+  ],
+  "instructionsFile": "instructions.md",
+  "aiPolicy": {
+    "mode": "guided",
+    "allowedCapabilities": ["explain", "hint", "quiz"],
+    "solutionGenerationAllowed": false,
+    "disclosureRequired": true
+  },
+  "evidence": [
+    "The public upstream issue URL the change addresses",
+    "Either the upstream pull-request URL, or the fork pull-request URL plus the fork clone URL and the upstream clone URL",
+    "Git log of the contribution branch showing at least two commits, with SHAs",
+    "The pull-request description text, including a list of every top-level path the diff touches",
+    "A short convention note quoting the project's commit, test, or DCO/CLA rule and the file path it came from",
+    "Reflection notes answering the task questions",
+    "AI disclosure entry when AI materially influenced the work"
+  ],
+  "acceptanceCriteria": [
+    "The pull-request description names the upstream issue URL in the first twenty lines.",
+    "The contribution branch contains at least two commits, shown by git log SHAs in the evidence note.",
+    "The pull-request description lists every top-level path the diff touches, and the opened diff contains no other top-level path.",
+    "The description contains at least three sentences on the user-visible or maintainer-visible effect.",
+    "Either the pull-request URL is on the upstream public repository, or the note includes the fork pull-request URL, the upstream clone URL, and the upstream issue URL, and states that the fork was cloned from that public repository."
+  ],
+  "statusModel": [
+    "not_started",
+    "in_progress",
+    "submitted",
+    "revision_requested",
+    "resubmitted",
+    "approved"
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "schemaVersion": 1,
+  "id": "be1t2-007",
+  "title": "Harden the Image and the Pipeline (Term 2 Milestone)",
+  "term": "year-1/term-2",
+  "module": "hardening",
+  "estimatedHours": 14,
+  "objective": "Run the container as a non-root user, fail CI on a documented image-scan severity, and keep secrets out of the Dockerfile and workflow files.",
+  "whyThisMatters": "Term 1 proved the pipeline can go red. Term 2 closes by making the image and the pipeline themselves hostile to the easy failures: root in production, known vulnerable packages, and secrets in Git.",
+  "competencies": [
+    "ci-cd",
+    "containers",
+    "security"
+  ],
+  "resources": [
+    "github-actions",
+    "docker-docs",
+    "owasp-top10"
+  ],
+  "instructionsFile": "instructions.md",
+  "aiPolicy": {
+    "mode": "guided",
+    "allowedCapabilities": ["explain", "hint", "quiz"],
+    "solutionGenerationAllowed": false,
+    "disclosureRequired": true
+  },
+  "evidence": [
+    "The Dockerfile showing a non-root USER on the final stage, and the workflow file that builds, tests, and scans",
+    "Exported logs of a failing scan or a failing root-user check, and of the later passing run",
+    "Git history with the deliberate break and the fix as separate, identifiable commits",
+    "A README baseline naming the scan tool, the failing severity, and how secrets are supplied",
+    "A grep of the Dockerfile and workflow YAML showing no secret values"
+  ],
+  "acceptanceCriteria": [
+    "The final image stage sets USER to a non-root uid or named user; docker compose run whoami (or equivalent) is not root.",
+    "CI fails when the image scan reports a finding at the severity named in the README, shown by a failing run log.",
+    "No password, token, or API key appears in the Dockerfile or the workflow YAML.",
+    "The pipeline still runs lint, tests against real service containers, an image build, and the scan on every push."
+  ]
+}

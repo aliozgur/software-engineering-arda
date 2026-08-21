@@ -1,0 +1,43 @@
+{
+  "schemaVersion": 1,
+  "id": "ef1t1-006",
+  "title": "Write a Pull Request Description a Reviewer Can Act On",
+  "term": "term-1",
+  "module": "professional-practice",
+  "estimatedHours": 4,
+  "objective": "Write a technical note or pull request description for a real change you made that lets a reviewer understand what changed, why, and how to verify it without reading the whole diff first.",
+  "whyThisMatters": "A vague PR description ('fixes bug', 'updates code') forces every reviewer to reverse-engineer your intent from the diff. A clear one is a professional courtesy that also speeds up your own review.",
+  "competencies": [
+    "professional-practice",
+    "git"
+  ],
+  "resources": [
+    "pro-git"
+  ],
+  "instructionsFile": "instructions.md",
+  "aiPolicy": {
+    "mode": "guided",
+    "allowedCapabilities": ["explain", "hint", "quiz"],
+    "solutionGenerationAllowed": false,
+    "disclosureRequired": true
+  },
+  "evidence": [
+    "The PR description text (a link plus the raw text, since PR descriptions can be edited later)",
+    "A short note recording what a reader who hadn't seen the diff said after reading only the description, and whether that matched your intent",
+    "AI disclosure entry if AI helped draft any part of the text"
+  ],
+  "acceptanceCriteria": [
+    "The description states the problem being solved before describing the change.",
+    "The description names at least one concrete verification step actually performed, such as a specific test run or manual check, not just 'tested it'.",
+    "The description names anything intentionally left out of scope or deferred.",
+    "A reader who has not seen the diff can describe, after reading only the description, what changed and how to verify it, confirmed in your submitted note."
+  ],
+  "statusModel": [
+    "not_started",
+    "in_progress",
+    "submitted",
+    "revision_requested",
+    "resubmitted",
+    "approved"
+  ]
+}

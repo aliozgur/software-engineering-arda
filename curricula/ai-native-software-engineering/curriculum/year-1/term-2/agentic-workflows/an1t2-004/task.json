@@ -1,0 +1,49 @@
+{
+  "schemaVersion": 1,
+  "id": "an1t2-004",
+  "title": "Diagnosing a Failed or Runaway Agentic Session",
+  "term": "year-1/term-2",
+  "module": "agentic-workflows",
+  "estimatedHours": 9,
+  "objective": "Deliberately run a longer agentic session on a task open-ended enough that the assistant is likely to drift, then diagnose the drift, roll back the unwanted part with version control, and re-scope a narrower follow-up session that succeeds.",
+  "whyThisMatters": "Long, less-supervised sessions eventually go off track. Recovering safely without losing the good part of the work is a distinct skill from getting a session right on the first try.",
+  "competencies": [
+    "ai-assisted-engineering",
+    "agentic-development-workflow"
+  ],
+  "resources": [
+    "claude-code-best-practices"
+  ],
+  "instructionsFile": "instructions.md",
+  "aiPolicy": {
+    "mode": "guided",
+    "allowedCapabilities": [
+      "explain",
+      "hint",
+      "quiz"
+    ],
+    "solutionGenerationAllowed": true,
+    "disclosureRequired": true
+  },
+  "evidence": [
+    "The original open-ended prompt and a log or transcript summary of what the session actually did",
+    "A specific description of where the session drifted from the intended scope (an unrelated file edited, an invented API, or work beyond what was asked)",
+    "Git history showing the unwanted portion of the change was isolated and reverted or discarded, while any usable part was kept",
+    "The narrower follow-up prompt and evidence that it stayed in scope and passed verification",
+    "AI disclosure entry naming the tool/model used, purpose, and what was independently verified"
+  ],
+  "acceptanceCriteria": [
+    "The drift description names a specific file, decision, or behavior that was outside the original intent, not a general complaint.",
+    "Git history shows a revert, reset, or discard operation isolated to the unwanted portion, distinguishable from any kept work.",
+    "The follow-up session's diff stays within the boundaries stated in its own narrower prompt.",
+    "The follow-up change passes a verification step shown in the evidence."
+  ],
+  "statusModel": [
+    "not_started",
+    "in_progress",
+    "submitted",
+    "revision_requested",
+    "resubmitted",
+    "approved"
+  ]
+}

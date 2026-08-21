@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "id": "ds1t2-004",
+  "title": "RabbitMQ Ack Windows, Broker Restart, and a Poison Message",
+  "term": "ds1t2",
+  "module": "delivery-guarantees",
+  "estimatedHours": 16,
+  "objective": "Run RabbitMQ with durable queues and compare four named failure points — crash before ack, crash after side-effect, broker restart while a message is unacked, and a poison message that never succeeds — then write a table that states the actual delivery guarantee for each row against the Kafka offset-commit window from ds1t2-002 / ds1t2-003.",
+  "whyThisMatters": "The SWE RabbitMQ task asks for retries, a DLQ, and an idempotent consumer. That is the happy path of reliability. This task times the ack against the side-effect and against a broker restart, then puts Kafka's offset commit next to it, so 'at-least-once' is a set of windows you measured rather than a slogan both brokers share.",
+  "competencies": [
+    "distributed-systems",
+    "messaging"
+  ],
+  "resources": [
+    "rabbitmq-tutorials",
+    "docker-docs"
+  ],
+  "instructionsFile": "instructions.md",
+  "aiPolicy": {
+    "mode": "guided",
+    "allowedCapabilities": ["explain", "hint", "quiz"],
+    "solutionGenerationAllowed": false,
+    "disclosureRequired": true
+  },
+  "evidence": [
+    "Compose (or equivalent) for RabbitMQ and git history showing durable topology before the four failure runs",
+    "A results table (Markdown or CSV) with four rows: crash-before-ack, crash-after-side-effect, broker-restart-unacked, poison — each with predicted outcome, actual outcome, and whether the domain effect ran 0, 1, or N times",
+    "Captured broker/consumer logs for the poison path showing the message on a dead-letter queue after a bounded retry count you configured",
+    "README stating prefetch, ack mode, retry limit, and the actual guarantee (never 'exactly-once')",
+    "Reflection notes answering the task questions"
+  ],
+  "acceptanceCriteria": [
+    "All four failure classes are run against a durable queue and a durable published message; the table has a predicted column committed or timestamped before the corresponding run.",
+    "Crash-after-side-effect shows the domain effect occurring more than once unless an idempotency key suppresses the second apply — and the table says which of those two you implemented.",
+    "The poison message appears on an inspectable dead-letter queue after at most the configured retry count, and that count is a number in README and in the broker policy or application retry loop.",
+    "README compares each of the four rows to the equivalent Kafka failure (offset commit before vs after the side-effect, broker loss of an uncommitted produce) in one sentence per row — not a brand preference."
+  ]
+}

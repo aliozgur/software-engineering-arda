@@ -1,0 +1,41 @@
+{
+  "schemaVersion": 1,
+  "id": "sa1t2-002",
+  "title": "Capacity and Latency Budget Modeling",
+  "term": "year-1/term-2",
+  "module": "scalability",
+  "estimatedHours": 8,
+  "objective": "Build a back-of-envelope capacity model with stated formulas and assumptions, allocate a latency budget across components, and identify the most likely bottleneck with supporting evidence.",
+  "whyThisMatters": "Scaling decisions made on intuition alone are frequently wrong in the specific direction that costs the most. A capacity model that shows its formulas can be checked and corrected; a gut feeling about where the bottleneck will be cannot.",
+  "competencies": [
+    "architecture-and-tradeoffs",
+    "performance",
+    "database-systems"
+  ],
+  "resources": ["prometheus"],
+  "instructionsFile": "instructions.md",
+  "aiPolicy": {
+    "mode": "guided",
+    "allowedCapabilities": ["explain", "hint", "quiz"],
+    "solutionGenerationAllowed": false,
+    "disclosureRequired": true
+  },
+  "evidence": [
+    "A capacity model document showing the formulas and input assumptions used, not just final numbers",
+    "A latency budget table allocating the end-to-end target across at least three components",
+    "A note identifying the single most likely bottleneck and the specific number from the model that points to it"
+  ],
+  "acceptanceCriteria": [
+    "Every capacity number states its formula and input assumptions, not a bare final figure.",
+    "The latency budget across components sums to no more than the stated end-to-end target.",
+    "The identified bottleneck is supported by a specific number from the model, not a general intuition."
+  ],
+  "statusModel": [
+    "not_started",
+    "in_progress",
+    "submitted",
+    "revision_requested",
+    "resubmitted",
+    "approved"
+  ]
+}

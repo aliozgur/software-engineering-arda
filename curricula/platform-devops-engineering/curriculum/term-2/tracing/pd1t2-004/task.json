@@ -1,0 +1,35 @@
+{
+  "schemaVersion": 1,
+  "id": "pd1t2-004",
+  "title": "Trace a Request Path with OpenTelemetry",
+  "term": "term-2",
+  "module": "tracing",
+  "estimatedHours": 13,
+  "competencies": [
+    "observability"
+  ],
+  "resources": [
+    "opentelemetry"
+  ],
+  "instructionsFile": "instructions.md",
+  "aiPolicy": {
+    "mode": "guided",
+    "allowedCapabilities": ["explain", "hint", "quiz"],
+    "solutionGenerationAllowed": false,
+    "disclosureRequired": true
+  },
+  "evidence": [
+    "Committed instrumentation change in the service and committed local exporter or collector configuration",
+    "A captured trace for a documented request containing at least two spans whose names match the code path",
+    "The trace id recorded in the evidence note so a mentor can match the capture to the request",
+    "README commands that start the local backend and reproduce one traced request",
+    "Reflection notes answering the task questions",
+    "AI disclosure entry when AI materially influenced the work"
+  ],
+  "acceptanceCriteria": [
+    "The service contains a committed OpenTelemetry instrumentation change (SDK, auto-instrumentation, or equivalent).",
+    "A captured trace for a documented request contains at least two spans with names that match the code path (for example handler plus outbound or datastore).",
+    "Traces export to a local backend (collector plus UI, Jaeger, Zipkin, or a file exporter) whose configuration is committed.",
+    "The evidence note records the trace id of that request. No paid APM product is required."
+  ]
+}

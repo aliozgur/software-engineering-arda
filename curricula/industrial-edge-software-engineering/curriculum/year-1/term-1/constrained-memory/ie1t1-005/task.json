@@ -1,0 +1,47 @@
+{
+  "schemaVersion": 1,
+  "id": "ie1t1-005",
+  "title": "Fixed-size pool, OOM policy, fragmentation numbers",
+  "term": "year-1/term-1",
+  "module": "constrained-memory",
+  "estimatedHours": 6,
+  "objective": "Implement a pool of M fixed-size blocks with documented OOM and double-free results, prove the pool can refill after a full free, and publish a measurement of pool bytes versus a scripted allocation pattern.",
+  "whyThisMatters": "A 'custom allocator' that cannot say what happens at M+1 or on double-free is still a heap with extra steps. Edge firmware needs a pool whose failure modes are tests, not crashes.",
+  "competencies": [
+    "c-memory",
+    "performance",
+    "testing-quality"
+  ],
+  "resources": [
+    "gnu-ld"
+  ],
+  "instructionsFile": "instructions.md",
+  "aiPolicy": {
+    "mode": "guided",
+    "allowedCapabilities": ["explain", "hint", "quiz"],
+    "solutionGenerationAllowed": false,
+    "disclosureRequired": true
+  },
+  "evidence": [
+    "Pool C sources and a test program with incremental Git history",
+    "A captured run showing alloc M+1 returning the documented OOM result after M successes",
+    "A captured run showing double-free of the same block returning the documented error, not a crash and not silent success",
+    "A captured run showing that after freeing all M blocks, a subsequent full set of M allocations succeeds",
+    "MEASURE.md reporting block size, block count, total pool bytes, and peak live blocks for a scripted pattern",
+    "Reflection notes answering the task questions"
+  ],
+  "acceptanceCriteria": [
+    "After M successful allocations, allocation M+1 returns the documented OOM code and a null or invalid handle; both the code and the handle are shown in a captured run.",
+    "Double-free of the same block returns a documented error (not a crash, not a second successful free).",
+    "Freeing all M live blocks allows a following sequence of M allocations to succeed; the captured run prints success for that refill.",
+    "MEASURE.md states integers for block size S, block count M, total pool bytes, and peak live blocks for one named scripted pattern (for example allocate all, free every other, allocate again)."
+  ],
+  "statusModel": [
+    "not_started",
+    "in_progress",
+    "submitted",
+    "revision_requested",
+    "resubmitted",
+    "approved"
+  ]
+}

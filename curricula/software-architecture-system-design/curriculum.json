@@ -1,0 +1,24 @@
+{
+  "schemaVersion": 1,
+  "id": "apprenti-dev-software-architecture-system-design-2026",
+  "name": "apprenti.dev Software Architecture & System Design Apprenticeship",
+  "version": "0.1.0",
+  "duration": "6-9 months",
+  "audience": "Mid-level to senior engineers moving into architecture-level responsibility; assumes strong implementation skills already",
+  "philosophy": "Evidence-driven apprenticeship: decide, justify, defend, revise.",
+  "defaultWeeklyHours": "5-8",
+  "roles": [
+    "apprentice",
+    "mentor"
+  ],
+  "aiPrinciples": [
+    "AI assistance must be disclosed when materially used.",
+    "AI may explain, hint, quiz and coach rehearsal for a defense; it does not generate the trade-off decision or the ADR text a task asks the apprentice to produce.",
+    "The apprentice remains accountable for every trade-off claimed and every number in a capacity, latency or SLO model.",
+    "Mentor approval is based on the apprentice's ability to defend a decision under a changed constraint, not on the polish of the document."
+  ],
+  "progression": "sequential",
+  "mentorship": "optional",
+  "sourceLocale": "en",
+  "contentLocales": ["en"]
+}

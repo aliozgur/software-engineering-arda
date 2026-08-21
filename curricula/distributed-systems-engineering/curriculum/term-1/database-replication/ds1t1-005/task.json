@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "id": "ds1t1-005",
+  "title": "PostgreSQL Streaming Replication, Lag, and Dual-Primary Writes",
+  "term": "ds1t1",
+  "module": "database-replication",
+  "estimatedHours": 22,
+  "objective": "Run a primary and at least one streaming replica in Docker, measure a stale read caused by apply lag, promote the replica, and then reproduce a dual-primary write conflict unless the old primary is fenced from accepting clients.",
+  "whyThisMatters": "A store you built yourself can hide how production databases actually ship bytes. The SWE curriculum never makes you promote a real replica or watch an old primary accept writes after failover. Until you have done both, 'we have a standby' is still folklore.",
+  "competencies": [
+    "distributed-systems",
+    "database-systems"
+  ],
+  "resources": [
+    "postgres-docs",
+    "docker-docs"
+  ],
+  "instructionsFile": "instructions.md",
+  "aiPolicy": {
+    "mode": "guided",
+    "allowedCapabilities": ["explain", "hint", "quiz"],
+    "solutionGenerationAllowed": false,
+    "disclosureRequired": true
+  },
+  "evidence": [
+    "Compose (or equivalent) files and git history showing primary-only, then replica, then failover/fence steps as separate commits",
+    "A captured run that writes on the primary, delays apply on the replica, and reads a stale or missing row from the replica, with pg_stat_replication or equivalent numbers in the log",
+    "A second captured run of failover: promote, write on the new primary, then either a write on the old primary that diverges or a refused connection after fencing, with timeline / LSN values recorded",
+    "README stating the replica type (async or sync), the lag metric used, and the fencing method",
+    "Reflection notes answering the task questions"
+  ],
+  "acceptanceCriteria": [
+    "Primary and replica run as separate containers (or VMs) using PostgreSQL streaming replication, not a single-instance logical copy or a dump/restore loop.",
+    "The lag demonstration records a replica LSN or replay lag number at the moment of the stale read, and the same query on the primary returns the new row.",
+    "After promote, the new primary accepts a write that is not on the old primary's timeline; the captured log includes timeline IDs or LSNs for both sides.",
+    "README names either a working fence (old primary refuses clients or is shut down before clients are pointed at the new primary) or, if the dual-primary write was left unfenced on purpose, the conflicting row values on both nodes."
+  ]
+}

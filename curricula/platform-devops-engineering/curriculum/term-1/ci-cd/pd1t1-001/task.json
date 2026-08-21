@@ -1,0 +1,35 @@
+{
+  "schemaVersion": 1,
+  "id": "pd1t1-001",
+  "title": "Continuous Integration Pipeline for a Small Service",
+  "term": "term-1",
+  "module": "ci-cd",
+  "estimatedHours": 10,
+  "competencies": [
+    "ci-cd"
+  ],
+  "resources": [
+    "github-actions",
+    "gitlab-ci"
+  ],
+  "instructionsFile": "instructions.md",
+  "aiPolicy": {
+    "mode": "guided",
+    "allowedCapabilities": ["explain", "hint", "quiz"],
+    "solutionGenerationAllowed": false,
+    "disclosureRequired": true
+  },
+  "evidence": [
+    "Git history showing incremental work",
+    "README or technical note explaining the result",
+    "Executable code/configuration when the task includes implementation",
+    "Reflection notes answering the task questions",
+    "AI disclosure entry when AI materially influenced the work"
+  ],
+  "acceptanceCriteria": [
+    "CI runs automatically on every pushed commit and on every pull/merge request.",
+    "CI fails the build when a unit test fails, demonstrated by a commit that intentionally breaks a test.",
+    "CI fails the build when the lint/static-analysis step reports an error, demonstrated by a commit that intentionally introduces a lint violation.",
+    "The pipeline configuration file is committed to the repository and runs successfully from a fresh clone."
+  ]
+}

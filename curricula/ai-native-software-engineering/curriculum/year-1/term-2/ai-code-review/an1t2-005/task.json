@@ -1,0 +1,50 @@
+{
+  "schemaVersion": 1,
+  "id": "an1t2-005",
+  "title": "Reviewing Someone Else's Work as an AI-Assisted Reviewer",
+  "term": "year-1/term-2",
+  "module": "ai-code-review",
+  "estimatedHours": 7,
+  "objective": "Act as the reviewer, not the author, of a real change set, using AI to draft review comments as a starting point, and find and add at least one substantive comment the AI draft missed.",
+  "whyThisMatters": "An AI-assisted reviewer who only forwards the AI's comments is not actually reviewing. The mentor-facing skill this curriculum measures is what the human reviewer added.",
+  "competencies": [
+    "ai-assisted-engineering",
+    "professional-practice",
+    "testing-quality"
+  ],
+  "resources": [
+    "google-eng-practices-review"
+  ],
+  "instructionsFile": "instructions.md",
+  "aiPolicy": {
+    "mode": "guided",
+    "allowedCapabilities": [
+      "explain",
+      "hint",
+      "quiz"
+    ],
+    "solutionGenerationAllowed": false,
+    "disclosureRequired": true
+  },
+  "evidence": [
+    "The AI-drafted review comments, saved as a commit or dated file before the final review was written",
+    "The final review actually posted or delivered, showing which AI-drafted comments were kept, dropped, or edited and why",
+    "At least one substantive review comment (correctness, security, or missing test coverage, not style) absent from the AI draft, with the reasoning behind it",
+    "A note on one AI-drafted comment that was dropped because it was wrong, irrelevant, or already addressed",
+    "AI disclosure entry naming the tool/model used, purpose, and what was independently verified"
+  ],
+  "acceptanceCriteria": [
+    "The unedited AI-drafted comments are retained separately from the final review, and are dated or committed before it.",
+    "At least one substantive comment in the final review has no equivalent in the AI draft.",
+    "At least one AI-drafted comment is explicitly marked dropped, with a stated reason.",
+    "The reviewed change set is a real diff from an actual project, not a synthetic snippet with no real context."
+  ],
+  "statusModel": [
+    "not_started",
+    "in_progress",
+    "submitted",
+    "revision_requested",
+    "resubmitted",
+    "approved"
+  ]
+}

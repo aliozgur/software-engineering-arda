@@ -1,0 +1,36 @@
+{
+  "schemaVersion": 1,
+  "id": "be1t1-005",
+  "title": "Automated Testing for the Service",
+  "term": "year-1/term-1",
+  "module": "testing",
+  "estimatedHours": 14,
+  "objective": "Build a test suite that covers the service's real failure modes, not just its happy path, running against a real PostgreSQL test database.",
+  "whyThisMatters": "A test suite that only exercises success cases will pass right up until the first real user sends something unexpected. Mentors will look for failure-mode coverage specifically, not just a green run.",
+  "competencies": [
+    "testing-quality",
+    "python"
+  ],
+  "resources": [
+    "python-docs"
+  ],
+  "instructionsFile": "instructions.md",
+  "aiPolicy": {
+    "mode": "guided",
+    "allowedCapabilities": ["explain", "hint", "quiz"],
+    "solutionGenerationAllowed": false,
+    "disclosureRequired": true
+  },
+  "evidence": [
+    "Git history showing tests added incrementally alongside or after each feature",
+    "Full test run output (for example pytest -v) pasted into the evidence note",
+    "The coverage report output or file",
+    "README section explaining any deliberately untested area"
+  ],
+  "acceptanceCriteria": [
+    "Integration tests run against a real PostgreSQL instance and reset its state between runs.",
+    "At least two tests intentionally trigger a failure mode and assert on the resulting error, not just the happy path.",
+    "The transaction rollback behavior from the previous task has a dedicated test that fails if the rollback is removed.",
+    "A coverage report is generated and any gap over 10% in a core module is explained in the README."
+  ]
+}

@@ -1,0 +1,47 @@
+{
+  "schemaVersion": 1,
+  "id": "ob1t1-005",
+  "title": "Alerts That Page a Human, and Alerts That Should Not",
+  "term": "term-1",
+  "module": "alerting",
+  "estimatedHours": 8,
+  "objective": "Write an alerting policy with at least one paging alert and one non-paging alert, prove the paging alert fires on an induced SLO burn and stays silent on healthy traffic, and defend the page-or-not decision in writing.",
+  "whyThisMatters": "A page that is not actionable is toil. This task is where you decide which conditions deserve a human at 3 a.m. and which can wait for a ticket — and prove the paging rule actually fires when the budget burns.",
+  "competencies": [
+    "observability",
+    "incident-response"
+  ],
+  "resources": [
+    "prometheus",
+    "google-sre-book"
+  ],
+  "instructionsFile": "instructions.md",
+  "aiPolicy": {
+    "mode": "guided",
+    "allowedCapabilities": ["explain", "hint", "quiz"],
+    "solutionGenerationAllowed": false,
+    "disclosureRequired": true
+  },
+  "evidence": [
+    "An alert-rules file with at least three rules, each labeled page or ticket/info",
+    "A routing table or Alertmanager-equivalent config naming who is notified and after what delay",
+    "Captured evaluation output showing the paging alert inactive under a healthy state",
+    "Captured evaluation output showing the paging alert firing under an induced failure",
+    "A page-versus-ticket justification note that includes the rejected paging candidate",
+    "Reflection notes answering the task questions"
+  ],
+  "acceptanceCriteria": [
+    "At least one rule is marked as paging and at least one is marked as non-paging.",
+    "The paging rule's condition references an SLI or SLO-related query from ob1t1-004 (or an equivalent burn-rate), not a host-down ping alone.",
+    "Captured evaluation output shows the paging alert inactive in the healthy capture and firing in the induced-failure capture.",
+    "The justification note names one alert candidate that was rejected as a page and states the toil it would cause in one sentence."
+  ],
+  "statusModel": [
+    "not_started",
+    "in_progress",
+    "submitted",
+    "revision_requested",
+    "resubmitted",
+    "approved"
+  ]
+}

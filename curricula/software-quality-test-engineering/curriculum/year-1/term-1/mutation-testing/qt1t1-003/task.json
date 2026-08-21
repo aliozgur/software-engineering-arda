@@ -1,0 +1,43 @@
+{
+  "schemaVersion": 1,
+  "id": "qt1t1-003",
+  "title": "Measure Suite Quality with Mutation Testing",
+  "term": "year-1/term-1",
+  "module": "mutation-testing",
+  "estimatedHours": 14,
+  "objective": "Run a mutation-testing tool against an existing test suite, interpret the mutation score, and close at least one real gap it exposes.",
+  "whyThisMatters": "Line and branch coverage only prove code executed during a test run, not that a test would notice a wrong result. Mutation testing exposes assertions that are too weak or missing entirely, which a coverage percentage cannot detect.",
+  "competencies": [
+    "testing-quality"
+  ],
+  "resources": [
+    "stryker-docs"
+  ],
+  "instructionsFile": "instructions.md",
+  "aiPolicy": {
+    "mode": "guided",
+    "allowedCapabilities": ["explain", "hint", "quiz"],
+    "solutionGenerationAllowed": false,
+    "disclosureRequired": true
+  },
+  "evidence": [
+    "Mutation test output before and after, committed or pasted with the command and a timestamp",
+    "Commits adding or strengthening tests, each tied to a specific surviving mutant",
+    "A written justification for the one surviving mutant left un-killed",
+    "A reflection note"
+  ],
+  "acceptanceCriteria": [
+    "A baseline mutation score and line-coverage percentage are both recorded for the same module.",
+    "At least 3 surviving mutants are individually described in terms of the undetected wrong behavior.",
+    "At least 2 of those mutants are killed by a new or strengthened test, shown by a before/after mutation score.",
+    "One surviving mutant is deliberately left alive with a written justification."
+  ],
+  "statusModel": [
+    "not_started",
+    "in_progress",
+    "submitted",
+    "revision_requested",
+    "resubmitted",
+    "approved"
+  ]
+}

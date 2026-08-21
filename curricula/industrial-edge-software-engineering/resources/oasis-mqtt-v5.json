@@ -1,0 +1,15 @@
+{
+  "schemaVersion": 1,
+  "id": "oasis-mqtt-v5",
+  "title": "MQTT Version 5.0 (OASIS Standard)",
+  "url": "https://docs.oasis-open.org/mqtt/mqtt/v5.0/os/mqtt-v5.0-os.html",
+  "type": "official_docs",
+  "provider": "OASIS",
+  "tier": "primary",
+  "topics": [
+    "mqtt",
+    "pubsub",
+    "qos",
+    "industrial-iot"
+  ]
+}

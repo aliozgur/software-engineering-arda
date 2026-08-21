@@ -1,0 +1,13 @@
+{
+  "schemaVersion": 1,
+  "id": "fowler-refactoring-catalog",
+  "title": "Martin Fowler: Catalog of Refactorings",
+  "url": "https://refactoring.com/catalog/",
+  "type": "article",
+  "provider": "Martin Fowler",
+  "tier": "reference",
+  "topics": [
+    "refactoring",
+    "software-design"
+  ]
+}

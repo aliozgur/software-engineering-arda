@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "id": "ds1t2-002",
+  "title": "Kafka ISR, acks=all, and Unclean Leader Election",
+  "term": "ds1t2",
+  "module": "partitioned-logs",
+  "estimatedHours": 18,
+  "objective": "Run a three-broker Kafka cluster, produce with acks=all and min.insync.replicas=2, then reproduce two outcomes of the same broker-death sequence: unbounded produce failures when unclean leader election is off, and a committed offset that disappears when it is on.",
+  "whyThisMatters": "The SWE Kafka task asks you to explain offsets, groups, and partition-scoped ordering. It does not make you lose a committed message. Until you have a produce that returned success and a consume that never sees that offset, 'acks=all' is a setting, not a durability claim.",
+  "competencies": [
+    "distributed-systems",
+    "messaging"
+  ],
+  "resources": [
+    "kafka-docs",
+    "docker-docs"
+  ],
+  "instructionsFile": "instructions.md",
+  "aiPolicy": {
+    "mode": "guided",
+    "allowedCapabilities": ["explain", "hint", "quiz"],
+    "solutionGenerationAllowed": false,
+    "disclosureRequired": true
+  },
+  "evidence": [
+    "Compose (or equivalent) for a three-broker cluster and git history showing the cluster up before any unclean-election experiment",
+    "A captured produce/consume run with unclean.leader.election.enable=false where produces fail or block after ISR shrinks below min.insync.replicas, and no previously-acked offset is missing after recovery",
+    "A captured run with unclean.leader.election.enable=true on the same topic configuration family where at least one acked produce offset is absent after the new leader is elected, with broker logs or ISR membership printed",
+    "README stating replication.factor, min.insync.replicas, acks, and the exact unclean-election setting for each run",
+    "Reflection notes answering the task questions"
+  ],
+  "acceptanceCriteria": [
+    "The cluster has three brokers; the experiment topic has replication.factor=3 and min.insync.replicas=2; the producer uses acks=all.",
+    "The clean-election (or unclean=false) run shows produce errors or a bounded wait once fewer than two in-sync replicas remain, and a later consume of the recovered partition contains every offset the producer marked acked.",
+    "The unclean=true run shows at least one offset the producer treated as acked that a consume after failover never returns; the log names that offset.",
+    "README scopes every ordering claim to a single partition and never calls the configuration 'exactly-once' or 'no data loss' without naming the unclean-election case that contradicts it."
+  ]
+}

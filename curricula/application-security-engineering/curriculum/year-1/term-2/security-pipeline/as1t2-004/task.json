@@ -1,0 +1,52 @@
+{
+  "schemaVersion": 1,
+  "id": "as1t2-004",
+  "title": "CI Security Scanning You Can Explain",
+  "term": "year-1/term-2",
+  "module": "security-pipeline",
+  "estimatedHours": 10,
+  "objective": "Add a SAST or dependency-advisory scan to GitHub Actions on the repository you own, triage at least three findings, fix one, accept or dismiss one in writing, and show the workflow fail on a planted issue.",
+  "whyThisMatters": "A scanner that nobody triages is noise. The AppSec skill is classifying findings, fixing what matters, and writing down why a leftover finding is accepted — then proving the gate can still go red.",
+  "competencies": [
+    "security",
+    "testing-quality"
+  ],
+  "resources": [
+    "github-actions",
+    "owasp-top10"
+  ],
+  "instructionsFile": "instructions.md",
+  "aiPolicy": {
+    "mode": "guided",
+    "allowedCapabilities": [
+      "explain",
+      "hint",
+      "quiz"
+    ],
+    "solutionGenerationAllowed": false,
+    "disclosureRequired": true
+  },
+  "evidence": [
+    "Committed GitHub Actions workflow that runs a SAST or dependency-advisory scan on push or pull request",
+    "A triage note classifying at least 3 findings as fix-now, fix-later, false-positive, or accepted, each with the tool's finding id or rule name",
+    "A commit that fixes at least 1 fix-now finding and references that finding id",
+    "A written justification of at least 3 sentences for 1 accepted or false-positive finding",
+    "Workflow logs showing the job fail on a planted finding of a class named in the notes, then pass after the plant is removed",
+    "Reflection note answering the task questions"
+  ],
+  "acceptanceCriteria": [
+    "A GitHub Actions workflow runs at least one SAST or dependency-advisory scan on pull request or push.",
+    "A triage note classifies at least 3 findings as fix-now, fix-later, false-positive, or accepted.",
+    "At least 1 fix-now finding is fixed in a commit that references the finding id or rule name.",
+    "At least 1 accepted or false-positive finding has a written justification of at least 3 sentences.",
+    "The workflow is shown failing on a planted finding of a class named in the notes, and passing after the plant is removed."
+  ],
+  "statusModel": [
+    "not_started",
+    "in_progress",
+    "submitted",
+    "revision_requested",
+    "resubmitted",
+    "approved"
+  ]
+}

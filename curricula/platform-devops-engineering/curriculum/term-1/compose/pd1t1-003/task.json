@@ -1,0 +1,35 @@
+{
+  "schemaVersion": 1,
+  "id": "pd1t1-003",
+  "title": "Run the Service and a Dependency with Compose",
+  "term": "term-1",
+  "module": "compose",
+  "estimatedHours": 12,
+  "competencies": [
+    "containers"
+  ],
+  "resources": [
+    "docker-docs"
+  ],
+  "instructionsFile": "instructions.md",
+  "aiPolicy": {
+    "mode": "guided",
+    "allowedCapabilities": ["explain", "hint", "quiz"],
+    "solutionGenerationAllowed": false,
+    "disclosureRequired": true
+  },
+  "evidence": [
+    "Committed Compose file declaring the app and at least one dependency, plus healthcheck blocks",
+    "Command output of compose up showing both services healthy",
+    "A captured smoke request against the running stack that succeeds using the published port",
+    "Command output showing the dependency restarted and previously written data still present on a named volume",
+    "Reflection notes answering the task questions",
+    "AI disclosure entry when AI materially influenced the work"
+  ],
+  "acceptanceCriteria": [
+    "compose up from a clean checkout starts the application and at least one dependency.",
+    "Both the application and the dependency define a healthcheck; compose reports both healthy.",
+    "Services reach each other by Compose service name, not by a host-only IP address.",
+    "After the dependency container is removed and started again, data written during the demo is still present on a named volume."
+  ]
+}

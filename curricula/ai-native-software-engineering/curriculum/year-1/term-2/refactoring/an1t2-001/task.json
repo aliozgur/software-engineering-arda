@@ -1,0 +1,50 @@
+{
+  "schemaVersion": 1,
+  "id": "an1t2-001",
+  "title": "Refactoring AI-Generated Code for Maintainability",
+  "term": "year-1/term-2",
+  "module": "refactoring",
+  "estimatedHours": 8,
+  "objective": "Take a working but poorly-structured AI-generated implementation and refactor it for maintainability without changing its observable behavior, using a test suite as the safety net.",
+  "whyThisMatters": "AI-generated code that passes its tests can still be a maintenance liability. Refactoring it deliberately, under test, is where design judgment shows up.",
+  "competencies": [
+    "ai-assisted-engineering",
+    "software-design",
+    "testing-quality"
+  ],
+  "resources": [
+    "fowler-refactoring-catalog",
+    "google-eng-practices-review"
+  ],
+  "instructionsFile": "instructions.md",
+  "aiPolicy": {
+    "mode": "guided",
+    "allowedCapabilities": [
+      "explain",
+      "hint",
+      "quiz"
+    ],
+    "solutionGenerationAllowed": true,
+    "disclosureRequired": true
+  },
+  "evidence": [
+    "The pre-refactor version and post-refactor version, both committed, with the refactor in one or more commits separate from the original generation",
+    "A passing test run immediately before the refactor and an identical passing test run immediately after, proving behavior didn't change",
+    "A note naming the specific design smell targeted by each refactor commit (e.g. long function, duplicated logic, mixed responsibilities)",
+    "AI disclosure entry naming the tool/model used, purpose, and what was independently verified"
+  ],
+  "acceptanceCriteria": [
+    "At least one refactor commit exists that is separate from the original AI-generated commit.",
+    "The test suite passes both immediately before and immediately after the refactor, shown by two separate test run logs.",
+    "No function in the post-refactor diff exceeds 40 lines, or any exception is explicitly justified in the note.",
+    "Each refactor commit's message or the accompanying note names the specific design smell it addressed."
+  ],
+  "statusModel": [
+    "not_started",
+    "in_progress",
+    "submitted",
+    "revision_requested",
+    "resubmitted",
+    "approved"
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "schemaVersion": 1,
+  "id": "ef1t1-001",
+  "title": "Set Up a Professional Development Environment",
+  "term": "term-1",
+  "module": "environment-setup",
+  "estimatedHours": 4,
+  "objective": "Have a reproducible, version-controlled development environment (shell, editor, Git identity, Python toolchain) that you can rebuild from your own notes alone.",
+  "whyThisMatters": "Every later task in this curriculum assumes you can move around a terminal, manage files with Git, and run Python without fighting your own machine. Getting this friction out of the way deliberately, on day one, avoids losing real work time to setup problems later.",
+  "competencies": [
+    "engineering-tooling"
+  ],
+  "resources": [
+    "mit-missing-semester"
+  ],
+  "instructionsFile": "instructions.md",
+  "aiPolicy": {
+    "mode": "guided",
+    "allowedCapabilities": ["explain", "hint", "quiz"],
+    "solutionGenerationAllowed": false,
+    "disclosureRequired": true
+  },
+  "evidence": [
+    "A Git repository containing setup notes, with more than one commit showing the notes were built up over time, not written after the fact",
+    "The setup notes file itself, naming each tool, the exact install command, and one line on why it's needed",
+    "A terminal transcript or log showing at least 10 distinct shell commands run, with their output",
+    "AI disclosure entry if AI helped write or debug any part of the setup"
+  ],
+  "acceptanceCriteria": [
+    "A setup notes file lists every tool installed and the exact command or steps used to install it.",
+    "Following the documented steps from a brand-new terminal session reproduces a working git, python3, and editor invocation with no undocumented steps.",
+    "At least 10 distinct shell commands are used and explained in the notes, covering navigation, redirection, environment variables, permissions, or process inspection.",
+    "No API key, token, or password appears in any committed file."
+  ],
+  "statusModel": [
+    "not_started",
+    "in_progress",
+    "submitted",
+    "revision_requested",
+    "resubmitted",
+    "approved"
+  ]
+}

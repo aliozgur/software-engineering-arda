@@ -1,0 +1,52 @@
+{
+  "schemaVersion": 1,
+  "id": "as1t1-003",
+  "title": "Authorization and Object-Level Access",
+  "term": "year-1/term-1",
+  "module": "authorization",
+  "estimatedHours": 12,
+  "objective": "Find and fix broken access control in the application you own or operate locally, and prove that object-level and function-level checks are enforced server-side.",
+  "whyThisMatters": "Authentication answers who someone is. Authorization answers what that someone may do to a specific object. The common failure is an IDOR: the route checks that a session exists and then loads any identifier the client sends. That is the defect this task is built to catch.",
+  "competencies": [
+    "security",
+    "http-api"
+  ],
+  "resources": [
+    "owasp-top10",
+    "rfc-http"
+  ],
+  "instructionsFile": "instructions.md",
+  "aiPolicy": {
+    "mode": "guided",
+    "allowedCapabilities": [
+      "explain",
+      "hint",
+      "quiz"
+    ],
+    "solutionGenerationAllowed": false,
+    "disclosureRequired": true
+  },
+  "evidence": [
+    "A findings note listing at least 2 authorization defects with route, object identifier, and the two local users used to demonstrate them",
+    "Git history showing each fix in its own commit",
+    "A committed test in which user A cannot read, update, or delete user B's object through the documented object-id route",
+    "Captured HTTP for unauthenticated, authenticated-but-unauthorized, and authorized requests to the same route",
+    "Notes that name one horizontal and one vertical privilege example from this system",
+    "Reflection note answering the task questions"
+  ],
+  "acceptanceCriteria": [
+    "An authenticated user cannot read, update, or delete another user's object through the documented object-id route; a committed test shows 401 or 403, and the notes state which.",
+    "An unauthenticated request to a protected route receives 401; an authenticated but unauthorized request receives 403, or the notes document and justify a different pair.",
+    "At least one function-level check is enforced server-side on a privileged action, not only hidden in the user interface.",
+    "At least 2 authorization defects found in the owned or local app are listed with route or file location and shown fixed.",
+    "The notes name one horizontal and one vertical privilege example taken from this system."
+  ],
+  "statusModel": [
+    "not_started",
+    "in_progress",
+    "submitted",
+    "revision_requested",
+    "resubmitted",
+    "approved"
+  ]
+}

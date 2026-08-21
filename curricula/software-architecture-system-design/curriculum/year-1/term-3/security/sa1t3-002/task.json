@@ -1,0 +1,40 @@
+{
+  "schemaVersion": 1,
+  "id": "sa1t3-002",
+  "title": "Threat Modeling a System Boundary",
+  "term": "year-1/term-3",
+  "module": "security",
+  "estimatedHours": 8,
+  "objective": "Draw trust boundaries on a prior design, attach an architectural control to at least four threats, and record one control decision that names residual risk.",
+  "whyThisMatters": "Security that lives only as a coding checklist arrives after the expensive decisions are already made. Trust boundaries, who is allowed to cross them, and which residual risk you are accepting are architecture. An architect who cannot name a rejected weaker control has not made a security decision — they have listed wishes.",
+  "competencies": [
+    "architecture-and-tradeoffs",
+    "security"
+  ],
+  "resources": ["twelve-factor"],
+  "instructionsFile": "instructions.md",
+  "aiPolicy": {
+    "mode": "guided",
+    "allowedCapabilities": ["explain", "hint", "quiz"],
+    "solutionGenerationAllowed": false,
+    "disclosureRequired": true
+  },
+  "evidence": [
+    "A diagram that marks at least two trust boundaries on a prior system design and names who is allowed to cross each",
+    "A threat list of at least four threats, each paired with one architectural control (a boundary, a credential store, a network restriction, a data-class rule) rather than a coding checklist item",
+    "An ADR for one of those controls that names a rejected weaker control and the residual risk accepted by the chosen option"
+  ],
+  "acceptanceCriteria": [
+    "The diagram marks at least two trust boundaries and names the principal or network that is allowed to cross each.",
+    "At least four threats each have a corresponding architectural control; none of those four controls is only 'validate input' or 'use HTTPS' without a stated boundary or store.",
+    "The ADR names a rejected weaker control and states one residual risk the chosen control does not remove."
+  ],
+  "statusModel": [
+    "not_started",
+    "in_progress",
+    "submitted",
+    "revision_requested",
+    "resubmitted",
+    "approved"
+  ]
+}

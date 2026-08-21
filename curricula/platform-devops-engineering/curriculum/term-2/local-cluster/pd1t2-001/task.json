@@ -1,0 +1,35 @@
+{
+  "schemaVersion": 1,
+  "id": "pd1t2-001",
+  "title": "Deploy the Service to a Local Kubernetes Cluster",
+  "term": "term-2",
+  "module": "local-cluster",
+  "estimatedHours": 14,
+  "competencies": [
+    "containers"
+  ],
+  "resources": [
+    "docker-docs"
+  ],
+  "instructionsFile": "instructions.md",
+  "aiPolicy": {
+    "mode": "guided",
+    "allowedCapabilities": ["explain", "hint", "quiz"],
+    "solutionGenerationAllowed": false,
+    "disclosureRequired": true
+  },
+  "evidence": [
+    "Committed Kubernetes manifests for at least a Deployment and a Service",
+    "Captured kubectl get output showing a Ready pod and the Service, plus the cluster product you chose (kind or minikube)",
+    "Captured request to the service through the documented access path (port-forward, NodePort, or Ingress)",
+    "README or script that creates the cluster, loads the apprentice's image, and applies the manifests from a clean machine",
+    "Reflection notes answering the task questions",
+    "AI disclosure entry when AI materially influenced the work"
+  ],
+  "acceptanceCriteria": [
+    "A kind or minikube cluster is created with a documented command, and the product name is recorded in the evidence note.",
+    "Committed manifests include at least a Deployment and a Service and apply without error.",
+    "The running pod reaches Ready; the documented readiness or liveness probe path succeeds.",
+    "The image on the workload is the apprentice's image from earlier tasks, loaded locally, not a public sample application."
+  ]
+}

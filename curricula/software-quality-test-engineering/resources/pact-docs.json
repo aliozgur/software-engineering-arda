@@ -1,0 +1,10 @@
+{
+  "schemaVersion": 1,
+  "id": "pact-docs",
+  "title": "Pact Documentation",
+  "url": "https://docs.pact.io/",
+  "type": "official_docs",
+  "provider": "Pact Foundation",
+  "tier": "reference",
+  "topics": ["contract-testing", "testing-quality"]
+}

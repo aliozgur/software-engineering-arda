@@ -1,0 +1,41 @@
+{
+  "schemaVersion": 1,
+  "id": "sa1t2-003",
+  "title": "Caching as an Architectural Decision, Not a Speed Hack",
+  "term": "year-1/term-2",
+  "module": "caching",
+  "estimatedHours": 8,
+  "objective": "Compare cache placements against stated latency and consistency budgets, then record a decision that names its invalidation rule as a number or an explicit event.",
+  "whyThisMatters": "A cache without a stated stale-read bound is a consistency decision you have not admitted to. Architects who add a cache to 'make it faster' and leave invalidation implicit are choosing eventual consistency by accident — and discovering it in an incident.",
+  "competencies": [
+    "architecture-and-tradeoffs",
+    "performance",
+    "database-systems"
+  ],
+  "resources": ["postgres-docs"],
+  "instructionsFile": "instructions.md",
+  "aiPolicy": {
+    "mode": "guided",
+    "allowedCapabilities": ["explain", "hint", "quiz"],
+    "solutionGenerationAllowed": false,
+    "disclosureRequired": true
+  },
+  "evidence": [
+    "A comparison of at least two cache placements plus a no-cache option, each scored against the same latency budget and consistency budget from a prior task",
+    "An ADR stating the chosen placement and the invalidation or TTL rule as a number or an explicit invalidating event",
+    "A note walking through one stale-read scenario that names the maximum age of the stale value under the chosen rule"
+  ],
+  "acceptanceCriteria": [
+    "At least two cache placements and a no-cache option are scored against the same stated latency and consistency budgets, not against a general preference.",
+    "The ADR states the invalidation rule as a TTL in seconds or as a named event that drops or refreshes the entry.",
+    "The stale-read note names a concrete read, the value that would be wrong, and the maximum age of that wrong value under the chosen rule."
+  ],
+  "statusModel": [
+    "not_started",
+    "in_progress",
+    "submitted",
+    "revision_requested",
+    "resubmitted",
+    "approved"
+  ]
+}

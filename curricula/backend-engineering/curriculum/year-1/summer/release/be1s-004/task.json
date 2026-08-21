@@ -1,0 +1,40 @@
+{
+  "schemaVersion": 1,
+  "id": "be1s-004",
+  "title": "Security Review and a Repeatable Release",
+  "term": "year-1/summer",
+  "module": "release",
+  "estimatedHours": 18,
+  "objective": "Ship a tagged release whose pipeline tests, scans and publishes an image, execute a security review that produces a finding, and dry-run a rollback to the previous tag.",
+  "whyThisMatters": "Operating a stack is not the same as being able to release and undo it. The capstone defense assumes a known-good tag exists and that a review actually looked for failed controls.",
+  "competencies": [
+    "security",
+    "ci-cd",
+    "observability"
+  ],
+  "resources": [
+    "github-actions",
+    "owasp-top10",
+    "docker-docs"
+  ],
+  "instructionsFile": "instructions.md",
+  "aiPolicy": {
+    "mode": "guided",
+    "allowedCapabilities": ["explain", "hint", "quiz"],
+    "solutionGenerationAllowed": false,
+    "disclosureRequired": true
+  },
+  "evidence": [
+    "A git tag whose name matches the published image tag, plus the pipeline log for that tag showing tests, scan and publish",
+    "A security-review note covering authn/authz, injection, and secrets, with at least one finding",
+    "The commit that fixes the finding, or a written accepted-risk with the mentor named in the evidence note",
+    "Rollback instructions that name the previous image tag and the exact commands, plus a dry-run transcript",
+    "Git history showing review notes before the fix commit, and a scrape or log from the tagged release proving request ids still work"
+  ],
+  "acceptanceCriteria": [
+    "A git tag exists and the published image tag string is identical to that git tag.",
+    "The pipeline log for that tag shows tests, the image scan, and an image publish step.",
+    "The security-review note contains at least one finding and either a fix commit or an accepted-risk line that names the mentor.",
+    "Rollback instructions name the previous image tag and the exact commands; a dry-run transcript shows those commands executed."
+  ]
+}

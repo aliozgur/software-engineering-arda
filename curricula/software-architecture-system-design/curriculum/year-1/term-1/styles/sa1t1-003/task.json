@@ -1,0 +1,41 @@
+{
+  "schemaVersion": 1,
+  "id": "sa1t1-003",
+  "title": "Monolith vs. Microservices: A Defensible Comparison",
+  "term": "year-1/term-1",
+  "module": "styles",
+  "estimatedHours": 7,
+  "objective": "Compare at least three architectural styles against explicit, scenario-derived criteria and record a defensible recommendation.",
+  "whyThisMatters": "Choosing a system's structural style is one of the most consequential and most re-litigated decisions in an architect's career. The failure mode isn't picking the wrong style once — it's being unable to say why, which invites a different wrong style next time for the same bad reasons.",
+  "competencies": [
+    "architecture-and-tradeoffs",
+    "software-design",
+    "performance"
+  ],
+  "resources": ["twelve-factor"],
+  "instructionsFile": "instructions.md",
+  "aiPolicy": {
+    "mode": "guided",
+    "allowedCapabilities": ["explain", "hint", "quiz"],
+    "solutionGenerationAllowed": false,
+    "disclosureRequired": true
+  },
+  "evidence": [
+    "A written comparison scoring at least three architectural options against at least three explicit criteria drawn from stated NFRs",
+    "An ADR recording the final recommendation, referencing the comparison",
+    "A note stating which criterion most changed the outcome and why"
+  ],
+  "acceptanceCriteria": [
+    "At least three architectural styles are compared against the same explicit criteria, not narrative prose alone.",
+    "Each criterion is tied to a specific stated NFR or constraint from the scenario.",
+    "The final ADR states what would have to change in the scenario for the recommendation to flip."
+  ],
+  "statusModel": [
+    "not_started",
+    "in_progress",
+    "submitted",
+    "revision_requested",
+    "resubmitted",
+    "approved"
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "id": "be1t2-006",
+  "title": "Load Test the Service and Name the Bottleneck",
+  "term": "year-1/term-2",
+  "module": "load-testing",
+  "estimatedHours": 14,
+  "objective": "Run a repeatable load script against the containerized service, record percentile latencies, name the bottleneck with attached evidence, and rerun the same script after one change.",
+  "whyThisMatters": "A service that is 'fast on my machine' has no capacity story. The capstone SLO and the failure drill both need a measured baseline you can point at.",
+  "competencies": [
+    "performance",
+    "testing-quality"
+  ],
+  "resources": [
+    "python-docs",
+    "prometheus"
+  ],
+  "instructionsFile": "instructions.md",
+  "aiPolicy": {
+    "mode": "guided",
+    "allowedCapabilities": ["explain", "hint", "quiz"],
+    "solutionGenerationAllowed": false,
+    "disclosureRequired": true
+  },
+  "evidence": [
+    "The committed load script and the exact command line used for both runs",
+    "Two run reports (baseline and after the change) each listing p50, p95, p99, error rate, duration, and offered load",
+    "A bottleneck note that points at a specific file, query plan, or metric sample — not a guess",
+    "The single change made after the baseline, as its own commit",
+    "Git history showing script, baseline report, change, then second report, in that order"
+  ],
+  "acceptanceCriteria": [
+    "The load script is committed and the README names the exact command to rerun it against the containerized service.",
+    "Both committed reports list p50, p95, p99, error rate, duration, and the offered load (requests per second or concurrent callers).",
+    "The bottleneck note cites a specific file, EXPLAIN plan, or metric sample collected during the baseline run.",
+    "The second run uses the same script and the same load parameters as the first."
+  ]
+}

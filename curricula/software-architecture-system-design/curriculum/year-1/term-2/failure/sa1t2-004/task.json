@@ -1,0 +1,40 @@
+{
+  "schemaVersion": 1,
+  "id": "sa1t2-004",
+  "title": "Designing for Failure and Controlled Degradation",
+  "term": "year-1/term-2",
+  "module": "failure",
+  "estimatedHours": 8,
+  "objective": "Name timeout, retry, and user-visible degradation for at least three dependencies, and record a retry budget that cannot exceed a stated NFR.",
+  "whyThisMatters": "A design that only describes the happy path is a hope. Timeouts, retries, and what the user sees when a dependency is down are architecture, not afterthoughts — they decide whether a partial outage stays partial or becomes a self-inflicted cascade.",
+  "competencies": [
+    "architecture-and-tradeoffs",
+    "distributed-systems"
+  ],
+  "resources": ["twelve-factor"],
+  "instructionsFile": "instructions.md",
+  "aiPolicy": {
+    "mode": "guided",
+    "allowedCapabilities": ["explain", "hint", "quiz"],
+    "solutionGenerationAllowed": false,
+    "disclosureRequired": true
+  },
+  "evidence": [
+    "A failure-mode table covering at least three dependencies, each with a named failure, a timeout in milliseconds or seconds, and the user-visible degradation",
+    "An ADR stating the retry budget (maximum attempts and backoff) and the NFR that budget is not allowed to exceed",
+    "A note marking at least one dependency as non-retryable, with a reason that is not 'it is simpler not to retry'"
+  ],
+  "acceptanceCriteria": [
+    "At least three dependencies each have a named failure mode, a timeout number, and a user-visible degradation that is not 'show an error page' for every row.",
+    "The ADR states a retry budget as maximum attempts plus backoff, and names the NFR (latency, availability, or a retry-amplification ceiling) that budget must not exceed.",
+    "At least one dependency is marked non-retryable with a reason tied to a side effect, an idempotency gap, or a cascade risk — not to convenience."
+  ],
+  "statusModel": [
+    "not_started",
+    "in_progress",
+    "submitted",
+    "revision_requested",
+    "resubmitted",
+    "approved"
+  ]
+}

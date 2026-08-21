@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "data-pipelines",
+  "title": "Data Pipelines",
+  "description": "Batch and stream pipeline design, data contracts, idempotent reprocessing, and schema evolution — moving data reliably, not analyzing it.",
+  "levels": [
+    {
+      "level": 1,
+      "name": "Foundation",
+      "description": "Can run an existing extract-load job against a named source and destination, and can point at the code or SQL that decides whether that job is a full refresh or an incremental load."
+    },
+    {
+      "level": 2,
+      "name": "Apprentice",
+      "description": "Can write a scoped batch load that lands in staging then a warehouse table, rerun it against the same source snapshot, and show that the warehouse primary-key set did not grow."
+    },
+    {
+      "level": 3,
+      "name": "Practitioner",
+      "description": "Can independently design and implement a pipeline that includes a written data contract (schema, grain, freshness, null rules), an idempotent sink, and a test that fails if a retry doubles rows."
+    },
+    {
+      "level": 4,
+      "name": "Journeyman",
+      "description": "Can diagnose a failed or drifted pipeline from run logs, offsets or watermarks, and warehouse counts; can execute a bounded backfill or replay without corrupting the current window; and can defend a schema-evolution choice (additive versus breaking) in writing."
+    },
+    {
+      "level": 5,
+      "name": "Mastery Evidence",
+      "description": "Can review another apprentice's pipeline for a missing contract clause, a non-idempotent retry path, or an unsafe backfill, name the concrete failure each would cause, and teach the batch-versus-stream and contract-versus-hope distinction to someone new to the path."
+    }
+  ]
+}

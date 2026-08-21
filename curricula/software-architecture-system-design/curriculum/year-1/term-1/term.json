@@ -1,0 +1,13 @@
+{
+  "schemaVersion": 1,
+  "id": "year-1/term-1",
+  "title": "Term 1 — Foundations of Architectural Judgment",
+  "estimatedHours": 31,
+  "tasks": [
+    "sa1t1-001",
+    "sa1t1-002",
+    "sa1t1-003",
+    "sa1t1-004",
+    "sa1t1-005"
+  ]
+}

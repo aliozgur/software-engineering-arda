@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "id": "pd1t1-004",
+  "title": "Build and Test the Image in CI",
+  "term": "term-1",
+  "module": "ci-cd",
+  "estimatedHours": 12,
+  "competencies": [
+    "ci-cd",
+    "containers"
+  ],
+  "resources": [
+    "github-actions",
+    "gitlab-ci",
+    "docker-docs"
+  ],
+  "instructionsFile": "instructions.md",
+  "aiPolicy": {
+    "mode": "guided",
+    "allowedCapabilities": ["explain", "hint", "quiz"],
+    "solutionGenerationAllowed": false,
+    "disclosureRequired": true
+  },
+  "evidence": [
+    "Committed pipeline file showing an image-build job and a test job that uses that image",
+    "CI log of a passing run that prints the image tag containing the git SHA",
+    "CI log of a commit that breaks the Dockerfile, showing the build job fail for that reason, plus the revert commit",
+    "CI log or captured output of the test step running against the built image, not only against host-installed packages",
+    "Reflection notes answering the task questions",
+    "AI disclosure entry when AI materially influenced the work"
+  ],
+  "acceptanceCriteria": [
+    "The pipeline builds the Dockerfile on every relevant push and pull/merge request.",
+    "A test step runs against the image that job just built, not only against dependencies installed on the runner host.",
+    "A commit that breaks the image build is shown failing CI for that reason, then reverted in a follow-up commit.",
+    "The built image is tagged with the short or full git SHA, and that tag appears in the CI log."
+  ]
+}

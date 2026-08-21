@@ -1,0 +1,13 @@
+{
+  "schemaVersion": 1,
+  "id": "year-1-term-1",
+  "title": "Term 1 — Test Strategy, Depth and Reliability",
+  "estimatedHours": 70,
+  "tasks": [
+    "qt1t1-001",
+    "qt1t1-002",
+    "qt1t1-003",
+    "qt1t1-004",
+    "qt1t1-005"
+  ]
+}

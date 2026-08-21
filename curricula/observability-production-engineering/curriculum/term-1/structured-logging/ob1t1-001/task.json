@@ -1,0 +1,45 @@
+{
+  "schemaVersion": 1,
+  "id": "ob1t1-001",
+  "title": "Structured Logging You Can Actually Query",
+  "term": "term-1",
+  "module": "structured-logging",
+  "estimatedHours": 6,
+  "objective": "Design a structured log schema with correlation identifiers for one real request path, and prove it answers specific operational questions.",
+  "whyThisMatters": "Unstructured, inconsistent log lines are unreadable at scale. A defined schema with correlation ids is the foundation everything else in this term (dashboards, traces, alerts) is built on top of.",
+  "competencies": [
+    "observability"
+  ],
+  "resources": [
+    "opentelemetry",
+    "twelve-factor"
+  ],
+  "instructionsFile": "instructions.md",
+  "aiPolicy": {
+    "mode": "guided",
+    "allowedCapabilities": ["explain", "hint", "quiz"],
+    "solutionGenerationAllowed": false,
+    "disclosureRequired": true
+  },
+  "evidence": [
+    "A log schema note naming each field and its meaning",
+    "A log excerpt showing the full correlation-id chain for one request",
+    "The three named operational queries plus their captured output",
+    "A written redaction rule with a before/after example line",
+    "Reflection notes answering the task questions"
+  ],
+  "acceptanceCriteria": [
+    "Every log line for the demonstrated request path parses as valid structured data (JSON or a documented key=value format).",
+    "All log lines from one request share one identical correlation id value, shown across at least three lines.",
+    "Each of the three named operational questions has a corresponding query and its captured output.",
+    "No line in the submitted log sample contains a raw password, API key, token, or personal secret value."
+  ],
+  "statusModel": [
+    "not_started",
+    "in_progress",
+    "submitted",
+    "revision_requested",
+    "resubmitted",
+    "approved"
+  ]
+}

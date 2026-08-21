@@ -1,0 +1,47 @@
+{
+  "schemaVersion": 1,
+  "id": "ef1t2-006",
+  "title": "Find a Regression with git bisect",
+  "term": "term-2",
+  "module": "git",
+  "estimatedHours": 6,
+  "objective": "Use git bisect with an automated check to find the first commit that introduced a Python regression, and leave a log a teammate could repeat.",
+  "whyThisMatters": "Scrolling git log and guessing which commit broke a behavior does not scale. Bisect is the professional way to search history: a good commit, a bad commit, and a check that can say which is which.",
+  "competencies": [
+    "git",
+    "engineering-tooling"
+  ],
+  "resources": [
+    "pro-git",
+    "mit-missing-semester",
+    "python-docs"
+  ],
+  "instructionsFile": "instructions.md",
+  "aiPolicy": {
+    "mode": "guided",
+    "allowedCapabilities": ["explain", "hint", "quiz"],
+    "solutionGenerationAllowed": false,
+    "disclosureRequired": true
+  },
+  "evidence": [
+    "The full git bisect log (or an equivalent recorded session) showing at least 3 bisect steps",
+    "The committed automated check script that exits 0 on good behavior and non-zero on the regression",
+    "A written note naming the first bad commit's full SHA, its subject line, and one sentence on the change that caused the break",
+    "git rev-list --count output showing at least 8 commits in the bisected range",
+    "AI disclosure entry if AI helped write the check script or interpret the bisect result"
+  ],
+  "acceptanceCriteria": [
+    "A git bisect log (or equivalent recorded session) exists and shows at least 3 bisect steps that marked commits good or bad.",
+    "The automated check script is committed in the repository and is the classifier used during bisect (named in the log or in the run command).",
+    "The note names the first bad commit's full SHA and subject, plus one sentence on the causal change in that commit's diff.",
+    "git rev-list --count from the known-good commit to the known-bad tip is at least 8."
+  ],
+  "statusModel": [
+    "not_started",
+    "in_progress",
+    "submitted",
+    "revision_requested",
+    "resubmitted",
+    "approved"
+  ]
+}

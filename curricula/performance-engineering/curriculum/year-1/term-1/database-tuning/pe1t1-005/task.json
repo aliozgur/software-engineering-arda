@@ -1,0 +1,45 @@
+{
+  "schemaVersion": 1,
+  "id": "pe1t1-005",
+  "title": "Tune a Query From the Plan, Not a Folklore Index",
+  "term": "year-1/term-1",
+  "module": "database-tuning",
+  "estimatedHours": 12,
+  "objective": "Load a dataset large enough that plans differ, capture EXPLAIN ANALYZE with actual time and buffers before and after a change, keep one index that helped, and reject one that did not.",
+  "whyThisMatters": "Year-1 PostgreSQL work in the software-engineering path asks you to interpret EXPLAIN. This task requires actual times, buffer counts, and a rejected index with numbers. 'The query uses an index' is not the same as 'the query is fast.'",
+  "competencies": [
+    "performance",
+    "database-systems"
+  ],
+  "resources": [
+    "postgres-docs"
+  ],
+  "instructionsFile": "instructions.md",
+  "aiPolicy": {
+    "mode": "guided",
+    "allowedCapabilities": ["explain", "hint", "quiz"],
+    "solutionGenerationAllowed": false,
+    "disclosureRequired": true
+  },
+  "evidence": [
+    "A note stating the loaded row count (at least 100,000 rows, or a mentor-approved equivalent)",
+    "EXPLAIN ANALYZE text for the target query before any index change, including actual time and at least one buffer statistic",
+    "EXPLAIN ANALYZE text after the kept index, with actual time and the same buffer statistic",
+    "EXPLAIN ANALYZE text for a second index (or the same query with a different index) that did not cut actual time by at least 20%, with both actual times quoted",
+    "Reflection notes answering the task questions"
+  ],
+  "acceptanceCriteria": [
+    "The dataset note states a row count of at least 100,000, or a mentor-written exception naming why a smaller set still changes the plan.",
+    "Before and after EXPLAIN ANALYZE outputs are committed as text and each quotes actual total time plus shared hits or shared reads.",
+    "The kept index is the one whose after actual time is lower than the before actual time; both times are quoted from the plans.",
+    "A second index is documented with before/after actual times showing less than 20% improvement or a regression, and it is not the recommended default."
+  ],
+  "statusModel": [
+    "not_started",
+    "in_progress",
+    "submitted",
+    "revision_requested",
+    "resubmitted",
+    "approved"
+  ]
+}

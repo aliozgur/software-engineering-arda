@@ -1,0 +1,50 @@
+{
+  "schemaVersion": 1,
+  "id": "as1t2-003",
+  "title": "HTTP Security Headers and CORS as a Contract",
+  "term": "year-1/term-2",
+  "module": "http-security",
+  "estimatedHours": 8,
+  "objective": "Set browser security headers and an explicit CORS allow-list on the application you own or operate locally, and demonstrate each header with a captured response.",
+  "whyThisMatters": "Headers are a contract with the browser, not decoration. A wildcard CORS origin on a credentialed route, or a missing nosniff, is a checkable defect. This task treats those choices as HTTP API design you can defend.",
+  "competencies": [
+    "security",
+    "http-api"
+  ],
+  "resources": [
+    "rfc-http",
+    "owasp-top10"
+  ],
+  "instructionsFile": "instructions.md",
+  "aiPolicy": {
+    "mode": "guided",
+    "allowedCapabilities": [
+      "explain",
+      "hint",
+      "quiz"
+    ],
+    "solutionGenerationAllowed": false,
+    "disclosureRequired": true
+  },
+  "evidence": [
+    "A header-and-CORS table listing each header or CORS field, the threat it reduces, and the request used to capture it",
+    "Captured HTTP responses showing X-Content-Type-Options, Referrer-Policy, and the frame-busting control on an HTML route",
+    "Captured CORS preflight or response on a credentialed route showing an explicit origin list and no Access-Control-Allow-Origin: *",
+    "Git history showing header defaults and CORS configuration in separate commits",
+    "Reflection note answering the task questions"
+  ],
+  "acceptanceCriteria": [
+    "Every HTML response includes X-Content-Type-Options: nosniff and a Referrer-Policy, shown in a captured response.",
+    "No credentialed route returns Access-Control-Allow-Origin: *; allowed origins are an explicit list in configuration or code.",
+    "A frame-busting control is present (X-Frame-Options or CSP frame-ancestors), shown in a captured response.",
+    "A notes table lists each header, the threat it reduces, and one request that demonstrates it."
+  ],
+  "statusModel": [
+    "not_started",
+    "in_progress",
+    "submitted",
+    "revision_requested",
+    "resubmitted",
+    "approved"
+  ]
+}

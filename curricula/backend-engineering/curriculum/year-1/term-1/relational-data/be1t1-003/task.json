@@ -1,0 +1,36 @@
+{
+  "schemaVersion": 1,
+  "id": "be1t1-003",
+  "title": "Relational Schema Design for a Service Domain",
+  "term": "year-1/term-1",
+  "module": "relational-data",
+  "estimatedHours": 14,
+  "objective": "Design a normalized PostgreSQL schema for a real service domain, with constraints that enforce the domain's actual invariants rather than just looking correct.",
+  "whyThisMatters": "A schema with no real constraints will let bad data in the first week it's used for something real, and the next task builds an API directly on top of this schema, so mistakes here compound.",
+  "competencies": [
+    "relational-data",
+    "database-systems"
+  ],
+  "resources": [
+    "postgres-docs"
+  ],
+  "instructionsFile": "instructions.md",
+  "aiPolicy": {
+    "mode": "guided",
+    "allowedCapabilities": ["explain", "hint", "quiz"],
+    "solutionGenerationAllowed": false,
+    "disclosureRequired": true
+  },
+  "evidence": [
+    "The migration files, committed in the order they run, with git history showing them added incrementally",
+    "A terminal transcript or log showing a deliberate constraint violation being rejected by the database",
+    "The sample data load script and the three required queries with their output",
+    "README documenting each table's purpose and its constraints"
+  ],
+  "acceptanceCriteria": [
+    "The schema has at least one constraint that actively rejects invalid sample data, demonstrated by a failing insert.",
+    "Migrations run in order from an empty database to the final schema without manual intervention.",
+    "At least one query uses a join across two of the tables and returns correct results against the sample data.",
+    "The README documents each table's purpose and its constraints."
+  ]
+}

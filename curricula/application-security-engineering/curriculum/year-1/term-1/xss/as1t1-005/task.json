@@ -1,0 +1,51 @@
+{
+  "schemaVersion": 1,
+  "id": "as1t1-005",
+  "title": "XSS and Output Encoding",
+  "term": "year-1/term-1",
+  "module": "xss",
+  "estimatedHours": 10,
+  "objective": "Find a reflected or stored XSS sink in the application you own or operate locally, encode output for the correct context, and prove the fix with a test that fails when encoding is removed.",
+  "whyThisMatters": "Treating XSS as 'sanitize input' hides the real control: encode on the way out, in the context the browser will parse. A Content-Security-Policy is defense in depth, not a substitute for that encoding.",
+  "competencies": [
+    "security",
+    "http-api"
+  ],
+  "resources": [
+    "owasp-top10",
+    "portswigger-academy"
+  ],
+  "instructionsFile": "instructions.md",
+  "aiPolicy": {
+    "mode": "guided",
+    "allowedCapabilities": [
+      "explain",
+      "hint",
+      "quiz"
+    ],
+    "solutionGenerationAllowed": false,
+    "disclosureRequired": true
+  },
+  "evidence": [
+    "A findings note naming the sink, whether it is reflected or stored, the encoding context (HTML body, attribute, URL, or JavaScript), and a local request that showed unescaped markup before the fix",
+    "Git history showing the encoding fix and the CSP or residual-risk note in separate commits",
+    "A committed test that fails when encoding is removed from the sink and passes with encoding in place, with command and both outputs",
+    "A captured HTML response that includes Content-Type with charset=utf-8 and the Content-Security-Policy header or the residual-risk paragraph",
+    "Reflection note answering the task questions"
+  ],
+  "acceptanceCriteria": [
+    "At least 1 reflected or stored XSS sink is identified and shown, on the local app only, producing unescaped attacker-controlled markup before the fix.",
+    "The fix uses context-appropriate encoding or a framework auto-escape that is actually enabled; the notes name the context as HTML body, attribute, URL, or JavaScript.",
+    "Responses that contain HTML declare a Content-Type that includes charset=utf-8.",
+    "A Content-Security-Policy is set that does not include unsafe-inline for scripts, or the notes record why a stricter policy is not yet possible and what residual risk remains.",
+    "A committed test fails when encoding is removed from the fixed sink and passes with encoding in place; command and both outputs are recorded."
+  ],
+  "statusModel": [
+    "not_started",
+    "in_progress",
+    "submitted",
+    "revision_requested",
+    "resubmitted",
+    "approved"
+  ]
+}

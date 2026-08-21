@@ -1,0 +1,35 @@
+{
+  "schemaVersion": 1,
+  "id": "apprenti-dev-distributed-systems-engineering-2026",
+  "name": "apprenti.dev Distributed Systems Engineering",
+  "version": "0.1.0",
+  "audience": "Mid-level and senior backend engineers specializing in distributed systems",
+  "philosophy": "Depth over breadth: replicate, partition and break real systems until the trade-offs stop being folklore and start being something you can reproduce on demand.",
+  "defaultWeeklyHours": "6-8",
+  "estimatedDuration": "4-6 months",
+  "roles": [
+    "apprentice",
+    "mentor"
+  ],
+  "corePlatforms": [
+    "PostgreSQL",
+    "Apache Kafka",
+    "RabbitMQ",
+    "OpenTelemetry",
+    "Prometheus",
+    "Docker",
+    "Git"
+  ],
+  "aiPrinciples": [
+    "AI assistance must be disclosed when materially used.",
+    "The hardest tasks in this curriculum deliberately restrict AI hinting so the apprentice practices independent fault-finding, not guided fault-finding.",
+    "The apprentice remains accountable for every submitted artifact, including code an AI tool helped produce.",
+    "Mentor approval is based on demonstrated understanding and reproducible evidence, not on AI output quality."
+  ],
+  "progression": "sequential",
+  "mentorship": "optional",
+  "sourceLocale": "en",
+  "contentLocales": [
+    "en"
+  ]
+}

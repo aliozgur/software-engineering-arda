@@ -1,0 +1,36 @@
+{
+  "schemaVersion": 1,
+  "id": "pd1t1-005",
+  "title": "Cut a Reproducible Versioned Release",
+  "term": "term-1",
+  "module": "release-engineering",
+  "estimatedHours": 12,
+  "competencies": [
+    "release-engineering"
+  ],
+  "resources": [
+    "github-actions",
+    "gitlab-ci"
+  ],
+  "instructionsFile": "instructions.md",
+  "aiPolicy": {
+    "mode": "guided",
+    "allowedCapabilities": ["explain", "hint", "quiz"],
+    "solutionGenerationAllowed": false,
+    "disclosureRequired": true
+  },
+  "evidence": [
+    "Git tag matching a documented SemVer version (for example v0.1.0) pointing at a specific commit",
+    "CHANGELOG.md with dated entries for at least two versions that name user-facing changes, not only 'updates'",
+    "Release artifact tagged with that version (image tag or archive name) plus the command output of rebuilding it from the tagged commit",
+    "RELEASE.md listing the exact commands a mentor follows to cut and rebuild the release",
+    "Reflection notes answering the task questions",
+    "AI disclosure entry when AI materially influenced the work"
+  ],
+  "acceptanceCriteria": [
+    "A git tag exists whose name matches a documented SemVer version and points at the release commit.",
+    "CHANGELOG.md contains dated entries for at least two versions, each naming at least one user-facing change.",
+    "A release artifact (container image tag or archive) is named with that version and rebuilds from the tagged commit with the same documented command.",
+    "RELEASE.md lists the cut-and-rebuild commands a mentor can follow without asking you a question."
+  ]
+}

@@ -1,0 +1,47 @@
+{
+  "schemaVersion": 1,
+  "id": "de1t2-005",
+  "title": "Evolve a Schema Without Breaking Yesterday's Consumer",
+  "term": "year-1/term-2",
+  "module": "schema-evolution",
+  "estimatedHours": 8,
+  "objective": "Ship an additive optional field that the old consumer still processes, then a breaking change that is detected instead of corrupting the warehouse, with a contract changelog for both.",
+  "whyThisMatters": "Producers change payloads. Consumers deploy later. If a type change or rename lands as a silent coerce, yesterday's grain is gone and backfills become fiction. Compatibility is a tested property, not a hope about JSON being 'flexible.'",
+  "competencies": [
+    "data-pipelines",
+    "messaging",
+    "testing-quality"
+  ],
+  "resources": [
+    "kafka-docs",
+    "postgres-docs"
+  ],
+  "instructionsFile": "instructions.md",
+  "aiPolicy": {
+    "mode": "guided",
+    "allowedCapabilities": ["explain", "hint", "quiz"],
+    "solutionGenerationAllowed": false,
+    "disclosureRequired": true
+  },
+  "evidence": [
+    "Contract changelog listing v1, the additive version, and the breaking version with reason",
+    "A captured run of the old consumer successfully processing a payload that only adds an optional field",
+    "A captured run of the old consumer facing a breaking payload without writing a corrupt warehouse row",
+    "A test or replay showing v1 payloads still load after the additive change is deployed",
+    "Reflection notes answering the task questions"
+  ],
+  "acceptanceCriteria": [
+    "The old consumer successfully processes a v2 payload that only adds an optional field, shown by a captured row or log.",
+    "The old consumer encountering a breaking payload does not write a corrupt warehouse row: it rejects with a logged error or reads a compatibility shim, and the captured warehouse sample shows no truncated or mistyped required field.",
+    "The contract changelog lists v1, the additive version, and the breaking version with a date or reason on the breaking entry.",
+    "A test or replay shows v1 payloads still load after the additive change is deployed."
+  ],
+  "statusModel": [
+    "not_started",
+    "in_progress",
+    "submitted",
+    "revision_requested",
+    "resubmitted",
+    "approved"
+  ]
+}

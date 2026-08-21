@@ -1,0 +1,43 @@
+{
+  "schemaVersion": 1,
+  "id": "ob1t1-007",
+  "title": "A Blameless Postmortem You Would Not Be Ashamed to Share",
+  "term": "term-1",
+  "module": "postmortem",
+  "estimatedHours": 8,
+  "objective": "Turn the simulated incident from ob1t1-006 into a blameless postmortem whose follow-ups split across detection, prevention and response, and rewrite one blameful paragraph so it names a system condition instead of a person.",
+  "whyThisMatters": "An incident that produces no written learning will happen again. Blame makes the next timeline worse: people hide facts. This task is where you practice writing what failed in the system, not who failed as a person.",
+  "competencies": [
+    "incident-response"
+  ],
+  "resources": [
+    "google-sre-book"
+  ],
+  "instructionsFile": "instructions.md",
+  "aiPolicy": {
+    "mode": "guided",
+    "allowedCapabilities": ["explain", "hint", "quiz"],
+    "solutionGenerationAllowed": false,
+    "disclosureRequired": true
+  },
+  "evidence": [
+    "A postmortem document covering summary, user-visible impact, timeline, contributing factors, what went well, what went poorly, and follow-ups",
+    "A blameful-paragraph draft and its rewrite in the same submission",
+    "A follow-up table with at least one action labeled detection, one labeled prevention, and one labeled response, each with a done-when line",
+    "Reflection notes answering the task questions"
+  ],
+  "acceptanceCriteria": [
+    "The postmortem names at least two contributing factors, none of which is a person's name or a personal attribute (careless, lazy, should have known).",
+    "Follow-up actions include at least one labeled detection, one labeled prevention, and one labeled response, each with a one-line done-when criterion.",
+    "A blameful paragraph and its rewrite both appear; the rewrite contains no personal name and no 'should have known' phrasing.",
+    "The impact section states a user-visible effect and a duration or request-count, not only an internal error name."
+  ],
+  "statusModel": [
+    "not_started",
+    "in_progress",
+    "submitted",
+    "revision_requested",
+    "resubmitted",
+    "approved"
+  ]
+}

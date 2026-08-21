@@ -1,0 +1,13 @@
+{
+  "schemaVersion": 1,
+  "id": "ds1t1",
+  "title": "Term 1 — Replication, Consistency and Consensus",
+  "estimatedHours": 82,
+  "tasks": [
+    "ds1t1-001",
+    "ds1t1-002",
+    "ds1t1-003",
+    "ds1t1-004",
+    "ds1t1-005"
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "incident-response",
+  "title": "Incident Response",
+  "description": "On-call practice, blameless postmortems, escalation judgment, and SRE-style reliability practice — distinct from observability's instrumentation focus.",
+  "levels": [
+    {
+      "level": 1,
+      "name": "Foundation",
+      "description": "Can follow a runbook to detect and mitigate a scripted incident, and can keep a timeline that separates an observed fact from an unconfirmed hypothesis."
+    },
+    {
+      "level": 2,
+      "name": "Apprentice",
+      "description": "Can triage a scoped, simulated incident from alerts, dashboards and traces alone, restore service before finishing root-cause analysis, and draft a blameless postmortem naming contributing factors rather than people."
+    },
+    {
+      "level": 3,
+      "name": "Practitioner",
+      "description": "Can independently design an alerting policy — thresholds, burn-rate windows and routing — for a service, defend in writing which conditions should page a human versus stay silent, and make a correct escalate-or-hold call on an ambiguous simulated page."
+    },
+    {
+      "level": 4,
+      "name": "Journeyman",
+      "description": "Can run point on a multi-signal incident with incomplete information, coordinate mitigation and status communication concurrently, and produce a postmortem whose follow-up actions are split across detection, prevention and response."
+    },
+    {
+      "level": 5,
+      "name": "Mastery Evidence",
+      "description": "Can review another apprentice's postmortem or alert design, name any blame-shifting language or unverifiable claim in it, and teach the detect/mitigate/diagnose sequence to someone new to on-call."
+    }
+  ]
+}

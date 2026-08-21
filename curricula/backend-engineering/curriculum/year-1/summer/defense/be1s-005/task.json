@@ -1,0 +1,40 @@
+{
+  "schemaVersion": 1,
+  "id": "be1s-005",
+  "title": "Capstone Defense: Inject a Failure and Recover",
+  "term": "year-1/summer",
+  "module": "defense",
+  "estimatedHours": 18,
+  "objective": "Inject at least two backing-service failures, recover without rebuilding the schema, and write a post-incident note whose timeline is taken from logs.",
+  "whyThisMatters": "This is the capstone milestone. Everything in the path — contract, stores, queue, signals, release — is only proven if you can break the service on purpose, bring it back, and account for in-flight writes.",
+  "competencies": [
+    "messaging",
+    "nosql",
+    "performance"
+  ],
+  "resources": [
+    "rabbitmq-tutorials",
+    "mongodb-docs",
+    "postgres-docs"
+  ],
+  "instructionsFile": "instructions.md",
+  "aiPolicy": {
+    "mode": "guided",
+    "allowedCapabilities": ["explain", "hint", "quiz"],
+    "solutionGenerationAllowed": false,
+    "disclosureRequired": true
+  },
+  "evidence": [
+    "Logs or exports for at least two of: broker down, MongoDB down, injected latency — each with a recovery",
+    "A write-accounting note for one in-flight write: present in PostgreSQL, or explicitly lost, with the reason",
+    "A post-incident note whose timeline timestamps come from the logs, not from memory, and that states SLO impact",
+    "Git history showing the drill script or steps, the first failure, the second failure, and the write-up as separate commits",
+    "A transcript showing the API serving requests after recovery without a manual schema rebuild"
+  ],
+  "acceptanceCriteria": [
+    "At least two of the three failure modes (broker down, document store down, injected latency) are demonstrated with committed logs and a recovery for each.",
+    "After recovery, one in-flight write is either present in PostgreSQL or documented as lost with a reason that matches the be1s-001 design.",
+    "The post-incident note includes a timeline whose timestamps appear in the committed logs, plus whether the SLO was missed.",
+    "After recovery the API serves a documented smoke request without a manual schema rebuild or a restore from an undocumented backup."
+  ]
+}

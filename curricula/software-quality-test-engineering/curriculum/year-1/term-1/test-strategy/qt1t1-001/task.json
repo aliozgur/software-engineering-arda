@@ -1,0 +1,42 @@
+{
+  "schemaVersion": 1,
+  "id": "qt1t1-001",
+  "title": "Map a Test Strategy to Real Risk",
+  "term": "year-1/term-1",
+  "module": "test-strategy",
+  "estimatedHours": 10,
+  "objective": "Produce a test strategy and pyramid for a real system that ties each test layer to a specific class of risk, not to habit.",
+  "whyThisMatters": "Undirected test-writing produces suites that are expensive to maintain and still miss the failures that matter. A risk-to-layer map is the artifact a team actually uses to decide what to test next, instead of testing everything a little or testing whatever is easiest to reach.",
+  "competencies": [
+    "testing-quality"
+  ],
+  "resources": [],
+  "instructionsFile": "instructions.md",
+  "aiPolicy": {
+    "mode": "guided",
+    "allowedCapabilities": ["explain", "hint", "quiz"],
+    "solutionGenerationAllowed": false,
+    "disclosureRequired": true
+  },
+  "evidence": [
+    "Git history showing the suite built up incrementally, not in one commit",
+    "A committed risk-to-test-layer table (e.g. docs/test-strategy.md)",
+    "Command and output showing the full suite passing",
+    "A commit or diff showing one test failing when its fix is reverted, then passing again once restored",
+    "A reflection note answering the task's questions"
+  ],
+  "acceptanceCriteria": [
+    "The risk table lists at least 8 distinct failure modes, each mapped to exactly one test layer.",
+    "At least 5 listed risks have a passing test that references the risk by name or comment.",
+    "At least 1 test is shown failing when its corresponding fix is reverted, and passing again once restored.",
+    "The full suite runs to completion with a single documented command."
+  ],
+  "statusModel": [
+    "not_started",
+    "in_progress",
+    "submitted",
+    "revision_requested",
+    "resubmitted",
+    "approved"
+  ]
+}

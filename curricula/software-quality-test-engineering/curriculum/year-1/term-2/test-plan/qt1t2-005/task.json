@@ -1,0 +1,42 @@
+{
+  "schemaVersion": 1,
+  "id": "qt1t2-005",
+  "title": "Write a Test Plan a Mentor Would Actually Sign Off On",
+  "term": "year-1/term-2",
+  "module": "test-plan",
+  "estimatedHours": 20,
+  "objective": "Write and defend a test plan for a real, nontrivial upcoming change, covering scope, risk, test layers, quality gates, and what would make you, not just a tool, confident enough to ship.",
+  "whyThisMatters": "This is the artifact that separates someone who can write tests from someone who can be trusted to decide what testing a real change needs, which is the skill this curriculum has been building toward.",
+  "competencies": [
+    "testing-quality"
+  ],
+  "resources": [],
+  "instructionsFile": "instructions.md",
+  "aiPolicy": {
+    "mode": "guided",
+    "allowedCapabilities": ["explain", "hint", "quiz", "coach"],
+    "solutionGenerationAllowed": false,
+    "disclosureRequired": true
+  },
+  "evidence": [
+    "The written test plan, naming risks, layers, gates applied/skipped and explicit exclusions",
+    "Commits implementing the highest-risk tests from the plan, passing",
+    "A record of the plan review and what changed as a result of it",
+    "A reflection note"
+  ],
+  "acceptanceCriteria": [
+    "The plan names specific risks for this specific change, not a generic checklist reused across changes.",
+    "The plan states which existing quality gates apply and which are explicitly skipped, with a reason for each.",
+    "At least 2 explicitly excluded test cases are named along with the reason for excluding them.",
+    "At least the top 2-3 highest-risk tests named in the plan are implemented and passing.",
+    "A record exists of at least one change made to the plan as a result of review."
+  ],
+  "statusModel": [
+    "not_started",
+    "in_progress",
+    "submitted",
+    "revision_requested",
+    "resubmitted",
+    "approved"
+  ]
+}

@@ -1,0 +1,45 @@
+{
+  "schemaVersion": 1,
+  "id": "de1t1-001",
+  "title": "Stage Operational Data Before You Model It",
+  "term": "year-1/term-1",
+  "module": "warehouse-modeling",
+  "estimatedHours": 8,
+  "objective": "Design a staging schema that preserves source grain and a warehouse schema with an explicit grain, keys, and one slowly-changing-attribute decision — without turning the work into an analytics report.",
+  "whyThisMatters": "A pipeline that writes straight into a 'clean' table hides the source. Staging is the audit trail; the warehouse is the contracted shape. Getting that split wrong is how silent rewrites and unreplayable loads start.",
+  "competencies": [
+    "database-systems",
+    "data-pipelines"
+  ],
+  "resources": [
+    "postgres-docs"
+  ],
+  "instructionsFile": "instructions.md",
+  "aiPolicy": {
+    "mode": "guided",
+    "allowedCapabilities": ["explain", "hint", "quiz"],
+    "solutionGenerationAllowed": false,
+    "disclosureRequired": true
+  },
+  "evidence": [
+    "A source-to-target map covering every source field",
+    "Committed SQL DDL that creates staging and warehouse schemas and tables",
+    "An SCD decision note that includes one query that would be wrong under the rejected choice",
+    "A captured listing of the created schemas and tables",
+    "Reflection notes answering the task questions"
+  ],
+  "acceptanceCriteria": [
+    "The source-to-target map lists every source field as either landed in a named staging column or explicitly dropped with a one-line reason.",
+    "A comment or note on the warehouse fact or primary table states the grain in one sentence.",
+    "One changing attribute has a written SCD type-1 versus type-2 decision plus one example query that returns a wrong answer under the rejected choice.",
+    "PostgreSQL schemas named staging and warehouse exist, and a captured \\d or information_schema listing shows at least one table in each."
+  ],
+  "statusModel": [
+    "not_started",
+    "in_progress",
+    "submitted",
+    "revision_requested",
+    "resubmitted",
+    "approved"
+  ]
+}

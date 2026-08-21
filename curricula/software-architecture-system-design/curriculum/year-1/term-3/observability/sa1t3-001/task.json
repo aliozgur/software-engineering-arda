@@ -1,0 +1,40 @@
+{
+  "schemaVersion": 1,
+  "id": "sa1t3-001",
+  "title": "Observability as an Architectural Surface",
+  "term": "year-1/term-3",
+  "module": "observability",
+  "estimatedHours": 8,
+  "objective": "Assign a named diagnostic signal to every service boundary on a prior design, walk two failures using only those signals, and record a sampling or cardinality limit as a number.",
+  "whyThisMatters": "A design that cannot be diagnosed is a design you cannot operate. Instrumentation is not a later platform concern: the questions you need to answer at each boundary, and the cardinality you are willing to pay for, are architecture decisions. Without them, the SLOs from last term have nothing to read.",
+  "competencies": [
+    "architecture-and-tradeoffs",
+    "observability"
+  ],
+  "resources": ["opentelemetry"],
+  "instructionsFile": "instructions.md",
+  "aiPolicy": {
+    "mode": "guided",
+    "allowedCapabilities": ["explain", "hint", "quiz"],
+    "solutionGenerationAllowed": false,
+    "disclosureRequired": true
+  },
+  "evidence": [
+    "An instrumentation map covering every service boundary on a prior diagram, each with at least one named signal (span, metric, or log event) and the question that signal answers",
+    "A diagnosis note for two distinct failure scenarios that uses only the named signals and states which signal distinguishes the cause",
+    "An ADR stating a sampling rate or a cardinality limit as a number, and naming the diagnosis that is lost when that limit is hit"
+  ],
+  "acceptanceCriteria": [
+    "Every service boundary on the submitted diagram has at least one named signal and a question that signal is meant to answer.",
+    "Each of two failure scenarios is diagnosed using only the named signals, and the note names the specific signal that distinguishes the cause from the other scenario.",
+    "The ADR states a sampling rate or cardinality limit as a number and names one diagnosis that becomes impossible or delayed when that limit is hit."
+  ],
+  "statusModel": [
+    "not_started",
+    "in_progress",
+    "submitted",
+    "revision_requested",
+    "resubmitted",
+    "approved"
+  ]
+}

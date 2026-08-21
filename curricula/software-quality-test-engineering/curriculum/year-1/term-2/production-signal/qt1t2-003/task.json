@@ -1,0 +1,44 @@
+{
+  "schemaVersion": 1,
+  "id": "qt1t2-003",
+  "title": "Instrument Synthetic Checks as Production Test Signal",
+  "term": "year-1/term-2",
+  "module": "production-signal",
+  "estimatedHours": 14,
+  "objective": "Add a synthetic/canary check that continuously exercises a real user-facing flow and exposes its result as a metric a dashboard or alert can act on.",
+  "whyThisMatters": "Pre-deployment tests only prove behavior at one point in time. A synthetic check is a test that keeps running after deployment, catching failures that only show up under real infrastructure, configuration or dependency conditions.",
+  "competencies": [
+    "observability",
+    "testing-quality"
+  ],
+  "resources": [
+    "prometheus"
+  ],
+  "instructionsFile": "instructions.md",
+  "aiPolicy": {
+    "mode": "guided",
+    "allowedCapabilities": ["explain", "hint", "quiz"],
+    "solutionGenerationAllowed": false,
+    "disclosureRequired": true
+  },
+  "evidence": [
+    "The synthetic check script or job configuration, committed",
+    "The metric definition and a query/screenshot showing it during the deliberate failure and after recovery",
+    "The runbook entry",
+    "A reflection note"
+  ],
+  "acceptanceCriteria": [
+    "The synthetic check exercises a real end-to-end flow, not just a health/ping endpoint.",
+    "The check's result is exposed as a queryable metric with a recorded scrape/push interval.",
+    "A deliberate failure is shown reflected in the metric within one check interval, and shown recovering after the fix.",
+    "A runbook entry states a specific alert threshold and a first diagnostic step."
+  ],
+  "statusModel": [
+    "not_started",
+    "in_progress",
+    "submitted",
+    "revision_requested",
+    "resubmitted",
+    "approved"
+  ]
+}

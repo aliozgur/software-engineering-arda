@@ -1,0 +1,46 @@
+{
+  "schemaVersion": 1,
+  "id": "ob1t1-002",
+  "title": "Metrics That Matter: RED Dashboards, Not Vanity Numbers",
+  "term": "term-1",
+  "module": "metrics",
+  "estimatedHours": 8,
+  "objective": "Instrument a service with a small, justified set of RED metrics (rate, errors, duration) and assemble them into a fixed dashboard that visibly distinguishes a healthy state from an unhealthy one.",
+  "whyThisMatters": "A dashboard full of numbers nobody chose on purpose is noise. Metrics only earn their instrumentation cost if each one answers a specific operational question — the discipline this task builds is choosing (and rejecting) metrics deliberately.",
+  "competencies": [
+    "observability",
+    "performance"
+  ],
+  "resources": [
+    "prometheus",
+    "opentelemetry"
+  ],
+  "instructionsFile": "instructions.md",
+  "aiPolicy": {
+    "mode": "guided",
+    "allowedCapabilities": ["explain", "hint", "quiz"],
+    "solutionGenerationAllowed": false,
+    "disclosureRequired": true
+  },
+  "evidence": [
+    "A metrics justification note, including the rejected vanity-metric candidate",
+    "promtool or scrape output validating the metrics endpoint",
+    "The four PromQL queries with captured output under healthy and induced-unhealthy states",
+    "A dashboard definition file or export",
+    "Reflection notes answering the task questions"
+  ],
+  "acceptanceCriteria": [
+    "Prometheus (or promtool check) validates the exposed metrics endpoint without errors.",
+    "The latency metric is a histogram or summary, and captured queries include p95 and p99 — not a single average.",
+    "Each of the at most six exposed metrics has a one-sentence justification tying it to a named operational question.",
+    "The dashboard/query set shows a visibly different result between the healthy and induced-unhealthy capture."
+  ],
+  "statusModel": [
+    "not_started",
+    "in_progress",
+    "submitted",
+    "revision_requested",
+    "resubmitted",
+    "approved"
+  ]
+}

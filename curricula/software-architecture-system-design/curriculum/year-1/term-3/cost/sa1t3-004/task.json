@@ -1,0 +1,41 @@
+{
+  "schemaVersion": 1,
+  "id": "sa1t3-004",
+  "title": "Defending a Design Against a Budget Cut",
+  "term": "year-1/term-3",
+  "module": "cost",
+  "estimatedHours": 8,
+  "objective": "Build a cost model with stated formulas, revise a prior ADR after a named percentage budget cut, and write a one-page note that names the user-visible impact without product names.",
+  "whyThisMatters": "Cost is a constraint with the same dignity as latency. A design that cannot survive a 40% cut, or cannot explain the cut to someone who does not care about your datastore, is a design that will be cut for you — badly. This task is where architectural judgment meets professional practice: revise the decision, then say what the user will notice.",
+  "competencies": [
+    "architecture-and-tradeoffs",
+    "professional-practice",
+    "software-design"
+  ],
+  "resources": ["prometheus"],
+  "instructionsFile": "instructions.md",
+  "aiPolicy": {
+    "mode": "guided",
+    "allowedCapabilities": ["explain", "hint", "quiz"],
+    "solutionGenerationAllowed": false,
+    "disclosureRequired": true
+  },
+  "evidence": [
+    "A cost model showing a formula and a unit for at least three cost drivers derived from a prior capacity or topology decision",
+    "A superseding or amended ADR that responds to a stated percentage budget cut and names what was dropped or deferred",
+    "A stakeholder note of at most 400 words that names the user-visible impact of the cut in one sentence containing no cloud or datastore product name"
+  ],
+  "acceptanceCriteria": [
+    "The cost model states a formula and a unit for at least three drivers (for example compute-hours, stored-gigabytes, egress-gigabytes, or replica-count times instance-cost).",
+    "A second ADR marks a prior decision as superseded or amended, names the percentage cut, and names at least one capability or region or replica that was dropped.",
+    "The stakeholder note is at most 400 words and contains one sentence that states the user-visible impact without naming a cloud, queue, or datastore product."
+  ],
+  "statusModel": [
+    "not_started",
+    "in_progress",
+    "submitted",
+    "revision_requested",
+    "resubmitted",
+    "approved"
+  ]
+}

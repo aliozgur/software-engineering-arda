@@ -1,0 +1,48 @@
+{
+  "schemaVersion": 1,
+  "id": "ef1t2-004",
+  "title": "Land a Small Change in Someone Else's Code",
+  "term": "term-2",
+  "module": "feature-work",
+  "estimatedHours": 8,
+  "objective": "Add a small, scoped Python behavior change to a codebase you did not write, matching two existing conventions you can cite by file and line, and leaving tests for the new path.",
+  "whyThisMatters": "First-job work is rarely a blank repository. The skill is making a change small enough to review, in the style the codebase already uses, without inventing a second way to do the same thing.",
+  "competencies": [
+    "software-design",
+    "professional-practice"
+  ],
+  "resources": [
+    "python-docs",
+    "harvard-cs50p",
+    "mit-missing-semester"
+  ],
+  "instructionsFile": "instructions.md",
+  "aiPolicy": {
+    "mode": "guided",
+    "allowedCapabilities": ["explain", "hint", "quiz"],
+    "solutionGenerationAllowed": false,
+    "disclosureRequired": true
+  },
+  "evidence": [
+    "A design-note commit whose timestamp or position in git log comes before any implementation commit",
+    "The production-code diff, limited to the scoped files named in the design note",
+    "Test-command output showing at least 2 new test cases for the new or changed behavior, all passing",
+    "A pull request link plus the description text (problem, change, verification, out of scope)",
+    "A convention note citing at least 2 existing patterns with file and line, and the matching location in your change",
+    "AI disclosure entry if AI helped choose the approach or write the change"
+  ],
+  "acceptanceCriteria": [
+    "A design-note commit exists before any implementation commit and names the files you planned to touch, the existing pattern you planned to follow, and how you planned to verify the change.",
+    "The production-code diff touches at most 3 existing files, not counting new or existing test files.",
+    "At least 2 new automated test cases cover the new or changed behavior, and the documented test command shows them passing.",
+    "The convention note cites at least 2 existing patterns with file path and line number, and names the file and line in your change that follows each one."
+  ],
+  "statusModel": [
+    "not_started",
+    "in_progress",
+    "submitted",
+    "revision_requested",
+    "resubmitted",
+    "approved"
+  ]
+}

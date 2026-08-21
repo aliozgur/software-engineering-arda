@@ -1,0 +1,31 @@
+{
+  "schemaVersion": 1,
+  "id": "apprenti-dev-observability-production-engineering-2026",
+  "name": "apprenti.dev Observability & Production Engineering Specialization",
+  "version": "0.1.0",
+  "durationMonths": "3-4",
+  "audience": "Backend/platform engineer with solid engineering fundamentals, specializing into observability and production operations",
+  "philosophy": "Evidence-driven specialization: instrument, measure, alert, respond, learn without blame.",
+  "defaultWeeklyHours": {
+    "duringTerm": "5-7"
+  },
+  "roles": [
+    "apprentice",
+    "mentor"
+  ],
+  "corePlatforms": [
+    "Prometheus",
+    "OpenTelemetry",
+    "A dashboard tool such as Grafana or the Prometheus console"
+  ],
+  "aiPrinciples": [
+    "AI assistance must be disclosed when materially used.",
+    "Tasks may restrict solution generation while allowing explanations, hints and quizzes.",
+    "The apprentice remains accountable for every submitted artifact.",
+    "Mentor approval is based on demonstrated understanding, not AI output quality."
+  ],
+  "progression": "sequential",
+  "mentorship": "optional",
+  "sourceLocale": "en",
+  "contentLocales": ["en"]
+}

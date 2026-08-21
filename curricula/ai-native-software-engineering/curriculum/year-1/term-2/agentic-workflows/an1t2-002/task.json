@@ -1,0 +1,50 @@
+{
+  "schemaVersion": 1,
+  "id": "an1t2-002",
+  "title": "Verifying a Multi-File Agentic Change",
+  "term": "year-1/term-2",
+  "module": "agentic-workflows",
+  "estimatedHours": 8,
+  "objective": "Run an agentic session that changes at least three files toward one feature, then verify the whole change holistically, including how the changed pieces interact, not each file in isolation.",
+  "whyThisMatters": "Multi-file agentic changes can be locally reasonable and globally wrong — an interface changed in one file, a caller not updated in another. The verification skill here is catching that class of failure.",
+  "competencies": [
+    "ai-assisted-engineering",
+    "agentic-development-workflow",
+    "testing-quality"
+  ],
+  "resources": [
+    "claude-code-best-practices"
+  ],
+  "instructionsFile": "instructions.md",
+  "aiPolicy": {
+    "mode": "guided",
+    "allowedCapabilities": [
+      "explain",
+      "hint",
+      "quiz"
+    ],
+    "solutionGenerationAllowed": true,
+    "disclosureRequired": true
+  },
+  "evidence": [
+    "The plan or scoping prompt given to the assistant, committed before the session, naming the files expected to change",
+    "The resulting diff across all changed files",
+    "An integration-level test or documented manual walkthrough exercising the interaction between at least two of the changed files, run and shown passing",
+    "A note on any file changed that was not in the original plan, and why",
+    "AI disclosure entry naming the tool/model used, purpose, and what was independently verified"
+  ],
+  "acceptanceCriteria": [
+    "The diff touches three or more files.",
+    "An integration-level check exists that exercises at least two changed files together, not only unit tests of each file in isolation.",
+    "The integration-level check is shown passing against the final change.",
+    "Any out-of-plan file change is explicitly noted and justified."
+  ],
+  "statusModel": [
+    "not_started",
+    "in_progress",
+    "submitted",
+    "revision_requested",
+    "resubmitted",
+    "approved"
+  ]
+}

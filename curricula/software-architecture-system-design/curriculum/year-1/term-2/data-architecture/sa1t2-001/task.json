@@ -1,0 +1,42 @@
+{
+  "schemaVersion": 1,
+  "id": "sa1t2-001",
+  "title": "Choosing a Data Architecture for Stated Access Patterns",
+  "term": "year-1/term-2",
+  "module": "data-architecture",
+  "estimatedHours": 8,
+  "objective": "Choose and justify a storage and consistency model against concrete access patterns, and classify at least one sensitive data element.",
+  "whyThisMatters": "Data architecture decisions are the hardest to reverse in a running system. Choosing a storage model because it's familiar, rather than because it matches how the data is actually read and written, is one of the most expensive mistakes an architect can make.",
+  "competencies": [
+    "architecture-and-tradeoffs",
+    "database-systems",
+    "distributed-systems",
+    "security"
+  ],
+  "resources": ["postgres-docs", "mongodb-docs"],
+  "instructionsFile": "instructions.md",
+  "aiPolicy": {
+    "mode": "guided",
+    "allowedCapabilities": ["explain", "hint", "quiz"],
+    "solutionGenerationAllowed": false,
+    "disclosureRequired": true
+  },
+  "evidence": [
+    "A data-flow diagram showing where each data store sits and the consistency model assumed at each boundary",
+    "An ADR justifying the storage choice against the stated access patterns, naming at least one rejected storage option",
+    "A note classifying at least one data element as sensitive and stating the resulting architectural requirement"
+  ],
+  "acceptanceCriteria": [
+    "The chosen storage model is justified against at least three concrete access patterns from the brief, not a general preference.",
+    "The ADR states the consistency model assumed at each service boundary shown in the diagram.",
+    "At least one sensitive data element is identified with a corresponding architectural control, not merely a mention."
+  ],
+  "statusModel": [
+    "not_started",
+    "in_progress",
+    "submitted",
+    "revision_requested",
+    "resubmitted",
+    "approved"
+  ]
+}

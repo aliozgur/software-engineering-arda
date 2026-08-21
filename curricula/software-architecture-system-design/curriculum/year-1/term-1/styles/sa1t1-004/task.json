@@ -1,0 +1,40 @@
+{
+  "schemaVersion": 1,
+  "id": "sa1t1-004",
+  "title": "Choosing Between Request/Response and Event-Driven Communication",
+  "term": "year-1/term-1",
+  "module": "styles",
+  "estimatedHours": 7,
+  "objective": "Model the same workflow under synchronous and event-driven communication, and record a decision that names its delivery-guarantee assumption.",
+  "whyThisMatters": "The choice between synchronous coupling and asynchronous events determines who owns failure. Picking one without stating the delivery-guarantee assumption is how 'we'll process the event eventually' turns into a silent data-loss bug six months later.",
+  "competencies": [
+    "architecture-and-tradeoffs",
+    "distributed-systems"
+  ],
+  "resources": ["kafka-docs"],
+  "instructionsFile": "instructions.md",
+  "aiPolicy": {
+    "mode": "guided",
+    "allowedCapabilities": ["explain", "hint", "quiz"],
+    "solutionGenerationAllowed": false,
+    "disclosureRequired": true
+  },
+  "evidence": [
+    "Two sequence or flow diagrams, one per communication style, modeling the same workflow end to end",
+    "An ADR naming the ordering and delivery-guarantee assumption made for the chosen style",
+    "A note walking through at least one concrete failure scenario for the rejected style and why it was rejected"
+  ],
+  "acceptanceCriteria": [
+    "Both diagrams model the same workflow end to end, not two different scopes.",
+    "The ADR explicitly states the delivery-guarantee assumption (at-least-once, at-most-once, or an explained approximation of exactly-once) for the chosen style.",
+    "At least one concrete failure scenario is walked through for the rejected style, explaining why it was rejected rather than merely less preferred."
+  ],
+  "statusModel": [
+    "not_started",
+    "in_progress",
+    "submitted",
+    "revision_requested",
+    "resubmitted",
+    "approved"
+  ]
+}

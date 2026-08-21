@@ -1,0 +1,15 @@
+{
+  "schemaVersion": 1,
+  "id": "rfc-9019",
+  "title": "RFC 9019 — A Firmware Update Architecture for Internet of Things",
+  "url": "https://www.rfc-editor.org/rfc/rfc9019.html",
+  "type": "official_docs",
+  "provider": "IETF",
+  "tier": "primary",
+  "topics": [
+    "ota",
+    "firmware-update",
+    "iot-security",
+    "suit"
+  ]
+}

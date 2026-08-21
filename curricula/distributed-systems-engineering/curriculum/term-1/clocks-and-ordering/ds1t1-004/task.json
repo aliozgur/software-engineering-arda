@@ -1,0 +1,36 @@
+{
+  "schemaVersion": 1,
+  "id": "ds1t1-004",
+  "title": "Wall-Clock Last-Write-Wins versus Happens-Before",
+  "term": "ds1t1",
+  "module": "clocks-and-ordering",
+  "estimatedHours": 16,
+  "objective": "Add two merge policies to the replicated store — last-write-wins by wall clock, and version-vector / happens-before detection — and produce a script that loses a concurrent write under LWW and then flags the same pair as concurrent under the vector policy.",
+  "whyThisMatters": "Once you have replication and fencing, the remaining lie is that time itself is a total order. The SWE curriculum never forces a lost update that exists only because two clocks disagreed. If you cannot make that loss appear, you will keep treating 'latest' as a fact instead of a policy.",
+  "competencies": [
+    "distributed-systems",
+    "networking"
+  ],
+  "resources": [
+    "mit-65840"
+  ],
+  "instructionsFile": "instructions.md",
+  "aiPolicy": {
+    "mode": "guided",
+    "allowedCapabilities": ["explain", "hint", "quiz"],
+    "solutionGenerationAllowed": false,
+    "disclosureRequired": true
+  },
+  "evidence": [
+    "Git history showing LWW committed before version vectors, not a single drop of both policies",
+    "A reproduction script and captured run: LWW discards one concurrent write; the vector policy reports the pair as concurrent and retains both values or a conflict record",
+    "README defining happens-before for this store, with the two writes labeled concurrent rather than ordered",
+    "Reflection notes answering the task questions"
+  ],
+  "acceptanceCriteria": [
+    "The LWW reproduction injects a clock skew (or an assigned timestamp) so the physically earlier write carries the later timestamp, and the captured run shows that write winning and the other value gone.",
+    "The vector-clock (or version-vector) reproduction uses the same two writes and reports them as concurrent; both values or an explicit conflict record remain inspectable after merge.",
+    "README states a happens-before rule in terms of replica ids and counters (or equivalent), and names the two writes as concurrent under that rule.",
+    "Wall-clock timestamps are not used as the sole merge key in the vector policy."
+  ]
+}

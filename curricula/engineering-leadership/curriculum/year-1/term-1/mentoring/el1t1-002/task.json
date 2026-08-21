@@ -1,0 +1,42 @@
+{
+  "schemaVersion": 1,
+  "id": "el1t1-002",
+  "title": "Run a 1:1 That Leaves an Agenda and a Follow-up",
+  "term": "year-1/term-1",
+  "module": "mentoring",
+  "estimatedHours": 6,
+  "objective": "Produce a timed 1:1 agenda and a written follow-up for a named person that includes one growth topic, one hard topic, and actions the lead also owns.",
+  "whyThisMatters": "A 1:1 that only happened is not mentorship a mentor can inspect. The agenda, the notes that separate fact from interpretation, and the follow-up with owners and dates are the work.",
+  "competencies": [
+    "technical-leadership",
+    "professional-practice"
+  ],
+  "resources": [
+    "staffeng"
+  ],
+  "instructionsFile": "instructions.md",
+  "aiPolicy": {
+    "mode": "guided",
+    "allowedCapabilities": ["explain", "hint", "quiz"],
+    "solutionGenerationAllowed": false,
+    "disclosureRequired": true
+  },
+  "evidence": [
+    "A timed agenda for a 30- or 45-minute 1:1 whose topic times sum to the stated length, including one growth topic and one hard topic",
+    "Meeting notes that mark at least one sentence as an observed fact and at least one sentence as an interpretation",
+    "A follow-up note listing at least two actions, each with an owner and a date, of which at least one action is the lead's"
+  ],
+  "acceptanceCriteria": [
+    "The agenda lists timed topics whose minutes sum to the stated 30- or 45-minute length and includes both a growth topic and a hard topic.",
+    "The notes explicitly label at least one sentence as fact and at least one sentence as interpretation.",
+    "The follow-up lists at least two actions with owner and date, and at least one action is assigned to the lead."
+  ],
+  "statusModel": [
+    "not_started",
+    "in_progress",
+    "submitted",
+    "revision_requested",
+    "resubmitted",
+    "approved"
+  ]
+}

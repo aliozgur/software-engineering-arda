@@ -1,0 +1,54 @@
+{
+  "schemaVersion": 1,
+  "id": "as1t2-006",
+  "title": "Harden, Verify and Record Residual Risk",
+  "term": "year-1/term-2",
+  "module": "capstone",
+  "estimatedHours": 14,
+  "objective": "Close the path on the application you own: update the threat-model register, keep the security regression suite and CI scan green, and publish an evidence pack that links every residual risk to a decision.",
+  "whyThisMatters": "AppSec work is not finished when the last class of bug has a blog-post fix. It is finished when a mentor can open one pack and see the model, the tests, the pipeline, and the risks you chose not to fix — with owners and next actions.",
+  "competencies": [
+    "security",
+    "testing-quality",
+    "http-api"
+  ],
+  "resources": [
+    "owasp-top10",
+    "github-actions",
+    "rfc-http"
+  ],
+  "instructionsFile": "instructions.md",
+  "aiPolicy": {
+    "mode": "guided",
+    "allowedCapabilities": [
+      "explain",
+      "hint",
+      "quiz"
+    ],
+    "solutionGenerationAllowed": false,
+    "disclosureRequired": true
+  },
+  "evidence": [
+    "Updated threat-model register with a status on every item from as1t1-001 and later tasks (mitigated, accepted, or transferred) and a next action plus owner on any item not mitigated",
+    "Dated command output of the as1t2-002 security regression suite passing on the submitted commit",
+    "A green GitHub Actions run of the as1t2-004 workflow on that same commit, or a pasted log with run id",
+    "An evidence-pack document linking to the threat model, classification table, regression output, CI run, secret-scan result, and header capture",
+    "At least 2 accepted residual-risk write-ups with likelihood, impact, and why they were not fixed in this path",
+    "Reflection note answering the task questions"
+  ],
+  "acceptanceCriteria": [
+    "The updated threat-model register has a status on every item from as1t1-001 (mitigated, accepted, or transferred) and no item left as open without a next action and owner.",
+    "The security regression suite from as1t2-002 passes on the submitted commit; the command and dated output are included.",
+    "The CI security workflow from as1t2-004 is green on the submitted commit.",
+    "An evidence-pack document links to the threat model, classification table, regression output, CI run, secret-scan result, and header capture.",
+    "At least 2 accepted residual risks are written with likelihood, impact, and why they were not fixed in this path."
+  ],
+  "statusModel": [
+    "not_started",
+    "in_progress",
+    "submitted",
+    "revision_requested",
+    "resubmitted",
+    "approved"
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "schemaVersion": 1,
+  "id": "apprenti-dev-performance-engineering-2026",
+  "name": "apprenti.dev Performance Engineering",
+  "version": "0.1.0",
+  "durationMonths": "3-4",
+  "audience": "Experienced engineers specializing into performance engineering: measurement, profiling, benchmarking, evidenced caching, load testing, and capacity reasoning",
+  "philosophy": "Measure first. Every number in this path comes from a run the apprentice can repeat, not from a guess. LEARN BY DOING. GROW THROUGH MENTORSHIP.",
+  "defaultWeeklyHours": {
+    "duringTerm": "5-7"
+  },
+  "roles": [
+    "apprentice",
+    "mentor"
+  ],
+  "corePlatforms": [
+    "Prometheus",
+    "OpenTelemetry",
+    "PostgreSQL"
+  ],
+  "aiPrinciples": [
+    "AI assistance must be disclosed when materially used.",
+    "Tasks may restrict solution generation while allowing explanations, hints and quizzes.",
+    "The apprentice remains accountable for every submitted number, profile, plan and capacity claim.",
+    "Mentor approval is based on demonstrated measurement and diagnosis, not on a claimed speedup."
+  ],
+  "progression": "sequential",
+  "mentorship": "optional",
+  "sourceLocale": "en",
+  "contentLocales": ["en"]
+}

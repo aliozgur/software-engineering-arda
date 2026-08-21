@@ -1,0 +1,15 @@
+{
+  "schemaVersion": 1,
+  "id": "qemu-docs",
+  "title": "QEMU Documentation",
+  "url": "https://www.qemu.org/docs/master/",
+  "type": "official_docs",
+  "provider": "QEMU Project",
+  "tier": "reference",
+  "topics": [
+    "emulation",
+    "system-emulation",
+    "user-mode",
+    "embedded"
+  ]
+}

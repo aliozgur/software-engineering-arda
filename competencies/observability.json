@@ -2,32 +2,32 @@
   "schemaVersion": 1,
   "id": "observability",
   "title": "Observability",
-  "description": "Structured logs, metrics, traces, SLO thinking and production diagnosis.",
+  "description": "Can instrument a service so production questions are answered from logs, metrics and traces — and can choose which signal to trust when they disagree.",
   "levels": [
     {
       "level": 1,
       "name": "Foundation",
-      "description": "Can explain core concepts and complete guided work."
+      "description": "Can emit structured logs with a correlation id, expose a small set of named metrics, and point at which field or series would answer a stated operational question — under written guidance."
     },
     {
       "level": 2,
       "name": "Apprentice",
-      "description": "Can complete scoped tasks with limited guidance and produce evidence."
+      "description": "Can instrument one request path with logs, RED metrics and a cross-process trace, write queries that distinguish a healthy capture from an induced-unhealthy one, and redact secrets from the submitted sample."
     },
     {
       "level": 3,
       "name": "Practitioner",
-      "description": "Can independently design, implement, test and explain non-trivial work."
+      "description": "Can independently define SLIs and an SLO from existing telemetry, compute remaining error budget before and after a burn, and write an alert that pages on budget burn while staying silent on healthy traffic."
     },
     {
       "level": 4,
       "name": "Journeyman",
-      "description": "Can handle ambiguity, diagnose failures and defend trade-offs."
+      "description": "Can diagnose a failure where one signal type alone would mislead, cite logs, metrics and traces together, and produce a runbook another on-call can follow without opening application source."
     },
     {
       "level": 5,
       "name": "Mastery Evidence",
-      "description": "Can teach, review and make sound decisions across unfamiliar situations."
+      "description": "Can review another apprentice's instrumentation or SLO, name a metric or alert that is toil or vanity, and teach when to trust a trace over a log line (or the reverse) on an unfamiliar service."
     }
   ]
 }

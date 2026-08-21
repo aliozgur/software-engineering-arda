@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "id": "apprenti-dev-backend-engineering-2026",
+  "name": "apprenti.dev Backend Engineering Apprenticeship",
+  "version": "0.1.0",
+  "estimatedDurationMonths": "9-12",
+  "audience": "Junior to mid-level developers who already know how to program, specializing into backend service engineering",
+  "philosophy": "Evidence-driven apprenticeship: design, build, test, operate and defend one coherent backend service.",
+  "defaultWeeklyHours": {
+    "duringTerm": "8-10",
+    "summer": "10-14"
+  },
+  "roles": [
+    "apprentice",
+    "mentor"
+  ],
+  "languages": [
+    "Python",
+    "SQL"
+  ],
+  "corePlatforms": [
+    "PostgreSQL",
+    "MongoDB",
+    "RabbitMQ",
+    "Docker",
+    "Git"
+  ],
+  "aiPrinciples": [
+    "AI assistance must be disclosed when materially used.",
+    "Tasks may restrict solution generation while allowing explanations, hints and quizzes.",
+    "The apprentice remains accountable for every submitted artifact.",
+    "Mentor approval is based on demonstrated understanding, not AI output quality."
+  ],
+  "progression": "sequential",
+  "mentorship": "optional",
+  "sourceLocale": "en",
+  "contentLocales": ["en"]
+}

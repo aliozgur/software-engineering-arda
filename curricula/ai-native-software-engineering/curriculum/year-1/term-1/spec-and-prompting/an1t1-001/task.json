@@ -1,0 +1,50 @@
+{
+  "schemaVersion": 1,
+  "id": "an1t1-001",
+  "title": "Writing a Spec Precise Enough to Implement With AI",
+  "term": "year-1/term-1",
+  "module": "spec-and-prompting",
+  "estimatedHours": 6,
+  "objective": "Write a spec for a real, small feature that is precise enough for AI-generated code from it to need only minor correction, and disclose the whole process.",
+  "whyThisMatters": "A vague prompt produces code that looks done but solves the wrong problem. A precise spec is a first-class engineering artifact in AI-native work, not throwaway chat text.",
+  "competencies": [
+    "ai-assisted-engineering",
+    "professional-practice"
+  ],
+  "resources": [
+    "anthropic-prompt-guide",
+    "openai-prompt-guide"
+  ],
+  "instructionsFile": "instructions.md",
+  "aiPolicy": {
+    "mode": "guided",
+    "allowedCapabilities": [
+      "explain",
+      "hint",
+      "quiz"
+    ],
+    "solutionGenerationAllowed": true,
+    "disclosureRequired": true
+  },
+  "evidence": [
+    "A SPEC.md (or equivalent) committed before any AI-generated implementation code exists",
+    "Git history showing at least two incremental commits: the spec commit, then one or more implementation commits after it",
+    "The saved prompt or transcript showing the exact spec text given to the assistant",
+    "A correction note listing specific changes made to the AI-generated output and why each was needed",
+    "AI disclosure entry naming the tool/model used, purpose, and what was independently verified"
+  ],
+  "acceptanceCriteria": [
+    "SPEC.md exists as a commit that predates the first commit containing AI-generated implementation code.",
+    "The spec names the files or interfaces involved, states at least one explicit out-of-scope item, and states a concrete verification step.",
+    "The correction note lists at least one specific change made to the AI-generated code, not a general approval.",
+    "The AI disclosure entry names the tool/model used and what was independently verified."
+  ],
+  "statusModel": [
+    "not_started",
+    "in_progress",
+    "submitted",
+    "revision_requested",
+    "resubmitted",
+    "approved"
+  ]
+}

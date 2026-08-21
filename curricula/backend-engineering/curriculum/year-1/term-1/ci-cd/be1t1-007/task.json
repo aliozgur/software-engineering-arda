@@ -1,0 +1,37 @@
+{
+  "schemaVersion": 1,
+  "id": "be1t1-007",
+  "title": "Continuous Integration Pipeline (Term 1 Milestone)",
+  "term": "year-1/term-1",
+  "module": "ci-cd",
+  "estimatedHours": 14,
+  "objective": "Wire lint, tests, and the container build into an automated pipeline that runs on every push and visibly blocks merges on failure.",
+  "whyThisMatters": "This closes the loop on the whole term: everything built so far is now checked automatically instead of by memory, which is the actual point of having done all of it.",
+  "competencies": [
+    "ci-cd",
+    "testing-quality",
+    "engineering-tooling"
+  ],
+  "resources": [
+    "github-actions"
+  ],
+  "instructionsFile": "instructions.md",
+  "aiPolicy": {
+    "mode": "guided",
+    "allowedCapabilities": ["explain", "hint", "quiz"],
+    "solutionGenerationAllowed": false,
+    "disclosureRequired": true
+  },
+  "evidence": [
+    "The CI workflow file committed to the repository",
+    "Links to, or exported logs of, both a failing run and a passing run",
+    "Git history showing the deliberate break and its fix as separate commits",
+    "README section describing the pipeline stages and the branch protection setup"
+  ],
+  "acceptanceCriteria": [
+    "The pipeline runs lint, the full test suite against a real database service, and a container build on every push.",
+    "A deliberately broken commit is shown failing the pipeline, with the failure visible in the run log.",
+    "The fix commit is shown turning the pipeline green.",
+    "Merging is blocked, or documented as blocked, while the pipeline is red."
+  ]
+}

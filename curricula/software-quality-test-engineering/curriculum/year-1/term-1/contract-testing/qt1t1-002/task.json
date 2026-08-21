@@ -1,0 +1,43 @@
+{
+  "schemaVersion": 1,
+  "id": "qt1t1-002",
+  "title": "Contract Testing Across a Service Boundary",
+  "term": "year-1/term-1",
+  "module": "contract-testing",
+  "estimatedHours": 14,
+  "objective": "Add consumer-driven contract tests across one real service boundary so a breaking change is caught before deployment, not in a shared staging environment.",
+  "whyThisMatters": "Integration bugs between services are expensive precisely because unit tests on either side can pass while the two sides disagree about the interface. Contract tests catch that disagreement without needing both services running together.",
+  "competencies": [
+    "testing-quality"
+  ],
+  "resources": [
+    "pact-docs"
+  ],
+  "instructionsFile": "instructions.md",
+  "aiPolicy": {
+    "mode": "guided",
+    "allowedCapabilities": ["explain", "hint", "quiz"],
+    "solutionGenerationAllowed": false,
+    "disclosureRequired": true
+  },
+  "evidence": [
+    "The committed contract file(s), or an accessible Pact broker export",
+    "A commit showing contract verification passing",
+    "A commit or log showing verification failing after a deliberate provider break, and passing again after the fix",
+    "A reflection note answering what the contract test caught that a provider-side unit test would not have"
+  ],
+  "acceptanceCriteria": [
+    "The committed contract covers at least 4 distinct interactions, including at least one error response.",
+    "A single command verifies the contract against the provider.",
+    "A deliberate provider break is shown causing contract verification to fail, with the failure output captured.",
+    "Verification passes again after the break is reverted, evidenced by a follow-up commit or log."
+  ],
+  "statusModel": [
+    "not_started",
+    "in_progress",
+    "submitted",
+    "revision_requested",
+    "resubmitted",
+    "approved"
+  ]
+}

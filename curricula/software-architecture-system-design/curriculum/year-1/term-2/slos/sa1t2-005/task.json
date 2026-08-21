@@ -1,0 +1,41 @@
+{
+  "schemaVersion": 1,
+  "id": "sa1t2-005",
+  "title": "SLOs and Error Budgets as Design Constraints",
+  "term": "year-1/term-2",
+  "module": "slos",
+  "estimatedHours": 8,
+  "objective": "Turn prior NFR budgets into SLIs with explicit formulas, compute an error budget for a stated window, and name one change that budget would forbid.",
+  "whyThisMatters": "An availability adjective cannot stop a risky launch. An error budget computed from a stated SLI and a stated window can: it is the number that lets an architect say 'not this week' and show the arithmetic. Without that number, reliability is a vibe that loses every argument with a feature deadline.",
+  "competencies": [
+    "architecture-and-tradeoffs",
+    "observability",
+    "performance"
+  ],
+  "resources": ["prometheus"],
+  "instructionsFile": "instructions.md",
+  "aiPolicy": {
+    "mode": "guided",
+    "allowedCapabilities": ["explain", "hint", "quiz"],
+    "solutionGenerationAllowed": false,
+    "disclosureRequired": true
+  },
+  "evidence": [
+    "An SLO sheet with at least two SLIs, each written as a measurement formula plus a target number and a time window",
+    "An error-budget calculation for one of those SLOs over a stated window, showing the formula and the resulting allowed-failure quantity",
+    "A note naming one concrete change — a launch, a migration, or a relaxed timeout — that would consume more than the remaining budget in that window, with the arithmetic"
+  ],
+  "acceptanceCriteria": [
+    "Each of at least two SLIs is a ratio or measurement formula with named events or samples, not an adjective such as 'fast' or 'reliable.'",
+    "The error budget is computed from the SLO target and a stated time window, and the result is a quantity (failed requests, unavailable minutes, or equivalent), not a restated percentage.",
+    "The forbidden-change note names a specific change and shows arithmetic that the remaining budget for that window would be exceeded."
+  ],
+  "statusModel": [
+    "not_started",
+    "in_progress",
+    "submitted",
+    "revision_requested",
+    "resubmitted",
+    "approved"
+  ]
+}

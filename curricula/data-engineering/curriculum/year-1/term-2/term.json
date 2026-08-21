@@ -1,0 +1,13 @@
+{
+  "schemaVersion": 1,
+  "id": "year-1/term-2",
+  "title": "Term 2 — Contracts, Orchestration, and Streams",
+  "estimatedHours": 44,
+  "tasks": [
+    "de1t2-001",
+    "de1t2-002",
+    "de1t2-003",
+    "de1t2-004",
+    "de1t2-005"
+  ]
+}

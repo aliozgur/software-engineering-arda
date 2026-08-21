@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "id": "be1t2-002",
+  "title": "Index and Explain the Slow Queries",
+  "term": "year-1/term-2",
+  "module": "performance",
+  "estimatedHours": 14,
+  "objective": "Measure the queries the API actually runs, add only the indexes the plans justify, and keep a before/after EXPLAIN ANALYZE record a mentor can reopen.",
+  "whyThisMatters": "An index added because 'foreign keys should have indexes' is a guess. The load-test and capstone tasks later will ask you to defend capacity with evidence; this is where that evidence starts.",
+  "competencies": [
+    "performance",
+    "database-systems",
+    "relational-data"
+  ],
+  "resources": [
+    "postgres-docs"
+  ],
+  "instructionsFile": "instructions.md",
+  "aiPolicy": {
+    "mode": "guided",
+    "allowedCapabilities": ["explain", "hint", "quiz"],
+    "solutionGenerationAllowed": false,
+    "disclosureRequired": true
+  },
+  "evidence": [
+    "Committed before and after EXPLAIN ANALYZE plans for at least three API-backed queries, as files, not paraphrases",
+    "The migration that adds the justified indexes, in the existing migration sequence",
+    "A README table listing each query, before plan type and time, after plan type and time, and the index used",
+    "A short note, written when you decided not to index one query, explaining why",
+    "Git history showing measurement commits before the index migration, not the other way around"
+  ],
+  "acceptanceCriteria": [
+    "At least one committed pair of plans shows a Seq Scan becoming an Index Scan or Index Only Scan after the migration.",
+    "Before and after plans are files in the repository, each produced by EXPLAIN ANALYZE, not reconstructed from memory.",
+    "A query that was not indexed is documented in the repository with a written reason.",
+    "The index migration applies on an empty database after the existing Term 1 migrations, with no hand-run SQL."
+  ]
+}

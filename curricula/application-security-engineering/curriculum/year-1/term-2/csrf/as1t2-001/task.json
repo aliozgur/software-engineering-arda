@@ -1,0 +1,50 @@
+{
+  "schemaVersion": 1,
+  "id": "as1t2-001",
+  "title": "CSRF, Cookies and Unsafe Methods",
+  "term": "year-1/term-2",
+  "module": "csrf",
+  "estimatedHours": 10,
+  "objective": "Find and fix cross-site request forgery and cookie-flag gaps on the application you own or operate locally, and prove that state-changing routes reject a request that lacks the chosen CSRF control.",
+  "whyThisMatters": "Cookie-authenticated apps treat the browser as a confused deputy. SameSite, CSRF tokens, and forbidding state change on GET are different controls; this task makes you name which one you rely on and show it fail closed.",
+  "competencies": [
+    "security",
+    "http-api"
+  ],
+  "resources": [
+    "owasp-top10",
+    "rfc-http"
+  ],
+  "instructionsFile": "instructions.md",
+  "aiPolicy": {
+    "mode": "guided",
+    "allowedCapabilities": [
+      "explain",
+      "hint",
+      "quiz"
+    ],
+    "solutionGenerationAllowed": false,
+    "disclosureRequired": true
+  },
+  "evidence": [
+    "A findings note listing each state-changing route, the CSRF control used (token or SameSite=Strict, named), and cookie flags observed before and after",
+    "Git history showing cookie-flag changes and CSRF enforcement in separate commits",
+    "A committed test or scripted local request showing a missing-token or cross-site-style request rejected",
+    "A captured Set-Cookie header after login showing HttpOnly and SameSite, plus Secure or a residual-risk note for HTTP-only local labs",
+    "Reflection note answering the task questions"
+  ],
+  "acceptanceCriteria": [
+    "Every documented state-changing route (POST, PUT, PATCH, or DELETE) rejects a request that lacks the CSRF token or the equivalent SameSite=Strict cookie defense; the notes name which control is used.",
+    "Session cookies set HttpOnly and SameSite (Strict or Lax, named in the notes); Secure is set, or the notes record that the local lab is HTTP-only and name that as residual risk.",
+    "No documented GET route changes application state.",
+    "A committed test or scripted request to the local app shows a missing-token or cross-site-style request rejected."
+  ],
+  "statusModel": [
+    "not_started",
+    "in_progress",
+    "submitted",
+    "revision_requested",
+    "resubmitted",
+    "approved"
+  ]
+}

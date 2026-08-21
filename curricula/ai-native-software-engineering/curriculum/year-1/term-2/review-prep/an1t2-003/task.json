@@ -1,0 +1,51 @@
+{
+  "schemaVersion": 1,
+  "id": "an1t2-003",
+  "title": "Preparing a Design Review With AI Assistance",
+  "term": "year-1/term-2",
+  "module": "review-prep",
+  "estimatedHours": 7,
+  "objective": "Use AI to draft a design document for a real design decision, then revise it so it defends a specific trade-off in your own words, ready for an actual mentor review.",
+  "whyThisMatters": "An AI-drafted design doc nobody revised is easy to spot and easy to pick apart. The professional skill is using the draft as a starting point while remaining the one accountable for the trade-off argued.",
+  "competencies": [
+    "ai-assisted-engineering",
+    "professional-practice",
+    "software-design"
+  ],
+  "resources": [
+    "google-eng-practices-review"
+  ],
+  "instructionsFile": "instructions.md",
+  "aiPolicy": {
+    "mode": "guided",
+    "allowedCapabilities": [
+      "explain",
+      "hint",
+      "quiz"
+    ],
+    "solutionGenerationAllowed": true,
+    "disclosureRequired": true
+  },
+  "evidence": [
+    "The unmodified first AI-drafted section, committed or dated before the revised version exists",
+    "The revised design document, with at least one trade-off section rewritten in your own words with a concrete alternative considered and rejected",
+    "A note naming one factual claim or option in the AI draft that turned out to be wrong or inapplicable, and how you found that out",
+    "Git history or dated files showing the draft saved before the revision, not a single combined dump",
+    "AI disclosure entry naming the tool/model used, purpose, and what was independently verified"
+  ],
+  "acceptanceCriteria": [
+    "The unmodified AI draft is retained and distinguishable from the revised document.",
+    "The AI draft is committed or dated before the revised document.",
+    "The revised document states at least one alternative that was considered and rejected, with a stated reason.",
+    "The note names a specific inaccurate or inapplicable claim from the AI draft, not a general disclaimer.",
+    "The final document names the specific system or feature it concerns, not a generic template restated."
+  ],
+  "statusModel": [
+    "not_started",
+    "in_progress",
+    "submitted",
+    "revision_requested",
+    "resubmitted",
+    "approved"
+  ]
+}

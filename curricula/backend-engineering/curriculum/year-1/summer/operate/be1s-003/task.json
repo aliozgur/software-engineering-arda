@@ -1,0 +1,41 @@
+{
+  "schemaVersion": 1,
+  "id": "be1s-003",
+  "title": "Operate Under an SLO with a Full Container Stack",
+  "term": "year-1/summer",
+  "module": "operate",
+  "estimatedHours": 18,
+  "objective": "Run the full stack from compose, measure the SLO signals, inject a fault that those signals show, and leave a runbook a teammate could follow.",
+  "whyThisMatters": "A service you cannot operate is a demo. The release and defense tasks assume someone on call could see a miss and know the first three commands to run.",
+  "competencies": [
+    "observability",
+    "performance",
+    "containers"
+  ],
+  "resources": [
+    "opentelemetry",
+    "prometheus",
+    "docker-docs",
+    "twelve-factor"
+  ],
+  "instructionsFile": "instructions.md",
+  "aiPolicy": {
+    "mode": "guided",
+    "allowedCapabilities": ["explain", "hint", "quiz"],
+    "solutionGenerationAllowed": false,
+    "disclosureRequired": true
+  },
+  "evidence": [
+    "The compose file and a clean-checkout transcript of the full stack coming up",
+    "A committed dashboard definition or saved queries for request rate, error rate, and p95, plus a scrape or export from a healthy run",
+    "A fault demonstration (timeout, killed consumer, or injected 500) with the same signals showing the change",
+    "A runbook file listing the first three commands for a p95-over-SLO page, written before the fault demo if possible",
+    "README reporting image size and container resource limits, with Git history showing signals before the fault injection"
+  ],
+  "acceptanceCriteria": [
+    "docker compose up starts the API, PostgreSQL, MongoDB and RabbitMQ from a clean checkout.",
+    "A committed dashboard definition or query file shows request rate, error rate, and p95 against the SLO from be1s-001.",
+    "A deliberate fault is visible as a change in at least one of those three signals, with before and after exports committed.",
+    "The runbook file lists the first three commands to run when p95 exceeds the SLO, and those commands exist in the repository."
+  ]
+}

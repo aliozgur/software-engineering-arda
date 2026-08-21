@@ -1,0 +1,14 @@
+{
+  "schemaVersion": 1,
+  "id": "year-1-term-2",
+  "title": "Term 2 — Hardening, Verification and Shipping Secure Changes",
+  "estimatedHours": 62,
+  "tasks": [
+    "as1t2-001",
+    "as1t2-002",
+    "as1t2-003",
+    "as1t2-004",
+    "as1t2-005",
+    "as1t2-006"
+  ]
+}

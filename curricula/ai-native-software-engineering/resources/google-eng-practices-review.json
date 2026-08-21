@@ -1,0 +1,13 @@
+{
+  "schemaVersion": 1,
+  "id": "google-eng-practices-review",
+  "title": "Google Engineering Practices: Code Review",
+  "url": "https://google.github.io/eng-practices/review/",
+  "type": "official_docs",
+  "provider": "Google",
+  "tier": "reference",
+  "topics": [
+    "code-review",
+    "software-design"
+  ]
+}

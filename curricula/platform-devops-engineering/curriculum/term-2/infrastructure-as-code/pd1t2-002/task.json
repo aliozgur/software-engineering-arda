@@ -1,0 +1,36 @@
+{
+  "schemaVersion": 1,
+  "id": "pd1t2-002",
+  "title": "Declare the Local Runtime in OpenTofu",
+  "term": "term-2",
+  "module": "infrastructure-as-code",
+  "estimatedHours": 14,
+  "competencies": [
+    "infrastructure-as-code"
+  ],
+  "resources": [
+    "opentofu-docs"
+  ],
+  "instructionsFile": "instructions.md",
+  "aiPolicy": {
+    "mode": "guided",
+    "allowedCapabilities": ["explain", "hint", "quiz"],
+    "solutionGenerationAllowed": false,
+    "disclosureRequired": true
+  },
+  "evidence": [
+    "Committed OpenTofu configuration plus tofu init and tofu plan output from a clean checkout",
+    "tofu apply output and tofu state list showing at least three distinct resource addresses",
+    "A second tofu plan with no edits showing no unexpected changes",
+    "Command output of tofu destroy followed by a re-apply that recreates the same resource addresses",
+    "A note stating the backend is local (or otherwise free) and that terraform.tfstate is gitignored",
+    "Reflection notes answering the task questions",
+    "AI disclosure entry when AI materially influenced the work"
+  ],
+  "acceptanceCriteria": [
+    "tofu init and tofu plan succeed from a clean checkout using only committed files.",
+    "tofu apply creates at least three distinct resources a mentor can inspect via tofu state list and the actual Docker or Kubernetes objects.",
+    "A second apply with no configuration edits produces a plan with no unexpected changes.",
+    "tofu destroy removes the declared resources; a follow-up apply recreates them. State files are gitignored. No paid cloud account is required."
+  ]
+}

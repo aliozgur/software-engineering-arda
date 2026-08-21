@@ -1,0 +1,47 @@
+{
+  "schemaVersion": 1,
+  "id": "ob1t1-008",
+  "title": "Diagnose With Logs, Metrics, and Traces Together",
+  "term": "term-1",
+  "module": "diagnosis",
+  "estimatedHours": 10,
+  "objective": "Induce a failure that one signal type alone would mis-attribute, write a diagnosis that cites logs, metrics and traces together, and leave a runbook another on-call can follow without opening application source.",
+  "whyThisMatters": "The three signals exist so they can disagree. A metric that says 'the API is failing' can hide a single slow dependency; a log line can hide a timeout two hops away. This last task is where you prove you can notice the disagreement and write the path you wish you had during ob1t1-006.",
+  "competencies": [
+    "observability"
+  ],
+  "resources": [
+    "opentelemetry",
+    "prometheus",
+    "twelve-factor"
+  ],
+  "instructionsFile": "instructions.md",
+  "aiPolicy": {
+    "mode": "guided",
+    "allowedCapabilities": ["explain", "hint", "quiz"],
+    "solutionGenerationAllowed": false,
+    "disclosureRequired": true
+  },
+  "evidence": [
+    "A failure-injection note describing the induced condition and why a metrics-only read would mislead",
+    "A metrics-only first-pass note stating the incorrect or incomplete conclusion, with the query output attached",
+    "A log excerpt (correlation id visible) and a trace export that revise that conclusion",
+    "A combined diagnosis note that cites one metric/query result, one log line, and one span name/duration",
+    "A runbook with labeled Detect, Diagnose, and Recover sections, each containing a concrete command, query, or action",
+    "Reflection notes answering the task questions"
+  ],
+  "acceptanceCriteria": [
+    "The metrics-only first-pass note states a conclusion that the combined diagnosis revises or narrows.",
+    "The combined diagnosis cites at least one metric or query result, one log line with a correlation id, and one span name with a duration.",
+    "The runbook has three labeled sections — Detect, Diagnose, Recover — each with at least one concrete command, query, or action.",
+    "The runbook contains no instruction to open application source (no file names with line numbers, no 'read foo.py')."
+  ],
+  "statusModel": [
+    "not_started",
+    "in_progress",
+    "submitted",
+    "revision_requested",
+    "resubmitted",
+    "approved"
+  ]
+}

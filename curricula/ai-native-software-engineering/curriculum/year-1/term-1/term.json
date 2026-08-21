@@ -1,0 +1,14 @@
+{
+  "schemaVersion": 1,
+  "id": "year-1-term-1",
+  "title": "Term 1 — Foundations of Disclosed AI-Assisted Engineering",
+  "estimatedHours": 45,
+  "tasks": [
+    "an1t1-001",
+    "an1t1-002",
+    "an1t1-003",
+    "an1t1-004",
+    "an1t1-005",
+    "an1t1-006"
+  ]
+}

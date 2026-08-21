@@ -1,0 +1,37 @@
+{
+  "schemaVersion": 1,
+  "id": "pd1t3-005",
+  "title": "Ship a Bad Release, Observe It, Roll It Back",
+  "term": "term-3",
+  "module": "incident-response",
+  "estimatedHours": 22,
+  "competencies": [
+    "release-engineering",
+    "observability"
+  ],
+  "resources": [
+    "prometheus",
+    "opentelemetry"
+  ],
+  "instructionsFile": "instructions.md",
+  "aiPolicy": {
+    "mode": "guided",
+    "allowedCapabilities": ["explain", "hint", "quiz"],
+    "solutionGenerationAllowed": false,
+    "disclosureRequired": true
+  },
+  "evidence": [
+    "Two versioned artifacts (good vN-1 and bad vN) with git tags or image tags a mentor can list",
+    "Captured alert or SLO burn plus a matching trace or structured log from the period the bad version served traffic",
+    "Proof the rollback returned the workload to vN-1 (image tag or version label on the running objects) using the documented release process, not by rewriting the bad image",
+    "INCIDENT.md with detect / mitigate / resolve timestamps, what the signals showed, and one concrete follow-up, with no individual blame",
+    "Reflection notes answering the task questions",
+    "AI disclosure entry when AI materially influenced the work"
+  ],
+  "acceptanceCriteria": [
+    "Two versioned artifacts exist (bad vN and good vN-1); after rollback the running workload shows vN-1 as the image tag or version label.",
+    "The bad release is shown deployed first, with a captured alert or SLO burn and a matching trace or structured log.",
+    "Rollback uses the documented release process (pipeline, OpenTofu, or apply of the previous tag) and does not overwrite or rebuild the bad image as a hotfix.",
+    "After rollback the alert resolves and a smoke request succeeds. INCIDENT.md includes a timeline, the signals, and one follow-up, without blaming a person."
+  ]
+}

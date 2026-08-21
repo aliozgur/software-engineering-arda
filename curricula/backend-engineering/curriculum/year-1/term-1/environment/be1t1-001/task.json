@@ -1,0 +1,36 @@
+{
+  "schemaVersion": 1,
+  "id": "be1t1-001",
+  "title": "Backend Development Environment and Workflow",
+  "term": "year-1/term-1",
+  "module": "environment",
+  "estimatedHours": 8,
+  "objective": "Have a reproducible Python backend project set up with linting, formatting, dependency management, and a disciplined Git workflow that the rest of the term's work builds on.",
+  "whyThisMatters": "Every later task in this curriculum assumes a working, reproducible project skeleton and a disciplined commit habit. Getting this right once now means not fighting tooling on every task after it.",
+  "competencies": [
+    "engineering-tooling",
+    "python"
+  ],
+  "resources": [
+    "python-docs"
+  ],
+  "instructionsFile": "instructions.md",
+  "aiPolicy": {
+    "mode": "guided",
+    "allowedCapabilities": ["explain", "hint", "quiz"],
+    "solutionGenerationAllowed": false,
+    "disclosureRequired": true
+  },
+  "evidence": [
+    "Git history showing the environment built up over at least three incremental commits, not one dump commit",
+    "The dependency file (requirements.txt or pyproject.toml) and lint/format configuration committed to the repository",
+    "Output of the smoke test/script run from a clean checkout, pasted into the evidence note",
+    "README section explaining how to reproduce the environment from scratch"
+  ],
+  "acceptanceCriteria": [
+    "The project runs from a clean checkout using only the committed setup instructions.",
+    "The linter/formatter runs without configuration errors.",
+    "At least three incremental commits exist for the environment setup.",
+    "The README documents the exact commands to install dependencies and run the smoke test."
+  ]
+}

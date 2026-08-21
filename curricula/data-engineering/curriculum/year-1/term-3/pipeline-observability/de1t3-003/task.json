@@ -1,0 +1,47 @@
+{
+  "schemaVersion": 1,
+  "id": "de1t3-003",
+  "title": "Instrument a Pipeline the Way On-Call Will Query It",
+  "term": "year-1/term-3",
+  "module": "pipeline-observability",
+  "estimatedHours": 8,
+  "objective": "Emit freshness, volume, error or reject count, and lag or watermark delay for a real run, correlate logs with a run_id, and write one paging alert and one silent alert with numeric thresholds.",
+  "whyThisMatters": "Service CPU is the wrong graph. On-call for a pipeline asks: is the 09:00 publish late, did we drop more than one percent, is the stream lagging the source? If those questions need a human to read a stack trace, the instrumentation is not done.",
+  "competencies": [
+    "observability",
+    "da-data-quality",
+    "python"
+  ],
+  "resources": [
+    "python-docs",
+    "postgres-docs"
+  ],
+  "instructionsFile": "instructions.md",
+  "aiPolicy": {
+    "mode": "guided",
+    "allowedCapabilities": ["explain", "hint", "quiz"],
+    "solutionGenerationAllowed": false,
+    "disclosureRequired": true
+  },
+  "evidence": [
+    "Captured values from one real run for freshness, volume, errors or rejects, and lag or watermark delay",
+    "At least four structured log lines from that run sharing one run_id",
+    "An alert-policy note with one paging threshold and one non-paging threshold, both numeric",
+    "Two operational queries or commands with captured output: load lateness, and drop rate",
+    "Reflection notes answering the task questions"
+  ],
+  "acceptanceCriteria": [
+    "Four named metrics exist with captured values from a real run: freshness, volume, error or reject count, and lag or watermark delay.",
+    "Every submitted log line from one run shares one run_id, and at least four such lines are included.",
+    "The alert-policy note states one paging condition and one non-paging condition, each with a numeric threshold.",
+    "Two operational questions — whether a named load is late, and whether drop rate exceeded one percent — have a query or command and captured output."
+  ],
+  "statusModel": [
+    "not_started",
+    "in_progress",
+    "submitted",
+    "revision_requested",
+    "resubmitted",
+    "approved"
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "schemaVersion": 1,
+  "id": "sa1t1-001",
+  "title": "Turning Vague Requirements into Measurable NFR Budgets",
+  "term": "year-1/term-1",
+  "module": "nfr",
+  "estimatedHours": 6,
+  "objective": "Take a realistic system brief and produce quantified, sourced budgets for at least four non-functional requirements.",
+  "whyThisMatters": "Every later architecture decision in this curriculum is judged against a stated number. \"Fast\" and \"reliable\" cannot be designed against; a p99 latency target and an availability percentage can. An architect who cannot quantify a requirement cannot defend a design built against it.",
+  "competencies": [
+    "architecture-and-tradeoffs",
+    "professional-practice"
+  ],
+  "resources": [],
+  "instructionsFile": "instructions.md",
+  "aiPolicy": {
+    "mode": "guided",
+    "allowedCapabilities": ["explain", "hint", "quiz"],
+    "solutionGenerationAllowed": false,
+    "disclosureRequired": true
+  },
+  "evidence": [
+    "An NFR sheet naming at least four distinct quality attributes, each with a quantified target and a stated source or assumption for that number",
+    "Git history showing the sheet was revised at least once, with a commit message or note stating what changed the number and why",
+    "A short note naming which NFR was hardest to quantify and how the final number was chosen"
+  ],
+  "acceptanceCriteria": [
+    "At least four distinct non-functional requirements are each stated as a measurable number, not an adjective.",
+    "Each budget names the source or reasoning used to arrive at that number (a benchmark, a comparable system, an explicit stated assumption).",
+    "The revision history shows at least one budget changed after the first draft, with a note stating why."
+  ],
+  "statusModel": [
+    "not_started",
+    "in_progress",
+    "submitted",
+    "revision_requested",
+    "resubmitted",
+    "approved"
+  ]
+}

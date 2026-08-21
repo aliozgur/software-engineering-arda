@@ -1,0 +1,13 @@
+{
+  "schemaVersion": 1,
+  "id": "year-1/term-2",
+  "title": "Term 2 — Designing for Scale, Data, and Failure",
+  "estimatedHours": 40,
+  "tasks": [
+    "sa1t2-001",
+    "sa1t2-002",
+    "sa1t2-003",
+    "sa1t2-004",
+    "sa1t2-005"
+  ]
+}

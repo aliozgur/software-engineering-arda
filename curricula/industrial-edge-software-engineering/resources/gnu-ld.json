@@ -1,0 +1,15 @@
+{
+  "schemaVersion": 1,
+  "id": "gnu-ld",
+  "title": "GNU Linker (ld) Documentation",
+  "url": "https://sourceware.org/binutils/docs/ld/",
+  "type": "official_docs",
+  "provider": "GNU Project / Sourceware",
+  "tier": "reference",
+  "topics": [
+    "linker",
+    "map-files",
+    "memory-layout",
+    "sections"
+  ]
+}

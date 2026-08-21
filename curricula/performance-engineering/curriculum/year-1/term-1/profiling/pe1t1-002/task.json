@@ -1,0 +1,45 @@
+{
+  "schemaVersion": 1,
+  "id": "pe1t1-002",
+  "title": "Profile the Hot Path, Don't Guess It",
+  "term": "year-1/term-1",
+  "module": "profiling",
+  "estimatedHours": 10,
+  "objective": "Record a suspected bottleneck before opening a profiler, then name the hottest CPU and allocation frames from committed profile files and relate their cost to algorithmic complexity.",
+  "whyThisMatters": "Experienced engineers still guess wrong about where time goes. A profile is the cheapest way to find that out before you rewrite the wrong function. This task forbids the fix: diagnosis only, with the wrong guess preserved in git.",
+  "competencies": [
+    "performance"
+  ],
+  "resources": [
+    "mit-6006"
+  ],
+  "instructionsFile": "instructions.md",
+  "aiPolicy": {
+    "mode": "guided",
+    "allowedCapabilities": ["explain", "hint", "quiz"],
+    "solutionGenerationAllowed": false,
+    "disclosureRequired": true
+  },
+  "evidence": [
+    "A pre-profile hypothesis file naming the suspected hot function, committed before any profile artifact",
+    "A CPU profile file (pprof, async-profiler, py-spy, or language equivalent) committed as a file, not a screenshot alone",
+    "An allocation or heap profile file for the same workload",
+    "A diagnosis note that copies the hottest frame name from the profile and states its sample or time share as a number",
+    "A complexity note relating that frame's work to a growth class from MIT 6.006 (e.g. linear scan vs log n lookup) with the measured cost beside it",
+    "Reflection notes answering the task questions"
+  ],
+  "acceptanceCriteria": [
+    "The hypothesis file is committed before the first profile file and names a specific function or module.",
+    "CPU and allocation/heap profile files are both present in the repository (binary or text export), not screenshots only.",
+    "The diagnosis note copies the hottest CPU frame's symbol as it appears in the profile and states its share as a percentage or time from that file.",
+    "The complexity note names a growth class for the hot work and places the measured share next to it — no optimization is shipped in this task."
+  ],
+  "statusModel": [
+    "not_started",
+    "in_progress",
+    "submitted",
+    "revision_requested",
+    "resubmitted",
+    "approved"
+  ]
+}
